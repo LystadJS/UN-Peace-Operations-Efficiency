@@ -44,7 +44,7 @@ Candidate priority is a **qualitative ordering of research utility**, not a fina
 
 ## Financial methodology (not yet executed)
 
-Do not add `2027 regular`, `other assessed`, `extragbudgetary` or separate mission budgets without verifying perimeters and removing transfers. Distinguish *appropriation*, *expenditure*, *obligation*, *post-funded salaries*, *grants*, and *non-post expenditure*. Sunk changes and already-booked UN80 efficiencies are not new savings.
+Do not add `2027 regular`, `other assessed`, `extrabudgetary` or separate mission budgets without verifying perimeters and removing transfers. Distinguish *appropriation*, *expenditure*, *obligation*, *post-funded salaries*, *grants*, and *non-post expenditure*. Sunk changes and already-booked UN80 efficiencies are not new savings.
 
 For an option, estimate separately:
 - Gross addressable **recurring** cost directly attached to redundant activities.

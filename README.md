@@ -71,3 +71,13 @@ The source-linked [mission-budget and implementation assessment](docs/mission_bu
 Mission years (July–June) are **different** from the calendar-year 2027 programme proposals. SG budgets are **not** approved appropriations. Published reductions are **not** proven operational savings. The combined DPO Peacebuilding and Peace Support Office allocation remains **not separately identifiable** in A/80/631.
 
 Validate with `python3 scripts/validate_crosswalk.py && python3 scripts/validate_mission_audit.py`; alternatively run `Rscript scripts/analyze_mission_budgets.R` to reproduce gross proposal comparisons.
+
+## Phase 3: GA appropriations, SPM addenda, and ranked investigations (8 October 2026)
+
+**[Read the GA/SPM cost reconciliation and ranked research audit](docs/appropriation_spm_consolidation_audit.md).** The extension confirms **six** 30 June 2026 General Assembly financing authorities, registers **four** scheduled 2027 SPM addenda, preserves an unresolved **$4.9596m** SPM extrabudgetary conflict, and prioritizes **12** crosswalk-linked investigations.
+
+**Critical limitation:** The adopted mission-level **dollar appropriations have not been independently read** from the operative GA resolutions or from A/C.5/80/20, so approved-versus-requested numerical variances remain explicitly **not calculated (0/6 verified)**. The SPM addenda financial tables remain unextracted (0/4). This is a **partial documentary reconciliation**, not a completed numeric reconciliation.
+
+[GA financing authority CSV](data/ga_mission_reconciliation.csv) · [SPM addenda tracker](data/spm_2027_addenda.csv) · [SPM financial boundaries](data/spm_fiscal_boundary.csv) · [Ranked research priorities](data/ranked_consolidation_validation.csv) · [Auditor transition precedents](data/historical_transition_audit_cases.csv).
+
+Run the standard validation script in the [CI workflow](.github/workflows/validate.yml); no net savings estimates are permitted in these early-stage datasets.

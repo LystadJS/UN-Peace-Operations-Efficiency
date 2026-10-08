@@ -17,3 +17,5 @@ jobs:
         run: python3 scripts/validate_crosswalk.py
       - name: Validate mission budget and UN80 audit supplements
         run: python3 scripts/validate_mission_audit.py
+      - name: Validate GA resolution and SPM source reconciliation
+        run: python3 scripts/validate_phase3.py

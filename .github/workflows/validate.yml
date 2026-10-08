@@ -13,5 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate identifiers, citations and recorded assumptions
+      - name: Validate baseline identifiers citations and recorded assumptions
         run: python3 scripts/validate_crosswalk.py
+      - name: Validate mission budget and UN80 audit supplements
+        run: python3 scripts/validate_mission_audit.py

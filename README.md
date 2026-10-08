@@ -56,3 +56,18 @@ GitHub Actions runs the zero-dependency Python validator on every push and pull 
 Acquire detailed SPM addenda, DPO support-account report A/80/631, 2026/27 individual mission budgets, post-level finance/HR data, documented UN80 implementation records, and field-level delivery registers. Then validate [candidates](data/candidate_validation.csv), estimate **net incremental** savings (not gross budget figures), and assess mandate and operational risk.
 
 **A documented shared structure is an existing baseline, never a new saving to be counted again.**
+
+## Phase 2 — Mission budgets and UN80 cost-accounting audit (8 October 2026)
+
+The source-linked [mission-budget and implementation assessment](docs/mission_budget_and_un80_audit.md) extends the original 39 DPPA–DPO comparisons. It adds:
+
+- **6** 2026/27 mission **Secretary-General budget proposals**, broken out into military/police, civilian and operational costs ([financial register](data/mission_budget_register.csv)).
+- **18** mission-level pairings linked to baseline crosswalk IDs ([mission function crosswalk](data/mission_function_crosswalk.csv)).
+- **11** individually reviewed UN80 arrangements ([implementation status audit](data/un80_implementation_audit.csv)).
+- **5** identified DPO support-account allocation lines, totaling **$95.4641m** proposed in 2026/27; this is **the same** DPO other-assessed component shown in Section 5 and must not be added twice.
+- **13** budget-perimeter and source reconciliation rules plus **10** identified baseline changes ([cost bridge](data/cost_allocation_bridge.csv), [implementation cases](data/implementation_cases.csv)).
+- Primary-source identifiers and links in [mission source extension](data/mission_source_extension.csv).
+
+Mission years (July–June) are **different** from the calendar-year 2027 programme proposals. SG budgets are **not** approved appropriations. Published reductions are **not** proven operational savings. The combined DPO Peacebuilding and Peace Support Office allocation remains **not separately identifiable** in A/80/631.
+
+Validate with `python3 scripts/validate_crosswalk.py && python3 scripts/validate_mission_audit.py`; alternatively run `Rscript scripts/analyze_mission_budgets.R` to reproduce gross proposal comparisons.

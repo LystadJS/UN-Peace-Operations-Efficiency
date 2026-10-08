@@ -147,3 +147,7 @@ Public decision-board generator: Rscript scripts/render_public_decision_board.R 
 Start with the [initial findings](docs/initial_findings.md), consult the [data dictionary](docs/data_dictionary.md) for definitions, and use the [2027 SPM audit](docs/spm_2027_reconciliation.md) for the latest regular-budget and shared-service findings. Every figure must retain its source, period, and proposal-versus-approval status.
 
 <sub>Public analyses are decision-support research, not organizational determinations. Verify amounts, mandates, and operational assumptions against underlying UN documents before proposing restructuring or savings.</sub>
+
+## Phase 7 — Documented evidence requests and output comparisons
+
+The [18-dataset transaction request](docs/restricted_transaction_data_request.md) specifies fields and custodians. The [32-pair deliverable crosswalk](data/public_deliverable_crosswalk_2027.csv) compares regional missions, regional desks, and training. Read the [analysis](docs/public_deliverable_overlap_2027.md). Full ACABQ 2027 recommendations could not be extracted; [status and limitation](docs/acabq_2027_reconciliation_status.md) and [36-row pending comparison](data/acabq_2027_mission_reconciliation.csv) are available. No additional net savings have been established.

@@ -19,3 +19,5 @@ jobs:
         run: python3 scripts/validate_mission_audit.py
       - name: Validate GA resolution and SPM source reconciliation
         run: python3 scripts/validate_phase3.py
+      - name: Validate SPM 2027 mission and cluster reconciliation
+        run: python3 scripts/validate_spm_2027.py

@@ -162,6 +162,48 @@ activity_count=[
  for (k,window),v in sorted(groups.items())
 ]
 write("systematic_2025_2026_canonical_type_summary",activity_count)
+# Link individually verified notices to the previously frozen 2027 output categories.
+# A match is evidence coverage only; it cannot certify the same final deliverable.
+valid_ids={r["output_pair_id"] for r in proposed}
+new_links=[]
+for source in new:
+    ids=source["linked_2027_deliverable_ids"].split(";")
+    for ident in ids:
+        if ident not in valid_ids:
+            raise AssertionError("Unrecognized 2027 pair in curated evidence: "+ident)
+        new_links.append(dict(
+            link_id="NEW"+str(len(new_links)+1).zfill(3),
+            official_event_id=source["event_id"],
+            planned_2027_pair_id=ident,
+            event_or_publication=source["canonical_event_or_publication"],
+            official_notice_url=source["official_url"],
+            event_date_precision=source["event_date_precision"],
+            named_roles_as_reported=source["evidenced_roles"],
+            relationship_category=source["documented_reuse_type"],
+            case_evidence_level=("date_not_independently_verified" if
+                source["event_date_precision"]=="date_precision_unverified"
+                else "source_identified_activity_with_explicit_role_caveats"),
+            identical_deliverable_already_paid_twice="not_established",
+            net_savings_usd="not_estimated"))
+write("systematic_field_training_to_2027_links",new_links)
+for row in proposed:
+    ftx=[x for x in new_links if x["planned_2027_pair_id"]==row["output_pair_id"]]
+    dated=[x for x in ftx if x["case_evidence_level"]!="date_not_independently_verified"]
+    old_supported=row["retrospective_2025_26_match_ids"]!="none_found_in_selected_sample"
+    row["phase11_curated_official_activity_ids"]=(
+        ";".join(sorted({x["official_event_id"] for x in ftx})) if ftx else "none_in_new_curated_sample")
+    row["phase11_dated_or_partial_activity_ids"]=(
+        ";".join(sorted({x["official_event_id"] for x in dated})) if dated else "none")
+    row["phase11_combined_2025_26_sample_coverage"]=(
+        "source_present_in_selected_sample" if dated or old_supported
+        else "unmatched_in_selected_sample_NOT_zero")
+    row["phase11_financial_duplicate_service"]="not_verified"
+    row["phase11_net_new_savings_usd"]="not_estimated"
+write("public_deliverable_crosswalk_2027",proposed)
+c=sum(x["phase11_combined_2025_26_sample_coverage"]=="source_present_in_selected_sample" for x in proposed)
+if c!=20:
+    raise AssertionError(f"Unexpected expanded selected-source category coverage {c}, expected 20")
+
 print("SYSTEMATIC PUBLIC SOURCE VIEWS")
 print("Council report symbols",len(reports),"formal meeting IDs",sum(uniq.values()),
       "PV variants",len(meetings),"bounded news notices",len(notice))

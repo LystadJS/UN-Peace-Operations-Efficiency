@@ -53,7 +53,7 @@ flowchart LR
   A["One joint workshop: Dakar, 26–27 Feb 2025"]
   A --> B["UNOWAS SG report: S/2025/187"]
   A --> C["UNOCA SG report: S/2025/342"]
-  D["UNOCA-led best-practices publication"] --> A
+  A --> D["UNOCA-led best-practices publication"]
 ```
 
 **The reusable object is the documented event and its underlying evidence**, not the distinct Secretary-General reporting mandates. The diagram depicts *documented references and distribution*, not quantified editorial time or costs.

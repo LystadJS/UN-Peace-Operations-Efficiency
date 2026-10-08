@@ -89,3 +89,8 @@ The source manifests retain SHA-256 of all four uploaded PDF originals. The PDFs
 **No additional net savings have been validated.** The next stage requires contracts, Umoja cost objects, HR roster identifiers, RSCE client chargeback records, original and receiving-mission procurement documents, and performance requirements. A proposed benefit must subtract replacement costs and transition liabilities, protect mandated outputs, and avoid counting planned efficiencies or mandated closures again.
 
 Run `python3 scripts/validate_spm_2027.py`. Optional source byte verification: `python3 scripts/validate_spm_2027.py --source-dir PATH_WITH_PDFS`. The standard CI also retains all original DPPA–DPO and six GA budget checks.
+
+
+## Phase 5 update: transaction-level validation boundary
+
+The [Phase 5 transaction-control report](transaction_level_validation.md) separates implementation narratives from the missing proof of actual asset transfers, receivable/payable postings and settlements. The 2027 proposal already includes **$438.1k** of UNIFIL-to-UNSCOL asset avoidance and **$1.4m** of BINUH/UNSOH aviation savings. The **$3.2591m** RSCE proposed share is a cost allocation; **no independent incremental net savings** have yet been established.

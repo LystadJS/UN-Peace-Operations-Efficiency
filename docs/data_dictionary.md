@@ -79,3 +79,22 @@ The four addenda are **calendar-year 2027 Secretary-General proposals**. All SPM
 | `spm_2027_extrabudgetary_reconciliation.csv` | Derived $32.976673m item sum vs roughly $33m chapeau and original Section 3 figures. |
 
 `scripts/validate_spm_2027.py` verifies financial controls, 36 mission rows, 31 efficiency rows, 17 XB entries, staffing definitions, legal classifications and crosswalk relationships.
+
+## Phase 5 — Transaction evidence and matching
+
+All public transaction audit files are **control definitions**, not extracted private ledgers. No row in these files represents a verified invoice/asset movement.
+
+| File | Row identity | Interpretation |
+|---|---|---|
+| `transaction_validation_cases.csv` | `case_id` | Three bounded reviews, public implementation evidence, 0 matched true transactions and unestimated savings. |
+| `transaction_control_baseline.csv` | `control_id` | Twelve published monetary controls and embedded-efficiency IDs; distinguishes proposed spending, internal reimbursement and GA financing. |
+| `transaction_offset_reconciliation.csv` | `check_id` | Five nonadditivity identities; do not subtract service scopes that differ. |
+| `transaction_sources.csv` | `source_id` | Twelve source references with public evidence level and disclosure limits. |
+| `transaction_evidence_requests.csv` | `request_id` | Eighteen internal finance/asset/HR data packages needed for adjudication; do not publish raw records. |
+| `rsce_workforce_model_vs_post_actions.csv` | `line_id` | Nine RSCE modeling and staffing observations; FTE models, abolished client posts and transfers are distinct units. |
+| `transaction_audit_issues.csv` | `issue_id` | Seven unresolved source/matching blockers and cost-base comparability tests. |
+| `scripts/validate_transaction_controls.py` | — | Public source/budget integrity gate, no third-party dependencies. |
+| `scripts/audit_transaction_ledger.R` | — | Local one-to-one asset/billing/settlement/chargeback reconciliation, no automatically estimated savings. |
+| `tests/fixtures/transaction_ledger_SYNTHETIC.csv` | `record_id` | Engineering-only fixture; not UN invoice or asset evidence. |
+
+Live transaction extracts must be handled in approved restricted locations and must never be accidentally committed to GitHub; `.gitignore` covers `data/private/`, `data/restricted/`, and `output/internal/`.

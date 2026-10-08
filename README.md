@@ -15,7 +15,7 @@
   <a href="data/deliverable_inventory.csv"><img alt="46 deliverables" src="https://img.shields.io/badge/Deliverables-46-002D74?style=flat-square" /></a>
   <a href="data/mission_budget_register.csv"><img alt="Six mission proposals" src="https://img.shields.io/badge/Missions-6%20proposals-002D74?style=flat-square" /></a>
   <a href="data/un80_implementation_audit.csv"><img alt="11 reviewed arrangements" src="https://img.shields.io/badge/UN80-11%20arrangements-002D74?style=flat-square" /></a>
-  <a href="data/ranked_consolidation_validation.csv"><img alt="14 ranked investigations" src="https://img.shields.io/badge/Investigations-12%20ranked-002D74?style=flat-square" /></a>
+  <a href="data/ranked_consolidation_validation.csv"><img alt="14 ranked investigations" src="https://img.shields.io/badge/Investigations-14%20ranked-002D74?style=flat-square" /></a>
 </p>
 
 <p align="center">
@@ -44,7 +44,7 @@ The financial extension connects selected functions to field-mission proposals, 
 | --- | --- | --- |
 | **Mandate and deliverable crosswalk** | Compare documented responsibilities; distinguish joint structures, proposed coordination, complementary roles, and overlap hypotheses. | [Initial findings](docs/initial_findings.md) · [Crosswalk CSV](data/crosswalk.csv) |
 | **UN80 implementation and cost allocation** | Trace reforms, departmental support funding, six mission proposals, and costs that must not be counted twice. | [Mission-budget audit](docs/mission_budget_and_un80_audit.md) |
-| **General Assembly and SPM reconciliation** | Compare proposals with financing authorities, track SPM addenda, and inspect unresolved appropriation evidence. | [GA / SPM audit](docs/appropriation_spm_consolidation_audit.md) |
+| **General Assembly and SPM reconciliation** | Compare proposals with financing authorities, track SPM addenda, and inspect unresolved appropriation evidence. | [GA / SPM audit](docs/appropriation_spm_consolidation_audit.md) · [Transaction validation](docs/transaction_level_validation.md) |
 | **Candidate review and reproducibility** | Inspect ranked investigations, source anchors, open validation gates, and machine-checkable datasets. | [Ranked queue](data/ranked_consolidation_validation.csv) · [Data dictionary](docs/data_dictionary.md) |
 
 ## Evidence review workflow — no installation
@@ -109,8 +109,15 @@ UN budget proposals + GA / SPM financing records
 | **UN80 and mission-budget audit** | 11 reform arrangements, 6 selected SG mission proposals, 18 linked mission-function comparisons, and DPO support-account bridges. | Proposed reorganization is not confirmed implementation; pre-budgeted reductions are not new savings. |
 | **GA-approved mission financing** | 6/6 GA financing appropriations reconciled, 11 mission totals and 102 category records. | The 2026/27 assessed accounts are distinct from proposed calendar-2027 SPM financing. |
 | **2027 SPM budget reconciliation** | 36 mission proposals, 3 cluster controls, 31 embedded efficiencies, 17 XB finance entries, 16 cross-pillar pairings and 12 audit priorities. | Four addenda reconciled to $422.671m, still proposed; new net savings unverified. |
+| **Transaction-level control audit (Phase 5)** | 3 cases, 12 published cost objects, 18 evidence requests, 12 source references, 9 RSCE staffing model entries and tested R matcher. | No signed inventories, invoice pairs, settlement postings or separately proven incremental savings. |
 
-[Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA appropriation audit](docs/appropriation_spm_consolidation_audit.md) · **[2027 SPM reconciliation](docs/spm_2027_reconciliation.md)**
+[Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA appropriation audit](docs/appropriation_spm_consolidation_audit.md) · **[2027 SPM reconciliation](docs/spm_2027_reconciliation.md)** · **[Transaction evidence audit](docs/transaction_level_validation.md)**
+
+## Phase 5 — Transaction auditing with private ledger evidence
+
+The [transaction-controls audit](docs/transaction_level_validation.md) identifies what can be verified from official published documents and what needs an internal transaction record. It isolates **$438,100 UNIFIL/UNSCOL** and **$1.4m BINUH/UNSOH** already estimated in the 2027 SPM proposal and treats **$3.2591m RSCE SPM share** as financing, not an efficiency. The [source catalogue](data/transaction_sources.csv), [case controls](data/transaction_validation_cases.csv), [evidence requests](data/transaction_evidence_requests.csv), and [RSCE FTE/post reconciliation](data/rsce_workforce_model_vs_post_actions.csv) support follow-on review. **0 of 3 cases has complete independent ledger-level verification**; no new net savings estimates are presented.
+
+For an authorized local ledger extract, run `Rscript scripts/audit_transaction_ledger.R /SECURE_LOCATION/ledger.csv /SECURE_LOCATION/outputs`. Use the explicitly [synthetic fixture](tests/fixtures/transaction_ledger_SYNTHETIC.csv) for software checks only. Never publish real invoices, personnel IDs or sensitive field operations data to a public GitHub repository.
 
 ## Outputs, review, and limitations
 

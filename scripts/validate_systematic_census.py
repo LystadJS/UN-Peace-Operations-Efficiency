@@ -102,7 +102,7 @@ def validate():
     assert sum(x["stream"]=="Council_SG_report" for x in master)==132
     assert sum(x["stream"]=="Council_meeting_record_variant" for x in master)==474
     assert sum(x["stream"]=="published_mission_or_department_activity" for x in master)==46
-    assert sum(x["is_current_window"]=="no_excluded_2024_event" for x in master)==1
+    assert sum(x["date_or_completeness_warning"]=="2024_event_not_in_2025_2026_activity_population" for x in master)==1
     assert sum(x["date_or_completeness_warning"]=="source_date_year_conflict_quarantine" for x in master)==1
     assert len({x["official_symbol"] for x in master if x["stream"]=="Council_SG_report"})==132
     assert len({x["meeting_base_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2025"})==255

@@ -1,3 +1,5 @@
+> **Historical Phase 9 executive brief.** For the newest actual 2025–2026 activity and report evidence, use the [current retrospective executive readout](retrospective_2025_2026_executive_brief.md). The Phase 9 budget and ACABQ findings below remain separately valid.
+
 # UN Peace Operations Efficiency — Executive decision brief
 
 <small>8 October 2026 · Public-source audit · SG 2027 proposals, GA 2026 approved mission budgets, and issued ACABQ A/81/7/Add.2–3</small>

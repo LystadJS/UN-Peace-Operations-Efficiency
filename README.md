@@ -19,11 +19,13 @@
 </p>
 
 <p align="center">
-  <a href="docs/initial_findings.md"><strong>Read initial findings</strong></a>
+  <a href="docs/retrospective_2025_2026_executive_brief.md"><strong>Current executive findings (2025–26)</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
   <a href="docs/appropriation_spm_consolidation_audit.md">Inspect GA / SPM reconciliation</a>
+  &nbsp;&middot;&nbsp;
+  <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
 ## Purpose
@@ -161,4 +163,14 @@ The three newly uploaded ACABQ PDFs were read and source-verified. [Full reconci
 **[Current executive decision brief](docs/public_only_executive_brief.md)** · [Nine-mission budget and risk report](docs/acabq_2027_clusterIII_review.md) · [Revised comprehensive consolidation ranking](docs/acabq_2027_ranked_assessment.md).
 
 The original [2027 SG Cluster III reconciliation](data/acabq_2027_clusterIII_sg_baseline.csv) resolves **9/9 mission budgets** and staffing comparators. The **cross-cutting A/81/7 framework** comprises [16 sourced considerations](data/acabq_2027_main_crosscutting_framework.csv) and [51 mission-applicability links](data/acabq_2027_clusterIII_crosscutting_map.csv), while **mission-specific ACABQ advisory adjustments remain unknown, not zero**. The $14.5604m of separately itemized 2027 Cluster III efficiency estimates is **already in the SG proposal**, not additional savings. The overall [23-record research hierarchy](data/consolidation_comprehensive_2027.csv) contains 14 umbrellas and nine linked mission work packages, marked nonadditive. [Conditional arithmetic](data/acabq_2027_conditional_envelope.csv) includes an illustrative $422.4885m partial-advice scenario explicitly **not official**. [Automated validation](scripts/validate_phase9_clusterIII.py) gates numeric controls and prevents invented approvals or costs.
+
+## Phase 10 — Actual 2025–2026 deliverable and activity matching
+
+**[Current executive readout](docs/retrospective_2025_2026_executive_brief.md)** · [Full retrospective analysis](docs/retrospective_2025_2026_overlap_audit.md) · [11 ranked reuse and non-duplication assessments](data/retrospective_2025_2026_reuse_decisions.csv).
+
+A purposive official-source review established **42 public-source records**, **38 canonical activities/products** (37 in the 2025–2026 activity window plus one excluded **October 2024** event with a 2025 publication), and **36 source-linked pairing adjudications**. Evidence connects to **19 of the 32 2027 proposed output categories**; remaining unmatched categories are **not shown to be absent**. The sources document joint UNOWAS–UNOCA field activity/workshops, UNAMA–UNRCCA courses, integrated DPPA–DPO Council briefings and policy guidance, and mandated regional reporting that must stay separate.
+
+The [source catalogue](data/retrospective_2025_2026_sources.csv), [canonical activity register](data/retrospective_2025_2026_activities.csv), [match ledger](data/retrospective_2025_2026_matches.csv), [crosswalk with retrospective references](data/public_deliverable_crosswalk_2027.csv) and [four-group summary](data/retrospective_2025_2026_summary.csv) are versioned in GitHub. The [14-candidate research ranking](data/acabq_2027_ranked_consolidation.csv) includes retrospective evidence fields **without changing rank based on a nonrepresentative sample**. No separately paid duplicate service or incremental savings has been financially verified.
+
+Validate with `python3 scripts/validate_retrospective_matches.py`. Generate the current review queue via `Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board`; a base-R acceptance test runs in CI. No confidential finance records are needed for this documentary phase.
 

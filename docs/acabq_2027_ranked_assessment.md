@@ -68,3 +68,7 @@ Each actionable recommendation requires independent identification of the exact 
 Sources: [2027 nine-mission SG baseline](../data/acabq_2027_clusterIII_sg_baseline.csv) · [A/81/7 cross-cutting framework](../data/acabq_2027_main_crosscutting_framework.csv) · [51 applicability mappings](../data/acabq_2027_clusterIII_crosscutting_map.csv) · [overall ACABQ reconciliation](acabq_2027_reconciliation_status.md).
 
 The earlier Phase 3 and Phase 8 ranks remain individually recorded in [ranked baseline](../data/ranked_consolidation_validation.csv) and [revised umbrella ranking](../data/acabq_2027_ranked_consolidation.csv).
+
+## Phase 10 retrospective source check
+
+The [selected official 2025–2026 retrospective audit](retrospective_2025_2026_overlap_audit.md) supplies 36 adjudicated relationships, including already joint UNOWAS/UNOCA field activity and regional brief inputs, UNRCCA/UNAMA courses and integrated DPPA/DPO policy/Council products. [Seven parent candidates](../data/retrospective_2025_2026_candidate_updates.csv) are annotated with match IDs in the [existing research rank table](../data/acabq_2027_ranked_consolidation.csv). **The 14 rankings remain unchanged** because the sample is purposive and no duplicate financial charges are verified. Reusable work should be standardized, not mechanically removed from mandated final outputs.

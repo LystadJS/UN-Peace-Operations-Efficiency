@@ -86,6 +86,10 @@ All [32 output comparisons](../data/public_deliverable_crosswalk_2027.csv) are *
 
 The ACABQ 2027 report listing is documented separately in [ACABQ source-status audit](acabq_2027_reconciliation_status.md). **Its full recommended financial adjustments cannot yet be matched to these programmatic deliverables** without access to the underlying report texts. The above proposed activities are **Secretary-General's 2027 plans**, not ACABQ approval or General Assembly resource decisions.
 
-## Recommended next public work
+## Retrospective 2025–2026 matching — completed 8 October 2026
 
-Before access to internal ledgers, retrieve published Council report identifiers for the first three pairings and collect public course, field-visit and project announcements for a 2025–2026 retrospective sample. Use the same pairing IDs and release tests to determine which apparent overlaps survive detailed document matching. This public validation can advance independently of ACABQ full-text recovery, but cannot establish quantitative incremental savings.
+The [retrospective source audit](retrospective_2025_2026_overlap_audit.md) contains **42 official-source references**, **38 canonical events/products**, **36 adjudicated pair comparisons**, and links to **19 of the 32 planned output categories** in this 2027 crosswalk. Its strongest evidence establishes already joint UNOWAS–UNOCA missions and workshops, joint UNRCCA–UNAMA training, and DPPA–DPO guidance and Council appearances. The absence of a matched retrospective sample for the other 13 planned output categories **does not establish that they are duplicative or absent**.
+
+**Decision:** Reuse a common source event log, field-trip identity, training materials where mandates and cohorts permit, and controlled briefing-input packets. Preserve distinct Council reports and specialist training. No independently valued duplicate charge has been established. Review [11 ranked reuse tests](../data/retrospective_2025_2026_reuse_decisions.csv) and [match records](../data/retrospective_2025_2026_matches.csv) before any operational reorganization or monetary saving claim.
+
+**Further public work:** Obtain actual versioned course materials and the full Council report sections where only index metadata was accessible; expand this purposive sample into a systematic 2025–2026 collection using canonical document and event identifiers. No restricted transaction files are needed until the separate cost audit.

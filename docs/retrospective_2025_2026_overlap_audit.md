@@ -46,6 +46,18 @@ DPPA and DPO jointly undertook the [27 May 2025 General Assembly consultation](h
 
 **Defensible reuse:** a controlled **single-source policy/guidance register**, joint briefing production tracker and one canonical Council event ID per actual appearance. **Not established:** that separate DPPA and DPO teams invoiced separately for the same product or that already joint structures warrant a second merger. Evidence: **EV026–EV032; MX023–MX028**.
 
+### How a shared event can support two legally distinct reports
+
+```mermaid
+flowchart LR
+  A["One joint workshop: Dakar, 26–27 Feb 2025"]
+  A --> B["UNOWAS SG report: S/2025/187"]
+  A --> C["UNOCA SG report: S/2025/342"]
+  D["UNOCA-led best-practices publication"] --> A
+```
+
+**The reusable object is the documented event and its underlying evidence**, not the distinct Secretary-General reporting mandates. The diagram depicts *documented references and distribution*, not quantified editorial time or costs.
+
 ## 2. Shared input ≠ redundant final deliverable
 
 ### Separate UNOWAS and UNOCA reports

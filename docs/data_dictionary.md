@@ -168,3 +168,21 @@ Units remain **US$ thousands**, except percent fields. **2027 SG original propos
 | `acabq_2027_unissued_report_scope.csv` | `report_symbol`: missing Add.1 SPM-wide and Add.4 Cluster III advisory reports; provenance and non-inference contract. |
 
 `scripts/validate_phase9_clusterIII.py` independently checks approved 2026 to proposed 2027 mission arithmetic (324549.9 to 325353.9), 19 prebudgeted initiatives summing to 14560.4, staff count changes, all 51 policy mappings, the 23-record hierarchy and the conditional scenario's non-official label.
+
+## Phase 10 — 2025–2026 source-identified outputs and event reuse
+
+All retrospective activity records are **selected published evidence** with actual dates or clearly marked month ranges. Matching evidence does not establish duplicate transaction payments.
+
+| File | Key and meaning |
+|---|---|
+| `retrospective_2025_2026_sources.csv` | `source_id`: 42 official-source URLs, titles, dates when available, report IDs, precise source limitations and access type. |
+| `retrospective_2025_2026_activities.csv` | `activity_id`: 38 analyst canonical event/output identities; one October **2024** workshop is explicitly excluded despite its practice note being published in April 2025. |
+| `retrospective_2025_2026_matches.csv` | `match_id`: 36 adjudicated relationships across the four target comparisons. Evidence distinguishes joint event, participant-only, two distinct outputs, common input, and unverified resemblance. |
+| `public_deliverable_crosswalk_2027.csv` | `output_pair_id`: original 32 2027 planned comparisons extended with actual 2025–2026 `MX...` references for **19** categories. Missing retrospective samples are not zero outputs. |
+| `retrospective_2025_2026_summary.csv` | `pairing`: four descriptive, nonrepresentative group coverage rows; not a population duplication-rate estimator. |
+| `retrospective_2025_2026_reuse_decisions.csv` | `case_id`: 11 ranked reuse/process tests, mandate caveats and required financial validation. |
+| `retrospective_2025_2026_candidate_updates.csv` | `candidate_id`: seven overarching research candidates with linked selected match IDs, no claims of finance redundancy; ranks deliberately retained. |
+| `scripts/validate_retrospective_matches.py` | Referential/temporal/source consistency and financial non-invention checks; standard library only. |
+| `scripts/render_retrospective_board.R` | Base R public review queue and summary from current CSV data. `tests/check_retrospective_board.R` validates the generated artifacts. |
+
+**Release restriction:** Published event identity or joint working does **not** certify duplicate cost, staff surplus, mandatory report removal, or net new savings. Source publication year must not replace original event year. Validated monetary savings remain `not_estimated`.

@@ -26,6 +26,6 @@ sg={x["spm_id"]:x for x in load("spm_2027_mission_budget","spm_id")}
 assert len(pending)==36
 for r in pending:
  assert r["sg_2027_proposal_usd_thousands"]==sg[r["spm_id"]]["regular_budget_2027_proposed_usd_thousands"]
- assert r["acabaq_recommended_2027_usd_thousands"]=="not_extracted"
+ assert r["acabq_recommended_2027_usd_thousands"]=="not_extracted"
 assert abs(sum(float(r["sg_2027_proposal_usd_thousands"]) for r in pending)-419411.9)<0.1
 print("PHASE7 PASS: 18 requested extract packages, 32 documented paired deliverables, 36 SG SPM amounts and no invented ACABQ numeric recommendations.")

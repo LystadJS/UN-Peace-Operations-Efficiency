@@ -105,8 +105,8 @@ def validate():
     assert sum(x["date_or_completeness_warning"]=="2024_event_not_in_2025_2026_activity_population" for x in master)==1
     assert sum(x["date_or_completeness_warning"]=="source_date_year_conflict_quarantine" for x in master)==1
     assert len({x["official_symbol"] for x in master if x["stream"]=="Council_SG_report"})==132
-    assert len({x["meeting_base_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2025"})==255
-    assert len({x["meeting_base_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2026"})==151
+    assert len({x["base_meeting_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2025"})==255
+    assert len({x["base_meeting_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2026"})==151
     assert len(coverage)==4 and all(x["full_census_certified"]=="no" for x in coverage)
     selected_ids={x["symbol"] for x in selected}
     assert selected_ids <= reportids

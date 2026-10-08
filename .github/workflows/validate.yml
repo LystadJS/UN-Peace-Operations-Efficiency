@@ -61,3 +61,5 @@ jobs:
         run: |
           Rscript scripts/render_systematic_census.R . /tmp/peace-systematic-census
           Rscript tests/check_systematic_census_board.R /tmp/peace-systematic-census
+      - name: Validate scoped SG Council reports and public meeting field training coverage
+        run: python3 scripts/validate_census_2025_2026.py

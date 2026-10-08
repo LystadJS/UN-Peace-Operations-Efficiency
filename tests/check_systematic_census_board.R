@@ -1,0 +1,12 @@
+#!/usr/bin/env Rscript
+args<-commandArgs(trailingOnly=TRUE)
+if(length(args)!=1L)stop("Usage: Rscript tests/check_systematic_census_board.R OUTPUT_DIR")
+x<-read.csv(file.path(args[[1L]],"systematic_census_counts.csv"),stringsAsFactors=FALSE)
+q<-read.csv(file.path(args[[1L]],"systematic_shared_production_queue.csv"),stringsAsFactors=FALSE)
+lines<-readLines(file.path(args[[1L]],"systematic_public_census_board.md"),warn=FALSE)
+stopifnot(nrow(x)==8L,nrow(q)==13L,sum(x$count[1:2])==132L)
+stopifnot(x$count[[4]]==255L,x$count[[6]]==151L)
+stopifnot(all(q$verified_new_net_savings_usd=="not_estimated"))
+stopifnot(any(grepl("115 informal consultations",lines,fixed=TRUE)))
+stopifnot(any(grepl("No incremental net savings have been estimated",lines,fixed=TRUE)))
+cat("SYSTEMATIC CENSUS R BOARD TEST PASSED: 132 SG reports, 406 distinct Council formal meeting IDs across snapshot, 13 guarded research options.\n")

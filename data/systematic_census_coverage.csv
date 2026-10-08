@@ -1,0 +1,5 @@
+"stream","records","record_population","coverage","completed_retrieval","remaining_gap","full_census_certified"
+"Council_SG_reports_indexed","78","78_from_selected_mission_and_peace_operations_coverage_families_not_all_UN_SC_reports","indexed_from_official_annual_2025_2026_list","identity_and_date_only","full_text_for_78_indexed_records_and_any_target_report_families_not_selected","no"
+"Council_meetings_identified","10","selected_public_events_only_8_meeting_ids_and_2_ID_unresolved","official_meeting_calendars_and_verbatim_plus_prior_research","8_meeting_IDs_two_unresolved_speech_events","formal_meeting_population_2025_2026_not_extracted_systematically","no"
+"Canonical_field_training_reports_and_events","46","mission_and_department_published_notices_plus_archived_sample","38_prior_plus_8_new_event_records","45_records_within_2025_2026_and_one_2024_excluded","all_archive_pagination_unindexed_internal_training_and_field_visits","no"
+"Cross_pillar_match_adjudications","36","prior_source_matched_selected_sample","2025_2026_purposive_36_relations","36_pairs_not_reclassified_automatically_from_metadata","new_indexed_reports_and_events_not_yet_paragraph_matched","no"

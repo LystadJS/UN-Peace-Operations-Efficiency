@@ -48,9 +48,9 @@ def validate(source_dir=None):
         assert sg[mid]["net_incremental_savings"]=="not_estimated"
         maintain=sum(float(x[k]) for k in ("ga_approved_military_police_usd_thousands","ga_approved_civilian_usd_thousands","ga_approved_operational_usd_thousands"))
         share=sum(float(x[k]) for k in ("ga_support_account_share_usd_thousands","ga_logistics_base_share_usd_thousands","ga_regional_service_centre_share_usd_thousands"))
-        assert eq(maint,x["ga_approved_maintenance_usd_thousands"])
-        assert eq(maint+share,x["ga_appropriation_usd_thousands"])
-        assert eq(maint-float(x["sg_proposal_usd_thousands"]),x["adopted_minus_proposed_usd_thousands"])
+        assert eq(maintain,x["ga_approved_maintenance_usd_thousands"])
+        assert eq(maintain+share,x["ga_appropriation_usd_thousands"])
+        assert eq(maintain-float(x["sg_proposal_usd_thousands"]),x["adopted_minus_proposed_usd_thousands"])
     assert eq(sum(float(x["sg_proposal_usd_thousands"]) for x in ga.values()),4120950.7)
     assert eq(sum(float(x["ga_approved_maintenance_usd_thousands"]) for x in ga.values()),4028188.0)
     assert eq(sum(float(x["ga_appropriation_usd_thousands"]) for x in ga.values()),4442119.4)

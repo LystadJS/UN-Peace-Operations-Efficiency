@@ -1,64 +1,70 @@
-# ACABQ-informed consolidation validation priorities — 2027
+# Comprehensive 2027 UN Peace Operations consolidation research ranking
 
-**Research-ranking revision, 8 October 2026. Not a list of approved cuts, duplicate costs or achievable monetary savings.**
+**8 October 2026 | 14 umbrella investigations + nine linked Cluster III mission work packages**
 
-## Decision rationale
+**This is a ranking of additional validation effort, not missions to abolish or financial savings.** New 2027 Cluster III evidence reconciles all nine continuing missions to the Secretary-General's original plan; main A/81/7 offers cross-cutting review priorities but, absent A/81/7/Add.1 and Add.4, supplies **no new Cluster III-specific ACABQ dollar adjustment**.
 
-The 2027 ACABQ source reports materially strengthen three *public-document* investigations: (1) common support services and mandatory client-service scope, (2) DPPA–DPO and mission/regional-interface structures, and (3) training expenditure tracing and scheduling. This changes the **order of investigation**, not the status of legally established missions or their mandates.
+## Overall research priorities
 
-The committee's **$182,500 Cluster I net adjustment, $189,300 non-SPM Section 3 adjustment and $26,700 Section 5 adjustment** are **separate advice on 2027 resources**, not a measured cost of DPPA–DPO duplication. Neither the base rank nor this revision certifies incremental net savings.
+| Rank | Candidate | Scope or function | Prior Phase 8 rank | Original Phase 3 rank | Evidence-backed next test |
+|---:|---|---|---:|---:|---|
+| 1 | C16 | shared services office | 1 | 4 | Clarify mandatory service baselines, client charging and retained delegated decisions |
+| 2 | C07 | cross mission transition | 4 | 8 | Monitor budgeted mission transitions and residual service costs, not prospective new savings |
+| 3 | C01 | support DPO regional desks | 2 | 5 | Compare regional offices, envoy interfaces and shared DPPA-DPO products |
+| 4 | C04 | DPO policy evaluation training | 3 | 7 | Create course-specific cost and outcome comparisons; no identical training established |
+| 5 | C09 | regional partnerships | 6 | 14 | Compare regional products and client/meeting audiences, not mission mergers |
+| 6 | C02 | political reporting | 5 | 12 | Match named Council reports and source-to-recipient lineage |
+| 7 | C05 | knowledge management | 7 | 11 | Audit cross-entity ICT and information licenses and common knowledge management |
+| 8 | C12 | UNIFIL | 8 | 1 | Validate physical transfer and service readiness; $438.1k already prebudgeted |
+| 9 | C19 | UNISFA | 9 | 3 | GA-directed UNISFA translation and property stewardship review |
+| 10 | C15 | UNMISS | 10 | 2 | Track previous approved UNMISS abolishments and continuing output quality |
+| 11 | C03 | DPO combined PBPS mine police | 11 | 6 | Protect expert-police-mine action mandates while testing overhead |
+| 12 | C08 | UNSOS | 12 | 10 | Trace contractor claims without calling recoveries efficiency cuts |
+| 13 | C13 | MINUSCA quick impact projects | 13 | 9 | Protect separate QIP/PBF governance and funding rules |
+| 14 | C11 | information integrity | 14 | 13 | Document shared data/technology infrastructure; no verified overlap |
 
-## Revised 14-item investigative ranking
+The umbrella rank is **qualitative**, based on (1) express public ACABQ/GA concern, (2) evidence of a specifically testable service/procurement or deliverable workflow, (3) feasibility of public-document work now, and (4) protected mandates and implementation risk. Financial scale is **not used as a proxy for waste**. In contrast to Phase 8, **C07 (cross-mission transitions)** rises from fourth to second because the nine reconciled Cluster III proposals document **19 specific, already embedded efficiency estimates totaling $14.5604m** and several concrete support-service handovers. **C09 (regional coordination)** now ranks ahead of C02 (general reporting) because UNOWAS–UNOCA and UNOWAS–Cameroon/Nigeria operational linkages are source-identified.
 
-| New rank | Candidate | Investigated funding or functional scope | Prior Phase 3 rank | Tier | Key 2027 ACABQ documentary evidence |
-|---:|---|---|---:|---|---|
-| 1 | C16 | shared services office | 4 | T1 | CAP/RSCE/common platform scope and sanctions admin work; recommended design and staffing reviews, no attributable extra savings |
-| 2 | C01 | support DPO regional desks | 5 | T1 | DPPA/DPO, liaison, envoys and regional desks; explicit request to holistically examine field and headquarters roles |
-| 3 | C04 | DPO policy evaluation training | 7 | T1 | Training expenditure tracking and administrative pooling; UNMOGIP travel change is specific to one mission |
-| 4 | C07 | cross mission transition | 8 | T1 | Syria phased relocation, Yemen UNMHA handover and aviation; proposed ACABQ cuts not new duplicate expense |
-| 5 | C02 | political reporting | 12 | T2 | Regional and SPM reporting lineage may use common information |
-| 6 | C09 | regional partnerships | 14 | T2 | Regional organization contacts, envoys, joint dialogue and resident-coordinator synergies |
-| 7 | C05 | knowledge management | 11 | T2 | ICT subscriptions, common knowledge management and central platforms |
-| 8 | C12 | UNIFIL | 1 | T2 | UNIFIL property handover remains a timed implementation check |
-| 9 | C19 | UNISFA | 3 | T2 | UNISFA translation, transferred assets and utilization review already requested by GA |
-| 10 | C15 | UNMISS | 2 | T3 | 91 civilian abolishments already GA approved; do not propose same cuts |
-| 11 | C03 | DPO combined PBPS mine police | 6 | T3 | DPO policy/capacity pooling requires specialist-mandate constraints; CTED independence is a separate legal negative control |
-| 12 | C08 | UNSOS | 10 | T3 | UNSOS contractor recovery is an integrity issue, not overlapping service cost |
-| 13 | C13 | MINUSCA quick impact projects | 9 | T3 | MINUSCA/PBF separate financing and governance; grants transparency priorities |
-| 14 | C11 | information integrity | 13 | T3 | Information-integrity practices and digital resources support common platforms |
+## Nine mission work packages — subprojects, not additive appropriations
 
-The [updated baseline ranking](../data/ranked_consolidation_validation.csv) preserves its **previous Phase 3 rank** and previously verified whole-budget *exposure* labels. The [2027 ACABQ ranking CSV](../data/acabq_2027_ranked_consolidation.csv) provides exact source/paragraph anchors, new rank, feasibility tier, public next step, and funding restrictions. **Whole mission budgets and department spending slices are not estimated redundant financial exposure.**
+| Research priority within Cluster III | Mission | Parent candidate | Estimated 2027 efficiencies already in SG request | Work package |
+|---:|---|---|---:|---|
+| 1 | BINUH | C07 | $1.4000M* | Verify BINUH-UNSOH already reported shared support handover and $1.4m prebudgeted aviation efficiency versus wider internal charge |
+| 2 | UN Special Coordinator for Lebanon (UNSCOL) | C12 | $0.4468M* | Verify six UNIFIL vehicles and IT/rations receipt; $438.1k transfer benefit already in SPM proposed plan |
+| 3 | UNAMA | C07 | $7.5810M* | Monitor already planned 61 UNAMA post abolishments and protection of Afghanistan monitoring outputs |
+| 4 | UNSMIL | C07 | $3.1327M* | Verify UNSMIL Tripoli compound $2.63m budgeted efficiency and support-provider residual security costs |
+| 5 | UN Verification Mission in Colombia | C07 | $1.9378M* | Validate Colombia fixed-wing flight discontinuation and alternative mandated verification access |
+| 6 | UNOWAS | C09 | $0.0000M* | Join unique UNOWAS and UNOCA regional reports and meetings to identify genuinely reusable inputs |
+| 7 | UNOCA | C09 | $0.0621M* | Map UNOCA distinct mandates, UNOWAS-coordinated risk products and planned airline use |
+| 8 | Cameroon-Nigeria Mixed Commission | C16 | $0.0000M* | Separate existing CNMC/UNOWAS co-location from additional independent administrative overhead |
+| 9 | UN Regional Centre for Preventive Diplomacy in Central Asia | C02 | $0.0000M* | Map UNRCCA early-warning outputs versus UNAMA Afghanistan country-specific outputs |
 
-## Highest-priority experiments
+<caption>*Zero itemized figures in Table 3 are not evidence that the three regional entities have no efficiencies.  All dollar amounts in this column are **already reflected in SG-proposed budgets**, not verified actual or additional net savings.</caption>
 
-### 1 — C16: Shared-service architecture and client charging
+**No monetary values in the child rows can be added to their umbrella parent as a separate financial exposure.** The 2027 mission totals and initiative identifiers, along with 2026–2027 comparisons, are in [nine-mission budget reconciliation](../data/acabq_2027_clusterIII_sg_baseline.csv). The [23-record comprehensive hierarchy](../data/consolidation_comprehensive_2027.csv) flags parent-child overlap and excludes recognized incremental savings.
 
-[A/81/7 Chapter I paragraphs 79–93](https://docs.un.org/en/A/81/7#page=73) and [Cluster I paragraph 20](https://docs.un.org/en/A/81/7/Add.2#page=8) directly request common service baselines, workload and cost comparisons, and assessment of what support remains necessary in specialized offices. This is strongest for a **service catalogue and legal delegation comparison**, not an immediate order to abolish finance/HR posts. It directly complements already mapped RSCE, Geneva GTA, UNSOH and Kuwait support arrangements.
+### Immediate policy questions
 
-### 2 — C01: DPPA–DPO regional and envoy/field interface
+**1. Shared services (C16).** Compare mandatory CAP/shared service categories with mission-specific retained planning, legal and delegated authority functions, and quantify no assumed financial saving. A/81/7 Chapter I paras. 79–93 requires common service definitions, objective cost/service metrics and clearer governance; BINUH–UNSOH, UNOWAS–CNMC and planned UNIFIL–UNSCOL transfers have public implementation evidence but not complete transactional accounting.
 
-[A/81/7 Part II Section 3 paragraph II.7](https://docs.un.org/en/A/81/7#page=118) and [A/81/7/Add.2 paragraphs 7–9](https://docs.un.org/en/A/81/7/Add.2#page=3) explicitly invite reviews of regional offices, liaison, field capacity and SPM/DPPA synergies. **The 2027 Cluster I budget does not contain proposed mergers of special envoy offices**. This is an investigative gap and a possibility to map deliverables, not proof that an entire envoy office is superfluous.
+**2. Mission transitions (C07).** Test effectiveness of UNAMA planned staff revisions, UNSMIL premises and air requirements, Colombia aviation, BINUH transferred services and UNSCOL asset handovers. The reported **$14.5604m** is **pre-budgeted estimated 2027 efficiency** under SG Add.4; do not count it a second time. Preserve operational readiness, evacuation and sensitive political missions.
 
-### 3 — C04: Shared training administration
+**3. DPPA–DPO and regional functions (C01/C09/C02).** Use the [32-pair deliverable map](../data/public_deliverable_crosswalk_2027.csv) for UNOWAS/UNOCA, UNAMA/UNRCCA and departmental reporting; trace document IDs and recipients. A/81/7 Section 3 para. II.7 requests a holistic review but does not declare any pair of missions or Council reports interchangeable.
 
-[A/81/7 Chapter I paragraphs 68–69](https://docs.un.org/en/A/81/7#page=62) identifies lack of activity-based training cost tracking and calls for systematic expenditure/outcome reporting. It recognizes scope for consolidating arrangements. Section 5 Table II.23's **$8,500 UNMOGIP training travel reduction** is *mission-specific* and must not be applied to DPPA/DPO training totals.
+**4. Training (C04).** A/81/7 Chapter I paras. 68–69 notes the absence of systematic activity-based training expense tracking. Compare vendor services, travel procurement and content-administration, not specialized medical, police, mine-action, military or mediation qualifications as though they were identical.
 
-### 4 — C07: Cross-mission wind-down and transition
+### Hard negative controls
 
-[A/81/7/Add.2 paragraphs 11, 21, 23, 31 and 32](https://docs.un.org/en/A/81/7/Add.2#page=9) creates explicit checkpoints for Syria relocation/leadership, UNMHA-to-Yemen transferred support, staff needs and aircraft utilization. Those budget recommendations are already part of the **ACABQ-adjusted 2027 advisory baseline** and cannot be re-counted as a prospective reform benefit.
+- **CTED independence:** A/81/7/Add.3 para. 5 records Member States' rejection of integrating counter-terrorism bodies' substantive mandates. Administrative cooperation must preserve CTED's independent analysis.
+- **UNAMA and BINUH workforce reductions:** Proposed staff decreases already in SG's Cluster III budgets cannot be re-presented as new abolition options.
+- **UNIFIL and Yemen/UNMHA:** Already mandated closures, aviation baselines and security obligations are not automatically additional efficiencies.
+- **Sanctions Ombudsperson and Focal Point:** Investigative and independent delisting functions are not substantively interchangeable.
+- **General Assembly budget authority:** A proposal or ACABQ recommendation is not a GA appropriation. A mission's gross budget is not its avoidable overhead.
 
-### 5–7: Reporting, regional partnerships and knowledge systems
+## Audit completion conditions
 
-These are lower-confidence **common production and procurement** hypotheses. Compare actual outputs, source lineage, customer mandate and software/vendor contracts. One department may provide strategic political advice while another provides peacekeeping operational assessment, even where both use the same geopolitical information.
+Each actionable recommendation requires independent identification of the exact duplicate *service* and client, separately financed cost object, authority to consolidate, counterfactual service cost, contract liabilities, staffing/asset consequences, operational and mandate safeguards, and subsequent independently audited net benefit. **All 14 umbrellas and nine mission child cases remain `not_estimated` for incremental net savings.**
 
-## Mandate and institutional negative control
+Sources: [2027 nine-mission SG baseline](../data/acabq_2027_clusterIII_sg_baseline.csv) · [A/81/7 cross-cutting framework](../data/acabq_2027_main_crosscutting_framework.csv) · [51 applicability mappings](../data/acabq_2027_clusterIII_crosscutting_map.csv) · [overall ACABQ reconciliation](acabq_2027_reconciliation_status.md).
 
-**Counter-Terrorism Committee Executive Directorate:** [A/81/7/Add.3 paragraph 5](https://docs.un.org/en/A/81/7/Add.3#page=2) records Member States' rejection of merging counter-terrorism bodies and their insistence on independent CTED analytical assessment. Do **not** label CTED, UNOCT and UNODC mandates as financially interchangeable. Joint scheduling and administrative support may still warrant review under C16, provided their mandates and data separation remain intact. C17 remains a **protected control**, not a ranked merger target.
-
-## Ranking method
-
-Rank 1–14 is a **qualitative public-investigation priority**, ordered by (a) directness of ACABQ recommendation, (b) specificity of a testable service or deliverable, (c) public-data feasibility, and (d) legal/mandate operational risk. No unobserved contract cost, vacancy, travel-day or gross budget was used as a numerically estimated saving. Equal research-tier labels are not probabilities or economic forecasts.
-
-**Completion gate:** A change may be recommended for financial approval only with unique cost objects, realistic counterfactual, service continuity, legal authority, explicit implementation expenses, and source-verified post/asset/charge status. All 14 remain **not estimated** for incremental savings.
-
-Source dataset: [ACABQ financial actions](../data/acabq_2027_financial_actions.csv) · [20 qualitative directives](../data/acabq_2027_qualitative_directives.csv) · [mission reconciliation](../data/acabq_2027_mission_reconciliation.csv) · [full report](acabq_2027_reconciliation_status.md).
+The earlier Phase 3 and Phase 8 ranks remain individually recorded in [ranked baseline](../data/ranked_consolidation_validation.csv) and [revised umbrella ranking](../data/acabq_2027_ranked_consolidation.csv).

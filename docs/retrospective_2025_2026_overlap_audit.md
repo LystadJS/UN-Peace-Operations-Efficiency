@@ -124,3 +124,8 @@ This is a **purposive sample**, not a population-wide automated scrape of all 20
 Run \`python3 scripts/validate_retrospective_matches.py\` to check identifiers, 2024 exclusion, 2025–2026 boundaries, classification integrity, all 32 2027 planned categories, source URLs, and the prohibition on fabricated incremental savings. The base-R renderer can create a compact retrospective board from these public records.
 
 **Release verdict:** Published material supports **existing joint activities and reusable inputs**, but **zero independently established separately charged duplicate services** and **no monetized incremental savings**. This is **not an assertion that true duplicate spending is zero**.
+
+
+## Phase 11 extension — official-index scoped Council census
+
+The [2025–2026 census](census_2025_2026_public_evidence.md) expands Council SG report identities to **79 reports across 17 relevant series** and the documented public activity collection to **49 events/products**. This does not supersede the original **36 in-depth retrospective adjudications**, which remain a deliberately selected source sample. The [14 new report-pair screens](../data/census_2025_2026_report_pair_tests.csv) are hypotheses requiring full-text examination and preserved mandate boundaries, not new findings of duplicate authoring or paid expenses.

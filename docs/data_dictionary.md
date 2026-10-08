@@ -212,3 +212,13 @@ All retrospective activity records are **selected published evidence** with actu
 | `render_systematic_census.R` | Base-R reproducible census and research-board summaries; engineering fixture tests in GitHub Actions. |
 
 **Critical anomaly:** `S/2026/513` is listed in the 2026 index with an indexed date in **2025**. This is retained and flagged; do not count it as a verified 2026 chronology without inspecting its original document. **Do not combine the 78 target-family report count with 132 full-index records as if disjoint.**
+
+## Phase 11 — Scoped Security Council report identity census
+
+- `census_2025_2026_security_council_reports.csv`: **79 distinct SG report symbols**, indexed against official 2025/2026 UNSC report lists in **17 selected issue/mission series**. Record identity, not full-text verified duplication. Excludes other report series and different Council document types.
+- `census_2025_2026_public_activities.csv`: **49 official-source public activity/product records**, including selected meetings, field visits and training; one 2024 training-related practice-note event is an explicit exclusion. New activities are identified independently, with host and participant roles distinct.
+- `census_2025_2026_report_pair_tests.csv`: **14 report-identity pairs** with legally distinct reporting obligations and hypotheses about reusable research input. No passage-level proof or priced duplicate delivery.
+- `census_2025_2026_coverage_matrix.csv`: Five source-scope classifications, including explicit statements that Council meetings, field activities and trainings are not comprehensive.
+- `scripts/validate_census_2025_2026.py`: Standard-library schema, annual symbol, evidence-scope and no-savings checks.
+
+The project must not assert a universe-wide 2025–2026 activity census from the selected mission news results or extrapolate duplicated expenditure from Council report title similarity.

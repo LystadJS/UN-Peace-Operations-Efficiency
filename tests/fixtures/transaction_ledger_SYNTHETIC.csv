@@ -1,0 +1,8 @@
+"record_id","case_id","event_type","object_key","source_entity","destination_entity","period_start","period_end","event_date","amount_usd","quantity","document_ref","evidence_status"
+"SYNTH01","UNIFIL_UNSCOL","asset_release","SYNTH_VEHICLE01","UNIFIL","UNSCOL","2026-10-01","2026-10-02","2026-10-01","100","1","SYNTH_FORM_A","synthetic"
+"SYNTH02","UNIFIL_UNSCOL","asset_receipt","SYNTH_VEHICLE01","UNIFIL","UNSCOL","2026-10-01","2026-10-02","2026-10-02","90","1","SYNTH_FORM_B","synthetic"
+"SYNTH03","BINUH_UNSOH","client_payable","SYNTH_CHARGE01","BINUH","UNSOH","2026-09-01","2026-09-30","2026-10-01","200","0","SYNTH_BILL","synthetic"
+"SYNTH04","BINUH_UNSOH","provider_receivable","SYNTH_CHARGE01","BINUH","UNSOH","2026-09-01","2026-09-30","2026-10-02","200","0","SYNTH_AR","synthetic"
+"SYNTH05","RSCE","allocation_debit","SYNTH_RSCE_ALLOC01","SPM01","RSCE","2026-09-01","2026-09-30","2026-10-01","300","0","SYNTH_DEBIT","synthetic"
+"SYNTH06","RSCE","allocation_credit","SYNTH_RSCE_ALLOC01","SPM01","RSCE","2026-09-01","2026-09-30","2026-10-02","300","0","SYNTH_CREDIT","synthetic"
+"SYNTH07","BINUH_UNSOH","client_payment","SYNTH_CHARGE02","BINUH","UNSOH","2026-09-01","2026-09-30","2026-10-03","100","0","SYNTH_PAY","synthetic"

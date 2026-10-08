@@ -31,3 +31,13 @@ jobs:
         run: |
           Rscript scripts/audit_transaction_ledger.R tests/fixtures/transaction_ledger_SYNTHETIC.csv /tmp/un-peace-operations-synthetic
           Rscript tests/check_transaction_engine.R /tmp/un-peace-operations-synthetic
+      - name: Validate public decision gates and nonadditive finance map
+        run: python3 scripts/validate_public_only.py
+      - name: Build reproducible public decision queue
+        run: |
+          Rscript scripts/render_public_decision_board.R . /tmp/peace-efficiency-public
+          Rscript tests/check_public_board.R /tmp/peace-efficiency-public
+      - name: Exercise conditional break-even engine using synthetic data only
+        run: |
+          Rscript scripts/evaluate_conditional_options.R tests/fixtures/scenarios_SYNTHETIC.csv /tmp/peace-efficiency-scenarios
+          Rscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios

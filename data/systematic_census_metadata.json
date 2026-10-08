@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-10-08",
+  "limitations": [
+    "Index entries are not a census of all UN peace-operations products.",
+    "Meeting rows may include resumptions; do not confuse S/PV documents with distinct Council meetings.",
+    "2026 index is as published and may omit meetings since last indexed date.",
+    "2026 report index includes one observed 2025-year metadata anomaly; preserve raw date.",
+    "Meeting attendance, drafting overlap, shared inputs, and duplicate invoices are not asserted from topic matching.",
+    "Field travel and training are not comprehensively indexed in these Council registers."
+  ],
+  "meeting_record_rows": {
+    "2025": 296,
+    "2026": 178
+  },
+  "official_2025_formal_meeting_benchmark": 255,
+  "official_2025_informal_consultations_not_included": 115,
+  "report_rows": {
+    "2025": 84,
+    "2026": 48
+  },
+  "unique_formal_meeting_base_ids": {
+    "2025": 255,
+    "2026": 151
+  }
+}

@@ -48,7 +48,7 @@ DATE_RE = re.compile(
 DATE_FORMAT = "%d %B %Y"
 FAMILY_RULES = [
     ("UNOWAS", r"West Africa and the Sahel|UNOWAS"),
-    ("UNOCA", r"Central Africa|Regional Office for Central Africa|UNOCA"),
+    ("UNOCA", r"\bCentral Africa\b|Regional Office for Central Africa|UNOCA"),
     ("UNAMA", r"Afghanistan"),
     ("UNSCOL_UNIFIL", r"resolution 1701|Lebanon"),
     ("UNIFIL", r"United Nations Interim Force in Lebanon|UNIFIL"),
@@ -262,11 +262,11 @@ def main():
         raise AssertionError("Future-dated meeting in frozen as-of snapshot")
     stats = []
     for year in (2025,2026):
-        stats.append(dict(year=year,scope="SG_annual_report_index",index_items=n_reports[year],
+        stats.append(dict(source_id=f"SG_{year}",year=year,scope="SG_annual_report_index",index_items=n_reports[year],
               unique_base_meetings="not_applicable",
               annual_official_total="not_asserted_as_all_council_documents",
               census_status="index_extracted_as_of_2026_10_08"))
-        stats.append(dict(year=year,scope="Council_formal_meeting_records",
+        stats.append(dict(source_id=f"MEET_{year}",year=year,scope="Council_formal_meeting_records",
               index_items=n_meets[year],
               unique_base_meetings=unique_meets[year],
               annual_official_total="255_formal_2025" if year==2025 else "not_yet_complete_year",

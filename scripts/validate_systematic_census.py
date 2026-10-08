@@ -41,7 +41,7 @@ def validate():
     for row in report:
         assert date.fromisoformat(row["indexed_date"])<=AS_OF
         assert int(row["index_year"]) in (2025,2026)
-        assert row["document_symbol"].startswith("S/"+row["index_year"]+"/") if False else True
+        assert row["document_symbol"].startswith("S/"+row["index_year"]+"/")
         assert row["source_link"].startswith("https://")
         assert row["registry_url"].startswith("https://main.un.org/securitycouncil")
         assert row["date_year_mismatch"]==str(row["indexed_date"][:4]!=row["index_year"]).lower()

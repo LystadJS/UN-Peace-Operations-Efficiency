@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "scripts/build_systematic_census.py"
+      - "scripts/validate_systematic_census.py"
       - ".github/workflows/systematic_census.yml"
   workflow_dispatch:
 

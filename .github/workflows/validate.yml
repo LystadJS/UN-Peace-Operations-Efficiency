@@ -45,3 +45,5 @@ jobs:
         run: python3 scripts/validate_phase7.py
       - name: Reconcile ACABQ advice against 2027 SG proposals and research ranks
         run: python3 scripts/validate_acabq_2027.py
+      - name: Validate nine Cluster III SG mission baselines and main ACABQ framework
+        run: python3 scripts/validate_phase9_clusterIII.py

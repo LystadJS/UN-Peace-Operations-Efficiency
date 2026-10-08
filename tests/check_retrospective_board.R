@@ -1,0 +1,15 @@
+#!/usr/bin/env Rscript
+# Public-source renderer engineering test (not financial validation).
+args <- commandArgs(trailingOnly=TRUE)
+if(length(args)!=1L)stop("Usage: Rscript tests/check_retrospective_board.R OUTPUT_DIR")
+g <- read.csv(file.path(args[[1L]],"four_group_retrospective_summary.csv"),stringsAsFactors=FALSE)
+d <- read.csv(file.path(args[[1L]],"reusable_work_review_queue.csv"),stringsAsFactors=FALSE)
+lines <- readLines(file.path(args[[1L]],"retrospective_review_board.md"),warn=FALSE)
+stopifnot(nrow(g)==4L,nrow(d)==11L,anyDuplicated(d$case_id)==0L)
+stopifnot(sum(g$retrospective_adjudication_records)==36L)
+stopifnot(sum(g$categories_with_retrospective_support)==19L)
+stopifnot(all(g$costed_duplicate_work_confirmed==0L))
+stopifnot(all(d$incremental_cost_avoided_usd=="not_estimated"))
+stopifnot(any(grepl("2024 workshop excluded",lines,fixed=TRUE)))
+stopifnot(any(grepl("No separately charged duplicate service verified",lines,fixed=TRUE)))
+cat("RETROSPECTIVE R BOARD TEST PASSED: four groups, 11 review cases, 19/32 selected source matches, no monetary invention.\n")

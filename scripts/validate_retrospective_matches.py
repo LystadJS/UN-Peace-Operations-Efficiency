@@ -73,9 +73,8 @@ def validate() -> None:
             assert row["analysis_period_status"] == "2024_excluded"
             assert start.year == end.year == 2024
         else:
-            assert row["analysis_period_status"] == "2025"
-            if start.year == 2026:
-                assert row["analysis_period_status"] == "2026"
+            assert row["analysis_period_status"] == str(start.year)
+            assert start.year == end.year
             assert start.year in (2025, 2026)
             assert end <= date(2026, 10, 8)
         assert row["verified_unique_paid_cost"] == "not_available"

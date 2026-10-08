@@ -1,3 +1,5 @@
+> **Historical Phase 10 executive readout.** The current systematic index totals and additional 2026 events are in the [Phase 11 executive brief](systematic_2025_2026_executive_brief.md). This earlier readout remains as a prior evidence checkpoint.
+
 # Executive readout — 2025–2026 retrospective UN peace-operations overlap
 
 **8 October 2026 | Public-document evidence only**

@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/retrospective_2025_2026_executive_brief.md"><strong>Current executive findings (2025–26)</strong></a>
+  <a href="docs/systematic_2025_2026_executive_brief.md"><strong>Current systematic census findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -174,3 +174,13 @@ The [source catalogue](data/retrospective_2025_2026_sources.csv), [canonical act
 
 Validate with `python3 scripts/validate_retrospective_matches.py`. Generate the current review queue via `Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board`; a base-R acceptance test runs in CI. No confidential finance records are needed for this documentary phase.
 
+
+## Phase 11 — Systematic 2025–2026 Council and mission-publication census
+
+**[Current executive brief](docs/systematic_2025_2026_executive_brief.md)** · **[Full methodological and reuse report](docs/systematic_2025_2026_census.md)** · [Reproducible source-quality checks](scripts/validate_systematic_census.py).
+
+The official Council annual indexes yield **132 Secretary-General reports** (84 from 2025, 48 from 2026 through 8 October) and **474 meeting-record variants** (296 and 178). **The 255 distinct 2025 formal Council meetings match the annual official total; 2026 currently has 151 distinct meeting IDs**, an incomplete-year snapshot. Resumptions are **not additional meetings**, and the Council's 115 informal 2025 consultations are separately counted in official statistics, not in the formal meeting ledger.
+
+The selected mission/department records now cover **46 canonical activities and outputs**, including one October **2024** event properly excluded from 2025–2026 despite a 2025 publication date. These news/event records are **not an exhaustive site-wide field/training census**. There are **36 earlier adjudicated cases and nine supplementary cases**, plus a [13-case shared-production shortlist](data/systematic_shared_production_options.csv). The source-indexed reports and meeting variants are integrated as [652 nonadditive record views](data/systematic_master_record_views_2025_2026.csv); this is **not** a claim of 652 unique substantive products.
+
+Research inputs: [full Secretary-General report index](data/systematic_sg_reports_2025_2026.csv) · [Council formal-meeting and resumption records](data/systematic_sc_meetings_2025_2026.csv) · [selected field/training events](data/systematic_field_training_activity_2025_2026.csv) · [15 source-pair screening hypotheses](data/systematic_council_report_pair_candidates.csv) · [nine further adjudications](data/systematic_2025_2026_additional_matches.csv) · [coverage status](data/systematic_census_coverage.csv). Run `python3 scripts/validate_systematic_census.py`, or generate a public [R review board](scripts/render_systematic_census.R). **No actual duplicate financial charges or new net savings are supported by these sources.**

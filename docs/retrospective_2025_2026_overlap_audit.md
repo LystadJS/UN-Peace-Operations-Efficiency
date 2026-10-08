@@ -1,3 +1,5 @@
+> **Historical Phase 10 source sample.** This was the 42-source/38-event snapshot. The expanded 2025–2026 official Council index and 53-source/46-activity supplemental sample are now available in the [Phase 11 systematic census](systematic_2025_2026_census.md). The original adjudications remain valid, but source/event counts here are *historical snapshot figures*, not the current project total.
+
 # Retrospective 2025–2026 peace-operations overlap and reuse audit
 
 **Evidence release:** 8 October 2026 · **Scope:** deliberately selected public UN records, not a complete census · **Financial evidence:** no separately paid duplicate service verified.

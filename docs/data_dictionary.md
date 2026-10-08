@@ -186,3 +186,29 @@ All retrospective activity records are **selected published evidence** with actu
 | `scripts/render_retrospective_board.R` | Base R public review queue and summary from current CSV data. `tests/check_retrospective_board.R` validates the generated artifacts. |
 
 **Release restriction:** Published event identity or joint working does **not** certify duplicate cost, staff surplus, mandatory report removal, or net new savings. Source publication year must not replace original event year. Validated monetary savings remain `not_estimated`.
+
+
+## Phase 11 — Systematic annual Council registry snapshot
+
+**Index window:** 1 January 2025–8 October 2026. **Council report and meeting indexes are comprehensive relative to the published registry snapshot**, but full report texts, meeting transcripts, public field notices and training event population coverage are distinct tasks. Some registry metadata may contain anomalies and are preserved rather than silently corrected.
+
+| File | Record identity and release limitation |
+|---|---|
+| `systematic_sg_reports_2025_2026.csv` | `document_symbol`: 132 official annual SG report index rows (84 in 2025; 48 in 2026 through as-of). Fields include source-link, mandate family and metadata mismatch flags. |
+| `systematic_sc_meetings_2025_2026.csv` | `record_id`: 474 distinct S/PV document variant records, including resumptions. `meeting_base_id` identifies **255 unique 2025** and **151 currently indexed 2026** formal meetings. |
+| `systematic_census_source_snapshots.csv` | `source_id`: four source URL/snapshot/digest metadata rows; distinguishes annual Council index content from subsequent edits. |
+| `systematic_census_index_totals.csv` and `systematic_census_metadata.json` | Recorded 2025/2026 source totals and completeness; 2025 formal Council count 255, plus 115 **separate informal consultations**. |
+| `systematic_council_reports_2025_2026.csv` | `symbol`: 78 **target-family report records** selected for priority DPPA/DPO and mission comparisons; not the full index. |
+| `systematic_council_meetings_2025_2026.csv` | `source_id`: ten individually reviewed meetings/briefings (8 numbered and 2 number-unverified). Distinct from full official index. |
+| `systematic_master_record_views_2025_2026.csv` | `item_id`: 132 report + 474 meeting-variant + 46 mission-activity **record views**, not independent fiscal or substantive outputs. |
+| `systematic_field_training_activity_2025_2026.csv` | `activity_id`: 24 selected field, workshop, analytical and related records from original mission-activity sample; site archives are not exhaustively collected. |
+| `systematic_census_coverage.csv` | `stream`: explicit source population and unresolved field/news completeness flags. |
+| `systematic_council_meeting_population_benchmark.csv` | `statistic`: 2025 official formal public/private counts and consultations, 2026 missing full-year benchmark. |
+| `systematic_council_report_pair_candidates.csv` | `pair_id`: 15 mandated reporting pairs for *actual content matching*; only one has confirmed common underlying source event so far. |
+| `systematic_2025_2026_additional_matches.csv` | `match_id`: nine additional role-verified 2025–2026 activity and report/meeting checks; no monetary duplication claims. |
+| `systematic_shared_production_options.csv` | `option_id`: 13 ranked, mandate-safe options for sharing inputs, curricula, events, and document provenance. |
+| `collect_council_index.py` | Optional official index HTML/HTTPS **staging-only** parser; quarantines mismatched dates/future entries for human review. |
+| `validate_systematic_census.py` | Validates source identities, official 2025 count, 2026 snapshot, year anomaly, 652-view registry, and no invented savings. |
+| `render_systematic_census.R` | Base-R reproducible census and research-board summaries; engineering fixture tests in GitHub Actions. |
+
+**Critical anomaly:** `S/2026/513` is listed in the 2026 index with an indexed date in **2025**. This is retained and flagged; do not count it as a verified 2026 chronology without inspecting its original document. **Do not combine the 78 target-family report count with 132 full-index records as if disjoint.**

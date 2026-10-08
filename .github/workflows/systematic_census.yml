@@ -1,0 +1,40 @@
+name: Systematic Security Council Census Snapshot
+
+on:
+  push:
+    paths:
+      - "scripts/build_systematic_census.py"
+      - ".github/workflows/systematic_census.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harvest-official-public-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install reproducible HTML extraction dependency
+        run: python -m pip install "beautifulsoup4==4.12.3"
+      - name: Fetch Security Council report and formal meeting index snapshots
+        run: python scripts/build_systematic_census.py --output-dir data --minimum-2025-meetings 255 --minimum-2026-meetings 110
+      - name: Check census integrity, completeness and fiscal cut-off
+        run: python scripts/validate_systematic_census.py
+      - name: Commit published index snapshots (no confidential data)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/systematic_sg_reports_2025_2026.csv data/systematic_sc_meetings_2025_2026.csv data/systematic_census_source_snapshots.csv data/systematic_census_index_totals.csv data/systematic_census_metadata.json
+          if git diff --cached --quiet; then
+            echo "Official indexes unchanged."
+          else
+            git commit -m "data: Refresh public Security Council 2025-26 index census"
+            git push origin HEAD:main
+          fi

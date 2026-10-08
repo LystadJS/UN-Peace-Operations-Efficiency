@@ -98,7 +98,7 @@ def validate():
     assert len(activities)==46 and len(extra)==9 and len(paired)==15 and len(options)==13
     assert {int(x["public_priority"]) for x in options}==set(range(1,14))
     assert all(x["verified_new_net_savings_usd"]=="not_estimated" for x in options)
-    assert all(x["financial_overlap"]=="not_estimated" and x["net_savings"]=="not_estimated" for x in master)
+    assert all(x["duplicate_payment"]=="not_estimated" and x["net_savings"]=="not_estimated" for x in master)
     assert sum(x["stream"]=="Council_SG_report" for x in master)==132
     assert sum(x["stream"]=="Council_meeting_record_variant" for x in master)==474
     assert sum(x["stream"]=="published_mission_or_department_activity" for x in master)==46

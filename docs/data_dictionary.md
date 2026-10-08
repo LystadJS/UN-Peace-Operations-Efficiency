@@ -98,3 +98,21 @@ All public transaction audit files are **control definitions**, not extracted pr
 | `tests/fixtures/transaction_ledger_SYNTHETIC.csv` | `record_id` | Engineering-only fixture; not UN invoice or asset evidence. |
 
 Live transaction extracts must be handled in approved restricted locations and must never be accidentally committed to GitHub; `.gitignore` covers `data/private/`, `data/restricted/`, and `output/internal/`.
+
+
+## Phase 6 — Public evidence and conditional model
+
+The public decision layer does **not** contain operational finance transactions. Monetary amounts are published cost-scope controls (US dollars or US$ thousands as stated), not incremental savings.
+
+| File | Primary key / content |
+|---|---|
+| [public_opportunity_register.csv](../data/public_opportunity_register.csv) | opportunity_id: 18 classified research options, parent crosswalk ID, source anchor, explicit amount class, legal risk, public action and later private-data gate. |
+| [public_release_gates.csv](../data/public_release_gates.csv) | opportunity_id: source scope, implementation status, authority and financial release controls; none currently authorizes a cut. |
+| [public_finance_nodes.csv](../data/public_finance_nodes.csv) | finance_id: 24 published control amounts, their fiscal period and funding status. |
+| [public_finance_edges.csv](../data/public_finance_edges.csv) | edge_id: 21 parent/subset/alternative-period relations, including complete control sums and nonadditive memorandum efficiency. |
+| [public_source_watchlist.csv](../data/public_source_watchlist.csv) | watch_id: nine current or future official review documents; publication confirmation kept separate from actual full-text recommendation extraction. |
+| [render_public_decision_board.R](../scripts/render_public_decision_board.R) | Base-R reproducer for public decision board and queue, without restricted records. |
+| [evaluate_conditional_options.R](../scripts/evaluate_conditional_options.R) | Scenario input: explicit *eligible recurring cost*, avoidance fraction, residual service cost, one-time implementation cost, year horizon, discount factor and mandate status. Outputs break-even share and assumption-based NPV; no verified savings. |
+| [scenarios_SYNTHETIC.csv](../tests/fixtures/scenarios_SYNTHETIC.csv) | Artificial dollar inputs for unit testing only; they are not published UN costs or hypothetical estimates based on mission budgets. |
+
+Source validation: python3 scripts/validate_public_only.py. Engineering tests: Rscript scripts/render_public_decision_board.R . /tmp/peace-public followed by Rscript tests/check_public_board.R /tmp/peace-public; repeat with evaluate_conditional_options.R and tests/check_public_scenarios.R. GitHub Actions executes all release gates.

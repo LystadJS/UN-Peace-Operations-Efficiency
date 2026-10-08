@@ -28,7 +28,7 @@
 
 ## Purpose
 
-The United Nations assigns closely related peace and security responsibilities to the Department of Political and Peacebuilding Affairs (DPPA), the Department of Peace Operations (DPO), special political missions, and field operations. Similar mandates, reporting lines, or deliverable descriptions can indicate coordination opportunities, but they do not themselves establish redundant work. **UN Peace Operations Efficiency creates source-linked comparisons of mandates, functions, deliverables, and financing to identify testable opportunities for consolidation without compromising operational effectiveness.** The current evidence covers departmental 2027 budget proposals, six selected 2026/27 mission proposals, relevant UN80 arrangements, and preliminary General Assembly and special political mission (SPM) budget reconciliation. It is not a census of all UN peace operations.
+The United Nations assigns closely related peace and security responsibilities to the Department of Political and Peacebuilding Affairs (DPPA), the Department of Peace Operations (DPO), special political missions, and field operations. Similar mandates, reporting lines, or deliverable descriptions can indicate coordination opportunities, but they do not themselves establish redundant work. **UN Peace Operations Efficiency creates source-linked comparisons of mandates, functions, deliverables, and financing to identify testable opportunities for consolidation without compromising operational effectiveness.** The current evidence covers 2027 departmental and SPM proposals, adopted 2026/27 GA peacekeeping appropriations, UN80 arrangements, and a public-only decision framework. The project does not claim that similar mandates are financially redundant. It is not a census of all UN peace operations.
 
 **The governing rule is simple: every efficiency claim must be connected to its legal mandate, source, actual funding perimeter, and implementation risk.** A published budget reduction, existing shared office, or similar-sounding function is not automatically a new saving.
 
@@ -46,6 +46,7 @@ The financial extension connects selected functions to field-mission proposals, 
 | **UN80 implementation and cost allocation** | Trace reforms, departmental support funding, six mission proposals, and costs that must not be counted twice. | [Mission-budget audit](docs/mission_budget_and_un80_audit.md) |
 | **General Assembly and SPM reconciliation** | Compare proposals with financing authorities, track SPM addenda, and inspect unresolved appropriation evidence. | [GA / SPM audit](docs/appropriation_spm_consolidation_audit.md) · [Transaction validation](docs/transaction_level_validation.md) |
 | **Candidate review and reproducibility** | Inspect ranked investigations, source anchors, open validation gates, and machine-checkable datasets. | [Ranked queue](data/ranked_consolidation_validation.csv) · [Data dictionary](docs/data_dictionary.md) |
+| **Public-only decisions, no internal ledgers** | Review 18 classified opportunities, GA controls and financing exclusions; compare assumptions using a guarded R model. | **[Executive brief](docs/public_only_executive_brief.md)** · [Full framework](docs/public_only_decision_framework.md) |
 
 ## Evidence review workflow — no installation
 
@@ -110,6 +111,7 @@ UN budget proposals + GA / SPM financing records
 | **GA-approved mission financing** | 6/6 GA financing appropriations reconciled, 11 mission totals and 102 category records. | The 2026/27 assessed accounts are distinct from proposed calendar-2027 SPM financing. |
 | **2027 SPM budget reconciliation** | 36 mission proposals, 3 cluster controls, 31 embedded efficiencies, 17 XB finance entries, 16 cross-pillar pairings and 12 audit priorities. | Four addenda reconciled to $422.671m, still proposed; new net savings unverified. |
 | **Transaction-level control audit (Phase 5)** | 3 cases, 12 published cost objects, 18 evidence requests, 12 source references, 9 RSCE staffing model entries and tested R matcher. | No signed inventories, invoice pairs, settlement postings or separately proven incremental savings. |
+| **Public-only decision framework (Phase 6)** | 18 opportunity rows, 24 finance nodes, 21 inclusion links, 18 explicit release gates, nine official source watches. | 14 public-research cases can proceed; zero additional net savings estimated or authorized. |
 
 [Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA appropriation audit](docs/appropriation_spm_consolidation_audit.md) · **[2027 SPM reconciliation](docs/spm_2027_reconciliation.md)** · **[Transaction evidence audit](docs/transaction_level_validation.md)**
 
@@ -119,13 +121,19 @@ The [transaction-controls audit](docs/transaction_level_validation.md) identifie
 
 For an authorized local ledger extract, run `Rscript scripts/audit_transaction_ledger.R /SECURE_LOCATION/ledger.csv /SECURE_LOCATION/outputs`. Use the explicitly [synthetic fixture](tests/fixtures/transaction_ledger_SYNTHETIC.csv) for software checks only. Never publish real invoices, personnel IDs or sensitive field operations data to a public GitHub repository.
 
+## Phase 6 — Public-source decision framework
+
+**[Read the executive decision brief](docs/public_only_executive_brief.md)** or the [full public-only research plan](docs/public_only_decision_framework.md). The new [18-case opportunity register](data/public_opportunity_register.csv) classifies **14 public-research investigations**, three already-budgeted initiatives to monitor and one mandate/legal negative control. The source-linked [finance nodes](data/public_finance_nodes.csv), [21 inclusion relations](data/public_finance_edges.csv), [release gates](data/public_release_gates.csv), and [official report watchlist](data/public_source_watchlist.csv) prevent reading gross budgets, internal service charges, and prebooked reductions as new savings.
+
+Public decision-board generator: Rscript scripts/render_public_decision_board.R . /tmp/peace-public. The optional [conditional break-even engine](scripts/evaluate_conditional_options.R) is assumption-based and includes only clearly [synthetic engineering fixtures](tests/fixtures/scenarios_SYNTHETIC.csv) in this repository. No actual eligible incremental net cost pool has been demonstrated. Private UN transaction records are not required for the public report work and must not be published in GitHub.
+
 ## Outputs, review, and limitations
 
 **Verified at the documentary level:** source-paired comparisons, 2027 departmental proposals, selected 2026/27 mission proposals, identified UN80 arrangements, financial boundaries, GA financing-resolution references, and an evidence-based research queue. The primary sources include [A/81/6 (Sect. 3)](https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0), [A/81/6 (Sect. 5)](https://docs.un.org/en/A/81/6%20%28Sect.%205%29), and the [Fifth Committee decisions register](https://www.un.org/en/ga/fifth/80/resdec80.shtml).
 
 **Financial reconciliation:** The six 2026/27 peacekeeping GA-approved mission-maintenance budgets total **$4,028.188m**; their original SG requests totaled **$4,120.9507m**. The four uploaded 2027 SPM addenda now reconcile to a separate, **proposed $422.671m** for 36 continuing missions including **$3.2591m RSCE share**. **31 identified 2027 efficiencies ($14.6925m) are already embedded in the SPM requests**, not additional savings. The SPM extrabudgetary item ledger totals about **$32.977m** in voluntary and cost-recovery estimates; previously reported source figures remain discrepant. See the [SPM reconciliation](docs/spm_2027_reconciliation.md).
 
-**Research status (8 October 2026):** GA mission appropriations verified **6/6**; SPM addendum financial source reconciliation verified **4/4**; **16 documented SPM cross-pillar links** and **12 SPM-specific validation priorities** recorded alongside the existing 14 baseline investigations. **No independent evidence proves avoidable duplicate costs or new net savings**. Shared-service chargebacks, unique posts, and contract audits are the next release gate.
+**Research status (8 October 2026):** GA mission appropriations verified **6/6**, SPM addenda reconciled **4/4**, and Phase 6 public decision register **18/18**, including **14 public-only investigations**. Source controls, public R board, and synthetic scenario tests are in CI. **No actual duplicative cost, independently calculated additional savings, or executable reduction is supported**. Full 2027 ACABQ recommendations remain to be extracted; private financial audit can resume whenever authorized data are available.
 
 ## Repository guide
 

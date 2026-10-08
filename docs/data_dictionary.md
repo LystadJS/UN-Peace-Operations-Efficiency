@@ -132,3 +132,22 @@ Source validation: python3 scripts/validate_public_only.py. Engineering tests: R
 | `scripts/validate_phase7.py` | Automated integrity tests for 18 requests, 32 output comparisons, 36 SG mission values and unavailable ACABQ dollar recommendations. |
 
 Financial eligibility remains *not estimated* in every deliverable pair. Source counts of planned 2027 activities are **not actual expenditure, staffing, or duplicated work**. Non-enumerated counts are not zeros.
+
+
+## Phase 8 — ACABQ recommendations and ranked analysis
+
+All `*_usd_thousands` fields are thousands of US dollars. Recommendations are **not General Assembly adopted**. Zero adjustment means ACABQ has recommended the existing amount unchanged *within the reviewed documents*, not that the mandate or resources can be cut.
+
+| Dataset | Content and accounting meaning |
+|---|---|
+| `acabq_2027_source_manifest.csv` | 3 user-uploaded original PDFs, page counts, SHA-256 and document locators. Original binaries remain outside public GitHub. |
+| `acabq_2027_mission_reconciliation.csv` | All 36 SG SPM mission requests, Cluster I/II ACABQ-adjusted recommendations (27 total), and explicit missing status for Cluster III (9). |
+| `acabq_2027_cluster_reconciliation.csv` | Cluster I, II, III, RSCE, 27-reviewed subtotal and complete chapeau; **full adjusted SPM total not known**. |
+| `acabq_2027_financial_actions.csv` | 12 budget-component recommendations: 4 in Cluster I (net −182.5), 6 under non-SPM Section 3 (net −189.3), 2 under regular Section 5 (net −26.7). |
+| `acabq_2027_non_spm_reconciliation.csv` | Main A/81/7 2027 Section 3 excluding SPM and Section 5 SG versus ACABQ recommendation. Do not add these to the SPM cluster proposal. |
+| `acabq_2027_qualitative_directives.csv` | 20 evidence-linked recommendations and implementation follow-ups; legal and programme risks. |
+| `acabq_2027_ranked_consolidation.csv` | 14 revised **public review priorities**, preserving prior Phase 3 rank; never savings estimates. |
+| `ranked_consolidation_validation.csv` | Baseline rank dataset refreshed with new rank, `old_phase3_rank`, 2027 ACABQ evidence and interpretation. |
+| `scripts/validate_acabq_2027.py` | Acceptance gate verifying arithmetic across 27 reviewed SPM mission lines, 12 advisories, two non-SPM budget totals, 14 rank records, and source manifest. |
+
+Use `--source-dir` for optional SHA-256 comparison with the three uploaded local PDF files, if available. No internal transactions are needed.

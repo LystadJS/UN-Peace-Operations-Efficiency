@@ -94,3 +94,8 @@ Run `python3 scripts/validate_spm_2027.py`. Optional source byte verification: `
 ## Phase 5 update: transaction-level validation boundary
 
 The [Phase 5 transaction-control report](transaction_level_validation.md) separates implementation narratives from the missing proof of actual asset transfers, receivable/payable postings and settlements. The 2027 proposal already includes **$438.1k** of UNIFIL-to-UNSCOL asset avoidance and **$1.4m** of BINUH/UNSOH aviation savings. The **$3.2591m** RSCE proposed share is a cost allocation; **no independent incremental net savings** have yet been established.
+
+
+## Phase 8 — Uploaded 2027 ACABQ advisory reports
+
+The [advisory reconciliation](acabq_2027_reconciliation_status.md) now establishes **Cluster I $56.1487m versus $56.3312m SG** (net −$182.5k) and **Cluster II $37.7268m unchanged**, covering 27 of the 36 continuing SPMs. The nine Cluster III missions and any SPM cross-cutting recommendations from ACABQ Add.1 remain **not determined** without their advisory reports. This **does not amend the original $422.6710m SG proposal** and is not an adopted General Assembly decision.

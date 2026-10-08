@@ -53,3 +53,11 @@ jobs:
         run: |
           Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board
           Rscript tests/check_retrospective_board.R /tmp/peace-retrospective-board
+      - name: Validate full official Council report and meeting indexes with scoped mission census
+        run: python3 scripts/validate_systematic_census.py
+      - name: Test Council index HTML parsing and quarantine of anomalies
+        run: python3 tests/check_council_index_parser.py
+      - name: Render systematic source census and test R summary outputs
+        run: |
+          Rscript scripts/render_systematic_census.R . /tmp/peace-systematic-census
+          Rscript tests/check_systematic_census_board.R /tmp/peace-systematic-census

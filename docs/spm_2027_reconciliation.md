@@ -99,3 +99,8 @@ The [Phase 5 transaction-control report](transaction_level_validation.md) separa
 ## Phase 8 — Uploaded 2027 ACABQ advisory reports
 
 The [advisory reconciliation](acabq_2027_reconciliation_status.md) now establishes **Cluster I $56.1487m versus $56.3312m SG** (net −$182.5k) and **Cluster II $37.7268m unchanged**, covering 27 of the 36 continuing SPMs. The nine Cluster III missions and any SPM cross-cutting recommendations from ACABQ Add.1 remain **not determined** without their advisory reports. This **does not amend the original $422.6710m SG proposal** and is not an adopted General Assembly decision.
+
+
+## Phase 9 source update
+
+The [nine Cluster III continuing missions](acabq_2027_clusterIII_review.md) now reconcile **2026 approved $324.5499m** to **2027 SG-proposed $325.3539m** (+$0.8040m), with 19 already priced 2027 initiative estimates totaling **$14.5604m**. Main **A/81/7** provides [16 cross-cutting review standards](../data/acabq_2027_main_crosscutting_framework.csv) mapped across these offices, **not nine mission-specific new ACABQ budget decisions**. The full ACABQ-adjusted SPM envelope is still unknown because the user reports Add.1 and Add.4 have not yet been issued.

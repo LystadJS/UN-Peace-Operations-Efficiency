@@ -151,3 +151,20 @@ All `*_usd_thousands` fields are thousands of US dollars. Recommendations are **
 | `scripts/validate_acabq_2027.py` | Acceptance gate verifying arithmetic across 27 reviewed SPM mission lines, 12 advisories, two non-SPM budget totals, 14 rank records, and source manifest. |
 
 Use `--source-dir` for optional SHA-256 comparison with the three uploaded local PDF files, if available. No internal transactions are needed.
+
+
+## Phase 9 — Cluster III original SG budgets and ACABQ main-report coverage
+
+Units remain **US$ thousands**, except percent fields. **2027 SG original proposals** are not ACABQ advised amounts or GA appropriations.
+
+| Table | Key, purpose, and financial boundary |
+|---|---|
+| `acabq_2027_clusterIII_sg_baseline.csv` | `spm_id`: 9 missions, 2026 approved against 2027 SG proposed regular funding, planned personnel and per-mission embedded efficiency IDs. `0.0` paired with `none_separately_identified` means **none listed in Add.4 Table 3**, not evidence of no realized savings. |
+| `acabq_2027_main_crosscutting_framework.csv` | `framework_id`: 16 A/81/7 main-report statements classified by normative strength; none is a Cluster III mission-specific dollar adjustment. |
+| `acabq_2027_clusterIII_crosscutting_map.csv` | `mapping_id`: 51 source-linked applicability judgments, not direct financial ACABQ recommendations. |
+| `acabq_2027_conditional_envelope.csv` | `scenario_id`: original 2027 SG chapeau and purely mechanical **partial-advice carry-forward** (assuming unknown III/RSCE adjustments zero for arithmetic only). Never label second row as ACABQ approved or recommended. |
+| `clusterIII_2027_research_priorities.csv` | `spm_id`: nine subordinate mission-level research work packages; rank is evidence readiness, not savings potential. |
+| `consolidation_comprehensive_2027.csv` | `hierarchy_id`: 14 umbrella candidates plus nine **overlapping** child rows. **Never sum parent and child budget exposures.** |
+| `acabq_2027_unissued_report_scope.csv` | `report_symbol`: missing Add.1 SPM-wide and Add.4 Cluster III advisory reports; provenance and non-inference contract. |
+
+`scripts/validate_phase9_clusterIII.py` independently checks approved 2026 to proposed 2027 mission arithmetic (324549.9 to 325353.9), 19 prebudgeted initiatives summing to 14560.4, staff count changes, all 51 policy mappings, the 23-record hierarchy and the conditional scenario's non-official label.

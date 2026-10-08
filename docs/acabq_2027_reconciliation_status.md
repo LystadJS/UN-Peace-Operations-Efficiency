@@ -6,7 +6,7 @@
 
 **The uploaded ACABQ reports permit full numerical reconciliation of 27 of the 36 continuing 2027 special political missions.** The 12 missions in **Cluster I** receive a **net advisory reduction of $182,500** from the Secretary-General's proposed $56.3312 million; the 15 missions in **Cluster II** are recommended for approval without a further quantified adjustment to their $37.7268 million proposal. The resulting **reviewed two-cluster subtotal** is **$93.8755 million**, compared with $94.0580 million submitted by the Secretary-General.
 
-**No complete ACABQ-adjusted $422.6710 million SPM total can be stated.** The user supplied A/81/7, A/81/7/Add.2 and A/81/7/Add.3. The ACABQ cluster III report **A/81/7/Add.4** and the cross-cutting SPM report **A/81/7/Add.1** are referred to inside the uploaded reports, but their bodies are not included and the current public index did not independently verify their issuance. Nine Cluster III mission amounts and the separate RSCE allocation consequently remain *not reviewed*, **not zero**.
+**No complete ACABQ-adjusted total for the original $422.6710 million SPM request can be stated.** The user supplied A/81/7, A/81/7/Add.2 and A/81/7/Add.3. The ACABQ cluster III report **A/81/7/Add.4** and the cross-cutting SPM report **A/81/7/Add.1** are referred to inside the uploaded reports, but their bodies are not included and the current public index did not independently verify their issuance. Nine Cluster III mission amounts and the separate RSCE allocation consequently remain *not reviewed*, **not zero**.
 
 ### Cluster financial reconciliation
 
@@ -95,4 +95,9 @@ The revised [14-investigation research priority ranking](acabq_2027_ranked_asses
 
 Run `python3 scripts/validate_acabq_2027.py` to validate the financial identity across 36 SPM mission records, all reviewed cluster totals, monetary actions, 14 ranks and source identifiers. When the uploaded original PDFs are available in a local approved workspace, run `python3 scripts/validate_acabq_2027.py --source-dir /path/to/three/ACABQ/PDFs` for byte-level SHA verification.
 
-**Remaining requirement:** acquire A/81/7/Add.1 and A/81/7/Add.4 when officially available, then reconcile the nine Cluster III missions and SPM-wide cross-cutting recommendations before stating any full ACABQ-adjusted SPM total.
+**Updated 8 October 2026:** The nine Cluster III missions are now **fully reconciled at the Secretary-General original proposal level** against their 2026 approved baselines, and main A/81/7's general cross-cutting recommendations have been mapped to all nine. This **does not establish nine mission-specific ACABQ recommendations**. The user reports A/81/7/Add.1 and Add.4 are not issued yet. The full ACABQ-adjusted SPM total will remain not determined until such advice exists, and no unissued report is imputed as zero. See [Cluster III reconciliation](acabq_2027_clusterIII_review.md) and [current executive brief](public_only_executive_brief.md).
+
+
+## Phase 9 scope distinction
+
+**SG Cluster III reconciliation is complete (9/9)**: 2026 approved continuing-mission $324.5499m against 2027 SG request $325.3539m (+$0.8040m), 2,457 versus 2,332 planned Table 2 personnel units, and 19 prebudgeted 2027 measures totaling $14.5604m. [Nine mission records](../data/acabq_2027_clusterIII_sg_baseline.csv) and [A/81/7 Chapter I cross-cutting mapping](../data/acabq_2027_clusterIII_crosscutting_map.csv) are source linked. **ACABQ Cluster III-specific financial advice remains 0/9 available**, despite 9/9 SG baseline coverage. The only source-supported numeric ACABQ advice in SPMs remains −$182.5k for Cluster I and $0 new adjustments for Cluster II.

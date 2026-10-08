@@ -2,6 +2,10 @@
 
 **Public proposal tables only | As of 8 October 2026 | 32 paired investigations**
 
+## Phase 9 clarification
+
+The latest [Cluster III SG and ACABQ main-report mapping](acabq_2027_clusterIII_review.md) confirms all nine 2027 mission requests and maps relevant general service/reporting standards; it does **not** identify identical funded reports or an ACABQ Cluster III cut. The 32 output pairs below remain screening hypotheses.
+
 ## Bottom line
 
 **No pair of identical, separately charged 2027 final deliverables has yet been proven.** The four comparisons do identify testable opportunities to harmonize source data, meeting preparation, travel scheduling, curricula, shared procurement and administrative support. Similar quantities in a UN proposed budget cannot establish duplicated expenditure without unique report, mission, meeting or course identifiers.

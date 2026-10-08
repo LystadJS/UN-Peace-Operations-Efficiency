@@ -1,3 +1,5 @@
+> **Historical Phase 6 baseline.** This document predates the [complete Cluster III original budget reconciliation and revised research ranking](acabq_2027_clusterIII_review.md). For decisions use the [current executive brief](public_only_executive_brief.md); original statements about ACABQ full-text availability should not supersede the Phase 9 source status.
+
 # Phase 6 — Public-only peace-operations consolidation decision framework
 
 **8 October 2026 | Public documents only | No confidential transaction records used.**

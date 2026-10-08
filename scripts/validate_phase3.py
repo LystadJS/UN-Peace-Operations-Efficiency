@@ -97,7 +97,7 @@ def validate(source_dir=None):
             assert hashlib.sha256(file.read_bytes()).hexdigest()==x["sha256"],"SHA mismatch: "+str(file)
     assert all(ga[x["scope"]]["uploaded_resolution_sha256"]==x["sha256"] for x in docs if x["scope"] in ga)
     assert len(d["spm_2027_addenda"])==4
-    assert all(x["proposed_cost_usd_thousands"]=="not_extracted" for x in d["spm_2027_addenda"])
+    assert [float(x["proposed_cost_usd_thousands"]) for x in d["spm_2027_addenda"]]==[422671,56331.2,37726.8,325353.9]
     spm={x["boundary_id"]:x for x in d["spm_fiscal_boundary"]}
     assert eq(float(spm["SB02"]["amount_usd_thousands"])-float(spm["SB03"]["amount_usd_thousands"]),4959.6)
     issue={x["issue_id"]:x for x in d["quality_issues"]}

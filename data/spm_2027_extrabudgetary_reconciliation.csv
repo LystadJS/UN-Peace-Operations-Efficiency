@@ -1,0 +1,5 @@
+"reconciliation_key","amount_usd_thousands","precision","source","comparison","note"
+"SPM_XB_2027_DETAILED","32976.673","sum_of_printed_amounts_some_rounded","A/81/6 Sect3 Add2-4 XB subsections","versus_Add1_33.0m_rounded","Sum $32.976673m rounds to $33.0m. Not a formally appropriated or guaranteed receipt."
+"SPM_XB_Add1_APPROX","33000","rounded_to_0.1m","A/81/6 Sect3 Add1 para135 p53","versus_itemized_sum","Approximately $33.0m, not exact control total."
+"SPM_XB_original_S03_AnnexIV","32740.5","one_decimal_thousand","A/81/6 Sect3 AnnexIV p133","itemized_minus_AnnexIV=236.173_thousand","Original Annex IV differs from detailed sum; some estimates rounded and dated differently; unresolved until version/scope reconciliation."
+"SPM_XB_original_S03_narrative","37700.1","one_decimal_thousand","A/81/6 Sect3 p113","narrative_minus_itemized=4723.427_thousand","Different from both detailed Add1 and S03 Annex IV; no invented correction."

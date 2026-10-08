@@ -28,7 +28,7 @@ m2025 <- m[m$year==2025,,drop=FALSE]
 m2026 <- m[m$year==2026,,drop=FALSE]
 if(distinct(m2025$meeting_base_id)!=255L ||
    distinct(m2026$meeting_base_id)!=151L) stop("Formal meeting ID denominator mismatch.")
-if(sum(r$date_year_mismatch=="true")!=1L)stop("Source data-quality anomaly count changed.")
+if(sum(tolower(as.character(r$date_year_mismatch))=="true")!=1L)stop("Source data-quality anomaly count changed.")
 if(sum(a$analysis_period_status=="2024_excluded")!=1L)
   stop("2024 postevent publication must stay excluded.")
 if(any(q$verified_new_net_savings_usd!="not_estimated"))

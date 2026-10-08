@@ -1,0 +1,3 @@
+"scenario_id","description","cluster_I_usd_thousands","cluster_II_usd_thousands","cluster_III_usd_thousands","RSCE_usd_thousands","assumption","hypothetical_total_usd_thousands","source_status","is_ACABQ_complete_recommendation"
+"S1_2027_SG_SUBMITTED","All 36 SG SPM proposals plus proposed RSCE share","56331.2","37726.8","325353.9","3259.1","none","422671","verified_SG_proposal_not_GA_approval","no"
+"S2_PARTIAL_ADVICE_CARRY_FORWARD","Apply known ACABQ Cluster I/II adjustments, hold unreconciled III/RSCE at SG proposal","56148.7","37726.8","325353.9","3259.1","no_additional_ClusterIII_or_crosscutting_advisory_changes_counterfactual_only","422488.5","assumption_based_mechanical_sensitivity_NOT_official_ACABQ_total","no"

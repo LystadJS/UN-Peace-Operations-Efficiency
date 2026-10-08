@@ -5,6 +5,8 @@ on:
     paths:
       - "scripts/build_mission_archive_metadata.py"
       - "scripts/validate_mission_archive_metadata.py"
+      - "scripts/classify_mission_archive_metadata.py"
+      - "scripts/validate_mission_archive_candidates.py"
       - ".github/workflows/mission_archive_census.yml"
   workflow_dispatch:
 
@@ -28,11 +30,15 @@ jobs:
         run: python scripts/build_mission_archive_metadata.py --output-dir data --max-pages 14
       - name: Verify notice metadata vs completeness status
         run: python scripts/validate_mission_archive_metadata.py
+      - name: Classify archive notice titles only (not an actual event census)
+        run: |
+          python scripts/classify_mission_archive_metadata.py
+          python scripts/validate_mission_archive_candidates.py
       - name: Publish public metadata and access limitations
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/mission_archive_attempts_2025_2026.csv data/mission_archive_coverage_2025_2026.csv
+          git add data/mission_archive_attempts_2025_2026.csv data/mission_archive_coverage_2025_2026.csv data/mission_archive_candidate_triage.csv data/mission_archive_classification_summary.csv
           if [ -f data/mission_archive_notice_metadata_2025_2026.csv ]; then
             git add data/mission_archive_notice_metadata_2025_2026.csv
           fi

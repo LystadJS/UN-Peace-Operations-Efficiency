@@ -116,3 +116,19 @@ The public decision layer does **not** contain operational finance transactions.
 | [scenarios_SYNTHETIC.csv](../tests/fixtures/scenarios_SYNTHETIC.csv) | Artificial dollar inputs for unit testing only; they are not published UN costs or hypothetical estimates based on mission budgets. |
 
 Source validation: python3 scripts/validate_public_only.py. Engineering tests: Rscript scripts/render_public_decision_board.R . /tmp/peace-public followed by Rscript tests/check_public_board.R /tmp/peace-public; repeat with evaluate_conditional_options.R and tests/check_public_scenarios.R. GitHub Actions executes all release gates.
+
+## Phase 7 — Access-gated ACABQ and deliverable comparisons
+
+| File | Scope |
+|---|---|
+| `restricted_transaction_request_spec.csv` | 18 requested finance, HR and asset datasets; *specification only*, no internal data. |
+| `acabq_2027_report_status.csv` | Three officially indexed 2027 ACABQ reports and Cluster III publication status. Report bodies not retrieved. |
+| `acabq_2027_mission_reconciliation.csv` | 36 SPM Secretary-General proposed mission amounts and intentionally empty ACABQ recommended numbers pending full reports. |
+| `deliverable_unowas_unoca.csv` | 8 paired planned output types, 2027 activity values and exact Add.4 table locations. |
+| `deliverable_unama_unrcca.csv` | 8 comparative planned activities in Afghanistan and Central Asia. |
+| `deliverable_dppa_dpo_regional.csv` | 8 regional report, meeting, organization and desk comparisons. |
+| `deliverable_training_comparison.csv` | 8 course/workshop and training-related comparisons, retaining distinct learner audiences and mandates. |
+| `public_deliverable_crosswalk_2027.csv` | 32 combined source-linked records, with PDF links, numeric/non-numeric values and no-duplication classification. |
+| `scripts/validate_phase7.py` | Automated integrity tests for 18 requests, 32 output comparisons, 36 SG mission values and unavailable ACABQ dollar recommendations. |
+
+Financial eligibility remains *not estimated* in every deliverable pair. Source counts of planned 2027 activities are **not actual expenditure, staffing, or duplicated work**. Non-enumerated counts are not zeros.

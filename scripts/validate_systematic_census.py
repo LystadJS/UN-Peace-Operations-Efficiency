@@ -85,6 +85,41 @@ def validate():
     assert m["official_2025_formal_meeting_benchmark"]==255
     assert m["official_2025_informal_consultations_not_included"]==115
     assert sum(p.values())==len(report) and sum(meeting.values())==len(meets)
+    # Phase 11: link the complete official Council indexes to selected field/training evidence.
+    master=read("systematic_master_record_views_2025_2026.csv","item_id")
+    selected=read("systematic_council_reports_2025_2026.csv","symbol")
+    selected_meetings=read("systematic_council_meetings_2025_2026.csv","source_id")
+    activities=read("retrospective_2025_2026_activities.csv","activity_id")
+    extra=read("systematic_2025_2026_additional_matches.csv","match_id")
+    options=read("systematic_shared_production_options.csv","option_id")
+    paired=read("systematic_council_report_pair_candidates.csv","pair_id")
+    coverage=read("systematic_census_coverage.csv","stream")
+    assert len(master)==652 and len(selected)==78 and len(selected_meetings)==10
+    assert len(activities)==46 and len(extra)==9 and len(paired)==15 and len(options)==13
+    assert {int(x["public_priority"]) for x in options}==set(range(1,14))
+    assert all(x["verified_new_net_savings_usd"]=="not_estimated" for x in options)
+    assert all(x["financial_overlap"]=="not_estimated" and x["net_savings"]=="not_estimated" for x in master)
+    assert sum(x["stream"]=="Council_SG_report" for x in master)==132
+    assert sum(x["stream"]=="Council_meeting_record_variant" for x in master)==474
+    assert sum(x["stream"]=="published_mission_or_department_activity" for x in master)==46
+    assert sum(x["is_current_window"]=="no_excluded_2024_event" for x in master)==1
+    assert sum(x["date_or_completeness_warning"]=="source_date_year_conflict_quarantine" for x in master)==1
+    assert len({x["official_symbol"] for x in master if x["stream"]=="Council_SG_report"})==132
+    assert len({x["meeting_base_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2025"})==255
+    assert len({x["meeting_base_id"] for x in master if x["stream"]=="Council_meeting_record_variant" and x["year"]=="2026"})==151
+    assert len(coverage)==4 and all(x["full_census_certified"]=="no" for x in coverage)
+    selected_ids={x["symbol"] for x in selected}
+    assert selected_ids <= reportids
+    event_ids={x["activity_id"] for x in activities}
+    for x in extra:
+        assert all(a in event_ids for a in x["activities"].split(";"))
+        assert x["nonduplication_control"]
+    for x in paired:
+        assert x["symbol_A"] in selected_ids and x["symbol_B"] in selected_ids
+        assert x["actual_shared_passage_verified"] in ("verified_source_event","not_verified","not_verified_text_reuse")
+    assert sum(x["actual_shared_passage_verified"]=="verified_source_event" for x in paired)==1
+    assert all(x["full_census_certified"]=="no" for x in coverage)
+    assert len({x["source_id"] for x in selected_meetings})==10
     print("OFFICIAL COUNCIL INDEX CENSUS VALIDATION PASSED")
     print("SG reports listed 2025",p[2025],"2026",p[2026],
           "total",len(report))
@@ -92,6 +127,8 @@ def validate():
           "2026",meeting[2026])
     print("Distinct formal meeting IDs 2025",len(base_2025),"2026",len(base_2026))
     print("Note: 2025 consultations 115 excluded; 2026 index may lag the as-of date.")
+    print("Integrated 652 nonadditive source views, 78 selected report families, 10 selected meeting links, 46 activity examples")
+    print("Nine additional match adjudications and 13 ranked reuse questions; no transaction-level savings.")
     print("No inferred duplicate mandated report, joint attendance, or cost saving.")
 if __name__=="__main__":
     validate()

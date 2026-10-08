@@ -1,0 +1,44 @@
+name: Mission News Archive Metadata Snapshot
+
+on:
+  push:
+    paths:
+      - "scripts/build_mission_archive_metadata.py"
+      - "scripts/validate_mission_archive_metadata.py"
+      - ".github/workflows/mission_archive_census.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bounded-official-mission-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install fixed HTML parsing dependency
+        run: python -m pip install "beautifulsoup4==4.12.3"
+      - name: Collect official mission and DPPA/DPO notice archives with error accounting
+        run: python scripts/build_mission_archive_metadata.py --output-dir data --max-pages 14
+      - name: Verify notice metadata vs completeness status
+        run: python scripts/validate_mission_archive_metadata.py
+      - name: Publish public metadata and access limitations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/mission_archive_attempts_2025_2026.csv data/mission_archive_coverage_2025_2026.csv
+          if [ -f data/mission_archive_notice_metadata_2025_2026.csv ]; then
+            git add data/mission_archive_notice_metadata_2025_2026.csv
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to source archive metadata."
+          else
+            git commit -m "data: Record mission public news archive metadata and coverage limits"
+            git push origin HEAD:main
+          fi

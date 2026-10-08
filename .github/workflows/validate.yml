@@ -41,3 +41,5 @@ jobs:
         run: |
           Rscript scripts/evaluate_conditional_options.R tests/fixtures/scenarios_SYNTHETIC.csv /tmp/peace-efficiency-scenarios
           Rscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios
+      - name: Check Phase 7 crosswalk and recommendation source status
+        run: python3 scripts/validate_phase7.py

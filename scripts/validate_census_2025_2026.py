@@ -23,7 +23,7 @@ assert all(p["first_symbol"] in ids and p["second_symbol"] in ids for p in pairs
 assert all(p["duplicate_expenditure_supported"]=="no" and p["financial_savings"]=="not_estimated" for p in pairs)
 assert all(r["duplicate_cost"]=="not_verified" and r["incremental_savings"]=="not_estimated" for r in reports)
 assert all(r["financial_duplication"]=="not_verified" and r["new_net_savings"]=="not_estimated" for r in events)
-assert all(r["full_text_verified"]=="not_in_this_census_expansion" for r in reports)
+assert all(r["content_test"]=="not_fulltext_checked" for r in reports)
 assert all(r["coverage_claim"] for r in coverage)
 for r in events:
  start=date.fromisoformat(r["start"]); end=date.fromisoformat(r["end"])

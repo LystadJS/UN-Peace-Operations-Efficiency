@@ -43,3 +43,5 @@ jobs:
           Rscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios
       - name: Check Phase 7 crosswalk and recommendation source status
         run: python3 scripts/validate_phase7.py
+      - name: Reconcile ACABQ advice against 2027 SG proposals and research ranks
+        run: python3 scripts/validate_acabq_2027.py

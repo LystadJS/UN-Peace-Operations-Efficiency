@@ -40,5 +40,7 @@ jobs:
             echo "No changes to source archive metadata."
           else
             git commit -m "data: Record mission public news archive metadata and coverage limits"
+            git fetch origin main
+            git -c rebase.autoStash=true rebase origin/main
             git push origin HEAD:main
           fi

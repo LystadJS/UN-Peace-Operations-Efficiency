@@ -1,0 +1,46 @@
+name: Systematic 2025-2026 Evidence Views
+
+on:
+  push:
+    paths:
+      - "scripts/build_systematic_unified_views.py"
+      - "scripts/validate_phase11_systematic.py"
+      - "data/systematic_verified_field_training_additions.csv"
+      - "data/systematic_sg_reports_2025_2026.csv"
+      - "data/systematic_sc_meetings_2025_2026.csv"
+      - "data/mission_archive_candidate_triage.csv"
+      - "data/systematic_2025_2026_shared_production_opportunities.csv"
+      - ".github/workflows/systematic_evidence_views.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build time-correct activity/output register and source completeness matrix
+        run: python scripts/build_systematic_unified_views.py
+      - name: Verify Council index, mission news, 55 activity records and financial abstentions
+        run: python scripts/validate_phase11_systematic.py
+      - name: Commit non-confidential source-linked summary views
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/systematic_2025_2026_coverage_matrix.csv data/systematic_field_training_canonical_2025_2026.csv data/systematic_2025_2026_canonical_type_summary.csv data/systematic_field_training_to_2027_links.csv data/public_deliverable_crosswalk_2027.csv
+          if git diff --cached --quiet; then
+            echo "Public systematic views unchanged."
+          else
+            git commit -m "data: Refresh official Council and bounded mission activity census views"
+            git fetch origin main
+            git -c rebase.autoStash=true rebase origin/main
+            git push origin HEAD:main
+          fi

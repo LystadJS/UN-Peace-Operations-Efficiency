@@ -21,3 +21,13 @@ jobs:
         run: python3 scripts/validate_phase3.py
       - name: Validate SPM 2027 mission and cluster reconciliation
         run: python3 scripts/validate_spm_2027.py
+      - name: Validate source-linked transaction-control baselines
+        run: python3 scripts/validate_transaction_controls.py
+      - name: Prepare R for synthetic transaction-engine acceptance tests
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Exercise R transaction matcher on clearly synthetic fixture
+        run: |
+          Rscript scripts/audit_transaction_ledger.R tests/fixtures/transaction_ledger_SYNTHETIC.csv /tmp/un-peace-operations-synthetic
+          Rscript tests/check_transaction_engine.R /tmp/un-peace-operations-synthetic

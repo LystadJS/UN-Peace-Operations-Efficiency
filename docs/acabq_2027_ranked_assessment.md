@@ -39,7 +39,7 @@ The umbrella rank is **qualitative**, based on (1) express public ACABQ/GA conce
 | 8 | Cameroon-Nigeria Mixed Commission | C16 | $0.0000M* | Separate existing CNMC/UNOWAS co-location from additional independent administrative overhead |
 | 9 | UN Regional Centre for Preventive Diplomacy in Central Asia | C02 | $0.0000M* | Map UNRCCA early-warning outputs versus UNAMA Afghanistan country-specific outputs |
 
-<caption>*Zero itemized figures in Table 3 are not evidence that the three regional entities have no efficiencies.  All dollar amounts in this column are **already reflected in SG-proposed budgets**, not verified actual or additional net savings.</caption>
+*The three regional missions without a separately itemized Table 3 efficiency do not thereby have zero savings.  All dollar figures are **already reflected in SG-proposed budgets**, not independently verified or additional net savings.*
 
 **No monetary values in the child rows can be added to their umbrella parent as a separate financial exposure.** The 2027 mission totals and initiative identifiers, along with 2026–2027 comparisons, are in [nine-mission budget reconciliation](../data/acabq_2027_clusterIII_sg_baseline.csv). The [23-record comprehensive hierarchy](../data/consolidation_comprehensive_2027.csv) flags parent-child overlap and excludes recognized incremental savings.
 

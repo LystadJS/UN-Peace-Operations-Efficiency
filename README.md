@@ -107,17 +107,18 @@ UN budget proposals + GA / SPM financing records
 | --- | --- | --- |
 | **Departmental baseline** | 59 functions, 25 mandates, 46 quantified deliverables, 39 pairings, and 6 negative controls. | Similar outputs and objectives can reflect complementary mandates, not duplication. |
 | **UN80 and mission-budget audit** | 11 reform arrangements, 6 selected SG mission proposals, 18 linked mission-function comparisons, and DPO support-account bridges. | Proposed reorganization is not confirmed implementation; pre-budgeted reductions are not new savings. |
-| **GA approvals / SPM documentary reconciliation** | Six adopted mission appropriations reconciled; 11 mission resource totals; 102 approved cost-component records; four SPM addenda tracked; 14 ranked investigations. | GA funding is verified, but SPM financial addenda and actual avoidable costs remain unverified. |
+| **GA-approved mission financing** | 6/6 GA financing appropriations reconciled, 11 mission totals and 102 category records. | The 2026/27 assessed accounts are distinct from proposed calendar-2027 SPM financing. |
+| **2027 SPM budget reconciliation** | 36 mission proposals, 3 cluster controls, 31 embedded efficiencies, 17 XB finance entries, 16 cross-pillar pairings and 12 audit priorities. | Four addenda reconciled to $422.671m, still proposed; new net savings unverified. |
 
-[Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA/SPM audit](docs/appropriation_spm_consolidation_audit.md)
+[Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA appropriation audit](docs/appropriation_spm_consolidation_audit.md) · **[2027 SPM reconciliation](docs/spm_2027_reconciliation.md)**
 
 ## Outputs, review, and limitations
 
 **Verified at the documentary level:** source-paired comparisons, 2027 departmental proposals, selected 2026/27 mission proposals, identified UN80 arrangements, financial boundaries, GA financing-resolution references, and an evidence-based research queue. The primary sources include [A/81/6 (Sect. 3)](https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0), [A/81/6 (Sect. 5)](https://docs.un.org/en/A/81/6%20%28Sect.%205%29), and the [Fifth Committee decisions register](https://www.un.org/en/ga/fifth/80/resdec80.shtml).
 
-**GA approved budget reconciliation complete (6/6):** The uploaded six operative financing resolutions and A/C.5/80/20 independently confirm **$4,028.188m** in six mission-maintenance appropriations versus **$4,120.9507m** in original requests (**$92.7627m below request**; not savings). The six **inclusive** GA appropriations total **$4,442.1194m** including support account/UNLB/RSCE shares. The **2027 special political mission addenda remain unextracted (0/4)** and their Section 3 extrabudgetary estimates differ by **$4.9596m**. See [GA source reconciliation](docs/appropriation_spm_consolidation_audit.md) and the [seven-file checksum manifest](data/approved_document_manifest.csv).
+**Financial reconciliation:** The six 2026/27 peacekeeping GA-approved mission-maintenance budgets total **$4,028.188m**; their original SG requests totaled **$4,120.9507m**. The four uploaded 2027 SPM addenda now reconcile to a separate, **proposed $422.671m** for 36 continuing missions including **$3.2591m RSCE share**. **31 identified 2027 efficiencies ($14.6925m) are already embedded in the SPM requests**, not additional savings. The SPM extrabudgetary item ledger totals about **$32.977m** in voluntary and cost-recovery estimates; previously reported source figures remain discrepant. See the [SPM reconciliation](docs/spm_2027_reconciliation.md).
 
-**Research status (8 October 2026):** Financial approval comparison verified **6/6**, SPM financial addenda pending **0/4**, and **14 source-linked investigations** queued for validation. The GA approved 91 UNMISS civilian abolishments, including 53 electoral positions, and requested UNISFA translation and transferred-asset reviews. **No verified duplicate spending or incremental net savings** has been calculated; research ranks are not estimates of cuts.
+**Research status (8 October 2026):** GA mission appropriations verified **6/6**; SPM addendum financial source reconciliation verified **4/4**; **16 documented SPM cross-pillar links** and **12 SPM-specific validation priorities** recorded alongside the existing 14 baseline investigations. **No independent evidence proves avoidable duplicate costs or new net savings**. Shared-service chargebacks, unique posts, and contract audits are the next release gate.
 
 ## Repository guide
 
@@ -128,6 +129,6 @@ UN budget proposals + GA / SPM financing records
 | [`scripts/`](scripts/) | Python and base-R validators; reproducible mission-budget calculations |
 | [`.github/workflows/`](.github/workflows/) | Repository validation CI |
 
-Start with the [initial findings](docs/initial_findings.md), consult the [data dictionary](docs/data_dictionary.md) for definitions, and use the [latest audit](docs/appropriation_spm_consolidation_audit.md) to track financial evidence gaps. Every figure must retain its source, period, and proposal-versus-approval status.
+Start with the [initial findings](docs/initial_findings.md), consult the [data dictionary](docs/data_dictionary.md) for definitions, and use the [2027 SPM audit](docs/spm_2027_reconciliation.md) for the latest regular-budget and shared-service findings. Every figure must retain its source, period, and proposal-versus-approval status.
 
 <sub>Public analyses are decision-support research, not organizational determinations. Verify amounts, mandates, and operational assumptions against underlying UN documents before proposing restructuring or savings.</sub>

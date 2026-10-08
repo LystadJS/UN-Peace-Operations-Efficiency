@@ -20,7 +20,7 @@ cases=load("transaction_validation_cases","case_id")
 requests=load("transaction_evidence_requests","request_id")
 sources=load("transaction_sources","source_id")
 offsets=load("transaction_offset_reconciliation","check_id")
-assert len(controls)==12 and len(cases)==3 and len(requests)==17 and len(sources)==11
+assert len(controls)==12 and len(cases)==3 and len(requests)==18 and len(sources)==12
 assert {r["case_id"] for r in cases}=={"UNIFIL_UNSCOL","BINUH_UNSOH","RSCE"}
 valid_ids={r["control_id"] for r in controls}
 assert all(r["case_id"] in {c["case_id"] for c in cases} for r in controls)
@@ -50,6 +50,6 @@ for x in sources:
     assert x["evidence_type"] and x["limitations"]
 assert not any(x["amount_category"]=="realized_net_savings" for x in controls)
 print("PHASE 5 TRANSACTION-BOUNDARY GATES PASSED")
-print("3 cases, 12 budget controls, 17 targeted ledger packages, 11 sources, 5 reconciliations")
+print("3 cases, 12 budget controls, 18 targeted ledger packages, 12 sources, 5 reconciliations")
 print("Booked 2027 efficiencies 1,838,100 USD; transaction-verified pairs 0")
 print("No additional addressable or realized net savings asserted without internal transaction evidence")

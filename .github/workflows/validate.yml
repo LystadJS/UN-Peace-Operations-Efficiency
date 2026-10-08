@@ -1,0 +1,17 @@
+name: Crosswalk validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate identifiers, citations and recorded assumptions
+        run: python3 scripts/validate_crosswalk.py

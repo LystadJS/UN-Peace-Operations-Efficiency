@@ -85,7 +85,7 @@ def verify(source_dir=None):
     actions=d["acabq_2027_financial_actions"]
     assert len(actions)==12
     def total(bucket):
-        return sum(float(x["acabaq_minus_sg_usd_thousands"]) for x in actions
+        return sum(float(x["acabq_minus_sg_usd_thousands"]) for x in actions
                    if x["financial_perimeter"]==bucket)
     for bucket,expected in [
         ("SPM_CLUSTER_1",-182.5),
@@ -102,8 +102,8 @@ def verify(source_dir=None):
     ]:
         x=nonspm[ident]
         assert close(x["sg_2027_proposal_usd_thousands"],p)
-        assert close(x["acabaq_net_adjustment_usd_thousands"],delta)
-        assert close(x["acabaq_adjusted_proposal_usd_thousands"],target)
+        assert close(x["acabq_net_adjustment_usd_thousands"],delta)
+        assert close(x["acabq_adjusted_proposal_usd_thousands"],target)
     assert len(d["acabq_2027_qualitative_directives"])==20
     ranks=d["ranked_consolidation_validation"]
     assert len(ranks)==14 and sorted(int(x["rank"]) for x in ranks)==list(range(1,15))

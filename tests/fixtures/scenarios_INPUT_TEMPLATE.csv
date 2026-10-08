@@ -1,0 +1,2 @@
+"scenario_id","opportunity_id","scenario_class","eligible_recurring_cost_usd","avoidable_fraction","annual_replacement_cost_usd","annual_mitigation_cost_usd","one_time_transition_cost_usd","horizon_years","discount_rate","eligible_cost_basis","mandate_review_status"
+"REPLACE_ID","P001","synthetic","","","","","","","","SYNTHETIC_ONLY","pending"

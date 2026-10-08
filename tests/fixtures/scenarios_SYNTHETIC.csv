@@ -1,0 +1,4 @@
+"scenario_id","opportunity_id","scenario_class","eligible_recurring_cost_usd","avoidable_fraction","annual_replacement_cost_usd","annual_mitigation_cost_usd","one_time_transition_cost_usd","horizon_years","discount_rate","eligible_cost_basis","mandate_review_status"
+"SYN001","P001","synthetic","1000","0.2","50","10","100","3","0","SYNTHETIC_ONLY","pending"
+"SYN002","P002","synthetic","1000","0.05","100","0","100","2","0","SYNTHETIC_ONLY","blocked"
+"SYN003","P004","synthetic","5000","0.1","300","100","100","1","0.05","SYNTHETIC_ONLY","cleared"

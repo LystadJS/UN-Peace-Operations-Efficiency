@@ -1,3 +1,5 @@
+> **Historical Phase 2 budget baseline.** This document analyzes the Secretary-General's original mission proposals. The 2026/27 mission-maintenance appropriations are now verified against all six GA resolutions and A/C.5/80/20; use the [Phase 3 reconciled report](appropriation_spm_consolidation_audit.md) for current approved funding and candidate exposure. Phase 2 proposal figures remain valid as the prior baseline.
+
 # Mission-budget extension and UN80 implementation / cost-allocation audit
 
 **As of 8 October 2026. Phase: documentary and financial-boundary audit; no independently verified overlap or net incremental savings.**

@@ -40,3 +40,21 @@ Source links in `evidence_links.csv` are constructed from official UN locators. 
 - **spm_fiscal_boundary.csv:** three separate 2027 SPM source amounts (regular provisional and two conflicting extrabudgetary estimates).
 - **historical_transition_audit_cases.csv:** two historical Board of Auditors risk exposures; no assumption of avoidable costs or recovered savings.
 - **ranked_consolidation_validation.csv:** ordered research priorities linked to original candidate IDs; the amount is the published *full organizational/funding scope*, if available, not redundant spending or savings. Strings not_costed/not_estimated are NOT zeros.
+
+
+## GA approved 2026/27 financing (verified source layer)
+
+Amounts are **USD thousands** and cover **1 July 2026–30 June 2027**. **Mission maintenance** is not the same as **GA inclusive appropriation**. The latter includes maintenance + support-account share + UNLB + RSCE.
+
+| Dataset | Key and purpose |
+|---|---|
+| `ga_mission_reconciliation.csv` | `mission_id`: six approved mission-maintenance budgets and their GA-inclusive appropriations. `adopted_minus_proposed_usd_thousands` compares **GA maintenance** minus **SG original maintenance request**, not inclusive GA appropriations. |
+| `ga_approved_resource_components.csv` | `component_id`: 102 components; 3 main maintenance categories, 10 operational *subcategories* (already within the operational parent), 3 corporate shares, and 1 inclusive appropriation for each of 6 missions. **Do not sum across hierarchies**. |
+| `ga_approved_all_missions.csv` | `mission_id`: 11 maintenance amounts from the A/C.5/80/20 approved resource note. |
+| `ga_apportionment_schedule.csv` | `segment_id`: 11 apportionment segments, including conditional post-extension periods; **not cash collected**. |
+| `ga_unmiss_abolishments.csv` | `abolition_record`: 91 GA-approved civilian post/position abolishments including 53 electoral; not prospective savings. |
+| `ga_adopted_directives.csv` | `directive_id`: 15 specific GA operative directives supporting activity and risk audits. |
+| `approved_document_manifest.csv` | `source_id`: SHA-256 of 7 uploaded UN PDFs with official symbol URLs and source locations. Original PDF binaries are not republished here. |
+| `ranked_consolidation_validation.csv` | `candidate_id`: 14 research investigations ranked by audit feasibility/urgency, **not potential savings**. |
+
+Run `python3 scripts/validate_phase3.py` to verify schema, source IDs and financial arithmetic; supply `--source-dir /directory/containing/seven/PDFs` for byte-for-byte SHA validation.

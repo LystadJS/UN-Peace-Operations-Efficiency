@@ -15,7 +15,7 @@
   <a href="data/deliverable_inventory.csv"><img alt="46 deliverables" src="https://img.shields.io/badge/Deliverables-46-002D74?style=flat-square" /></a>
   <a href="data/mission_budget_register.csv"><img alt="Six mission proposals" src="https://img.shields.io/badge/Missions-6%20proposals-002D74?style=flat-square" /></a>
   <a href="data/un80_implementation_audit.csv"><img alt="11 reviewed arrangements" src="https://img.shields.io/badge/UN80-11%20arrangements-002D74?style=flat-square" /></a>
-  <a href="data/ranked_consolidation_validation.csv"><img alt="12 ranked investigations" src="https://img.shields.io/badge/Investigations-12%20ranked-002D74?style=flat-square" /></a>
+  <a href="data/ranked_consolidation_validation.csv"><img alt="14 ranked investigations" src="https://img.shields.io/badge/Investigations-12%20ranked-002D74?style=flat-square" /></a>
 </p>
 
 <p align="center">
@@ -107,7 +107,7 @@ UN budget proposals + GA / SPM financing records
 | --- | --- | --- |
 | **Departmental baseline** | 59 functions, 25 mandates, 46 quantified deliverables, 39 pairings, and 6 negative controls. | Similar outputs and objectives can reflect complementary mandates, not duplication. |
 | **UN80 and mission-budget audit** | 11 reform arrangements, 6 selected SG mission proposals, 18 linked mission-function comparisons, and DPO support-account bridges. | Proposed reorganization is not confirmed implementation; pre-budgeted reductions are not new savings. |
-| **GA / SPM documentary reconciliation** | Six GA financing authorities identified, four SPM addenda tracked, and 12 ranked investigations. | Adopted dollar figures remain unverified for all six missions; detailed SPM financial tables are not extracted. |
+| **GA approvals / SPM documentary reconciliation** | Six adopted mission appropriations reconciled; 11 mission resource totals; 102 approved cost-component records; four SPM addenda tracked; 14 ranked investigations. | GA funding is verified, but SPM financial addenda and actual avoidable costs remain unverified. |
 
 [Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA/SPM audit](docs/appropriation_spm_consolidation_audit.md)
 
@@ -115,9 +115,9 @@ UN budget proposals + GA / SPM financing records
 
 **Verified at the documentary level:** source-paired comparisons, 2027 departmental proposals, selected 2026/27 mission proposals, identified UN80 arrangements, financial boundaries, GA financing-resolution references, and an evidence-based research queue. The primary sources include [A/81/6 (Sect. 3)](https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0), [A/81/6 (Sect. 5)](https://docs.un.org/en/A/81/6%20%28Sect.%205%29), and the [Fifth Committee decisions register](https://www.un.org/en/ga/fifth/80/resdec80.shtml).
 
-**Open financial reconciliation:** operative adopted mission-level dollar appropriations have **not** been independently verified against the six GA resolutions or A/C.5/80/20 (**0/6** numerical reconciliations). Four SPM addenda are tracked, but their detailed financial tables are unextracted (**0/4**). Section 3's SPM extrabudgetary figures disagree by **$4.9596 million** between the narrative and annex; this discrepancy is **not** a saving. The **$95.4641 million** DPO other-assessed estimate represents the same DPO support-account component in its departmental budget and must not be added twice. See the [cost bridge](data/cost_allocation_bridge.csv) and [SPM boundaries](data/spm_fiscal_boundary.csv).
+**GA approved budget reconciliation complete (6/6):** The uploaded six operative financing resolutions and A/C.5/80/20 independently confirm **$4,028.188m** in six mission-maintenance appropriations versus **$4,120.9507m** in original requests (**$92.7627m below request**; not savings). The six **inclusive** GA appropriations total **$4,442.1194m** including support account/UNLB/RSCE shares. The **2027 special political mission addenda remain unextracted (0/4)** and their Section 3 extrabudgetary estimates differ by **$4.9596m**. See [GA source reconciliation](docs/appropriation_spm_consolidation_audit.md) and the [seven-file checksum manifest](data/approved_document_manifest.csv).
 
-**Research status (8 October 2026):** this is **screening and partial documentary reconciliation**. No redundant posts, completed UN80 consolidations, verified net savings, or approved-versus-requested dollar variances are certified. A high candidate rank indicates **investigation priority**, not financial potential. Operational conclusions require actual expenditure and post IDs, service users, contracts, authorization checks, implementation costs, and risk assessment.
+**Research status (8 October 2026):** Financial approval comparison verified **6/6**, SPM financial addenda pending **0/4**, and **14 source-linked investigations** queued for validation. The GA approved 91 UNMISS civilian abolishments, including 53 electoral positions, and requested UNISFA translation and transferred-asset reviews. **No verified duplicate spending or incremental net savings** has been calculated; research ranks are not estimates of cuts.
 
 ## Repository guide
 

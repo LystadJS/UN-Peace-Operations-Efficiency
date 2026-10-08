@@ -47,8 +47,8 @@ DATE_RE = re.compile(
 )
 DATE_FORMAT = "%d %B %Y"
 FAMILY_RULES = [
-    ("UNOWAS", r"West Africa and the Sahel|UNOWAS"),
-    ("UNOCA", r"\bCentral Africa\b|Regional Office for Central Africa|UNOCA"),
+    ("UNOWAS", r"West Africa and the Sahel|Peace consolidation in West Africa|UNOWAS"),
+    ("UNOCA", r"\bCentral Africa\b|Central African region|Regional Office for Central Africa|UNOCA"),
     ("UNAMA", r"Afghanistan"),
     ("UNSCOL_UNIFIL", r"resolution 1701|Lebanon"),
     ("UNIFIL", r"United Nations Interim Force in Lebanon|UNIFIL"),

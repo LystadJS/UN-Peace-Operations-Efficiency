@@ -58,6 +58,12 @@ def validate():
     assert len(base_2025)==255,len(base_2025)
     assert len(base_2026)>=110,len(base_2026)
     assert len(base_2025)<=meeting[2025] and len(base_2026)<=meeting[2026]
+    # Exact Council agenda strings, not merely regional keywords.
+    byid = {x["meeting_base_id"]:x for x in meets}
+    assert byid["S/PV.10060"]["agenda_family"] == "UNOCA"
+    assert byid["S/PV.10073"]["agenda_family"] == "UNOWAS"
+    assert byid["S/PV.10167"]["agenda_family"] == "UNOCA"
+    assert byid["S/PV.10195"]["agenda_family"] == "UNOWAS"
     # Confirm canonical records from previous quality-controlled evidence.
     reportids={x["document_symbol"] for x in report}
     for sym in ("S/2025/187","S/2025/342","S/2025/771","S/2025/772",

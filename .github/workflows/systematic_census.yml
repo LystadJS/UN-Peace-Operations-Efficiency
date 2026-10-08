@@ -37,5 +37,7 @@ jobs:
             echo "Official indexes unchanged."
           else
             git commit -m "data: Refresh public Security Council 2025-26 index census"
+            git fetch origin main
+            git -c rebase.autoStash=true rebase origin/main
             git push origin HEAD:main
           fi

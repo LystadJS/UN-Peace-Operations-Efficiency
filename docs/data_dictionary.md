@@ -58,3 +58,24 @@ Amounts are **USD thousands** and cover **1 July 2026–30 June 2027**. **Missio
 | `ranked_consolidation_validation.csv` | `candidate_id`: 14 research investigations ranked by audit feasibility/urgency, **not potential savings**. |
 
 Run `python3 scripts/validate_phase3.py` to verify schema, source IDs and financial arithmetic; supply `--source-dir /directory/containing/seven/PDFs` for byte-for-byte SHA validation.
+
+## Phase 4 — 2027 special political missions
+
+The four addenda are **calendar-year 2027 Secretary-General proposals**. All SPM dollar values in CSVs are **US$ thousands, net of staff assessment** except separately identified extrabudgetary revenue estimates. They are not approved 2027 appropriations and must not be summed directly with July–June 2026/27 assessed peacekeeping appropriations.
+
+| Data table | Unit and interpretation |
+|---|---|
+| `spm_2027_mission_budget.csv` | 36 missions. 2025 appropriation/expenditure, **2026 approved**, **2027 proposed**, proposal change, personnel counts and citation to relevant detailed cluster Table 1 and Table 2. |
+| `spm_2027_cluster_bridge.csv` | 3 clusters, discontinued 2026 budget base, and 2027 RSCE SPM share. Sum each top-level component exactly once to $422.671m. |
+| `spm_2027_closure_bridge.csv` | UNAMI, UNTMIS and UNMHA 2026 approved funding, mandate closure and recipient of residual functions. Already mandated baseline changes. |
+| `spm_2027_financing_controls.csv` | Chapeau accounting boundaries; original preliminary estimate, revised proposal, RSCE support allocation, older XB figures and pre-booked efficiencies. |
+| `spm_2027_embedded_efficiencies.csv` | 31 proposed 2027 initiative estimates totaling $14.6925m **already counted within SG proposed funding**; cannot be added to incremental savings. |
+| `spm_2027_extrabudgetary_items.csv` | 17 explicitly cited projected voluntary-contribution or cost-recovery rows totaling $32.976673m at published precision. |
+| `spm_2027_extrabudgetary_coverage.csv` | 36-mission explicit amount / explicit zero / not separately reported classification. Missing is never zero. |
+| `spm_2027_cross_pillar_links.csv` | 16 evidence-anchored SPM-to-SPM/GA-peacekeeping/shared-service relationships with a cost boundary and classification. |
+| `spm_2027_validation_sequence.csv` | 12 prioritized document-and-operations audits, not a ranked list of cuts or avoidable cost estimates. |
+| `spm_2027_source_manifest.csv` | Four uploaded original PDFs, symbol, page count, SHA-256 and reissue date. |
+| `spm_2027_source_discrepancies.csv` | Seven discrepancies maintained transparently, including 2027 UNOWAS, 2026 RSCE and XB amounts. |
+| `spm_2027_extrabudgetary_reconciliation.csv` | Derived $32.976673m item sum vs roughly $33m chapeau and original Section 3 figures. |
+
+`scripts/validate_spm_2027.py` verifies financial controls, 36 mission rows, 31 efficiency rows, 17 XB entries, staffing definitions, legal classifications and crosswalk relationships.

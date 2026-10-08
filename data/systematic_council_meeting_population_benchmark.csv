@@ -1,0 +1,6 @@
+"year","denominator","statistic","value","source","completeness","interpretation"
+"2025","all_Security_Council","formal_meetings_total","255","annual_2025_official_Highlights","complete_official_2025_aggregate","do_not_compare_selected_meeting_census_10_directly_to_all_255"
+"2025","all_Security_Council","public_meetings","235","annual_2025_official_Highlights","complete_official_2025_aggregate","subset_of_255_not_additive"
+"2025","all_Security_Council","private_meetings","20","annual_2025_official_Highlights","complete_official_2025_aggregate","subset_of_255_not_additive"
+"2025","all_Security_Council","informal_consultations","115","annual_2025_official_Highlights","complete_official_2025_aggregate","separate_from_255_formal"
+"2026_to_2026_10_08","all_Security_Council","formal_meetings_total","not_extracted","2026_meetings_official_catalogue_available","not_complete","separate_verbatim_census_needed"

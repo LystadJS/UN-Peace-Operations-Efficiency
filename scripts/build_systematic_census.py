@@ -260,19 +260,17 @@ def main():
         raise AssertionError("Future-dated report in frozen as-of snapshot")
     if any(m["date"]>str(AS_OF) for m in all_meetings):
         raise AssertionError("Future-dated meeting in frozen as-of snapshot")
-    stats = [
-        dict(year=year,scope="SG_annual_report_index",index_items=n_reports[year],
-             unique_base_meetings="not_applicable",
-             annual_official_total="not_asserted_as_all_council_documents",
-             census_status="index_extracted_as_of_2026_10_08"),
-        dict(year=year,scope="Council_formal_meeting_records",
-             index_items=n_meets[year],
-             unique_base_meetings=unique_meets[year],
-             annual_official_total="255_formal_2025" if year==2025 else "not_yet_complete_year",
-             census_status="formal_index_not_informal_consultation_census"),
-    ]
-    for year in (2025, 2026)
-    ]
+    stats = []
+    for year in (2025,2026):
+        stats.append(dict(year=year,scope="SG_annual_report_index",index_items=n_reports[year],
+              unique_base_meetings="not_applicable",
+              annual_official_total="not_asserted_as_all_council_documents",
+              census_status="index_extracted_as_of_2026_10_08"))
+        stats.append(dict(year=year,scope="Council_formal_meeting_records",
+              index_items=n_meets[year],
+              unique_base_meetings=unique_meets[year],
+              annual_official_total="255_formal_2025" if year==2025 else "not_yet_complete_year",
+              census_status="formal_index_not_informal_consultation_census"))
     write_csv(args.output_dir / "systematic_sg_reports_2025_2026.csv",all_reports)
     write_csv(args.output_dir / "systematic_sc_meetings_2025_2026.csv",all_meetings)
     write_csv(args.output_dir / "systematic_census_source_snapshots.csv",source)

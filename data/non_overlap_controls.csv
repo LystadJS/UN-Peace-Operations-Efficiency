@@ -1,0 +1,7 @@
+"control_id","crosswalk_id","non_overlap_reason","expected_validation_result","document_basis"
+"N01","CW006","Security Council procedural servicing differs from substantive field mission reporting","Keep substantive mandates separate even if common source data can be reused","S03 p21 S05 p7"
+"N02","CW007","Sanctions committees and law enforcement training are legally and operationally distinct","Exclude functional merger from initial shortlist","S03 p22 S05 p16"
+"N03","CW033","Palestine Committee advocacy differs from UNTSO military armistice observation","Exclude mandate merger despite geographic adjacency","S03 p30 S05 p41"
+"N04","CW034","Fourth Committee agenda overlap does not make decolonization and peacekeeping documents interchangeable","Do not infer activity duplication from shared intergovernmental forum","S03 p26 S05 p27"
+"N05","CW035","Counter-terrorism and mine action are different programme portfolios","Exclude textual similarity false positive absent task-level evidence","S03 p100 S05 p17"
+"N06","CW005","DPPA technical electoral assistance and peacekeeping election security support are complementary","Assess tasking and administrative overlap only","S03 p17 S05 p8"

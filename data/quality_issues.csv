@@ -1,0 +1,8 @@
+"issue_id","severity","issue","source_evidence","resolution_required","status"
+"Q01","high","SPM extrabudgetary estimates disagree between section VI narrative and Annex IV","S03 p113 37.7001m; S03 p133 32.7405m","Obtain mission budget addenda and confirm fiscal perimeter and final figure","open"
+"Q02","medium","DPPA PBPS Office paragraph 3.I.129 describes a 14400 decrease but Table 3.I.36 gives 41400 decrease","S03 p58 paragraph 3.I.129; S03 p59 Table 3.I.36","Verify whether narrative is a typographic inconsistency; use table as documented not silently corrected","open"
+"Q03","high","DPO departmental total is not all field peacekeeping budgets","S05 pp29-31 departmental funding sources","Collect individual peacekeeping budgets and support account for whole-pillar claims","open"
+"Q04","high","Same joint structure may appear in multiple departmental programme descriptions","S03 Annex I; S05 Annex I; S05 p34 shared office","Reconcile unique position IDs and costs before counting overlap","open"
+"Q05","medium","DPO training days and DPPA training days are heterogeneous and not necessarily redundant","S03 Table 3.I.4 p16; S05 Tables 5.I.9 p15 and 5.I.14 p27","Acquire course-level descriptions and participant logs","open"
+"Q06","high","DPPA subprogramme 6 includes 50m grants and contributions","S03 Table 3.I.21 p44; Table 3.I.36 p59","Separate grants from overhead in cost models","open"
+"Q07","high","Mission structures and 2027 budget decisions could change after submission","S03 dated 8 May 2026; S05 dated 17 April 2026","Track GA and SC subsequent decisions before making a current recommendation","open"

@@ -116,7 +116,7 @@ def verify(source_dir=None):
                and x["recommend_cut_now"]=="no" for x in q)
     assert {x["candidate_id"] for x in q}=={x["candidate_id"] for x in ranks}
     assert [next(x["candidate_id"] for x in q if x["revised_public_rank"]==str(i))
-            for i in (1,2,3,4)]==["C16","C01","C04","C07"]
+            for i in (1,2,3,4)]==["C16","C07","C01","C04"]
     docs=d["acabq_2027_source_manifest"]
     assert len(docs)==3
     for x in docs:

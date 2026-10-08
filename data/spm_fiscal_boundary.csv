@@ -1,0 +1,4 @@
+"boundary_id","category","scope","amount_usd_thousands","s03_source_anchor","status","source_url"
+"SB01","regular_budget_proposed_SPMs_2027","2027_36_SPMs","423544.5","3.VI.1 p113","provisional_proposal_not_appropriation","https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0"
+"SB02","extrabudgetary_narrative_2027","2027_36_SPMs","37700.1","3.VI.1 p113","conflict_with_Annex_IV","https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0"
+"SB03","extrabudgetary_annex_IV_2027","2027_36_SPMs","32740.5","Annex IV p133","conflict_with_narrative","https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0"

@@ -1,83 +1,133 @@
-# UN Peace Operations Efficiency
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="White UN emblem and USUN seal framing the UN Peace Operations Efficiency title" width="100%" />
+</p>
 
-**Baseline 0.1 · 8 October 2026 · Research status: screening only**
+<p align="center">
+  <a href="docs/methodology.md"><img alt="Source-linked evidence" src="https://img.shields.io/badge/Evidence-source--linked-062135?style=flat-square" /></a>
+  <a href="docs/initial_findings.md"><img alt="DPPA and DPO" src="https://img.shields.io/badge/Scope-DPPA%20%2F%20DPO-062135?style=flat-square" /></a>
+  <a href="docs/mission_budget_and_un80_audit.md"><img alt="UN80 audit" src="https://img.shields.io/badge/Reform-UN80%20audit-062135?style=flat-square" /></a>
+  <a href="docs/appropriation_spm_consolidation_audit.md"><img alt="Phase 3" src="https://img.shields.io/badge/Phase-3%20reconciliation-062135?style=flat-square" /></a>
+  <a href="#outputs-review-and-limitations"><img alt="Screening only" src="https://img.shields.io/badge/Status-screening%20only-062135?style=flat-square" /></a>
+</p>
 
-This repository develops an auditable **mandate–function–deliverable crosswalk** across the United Nations Department of Political and Peacebuilding Affairs (DPPA), Department of Peace Operations (DPO), and related entities. Its purpose is to identify organizational overlap **without equating similar language with duplication**, then test where consolidation or shared service delivery could preserve effectiveness at lower cost.
+<p align="center">
+  <a href="data/crosswalk.csv"><img alt="39 paired crosswalk records" src="https://img.shields.io/badge/Crosswalk-39%20pairs-002D74?style=flat-square" /></a>
+  <a href="data/deliverable_inventory.csv"><img alt="46 deliverables" src="https://img.shields.io/badge/Deliverables-46-002D74?style=flat-square" /></a>
+  <a href="data/mission_budget_register.csv"><img alt="Six mission proposals" src="https://img.shields.io/badge/Missions-6%20proposals-002D74?style=flat-square" /></a>
+  <a href="data/un80_implementation_audit.csv"><img alt="11 reviewed arrangements" src="https://img.shields.io/badge/UN80-11%20arrangements-002D74?style=flat-square" /></a>
+  <a href="data/ranked_consolidation_validation.csv"><img alt="12 ranked investigations" src="https://img.shields.io/badge/Investigations-12%20ranked-002D74?style=flat-square" /></a>
+</p>
 
-## First release at a glance
+<p align="center">
+  <a href="docs/initial_findings.md"><strong>Read initial findings</strong></a>
+  &nbsp;&middot;&nbsp;
+  <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
+  &nbsp;&middot;&nbsp;
+  <a href="docs/appropriation_spm_consolidation_audit.md">Inspect GA / SPM reconciliation</a>
+</p>
 
-| Dataset | Records | Use |
-|:--|--:|:--|
-| [Functions](data/functional_inventory.csv) | 59 | Organizational scope and source anchors |
-| [Mandates](data/mandate_inventory.csv) | 25 | Shared and distinct legal / policy instruments |
-| [Quantified deliverables](data/deliverable_inventory.csv) | 46 | Published 2025 actual and 2027 planned outputs |
-| [Paired DPPA–DPO crosswalk](data/crosswalk.csv) | 39 | Classified and reviewable relationships |
-| [UN80 / other reform register](data/un80_register.csv) | 11 | Separates explicit consolidations from plans and earlier arrangements |
-| [Validation candidates](data/candidate_validation.csv) | 18 | Testable, risk-gated potential reforms |
-| [Document evidence links](data/evidence_links.csv) | 218 | One source pointer per inventory item / paired comparison |
-| [Negative controls](data/non_overlap_controls.csv) | 6 | False-positive checks for similarity-based matching |
-| [Data-quality issues](data/quality_issues.csv) | 7 | Open source discrepancies and scope limitations |
-| [Financial guardrails](data/financial_guardrails.csv) | 13 | Budget boundaries; not estimates of savings |
+## Purpose
 
-**Read the [initial findings](docs/initial_findings.md) first.** The [methodology](docs/methodology.md) explains how an overlap becomes a savings candidate, and the [data dictionary](docs/data_dictionary.md) specifies column meanings.
+The United Nations assigns closely related peace and security responsibilities to the Department of Political and Peacebuilding Affairs (DPPA), the Department of Peace Operations (DPO), special political missions, and field operations. Similar mandates, reporting lines, or deliverable descriptions can indicate coordination opportunities, but they do not themselves establish redundant work. **UN Peace Operations Efficiency creates source-linked comparisons of mandates, functions, deliverables, and financing to identify testable opportunities for consolidation without compromising operational effectiveness.** The current evidence covers departmental 2027 budget proposals, six selected 2026/27 mission proposals, relevant UN80 arrangements, and preliminary General Assembly and special political mission (SPM) budget reconciliation. It is not a census of all UN peace operations.
 
-### Classification, not savings
+**The governing rule is simple: every efficiency claim must be connected to its legal mandate, source, actual funding perimeter, and implementation risk.** A published budget reduction, existing shared office, or similar-sounding function is not automatically a new saving.
 
-The 39 paired records contain **7 documented shared-structure rows**, **2 documented joint-process rows**, **7 planned-coordination rows**, **9 candidate-overlap rows**, **9 complementary-function rows**, and **5 distinct-mandate rows**. These are *rows*, not 39 independent organizational restructurings. The repeated shared-structure rows primarily represent aspects of a smaller number of joint offices.
+## Mandate–Function–Deliverable Analysis
 
-No assessment in this release establishes waste, abolishable posts, net savings, or the operational completion of a UN80 reform. `high` candidate priority means **high value to investigate**, not high expected savings.
+The unit of analysis is an operational **function**, not a matching keyword or organizational title. The first crosswalk contains **39 paired DPPA–DPO comparisons**: 7 documented shared-structure rows, 2 documented joint-process rows, 7 planned-coordination rows, 9 candidate-overlap rows, 9 complementary-function rows, and 5 distinct-mandate rows. These are not 39 separate mergers; several rows describe facets of one joint structure.
 
-## Primary sources
+The financial extension connects selected functions to field-mission proposals, DPO support-account allocations, and UN80 implementation cases. **A candidate becomes a potential net saving only after confirming that work is substitutable, separately funded, legally movable, and operationally safe to consolidate.** The [methodology and release contract](docs/methodology.md) sets out the evidence hierarchy, negative controls, screening tests, and budget boundaries.
 
-- **[A/81/6 (Sect. 3)](https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0)**, *Political affairs*, 8 May 2026, 134 pages. Includes DPPA, related offices and SPM aggregate estimates.
-- **[A/81/6 (Sect. 5)](https://docs.un.org/en/A/81/6%20%28Sect.%205%29)**, *Peacekeeping operations*, 17 April 2026, 67 pages. Includes DPO, UNTSO and UNMOGIP, **not** all peacekeeping field-mission budgets.
+## Choose a workflow
 
-Both were provided by the project owner and are identified by file SHA-256 in [source_manifest.csv](data/source_manifest.csv). PDF binaries are not republished here. The automated retrieval of the Section 5 symbol-resolver URL was restricted; use the official [Fifth Committee 2027 budget document index](https://www.un.org/en/ga/fifth/81/ppb2027.shtml) if the resolver does not open. Source anchors cite the **uploaded full document**, not the shorter Part A version.
+| Workflow | Use it for | Entry point |
+| --- | --- | --- |
+| **Mandate and deliverable crosswalk** | Compare documented responsibilities; distinguish joint structures, proposed coordination, complementary roles, and overlap hypotheses. | [Initial findings](docs/initial_findings.md) · [Crosswalk CSV](data/crosswalk.csv) |
+| **UN80 implementation and cost allocation** | Trace reforms, departmental support funding, six mission proposals, and costs that must not be counted twice. | [Mission-budget audit](docs/mission_budget_and_un80_audit.md) |
+| **General Assembly and SPM reconciliation** | Compare proposals with financing authorities, track SPM addenda, and inspect unresolved appropriation evidence. | [GA / SPM audit](docs/appropriation_spm_consolidation_audit.md) |
+| **Candidate review and reproducibility** | Inspect ranked investigations, source anchors, open validation gates, and machine-checkable datasets. | [Ranked queue](data/ranked_consolidation_validation.csv) · [Data dictionary](docs/data_dictionary.md) |
 
-## Evidence standard
+## Evidence review workflow — no installation
 
-1. **Directly documented**: what the proposals expressly state (including proposed changes and joint structures).
-2. **Analytical screening**: our inference that separately described products may intersect; requires work plans, recipient lists and cost centres.
-3. **Unverified**: staffing implementation, net duplication, transaction-level expenditure, legal authority and savings until independent evidence is obtained.
+1. Start with the [initial findings](docs/initial_findings.md) and open a [crosswalk record](data/crosswalk.csv). Its classification describes **what the cited evidence supports**, not whether a cut is warranted.
+2. Trace mandates, functions, deliverables, and citations using the [source manifest](data/source_manifest.csv), [evidence links](data/evidence_links.csv), and [data dictionary](docs/data_dictionary.md).
+3. Inspect the corresponding [UN80 register](data/un80_implementation_audit.csv), [mission-budget records](data/mission_budget_register.csv), or [GA/SPM reconciliation records](data/ga_mission_reconciliation.csv). Keep calendar-year 2027 programme budgets separate from July–June 2026/27 peacekeeping accounts.
+4. Review the [ranked queue](data/ranked_consolidation_validation.csv) and [quality issues](data/quality_issues.csv). Record the staffing, service, contractual, recipient, and appropriation evidence required before advancing a candidate.
 
-The dataset distinguishes **planned** 2027 outputs from **actual** 2025 outputs, and treats separate funding streams and entities as non-fungible until documented otherwise. See [financial guardrails](data/financial_guardrails.csv); do not add programme grants into administrative savings.
+This is an inspectable research repository, **not a deployed browser application or an automated cost-cutting system**. GitHub displays the reports and CSVs directly; the existing scripts validate internal dataset relationships, not political or financial conclusions.
 
-## Reproduce and inspect
+## Local Python & R validation
+
+Clone the repository and execute the documented Python validators:
 
 ```bash
+git clone https://github.com/LystadJS/UN-Peace-Operations-Efficiency.git
+cd UN-Peace-Operations-Efficiency
+
 python3 scripts/validate_crosswalk.py
-# Alternatively: Rscript scripts/validate_crosswalk.R
+python3 scripts/validate_mission_audit.py
+python3 scripts/validate_phase3.py
 ```
 
-GitHub Actions runs the zero-dependency Python validator on every push and pull request. The R validator uses base R only. Both validators check referential integrity and source-page bounds. Neither substitutes for subject-matter validation or external budget audit.
+Base-R alternatives support crosswalk validation and reproduction of gross mission proposal comparisons:
 
-## Next research gate
+```bash
+Rscript scripts/validate_crosswalk.R
+Rscript scripts/analyze_mission_budgets.R
+```
 
-Acquire detailed SPM addenda, DPO support-account report A/80/631, 2026/27 individual mission budgets, post-level finance/HR data, documented UN80 implementation records, and field-level delivery registers. Then validate [candidates](data/candidate_validation.csv), estimate **net incremental** savings (not gross budget figures), and assess mandate and operational risk.
+The [GitHub Actions workflow](.github/workflows/validate.yml) defines automated repository checks. **A passing structural validator does not independently verify appropriations, implementation, redundant expenditure, or net savings.**
 
-**A documented shared structure is an existing baseline, never a new saving to be counted again.**
+## How it works
 
-## Phase 2 — Mission budgets and UN80 cost-accounting audit (8 October 2026)
+```text
+UN budget proposals + GA / SPM financing records
+                       |
+             Source IDs and mandates
+                       |
+          Functions, deliverables, dates
+                       |
+         DPPA / DPO crosswalk + controls
+                       |
+       UN80 reform status + mission context
+                       |
+         Funding boundaries + cost bridge
+                       |
+        Candidate validation and ranking
+                       |
+        Source-linked reports and CSVs
+          (unverified items stay open)
+```
 
-The source-linked [mission-budget and implementation assessment](docs/mission_budget_and_un80_audit.md) extends the original 39 DPPA–DPO comparisons. It adds:
+**Documentary similarity, operational duplication, and recoverable savings are separate findings.** Existing consolidations belong to the baseline; SG requests are not General Assembly appropriations; and net incremental savings require a defensible counterfactual, implementation costs, and risk analysis.
 
-- **6** 2026/27 mission **Secretary-General budget proposals**, broken out into military/police, civilian and operational costs ([financial register](data/mission_budget_register.csv)).
-- **18** mission-level pairings linked to baseline crosswalk IDs ([mission function crosswalk](data/mission_function_crosswalk.csv)).
-- **11** individually reviewed UN80 arrangements ([implementation status audit](data/un80_implementation_audit.csv)).
-- **5** identified DPO support-account allocation lines, totaling **$95.4641m** proposed in 2026/27; this is **the same** DPO other-assessed component shown in Section 5 and must not be added twice.
-- **13** budget-perimeter and source reconciliation rules plus **10** identified baseline changes ([cost bridge](data/cost_allocation_bridge.csv), [implementation cases](data/implementation_cases.csv)).
-- Primary-source identifiers and links in [mission source extension](data/mission_source_extension.csv).
+### Implemented evidence layers
 
-Mission years (July–June) are **different** from the calendar-year 2027 programme proposals. SG budgets are **not** approved appropriations. Published reductions are **not** proven operational savings. The combined DPO Peacebuilding and Peace Support Office allocation remains **not separately identifiable** in A/80/631.
+| Layer | Available records | Interpretive boundary |
+| --- | --- | --- |
+| **Departmental baseline** | 59 functions, 25 mandates, 46 quantified deliverables, 39 pairings, and 6 negative controls. | Similar outputs and objectives can reflect complementary mandates, not duplication. |
+| **UN80 and mission-budget audit** | 11 reform arrangements, 6 selected SG mission proposals, 18 linked mission-function comparisons, and DPO support-account bridges. | Proposed reorganization is not confirmed implementation; pre-budgeted reductions are not new savings. |
+| **GA / SPM documentary reconciliation** | Six GA financing authorities identified, four SPM addenda tracked, and 12 ranked investigations. | Adopted dollar figures remain unverified for all six missions; detailed SPM financial tables are not extracted. |
 
-Validate with `python3 scripts/validate_crosswalk.py && python3 scripts/validate_mission_audit.py`; alternatively run `Rscript scripts/analyze_mission_budgets.R` to reproduce gross proposal comparisons.
+[Methodology](docs/methodology.md) · [Mission-budget audit](docs/mission_budget_and_un80_audit.md) · [GA/SPM audit](docs/appropriation_spm_consolidation_audit.md)
 
-## Phase 3: GA appropriations, SPM addenda, and ranked investigations (8 October 2026)
+## Outputs, review, and limitations
 
-**[Read the GA/SPM cost reconciliation and ranked research audit](docs/appropriation_spm_consolidation_audit.md).** The extension confirms **six** 30 June 2026 General Assembly financing authorities, registers **four** scheduled 2027 SPM addenda, preserves an unresolved **$4.9596m** SPM extrabudgetary conflict, and prioritizes **12** crosswalk-linked investigations.
+**Verified at the documentary level:** source-paired comparisons, 2027 departmental proposals, selected 2026/27 mission proposals, identified UN80 arrangements, financial boundaries, GA financing-resolution references, and an evidence-based research queue. The primary sources include [A/81/6 (Sect. 3)](https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0), [A/81/6 (Sect. 5)](https://docs.un.org/en/A/81/6%20%28Sect.%205%29), and the [Fifth Committee decisions register](https://www.un.org/en/ga/fifth/80/resdec80.shtml).
 
-**Critical limitation:** The adopted mission-level **dollar appropriations have not been independently read** from the operative GA resolutions or from A/C.5/80/20, so approved-versus-requested numerical variances remain explicitly **not calculated (0/6 verified)**. The SPM addenda financial tables remain unextracted (0/4). This is a **partial documentary reconciliation**, not a completed numeric reconciliation.
+**Open financial reconciliation:** operative adopted mission-level dollar appropriations have **not** been independently verified against the six GA resolutions or A/C.5/80/20 (**0/6** numerical reconciliations). Four SPM addenda are tracked, but their detailed financial tables are unextracted (**0/4**). Section 3's SPM extrabudgetary figures disagree by **$4.9596 million** between the narrative and annex; this discrepancy is **not** a saving. The **$95.4641 million** DPO other-assessed estimate represents the same DPO support-account component in its departmental budget and must not be added twice. See the [cost bridge](data/cost_allocation_bridge.csv) and [SPM boundaries](data/spm_fiscal_boundary.csv).
 
-[GA financing authority CSV](data/ga_mission_reconciliation.csv) · [SPM addenda tracker](data/spm_2027_addenda.csv) · [SPM financial boundaries](data/spm_fiscal_boundary.csv) · [Ranked research priorities](data/ranked_consolidation_validation.csv) · [Auditor transition precedents](data/historical_transition_audit_cases.csv).
+**Research status (8 October 2026):** this is **screening and partial documentary reconciliation**. No redundant posts, completed UN80 consolidations, verified net savings, or approved-versus-requested dollar variances are certified. A high candidate rank indicates **investigation priority**, not financial potential. Operational conclusions require actual expenditure and post IDs, service users, contracts, authorization checks, implementation costs, and risk assessment.
 
-Run the standard validation script in the [CI workflow](.github/workflows/validate.yml); no net savings estimates are permitted in these early-stage datasets.
+## Repository guide
+
+| Path | Contents |
+| --- | --- |
+| [`data/`](data/) | Mandates, functions, deliverables, DPPA–DPO pairings, UN80, mission budgets, cost bridges, GA/SPM records, and ranked investigations |
+| [`docs/`](docs/) | Methodology, initial findings, Phase 2 mission/UN80 audit, Phase 3 appropriation/SPM audit, and data dictionary |
+| [`scripts/`](scripts/) | Python and base-R validators; reproducible mission-budget calculations |
+| [`.github/workflows/`](.github/workflows/) | Repository validation CI |
+
+Start with the [initial findings](docs/initial_findings.md), consult the [data dictionary](docs/data_dictionary.md) for definitions, and use the [latest audit](docs/appropriation_spm_consolidation_audit.md) to track financial evidence gaps. Every figure must retain its source, period, and proposal-versus-approval status.
+
+<sub>Public analyses are decision-support research, not organizational determinations. Verify amounts, mandates, and operational assumptions against underlying UN documents before proposing restructuring or savings.</sub>

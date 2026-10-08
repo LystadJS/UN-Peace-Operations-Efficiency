@@ -23,6 +23,7 @@ TABLES = {
     "acabq_2027_ranked_consolidation": "candidate_id",
     "ranked_consolidation_validation": "candidate_id",
     "consolidation_comprehensive_2027": "hierarchy_id",
+    "acabq_2027_unissued_report_scope": "report_symbol",
 }
 
 def load(table, key):
@@ -110,6 +111,13 @@ def check():
                and x["recommended_2027_clusterIII_financial_adjustment_usd"] == "not_determined"
                for x in mapping)
     assert {x["spm_id"] for x in mapping} == mids
+
+    outstanding = tables["acabq_2027_unissued_report_scope"]
+    assert len(outstanding) == 2
+    assert {r["report_symbol"] for r in outstanding} == {"A/81/7/Add.1", "A/81/7/Add.4"}
+    assert all(r["report_status"] == "not_yet_issued_per_user_2026_10_08"
+               and r["financial_advice"] == "not_determined"
+               and r["not_equal_zero"] == "yes" for r in outstanding)
 
     controls = {x["cluster_id"]: x for x in tables["acabq_2027_cluster_reconciliation"]}
     assert controls["SPM_CLUSTER_3"]["acabq_adjusted_2027_usd_thousands"] == "not_extracted"

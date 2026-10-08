@@ -1,0 +1,5 @@
+id,deliverable,dppa_2027,dpo_2027,unit,source_a,source_b,classification
+DD01,Security Council reports,50,21,documents,Section3 Table3.I.4 page16,Section5 Table5.I.5 page11,distinct_report_populations
+DD02,GA reports versus Council letters,16,10,documents,Section3 Table3.I.4 page16,Section5 Table5.I.5 page11,different_outputs
+DD03,Security Council meetings,80,34,meetings,Section3 Table3.I.4 page16,Section5 Table5.I.5 page11,shared_event_not_duplicate_work
+DD04,Regional partners consulted,>24,5,organizations,Section3 Table3.I.4 page16,Section5 Table5.I.5 page11,different_operational_roles

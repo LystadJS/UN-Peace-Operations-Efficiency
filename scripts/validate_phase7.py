@@ -20,12 +20,19 @@ for name,prefix in [("deliverable_unowas_unoca","UO"),("deliverable_unama_unrcca
 assert all(r["financial_cost_verified"]=="not_estimated" and r["same_final_output_documented"]=="no" for r in cross)
 assert all(r["source_a_url"].startswith("https://") and r["source_b_url"].startswith("https://") for r in cross)
 rep=load("acabq_2027_report_status","symbol")
-assert len(rep)==5 and all(x["reviewed_recommendation_usd_thousands"]=="not_extracted" for x in rep)
+assert len(rep)==5
+report={r["symbol"]:r for r in rep}
+assert report["A/81/7/Add.2"]["reviewed_recommendation_usd_thousands"]=="56148.7"
+assert report["A/81/7/Add.3"]["reviewed_recommendation_usd_thousands"]=="37726.8"
+assert report["A/81/7/Add.4"]["reviewed_recommendation_usd_thousands"]=="not_extracted"
 pending=load("acabq_2027_mission_reconciliation","spm_id")
 sg={x["spm_id"]:x for x in load("spm_2027_mission_budget","spm_id")}
 assert len(pending)==36
 for r in pending:
  assert r["sg_2027_proposal_usd_thousands"]==sg[r["spm_id"]]["regular_budget_2027_proposed_usd_thousands"]
- assert r["acabq_recommended_2027_usd_thousands"]=="not_extracted"
+ if r["cluster_id"]=="SPM_CLUSTER_3":
+  assert r["acabq_recommended_2027_usd_thousands"]=="not_extracted"
+ else:
+  assert r["status"]=="ACABQ_2027_advisory_financial_reconciliation_complete"
 assert abs(sum(float(r["sg_2027_proposal_usd_thousands"]) for r in pending)-419411.9)<0.1
-print("PHASE7 PASS: 18 requested extract packages, 32 documented paired deliverables, 36 SG SPM amounts and no invented ACABQ numeric recommendations.")
+print("PHASE7 PASS: 18 data requests, 32 deliverable pairs and 36 SPM records; ACABQ extracted in 27 rows, 9 Cluster III rows pending.")

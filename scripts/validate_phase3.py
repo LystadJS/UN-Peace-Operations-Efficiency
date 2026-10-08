@@ -101,7 +101,7 @@ def validate(source_dir=None):
     spm={x["boundary_id"]:x for x in d["spm_fiscal_boundary"]}
     assert eq(float(spm["SB02"]["amount_usd_thousands"])-float(spm["SB03"]["amount_usd_thousands"]),4959.6)
     issue={x["issue_id"]:x for x in d["quality_issues"]}
-    assert issue["Q08"]["status"]=="resolved" and issue["Q09"]["status"]=="open"
+    assert issue["Q08"]["status"]=="resolved" and issue["Q09"]["status"]=="resolved"
     print("PHASE 3 VALIDATION PASSED")
     print("Six GA appropriations reconciled; 102 components and 11 all-mission totals verified")
     print("SG maintenance=4,120,950.7 GA maintenance=4,028,188.0 GA inclusive=4,442,119.4 thousand USD")

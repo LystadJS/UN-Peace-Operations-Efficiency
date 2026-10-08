@@ -19,7 +19,7 @@ m <- read_data("retrospective_2025_2026_matches")
 p <- read_data("public_deliverable_crosswalk_2027")
 g <- read_data("retrospective_2025_2026_summary")
 d <- read_data("retrospective_2025_2026_reuse_decisions")
-stopifnot(nrow(s)==42L,nrow(a)==38L,nrow(m)==36L,nrow(p)==32L,
+stopifnot(nrow(s)==53L,nrow(a)==46L,nrow(m)==36L,nrow(p)==32L,
           nrow(g)==4L,nrow(d)==11L)
 stopifnot(sum(a$analysis_period_status=="2024_excluded")==1L)
 stopifnot(sum(p$retrospective_sample_coverage=="matched_in_purposive_sample")==19L)
@@ -44,7 +44,7 @@ escape <- function(x) gsub("|","/",x,fixed=TRUE)
 lines <- c(
  "# Actual 2025–2026 work reuse: selected public UN evidence",
  "",
- "**Scope:** 42 official-source records; 38 canonical activities/products, of which one is a 2024 workshop excluded from 2025–2026 counts.",
+ "**Scope:** 53 official-source records; 46 canonical activities/products, of which one is a 2024 workshop excluded from 2025–2026 counts.",
  "**Matches:** 36 adjudicated relationships; 19 of 32 planned 2027 output categories have retrospective examples.",
  "**Financial result:** No separately charged duplicate service verified; incremental net savings **not estimated**.",
  "",
@@ -73,5 +73,5 @@ lines <- c(lines,"",
  "Evidence: data/retrospective_2025_2026_{sources,activities,matches,reuse_decisions}.csv.",
  "")
 writeLines(lines,file.path(dest,"retrospective_review_board.md"),useBytes=TRUE)
-cat("RETROSPECTIVE BOARD GENERATED: 42 sources, 38 activities (1 excluded), 36 matches, 19/32 2027 categories represented.\n")
+cat("RETROSPECTIVE BOARD GENERATED: 53 sources, 46 activities (1 excluded), 36 matches, 19/32 2027 categories represented.\n")
 cat("Verified duplicate financed service: NONE IDENTIFIED. Incremental net savings: NOT ESTIMATED.\n")

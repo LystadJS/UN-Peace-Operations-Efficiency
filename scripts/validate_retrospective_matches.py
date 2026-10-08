@@ -47,14 +47,14 @@ def validate() -> None:
     summary = datasets["retrospective_2025_2026_summary"]
     reuse = datasets["retrospective_2025_2026_reuse_decisions"]
 
-    assert len(sources) == 42
-    assert len(activity) == 38
+    assert len(sources) == 53
+    assert len(activity) == 46
     assert len(matches) == 36
     assert len(planned) == 32
     assert len(summary) == 4 and len(reuse) == 11
-    assert set(activity) == {f"EV{i:03d}" for i in range(1,39)}
+    assert set(activity) == {f"EV{i:03d}" for i in range(1,47)}
     assert set(matches) == {f"MX{i:03d}" for i in range(1,37)}
-    assert set(sources) == {f"SRC{i:03d}" for i in range(1,43)}
+    assert set(sources) == {f"SRC{i:03d}" for i in range(1,54)}
 
     for src in sources.values():
         assert src["official_url"].startswith("https://"), src["source_id"]
@@ -157,7 +157,7 @@ def validate() -> None:
               "docs/retrospective_2025_2026_executive_brief.md"):
         assert (ROOT / p).exists()
     print("RETROSPECTIVE 2025–2026 SOURCE/MATCH AUDIT PASSED")
-    print("42 sources, 38 canonical activities (37 in window, 1 2024 excluded)")
+    print("53 sources, 46 canonical activities (45 in window, 1 2024 excluded)")
     print("36 adjudications, 32 planned 2027 output categories, 19 with selected retrospective matches")
     print("4 families and 11 decision cases; no separately priced duplicate costs or incremental net savings")
 

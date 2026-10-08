@@ -29,8 +29,8 @@ All values use **operative appropriation paragraphs of A/RES/80/275, 276, 278, 2
 | Top-level cost class | SG request US$m | GA approved US$m | Difference US$m |
 |---|---:|---:|---:|
 | Military and police personnel | 1,807.770 | 1,780.347 | −27.423 |
-| Civilian personnel | 1,082.883 | 1,033.343 | −49.539 |
-| Operational requirements | 1,230.298 | 1,214.497 | −15.801 |
+| Civilian personnel | 1,081.963 | 1,032.423 | −49.539 |
+| Operational requirements | 1,231.218 | 1,215.417 | −15.801 |
 | **Total** | **4,120.951** | **4,028.188** | **−92.763** |
 
 The [approved cost components](../data/ga_approved_resource_components.csv) separately preserve military/police, civilian and operational totals, ten operational subcategories per mission, and the corporate allocations included in each resolution. **Do not add operational subcategories to the operational parent line or duplicate the corporate shares in a support-account model.** The [full 11-mission approved maintenance register](../data/ga_approved_all_missions.csv) totals **US$4,625.9401 million**, of which the six studied cases comprise **87.1%**. A/C.5/80/20 reports **US$5,107.5845 million** across mission operations and its broader support entities.

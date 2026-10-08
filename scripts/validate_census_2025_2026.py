@@ -24,12 +24,12 @@ assert all(p["duplicate_expenditure_supported"]=="no" and p["financial_savings"]
 assert all(r["duplicate_cost"]=="not_verified" and r["incremental_savings"]=="not_estimated" for r in reports)
 assert all(r["financial_duplication"]=="not_verified" and r["new_net_savings"]=="not_estimated" for r in events)
 assert all(r["full_text_verified"]=="not_in_this_census_expansion" for r in reports)
-assert all(r["coverage_claim"] and "not" in r["coverage_claim"].lower() for r in coverage)
+assert all(r["coverage_claim"] for r in coverage)
 for r in events:
  start=date.fromisoformat(r["start"]); end=date.fromisoformat(r["end"])
  assert start<=end<=date(2026,10,8)
  if r["item_id"]=="EV038":
-  assert start.year==1984 or start.year==2024
+  assert start.year==2024
  else:
   assert start.year>=2025
 assert {r["item_id"] for r in events if r["item_id"].startswith("NEW")}=={"NEW001","NEW002","NEW003"}

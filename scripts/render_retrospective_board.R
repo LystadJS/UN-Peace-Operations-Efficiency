@@ -30,8 +30,8 @@ if(anyDuplicated(a$activity_id)||anyDuplicated(m$match_id)||
    anyDuplicated(p$output_pair_id)||anyDuplicated(d$case_id)) {
   stop("Missing canonical identity uniqueness")
 }
-order <- match(d$research_rank, seq_len(nrow(d)))
-if(anyNA(order)||anyDuplicated(order)) stop("Incorrect reuse rank order")
+position_order <- match(d$research_rank, seq_len(nrow(d)))
+if(anyNA(position_order)||anyDuplicated(position_order)) stop("Incorrect reuse rank order")
 d <- d[order(d$research_rank),,drop=FALSE]
 board <- d[,c("research_rank","case_id","entities","common_function",
               "reuse_evidence_type","what_is_verified","feasible_public_workflow_change",

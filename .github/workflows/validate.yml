@@ -47,3 +47,9 @@ jobs:
         run: python3 scripts/validate_acabq_2027.py
       - name: Validate nine Cluster III SG mission baselines and main ACABQ framework
         run: python3 scripts/validate_phase9_clusterIII.py
+      - name: Validate selected retrospective public 2025-26 source identity and reuse adjudications
+        run: python3 scripts/validate_retrospective_matches.py
+      - name: Render and test retrospective 2025-26 research queue in base R
+        run: |
+          Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board
+          Rscript tests/check_retrospective_board.R /tmp/peace-retrospective-board

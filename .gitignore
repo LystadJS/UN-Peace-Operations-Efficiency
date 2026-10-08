@@ -1,0 +1,12 @@
+# Restricted UN operational/transaction records must not be pushed to GitHub.
+data/private/
+data/restricted/
+private/
+output/internal/
+outputs/internal/
+*.umojaxlsx
+*.internal.csv
+*.restricted.csv
+# Local test outputs
+out/
+_tmp/

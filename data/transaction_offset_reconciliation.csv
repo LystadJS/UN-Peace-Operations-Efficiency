@@ -1,0 +1,6 @@
+"check_id","case_id","linked_controls","amount_1_usd","amount_2_usd","amount_3_usd","expected_result_usd","identity_or_scope_rule","restriction"
+"CALC01","UNIFIL_UNSCOL","UF01+UF02+UF03","394000","36900","7200","438100","394000+36900+7200=438100; prebudgeted efficiency","no_incremental_claim_without_transfer_cost"
+"CALC02","BINUH_UNSOH","BH03+BH04","3000000","1600000","1400000","1400000","2026 BINUH aviation less 2027 proposed aviation equals booked reduction","not_equivalent_to_4000000_all_support_cost_reimbursement"
+"CALC03","BINUH_UNSOH","BH02+BH05","4000000","3796400","not_additive","not_applicable","4000000 payment provision embedded within 3796400 category net increase; multiple other changes","reimbursement_is_internal_transfer_not_economic_saving"
+"CALC04","RSCE","RS01+RS02","2323000","3259100","936100","936100","2026 approved SPM share vs 2027 proposed SPM share increase of 936100","budget_change_not_savings"
+"CALC05","RSCE","RS01+RS03+RS04","3259100","45911600","3443200","not_comparable","Calendar 2027 SPM cost share differs from July-June RSCE total and mixed client footnote","do_not_add_or_subtract_different_scope"

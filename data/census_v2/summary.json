@@ -1,0 +1,16 @@
+{
+  "asof": "2026-10-12",
+  "executed_at": "2026-10-12T22:11:06.954678+00:00",
+  "frame_notices": 688,
+  "article_attempts": 688,
+  "downloaded_notices": 688,
+  "candidate_paragraphs": 1666,
+  "publications_in_window": 0,
+  "council_reports": 132,
+  "council_meeting_variants": 478,
+  "distinct_council_meetings": 410,
+  "council_index_success": 4,
+  "release_scope": "public-source-frame-census; field/training candidates require adjudication; not all delivered UN activities",
+  "duplicate_spending": "not_estimated",
+  "unknown_event_counts_not_zero": true
+}

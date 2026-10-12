@@ -1,0 +1,7 @@
+site,page,url,status,sha256,links,new_links,stop_reason
+UNOWAS,0,https://unowas.unmissions.org/en/news?page=0,downloaded,bfa70a689a4fb0770f25a7c229929846991ea8c3140564e85706068473e84db0,12,12,no_next_control_discovered_not_certified_exhaustive
+UNOCA,0,https://unoca.unmissions.org/en/news?page=0,downloaded,712a0ba04f99da648a032377d1507426c827a1ac4f8c4ba29486c9488022a16a,10,10,no_next_control_discovered_not_certified_exhaustive
+UNRCCA,0,https://unrcca.unmissions.org/en/news?page=0,HTTPError:HTTP Error 404: Not Found,,0,0,access_failure
+UNAMA,0,https://unama.unmissions.org/en/news?page=0,downloaded,982737ad8dd4feff0bebb18d302cfab92ad4b5dbda95fae74f4608bb2262886f,11,11,no_next_control_discovered_not_certified_exhaustive
+DPPA,0,https://dppa.un.org/en/news?page=0,downloaded,ffc3e9ff7d71ce911fb9a828f1e099895be568304f934d4bd8eaab478e78fb5b,7,7,no_next_control_discovered_not_certified_exhaustive
+DPO,0,https://peacekeeping.un.org/en/news?page=0,downloaded,22d1392fd340434bad8e13644f28c22735b26ab082fd400835ed3a8565f7505b,7,7,no_next_control_discovered_not_certified_exhaustive

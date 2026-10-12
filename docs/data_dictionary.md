@@ -244,3 +244,12 @@ The project must not assert a universe-wide 2025–2026 activity census from the
 | `scripts/validate_census_v2_release.py` | Standard library checker for registry identity, source-frame arithmetic, known anomalies, missing-body disclosure and non-invention controls. |
 
 The 32-pair `data/public_deliverable_crosswalk_2027.csv` now includes `oct12_new_joint_case_ids` as **candidate related-source leads**, without inflating the earlier **20/32** strictly matched retrospective output categories. `not_estimated` is **not** zero duplication cost. No protected financial records are published.
+
+
+### Authenticated earlier-publication-date recovery
+
+- `data/census_v2/legacy_date_recovery.csv`: 688 original public articles linked by official URL and original HTML SHA-256; 337 in-window published articles, 349 pre-window and two header/title year conflicts. Original public HTML remains in a 30-day GitHub Actions artifact, not the repository.
+- `data/census_v2/union_dated_notice_coverage.csv`: 1,708 distinct discovered notice URLs, with separate earlier and current publication-date fields, unresolved conflicts, and **376 non-conflicting publications in 2025–12 October 2026** across both crawls. This is **not a census of unique events**.
+- `data/census_v2/legacy_date_recovery_summary.json`: auditable aggregate and artifact-source identifiers.
+- `scripts/backfill_census_legacy_dates.py`: verifies each original HTML SHA-256, reuses the article masthead parser, and disallows silently imputing an event date from a publication header.
+- `.github/workflows/recover_legacy_notice_dates.yml`: reproducible recovery from the authentic original 688-article public HTML artifact; commit metadata only, not complete HTML bodies.

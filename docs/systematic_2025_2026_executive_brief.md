@@ -12,7 +12,7 @@
 | Formal Council meetings | **410** | 255 in 2025, 155 in partial 2026; 478 transcript variants, not distinct meetings |
 | Mission/department news URLs discovered | **1,708** | Not the count of published 2025–2026 activities |
 | Article bodies ever retrieved (two snapshots) | **1,051** | Latest run downloaded 524; 1,184 HTTP 403 failures |
-| In-window publication dates in latest successful articles | **171** | Two headline–masthead year conflicts; not automatically event dates |
+| Non-conflicting in-window article publication dates across both downloads | **376** | 337 dated from authenticated prior HTML, 171 from latest successful articles; deduplicated by notice URL, two title/header conflicts |
 | Curated field/training/publication records | **61** | 55 earlier + six newly reviewed; 59 in period or dated to a reporting week, two excluded |
 | Newly documented joint-production cases | **6** | Four exact event days and two bounded event windows |
 | Monetized duplication / new net savings | **Not established / not estimated** | No transaction-level cost matches |
@@ -29,7 +29,7 @@
 
 **Financial safeguard:** Earlier 2027 proposals already contain estimated efficiency gains and administrative transfers. The six cases show shared delivery rather than separately costed duplicate work. Every candidate retains a `not_estimated` incremental net savings field.
 
-**Important completeness limit:** Field and training coverage cannot be called exhaustive. The crawl enumerated 1,708 source URLs, but only 1,051 unique article bodies were ever retrieved and not every published notice corresponds to a unique actual activity. The original Council-source 2025 benchmark separately excludes 115 informal consultations. A 2026 reporting window ending 12 October is not a complete year.
+**Important completeness limit:** Field and training coverage cannot be called exhaustive. The crawl enumerated 1,708 source URLs, but only 1,051 unique article bodies were ever retrieved. **376 articles have recovered non-conflicting in-window publication dates**, not 376 uniquely dated field activities or courses. The original Council-source 2025 benchmark separately excludes 115 informal consultations. A 2026 reporting window ending 12 October is not a complete year.
 
 [Full methodological and evidence report](systematic_2025_2026_census_oct12.md) · [Source completeness register](../data/census_v2/coverage_by_stream.csv) · [Six newly adjudicated activities](../data/census_v2/verified_joint_additions.csv) · [Eight implementation options](../data/census_v2/shared_production_shortlist.csv) · [Prior 2025–2026 comparison audit](retrospective_2025_2026_overlap_audit.md).
 

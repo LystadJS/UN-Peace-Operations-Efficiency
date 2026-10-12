@@ -66,6 +66,24 @@ def validate() -> None:
     coverage = dataset("coverage", "publisher")
     lineage = dataset("fetch_lineage", "notice_url")
     issues = dataset("date_quality_exceptions", "exception_id")
+    old_dates = dataset("legacy_date_recovery", "notice_url")
+    joined_dates = dataset("union_dated_notice_coverage", "notice_url")
+    recovered = json.loads((BASE / "legacy_date_recovery_summary.json").read_text(encoding="utf-8"))
+    assert recovered["asof"] == "2026-10-12"
+    assert recovered["original_html_artifact_run"] == "38314738551"
+    assert len(old_dates) == recovered["original_notices_authenticated"] == 688
+    assert len(joined_dates) == recovered["combined_discovered_url_frame"] == 1708
+    assert recovered["ever_downloaded_article_bodies"] == 1051
+    assert recovered["combined_distinct_in_window_publications_with_nonconflicting_header_dates"] == 376
+    assert recovered["date_conflict_notice_count"] == 2
+    assert sum(x["date_classification"] == "publication_in_window" for x in old_dates) == 337
+    assert sum(x["date_classification"] == "before_window" for x in old_dates) == 349
+    assert sum(x["title_year_conflict"] == "true" for x in old_dates) == 2
+    assert sum(x["confirmed_publication_in_study_window"] == "true" for x in joined_dates) == 376
+    assert sum(x["chronology_conflict"] == "true" for x in joined_dates) == 2
+    assert all(x["source_ever_downloaded"] in ("yes", "no") and
+               x["source_date_grain"] == "publication_not_unique_field_or_training_event" and
+               x["financial_duplicate"] == "not_estimated" for x in joined_dates)
     assert len(frame) == len(attempts) == len(lineage) == overview["frame_notices"] == 1708
     assert len(notices) == overview["downloaded_notices"] == 524
     assert len(candidates) == overview["candidate_paragraphs"] == 848
@@ -153,7 +171,7 @@ def validate() -> None:
     print("2026-10-12 CENSUS QA PASSED")
     print("132 SG Council reports; 410 distinct formal Council meetings; 478 verbatim variants")
     print("1,708 public news links; 524 latest article bodies; 1,051 ever downloaded across snapshots")
-    print("171 in-window header dates among latest bodies; two title/header year conflicts")
+    print("376 non-conflicting in-window publications across source snapshots; two title/header year conflicts")
     print("848 unadjudicated paragraph candidates, six independently adjudicated new joint activities")
     print("55 previous curated records + 6 additions; 20/32 directly matched 2027 categories unchanged")
     print("No duplicate paid services or new net savings verified; field and training population not complete")

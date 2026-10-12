@@ -97,7 +97,6 @@ def validate() -> None:
                r["duplicate_payment"] == "not_estimated" for r in candidates)
     assert all("2025-01-01" <= r["publication_date"] <= "2026-10-12"
                for r in notices if r["chronology_status"] == "publication_in_window")
-    assert all(r["source_stage"] == "not_available" for r in []), "Intentional no-op"
 
     additions = dataset("verified_joint_additions", "case_id")
     assert len(additions) == 6

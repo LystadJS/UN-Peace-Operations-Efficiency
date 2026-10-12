@@ -63,3 +63,5 @@ jobs:
           Rscript tests/check_systematic_census_board.R /tmp/peace-systematic-census
       - name: Validate scoped SG Council reports and public meeting field training coverage
         run: python3 scripts/validate_census_2025_2026.py
+      - name: Validate October 12 archived Council, notice and curated-event source census
+        run: python3 scripts/validate_census_v2_release.py

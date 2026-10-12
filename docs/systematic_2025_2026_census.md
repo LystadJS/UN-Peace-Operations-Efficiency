@@ -1,3 +1,5 @@
+> **Historical source snapshot, 8 October 2026.** These counts reflect the October 8 official indexes (406 distinct Council meetings and the earlier limited notice sample). The subsequently expanded [12 October source-frame census](systematic_2025_2026_census_oct12.md) reports 410 distinct formal meetings, 1,708 discovered news URLs, incomplete current article retrieval and six new curated joint cases. The historical files and methodology below are retained for reproducibility.
+
 # Systematic 2025–2026 public-source census and shared-production audit
 
 **Snapshot:** 8 October 2026 · **Scope:** Council reports and formal meetings indexed by official sources; selected mission news, field activities, and training releases · **No restricted financial transactions.**

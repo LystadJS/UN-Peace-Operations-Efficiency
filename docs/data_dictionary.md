@@ -222,3 +222,25 @@ All retrospective activity records are **selected published evidence** with actu
 - `scripts/validate_census_2025_2026.py`: Standard-library schema, annual symbol, evidence-scope and no-savings checks.
 
 The project must not assert a universe-wide 2025–2026 activity census from the selected mission news results or extrapolate duplicated expenditure from Council report title similarity.
+
+
+## October 12 public-source-frame census and curated joint production
+
+**Scope:** Annual official Security Council index entries and all currently discovered mission/department public notice URLs, frozen on **12 October 2026**. Publication discovery does not establish a complete population of actual field activities or courses.
+
+| Dataset | Key / analytic role |
+|---|---|
+| `data/census_v2/council_reports.csv` | `document_symbol`: 132 SG report registry entries (84 2025, 48 through 2026-10-12), index-date anomaly retained for S/2026/513. |
+| `data/census_v2/council_meeting_variants.csv` | `record_id`: 478 S/PV variants for 410 distinct formal meeting IDs. 255 in 2025, 155 in incomplete 2026. Formal meetings are distinct from informal consultations. |
+| `data/census_v2/notice_frame.csv` | `notice_url`: 1,708 distinct public news links discovered across six publishers and prior-source seeds, **all publication years**. |
+| `data/census_v2/article_fetches.csv` | `url`: latest HTTP outcome per source, including 1,184 HTTP 403 failures, not missing delivered activities. |
+| `data/census_v2/notices.csv` | `notice_id`: 524 downloaded current article bodies; 171 publication dates within the selected window, not event dates. |
+| `data/census_v2/fetch_lineage.csv` | `notice_url`: combines current expanded attempt with first preserved 688-download snapshot; 1,051 distinct article bodies **ever retrieved**. Earlier missing date recognition is preserved. |
+| `data/census_v2/event_paragraph_candidates.csv` | `candidate_id`: 848 machine-located paragraphs, of which 194 have training words, 172 field words, 640 meeting words. Categories overlap; **no candidate is a verified event**. |
+| `data/census_v2/date_quality_exceptions.csv` | `exception_id`: two source headline-versus-masthead 2025/2026 year mismatches; never silently impute date. |
+| `data/census_v2/verified_joint_additions.csv` | `case_id`: six newly adjudicated joint activities with source SHA-256, explicit actor roles and bounded event-date precision (four exact, two contextual ranges). |
+| `data/census_v2/coverage_by_stream.csv` | `stream_id`: denominators, unit grains, source availability, sampling limits and **no certified field/training census**. |
+| `data/census_v2/shared_production_shortlist.csv` | `option_id`: eight source-linked administrative/shared-production hypotheses with mandatory mandate guardrails and unestimated savings. |
+| `scripts/validate_census_v2_release.py` | Standard library checker for registry identity, source-frame arithmetic, known anomalies, missing-body disclosure and non-invention controls. |
+
+The 32-pair `data/public_deliverable_crosswalk_2027.csv` now includes `oct12_new_joint_case_ids` as **candidate related-source leads**, without inflating the earlier **20/32** strictly matched retrospective output categories. `not_estimated` is **not** zero duplication cost. No protected financial records are published.

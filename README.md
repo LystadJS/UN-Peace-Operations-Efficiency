@@ -28,6 +28,14 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
+## Current — 12 October 2026 source-frame census
+
+[**Current executive decision brief**](docs/systematic_2025_2026_executive_brief.md) · [**Full source-frame and field-training analysis**](docs/systematic_2025_2026_census_oct12.md) · [**Eight prioritized shared-production options**](data/census_v2/shared_production_shortlist.csv).
+
+The official annual source indexes now contain **132 Secretary-General Council reports** and **410 distinct formal Council meeting IDs** (478 transcript variants, including resumptions), 2025–12 October 2026. A larger mission/department news crawl identified **1,708 article URLs**; **1,051 unique public notice bodies were downloaded across two successive crawls**, but **1,184 expanded-crawl article requests returned HTTP 403**. The latest **524** successful downloads contain **171 masthead-dated publications within the study window**, with two title/date conflicts flagged for review. These are **publication records, not counts of actual field missions or training sessions**. The compiled selected activity ledger has **55 earlier cases and six newly verified joint-production examples**. There is no verified double-paid service or incremental net saving.
+
+The 8 October comprehensive census tables below are **historical** and retain their original freeze; they are not the October 12 dataset. Field/training activity-population completeness remains **uncertified**, despite the larger notice frame and richer observed cooperation.
+
 ## Purpose
 
 The United Nations assigns closely related peace and security responsibilities to the Department of Political and Peacebuilding Affairs (DPPA), the Department of Peace Operations (DPO), special political missions, and field operations. Similar mandates, reporting lines, or deliverable descriptions can indicate coordination opportunities, but they do not themselves establish redundant work. **UN Peace Operations Efficiency creates source-linked comparisons of mandates, functions, deliverables, and financing to identify testable opportunities for consolidation without compromising operational effectiveness.** The current evidence covers 2027 departmental and SPM proposals, adopted 2026/27 GA peacekeeping appropriations, UN80 arrangements, and a public-only decision framework. The project does not claim that similar mandates are financially redundant. It is not a census of all UN peace operations.
@@ -193,7 +201,7 @@ The official Security Council Secretary-General report indexes now support a **7
 
 Public evidence supports shared event/source identifiers and administrative coordination, not automatically merging different Secretary-General reports or specialist courses. **No separately charged duplicate service or new net cost saving is verified.** Run `python3 scripts/validate_census_2025_2026.py` to check the census bounds.
 
-### Comprehensive Council-index extension (verified snapshot)
+### Historical Council-index extension — 8 October snapshot
 
 The more comprehensive [**systematic 2025–2026 evidence census**](docs/systematic_2025_2026_census.md) and [executive brief](docs/systematic_2025_2026_executive_brief.md) expand beyond the 79-report focused mandate subset. The official index extraction reports **132 unique Secretary-General report entries (84 in 2025, 48 in 2026 through the 8 October snapshot)**; **474 formal Council meeting record variants** represent **406 distinct formal meeting IDs** (255 in 2025 and 151 in the incomplete 2026 index). The separate bounded mission archive discovery identifies **673 notice links**, which are **not 673 distinct delivered field visits or courses**. The more extensive systematic field/training collection is still a **curated public sample**, not a complete population census. All these record grains overlap and **must not be summed**.
 

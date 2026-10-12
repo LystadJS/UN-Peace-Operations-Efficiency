@@ -100,6 +100,19 @@ def publication_date(soup):
     for v in obj:walk(v)
   walk(data)
  if not candidates:
+  # UN Peace Operations Drupal article templates place the *publication* date
+  # in the first item of the article masthead's horizontal metadata list.
+  # This is not a date inferred from the article body or an event mentioned in it.
+  article=soup.select_one('article.node--type-uw-article,article.uwl-news__mpw')
+  if article is not None and article.find('h1') is not None:
+   masthead=article.select_one('#section--masthead .uw-horizontal-list')
+   if masthead is None:masthead=article.select_one('.uw-horizontal-list')
+   first=masthead.select_one('li.list-item') if masthead else None
+   if first is not None:
+    raw=first.get_text(' ',strip=True)
+    d=parse_day(raw)
+    if d:candidates.append((d,'article_masthead_publication_date',raw))
+ if not candidates:
   for el in soup.select('.field--name-created,.field--name-field-date,.news-date,.date-display-single,.node__submitted time'):
    raw=el.get_text(' ',strip=True);d=parse_day(raw)
    if d:candidates.append((d,'labelled_publication_date',raw))
@@ -168,11 +181,13 @@ def discover(site,base,args):
    if not links:
     stop='no_article_links_not_proof_all_events';break
    if not novelty:
-    stop='repeated_page_frontier_not_closed';break
+    stop='repeated_page_frontier_stopped_not_event_complete';break
    known.update(links);seen.update(links)
+   # Some UN mission news templates have server-side ?page=N navigation but
+   # omit a parseable "next" element. Probe sequential pages until the frontier
+   # repeats or becomes empty; neither condition proves a census of events.
    nxt=soup.select_one('a[rel="next"],li.pager__item--next a,li.pager-next a')
-   if nxt is None:
-    stop='no_next_control_discovered_not_certified_exhaustive';break
+   if nxt is None:stop='no_pager_control_page_probing_until_repeat_or_limit'
   except Exception as exc:
    attempts.append(dict(site=site,page=page,url=url,status=type(exc).__name__+':'+str(exc)[:140],sha256='',links=0,new_links=0,stop_reason=''))
    stop='access_failure';break

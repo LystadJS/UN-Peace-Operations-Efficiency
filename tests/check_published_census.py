@@ -16,6 +16,26 @@ class Checks(unittest.TestCase):
   a,c=m.extract_article(self.html('<meta property="article:published_time" content="2025-04-02T12:00:00Z">','UNOCA held a training workshop on 17 October 2024; this later note summarizes it.'),'https://unoca.unmissions.org/en/news/a','UNOCA','2026-10-12')
   self.assertEqual(a['publication_date'],'2025-04-02');self.assertIn('17 October 2024',c[0]['explicit_event_date_mentions'])
   self.assertEqual(c[0]['event_id'],'not_assigned')
+ def test_article_header_date_without_metadata(self):
+  html=('''<html><article class="node--type-uw-article">
+  <div id="section--masthead"><h1>Official mission bulletin</h1>
+  <ul class="uw-horizontal-list"><li class="list-item">11 October 2026</li>
+  <li class="list-item">News stories</li></ul></div>
+  <div class="field--name-body"><p>UNOWAS and UNOCA jointly conducted a workshop with country participants in this region.</p></div>
+  </article></html>''').encode()
+  a,c=m.extract_article(html,'https://unowas.unmissions.org/en/news/a','UNOWAS','2026-10-12')
+  self.assertEqual(a['publication_date'],'2026-10-11')
+  self.assertEqual(a['publication_date_method'],'article_masthead_publication_date')
+  self.assertEqual(a['chronology_status'],'publication_in_window')
+  self.assertEqual(c[0]['event_id'],'not_assigned')
+ def test_article_header_date_outside_window(self):
+  html=('''<html><article class="uwl-news__mpw"><h1>2024 report republished</h1>
+  <ul class="uw-horizontal-list"><li class="list-item">24 October 2024</li></ul>
+  <p>UNOWAS and UNOCA jointly conducted a field mission in 2024, reported for information.</p>
+  </article></html>''').encode()
+  a,c=m.extract_article(html,'https://unowas.unmissions.org/en/news/a','UNOWAS','2026-10-12')
+  self.assertEqual(a['chronology_status'],'before_window')
+  self.assertFalse(c)
  def test_missing_date(self):
   a,c=m.extract_article(self.html(),'https://unoca.unmissions.org/en/news/a','UNOCA','2026-10-12')
   self.assertEqual(a['publication_date'],'');self.assertEqual(a['chronology_status'],'publication_date_unresolved')
@@ -54,6 +74,16 @@ def validate_outputs(folder):
  assert sum(int(r['downloaded']) for r in coverage)==len(notices)
  assert all(r['event_population_denominator']=='unknown' and r['adjudicated_event_completeness']=='not_claimed' for r in coverage)
  assert s['duplicate_spending']=='not_estimated' and s['unknown_event_counts_not_zero'] is True
+ assert s['publications_in_window']==sum(x['chronology_status']=='publication_in_window' for x in notices)
+ assert sum(int(x['dated_publication_in_window']) for x in coverage)==s['publications_in_window']
+ assert all(x['publication_date'] and '2025-01-01'<=x['publication_date']<=s['asof']
+            for x in notices if x['chronology_status']=='publication_in_window')
+ assert all(x['publication_date'] and x['publication_date']<'2025-01-01'
+            for x in notices if x['chronology_status']=='before_window')
+ assert all(x['publication_date'] and x['publication_date']>s['asof']
+            for x in notices if x['chronology_status']=='after_cutoff')
+ if s['downloaded_notices']>=200:
+  assert s['publications_in_window']>=10, 'Critical date extraction regression: hundreds of notices but no dated 2025-26 publications'
  reports=read('council_reports');meetings=read('council_meeting_variants');caps=read('council_fetches')
  assert len(reports)==s['council_reports'] and len(meetings)==s['council_meeting_variants']
  assert len({r['meeting_base_id'] for r in meetings})==s['distinct_council_meetings']

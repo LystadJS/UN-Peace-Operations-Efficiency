@@ -1,0 +1,18 @@
+{
+  "activity_event_denominator": "unknown",
+  "asof": "2026-10-12",
+  "combined_discovered_url_frame": 1708,
+  "combined_distinct_in_window_publications_with_nonconflicting_header_dates": 376,
+  "date_conflict_notice_count": 2,
+  "duplicate_paid_service": "not_estimated",
+  "ever_downloaded_article_bodies": 1051,
+  "incremental_net_savings": "not_estimated",
+  "original_html_artifact_run": "38314738551",
+  "original_notices_authenticated": 688,
+  "original_status_counts": {
+    "before_window": 349,
+    "publication_in_window": 337,
+    "publication_title_year_conflict_review": 2
+  },
+  "published_notice_is_unique_event": false
+}

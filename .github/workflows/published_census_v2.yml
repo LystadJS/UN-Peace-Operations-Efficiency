@@ -1,0 +1,47 @@
+name: Published Evidence Census V2
+on:
+  push:
+    paths:
+      - scripts/expand_published_census.py
+      - tests/check_published_census.py
+      - .github/workflows/published_census_v2.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: published-census-v2
+  cancel-in-progress: false
+jobs:
+  source-frame-census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install fixed parser dependency
+        run: python -m pip install beautifulsoup4==4.12.3
+      - name: Test chronological and role safeguards offline
+        run: python tests/check_published_census.py
+      - name: Refresh public indexes and read bounded notice frame
+        run: python scripts/expand_published_census.py --as-of 2026-10-12 --max-pages 40 --max-articles 2000 --workers 6
+      - name: Validate published-source census without certifying event completeness
+        run: python tests/check_published_census.py --outputs data/census_v2
+      - name: Preserve fetched public HTML snapshots for reproducibility
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-source-html-census-v2
+          path: /tmp/census-v2-html
+          retention-days: 30
+      - name: Commit only audited public source-frame outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/census_v2
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: Audit October 12 public notice bodies and Council indexes with explicit coverage'
+            git fetch origin main
+            git -c rebase.autoStash=true rebase origin/main
+            git push origin HEAD:main
+          fi

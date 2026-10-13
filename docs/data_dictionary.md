@@ -253,3 +253,7 @@ The 32-pair `data/public_deliverable_crosswalk_2027.csv` now includes `oct12_new
 - `data/census_v2/legacy_date_recovery_summary.json`: auditable aggregate and artifact-source identifiers.
 - `scripts/backfill_census_legacy_dates.py`: verifies each original HTML SHA-256, reuses the article masthead parser, and disallows silently imputing an event date from a publication header.
 - `.github/workflows/recover_legacy_notice_dates.yml`: reproducible recovery from the authentic original 688-article public HTML artifact; commit metadata only, not complete HTML bodies.
+
+## 13 October 2026 source extension
+
+The new `data/census_v3/` directory contains 249 official archive/calendar listing URLs from 24 of 27 sampled pages, 18 additional canonical XEV activity/cohort records (7 exact-day/range, 5 quarter-bounded, 6 publication-bounded), nine CAT training course/resource listings with delivery unverified, 16 XR canonical reconciliation decisions, two separately identified knowledge products, four nonadditive source aggregates, one GA-approved UNICLI governance action, and 12 SPV shared-production research options. Source index links and advertised courses are not counted as delivered events. No documented separate duplicate paid service or new net saving. Primary schemas are in the first CSV row of each table; `scripts/validate_census_v3_extension.py` checks all identifiers and no-finance-inference controls.

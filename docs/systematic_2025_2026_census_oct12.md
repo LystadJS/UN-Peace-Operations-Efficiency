@@ -1,3 +1,5 @@
+> **Historical 12 October 2026 source frame.** The [13 October field, training and UNITAR/UNSSC extension](census_2025_2026_extended_oct13.md) and [current executive brief](census_2025_2026_extended_executive.md) supersede the source-discovery counts below. Earlier source population definitions are intentionally preserved.
+
 # Systematic 2025–2026 UN peace-operations evidence census — 12 October snapshot
 
 **As of 12 October 2026 | Public sources only | Financial duplication not established**

@@ -65,3 +65,5 @@ jobs:
         run: python3 scripts/validate_census_2025_2026.py
       - name: Validate October 12 archived Council, notice and curated-event source census
         run: python3 scripts/validate_census_v2_release.py
+      - name: Validate 13 October mission training census extension
+        run: python3 scripts/validate_census_v3_extension.py

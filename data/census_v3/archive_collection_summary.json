@@ -1,0 +1,87 @@
+{
+  "actual_event_denominator": "unknown",
+  "archives_attempted": 9,
+  "asof": "2026-10-13",
+  "discovered_distinct_link_ids": 249,
+  "downloaded_pages": 24,
+  "duplicate_paid_services": "not_estimated",
+  "generated_at": "2026-10-13T18:17:21.983534+00:00",
+  "incremental_net_savings": "not_estimated",
+  "pages_attempted": 27,
+  "public_training_catalogue_not_delivered_event": true,
+  "source_lineage_by_archive": {
+    "CSM_news": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 35
+    },
+    "MINUSCA_news": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 10
+    },
+    "MONUSCO_news": {
+      "downloaded_pages": 0,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 0
+    },
+    "UNISFA_news": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 36
+    },
+    "UNITAR_stories": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 30
+    },
+    "UNITAR_training_catalogue": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 36
+    },
+    "UNMISS_news": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 36
+    },
+    "UNSSC_courses": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 56
+    },
+    "UNSSC_events": {
+      "downloaded_pages": 3,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 3,
+      "pagination_complete": false,
+      "source_index_links": 10
+    }
+  },
+  "unique_field_or_training_events_inferred": 0
+}

@@ -257,3 +257,23 @@ The 32-pair `data/public_deliverable_crosswalk_2027.csv` now includes `oct12_new
 ## 13 October 2026 source extension
 
 The new `data/census_v3/` directory contains 249 official archive/calendar listing URLs from 24 of 27 sampled pages, 18 additional canonical XEV activity/cohort records (7 exact-day/range, 5 quarter-bounded, 6 publication-bounded), nine CAT training course/resource listings with delivery unverified, 16 XR canonical reconciliation decisions, two separately identified knowledge products, four nonadditive source aggregates, one GA-approved UNICLI governance action, and 12 SPV shared-production research options. Source index links and advertised courses are not counted as delivered events. No documented separate duplicate paid service or new net saving. Primary schemas are in the first CSV row of each table; `scripts/validate_census_v3_extension.py` checks all identifiers and no-finance-inference controls.
+
+## 13 October 2026 — Deeper public training attendance and field-activity controls
+
+**Scope:** 2025–13 October 2026 official-source extracts only. Attendance counts describe published trainee/participant reports, **not individual-person rosters or a complete operational census**.
+
+| Data file | Primary key and interpretation |
+|---|---|
+| `data/census_v4/deeper_official_archives/archive_page_access.csv` | `archive_page_url`: 88 bounded index attempts in 11 official archives; 79 successes, 8 MONUSCO 404 and one other error |
+| `data/census_v4/deeper_official_archives/archive_discovered_url_frame.csv` | `source_id`: 767 official listing URLs; original event dates and course delivery remain unverified |
+| `data/census_v4/deeper_official_archives/archive_collection_summary.json` | Archive counts, access exceptions, no certificate of field/training population completeness |
+| `data/census_v4/attendance_evidence.csv` | `evidence_id`: AT001–AT030 original-source participant/trainee claims, 22 new NEV activity/programme IDs plus eight old EV/CJ/XEV identities |
+| `data/census_v4/attendance_normalized_controls.csv` | `evidence_id`: source-reported numeric, approximate and unallocable counts; 22 exact-report, four approximate, four ambiguous/shared; **never sum unique people** |
+| `data/census_v4/reconciled_event_identity.csv` | `evidence_id`: 22 new NEV source identities, eight previously catalogued; three multi-course/multi-month programme groups rather than individual sessions |
+| `data/census_v4/attendance_exclusions_and_aggregates.csv` | `control_id`: 15 source period, attendance denominator and financial nonadditivity controls, including 2022 UNSSC 60-person WPS course exclusion, confirmed 2025 27-person DPO boot camp, Q2 UNITAR quarter-caption anomaly |
+| `data/census_v4/source_coverage_and_nonadditivity.csv` | `stream`: reconciles 1,708 + 249 + 767 URL frames into **2,487 exact unique URLs** with 530 net-new from deeper scan |
+| `data/census_v4/shared_administration_procurement_reassessment.csv` | `review_id`: 12 financially unestimated source-linked workflow options with mandate and cost-verification safeguards |
+| `scripts/collect_deeper_archive_frame_v4.py` | Bounded index-only script (11 official sources × max 8 pages) and public Actions snapshot; never infers event from a listing |
+| `scripts/validate_census_v4_attendance.py` | Python reference, date, count-grain, archive and no-savings source acceptance checks in CI |
+
+**Important:** Q2 UNITAR graphic of 504 trained and 15 events displays a conflicting “Quarter I” caption and reflects its broad Division for Peace reporting, not an additive DPO cohort population. MONUSCO's $1.2m Muda Wa Amani II budget is broader project funding, not a proven per-person training cost. Training advertised with 2026 open enrollment is not necessarily delivered or completed. No net savings were estimated.

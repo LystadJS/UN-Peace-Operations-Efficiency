@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/systematic_2025_2026_executive_brief.md"><strong>Current systematic census findings</strong></a>
+  <a href="docs/census_2025_2026_extended_executive.md"><strong>Current 13 October census findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -35,6 +35,14 @@
 The official annual source indexes now contain **132 Secretary-General Council reports** and **410 distinct formal Council meeting IDs** (478 transcript variants, including resumptions), 2025–12 October 2026. A larger mission/department news crawl identified **1,708 article URLs**; **1,051 unique public notice bodies were downloaded across two successive crawls**, but **1,184 expanded-crawl article requests returned HTTP 403**. The latest **524** successful downloads contain **171 masthead-dated in-window articles**; a hash-authenticated backfill of the earlier 688 bodies raises the **non-conflicting in-window publication total to 376 unique articles**. Two title/date conflicts remain flagged. These are **publication records, not counts of actual field missions or training sessions**. The compiled selected activity ledger has **55 earlier cases and six newly verified joint-production examples**. There is no verified double-paid service or incremental net saving.
 
 The 8 October comprehensive census tables below are **historical** and retain their original freeze; they are not the October 12 dataset. Field/training activity-population completeness remains **uncertified**, despite the larger notice frame and richer observed cooperation.
+
+## 13 October 2026 — Additional mission and training archives
+
+[Current executive brief](docs/census_2025_2026_extended_executive.md) · [Full official-source audit](docs/census_2025_2026_extended_oct13.md) · [12 ranked production tests](data/census_v3/shared_production_recommendations.csv).
+
+Nine additional UN archives and learning calendars were sampled: **24/27 listing pages retrieved**, yielding **249 new exact source URLs** that do not duplicate the prior 1,708-URL frame. The expanded **1,957-URL frame is not a census of delivered activities**. Eighteen new canonical activities/delivered-cohort records were adjudicated (7 with exact date/range, 5 delivered in Q1 2025 with unknown class dates, 6 bounded by publication). Nine advertised course/resource listings remain **unverified for delivery**, and 16 source-event comparisons avoid counting cross-publication repeats or simultaneous distinct activities twice. The prior 20/32 retrospectively supported 2027 output categories remain unchanged.
+
+**A/RES/80/306** already authorized integration of UNSSC into UNITAR to form **UNICLI**, targeted for January 2027. This reform is not new project savings. DPO peacekeeping training policy, mission mandates, separate Council reports and specialized instruction remain protected. No duplicate paid service or incremental net saving has been verified. [Public validation](scripts/validate_census_v3_extension.py) is enforced in CI.
 
 ## Purpose
 

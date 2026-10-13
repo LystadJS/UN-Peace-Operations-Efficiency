@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/census_2025_2026_extended_executive.md"><strong>Current 13 October census findings</strong></a>
+  <a href="docs/census_2025_2026_attendance_executive.md"><strong>Current training & field attendance findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -43,6 +43,14 @@ The 8 October comprehensive census tables below are **historical** and retain th
 Nine additional UN archives and learning calendars were sampled: **24/27 listing pages retrieved**, yielding **249 new exact source URLs** that do not duplicate the prior 1,708-URL frame. The expanded **1,957-URL frame is not a census of delivered activities**. Eighteen new canonical activities/delivered-cohort records were adjudicated (7 with exact date/range, 5 delivered in Q1 2025 with unknown class dates, 6 bounded by publication). Nine advertised course/resource listings remain **unverified for delivery**, and 16 source-event comparisons avoid counting cross-publication repeats or simultaneous distinct activities twice. The prior 20/32 retrospectively supported 2027 output categories remain unchanged.
 
 **A/RES/80/306** already authorized integration of UNSSC into UNITAR to form **UNICLI**, targeted for January 2027. This reform is not new project savings. DPO peacekeeping training policy, mission mandates, separate Council reports and specialized instruction remain protected. No duplicate paid service or incremental net saving has been verified. [Public validation](scripts/validate_census_v3_extension.py) is enforced in CI.
+
+## Latest — 13 October 2026 training and field attendance validation
+
+**[Executive decision brief](docs/census_2025_2026_attendance_executive.md)** · [Full source and attendance audit](docs/census_2025_2026_attendance_v4.md) · [12 shared administration/procurement investigations](data/census_v4/shared_administration_procurement_reassessment.csv).
+
+A deeper **11-source, eight-page** official archive scan retrieved **79/88 pages** and **767 listing URLs**; after exact URL deduplication, the historical and new source-frame population is **2,487** (530 new beyond previous frames). The published attendance register now has **30 evidence observations**, covering **22 new documentary activity/programme-group identities plus eight prior canonical IDs**; three new identities are programmes covering more than one course or a longer delivery period. Reported participants **cannot be added across courses as unique people**. Separately, the UNSSC–DPO 60-person WPS course is confirmed to have occurred **in 2022**, not 2025–2026, whereas a distinct **27-person Protection of Civilians analytics boot camp is dated February–March 2025**. UNITAR reports DPO-led peacekeeping content standards with UNITAR methodological support. The UNITAR Q2 2025 summary's quarter caption discrepancy remains open.
+
+**Existing UN80 baseline:** GA resolution A/RES/80/306 authorized UNITAR–UNSSC integration into UNICLI for 2027, not a new efficiency claim. **No duplicate paid service or additional net saving is verified**. Distinct mission training, security/medical competencies and Security Council reporting mandates remain protected. [Acceptance validator](scripts/validate_census_v4_attendance.py).
 
 ## Purpose
 

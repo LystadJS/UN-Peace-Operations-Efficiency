@@ -67,3 +67,5 @@ jobs:
         run: python3 scripts/validate_census_v2_release.py
       - name: Validate 13 October mission training census extension
         run: python3 scripts/validate_census_v3_extension.py
+      - name: Validate source-backed 2025-26 attendance and deeper official mission archives
+        run: python3 scripts/validate_census_v4_attendance.py

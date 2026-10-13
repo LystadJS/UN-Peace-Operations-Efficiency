@@ -58,7 +58,7 @@ p3=read(ROOT/"data/census_v3/archive_discovered_url_frame.csv","source_id")
 A={x["notice_url"] for x in p2}|{x["official_notice_url"] for x in p3}
 B={x["official_notice_url"] for x in f}
 assert len(A)==1957 and len(B)==767 and len(A|B)==2487
-assert all(x["additional_net_savings_usd"]=="not_estimated" for x in o)
+assert all(x["incremental_net_savings_usd"]=="not_estimated" for x in o)
 assert [int(x["research_rank"]) for x in o]==list(range(1,13))
 assert all(x["full_delivered_activity_denominator"]=="unknown" for x in c)
 for name in ("census_2025_2026_attendance_v4.md","census_2025_2026_attendance_executive.md"):

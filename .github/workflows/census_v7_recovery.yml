@@ -4,9 +4,11 @@ on:
     branches: [main]
     paths:
       - scripts/recover_census_v7_transcripts.py
+      - scripts/recover_census_v7_layout.py
       - .github/workflows/census_v7_recovery.yml
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: census-v7-recovery
   cancel-in-progress: false
@@ -21,8 +23,19 @@ jobs:
           python-version: '3.12'
       - name: Install pinned document parsers
         run: python -m pip install pypdf==5.9.0 beautifulsoup4==4.14.3
+      - name: Preserve initial failed acceptance record
+        uses: actions/download-artifact@v4
+        with:
+          name: census-v7-recovered-transcripts
+          run-id: 38749354731
+          github-token: ${{ github.token }}
+          path: /tmp/v7-first-pass
       - name: Recover exact official records and authenticate every page
-        run: python scripts/recover_census_v7_transcripts.py --collect
+        run: |
+          mkdir -p data/census_v7/history
+          cp /tmp/v7-first-pass/data/census_v7/recovery_attempts.csv data/census_v7/history/first_attempts.csv
+          cp /tmp/v7-first-pass/data/census_v7/recovery_summary.json data/census_v7/history/first_summary.json
+          python scripts/recover_census_v7_layout.py --collect
       - name: Preserve prior frozen acceptance controls
         run: |
           python scripts/validate_census_v5.py
@@ -48,4 +61,5 @@ jobs:
           path: |
             data/census_v7
             scripts/recover_census_v7_transcripts.py
+            scripts/recover_census_v7_layout.py
             V7_RECOVERY_COMMIT.txt

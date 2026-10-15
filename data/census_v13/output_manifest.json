@@ -1,0 +1,12 @@
+{
+  "data/census_v13/adoption_record.json": "c5fbfe24c835d5d08cd122b589ba6e136289fdc581a45b8251f11021cdbe8008",
+  "data/census_v13/affected_recheck.csv": "02cb867b2ae26cc16fee9430f6ac57cddb2e213ab4b7b8d4b5c48f53c325553e",
+  "data/census_v13/closed_gate_receipt.json": "672b47fb47aa4e3d2857620dc6e6a35a4fddaabc54975a731f07eebaded963e7",
+  "data/census_v13/input_manifest.json": "897bdc0fb0a17c566a9397f6cb2ec742a050fa2ea939f20bfaa452161abdd088",
+  "data/census_v13/reference_lineage.csv": "17b68188ee8f045ed2c5dbc9e4c53be51384a4a49bca9e6daa056d485d5bff61",
+  "data/census_v13/research_reference.json": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "data/census_v13/summary.json": "ddc48f7d7fe41f68d3df32a9c1fe74a635b8e2d500fcfa640a858463d1d806d9",
+  "data/census_v13/views/V9_G2.md": "0d03ff79d9cfbc2d8411e2f49cdfb7c5d0e739ce93b421535f332ba044a30e42",
+  "data/census_v13/views/V9_G3.md": "5a724ebf9de517fee1d9c36ee122465ee0cdcde06418ed3f652e427ae5a5f407",
+  "docs/v13_reference_adoption.md": "fab4c545f718c49cf6890ad71241b4c7aaa6027733734ee7ab70a4347659d23c"
+}

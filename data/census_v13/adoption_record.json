@@ -1,0 +1,56 @@
+{
+  "adopted_reference_path": "data/census_v13/research_reference.json",
+  "adopted_reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "amendment_dispositions": [
+    {
+      "adopted_assertion": "Through the Joint Contact Rooms, the Technical Committee on Crime and Criminal Matters exchanged information in 202 instances and separately exchanged three individuals in custody. These are different actions and units.",
+      "after_row_sha256": "2467ad45a08b466d3702484321912c7174a8e093f071175f05ab1300c36dfda2",
+      "amendment_id": "AM11-01",
+      "before_assertion": "Joint Contact Rooms exchanged information on 202 instances and three persons in custody; preserve separate units.",
+      "before_row_sha256": "5cc99e43b30e20635ed880347b2d3ba061887f88828caee817b8db5c17134fa5",
+      "disposition": "adopted_in_research_reference_13.0",
+      "observation_id": "V9:CY028",
+      "product_id": "V9:G2",
+      "source_page": 3,
+      "source_paragraph": 18,
+      "source_sha256": "7c92ec6687a200cc6b2c88a3182ac3b038774d9695bebdebebaa6061473d4508",
+      "source_symbol": "S/2026/9"
+    },
+    {
+      "adopted_assertion": "Phase two was extended through 2026. By June 2026 approximately 67% of EUR1.5 million allocated for 2023-2026 had been utilized; more than EUR1.7 million had been utilized since inception in 2019. The two amounts have different perimeters and are not savings.",
+      "after_row_sha256": "375cc3e74e0aae9cd2d36d83895979a51f51f875b4e03bcdbc549aca680bf556",
+      "amendment_id": "AM11-02",
+      "before_assertion": "Phase two extended through 2026; approximately 67% of EUR1.5m 2023-2026 allocation used by June; lifetime EUR1.7m is a different perimeter.",
+      "before_row_sha256": "033281a99976c187623fcd62db1b5e7f94cecf81df095772c8d4869628e8b543",
+      "disposition": "adopted_in_research_reference_13.0",
+      "observation_id": "V9:CY041",
+      "product_id": "V9:G3",
+      "source_page": 5,
+      "source_paragraph": 29,
+      "source_sha256": "0d4c5fe5226a353c8f8a59e21e174aa899cb1a4bee3f96cf8d6afd576a4ac0a0",
+      "source_symbol": "S/2026/551"
+    }
+  ],
+  "authority": {
+    "authority_type": "explicit_user_instruction_research_reference_only",
+    "authorized_action": "adopt_new_research_reference_and_recheck_only_affected_views",
+    "authorized_amendments": [
+      "AM11-01",
+      "AM11-02"
+    ],
+    "institutional_approval": false,
+    "live_use_authorized": false,
+    "request_timestamp_utc": "2026-10-15T20:58:38Z"
+  },
+  "baseline_commit": "cdb5a3e1b6690e2c5b7a9dfaebfd639fb307f9f3",
+  "current_dispositions_path": "data/census_v13/reference_lineage.csv",
+  "historical_first_pass_path": "data/census_v11/obligation_reviews.csv",
+  "institutional_clearance": "not_obtained",
+  "live_use": "BLOCKED_FOR_LIVE_USE",
+  "payload_identical_to": "data/census_v12/reference_preview.json",
+  "reference_id": "UNPO-REF-13.0",
+  "rollback": "Retain V13 history and explicitly select the preceding reference; do not edit historical versions.",
+  "scoring_scope": "two post-amendment affected assertions only; not a new 61-obligation first pass",
+  "status": "adopted_for_research_only",
+  "version": "13.0"
+}

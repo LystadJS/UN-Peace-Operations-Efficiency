@@ -28,6 +28,12 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
+## Latest — V9 Cyprus production-transfer assessment
+
+**[Decision brief](docs/v9_consolidation_brief.md)** · [Transfer assessment](docs/v9_cyprus_transfer_assessment.md) · [Worked report views](docs/v9_worked_cyprus_cycle.md) · [Source and acceptance evidence](data/census_v9/pilot_summary.json).
+
+The V8 model transfers to a second selected reporting context as source/version and attribution controls: **eight reports, four cycles, 15 components, 41 observations, five directed referrals and 48 source/representation checks**. Cyprus already has joint committee support; no new coordinating unit, report merger, staff reduction or savings is justified by this test. The EUR4.12bn/EUR2.14bn export-comparator discrepancy remains unresolved, and planned, commenced and completed project stages stay separate. Frozen rankings and mandates are unchanged; the course watch remains paused.
+
 ## Current — V8 shared-production assessment
 
 **[Updated consolidation brief](docs/v8_consolidation_brief.md)** · [Full assessment](docs/v8_shared_production_assessment.md) · [Worked UNOWAS–UNOCA cycle](docs/v8_worked_reporting_cycle.md) · [Evidence matrix](data/census_v8/source_component_matrix.csv).

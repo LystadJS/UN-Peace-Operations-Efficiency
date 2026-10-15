@@ -1,0 +1,33 @@
+{
+  "asof": "2026-10-15",
+  "baseline_commit": "ab4fe64bbefe5399771d2908a52cdfcb5c2c25f1",
+  "directed_referral_edges": 5,
+  "original_pdf_pages": 146,
+  "original_reports": 8,
+  "primary_cycle_observations": 21,
+  "product_views": 8,
+  "reciprocal_cycles": [
+    "3"
+  ],
+  "referral_occurrences": 15,
+  "reporting_cycles": 4,
+  "safeguards": {
+    "approval_chains": "unchanged",
+    "course_watch": "paused_no_checks_run",
+    "global_new_event_total": "not_estimated",
+    "incremental_net_savings": "not_estimated",
+    "live_trial": "not_run",
+    "mandated_products": "unchanged",
+    "rankings": "unchanged",
+    "retrospective_2027_support": "20/32 unchanged",
+    "source_tables": "unchanged",
+    "staff_hours_saved": "not_estimated"
+  },
+  "selected_components": 15,
+  "source_coverage": "selected main-body claims and annex headings; not full substantive review of all pages",
+  "source_design_sha256": "4878dbbe77344be458ac948ada7de6124c44c8f575351af2835489ff88262dd7",
+  "source_observations": 41,
+  "transcript_transfer": "not_tested",
+  "transfer_result": "representation_and_controls_transfer; operational_incremental_benefit_unverified",
+  "version": 9
+}

@@ -1,0 +1,1227 @@
+{
+  "asof": "2026-10-15",
+  "baseline_commit": "ab4fe64bbefe5399771d2908a52cdfcb5c2c25f1",
+  "comparison_cycles": [
+    "0",
+    "2",
+    "3"
+  ],
+  "comparison_kind": "purposive_transfer_case_not_statistical_external_validation",
+  "components": [
+    {
+      "baseline_class": "already_shared",
+      "component_id": "K01",
+      "protected_boundary": "Common dated chronology; agreement is not implementation.",
+      "title": "March 2025 broader-format political meeting and initiatives"
+    },
+    {
+      "baseline_class": "already_joint",
+      "component_id": "K02",
+      "protected_boundary": "Same institution/date; retain leaders launch versus co-facilitated committee meeting and do not merge participant lists.",
+      "title": "5 May Youth Technical Committee launch / inaugural meeting"
+    },
+    {
+      "baseline_class": "already_joint",
+      "component_id": "K03",
+      "protected_boundary": "Good-offices auspices and UNFICYP support are baseline; counts are programme aggregates.",
+      "title": "Existing technical-committee support and meeting counts"
+    },
+    {
+      "baseline_class": "reusable_with_versioning",
+      "component_id": "K04",
+      "protected_boundary": "One infrastructure project; planned start, actual start and completion are distinct.",
+      "title": "Existing Agios Dometios/Metehan crossing enlargement"
+    },
+    {
+      "baseline_class": "distinct_scope",
+      "component_id": "K05",
+      "protected_boundary": "Do not infer opening of new crossings from enlargement of an existing crossing.",
+      "title": "Proposed additional crossing points"
+    },
+    {
+      "baseline_class": "reusable_with_conflict",
+      "component_id": "K06",
+      "protected_boundary": "Shared trade numerator; inconsistent export comparators must remain separately attributed.",
+      "title": "2024 Green Line trade and export comparator"
+    },
+    {
+      "baseline_class": "already_referred",
+      "component_id": "K07",
+      "protected_boundary": "Retain external convenor; parties represented are not event counts or people.",
+      "title": "Slovakia-facilitated political-party dialogue"
+    },
+    {
+      "baseline_class": "already_joint",
+      "component_id": "K08",
+      "protected_boundary": "Existing coordination; operational exchange totals need period and unit, not cross-report addition.",
+      "title": "Joint Contact Rooms and committee interface"
+    },
+    {
+      "baseline_class": "reference_only",
+      "component_id": "K09",
+      "protected_boundary": "Peacekeeping patrols and incidents are not replaced by political context; detailed restricted data excluded.",
+      "title": "Buffer-zone operations and contextual referral"
+    },
+    {
+      "baseline_class": "owner_specific",
+      "component_id": "K10",
+      "protected_boundary": "Distinct analytical remit and clearance; existing dual-hatted role is not a new merger.",
+      "title": "Political assessments, good offices and leadership roles"
+    },
+    {
+      "baseline_class": "nonadditive",
+      "component_id": "K11",
+      "protected_boundary": "Meetings, programme events, hosted activities and attendance cannot be equated or summed without record-level mapping.",
+      "title": "Activity / meeting denominators"
+    },
+    {
+      "baseline_class": "attribution_boundary",
+      "component_id": "K12",
+      "protected_boundary": "A party submission remains that party's statement, not a Secretariat finding or shared agreed fact.",
+      "title": "Leaders written submissions in annexes"
+    },
+    {
+      "baseline_class": "reusable_with_scope_versions",
+      "component_id": "K13",
+      "protected_boundary": "Agreed initial sites and later expanded mixed-stage portfolio are not one completed-site count.",
+      "title": "Cemetery-restoration programme"
+    },
+    {
+      "baseline_class": "already_referred",
+      "component_id": "K14",
+      "protected_boundary": "Match topic, committees and referral; retain distinct committee roles and do not infer unknown exact day or headcount.",
+      "title": "2026 intergenerational digital-literacy workshop"
+    },
+    {
+      "baseline_class": "denominator_control",
+      "component_id": "K15",
+      "protected_boundary": "Allocation, period and approximate percentage travel together; do not infer efficiency from noncomparable utilization rates.",
+      "title": "Technical-committee support-facility utilization"
+    }
+  ],
+  "historical_replay": "not_claimed; cycle-specific retrospective reconstruction only",
+  "observations": [
+    {
+      "anchors": [
+        "six trust-building initiatives were announced",
+        "S/2025/448"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "March Geneva meeting and six initiatives summarized; detailed political account referred to the companion report.",
+      "component_id": "K01",
+      "locator": "para 4",
+      "observation_id": "CY001",
+      "pages": [
+        1
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P1",
+      "values": {
+        "initiatives": 6,
+        "meeting_month": "2025-03",
+        "ref": "S/2025/448",
+        "stage": "announced"
+      }
+    },
+    {
+      "anchors": [
+        "17 and 18 March 2025",
+        "initiatives to build trust",
+        "opening of four crossing points"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Broader-format meeting held 17-18 March; six initiatives agreed, not all implemented.",
+      "component_id": "K01",
+      "locator": "para 4",
+      "observation_id": "CY002",
+      "pages": [
+        1,
+        2
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "event_end": "2025-03-18",
+        "event_start": "2025-03-17",
+        "stage": "agreed"
+      }
+    },
+    {
+      "anchors": [
+        "inaugural meeting on 5 May",
+        "co-facilitated",
+        "S/2025/448"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Youth Technical Committee inaugural meeting on 5 May co-facilitated by both UN missions.",
+      "component_id": "K02",
+      "locator": "para 30",
+      "observation_id": "CY003",
+      "pages": [
+        7
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P1",
+      "values": {
+        "UN_roles": [
+          "good_offices_co_facilitator",
+          "UNFICYP_co_facilitator"
+        ],
+        "attendance": null,
+        "event_date": "2025-05-05",
+        "ref": "S/2025/448",
+        "stage": "inaugural_meeting"
+      }
+    },
+    {
+      "anchors": [
+        "on 5 May",
+        "leaders jointly launched",
+        "technical committee on youth"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Leaders jointly launched the Youth Technical Committee on 5 May.",
+      "component_id": "K02",
+      "locator": "para 5",
+      "observation_id": "CY004",
+      "pages": [
+        2
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "attendance": null,
+        "event_date": "2025-05-05",
+        "stage": "leaders_launched"
+      }
+    },
+    {
+      "anchors": [
+        "now 13 technical committees",
+        "with support from the United Nations Peacekeeping Force in Cyprus",
+        "over 130 meetings",
+        "52 per cent men and 48 per cent women"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Thirteen committees under good-offices auspices with UNFICYP support; over 130 meetings and just over 200 members.",
+      "component_id": "K03",
+      "locator": "paras 15-16",
+      "observation_id": "CY005",
+      "pages": [
+        3,
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "committees": 13,
+        "meetings": 130,
+        "meetings_comparator": ">",
+        "members": 200,
+        "members_comparator": ">",
+        "men_pct": 52,
+        "unit": "committee_meetings_and_members_separate",
+        "women_pct": 48
+      }
+    },
+    {
+      "anchors": [
+        "enlargement project",
+        "planned to commence in September",
+        "S/2025/448"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Existing crossing enlargement planned to commence in September.",
+      "component_id": "K04",
+      "locator": "para 35",
+      "observation_id": "CY006",
+      "pages": [
+        8
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P1",
+      "values": {
+        "actual_start": null,
+        "asset": "existing_crossing_expansion",
+        "planned_month": "2025-09",
+        "ref": "S/2025/448",
+        "stage": "planned_start"
+      }
+    },
+    {
+      "anchors": [
+        "expansion of the Agios Dometios/Metehan",
+        "expected to start in September 2025"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Companion report expects existing crossing expansion to start September 2025.",
+      "component_id": "K04",
+      "locator": "para 18",
+      "observation_id": "CY007",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "actual_start": null,
+        "asset": "existing_crossing_expansion",
+        "planned_month": "2025-09",
+        "stage": "planned_start"
+      }
+    },
+    {
+      "anchors": [
+        "conclude an agreement on crossing points without delay"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Agreement on additional crossings urged; no completed new-crossing claim.",
+      "component_id": "K05",
+      "locator": "para 27",
+      "observation_id": "CY008",
+      "pages": [
+        5
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "asset": "additional_crossing_points",
+        "completed_new_crossings": null,
+        "stage": "agreement_urged"
+      }
+    },
+    {
+      "anchors": [
+        "15.2 million euros",
+        "4.12 billion euros"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "2024 Green Line trade 15.2 million euros; export comparator printed as 4.12 billion euros.",
+      "component_id": "K06",
+      "locator": "para 31",
+      "observation_id": "CY009",
+      "pages": [
+        7
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P1",
+      "values": {
+        "export_definition": "total_value_Republic_of_Cyprus_exports_to_other_parts_of_world",
+        "exports_eur_billion": 4.12,
+        "ratio_allowed": false,
+        "trade_eur_million": 15.2,
+        "year": 2024
+      }
+    },
+    {
+      "anchors": [
+        "15.2 million euros",
+        "2.14 billion euros"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Same 2024 trade figure, but export comparator printed as 2.14 billion euros.",
+      "component_id": "K06",
+      "locator": "para 24",
+      "observation_id": "CY010",
+      "pages": [
+        5
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "export_definition": "total_exports_Republic_of_Cyprus",
+        "exports_eur_billion": 2.14,
+        "ratio_allowed": false,
+        "trade_eur_million": 15.2,
+        "year": 2024
+      }
+    },
+    {
+      "anchors": [
+        "monthly meetings under the auspices of the Embassy of Slovakia",
+        "S/2025/448"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Monthly political-party meetings under the Embassy of Slovakia; companion report referenced.",
+      "component_id": "K07",
+      "locator": "para 32",
+      "observation_id": "CY011",
+      "pages": [
+        8
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P1",
+      "values": {
+        "cadence": "monthly",
+        "convenor": "Embassy_of_Slovakia",
+        "participant_count": null,
+        "ref": "S/2025/448"
+      }
+    },
+    {
+      "anchors": [
+        "Embassy of Slovakia",
+        "18 political parties"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Dialogue includes 18 political parties, not 18 meetings or people.",
+      "component_id": "K07",
+      "locator": "para 11",
+      "observation_id": "CY012",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "convenor": "Embassy_of_Slovakia",
+        "count": 18,
+        "participant_count": null,
+        "unit": "political_parties"
+      }
+    },
+    {
+      "anchors": [
+        "over a hundred",
+        "Joint Contact Rooms in Nicosia and Pyla/Pile"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Committee on Crime and Criminal Matters facilitates over 100 information exchanges through Joint Contact Rooms.",
+      "component_id": "K08",
+      "locator": "para 18",
+      "observation_id": "CY013",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "comparator": ">",
+        "count": 100,
+        "period": "2024-12-12/2025-06-11",
+        "unit": "information_exchange_instances"
+      }
+    },
+    {
+      "anchors": [
+        "14,000 patrols",
+        "military status quo"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Peacekeeping mission undertook 14,000 ground and air patrols.",
+      "component_id": "K09",
+      "locator": "para 5",
+      "observation_id": "CY014",
+      "pages": [
+        2
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "P1",
+      "values": {
+        "count": 14000,
+        "function": "buffer_zone_military_status_quo",
+        "unit": "patrols"
+      }
+    },
+    {
+      "anchors": [
+        "Special Representative, who also serves as Deputy Special Adviser"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Good-offices conclusions remain own analysis; Special Representative also serves as Deputy Special Adviser.",
+      "component_id": "K10",
+      "locator": "paras 38-39",
+      "observation_id": "CY015",
+      "pages": [
+        7
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "G1",
+      "values": {
+        "analytical_owner": "Good offices",
+        "existing_dual_role": true,
+        "new_clearance": "not_obtained"
+      }
+    },
+    {
+      "anchors": [
+        "31 May 2025",
+        "297",
+        "46 were intercommunal events"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "UNFICYP activity aggregate is 297, including 46 intercommunal events, as of 31 May.",
+      "component_id": "K11",
+      "locator": "para 27",
+      "observation_id": "CY016",
+      "pages": [
+        7
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "P1",
+      "values": {
+        "asof": "2025-05-31",
+        "count": 297,
+        "subset_count": 46,
+        "unique_people": null,
+        "unit": "organized_or_supported_activities"
+      }
+    },
+    {
+      "anchors": [
+        "95 meetings",
+        "working-level regional consultations were not held"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Deputy Special Adviser held 95 meetings; regional consultations not held due to budget and liquidity pressures.",
+      "component_id": "K11",
+      "locator": "para 14",
+      "observation_id": "CY017",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "G1",
+      "values": {
+        "avoidable_cost": null,
+        "count": 95,
+        "regional_consultations": "not_held",
+        "unit": "Deputy_Special_Adviser_meetings"
+      }
+    },
+    {
+      "anchors": [
+        "updates submitted by the two leaders",
+        "Written update by the Greek Cypriot leader"
+      ],
+      "attribution_class": "party_submission_metadata",
+      "claim": "Written update is attributed to the Greek Cypriot leader; annex is not an additional Secretariat finding.",
+      "component_id": "K12",
+      "locator": "para 1 and Annex I heading",
+      "observation_id": "CY018",
+      "pages": [
+        1,
+        8
+      ],
+      "reuse_policy": "party_attribution_only",
+      "source_id": "G1",
+      "values": {
+        "author": "Greek_Cypriot_leader",
+        "secretariat_endorsement": false,
+        "statement_status": "party_submission"
+      }
+    },
+    {
+      "anchors": [
+        "Annex II",
+        "Turkish Cypriot"
+      ],
+      "attribution_class": "party_submission_metadata",
+      "claim": "Second written update remains attributed to the Turkish Cypriot side.",
+      "component_id": "K12",
+      "locator": "Annex II heading",
+      "observation_id": "CY019",
+      "pages": [
+        13
+      ],
+      "reuse_policy": "party_attribution_only",
+      "source_id": "G1",
+      "values": {
+        "author": "Turkish_Cypriot_side",
+        "secretariat_endorsement": false,
+        "statement_status": "party_submission"
+      }
+    },
+    {
+      "anchors": [
+        "5 May",
+        "30 sites",
+        "work to implement this decision has begun"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Thirty cemetery sites approved on 5 May; implementation begun, not completed.",
+      "component_id": "K13",
+      "locator": "para 17",
+      "observation_id": "CY020",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G1",
+      "values": {
+        "approval_date": "2025-05-05",
+        "scope": "initial_agreed_sites",
+        "sites": 30,
+        "stage": "approved_implementation_begun"
+      }
+    },
+    {
+      "anchors": [
+        "UNDP",
+        "74 per cent",
+        "1 million euros",
+        "11 June 2025"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Support-facility phase two uses UNDP implementation; approximately 74% of EUR1m utilized by 11 June 2025.",
+      "component_id": "K15",
+      "locator": "para 20",
+      "observation_id": "CY021",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "source_qualified_reference",
+      "source_id": "G1",
+      "values": {
+        "allocation_eur": 1000000,
+        "asof": "2025-06-11",
+        "comparator": "approximately",
+        "percent": 74,
+        "phase": 2,
+        "savings": null
+      }
+    },
+    {
+      "anchors": [
+        "Technical Committee on Crossings, facilitated by UNFICYP",
+        "finalized discussions",
+        "S/2025/7"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Committee facilitated by UNFICYP had finalized expansion discussions in the earlier period.",
+      "component_id": "K04",
+      "locator": "para 44",
+      "observation_id": "CY022",
+      "pages": [
+        9
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P0",
+      "values": {
+        "activity_year": 2024,
+        "actual_start": null,
+        "asset": "existing_crossing_expansion",
+        "ref": "S/2025/7",
+        "stage": "discussions_finalized"
+      }
+    },
+    {
+      "anchors": [
+        "S/2025/7/Rev.1",
+        "14 January 2025",
+        "13 June 2024 to 11 December 2024"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Revised January report covers June-December 2024; retain revision, rather than substitute it as the January 3 original.",
+      "component_id": "K10",
+      "locator": "paras 1-2 and cover",
+      "observation_id": "CY023",
+      "pages": [
+        1
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "G0",
+      "values": {
+        "activity_year": 2024,
+        "actual_version": "S/2025/7/Rev.1",
+        "issue_date": "2025-01-14",
+        "unrevised_version_available": false
+      }
+    },
+    {
+      "anchors": [
+        "commenced in the first week of December 2025",
+        "S/2026/9"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Existing crossing enlargement commenced in first week of December 2025.",
+      "component_id": "K04",
+      "locator": "para 30",
+      "observation_id": "CY024",
+      "pages": [
+        8
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P2",
+      "values": {
+        "actual_start_month": "2025-12",
+        "actual_start_precision": "first_week",
+        "asset": "existing_crossing_expansion",
+        "ref": "S/2026/9",
+        "stage": "commenced"
+      }
+    },
+    {
+      "anchors": [
+        "implemented by the United Nations Development Programme",
+        "started early in December",
+        "Completion is envisaged before the end of January 2026"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "UNDP implementation began early December; completion envisaged before end January 2026.",
+      "component_id": "K04",
+      "locator": "para 19",
+      "observation_id": "CY025",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G2",
+      "values": {
+        "actual_completion": null,
+        "actual_start_month": "2025-12",
+        "asset": "existing_crossing_expansion",
+        "implementer": "UNDP",
+        "planned_completion": "2026-01",
+        "stage": "commenced"
+      }
+    },
+    {
+      "anchors": [
+        "no concrete results achieved on the opening of new crossing points"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "No concrete results yet on new crossing points.",
+      "component_id": "K05",
+      "locator": "para 9",
+      "observation_id": "CY026",
+      "pages": [
+        2
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G2",
+      "values": {
+        "asset": "additional_crossing_points",
+        "completed_new_crossings": null,
+        "stage": "no_concrete_results"
+      }
+    },
+    {
+      "anchors": [
+        "Joint Contact Rooms, facilitated by UNFICYP",
+        "Technical Committee on Crime and Criminal Matters",
+        "S/2026/9"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "UNFICYP facilitates the existing Joint Contact Rooms under the committee; directs readers to good offices.",
+      "component_id": "K08",
+      "locator": "para 20 and footnote 1",
+      "observation_id": "CY027",
+      "pages": [
+        6
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P2",
+      "values": {
+        "UNFICYP_role": "facilitator",
+        "committee_role": "auspices",
+        "count": null,
+        "ref": "S/2026/9"
+      }
+    },
+    {
+      "anchors": [
+        "202 instances",
+        "three individuals in custody"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Joint Contact Rooms exchanged information on 202 instances and three persons in custody; preserve separate units.",
+      "component_id": "K08",
+      "locator": "para 18",
+      "observation_id": "CY028",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G2",
+      "values": {
+        "count": 202,
+        "custody_exchange_count": 3,
+        "custody_unit": "individuals",
+        "period": "2025-06-12/2025-12-15",
+        "unit": "information_exchange_instances"
+      }
+    },
+    {
+      "anchors": [
+        "151 meetings",
+        "all 13 technical committees",
+        "support of the United Nations Peacekeeping Force in Cyprus"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "151 committee meetings across 13 committees with existing UNFICYP support.",
+      "component_id": "K03",
+      "locator": "para 15",
+      "observation_id": "CY029",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G2",
+      "values": {
+        "committees": 13,
+        "count": 151,
+        "unit": "technical_committee_meetings"
+      }
+    },
+    {
+      "anchors": [
+        "renovated all the agreed",
+        "fully implementing the corresponding trust-building initiative"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "All agreed cemeteries renovated, implementing the earlier corresponding initiative; not a count of all later portfolio sites.",
+      "component_id": "K13",
+      "locator": "para 17",
+      "observation_id": "CY030",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G2",
+      "values": {
+        "scope": "agreed_2025_initiative",
+        "sites": null,
+        "stage": "agreed_initiative_completed"
+      }
+    },
+    {
+      "anchors": [
+        "November 2025",
+        "86 per cent"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Approximately 86% utilized as of November 2025; allocation amount is not restated in this selected claim.",
+      "component_id": "K15",
+      "locator": "para 22",
+      "observation_id": "CY031",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "source_qualified_reference",
+      "source_id": "G2",
+      "values": {
+        "allocation_eur": null,
+        "asof": "2025-11",
+        "comparator": "approximately",
+        "percent": 86,
+        "phase": 2,
+        "savings": null
+      }
+    },
+    {
+      "anchors": [
+        "In March",
+        "digital literacy workshop",
+        "S/2026/551"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "March digital-literacy workshop: Humanitarian Matters committee supported by Youth committee; explicit companion reference.",
+      "component_id": "K14",
+      "locator": "para 32",
+      "observation_id": "CY032",
+      "pages": [
+        7
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "P3",
+      "values": {
+        "attendance": null,
+        "event_day": null,
+        "event_month": "2026-03",
+        "lead_label": "Technical Committee on Humanitarian Matters",
+        "ref": "S/2026/551",
+        "supporter": "Technical Committee on Youth"
+      }
+    },
+    {
+      "anchors": [
+        "Connecting generations across the island through technology",
+        "Technical Committee on Humanitarian Affairs",
+        "support from the Technical Committee on Youth"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Humanitarian Affairs committee and Youth support in intergenerational technology workshop; no exact date or headcount in this paragraph.",
+      "component_id": "K14",
+      "locator": "para 25",
+      "observation_id": "CY033",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G3",
+      "values": {
+        "attendance": null,
+        "event_day": null,
+        "event_month": null,
+        "lead_label": "Technical Committee on Humanitarian Affairs",
+        "supporter": "Technical Committee on Youth"
+      }
+    },
+    {
+      "anchors": [
+        "buffer zone continued to be fragile",
+        "S/2026/550"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Good-offices report refers to UNFICYP for detailed buffer-zone account.",
+      "component_id": "K09",
+      "locator": "para 12",
+      "observation_id": "CY034",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "source_qualified_reference",
+      "source_id": "G3",
+      "values": {
+        "detailed_operational_owner": "UNFICYP",
+        "ref": "S/2026/550",
+        "scope": "political_context_reference"
+      }
+    },
+    {
+      "anchors": [
+        "Pyla/Pile plateau",
+        "Since early February"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Peacekeeping report retains detailed buffer-zone situation; not an operational task that a referral replaces.",
+      "component_id": "K09",
+      "locator": "para 4",
+      "observation_id": "CY035",
+      "pages": [
+        1,
+        2
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "P3",
+      "values": {
+        "detailed_operational_owner": "UNFICYP",
+        "operational_substitution": "not_established",
+        "scope": "buffer_zone_situation"
+      }
+    },
+    {
+      "anchors": [
+        "completion",
+        "Agios Dometios/Metehan",
+        "February",
+        "United Nations Development Programme"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Event marked completion of existing crossing enlargement in February; UNDP implemented project.",
+      "component_id": "K04",
+      "locator": "para 19",
+      "observation_id": "CY036",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G3",
+      "values": {
+        "actual_completion_date": null,
+        "asset": "existing_crossing_expansion",
+        "completion_marking_event_month": "2026-02",
+        "implementer": "UNDP",
+        "stage": "completed_reported"
+      }
+    },
+    {
+      "anchors": [
+        "remain unimplemented, including the opening of additional crossing points"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Additional crossings still among unimplemented initiatives.",
+      "component_id": "K05",
+      "locator": "para 32",
+      "observation_id": "CY037",
+      "pages": [
+        5
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G3",
+      "values": {
+        "asset": "additional_crossing_points",
+        "completed_new_crossings": null,
+        "stage": "not_implemented"
+      }
+    },
+    {
+      "anchors": [
+        "approximately 70 cemeteries",
+        "either completed, ongoing or under preparation"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Expanded portfolio of approximately 70 cemeteries includes completed, ongoing and preparatory stages.",
+      "component_id": "K13",
+      "locator": "para 20",
+      "observation_id": "CY038",
+      "pages": [
+        4
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G3",
+      "values": {
+        "comparator": "approximately",
+        "scope": "expanded_cemeteries_portfolio",
+        "sites": 70,
+        "stage": "mixed_completed_ongoing_preparation"
+      }
+    },
+    {
+      "anchors": [
+        "174 meetings",
+        "all 13 technical committees",
+        "support of the United Nations Peacekeeping Force in Cyprus"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "174 meetings across 13 committees with UNFICYP support.",
+      "component_id": "K03",
+      "locator": "para 18",
+      "observation_id": "CY039",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "shared_fact",
+      "source_id": "G3",
+      "values": {
+        "committees": 13,
+        "count": 174,
+        "unit": "technical_committee_meetings"
+      }
+    },
+    {
+      "anchors": [
+        "128 meetings"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Separate good-offices stakeholder-meeting count is 128.",
+      "component_id": "K11",
+      "locator": "para 17",
+      "observation_id": "CY040",
+      "pages": [
+        3
+      ],
+      "reuse_policy": "owner_only",
+      "source_id": "G3",
+      "values": {
+        "count": 128,
+        "unit": "good_offices_stakeholder_meetings"
+      }
+    },
+    {
+      "anchors": [
+        "67 per cent",
+        "1.5 million euros",
+        "2023–2026",
+        "1.7 million euros"
+      ],
+      "attribution_class": "secretariat_report",
+      "claim": "Phase two extended through 2026; approximately 67% of EUR1.5m 2023-2026 allocation used by June; lifetime EUR1.7m is a different perimeter.",
+      "component_id": "K15",
+      "locator": "para 29",
+      "observation_id": "CY041",
+      "pages": [
+        5
+      ],
+      "reuse_policy": "source_qualified_reference",
+      "source_id": "G3",
+      "values": {
+        "allocation_eur": 1500000,
+        "allocation_period": "2023-2026",
+        "asof": "2026-06",
+        "comparator": "approximately",
+        "lifetime_utilized_eur_lower_bound": 1700000,
+        "percent": 67,
+        "phase": 2,
+        "savings": null
+      }
+    }
+  ],
+  "primary_cycle": "1",
+  "safeguards": {
+    "approval_chains": "unchanged",
+    "course_watch": "paused_no_checks_run",
+    "global_new_event_total": "not_estimated",
+    "incremental_net_savings": "not_estimated",
+    "live_trial": "not_run",
+    "mandated_products": "unchanged",
+    "rankings": "unchanged",
+    "retrospective_2027_support": "20/32 unchanged",
+    "source_tables": "unchanged",
+    "staff_hours_saved": "not_estimated"
+  },
+  "sources": [
+    {
+      "actual_symbol": "S/2025/6",
+      "annex_start": 15,
+      "cycle": "0",
+      "file": "data/census_v9/sources/S_2025_6.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2025-01-03",
+      "low_text_pages": [
+        16
+      ],
+      "owner": "UNFICYP",
+      "pages": 16,
+      "period_end": "2024-12-11",
+      "period_start": "2024-06-13",
+      "requested_symbol": "S/2025/6",
+      "revision": "as_retrieved",
+      "sha256": "846b77a5b4665ff72cf5d84d2fd8598cc389c45771b2f092b9e20cb5cd1bc148",
+      "source_id": "P0",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2025/6&l=en&t=pdf"
+    },
+    {
+      "actual_symbol": "S/2025/7/Rev.1",
+      "annex_start": 8,
+      "cycle": "0",
+      "file": "data/census_v9/sources/S_2025_7_Rev.1.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2025-01-14",
+      "low_text_pages": [],
+      "owner": "Good offices",
+      "pages": 21,
+      "period_end": "2024-12-11",
+      "period_start": "2024-06-13",
+      "requested_symbol": "S/2025/7",
+      "revision": "Rev.1 retained; unrevised version unavailable",
+      "sha256": "87d92cf95e1e1df294eb8ec86ae3c9313ef2caba12ee70158ee2665e0e62daab",
+      "source_id": "G0",
+      "url": "https://documents.un.org/api/symbol/access?j=N2500838&t=pdf&i=S/2025/7/REV.1_1736963702379"
+    },
+    {
+      "actual_symbol": "S/2025/447",
+      "annex_start": 14,
+      "cycle": "1",
+      "file": "data/census_v9/sources/S_2025_447.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2025-07-03",
+      "low_text_pages": [
+        15
+      ],
+      "owner": "UNFICYP",
+      "pages": 15,
+      "period_end": "2025-06-11",
+      "period_start": "2024-12-12",
+      "requested_symbol": "S/2025/447",
+      "revision": "as_retrieved",
+      "sha256": "702aca19e142e8841ea9384f8e490938ab64a307a54067362bc01b310cbb20fb",
+      "source_id": "P1",
+      "url": "https://documents.un.org/api/symbol/access?j=N2516900&t=pdf&i=S/2025/447_1752173462162"
+    },
+    {
+      "actual_symbol": "S/2025/448",
+      "annex_start": 8,
+      "cycle": "1",
+      "file": "data/census_v9/sources/S_2025_448.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2025-07-03",
+      "low_text_pages": [],
+      "owner": "Good offices",
+      "pages": 20,
+      "period_end": "2025-06-11",
+      "period_start": "2024-12-12",
+      "requested_symbol": "S/2025/448",
+      "revision": "as_retrieved",
+      "sha256": "60fa799ad696a5e3239cb7e0836a30da789d8264276930c33fa65522928d153e",
+      "source_id": "G1",
+      "url": "https://documents.un.org/api/symbol/access?j=N2516820&t=pdf&i=S/2025/448_1752182588325"
+    },
+    {
+      "actual_symbol": "S/2026/8",
+      "annex_start": 13,
+      "cycle": "2",
+      "file": "data/census_v9/sources/S_2026_8.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2026-01-05",
+      "low_text_pages": [
+        14
+      ],
+      "owner": "UNFICYP",
+      "pages": 14,
+      "period_end": "2025-12-15",
+      "period_start": "2025-06-12",
+      "requested_symbol": "S/2026/8",
+      "revision": "as_retrieved",
+      "sha256": "62db0b398c44ccf4d9bcee40b8843fcd865db613b5902d774166351867d1d99d",
+      "source_id": "P2",
+      "url": "https://documents.un.org/api/symbol/access?j=N2535979&t=pdf&i=S/2026/8_1768323421416"
+    },
+    {
+      "actual_symbol": "S/2026/9",
+      "annex_start": 7,
+      "cycle": "2",
+      "file": "data/census_v9/sources/S_2026_9.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2026-01-05",
+      "low_text_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "owner": "Good offices",
+      "pages": 23,
+      "period_end": "2025-12-15",
+      "period_start": "2025-06-12",
+      "requested_symbol": "S/2026/9",
+      "revision": "as_retrieved",
+      "sha256": "7c92ec6687a200cc6b2c88a3182ac3b038774d9695bebdebebaa6061473d4508",
+      "source_id": "G2",
+      "url": "https://documents.un.org/api/symbol/access?j=N2536009&t=pdf&i=S/2026/9_1768322702079"
+    },
+    {
+      "actual_symbol": "S/2026/550",
+      "annex_start": 13,
+      "cycle": "3",
+      "file": "data/census_v9/sources/S_2026_550.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2026-07-06",
+      "low_text_pages": [
+        14
+      ],
+      "owner": "UNFICYP",
+      "pages": 14,
+      "period_end": "2026-06-17",
+      "period_start": "2025-12-16",
+      "requested_symbol": "S/2026/550",
+      "revision": "as_retrieved",
+      "sha256": "7e0cbe10c616e769ea3bf163a4ffa2b2742866872a88b17c514001751e97adfa",
+      "source_id": "P3",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/550&l=en&t=pdf"
+    },
+    {
+      "actual_symbol": "S/2026/551",
+      "annex_start": 8,
+      "cycle": "3",
+      "file": "data/census_v9/sources/S_2026_551.pdf",
+      "historical_availability": "not_verified_issue_date_is_not_access_timestamp",
+      "issue_date": "2026-07-06",
+      "low_text_pages": [],
+      "owner": "Good offices",
+      "pages": 23,
+      "period_end": "2026-06-17",
+      "period_start": "2025-12-16",
+      "requested_symbol": "S/2026/551",
+      "revision": "as_retrieved",
+      "sha256": "0d4c5fe5226a353c8f8a59e21e174aa899cb1a4bee3f96cf8d6afd576a4ac0a0",
+      "source_id": "G3",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/551&l=en&t=pdf"
+    }
+  ],
+  "version": 9
+}

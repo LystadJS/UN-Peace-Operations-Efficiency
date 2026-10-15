@@ -1,0 +1,251 @@
+{
+  "checks": 48,
+  "constructed_corruptions_rejected": 18,
+  "independent_assertions": 30,
+  "limits": "Source/representation checks; not independent human clearance, an operational error rate or productivity/savings evidence.",
+  "pdf_sources_rechecked": 8,
+  "results": [
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "8 originals have 146 pages"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "4 retained report pairs"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "all 41 claims pass second-parser anchors"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P1 preserves conflicting export denominators"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G1 preserves conflicting export denominators"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P0 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P0 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G0 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G0 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P1 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P1 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G1 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G1 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P2 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P2 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G2 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G2 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P3 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "P3 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G3 has no later/earlier-cycle claim injection"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "G3 does not import party submissions"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "planned crossing start remains Sept 2025"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "reported actual start remains Dec 2025"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "February completion-marking event is not an invented exact completion date"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "new crossings not inferred from enlargement"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "expanded cemetery portfolio retains mixed stages"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "2025 issue retains 2024 event period"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "utilization allocation change is not a performance trend"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "5 directed references and 15 occurrences"
+    },
+    {
+      "kind": "independent_assertion",
+      "status": "PASS",
+      "test": "July 2026 reciprocal referrals"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "normalize export denominator"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "hide trade conflict"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "compute unqualified common ratio"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "planned crossing becomes completed"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "new crossings inferred open"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "70 mixed sites become 70 completed sites"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "130 lower-bound meetings become exact"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "18 parties become 18 persons"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "annex statement becomes Secretariat finding"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "revision qualifier lost"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "2024 activity redated to 2025"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "future completion backfilled"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "unknown allocation filled from old budget"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "separate owner reassigned"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "common final clearance invented"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "savings invented"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "staff hours invented"
+    },
+    {
+      "kind": "constructed_corruption",
+      "status": "REJECTED_AS_EXPECTED",
+      "test": "unknown exact completion day invented"
+    }
+  ],
+  "source_anchor_observations_checked_by_each_parser": 41,
+  "status": "PASS"
+}

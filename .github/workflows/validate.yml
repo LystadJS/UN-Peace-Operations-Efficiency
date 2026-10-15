@@ -73,3 +73,5 @@ jobs:
         run: |
           python3 scripts/validate_census_v5.py
           python3 scripts/finalize_census_v5.py --check
+      - name: Validate complete bounded cross-version identities and source reuse
+        run: python3 scripts/audit_census_v6.py --check

@@ -75,3 +75,10 @@ jobs:
           python3 scripts/finalize_census_v5.py --check
       - name: Validate complete bounded cross-version identities and source reuse
         run: python3 scripts/audit_census_v6.py --check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate V7 original transcript hashes and effective source references
+        run: |
+          python -m pip install --quiet PyMuPDF==1.26.7
+          python scripts/finalize_census_v7.py

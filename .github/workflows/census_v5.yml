@@ -1,0 +1,65 @@
+name: October 15 public census extension
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/collect_census_v5.py
+      - scripts/validate_census_v5.py
+      - data/census_v5/reviewed_evidence.json
+      - .github/workflows/census_v5.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-census-v5
+  cancel-in-progress: false
+
+jobs:
+  collect-validate-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and record parser environment
+        run: |
+          python -m pip install beautifulsoup4
+          mkdir -p /tmp/census-v5-html
+          python -m pip freeze > /tmp/census-v5-html/python-requirements.txt
+      - name: Collect bounded public indexes and validate evidence
+        run: python scripts/validate_census_v5.py --collect --export
+      - name: Preserve earlier accepted evidence controls
+        run: |
+          python scripts/validate_census_v2_release.py
+          python scripts/validate_census_v3_extension.py
+          python scripts/validate_census_v4_attendance.py
+          python tests/check_council_index_parser.py
+      - name: Publish reviewed data and report without changing earlier freezes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/census_v5 docs/census_2025_2026_oct15_v5.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish validated October 15 Council and activity census extension'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > /tmp/census-v5-html/published-commit.txt
+      - name: Retain public-source hashes, raw HTML and reproducible outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-census-v5-oct15
+          retention-days: 14
+          path: |
+            /tmp/census-v5-html
+            data/census_v5
+            docs/census_2025_2026_oct15_v5.md
+            scripts/collect_census_v5.py
+            scripts/validate_census_v5.py

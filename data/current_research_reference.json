@@ -1,0 +1,24 @@
+{
+  "record_type": "current_research_reference_pointer",
+  "instruction_timestamp_utc": "2026-10-15T21:16:52Z",
+  "authority": "explicit_user_instruction_for_subsequent_project_research_only",
+  "reference_id": "UNPO-REF-13.0",
+  "reference_version": "13.0",
+  "reference_path": "data/census_v13/research_reference.json",
+  "reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "adoption_record_path": "data/census_v13/adoption_record.json",
+  "current_dispositions_path": "data/census_v13/reference_lineage.csv",
+  "historical_first_pass_path": "data/census_v11/obligation_reviews.csv",
+  "resolution_rule": "Use the adopted 13.0 reference for subsequent in-scope research; verify its pinned hash and adoption record before use. Do not silently substitute an earlier candidate or overwrite a historical version.",
+  "scope_boundary": "This pointer governs the fixed V8/V9 research-reference obligations, not unrelated mission-budget or operational evidence.",
+  "historical_results_policy": "Retain all historical records and first-pass dispositions. Keep the two post-amendment rechecks separate from the historical 59-supported/2-held result; do not claim a fresh full-corpus score.",
+  "live_use_gates": {
+    "SP08P1": "BLOCKED_FOR_LIVE_USE",
+    "SP09P1": "BLOCKED_FOR_LIVE_USE"
+  },
+  "authorization_boundary": "Selecting this research reference grants no institutional approval, owner clearance, operational change, live trial, staff measurement, scheduling or external-contact authority.",
+  "preservation_policy": "Keep existing mandates, approval chains, rankings, financial gates and historical source files unchanged. No staff-time or cash savings follow from reference selection.",
+  "course_watch_policy": "Keep paused; do not reactivate or execute course checks under this instruction.",
+  "new_research_or_recheck_requested": false,
+  "new_reference_version_created": false
+}

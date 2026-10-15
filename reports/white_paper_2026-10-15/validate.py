@@ -43,7 +43,9 @@ for n in range(1,20):check('Figure '+str(n)+'.' in alltext,'pdf_caption:'+str(n)
 for entry in json.loads((ROOT/'analysis/planned_pages.json').read_text()):
  text=p[entry['planned_page']-1].get_text()
  check(re.sub(r'\s+','',entry['title']) in re.sub(r'\s+','',text),'heading_on_expected_page:'+str(entry['planned_page'])+':'+entry['title'])
-check(sum(len(q.get_images()) for q in p)==19,'pdf_embedded_figures')
+# LibreOffice can list the same shared resource dictionary on every page.
+# Count unique PDF image objects, not repeated resource references.
+check(len({image[0] for page in p for image in page.get_images()})==19,'pdf_unique_embedded_figures')
 files=subprocess.check_output(['git','ls-tree','-r','--name-only',BASE],cwd=REPO,text=True).splitlines()
 for name in files:
  before=subprocess.check_output(['git','show',BASE+':'+name],cwd=REPO)

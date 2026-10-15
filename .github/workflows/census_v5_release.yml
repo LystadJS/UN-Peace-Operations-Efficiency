@@ -46,7 +46,7 @@ jobs:
               if 'run' not in step:
                   continue
               print('ACCEPTANCE:', step.get('name', 'unnamed'), flush=True)
-              subprocess.run(step['run'], shell=True, executable='/bin/bash', check=True)
+              subprocess.run(['/bin/bash', '-euo', 'pipefail', '-c', step['run']], check=True)
               count += 1
           Path('/tmp/census-v5-release-html/acceptance-receipt.txt').write_text(
               f'{count} repository acceptance run steps passed; includes retained Python and R tests.\n')
@@ -55,7 +55,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md .github/workflows/validate.yml data/census_v5 docs/census_2025_2026_oct15_v5.md docs/census_2025_2026_oct15_executive.md
+          # The generated V5 gates ran above. Workflow configuration itself is
+          # maintained through the authenticated connector, not this job token.
+          git restore .github/workflows/validate.yml
+          git add README.md data/census_v5 docs/census_2025_2026_oct15_v5.md docs/census_2025_2026_oct15_executive.md
           if ! git diff --cached --quiet; then
             git commit -m 'Finalize October 15 census identity bridge and executive brief after full acceptance'
             git pull --rebase origin main

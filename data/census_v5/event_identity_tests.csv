@@ -1,0 +1,9 @@
+test_id,event_ids,verdict,rule
+V5T01,"[""V5E005"", ""V5E006""]",distinct_cohorts_one_article,Keep December and January-February cohorts separate; article total 22 is nonadditive.
+V5T02,"[""V5E011""]",announcement_and_delivery_one_event,Two publications do not establish two seminars.
+V5T03,"[""V5E012""]",language_mirrors_one_mission,"Count one joint mission, not one per partner or language."
+V5T04,"[""V5E001""]",nested_course_visit_not_separate_mission,Do not create a field-activity count for each course component.
+V5T05,"[""V5E004"", ""V5E009"", ""V5E010""]",different_aviation_competencies,Shared administration is testable; qualifications and readiness outcomes cannot be substituted.
+V5T06,"[""V5E003"", ""V5E008""]",different_level_and_cohort_no_person_link,Related IT topics do not prove repeat attendees or duplicated teaching.
+V5T07,"[""V5E016""]",dated_workshop_and_retrospective_group_nonadditive,Related programme V5G001 is not another countable individual event.
+V5T08,"[""V5E014""]",states_not_people,13 represented Member States cannot be converted to 13 participants.

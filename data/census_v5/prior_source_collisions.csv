@@ -1,0 +1,7 @@
+prior_file,prior_line,source_urls,prior_identity_fields,adjudication
+data/census_2025_2026_public_activities.csv,49,https://unowas.unmissions.org/en/node/135074,,same_source_is_not_automatically_same_event
+data/systematic_2025_2026_shared_production_opportunities.csv,11,https://unowas.unmissions.org/en/node/135074,canonical_activity_ids_or_dataset=FTX005,same_source_is_not_automatically_same_event
+data/systematic_field_training_canonical_2025_2026.csv,44,https://unowas.unmissions.org/en/node/135074,canonical_id=FTX005,same_source_is_not_automatically_same_event
+data/systematic_field_training_to_2027_links.csv,8,https://unowas.unmissions.org/en/node/135074,official_event_id=FTX005,same_source_is_not_automatically_same_event
+data/systematic_field_training_to_2027_links.csv,9,https://unowas.unmissions.org/en/node/135074,official_event_id=FTX005,same_source_is_not_automatically_same_event
+data/systematic_verified_field_training_additions.csv,6,https://unowas.unmissions.org/en/node/135074,event_id=FTX005,same_source_is_not_automatically_same_event

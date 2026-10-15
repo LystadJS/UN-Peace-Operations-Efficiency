@@ -1,0 +1,30 @@
+{
+  "adjudicated_event_records": 16,
+  "advertised_courses": 8,
+  "asof": "2026-10-15",
+  "calendar_stages": {
+    "future_schedule": 5,
+    "past_schedule_delivery_unverified": 2,
+    "scheduled_in_progress_delivery_unverified": 1
+  },
+  "event_records_by_kind": {
+    "field_activity": 2,
+    "meeting": 3,
+    "training": 11
+  },
+  "explicit_event_date_or_range": 10,
+  "financial_duplication": "not_established",
+  "global_new_unique_events": "not_certified",
+  "identity_tests": 8,
+  "incremental_net_savings": "not_estimated",
+  "prior_exact_source_collision_rows": 6,
+  "prioritized_production_tests": 6,
+  "programme_groups": 1,
+  "publication_bounded_event_dates": 6,
+  "reviewed_evidence_sha256": "9f01cffb786a5b4d54ecccca18bc36e0435e16037ac64200aa843af6efadf44d",
+  "reviewed_source_bodies_downloaded": 19,
+  "reviewed_source_body_failures": 0,
+  "source_records": 19,
+  "status": "passed_structural_and_provenance_gates",
+  "unique_people": "not_estimated"
+}

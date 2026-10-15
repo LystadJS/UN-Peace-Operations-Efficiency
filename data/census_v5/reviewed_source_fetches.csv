@@ -1,0 +1,20 @@
+source_id,url,fetch_status,raw_sha256,prior_review_basis
+V5S01,https://unsos.unmissions.org/en/news/unsos-strengthens-operational-coordination-among-aussom-snaf-and-ungu-forces-through,downloaded,e2d1afc034dcf35cb62c384c4bb610a050dc1f041efacd8950221abf60909f8b,official_article_search_index_text; direct HTTP access may fail
+V5S02,https://unsos.unmissions.org/en/node/133205,downloaded,49b72680f923e3895bee9341b3326692c6ef3d7a63c8e2ac272864d2cee172e2,official_article_search_index_text; direct HTTP access may fail
+V5S03,https://unsos.unmissions.org/en/node/133209,downloaded,ffd67d21043cff8a6ec798e0d6148c03a310383fca023e3b65b3b971a9627cb1,official_article_search_index_text; direct HTTP access may fail
+V5S04,https://unsos.unmissions.org/en/node/133212,downloaded,5e9d57fa25f1dbfb2778fa58028371fd1b57a596149d37b275de65197fe84f05,official_article_search_index_text; direct HTTP access may fail
+V5S05,https://unsos.unmissions.org/en/node/134927,downloaded,a824a80fb810b193570cec5ac755baca549cc5ed0847872895964404ca6d20b5,official_article_search_index_text; direct HTTP access failed 403
+V5S06,https://unsos.unmissions.org/en/node/133217,downloaded,64cc85e8a06f30902b8150ccd7f52e339bfe5a13a91d2eb2693700c49897bc56,official_article_search_index_text; direct HTTP access may fail
+V5S07,https://unsos.unmissions.org/en/news/ssfs-digital-competency-gets-boost-through-advanced-networking-course,downloaded,badfd8c59b9ff811b5f50d05a29f351a09de735c258eeaea9638dde6b5e61660,official_article_search_index_text; direct HTTP access may fail
+V5S08,https://unsos.unmissions.org/en/node/133195,downloaded,2a11fadf2401f42c18231a6f7185e2a30b7f116afb4482a387270d2cdf072774,official_article_search_index_text; direct HTTP access may fail
+V5S09,https://unsos.unmissions.org/en/news/15-military-officers-graduate-in-aviation-security-management,downloaded,4cffefc96fead9a85a0c3003d6009d81ce1c077d6ff4ac0a10ac18c6dae065c1,official_article_search_index_text; direct HTTP access may fail
+V5S10,https://unsos.unmissions.org/en/node/133202,downloaded,3819d27c6efd276d1fc511d224aaa58bc3a3100aca0f059c1df1a4750abfacae,official_article_search_index_text; direct HTTP access may fail
+V5S11,https://unsos.unmissions.org/en/node/133200,downloaded,def53c8bb296631a9d75b454e1b8e87f03d338799162222cf7e6b9f93a5f2f1f,official_article_search_index_text; direct HTTP access may fail
+V5S12,https://unowas.unmissions.org/en/node/135074,downloaded,ec571959f53b60438cc77feb4ed5df8f5f888183f7f3246af0e0ff128bcf8bb6,official_article_search_index_text; direct HTTP access failed 403
+V5S13,https://unowas.unmissions.org/fr/news/ecowas-unowas-commonwealth-international-moral-guarantors-joint-assessment-mission-to,downloaded,fd74f814a10cb501a8464f80380a93ca52991ea7508bd44c17434c201f56b690,official_language_mirror_search_index_text
+V5S14,https://peacekeepingresourcehub.un.org/en/news,downloaded,7b8ef37f2f250a29dde64ae5b2000a18f14f75c2c30b3c793815fde85666cdf8,official_page_full_parsed_text; rolling newsletter not event date
+V5S15,https://unowas.unmissions.org/en/node/134622,downloaded,5a40f3887a938fd60518cdca9893b0f1ccfc35f33b62e285244b2f91240c8ea1,official_article_search_index_text; direct HTTP access may fail
+V5S16,https://unite.un.org/en/news/un-nato-and-au-deepen-defense-capacity-building-peace-operations,downloaded,6f93e255a66c73e6756df425814f0278facb05335448861f2cbb3e3f2ae50387,official_article_search_index_text
+V5S17,https://unite.un.org/en/news/un-au-and-nato-advance-cooperation-peace-operations-training,downloaded,45206a5f012d868c86fa52b14576444ccd623d33906f10c877d6134193cefb6f,official_article_search_index_text
+V5S18,https://peacekeeping.un.org/en/node/132455,downloaded,4a79acfb848f892b0d1a1c6997545887461f55614c17d0756556f84eaf7b111c,official_page_search_index_text; institutional baseline not newly dated event
+V5S19,https://peacekeeping.un.org/en/node/132379,downloaded,c8188b01721330a93317c02b3725868344bd10ff3f0adafc20b5452d7f3a04f5,official_page_search_index_text; institutional baseline not newly dated event

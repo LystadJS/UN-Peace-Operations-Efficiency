@@ -1,0 +1,63 @@
+{
+  "actual_event_denominator": "unknown",
+  "archives_attempted": 6,
+  "asof": "2026-10-15",
+  "discovered_distinct_link_ids": 399,
+  "downloaded_pages": 48,
+  "duplicate_paid_services": "not_estimated",
+  "generated_at": "2026-10-15T12:31:42.003592+00:00",
+  "incremental_net_savings": "not_estimated",
+  "pages_attempted": 48,
+  "public_training_catalogue_not_delivered_event": true,
+  "source_lineage_by_archive": {
+    "OICT_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 88
+    },
+    "UNDOF_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 3
+    },
+    "UNFICYP_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 20
+    },
+    "UNMIK_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 96
+    },
+    "UNPOL_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 96
+    },
+    "UNSOS_news": {
+      "downloaded_pages": 8,
+      "event_count_verified": 0,
+      "full_2025_2026_event_population_known": false,
+      "pages_attempted": 8,
+      "pagination_complete": false,
+      "source_index_links": 96
+    }
+  },
+  "unique_field_or_training_events_inferred": 0
+}

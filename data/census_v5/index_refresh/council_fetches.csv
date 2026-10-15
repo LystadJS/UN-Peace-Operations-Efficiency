@@ -1,0 +1,5 @@
+source,year,url,asof,status,sha256,parsed_rows,retained_rows,future_rows_excluded
+reports,2025,https://main.un.org/securitycouncil/en/content/reports-submitted-transmitted-secretary-general-security-council-2025,2026-10-15,fetched_index,88bc5a55e62184cb149ca04f9b6bd9dfa31c0d7dd09189ff1e1d214b8351c3e3,84,84,0
+meetings,2025,https://ydsftksff8.execute-api.us-east-1.amazonaws.com/dev/render_meeting/scmeetings_2025/EN,2026-10-15,fetched_index,33d410821dd9630007ce123c96f8d0b9abebec7ff1ae320cc3781b98a965b195,296,296,0
+reports,2026,https://main.un.org/securitycouncil/en/content/reports-submitted-transmitted-secretary-general-security-council-2026,2026-10-15,fetched_index,20e73dd1b4a8d8a2eacd24a30681bfc31458285efafd6daac0524bac1bdceeb2,50,50,0
+meetings,2026,https://ydsftksff8.execute-api.us-east-1.amazonaws.com/dev/render_meeting/scmeetings_2026/EN,2026-10-15,fetched_index,9aa1a0872ea9673255eea42aebf46834d584eafb4c457dfbdfe9372fe54e642d,185,185,0

@@ -1,0 +1,9 @@
+listing_id,source_id,course,host,planned_start,planned_end,stage_at_cutoff,planned_month
+V5C01,V5S14,UN police trainers,Republic of Korea,2026-08-21,2026-09-11,past_schedule_delivery_unverified,
+V5C02,V5S14,Senior national planners,Egypt,2026-09-28,2026-10-09,past_schedule_delivery_unverified,
+V5C03,V5S14,Senior mission leaders,Denmark,2026-10-12,2026-10-23,scheduled_in_progress_delivery_unverified,
+V5C04,V5S14,FPU pilot,Italy,2026-11-02,2026-11-20,future_schedule,
+V5C05,V5S14,FPU command staff,Italy,2026-11-23,2026-12-04,future_schedule,
+V5C06,V5S14,Strategic communications trainers,Slovakia,,,future_schedule,2026-11
+V5C07,V5S14,Francophone senior national planners,Morocco,2026-12-07,2026-12-18,future_schedule,
+V5C08,V5S14,Military observers,Jordan,2026-12-07,2026-12-18,future_schedule,

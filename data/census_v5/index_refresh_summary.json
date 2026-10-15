@@ -1,0 +1,46 @@
+{
+  "archive_event_completeness": "not_certified",
+  "asof": "2026-10-15",
+  "combined_exact_source_urls": 2886,
+  "council_change_count": 5,
+  "council_reports": 134,
+  "delivered_events_inferred_from_listings": 0,
+  "duplicate_paid_service": "not_established",
+  "formal_meeting_ids": 413,
+  "generated_at": "2026-10-15T12:31:42.024676+00:00",
+  "incremental_net_savings": "not_estimated",
+  "latest_meeting_index_date": "2026-10-14",
+  "latest_report_index_date": "2026-10-12",
+  "meeting_ids_by_year": {
+    "2025": 255,
+    "2026": 158
+  },
+  "meeting_variants": 481,
+  "new_archive_pages_attempted": 48,
+  "new_archive_pages_downloaded": 48,
+  "new_exact_urls_beyond_prior": 399,
+  "new_frame_exact_source_urls": 399,
+  "prior_exact_source_urls": 2487,
+  "prior_frame_files": [
+    "data/census_v2/notice_frame.csv",
+    "data/census_v3/archive_discovered_url_frame.csv",
+    "data/census_v4/deeper_official_archives/archive_discovered_url_frame.csv"
+  ],
+  "prior_meeting_ids": 410,
+  "prior_meeting_variants": 478,
+  "prior_report_count": 132,
+  "report_date_year_mismatches": [
+    "S/2026/513"
+  ],
+  "report_to_meeting_links_inferred_from_topic": 0,
+  "reports_by_index_year": {
+    "2025": 84,
+    "2026": 50
+  },
+  "unique_people": "not_estimated",
+  "variant_counts": {
+    "closed": 24,
+    "original": 389,
+    "resumption": 68
+  }
+}

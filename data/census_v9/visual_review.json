@@ -1,0 +1,7 @@
+{
+  "method": "Rendered with PyMuPDF and visually inspected by assistant",
+  "pages_inspected": ["P1_p7", "G1_p5", "G3_p4", "G0_p1", "G1_p13", "P3_p7"],
+  "scope": "Six selected substantive proof pages only, not all 146 pages",
+  "web_pdf_access": "Live requests inaccessible; retained original bytes used",
+  "independent_human_review": "not_performed"
+}

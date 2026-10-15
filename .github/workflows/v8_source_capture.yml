@@ -1,0 +1,69 @@
+name: V8 reporting pilot source capture
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/v8_source_capture.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture original pilot sources and exact repository baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, shutil, subprocess, zipfile, io
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          out=Path('data/census_v8/sources'); out.mkdir(parents=True,exist_ok=True)
+          api='https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11976194560/zip'
+          with urlopen(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as r: payload=r.read()
+          assert hashlib.sha256(payload).hexdigest()=='0ab2787b82213cb8302898f0254927f2413f2b66041142e12c48bb50e577a600'
+          expected={
+            'S_2025_187.pdf':'5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9',
+            'S_2025_342.pdf':'2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc',
+            'S_PV_9890.pdf':'6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991'}
+          with zipfile.ZipFile(io.BytesIO(payload)) as z:
+            for dest,sha in expected.items():
+              hits=[n for n in z.namelist() if n.endswith('/'+sha+'.pdf')]
+              assert len(hits)==1,(dest,hits)
+              body=z.read(hits[0]); assert hashlib.sha256(body).hexdigest()==sha
+              (out/dest).write_bytes(body)
+          shutil.copyfile('data/census_v7/originals/S_PV.9931.pdf',out/'S_PV_9931.pdf')
+          notices={
+            'N01':'https://unowas.unmissions.org/en/news/unoca-and-unowas-renew-their-joint-commitment-to-support-stabilization-and',
+            'N02':'https://unowas.unmissions.org/en/news/west-and-central-africa-unowas-and-unoca-pool-their-efforts-to-strengthen-peaceful'}
+          results=[]
+          for sid,url in notices.items():
+            row={'source_id':sid,'url':url}
+            try:
+              with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; UN-public-evidence-pilot/8.0)'}),timeout=25) as r:
+                body=r.read(2000001); assert r.status==200 and len(body)<2000000
+                assert 'html' in r.headers.get('Content-Type','').lower()
+              sha=hashlib.sha256(body).hexdigest(); (out/(sid+'.html')).write_bytes(body)
+              row.update(status='retrieved_pending_body_review',sha256=sha,bytes=len(body))
+            except Exception as e: row.update(status='failed',error=type(e).__name__+':'+str(e))
+            results.append(row)
+          (out/'notice_fetches.json').write_text(json.dumps(results,indent=2)+'\n')
+          Path('V8_CAPTURE_HEAD.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+          # Contents are public research sources and repository files only.
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v8-pilot-source-capture
+          retention-days: 30
+          include-hidden-files: true
+          path: |
+            V8_CAPTURE_HEAD.txt
+            README.md
+            data
+            docs
+            scripts
+            tests
+            .github/workflows/validate.yml

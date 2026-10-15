@@ -19,10 +19,16 @@ jobs:
           python3 - <<'PY'
           import hashlib, json, os, shutil, subprocess, zipfile, io
           from pathlib import Path
-          from urllib.request import Request, urlopen
+          from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
+          class SafeRedirect(HTTPRedirectHandler):
+            def redirect_request(self,req,fp,code,msg,headers,newurl):
+              nxt=super().redirect_request(req,fp,code,msg,headers,newurl)
+              if nxt is not None: nxt.remove_header('Authorization')
+              return nxt
           out=Path('data/census_v8/sources'); out.mkdir(parents=True,exist_ok=True)
           api='https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11976194560/zip'
-          with urlopen(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as r: payload=r.read()
+          opener=build_opener(SafeRedirect())
+          with opener.open(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as r: payload=r.read()
           assert hashlib.sha256(payload).hexdigest()=='0ab2787b82213cb8302898f0254927f2413f2b66041142e12c48bb50e577a600'
           expected={
             'S_2025_187.pdf':'5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9',
@@ -51,7 +57,6 @@ jobs:
             results.append(row)
           (out/'notice_fetches.json').write_text(json.dumps(results,indent=2)+'\n')
           Path('V8_CAPTURE_HEAD.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
-          # Contents are public research sources and repository files only.
           PY
       - uses: actions/upload-artifact@v4
         if: always()

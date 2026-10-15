@@ -1,0 +1,31 @@
+name: Cross-version census audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/census_v6.yml
+      - scripts/audit_census_v6.py
+      - data/census_v6/review_decisions.json
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record exact baseline
+        run: git rev-parse HEAD > BASELINE_COMMIT.txt
+      - name: Preserve reproducible public repository snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: cross-version-census-audit
+          retention-days: 30
+          include-hidden-files: true
+          path: |
+            BASELINE_COMMIT.txt
+            README.md
+            data
+            docs
+            scripts
+            tests
+            .github/workflows/validate.yml

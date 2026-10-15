@@ -1,0 +1,26 @@
+{
+  "asof": "2026-10-15",
+  "effective_link_classes": {
+    "explicit_Council_discussion_report_reference": 1,
+    "explicit_agenda_or_presentation_report_reference": 13
+  },
+  "effective_report_briefing_links": 14,
+  "exhaustive_substantive_comparison": "not_performed",
+  "explicit_new_opening_presentations": 3,
+  "financial_duplication": "not_established",
+  "first_weekly_check_date": "2026-10-16",
+  "frozen_prior_tables": "unchanged",
+  "incremental_net_savings": "not_estimated",
+  "independent_parser": "PyMuPDF 1.26.7",
+  "mandated_deliverables": "unchanged",
+  "new_course_completion_claims": 0,
+  "original_and_derived_bytes": "verified",
+  "parent_and_mission_rankings": "unchanged",
+  "recovered_pages": 187,
+  "recovered_transcripts": 7,
+  "remaining_transcript_retrieval_gaps": 0,
+  "retrospective_2027_support": "20/32 unchanged",
+  "specified_reference_checks": 11,
+  "watched_course_cohorts": 8,
+  "weekly_watch": "created; Friday mornings America/New_York"
+}

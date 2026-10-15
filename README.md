@@ -28,7 +28,15 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
-## Latest — Cross-version identity and reuse audit
+## Latest — Seven transcript gaps recovered; weekly course watch
+
+**[Current recovery and watch findings](docs/census_2025_2026_v7_recovery.md)** · [Seven original PDFs](data/census_v7/originals) · [Effective report–briefing links](data/census_v7/report_briefing_links_effective.csv) · [Weekly course-watch contract](data/census_v7/course_watch_contract.json).
+
+All **seven** previously missing original English Council records are recovered: **187 pages**. The effective 14-link register contains 13 explicit formal-agenda/presentation associations and one retained discussion-only association. Eleven specified reference checks include an explicit UNOCA-to-UNOWAS briefing reference. Complete-file authentication does not mean every substantive passage was compared.
+
+A **weekly Friday-morning official-source watch** is active for all eight unresolved course cohorts, beginning 16 October 2026. It distinguishes advertisements, commencement, completion, certification and rescheduling; setup does not certify any new course completion. Earlier census tables and mandate/ranking/financial controls remain unchanged. **No duplicate paid service or incremental net saving is established.**
+
+## Earlier — Cross-version identity and reuse audit
 
 **[Current audit and executive findings](docs/census_2025_2026_v6_audit.md)** · [Canonical identities](data/census_v6/canonical_evidence_register.csv) · [Eight course dispositions](data/census_v6/course_delivery_verification.csv) · [Report reuse tests](data/census_v6/report_pair_reuse_tests.csv).
 

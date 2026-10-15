@@ -1,0 +1,13 @@
+{
+  "baseline_commit": "c0529f9959ab2e12e36481754b2883a526bec6df",
+  "cutoff": "2026-10-15",
+  "financial_duplication": "not_established",
+  "incremental_net_savings": "not_estimated",
+  "recovered_pages": 187,
+  "recovered_transcripts": 7,
+  "recovery_method": "Symbol-scoped official viewer API; no ASR substitution",
+  "requested_transcripts": 7,
+  "retrieved_at": "2026-10-15T14:16:53.849371+00:00",
+  "root_cause": "V6 global candidate limit consumed by unrelated index/sidebar PDF links before symbol-specific document-viewer links",
+  "unresolved": []
+}

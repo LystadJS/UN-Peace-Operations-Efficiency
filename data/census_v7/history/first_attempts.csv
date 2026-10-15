@@ -1,0 +1,21 @@
+symbol,url,stage,status,response_sha256,detail
+S/PV.9931,https://docs.un.org/en/S/PV.9931,viewer,retrieved,3a91c083c4a9574845a2c7b7dc4982bcff7378ed75e8effda2348e2c1aa67fa1,1 symbol-scoped links
+S/PV.9931,https://documents.un.org/api/symbol/access?s=S/PV.9931&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9931,https://documents.un.org/api/symbol/access?s=S%2FPV.9931&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9931,https://documents.un.org/api/symbol/access?s=S%2FPV.9931,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9942,https://docs.un.org/en/S/PV.9942,viewer,retrieved,928bf313c24979ac66bb84f474372b73b1d8d09e78ab0d0f2d024fa6286ab270,1 symbol-scoped links
+S/PV.9942,https://documents.un.org/api/symbol/access?s=S/PV.9942&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9942,https://documents.un.org/api/symbol/access?s=S%2FPV.9942&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9942,https://documents.un.org/api/symbol/access?s=S%2FPV.9942,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.9998,https://docs.un.org/en/S/PV.9998,viewer,retrieved,6e31c1dc040133b929d70fdfb778cd0a407abfd98da5dc4efb59016ba6d09d13,1 symbol-scoped links
+S/PV.9998,https://documents.un.org/api/symbol/access?s=S/PV.9998&l=en&t=pdf,PDF,accepted,8d4bbcf322d184552628e5d9a4a074b7f3fa281f8f771965139eb601fb0bb9fc,28 pages
+S/PV.10060,https://docs.un.org/en/S/PV.10060,viewer,retrieved,ece211705fb4806324d6beb48dbce3cee7c22bb11b97acc40fd777aad10c8e2b,1 symbol-scoped links
+S/PV.10060,https://documents.un.org/api/symbol/access?s=S/PV.10060&l=en&t=pdf,PDF,accepted,e25a16df263fce9b605bbdf0881021b2e7121295a7ef0d974b77fc17561268f0,19 pages
+S/PV.10165,https://docs.un.org/en/S/PV.10165,viewer,retrieved,fce131be14f64e6826ac8758ddd952bd941636beb29a17bfc8fc9257ffc0dd12,1 symbol-scoped links
+S/PV.10165,https://documents.un.org/api/symbol/access?s=S/PV.10165&l=en&t=pdf,PDF,accepted,73baec5956f67fb89fc14d77fb379344f569f99214308e860d75b9a91ea46989,39 pages
+S/PV.10195,https://docs.un.org/en/S/PV.10195,viewer,retrieved,8113c716a5bcf1172b69bfff561dc3d55d38c12c2971c551d5648193dffac3c9,1 symbol-scoped links
+S/PV.10195,https://documents.un.org/api/symbol/access?s=S/PV.10195&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.10195,https://documents.un.org/api/symbol/access?s=S%2FPV.10195&l=en&t=pdf,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.10195,https://documents.un.org/api/symbol/access?s=S%2FPV.10195,PDF,failed,,ValueError:English cover identity mismatch
+S/PV.10223,https://docs.un.org/en/S/PV.10223,viewer,retrieved,17934ed605e9dcb5801f915189fa5f7babbbf98a664ce6fa3cd5634a17b1f301,1 symbol-scoped links
+S/PV.10223,https://documents.un.org/api/symbol/access?s=S/PV.10223&l=en&t=pdf,PDF,accepted,221c4c79e86c02739c1fcd578c8e501ff4ae5f306045ca3e3114b78ded1a5312,31 pages

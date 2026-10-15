@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/census_2025_2026_attendance_executive.md"><strong>Current training & field attendance findings</strong></a>
+  <a href="docs/census_2025_2026_oct15_executive.md"><strong>Current census and shared-production findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -28,7 +28,17 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
-## Current — 12 October 2026 source-frame census
+## Latest — 15 October 2026 systematic census
+
+**[Current executive brief](docs/census_2025_2026_oct15_executive.md)** · [Source-frame audit](docs/census_2025_2026_oct15_v5.md) · [Effective activities](data/census_v5/effective_activity_register.csv) · [Six shared-production tests](data/census_v5/shared_production_recommendations.csv).
+
+The refreshed indexes contain **134 SG reports**, **413 formal Council meeting IDs** and **481 transcript variants**. Six additional archives returned **48/48 pages**, adding **399 exact URLs** to a **2,886-URL** frame. Sources are not delivered-event counts.
+
+The extension adjudicates **16 activity records** (11 training/seminar cohorts, two field activities, three meetings), including **one enrichment of existing FTX005**, not a new Sierra Leone mission. Fifteen additional V5 identities are not a certified all-version new-event total. A multi-visit programme and eight advertised courses remain nonadditive. All 19 first-pass curated bodies were retrieved. Existing LCM and Deployment Review systems are baselines, not new platforms.
+
+**Mandates, parent/mission rankings and 20/32 retrospective 2027-category support remain unchanged. No duplicate paid service or incremental net saving is verified.** [Offline acceptance](scripts/finalize_census_v5.py).
+
+## Historical — 12 October 2026 source-frame census
 
 [**Current executive decision brief**](docs/systematic_2025_2026_executive_brief.md) · [**Full source-frame and field-training analysis**](docs/systematic_2025_2026_census_oct12.md) · [**Eight prioritized shared-production options**](data/census_v2/shared_production_shortlist.csv).
 
@@ -44,7 +54,7 @@ Nine additional UN archives and learning calendars were sampled: **24/27 listing
 
 **A/RES/80/306** already authorized integration of UNSSC into UNITAR to form **UNICLI**, targeted for January 2027. This reform is not new project savings. DPO peacekeeping training policy, mission mandates, separate Council reports and specialized instruction remain protected. No duplicate paid service or incremental net saving has been verified. [Public validation](scripts/validate_census_v3_extension.py) is enforced in CI.
 
-## Latest — 13 October 2026 training and field attendance validation
+## Historical — 13 October 2026 training and field attendance validation
 
 **[Executive decision brief](docs/census_2025_2026_attendance_executive.md)** · [Full source and attendance audit](docs/census_2025_2026_attendance_v4.md) · [12 shared administration/procurement investigations](data/census_v4/shared_administration_procurement_reassessment.csv).
 

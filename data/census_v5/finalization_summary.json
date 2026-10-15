@@ -1,0 +1,15 @@
+{
+  "additional_v5_identities": 15,
+  "asof": "2026-10-15",
+  "confirmed_prior_event_enrichments": 1,
+  "effective_activity_records": 16,
+  "effective_register_sha256": "d51e20106884aeb5fa7ceb02fcd132dc9a43bd4d929c26f72312841aa22e85b7",
+  "first_pass_seed_sha256": "9f01cffb786a5b4d54ecccca18bc36e0435e16037ac64200aa843af6efadf44d",
+  "global_new_unique_events": "not_certified",
+  "identity_bridge_sha256": "27b9f790f1e7a79d20ef221f1cfe8ed3d706c48cd27f8d13a16f26af36fb33c5",
+  "incremental_net_savings": "not_estimated",
+  "mandated_deliverables": "unchanged",
+  "prior_identity": "FTX005",
+  "source_attendance_enrichments": 1,
+  "source_date_enrichments": 1
+}

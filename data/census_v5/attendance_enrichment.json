@@ -1,0 +1,15 @@
+{
+  "correction": "First-pass missing count superseded in effective view; no new event added",
+  "derived_cohort_count": 8,
+  "event_id": "V5E008",
+  "raw_sha256": "badfd8c59b9ff811b5f50d05a29f351a09de735c258eeaea9638dde6b5e61660",
+  "reported_subgroups": [
+    6,
+    2
+  ],
+  "review_basis": "original archived article body; bytes independently SHA-256 checked after Actions artifact download",
+  "source_excerpt": "This training benefited six personnel from the SNA and two from the Somali Police Force (SPF)",
+  "source_id": "V5S07",
+  "unique_people_across_courses": "not_estimated",
+  "url": "https://unsos.unmissions.org/en/news/ssfs-digital-competency-gets-boost-through-advanced-networking-course"
+}

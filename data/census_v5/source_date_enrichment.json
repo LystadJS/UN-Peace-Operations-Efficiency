@@ -1,0 +1,14 @@
+{
+  "elapsed_calendar_days": 31,
+  "event_id": "V5E005",
+  "publication_date": "2025-12-17",
+  "raw_fetch_status": "downloaded_and_date_text_checked",
+  "raw_sha256": "b5f31c7d3730e41ac5a0688234b7cbdb823693e704a48426844581c1ee1539e8",
+  "review_basis": "official_article_search_index_text",
+  "source_duration_label": "four weeks",
+  "source_id": "V5S20",
+  "source_limit": "Second cohort is prospective here; completed delivery relies on March 2026 V5S05. Mentorship and course counts are nonadditive.",
+  "supported_end": "2025-12-17",
+  "supported_start": "2025-11-16",
+  "url": "https://unsos.unmissions.org/en/node/133222"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "amendment_id": "AM11-01",
+    "observation_id": "V9:CY028",
+    "kind": "semantic_action_correction",
+    "source_symbol": "S/2026/9",
+    "page": 3,
+    "paragraph": 18,
+    "source_excerpt": "exchanged information on 202 instances and exchanged three individuals in custody",
+    "source_semantics": "needs_correction",
+    "proposed_assertion": "Through the Joint Contact Rooms, the Technical Committee on Crime and Criminal Matters exchanged information in 202 instances and separately exchanged three individuals in custody. These are different actions and units.",
+    "value_updates": {
+      "custody_action": "exchange_of_individuals_in_custody",
+      "information_exchange_instances": 202
+    },
+    "reason": "The original summary collapses distinct action predicates even though its structured fields distinguish the counts.",
+    "status": "proposed_source_checked_not_applied_to_frozen_reference",
+    "owner_approval": "not_obtained"
+  },
+  {
+    "amendment_id": "AM11-02",
+    "observation_id": "V9:CY041",
+    "kind": "strict_qualifier_hardening",
+    "source_symbol": "S/2026/551",
+    "page": 5,
+    "paragraph": 29,
+    "source_excerpt": "Over 1.7 million euros have been utilized",
+    "source_semantics": "supported_with_qualification_gap",
+    "proposed_assertion": "Phase two was extended through 2026. By June 2026 approximately 67% of EUR1.5 million allocated for 2023-2026 had been utilized; more than EUR1.7 million had been utilized since inception in 2019. The two amounts have different perimeters and are not savings.",
+    "value_updates": {
+      "lifetime_utilized_eur_comparator": ">",
+      "lifetime_period_start_year": 2019
+    },
+    "reason": "The lower-bound field is retained, but strictness and inception period should survive rendering as explicit qualifications.",
+    "status": "proposed_source_checked_not_applied_to_frozen_reference",
+    "owner_approval": "not_obtained"
+  }
+]

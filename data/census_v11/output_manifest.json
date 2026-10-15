@@ -1,0 +1,16 @@
+{
+  "data/census_v11/amendment_requests.json": "d71fc9e472d3455e3b257d8849ca5b8e7817d1b0989d6e7ff365df0d486a63c5",
+  "data/census_v11/anchor_checks.csv": "4ad122b14a235d1fc3969f1745332179c6c19ecc757a84e6671268de3dcff4fc",
+  "data/census_v11/closed_gate_receipt.json": "325a675473b7b6cb3af665a80d868ea2f4a3a991b24488d7565ee98118934eea",
+  "data/census_v11/frozen_input_manifest.json": "3c4dfe30e1c729e96cf6467b9027c8688909173af8a4dcd7388186f412d12203",
+  "data/census_v11/initial_candidate.json": "f111f2f0156a021a947129158f36cf5ef49d135eaf3b63df40a43836068afd51",
+  "data/census_v11/obligation_reviews.csv": "de6af1d3e47f3bb54a636bf9a07b9d388ed9921e9b3aff59b226afa9d64497d2",
+  "data/census_v11/proposed_support_records.json": "41798023912e8f0cad2d70c7e99f8db8ebdb7e580883a66f6a158daee8312382",
+  "data/census_v11/review_decisions.json": "552a2ec807f1b9a6d7f00e1a4083ed11629f6a36251a3f8a9c0abdb5780b25a7",
+  "data/census_v11/scenario_execution.csv": "4f536190a8885e1f8426beafb49e589c7fa14d225cf7f475d58a31829df53ca9",
+  "data/census_v11/selected_page_checks.csv": "00cd8cf58d3d342c198911ca1e0b1605c3ca089eee56db741a6e626c5bdf95f8",
+  "data/census_v11/source_authentication.csv": "521f7aa174e266c631540bcc226dcecdb0e5f5a4a9000b41825af2c5eea1c4a5",
+  "data/census_v11/tabletop_summary.json": "3ac8d3a349cf41c2b739818dfc16afc6a9d0b037582f65ff5e546812c4bba985",
+  "docs/v11_public_tabletop.md": "cfc156797d1e38315e07a3e61694a8ff8f162c60216b2a86a03c17ba33b5bd84",
+  "docs/v11_tabletop_support_sheets.md": "e8c7a32a5f2857242b2a3071b984b45b6ec8045849fd5e4061e84ea4e1cc6e41"
+}

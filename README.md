@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/census_2025_2026_v6_audit.md"><strong>Current census and shared-production findings</strong></a>
+  <a href="docs/v11_public_tabletop.md"><strong>Current tabletop and shared-production findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -28,7 +28,13 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
-## Latest — V9 Cyprus production-transfer assessment
+## Latest: V11 public-source tabletop
+
+**[Tabletop findings](docs/v11_public_tabletop.md)** · [61 obligation reviews](data/census_v11/obligation_reviews.csv) · [12 support sheets](docs/v11_tabletop_support_sheets.md) · [Amendment requests](data/census_v11/amendment_requests.json).
+
+All 61 fixed obligations were reviewed. 59 formulations are supported unchanged; two remain on amendment hold: one semantic action correction and one explicit strict-qualifier improvement. The 12 scenario cards were rehearsed by the assistant, not by institutional owners. Both live-use gates remain closed, the original references and rankings are unchanged, and no staff-time or savings estimate is made. The course watch remains paused.
+
+## Historical — V9 Cyprus production-transfer assessment
 
 **[Decision brief](docs/v9_consolidation_brief.md)** · [Transfer assessment](docs/v9_cyprus_transfer_assessment.md) · [Worked report views](docs/v9_worked_cyprus_cycle.md) · [Source and acceptance evidence](data/census_v9/pilot_summary.json).
 
@@ -44,7 +50,7 @@ The January–June 2025 pilot uses **six original sources, 10 selected component
 
 **Course-watch status: paused by user. V8 does not execute or reactivate scheduled or manual course checks.** Earlier V7 watch-creation statements are historical. [Acceptance receipt](data/census_v8/acceptance_receipt.json) · [Measurement plan](data/census_v8/measurement_plan.csv).
 
-## Latest — Seven transcript gaps recovered; weekly course watch
+## Historical — Seven transcript gaps recovered; weekly course watch
 
 **[Current recovery and watch findings](docs/census_2025_2026_v7_recovery.md)** · [Seven original PDFs](data/census_v7/originals) · [Effective report–briefing links](data/census_v7/report_briefing_links_effective.csv) · [Weekly course-watch contract](data/census_v7/course_watch_contract.json).
 

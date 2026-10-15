@@ -1,0 +1,26 @@
+component_id,case_id,title,inherited_class,boundary,shared_drafting_authorized
+V8:P01,SP08P1,Joint Nigeria/Bama visit,already_joint_input,Retain disputed source-specific start dates; no new visit or eliminated travel claim.,false
+V8:P02,SP08P1,Governors Forum participation,already_joint_input,"Forum is nested within the visit, not another field mission; participation day differs from event duration.",false
+V8:P03,SP08P1,Dakar farmer-herder workshop,already_joint_input,"Preserve co-organizer roles, greater-than attendance, and adoption versus implementation of the workplan.",false
+V8:P04,SP08P1,UNOCA-led best-practice collection,distinct_knowledge_product,A publication issued at a workshop is not another workshop; early availability is not inferred from event date.,false
+V8:P05,SP08P1,Niger MNJTF withdrawal announcement,attributed_time_specific_update,An announcement is not confirmed legal or operational completion; preserve attribution to the dated briefing.,false
+V8:P06,SP08P1,CNMC demarcation side-event,protected_function,Same itinerary does not merge the CNMC legal function into the regional good-offices mandate.,false
+V8:P07,SP08P1,8 April bilateral planning exchange,existing_coordination_baseline,Existing agreement on joint activities is baseline; no newly invented coordination meeting or saving.,false
+V8:P08,SP08P1,17 December 2024 maritime workshop,prewindow_context_control,2025 document date does not move a December 2024 activity into the 2025 event population.,false
+V8:P09,SP08P1,UNOWAS political analysis and recommendations,office_specific_analysis,Political judgments and their clearance are retained by the existing office/SG process.,false
+V8:P10,SP08P1,UNOCA political analysis and recommendations,office_specific_analysis,Political judgments and their clearance are retained by the existing office/SG process.,false
+V9:K01,SP09P1,March 2025 broader-format political meeting and initiatives,already_shared,Common dated chronology; agreement is not implementation.,false
+V9:K02,SP09P1,5 May Youth Technical Committee launch / inaugural meeting,already_joint,Same institution/date; retain leaders launch versus co-facilitated committee meeting and do not merge participant lists.,false
+V9:K03,SP09P1,Existing technical-committee support and meeting counts,already_joint,Good-offices auspices and UNFICYP support are baseline; counts are programme aggregates.,false
+V9:K04,SP09P1,Existing Agios Dometios/Metehan crossing enlargement,reusable_with_versioning,"One infrastructure project; planned start, actual start and completion are distinct.",false
+V9:K05,SP09P1,Proposed additional crossing points,distinct_scope,Do not infer opening of new crossings from enlargement of an existing crossing.,false
+V9:K06,SP09P1,2024 Green Line trade and export comparator,reusable_with_conflict,Shared trade numerator; inconsistent export comparators must remain separately attributed.,false
+V9:K07,SP09P1,Slovakia-facilitated political-party dialogue,already_referred,Retain external convenor; parties represented are not event counts or people.,false
+V9:K08,SP09P1,Joint Contact Rooms and committee interface,already_joint,"Existing coordination; operational exchange totals need period and unit, not cross-report addition.",false
+V9:K09,SP09P1,Buffer-zone operations and contextual referral,reference_only,Peacekeeping patrols and incidents are not replaced by political context; detailed restricted data excluded.,false
+V9:K10,SP09P1,"Political assessments, good offices and leadership roles",owner_specific,Distinct analytical remit and clearance; existing dual-hatted role is not a new merger.,false
+V9:K11,SP09P1,Activity / meeting denominators,nonadditive,"Meetings, programme events, hosted activities and attendance cannot be equated or summed without record-level mapping.",false
+V9:K12,SP09P1,Leaders written submissions in annexes,attribution_boundary,"A party submission remains that party's statement, not a Secretariat finding or shared agreed fact.",false
+V9:K13,SP09P1,Cemetery-restoration programme,reusable_with_scope_versions,Agreed initial sites and later expanded mixed-stage portfolio are not one completed-site count.,false
+V9:K14,SP09P1,2026 intergenerational digital-literacy workshop,already_referred,"Match topic, committees and referral; retain distinct committee roles and do not infer unknown exact day or headcount.",false
+V9:K15,SP09P1,Technical-committee support-facility utilization,denominator_control,"Allocation, period and approximate percentage travel together; do not infer efficiency from noncomparable utilization rates.",false

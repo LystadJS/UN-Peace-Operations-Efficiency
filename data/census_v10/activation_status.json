@@ -1,0 +1,54 @@
+{
+  "SP08P1": {
+    "institutional_authority_verified": false,
+    "live_execution_authorized": false,
+    "missing": [
+      "owner_a_authorization_ref",
+      "owner_b_authorization_ref",
+      "normal_workflow_map_ref",
+      "specific_gap_ref",
+      "target_product_manifest_ref",
+      "scope_sha256",
+      "input_snapshot_sha256",
+      "language_and_task_contract_ref",
+      "preparer_roles_ref",
+      "reviewer_arrangement_ref",
+      "approved_storage_ref",
+      "retention_and_staff_notice_ref",
+      "fallback_ref",
+      "additional_person_minute_ceiling",
+      "deadline_safety_buffer_minutes",
+      "required_deadline_manifest_ref",
+      "measurement_start_utc",
+      "measurement_end_utc",
+      "incident_and_resumption_route_ref"
+    ],
+    "status": "BLOCKED_FOR_LIVE_USE"
+  },
+  "SP09P1": {
+    "institutional_authority_verified": false,
+    "live_execution_authorized": false,
+    "missing": [
+      "owner_a_authorization_ref",
+      "owner_b_authorization_ref",
+      "normal_workflow_map_ref",
+      "specific_gap_ref",
+      "target_product_manifest_ref",
+      "scope_sha256",
+      "input_snapshot_sha256",
+      "language_and_task_contract_ref",
+      "preparer_roles_ref",
+      "reviewer_arrangement_ref",
+      "approved_storage_ref",
+      "retention_and_staff_notice_ref",
+      "fallback_ref",
+      "additional_person_minute_ceiling",
+      "deadline_safety_buffer_minutes",
+      "required_deadline_manifest_ref",
+      "measurement_start_utc",
+      "measurement_end_utc",
+      "incident_and_resumption_route_ref"
+    ],
+    "status": "BLOCKED_FOR_LIVE_USE"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data/census_v10/activation_status.json": "907521e172a99645ecb535566c59cb1a85be23fd4fcd3202b2007ebc1bdf8d48",
+  "data/census_v10/component_scope.csv": "3edc179f76ef9ac87f1181649384332cd2e3fdcd644a031ff91478a5ce023162",
+  "data/census_v10/fixed_source_scope.csv": "e6689a562982f46ab616a13dd3a9ec7bb9beb3e8082ec35d8d4667823e59a678",
+  "data/census_v10/input_manifest.json": "b5d23e0a024e36860d006d623662f4dfc763d8221ad6a0016819b4bef95df25e",
+  "data/census_v10/product_obligations.csv": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+  "data/census_v10/product_scope.csv": "e19608950a76663be1f44117dccff4acd882e457738b23bd5fa1265c3e874d5a",
+  "data/census_v10/protocol.json": "8b257060a493d867e5a7e28fafbb071b5e41c96d140c63565499515ecd8bb8ec",
+  "data/census_v10/scenario_cards.csv": "43fe3d0aa81351c8ed190ec808e0722ef28c653c99a6ea96f4a94bb382e09354",
+  "data/census_v10/scope_receipt.json": "d3e76089b07a96cb1ded885d4bfd3728c3e772734e8e57aa41f536634bddb617",
+  "data/census_v10/source_scope.csv": "687620d8d05ca38e0cfecbc7b0d4d2ea71d0068409776985d2b74463a554f2af",
+  "data/census_v10/templates/amendments.csv": "ec0dce0966faa479d534172ee3caef413afef58c8248d34e22fa3db34ad8da58",
+  "data/census_v10/templates/batches.csv": "d70628613e4914fdee805628769777dbdadd15c5b60f9ead78f17ecf4c273ff1",
+  "data/census_v10/templates/expected_tasks.csv": "56d3e01a206ecf8742932c8d444a54997545107586f4a2346994533efcb0c8d2",
+  "data/census_v10/templates/incidents.csv": "68b8615273460225b24270be6283a096b1de319eadd459e361faeaa2bcd48b2c",
+  "data/census_v10/templates/live_claim_enrollment.csv": "d72f51b5f247e6f5eb5893c668a69866602e96abb9cf19aff99bf6e76df7e89c",
+  "data/census_v10/templates/owner_reviews.csv": "20ca00eef8eac222bca396b9857cebaf87656e14de6d7d6651f88bf2ba396842",
+  "data/census_v10/templates/quality_reviews.csv": "823b543d40aabefd20bd32bfe95863fd4949c465f48520be762bae4363bbf354",
+  "data/census_v10/templates/update_waves.csv": "514995aec91ddff242e997ce85a6f933a3c4094476caf5d37742f38abec42f95",
+  "data/census_v10/templates/workload.csv": "c90173fb718fe749730bd8e08f107cf156696f92d8c05e76d81412495ff4a7c8",
+  "docs/v10_owner_decision_sheet.md": "3ed88b48fbe1f491a03a51cb352be73949629f521959df0b25f9b0a3a06ff341",
+  "docs/v10_owner_review_shadow_protocol.md": "55c24bf19460e82911de1a26e0068275765556ba07231f69e3d7b057bb7a810d"
+}

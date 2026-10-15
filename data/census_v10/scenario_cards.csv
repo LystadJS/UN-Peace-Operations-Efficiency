@@ -1,0 +1,13 @@
+scenario_id,reference_observations,challenge,required_response,expected_disposition,exercise_status
+SC01,V8:O01;V8:O04;V8:O15,Nigeria start-date disagreement,Retain 27/28 January as source-specific alternatives; no majority correction.,conflict_preserved,not_run_by_owners
+SC02,V8:O03;V8:O06,Attendance and workplan stage,"Preserve >30 and adopted, not exact 30 or implemented.",inequality_and_stage_preserved,not_run_by_owners
+SC03,V8:O07;V8:O08;V8:O18,"Protected function, year and output grain","Keep CNMC remit, December 2024 context and publication distinct from workshop.",no_scope_or_event_inflation,not_run_by_owners
+SC04,V8:O13;V8:O22,Attributed withdrawal announcement,Retain speaker/date and announced status; no completed-withdrawal inference.,attribution_preserved,not_run_by_owners
+SC05,V9:CY009;V9:CY010,Trade export comparators,Retain EUR4.12bn and EUR2.14bn as attributed alternatives; block common ratio.,ratio_not_computed,not_run_by_owners
+SC06,V9:CY006;V9:CY024;V9:CY036;V9:CY037,Crossing chronology and scope,"Keep planned, commenced and completion evidence separate; no additional-crossing completion.",no_implementation_promotion,not_run_by_owners
+SC07,V9:CY018;V9:CY019;V9:CY023,Party submissions and revision,Preserve party authorship and January revision; no Secretariat endorsement or earlier-version substitution.,owner_and_version_boundary,not_run_by_owners
+SC08,V9:CY020;V9:CY030;V9:CY038,Cemetery programme scope change,Do not turn approximately 70 mixed-stage sites into completed sites or add differently scoped totals.,scope_version_retained,not_run_by_owners
+SC09,V9:CY021;V9:CY031;V9:CY041,Utilization denominators,"Keep allocation, phase, period and approximate percentage together; no savings inference.",no_false_efficiency_trend,not_run_by_owners
+SC10,V9:CY005;V9:CY016;V9:CY017;V9:CY028,Nonadditive activity units,"Do not equate committee meetings, activities, parties, people or information exchanges.",units_separated,not_run_by_owners
+SC11,,Synthetic missing clock and shared meeting,Four 20-minute actor segments equal 80 person-minutes; missing time is not zero; common work counted once.,synthetic_accounting_only,not_run_by_owners
+SC12,,Synthetic faster shadow with a material error,Do not advance on time alone; quarantine incorrect output and preserve failed effort.,safety_overrides_time,not_run_by_owners

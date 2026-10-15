@@ -1,0 +1,1 @@
+wave_id,case_id,scope_version,input_snapshot_hash,source_observation_ids,receiving_product_id,authorized_release_utc,normal_ack_utc,shadow_ack_utc,normal_accepted_update_utc,shadow_accepted_update_utc,closeout_utc,normal_status,shadow_status,comparability,reason_code

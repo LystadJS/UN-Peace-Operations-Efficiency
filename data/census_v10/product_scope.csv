@@ -1,0 +1,13 @@
+product_id,case_id,source_symbol,owner,reference_cycle,scope,approval,live_product_id,live_deadline_utc
+V8:R1,SP08P1,S/2025/187,UNOWAS,V8_worked_sequence,SG report; stated reporting window 1 December 2024 to 31 March 2025,existing_office_and_SG_or_briefing_clearance_not_reassigned,,
+V8:B1,SP08P1,S/PV.9890,UNOWAS,V8_worked_sequence,UNOWAS briefer contribution only; not the Council debate or official transcript production,existing_office_and_SG_or_briefing_clearance_not_reassigned,,
+V8:R2,SP08P1,S/2025/342,UNOCA,V8_worked_sequence,SG report; six-month update since 29 November 2024; separate regional mandate,existing_office_and_SG_or_briefing_clearance_not_reassigned,,
+V8:B2,SP08P1,S/PV.9931,UNOCA,V8_worked_sequence,UNOCA briefer contribution only; not the Council debate or official transcript production,existing_office_and_SG_or_briefing_clearance_not_reassigned,,
+V9:P0,SP09P1,S/2025/6,UNFICYP,0,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:G0,SP09P1,S/2025/7/Rev.1,Good offices,0,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:P1,SP09P1,S/2025/447,UNFICYP,1,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:G1,SP09P1,S/2025/448,Good offices,1,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:P2,SP09P1,S/2026/8,UNFICYP,2,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:G2,SP09P1,S/2026/9,Good offices,2,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:P3,SP09P1,S/2026/550,UNFICYP,3,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,
+V9:G3,SP09P1,S/2026/551,Good offices,3,selected written-report obligations only; no oral-briefing transfer,retained_owner_chain_no_new_clearance,,

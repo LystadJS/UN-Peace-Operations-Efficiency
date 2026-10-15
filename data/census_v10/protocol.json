@@ -1,0 +1,91 @@
+{
+  "accounting": {
+    "actual_trial": "normal+shadow+common+setup+evaluation",
+    "missing_time": "unknown_not_zero; suppress_complete_totals_and_contrast",
+    "modes": [
+      "normal",
+      "shadow",
+      "common",
+      "setup",
+      "evaluation"
+    ],
+    "normal_process": "normal+common",
+    "repeated_common_inputs": "one_actual_segment; no_additive_double_count",
+    "shadow_process": "shadow+common"
+  },
+  "asof": "2026-10-15",
+  "authorization_status": "not_authorized_for_live_use",
+  "baseline_commit": "65fa21bfd2605c0372f3626deb25f69d0fee1db4",
+  "case_activation": {
+    "SP08P1": {
+      "additional_person_minute_ceiling": null,
+      "approved_storage_ref": null,
+      "deadline_safety_buffer_minutes": null,
+      "fallback_ref": null,
+      "incident_and_resumption_route_ref": null,
+      "input_snapshot_sha256": null,
+      "language_and_task_contract_ref": null,
+      "measurement_end_utc": null,
+      "measurement_start_utc": null,
+      "normal_workflow_map_ref": null,
+      "owner_a_authorization_ref": null,
+      "owner_b_authorization_ref": null,
+      "preparer_roles_ref": null,
+      "required_deadline_manifest_ref": null,
+      "retention_and_staff_notice_ref": null,
+      "reviewer_arrangement_ref": null,
+      "scope_sha256": null,
+      "specific_gap_ref": null,
+      "target_product_manifest_ref": null
+    },
+    "SP09P1": {
+      "additional_person_minute_ceiling": null,
+      "approved_storage_ref": null,
+      "deadline_safety_buffer_minutes": null,
+      "fallback_ref": null,
+      "incident_and_resumption_route_ref": null,
+      "input_snapshot_sha256": null,
+      "language_and_task_contract_ref": null,
+      "measurement_end_utc": null,
+      "measurement_start_utc": null,
+      "normal_workflow_map_ref": null,
+      "owner_a_authorization_ref": null,
+      "owner_b_authorization_ref": null,
+      "preparer_roles_ref": null,
+      "required_deadline_manifest_ref": null,
+      "retention_and_staff_notice_ref": null,
+      "reviewer_arrangement_ref": null,
+      "scope_sha256": null,
+      "specific_gap_ref": null,
+      "target_product_manifest_ref": null
+    }
+  },
+  "comparison": {
+    "estimate_label": "descriptive_process_contrast_not_time_saved",
+    "phase": "non_displacing_shadow_only",
+    "primary_unit": "case_product_bundle_input_wave",
+    "prospective_manifest": "required_before_live_comparison; matched_append_only_update_waves",
+    "randomization": "not_implemented"
+  },
+  "design_status": "prepared_for_owner_review",
+  "reference_scope": {
+    "components": 25,
+    "interpretation": "selected_correlated_reference_units_not_independent_trials",
+    "product_obligations": 61,
+    "product_views": 12,
+    "source_observations": 64
+  },
+  "safeguards": {
+    "approval_chains": "unchanged",
+    "automatic_start": false,
+    "course_watch": "paused_no_checks_run",
+    "frozen_rankings": "unchanged",
+    "incremental_cash_savings": "not_estimated",
+    "live_measurements": "none",
+    "mandated_outputs": "unchanged",
+    "protected_data_in_public_repo": false,
+    "retrospective_support": "20/32 unchanged",
+    "staff_time_saved": "not_estimated"
+  },
+  "version": "10.0"
+}

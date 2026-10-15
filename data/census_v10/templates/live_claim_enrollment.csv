@@ -1,0 +1,1 @@
+enrollment_id,case_id,wave_id,product_id,component_family,source_ref,source_hash,source_available_utc,source_availability_basis,publisher_or_speaker_class,event_date_precision,observation_cutoff,unit,qualifier,implementation_stage,revision,required_action,enrolled_utc,scope_hash,disposition,reason_code

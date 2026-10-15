@@ -1,0 +1,1 @@
+review_id,batch_id,method,product_id,obligation_id,output_hash,source_observation_ids,expected_action,assessor_code,first_pass_status,materiality,qualification_failures,correction_ref,final_status,adjudication_ref

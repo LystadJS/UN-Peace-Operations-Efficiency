@@ -264,3 +264,10 @@ Public evidence supports shared event/source identifiers and administrative coor
 The more comprehensive [**systematic 2025–2026 evidence census**](docs/systematic_2025_2026_census.md) and [executive brief](docs/systematic_2025_2026_executive_brief.md) expand beyond the 79-report focused mandate subset. The official index extraction reports **132 unique Secretary-General report entries (84 in 2025, 48 in 2026 through the 8 October snapshot)**; **474 formal Council meeting record variants** represent **406 distinct formal meeting IDs** (255 in 2025 and 151 in the incomplete 2026 index). The separate bounded mission archive discovery identifies **673 notice links**, which are **not 673 distinct delivered field visits or courses**. The more extensive systematic field/training collection is still a **curated public sample**, not a complete population census. All these record grains overlap and **must not be summed**.
 
 [Official Council reports census](data/systematic_sg_reports_2025_2026.csv) · [Distinct Council meeting register](data/systematic_sc_meetings_2025_2026.csv) · [Index/source coverage](data/systematic_census_coverage.csv) · [Reproducible collector](scripts/collect_council_index.py) · [Source validation](scripts/validate_systematic_census.py). The [79-symbol registry](data/census_2025_2026_security_council_reports.csv) remains a *selected 17-series subset* with a different selection rule, not the total official index population.
+
+## Current — V10 owner-review and shadow-cycle protocol
+
+[Joint protocol](docs/v10_owner_review_shadow_protocol.md) · [Owner decision sheet](docs/v10_owner_decision_sheet.md) · [Fixed obligations](data/census_v10/product_obligations.csv).
+
+The public reference scope fixes 64 source observations, 25 components and 61 selected obligations across 12 product views. Nine instruments remain empty; case-local approvals and live activation are pending. Workload accounting separates normal, shadow, shared, setup and evaluation effort. No live trial, staff measurement or course check is started; mandate, ranking and financial safeguards remain unchanged.
+

@@ -1,0 +1,16 @@
+{
+  "asof": "2026-10-15",
+  "baseline_commit": "65fa21bfd2605c0372f3626deb25f69d0fee1db4",
+  "components": 25,
+  "empty_instruments": 9,
+  "live_trials_run": 0,
+  "measured_staff_segments": 0,
+  "owner_approvals_obtained": 0,
+  "pinned_input_files": 54,
+  "product_obligations": 61,
+  "product_views": 12,
+  "readiness": "protocol_prepared_not_live_authorized",
+  "scenario_cards": 12,
+  "source_files": 14,
+  "source_observations": 64
+}

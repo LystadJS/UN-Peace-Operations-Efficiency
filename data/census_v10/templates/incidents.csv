@@ -1,0 +1,1 @@
+incident_id,case_id,batch_id,trigger_code,detected_utc,affected_obligation_ids,affected_output_hash,scope_of_hold,fallback_status,protected_incident_ref,resumption_authority_ref,resumption_decision,closed_utc

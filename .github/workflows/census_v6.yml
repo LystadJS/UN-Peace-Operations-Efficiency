@@ -5,6 +5,7 @@ on:
     paths:
       - .github/workflows/census_v6.yml
       - scripts/collect_census_v6_sources.py
+      - scripts/recover_census_v6_sources.py
       - scripts/audit_census_v6.py
       - data/census_v6/review_decisions.json
 permissions:
@@ -18,12 +19,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install PDF text extractor
-        run: python -m pip install pypdf==6.1.1
+      - name: Install source parsers
+        run: python -m pip install pypdf==6.1.1 beautifulsoup4==4.13.4
       - name: Record exact baseline
         run: git rev-parse HEAD > BASELINE_COMMIT.txt
       - name: Capture public original sources
-        run: python scripts/collect_census_v6_sources.py
+        run: |
+          python scripts/collect_census_v6_sources.py
+          python scripts/recover_census_v6_sources.py
       - name: Preserve reproducible public repository and source snapshot
         if: always()
         uses: actions/upload-artifact@v4

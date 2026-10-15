@@ -43,4 +43,14 @@ For each case report all enrolled claims and update waves, failures/stops, exact
 
 **A parallel shadow does not show work avoided. A faster sheet does not authorize reduced clearance. No staff-saving or cash-saving result is requested.**
 
+## Binding comparison check before activation
+
+**Match the same work slice.** The normal and shadow methods must meet the same selected factual-support requirements. Do not compare preparation of a complete SG report, political analysis or full clearance with preparation of a short shadow fact sheet. Keep necessary owner-only work outside the shared-production contrast unless exactly the same task is included on both sides. If normal preparation cannot be attributed to the selected slice reliably, record its broader total separately and mark the workload comparison ineligible. Do not subtract an assumed share of a full report's labor.
+
+**Do not give the shadow free normal-method labor.** The shadow preparer must not use an unpublished normal output as an unrecorded input. Any permitted dependency is documented, its producing effort is retained, and the pair is marked contaminated or given a newly specified comparable input boundary before assessment. A discovered material error still follows the normal correction route; experimental separation never overrides reporting safety.
+
+**Keep quality strata visible.** The fixed corpus contains 45 factual-support/reference obligations and 16 owner, attribution or temporal-boundary obligations, classified by the inherited required-action fields. Report their quality numerators and denominators separately as well as the overall 61-obligation disposition. Boundary-only success is not evidence that political drafting can be shared. For live waves, lock equivalent classifications before reviewing outcomes. The earlier V8/V9 metric definitions remain available for comparison; do not compare a 61-obligation aggregate with a factual-claim-only baseline without explaining the denominator change.
+
+**A calculable time contrast is not acceptance.** The R eligibility flag concerns declared comparability and capture, not verified source accuracy or institutional permission. Review the accompanying quality and incident registers. A faster but materially incorrect output must not advance. Custodians must verify the expected-task roster and completeness declarations; the supplied script cannot authenticate those declarations or discover entirely unlogged work.
+
 Read the [full protocol](v10_owner_review_shadow_protocol.md), [fixed scope](../data/census_v10/product_obligations.csv), [activation contract](../data/census_v10/protocol.json) and [scenario cards](../data/census_v10/scenario_cards.csv). All current live-use approval fields are pending. The paused course watch is outside this work.

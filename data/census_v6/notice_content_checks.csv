@@ -1,0 +1,8 @@
+source_id,url,transport_status,content_status,source_sha256,characters
+KOREA_HOST_INDEX,https://www.police.ac.kr/police/police/master/74/boardList.do?mdex=police125,downloaded,retrieved_source_text,7470631804cf4c3190e041e6585cd8e464326866791f41b2be3c046cf3472720,2887
+ITS_CALENDAR,https://peacekeepingresourcehub.un.org/en/news,downloaded,retrieved_source_text,b6a10241093575ac44aeeb496d5b2287f713ac7b295c5948dc5bdc4d7162d576,15375
+UNOWAS_APRIL_BRIEFING,https://unowas.unmissions.org/en/news/at-the-security-council-special-representative-simao-encourages-continued-regional,downloaded,retrieved_source_text,4d05568f969125a2d17d33a7790e9a66ab7360ccdc632f0f05b2955399a46498,9194
+UNOWAS_APRIL_COVERAGE,https://press.un.org/en/2025/sc16036.doc.htm,downloaded,challenge_not_article_body,32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea,315
+UNOCA_JUNE_COVERAGE,https://press.un.org/en/2025/sc16081.doc.htm,downloaded,challenge_not_article_body,32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea,315
+UNOCA_REPORT_BRIEFING_ARCHIVE,https://unoca.unmissions.org/en/unoca-reports-of-the-secretary-general,downloaded,retrieved_source_text,34356cc20e0ced61b783a59e4ac50de1c5d8431873eb96f9f95ae8ab1c17b9fa,18077
+KOREA_MOBILE_INDEX,https://m.police.ac.kr/PM/user/main/userMain.do,downloaded,retrieved_source_text,ded13ef48a3feeb7249183976439cc79439851d70de0f0eec65102bf9e1def27,1730

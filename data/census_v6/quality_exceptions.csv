@@ -1,0 +1,7 @@
+issue_id,affected,finding
+V6Q01,EV001; S/2025/187 para49; S/2025/342 para61,"UNOWAS report prints 28-31 January; UNOCA report prints 27-31 January for the joint Nigeria visit. Preserve both source-qualified ranges, one event identity, and an unresolved start-date discrepancy. Do not invent a travel explanation."
+V6Q02,S/2025/7,"Retrieved original UN PDF is S/2025/7/Rev.1 dated 14 January 2025. It is an identified revision, not authenticated bytes of the unrevised text."
+V6Q03,S/2026/9 and other low-text annex pages,Text-layer review does not authenticate content of image-only annexes. Source pages remain in the retained original PDF; no OCR-based assertions are made.
+V6Q04,UN English meeting coverage SC16036,"Indexed English coverage labels the meeting 9891; the original transcript is S/PV.9890 on 3 April 2025. Canonical transcript controls. Automated HTML retrieval returned a client challenge, not the article body."
+V6Q05,V5C01,Related Korean host programme dates differ from ITS scheduled dates; opening/reporting does not establish completion or exact cohort equivalence.
+V6Q06,V5C02-V5C08,No scheduled cohort is promoted to completed merely because its calendar start or end passed; five start after cutoff and one spans cutoff.

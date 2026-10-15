@@ -1,0 +1,29 @@
+{
+  "retained_run_steps": 22,
+  "steps": [
+    "Validate baseline identifiers citations and recorded assumptions",
+    "Validate mission budget and UN80 audit supplements",
+    "Validate GA resolution and SPM source reconciliation",
+    "Validate SPM 2027 mission and cluster reconciliation",
+    "Validate source-linked transaction-control baselines",
+    "Exercise R transaction matcher on clearly synthetic fixture",
+    "Validate public decision gates and nonadditive finance map",
+    "Build reproducible public decision queue",
+    "Exercise conditional break-even engine using synthetic data only",
+    "Check Phase 7 crosswalk and recommendation source status",
+    "Reconcile ACABQ advice against 2027 SG proposals and research ranks",
+    "Validate nine Cluster III SG mission baselines and main ACABQ framework",
+    "Validate selected retrospective public 2025-26 source identity and reuse adjudications",
+    "Render and test retrospective 2025-26 research queue in base R",
+    "Validate full official Council report and meeting indexes with scoped mission census",
+    "Test Council index HTML parsing and quarantine of anomalies",
+    "Render systematic source census and test R summary outputs",
+    "Validate scoped SG Council reports and public meeting field training coverage",
+    "Validate October 12 archived Council, notice and curated-event source census",
+    "Validate 13 October mission training census extension",
+    "Validate source-backed 2025-26 attendance and deeper official mission archives",
+    "Validate October 15 public census and canonical identity safeguards"
+  ],
+  "v6_check": "passed",
+  "scope": "Structural/source checks; no inference of financial substitutability or missing-course non-delivery"
+}

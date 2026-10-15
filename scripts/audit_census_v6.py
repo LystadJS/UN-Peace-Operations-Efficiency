@@ -93,7 +93,7 @@ def build():
         if not reason:
             reason=('Different date/cohort/location/function or event-versus-product grain after cross-version review; shared source or title alone is insufficient.' if candidate else 'No shared source URL or qualifying title similarity; retained after record-level corpus review.')
         pairs.append(dict(left_id=a,right_id=b,jaccard=round(j,6),sequence_similarity=round(s,6),shared_urls=shared,candidate=candidate,verdict='same_identity' if same else 'distinct_identity_retained',reason=reason))
-    ensure(len(pairs)==8385 and sum(p['candidate'] for p in pairs)==189,'Pair-screen denominator changed')
+    ensure(len(pairs)==8385 and sum(p['candidate'] for p in pairs)==191,'Pair-screen denominator changed')
     ensure(sum(p['verdict']=='same_identity' for p in pairs)==9,'Positive pair decisions changed')
     identities=defaultdict(list)
     for k in groups:identities[amap.get(k,k)].append(k)
@@ -181,7 +181,7 @@ def build():
     write_json(OUT/'audit_summary.json',summary)
     report=['# Cross-version census audit: identities, course delivery and source reuse','',f'**As of {ASOF} | Public evidence | Frozen financial and mandate controls unchanged**','',
       '## Decision','',
-      '**The bounded cross-version identity audit is complete.** The 13 curated CSV registers/views contain 371 observations, 130 local IDs and **123 canonical evidence identities**, after reconciling five alias clusters. These mixed-grain identities are not 123 delivered events. All 8,385 ID pairs were screened; 189 candidate pairs were reviewed, with nine positive pair links absorbing seven aliases. The source-URL frame and the unobserved operational population are not being declared complete.','',
+      '**The bounded cross-version identity audit is complete.** The 13 curated CSV registers/views contain 371 observations, 130 local IDs and **123 canonical evidence identities**, after reconciling five alias clusters. These mixed-grain identities are not 123 delivered events. All 8,385 ID pairs were screened; 191 candidate pairs were reviewed, with nine positive pair links absorbing seven aliases. The source-URL frame and the unobserved operational population are not being declared complete.','',
       'The eight course listings were checked, but **no exact-cohort completion is newly certified**: two scheduled periods have elapsed, one spans the cutoff and five begin in the future. This is neither a cancellation finding nor an assertion that the elapsed courses did not occur.','',
       'The source audit authenticated **40 PDFs: 33 requested report files and seven transcripts**. One report file is an identified revision. Seven other transcripts remain unavailable. The report comparisons establish six cross-mandate referral pairs and two references to previous reporting periods; six other pairs have no explicit paired-document reference in the extracted text.','',
       '## Canonical identity corrections','','| Canonical ID | Aliases absorbed | Verified identity |','|---|---|---|']

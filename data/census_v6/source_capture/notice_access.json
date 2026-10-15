@@ -1,0 +1,190 @@
+[
+  {
+    "source_id": "KOREA_HOST_INDEX",
+    "url": "https://www.police.ac.kr/police/police/master/74/boardList.do?mdex=police125",
+    "final_url": "https://www.police.ac.kr/police/police/master/74/boardList.do?mdex=police125",
+    "status": "downloaded",
+    "sha256": "7470631804cf4c3190e041e6585cd8e464326866791f41b2be3c046cf3472720",
+    "text_file": "KOREA_HOST_INDEX.txt",
+    "relevant_links": [
+      {
+        "title": "경찰대학, 유엔 공식 경찰교육기관 인증 유엔 교육 허브 역할을 통한 평화유지활동 기여",
+        "url": "https://www.police.ac.kr/police/police/master/74/74/168852",
+        "onclick": ""
+      }
+    ]
+  },
+  {
+    "source_id": "ITS_CALENDAR",
+    "url": "https://peacekeepingresourcehub.un.org/en/news",
+    "final_url": "https://peacekeepingresourcehub.un.org/en/news",
+    "status": "downloaded",
+    "sha256": "b6a10241093575ac44aeeb496d5b2287f713ac7b295c5948dc5bdc4d7162d576",
+    "text_file": "ITS_CALENDAR.txt",
+    "relevant_links": [
+      {
+        "title": "English",
+        "url": "https://peacekeepingresourcehub.un.org/en/",
+        "onclick": ""
+      }
+    ]
+  },
+  {
+    "source_id": "UNOWAS_APRIL_BRIEFING",
+    "url": "https://unowas.unmissions.org/en/news/at-the-security-council-special-representative-simao-encourages-continued-regional",
+    "final_url": "https://unowas.unmissions.org/en/news/at-the-security-council-special-representative-simao-encourages-continued-regional",
+    "status": "downloaded",
+    "sha256": "4d05568f969125a2d17d33a7790e9a66ab7360ccdc632f0f05b2955399a46498",
+    "text_file": "UNOWAS_APRIL_BRIEFING.txt",
+    "relevant_links": [
+      {
+        "title": "English",
+        "url": "https://unowas.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "English",
+        "url": "https://unowas.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "English",
+        "url": "https://unowas.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "Speeches and Statements",
+        "url": "https://unowas.unmissions.org/en/speeches-and-statements",
+        "onclick": ""
+      },
+      {
+        "title": "Speeches and Statements",
+        "url": "https://unowas.unmissions.org/en/speeches-and-statements",
+        "onclick": ""
+      }
+    ]
+  },
+  {
+    "source_id": "UNOWAS_APRIL_COVERAGE",
+    "url": "https://press.un.org/en/2025/sc16036.doc.htm",
+    "final_url": "https://press.un.org/en/2025/sc16036.doc.htm",
+    "status": "downloaded",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_file": "UNOWAS_APRIL_COVERAGE.txt",
+    "relevant_links": []
+  },
+  {
+    "source_id": "UNOCA_JUNE_COVERAGE",
+    "url": "https://press.un.org/en/2025/sc16081.doc.htm",
+    "final_url": "https://press.un.org/en/2025/sc16081.doc.htm",
+    "status": "downloaded",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_file": "UNOCA_JUNE_COVERAGE.txt",
+    "relevant_links": []
+  },
+  {
+    "source_id": "UNOCA_REPORT_BRIEFING_ARCHIVE",
+    "url": "https://unoca.unmissions.org/en/unoca-reports-of-the-secretary-general",
+    "final_url": "https://unoca.unmissions.org/en/unoca-reports-of-the-secretary-general",
+    "status": "downloaded",
+    "sha256": "34356cc20e0ced61b783a59e4ac50de1c5d8431873eb96f9f95ae8ab1c17b9fa",
+    "text_file": "UNOCA_REPORT_BRIEFING_ARCHIVE.txt",
+    "relevant_links": [
+      {
+        "title": "English",
+        "url": "https://unoca.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "English",
+        "url": "https://unoca.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "English",
+        "url": "https://unoca.unmissions.org/en",
+        "onclick": ""
+      },
+      {
+        "title": "Statements by the President of the Security Council",
+        "url": "https://unoca.unmissions.org/en/unoca-declarations-du-president-du-conseil-de-securite",
+        "onclick": ""
+      },
+      {
+        "title": "Statements by the President of the Security Council",
+        "url": "https://unoca.unmissions.org/en/unoca-declarations-du-president-du-conseil-de-securite",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/2025-12/28th_sg_report_on_the_situation_in_central_africa_and_the_activities_of_the_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/27th_sg_report_on_the_situation_in_central_africa_and_the_activities_of_the_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/sg_report_on_the_situation_in_central_africa_and_the_activities_of_the_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/25th_sg_report_on_the_situation_in_central_africa_and_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/20th_report_of_the_un_secretary-general_on_the_situation_in_central_africa_and_on_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE FULL REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/19th_report_of_un_secretary-general_on_the_situation_in_central_africa_and_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/18th_report_of_the_un_secretary-general_on_the_situation_in_central_africa_and_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/17th_report_of_the_un_secretary-general_on_the_situation_in_central_africa_and_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/report_on_the_situation_in_central_africa_and_the_activities_of_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE PDF VERSION OF THE REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/15th_report_of_the_un_secretary-general_on_the_situation_in_central_africa_and_the_activities_of_the_united_nations_regional_office_for_central_africa_unoca.pdf",
+        "onclick": ""
+      },
+      {
+        "title": "DOWNLOAD THE REPORT",
+        "url": "https://unoca.unmissions.org/sites/default/files/report_of_the_un_secretary-general_on_the_situation_in_central_africa_and_the_activities_of_the_united_nations_regional_office_for_central_africa_unoca.pdf",
+        "onclick": ""
+      }
+    ]
+  },
+  {
+    "source_id": "KOREA_MOBILE_INDEX",
+    "url": "https://m.police.ac.kr/PM/user/main/userMain.do",
+    "final_url": "https://m.police.ac.kr/PM/user/main/userMain.do",
+    "status": "downloaded",
+    "sha256": "ded13ef48a3feeb7249183976439cc79439851d70de0f0eec65102bf9e1def27",
+    "text_file": "KOREA_MOBILE_INDEX.txt",
+    "relevant_links": [
+      {
+        "title": "경찰대학, 유엔 공식 경찰교육기관 인증 유엔 교육 허브 역할을 통한 평화유지활동 기여",
+        "url": "javascript:fn_boardDetail('168852');",
+        "onclick": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "existing_mechanisms": [
+    {
+      "classification": "existing_baseline_not_new_platform",
+      "implication": "Use existing LCM systems and training schedule, with differentiated access and course ownership, rather than recommend a parallel portal.",
+      "mechanism_id": "V5B01",
+      "source_ids": [
+        "V5S14",
+        "V5S18"
+      ],
+      "title": "LCM coordination and training marketplace"
+    },
+    {
+      "classification": "existing_joint_product_not_new_2025_event",
+      "implication": "LCM/DPO, DOS and DGC already collaborate on review tooling. Test interoperability and reusable non-sensitive taxonomies instead of assuming a new tool is needed.",
+      "mechanism_id": "V5B02",
+      "source_ids": [
+        "V5S19"
+      ],
+      "title": "Deployment Review application"
+    }
+  ],
+  "interpretation": "Outside the 130-ID CSV corpus. Programme group is not an additional single event; mechanisms are existing baselines.",
+  "programme_groups": [
+    {
+      "exact_event_count": null,
+      "group_id": "V5G001",
+      "interpretation": "Retrospective confirms meetings and delegation visits, not a separate count per mention. April workshop has an independent dated source; May/June visits remain grouped. 2026-2028 package is prospective, not evidence of its delivery.",
+      "named_visit_months": [
+        "April",
+        "May",
+        "June"
+      ],
+      "related_event_ids": [
+        "V5E016"
+      ],
+      "source_ids": [
+        "V5S16",
+        "V5S17"
+      ],
+      "status": "multi_event_programme_not_additive",
+      "title": "UNCAP UN-NATO-AU 2025 technical-cooperation programme",
+      "year": 2025
+    }
+  ]
+}

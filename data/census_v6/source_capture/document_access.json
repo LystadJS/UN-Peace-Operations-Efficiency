@@ -1,0 +1,1465 @@
+{
+  "retrieved_at": "2026-10-15T13:24:33.673968+00:00",
+  "records": [
+    {
+      "symbol": "S/2025/109",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2503559&t=pdf&i=A/79/797_1741206602193",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/035/59/pdf/n2503559.pdf",
+      "sha256": "d2f1c5c49340ad8d5fa5f78689ba5628da88ad2fed315a62278774a05200ef7d",
+      "pages": 16,
+      "text_file": "S_2025_109.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/153",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2505668&t=pdf&i=S/2025/153_1742929322129",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/056/68/pdf/n2505668.pdf",
+      "sha256": "847d2b4dac139b79755c546406d553330668c99d51b07c928301c44f09df69fe",
+      "pages": 32,
+      "text_file": "S_2025_153.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/176",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2506487&t=pdf&i=S/2025/176_1743020882197",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/064/87/pdf/n2506487.pdf",
+      "sha256": "8f3a615eaa771a31a44f80fab124b673c702c0434ccef46f98b0caaeba9448c9",
+      "pages": 21,
+      "text_file": "S_2025_176.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/187",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2506305&t=pdf&i=S/2025/187_1743627601713",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/063/05/pdf/n2506305.pdf",
+      "sha256": "5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9",
+      "pages": 17,
+      "text_file": "S_2025_187.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/202",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2507092&t=pdf&i=S/2025/202_1744669801669",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/070/92/pdf/n2507092.pdf",
+      "sha256": "c03c50a67ef2af98ef41fea02615f37ee526ce3412b67a976d61231dd76e2e4f",
+      "pages": 17,
+      "text_file": "S_2025_202.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/226",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2508664&t=pdf&i=S/2025/226_1745532542142",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/086/64/pdf/n2508664.pdf",
+      "sha256": "b39e688206a470355e65238da81a692cf1eeffbea08073be2b1406a57802caf3",
+      "pages": 18,
+      "text_file": "S_2025_226.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/254",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2510685&t=pdf&i=S/2025/254_1747330381747",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/106/85/pdf/n2510685.pdf",
+      "sha256": "63f93915ce2708e099a0cf8c57d40f9d80132afdddce67c924cf34d3ea74a99d",
+      "pages": 13,
+      "text_file": "S_2025_254.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/28",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2500407&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/004/07/pdf/n2500407.pdf",
+      "sha256": "e97681dc10d10121214103b93bf53bdc05bfee6cd3ddcee032c9126bd0f95afa",
+      "pages": 19,
+      "text_file": "S_2025_28.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/342",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2512625&t=pdf&i=S/2025/342_1749157683410",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/126/25/pdf/n2512625.pdf",
+      "sha256": "2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc",
+      "pages": 15,
+      "text_file": "S_2025_342.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/372",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2513359&t=pdf&i=A/79/947_1750194084110",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/133/59/pdf/n2513359.pdf",
+      "sha256": "5cab27df5044f99ac7c7fc3b97d7ecb1497773e6321497d3cce6e0d894f9a27b",
+      "pages": 14,
+      "text_file": "S_2025_372.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/447",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2516900&t=pdf&i=S/2025/447_1752173462162",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/169/00/pdf/n2516900.pdf",
+      "sha256": "702aca19e142e8841ea9384f8e490938ab64a307a54067362bc01b310cbb20fb",
+      "pages": 15,
+      "text_file": "S_2025_447.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/448",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2516820&t=pdf&i=S/2025/448_1752182588325",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/168/20/pdf/n2516820.pdf",
+      "sha256": "60fa799ad696a5e3239cb7e0836a30da789d8264276930c33fa65522928d153e",
+      "pages": 20,
+      "text_file": "S_2025_448.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/495",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2519038&t=pdf&i=S/2025/495_1754515141281",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/190/38/pdf/n2519038.pdf",
+      "sha256": "6bd5d0bd3d6a2f96cdd0d4629648cf57b040b6e91b83f2b39d9e18bd31b2adb1",
+      "pages": 15,
+      "text_file": "S_2025_495.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/532",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2520908&t=pdf&i=S/2025/532_1756845782085",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/209/08/pdf/n2520908.pdf",
+      "sha256": "f24448c9933373c74f3de79a34dc4a4ba7bd15cdb0096e26194846b76c8f187a",
+      "pages": 15,
+      "text_file": "S_2025_532.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/554",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2522699&t=pdf&i=A/80/366_1758055742170",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/226/99/pdf/n2522699.pdf",
+      "sha256": "5b98f1a273245055f80b6997165c6d8a29b3deda95931fec294206b4e43a71d1",
+      "pages": 15,
+      "text_file": "S_2025_554.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/6",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2025/6&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n24/418/59/pdf/n2441859.pdf",
+      "sha256": "846b77a5b4665ff72cf5d84d2fd8598cc389c45771b2f092b9e20cb5cd1bc148",
+      "pages": 16,
+      "text_file": "S_2025_6.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2025/6",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2025/6",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2025/6",
+          "status": "html_not_document",
+          "sha256": "5eb9a0de782a0c4331049aaa29ca6224776c5815e49c08a60a3cd71b7de9d47b",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2025/6",
+          "status": "html_not_document",
+          "sha256": "e3932caaa85788a01720cb2d04c91a28996424e0c5e717b1e16cdecefda7bdde",
+          "pdf_links": 0,
+          "title": "Select a language for S/2025/6"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2025/7",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2500838&t=pdf&i=S/2025/7/REV.1_1736963702379",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/008/38/pdf/n2500838.pdf",
+      "sha256": "87d92cf95e1e1df294eb8ec86ae3c9313ef2caba12ee70158ee2665e0e62daab",
+      "pages": 21,
+      "text_file": "S_2025_7.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/771",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2531915&t=pdf&i=S/2025/771_1765557125435",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/319/15/pdf/n2531915.pdf",
+      "sha256": "28abb28f3d32945ed2c804765baabb7f09e66fb09433a62ff58a03c94d6f1ce8",
+      "pages": 16,
+      "text_file": "S_2025_771.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/772",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2531203&t=pdf&i=S/2025/772_1765225580651",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/312/03/pdf/n2531203.pdf",
+      "sha256": "0b4c580561b1d9ac44442331ea0d94786272dda39ec1dc94e62d539bdca89139",
+      "pages": 15,
+      "text_file": "S_2025_772.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2025/789",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2531861&t=pdf&i=A/80/556_1765317842236",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/318/61/pdf/n2531861.pdf",
+      "sha256": "59205c1136c22d8a12026699b33ace8fc2296079765fc761d092ff669adab0fe",
+      "pages": 15,
+      "text_file": "S_2025_789.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2026/160",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/160&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/040/60/pdf/n2604060.pdf",
+      "sha256": "8e921c7c9073cfe127fc0fc4f463c430261f30374791db0493e3461ab574f295",
+      "pages": 27,
+      "text_file": "S_2026_160.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/160",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/160",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/160",
+          "status": "html_not_document",
+          "sha256": "260fa7656f8c6073c750b8caa76f5d2f1056e60151cca99755f307431e7d2105",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/160",
+          "status": "html_not_document",
+          "sha256": "84c1e394fe7424045f8cef7dcdce1107555eabe6281e5d834166eabbbdf5c980",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/160"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/208",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/208&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/050/66/pdf/n2605066.pdf",
+      "sha256": "34b414ae35f3906406409c292d1bbfcd02b9336f4f514c609cc75c73a442cf26",
+      "pages": 20,
+      "text_file": "S_2026_208.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/208",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/208",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/208",
+          "status": "html_not_document",
+          "sha256": "e43fe862447703ff667c49a87f92973ffcd6414bce9350c477287b23c82fa46b",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/208",
+          "status": "html_not_document",
+          "sha256": "42f708140f0f32b0a811d69623d26896ce50380347697b69f2ba9ea3a856f286",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/208"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/256",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/256&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/059/41/pdf/n2605941.pdf",
+      "sha256": "642fea64f3eb7c21915b7722cea4016783293f0063e7cceeca52a118e892a9db",
+      "pages": 16,
+      "text_file": "S_2026_256.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/256",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/256",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/256",
+          "status": "html_not_document",
+          "sha256": "07e25d4c2a324e9e0a0e439d00fb9b1b6241e2562051af322e33b9c37cb3c473",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/256",
+          "status": "html_not_document",
+          "sha256": "83ce648dfbd8b1210b0e154d7a548ff4bbf0fb09b95aa0fce3604a2c18ee6af3",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/256"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/366",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/366&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/097/65/pdf/n2609765.pdf",
+      "sha256": "163c71e6d0a6bcf6af623050e18e162d309b387d4b967a4055c7d0f92ce9ca58",
+      "pages": 13,
+      "text_file": "S_2026_366.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/366",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/366",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/366",
+          "status": "html_not_document",
+          "sha256": "b351bd872f427e7d278cde20fd0f4ab4ec059e16c1b5f420e1e1c34b3ffa96e4",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/366",
+          "status": "html_not_document",
+          "sha256": "22cfcf6467a30973c302aa5ce48169aa661fa7bf472a2ae2e0e452ce5a705e8e",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/366"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/431",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/431&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/109/14/pdf/n2610914.pdf",
+      "sha256": "21e53efb35dc131cb2caa8699b4ff70de645cc0f93124856da47de97bae55085",
+      "pages": 15,
+      "text_file": "S_2026_431.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/431",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/431",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/431",
+          "status": "html_not_document",
+          "sha256": "2345229cf4b5a5e53433df6458a37cef836d19b5081fdcc252c1ff48d5d0ca2e",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/431",
+          "status": "html_not_document",
+          "sha256": "752fb2f8d86ab1c2de46517cadb51b4784d9d533a07ccaa195219d90424e664b",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/431"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/445",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/445&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/118/84/pdf/n2611884.pdf",
+      "sha256": "b7c0b990182adbc22fde7be5ee3be57faefe38702b6bea2087f6532638c178ba",
+      "pages": 15,
+      "text_file": "S_2026_445.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/445",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/445",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/445",
+          "status": "html_not_document",
+          "sha256": "385b6e7efc89457d8434143e97631fad97da7ba43f14c50635a72f62fb37e3de",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/445",
+          "status": "html_not_document",
+          "sha256": "313e167a746d0477f4623eb3ac28ab8a70e0b87e6af9acf767614e3f86aee2c9",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/445"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/537",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/537&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/145/22/pdf/n2614522.pdf",
+      "sha256": "d1b3b1178201a47f793dfbe53f6629f2d6b596e4e27a8640518c50277d419a70",
+      "pages": 15,
+      "text_file": "S_2026_537.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/537",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/537",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/537",
+          "status": "html_not_document",
+          "sha256": "17211433a265b93fd288f4858b8658de3f8de82ef21f76dbb81c86f30b5da1fe",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/537",
+          "status": "html_not_document",
+          "sha256": "ffcb0dfa178ff873cb67921c70e736bc44799ad068c7f722c2f0b77235be923f",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/537"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/550",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/550&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/155/54/pdf/n2615554.pdf",
+      "sha256": "7e0cbe10c616e769ea3bf163a4ffa2b2742866872a88b17c514001751e97adfa",
+      "pages": 14,
+      "text_file": "S_2026_550.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/550",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/550",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/550",
+          "status": "html_not_document",
+          "sha256": "b335404477eeff7600c3827befd1a0e0e17a196f638b39ae11fdc6fced209823",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/550",
+          "status": "html_not_document",
+          "sha256": "323f9178400c3ed402ce8c2ebe5724418575483a5238a54895dcd618951a728a",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/550"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/551",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/551&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/158/93/pdf/n2615893.pdf",
+      "sha256": "0d4c5fe5226a353c8f8a59e21e174aa899cb1a4bee3f96cf8d6afd576a4ac0a0",
+      "pages": 23,
+      "text_file": "S_2026_551.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/551",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/551",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/551",
+          "status": "html_not_document",
+          "sha256": "aed61da2e065504e4e27574c6ef8d3fd85aa7e5ecf11a14ac76a700fc4f13fa4",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/551",
+          "status": "html_not_document",
+          "sha256": "a2db6419b8f41f0a89385825038c4c5984a45a6541d7ad540348f441d071e6b8",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/551"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/724",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/724&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/215/90/pdf/n2621590.pdf",
+      "sha256": "edb270dc8ae8ee3c3341b9fca00873ca6a71833f0dfc66117a6c7d6d9cd05489",
+      "pages": 13,
+      "text_file": "S_2026_724.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/724",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/724",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/724",
+          "status": "html_not_document",
+          "sha256": "b1dae205dd16dfb80f8a863213feba58be08846121c1ce8bf5b33bb193a14879",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/724",
+          "status": "html_not_document",
+          "sha256": "d52970a13fae4cbd598c0f039ba75b277db2ea6fd33043455ada242208507d3b",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/724"
+        }
+      ]
+    },
+    {
+      "symbol": "S/2026/8",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2535979&t=pdf&i=S/2026/8_1768323421416",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/359/79/pdf/n2535979.pdf",
+      "sha256": "62db0b398c44ccf4d9bcee40b8843fcd865db613b5902d774166351867d1d99d",
+      "pages": 14,
+      "text_file": "S_2026_8.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2026/9",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?j=N2536009&t=pdf&i=S/2026/9_1768322702079",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n25/360/09/pdf/n2536009.pdf",
+      "sha256": "7c92ec6687a200cc6b2c88a3182ac3b038774d9695bebdebebaa6061473d4508",
+      "pages": 23,
+      "text_file": "S_2026_9.pages.json",
+      "attempts": []
+    },
+    {
+      "symbol": "S/2026/99",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/2026/99&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/gen/n26/030/53/pdf/n2603053.pdf",
+      "sha256": "ec5342973c894bfea0943c102cea4e9735ddd5a643eff0ab6bed9ea011f87074",
+      "pages": 15,
+      "text_file": "S_2026_99.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/99",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/99",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/2026/99",
+          "status": "html_not_document",
+          "sha256": "bd6d101503c8d74315dd363688de49f284c203eecd01b22b490bd0275079e28f",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/2026/99",
+          "status": "html_not_document",
+          "sha256": "a0757a0e6ca8a4769acde5916c41b52ae2af8661381789d094fae5ee84c2a658",
+          "pdf_links": 0,
+          "title": "Select a language for S/2026/99"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10058",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.10058&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n25/346/27/pdf/n2534627.pdf",
+      "sha256": "cb9dd2a5b6d70cacc03c9777b49e26118a45af7b81aa2379731a90d872654ed3",
+      "pages": 32,
+      "text_file": "S_PV_10058.pages.json",
+      "attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4097837/files/S_PV.10058-EN.pdf",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10058",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10058",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4097837/files/S_PV.10058-EN.pdf",
+          "status": "html_not_document",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "pdf_links": 0,
+          "title": ""
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10058",
+          "status": "html_not_document",
+          "sha256": "56d8fdaf1f16195fb23d3ca7f354003c9459c8178cb62e38e5ab4415abdecfcc",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10058"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10058",
+          "status": "html_not_document",
+          "sha256": "cb644165906fbd9f9409a2718d27b6ac9b2b34411919b7cf0b4dbb60343e6076",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10060",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10060th-meeting-unocalra",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10060",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10060",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10060th-meeting-unocalra",
+          "status": "html_not_document",
+          "sha256": "8f80cb2749d331c52b8af34c30b84f54f03fae1d5344c1a0c4b1a982deb80510",
+          "pdf_links": 40,
+          "title": "10060th meeting - UNOCA/LRA | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10060",
+          "status": "html_not_document",
+          "sha256": "d4701d0b26e5b11c263b132e85683f00ecfa48d3b9a685e6e5720bcf6d54ff30",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10060"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10060",
+          "status": "html_not_document",
+          "sha256": "ece211705fb4806324d6beb48dbce3cee7c22bb11b97acc40fd777aad10c8e2b",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10073",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.10073&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n25/354/57/pdf/n2535457.pdf",
+      "sha256": "837f885b00bbe4df4812d89807b992f8e3078e8d1451c81eba09a531027dcd9b",
+      "pages": 21,
+      "text_file": "S_PV_10073.pages.json",
+      "attempts": [
+        {
+          "url": "https://webtv.un.org/en/asset/k1w/k1w3x86isk",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10073",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10073",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://webtv.un.org/en/asset/k1w/k1w3x86isk",
+          "status": "html_not_document",
+          "sha256": "f3aee5d5b4d459294a2bcb6c5059dd3aff3a21405d6146876ba6abdcc8788936",
+          "pdf_links": 0,
+          "title": "Peace consolidation in West Africa - Security Council, 10073rd meeting | UN Web TV"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10073",
+          "status": "html_not_document",
+          "sha256": "7a9fd4b0ff567c28248ec48a8f2bc48a1aa134db6a53f92104e51bb0b881f2ba",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10073"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10073",
+          "status": "html_not_document",
+          "sha256": "8acf1605176a9164ae7c02c84a29e1661ad29e67d146ddd4288d458c1e138432",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10116",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.10116&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n26/047/04/pdf/n2604704.pdf",
+      "sha256": "41863d83abcdf6d53b0f781a8dea36613cb19cfded088133afaf5e3408a996ca",
+      "pages": 27,
+      "text_file": "S_PV_10116.pages.json",
+      "attempts": [
+        {
+          "url": "https://docs.un.org/en/S/PV.10116",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10116",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://docs.un.org/en/S/PV.10116",
+          "status": "html_not_document",
+          "sha256": "7e44bb8976f5047d0d4525d6603f4d5b192414ce42552a6a15d0f3bcecd4be88",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10116",
+          "status": "html_not_document",
+          "sha256": "64b79dffb4a3ecbbb1b763039c1434435d5295cdab82ab9d0cf2401f18e61870",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10116"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10165",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10165th-meeting-unama",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10165",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10165",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10165th-meeting-unama",
+          "status": "html_not_document",
+          "sha256": "102e1365ca0babf9c60560c604c4e7e0527cfccfaa1a2bc2eeac66e1308c18b4",
+          "pdf_links": 40,
+          "title": "10165th meeting - UNAMA | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10165",
+          "status": "html_not_document",
+          "sha256": "e744a513721135bbdc7d538a273e8c7e2510898d75c661e55bc8f9957a5c66f1",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10165"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10165",
+          "status": "html_not_document",
+          "sha256": "fce131be14f64e6826ac8758ddd952bd941636beb29a17bfc8fc9257ffc0dd12",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10167",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.10167&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n26/140/96/pdf/n2614096.pdf",
+      "sha256": "8aeae7cfe88c3a7588747fec66b7380a39317dbdd046da34fbad798649927d54",
+      "pages": 17,
+      "text_file": "S_PV_10167.pages.json",
+      "attempts": [
+        {
+          "url": "https://webtv.un.org/en/asset/k1y/k1yirjlqmb",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10167",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10167",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://webtv.un.org/en/asset/k1y/k1yirjlqmb",
+          "status": "html_not_document",
+          "sha256": "ccc307cd0e485931e410019f17609896d823ef250a346227fadbca4a1925b865",
+          "pdf_links": 0,
+          "title": "Central African region - Security Council, 10167th meeting | UN Web TV"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10167",
+          "status": "html_not_document",
+          "sha256": "2bd71301d9625d37feb5c77599871631989d014486e0b7215d98c5c2652ccae5",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10167"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10167",
+          "status": "html_not_document",
+          "sha256": "2e562bd1eef4adcb1f9a8f142abfa52d739130138b2a8872707e1382217fc6fd",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10195",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10195th-meeting-unowas",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10195",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10195",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10195th-meeting-unowas",
+          "status": "html_not_document",
+          "sha256": "45272bb0b2b3af9528eafc6c311b8c0f4a80c60c7292c1d5b4a219b82e578b14",
+          "pdf_links": 40,
+          "title": "10195th meeting - UNOWAS | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10195",
+          "status": "html_not_document",
+          "sha256": "c6af5cc7dbf4ba43a48b6de7e7795cc54113df62ee5e62e9ad602c65ba0c3fdc",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10195"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10195",
+          "status": "html_not_document",
+          "sha256": "8113c716a5bcf1172b69bfff561dc3d55d38c12c2971c551d5648193dffac3c9",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.10223",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10223rd-meeting-unama",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10223",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10223",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/10223rd-meeting-unama",
+          "status": "html_not_document",
+          "sha256": "c7c1bd538ab836c0742e4f7d917858aece8603254d1f5f2b08b68c75f00a07a6",
+          "pdf_links": 40,
+          "title": "Programme of Work | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.10223",
+          "status": "html_not_document",
+          "sha256": "b6d2e1242879ea3e87e1d2967a749bf785b7a22e96fb16b59ae9e03836c430d6",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.10223"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.10223",
+          "status": "html_not_document",
+          "sha256": "17934ed605e9dcb5801f915189fa5f7babbbf98a664ce6fa3cd5634a17b1f301",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9875",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.9875&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n25/063/19/pdf/n2506319.pdf",
+      "sha256": "7d6a5346ae0ef14803b0efa66d16579d9cebde4ec2b7c9bd721bebeed6e92872",
+      "pages": 28,
+      "text_file": "S_PV_9875.pages.json",
+      "attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4078968/files/S_PV.9875-EN.pdf",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9875",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9875",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4078968/files/S_PV.9875-EN.pdf",
+          "status": "html_not_document",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "pdf_links": 0,
+          "title": ""
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9875",
+          "status": "html_not_document",
+          "sha256": "f3f9606d2d15216e607447156124d3c80459c01ec136da9fcb401bd749709eb2",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9875"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9875",
+          "status": "html_not_document",
+          "sha256": "209e12b34a5cc5b613254517cc31c3ed0a44f1032a1a76ba543ca89477d0b164",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9890",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.9890&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n25/087/75/pdf/n2508775.pdf",
+      "sha256": "6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991",
+      "pages": 21,
+      "text_file": "S_PV_9890.pages.json",
+      "attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4080352/files/S_PV.9890-EN.pdf",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9890",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9890",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4080352/files/S_PV.9890-EN.pdf",
+          "status": "html_not_document",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "pdf_links": 0,
+          "title": ""
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9890",
+          "status": "html_not_document",
+          "sha256": "866c08add663c77b4c54ddc5656cb9096b59f354f2de260af286cfce6f2f11d8",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9890"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9890",
+          "status": "html_not_document",
+          "sha256": "063db67caa16b72bfe4083601b76a5abe51990782839cb80b63149ba16fcb772",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9931",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9931st-meeting-unocalra",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9931",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9931",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9931st-meeting-unocalra",
+          "status": "html_not_document",
+          "sha256": "5e6ea676d76b6b4c9c455938d42b20ac5159b6e80f62cbf1d3989a6c5fe26757",
+          "pdf_links": 40,
+          "title": "9931st meeting - UNOCA/LRA | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9931",
+          "status": "html_not_document",
+          "sha256": "f68d72af8d17703391adbf2dc51699dc3b6ba3419c36a9812e42d00d653d0e25",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9931"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9931",
+          "status": "html_not_document",
+          "sha256": "3a91c083c4a9574845a2c7b7dc4982bcff7378ed75e8effda2348e2c1aa67fa1",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9942",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9942nd-meeting-unama",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9942",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9942",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9942nd-meeting-unama",
+          "status": "html_not_document",
+          "sha256": "fbcf2145359957fff2e2b7dd0368637a0f584ff814852b6a579a9547a8eb09c0",
+          "pdf_links": 40,
+          "title": "9942nd meeting - UNAMA | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9942",
+          "status": "html_not_document",
+          "sha256": "e69a507261ff9af833bbea23833bae4044e4f2ef0db3b0398a2fca253cc94773",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9942"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9942",
+          "status": "html_not_document",
+          "sha256": "928bf313c24979ac66bb84f474372b73b1d8d09e78ab0d0f2d024fa6286ab270",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9974",
+      "status": "downloaded_symbol_checked",
+      "url": "https://documents.un.org/api/symbol/access?s=S/PV.9974&l=en&t=pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n25/213/64/pdf/n2521364.pdf",
+      "sha256": "c0f6380b41b3d6268e9ec6c28c57510a621b5499ab0045b62760a96f9e861045",
+      "pages": 23,
+      "text_file": "S_PV_9974.pages.json",
+      "attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4087656/files/S_PV.9974-EN.pdf",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9974",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9974",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://digitallibrary.un.org/record/4087656/files/S_PV.9974-EN.pdf",
+          "status": "html_not_document",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "pdf_links": 0,
+          "title": ""
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9974",
+          "status": "html_not_document",
+          "sha256": "cdec5d2e199573bacdef706771d8b58a1c7dfc3b199c9d3591068349374e8bbe",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9974"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9974",
+          "status": "html_not_document",
+          "sha256": "b77efef3379d9964d048382c4e90a6d14bbfb65f1dc264cd255cdb236786e239",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        }
+      ]
+    },
+    {
+      "symbol": "S/PV.9998",
+      "status": "unavailable",
+      "url": "",
+      "final_url": "",
+      "sha256": "",
+      "pages": 0,
+      "text_file": "",
+      "attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9998th-meeting-unama-following-adjournment-9997th-meeting",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9998",
+          "error": "ValueError:not_PDF_or_oversize"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9998",
+          "error": "ValueError:not_PDF_or_oversize"
+        }
+      ],
+      "recovery_attempts": [
+        {
+          "url": "https://main.un.org/securitycouncil/en/events/9998th-meeting-unama-following-adjournment-9997th-meeting",
+          "status": "html_not_document",
+          "sha256": "59dd68d55ec61adf3bd241bba79eb2f635595a79c9445ed0d750cf65eab5fb95",
+          "pdf_links": 40,
+          "title": "9998th meeting - UNAMA (Following the adjournment of the 9997th meeting) | Security Council"
+        },
+        {
+          "url": "https://docs.un.org/S/PV.9998",
+          "status": "html_not_document",
+          "sha256": "4fa68430afbfdbe748cbbc8cbc8b46bbd6fcde2c4146e58cae8de058906c2d14",
+          "pdf_links": 0,
+          "title": "Select a language for S/PV.9998"
+        },
+        {
+          "url": "https://docs.un.org/en/S/PV.9998",
+          "status": "html_not_document",
+          "sha256": "6e31c1dc040133b929d70fdfb778cd0a407abfd98da5dc4efb59016ba6d09d13",
+          "pdf_links": 2,
+          "title": "Document Viewer"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_pow2026-10.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/monthly_forecast.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/powcttee_e.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/reporting_and_mandate_cycles.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/Highlights%20of%20Security%20Council%20Practice%202018.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2017.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        },
+        {
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2025/highlights_of_security_council_practice_2016.pdf",
+          "status": "ValueError:requested_symbol_not_on_cover"
+        }
+      ]
+    }
+  ],
+  "recovery_at": "2026-10-15T13:25:27.492747+00:00"
+}

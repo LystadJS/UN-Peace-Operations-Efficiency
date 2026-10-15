@@ -1,0 +1,56 @@
+{
+  "absorbed_alias_ids": 7,
+  "alias_clusters": 5,
+  "asof": "2026-10-15",
+  "authenticated_pdfs": 40,
+  "authenticated_reports": 33,
+  "authenticated_transcripts": 7,
+  "baseline_commit": "696e18ef4610fc88346b38e12ca584bcaf6dd587",
+  "candidate_pairs": 191,
+  "canonical_evidence_identities": 123,
+  "capture_run": 38742342482,
+  "capture_zip_sha256": "0ab2787b82213cb8302898f0254927f2413f2b66041142e12c48bb50e577a600",
+  "completed_scheduled_courses_verified": 0,
+  "completion": "bounded cross-version identity review complete; scheduled-course completion and seven transcript bodies remain unverified",
+  "course_dispositions": {
+    "elapsed_schedule_completion_unverified": 2,
+    "future_schedule_not_yet_due": 5,
+    "scheduled_span_includes_cutoff_delivery_unverified": 1
+  },
+  "curated_registers": 13,
+  "local_identities": 130,
+  "notice_content_classes": {
+    "challenge_not_article_body": 2,
+    "retrieved_source_text": 5
+  },
+  "observation_rows": 371,
+  "pair_screen_population": 8385,
+  "quality_exceptions": 6,
+  "report_briefing_classes": {
+    "explicit_Council_discussion_report_reference": 1,
+    "explicit_agenda_or_presentation_report_reference": 6,
+    "transcript_not_retrieved_prior_link_retained_not_promoted": 7
+  },
+  "report_briefing_tests": 14,
+  "report_pair_classes": {
+    "explicit_cross_mandate_reference": 6,
+    "no_explicit_pair_reference_in_extracted_text": 6,
+    "previous_reporting_period_reference": 2
+  },
+  "report_pair_tests": 14,
+  "safeguards": {
+    "duplicate_paid_service": "not_established",
+    "global_operational_population": "not_certified",
+    "incremental_net_savings": "not_estimated",
+    "mandated_deliverables": "unchanged",
+    "parent_and_mission_rankings": "unchanged",
+    "retrospective_2027_support": "20/32 unchanged",
+    "unique_people": "not_estimated"
+  },
+  "same_identity_pairs": 9,
+  "substantive_reuse_tests": 6,
+  "unretrieved_transcripts": 7,
+  "v5_distinct_additions_within_declared_corpus": 15,
+  "v5_prior_aliases": 1,
+  "v5_records": 16
+}

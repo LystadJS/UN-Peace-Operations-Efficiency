@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/census_2025_2026_oct15_executive.md"><strong>Current census and shared-production findings</strong></a>
+  <a href="docs/census_2025_2026_v6_audit.md"><strong>Current census and shared-production findings</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="docs/mission_budget_and_un80_audit.md">Review mission-budget and UN80 audit</a>
   &nbsp;&middot;&nbsp;
@@ -28,7 +28,15 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
-## Latest — 15 October 2026 systematic census
+## Latest — Cross-version identity and reuse audit
+
+**[Current audit and executive findings](docs/census_2025_2026_v6_audit.md)** · [Canonical identities](data/census_v6/canonical_evidence_register.csv) · [Eight course dispositions](data/census_v6/course_delivery_verification.csv) · [Report reuse tests](data/census_v6/report_pair_reuse_tests.csv).
+
+Thirteen curated registers/views contain **371 observations, 130 local IDs and 123 canonical evidence identities**, after five cross-version alias clusters absorb seven IDs. These are mixed-grain research identities, not 123 delivered events. All **8,385** ID pairs were screened and **191** candidates adjudicated. Historical records remain unchanged and reversibly mapped.
+
+**Eight course listings checked:** two elapsed schedules without verified completion, one schedule spanning the cutoff, and five future courses. No exact-cohort completion or unique-person total is inferred. **40 source PDFs authenticated**: 33 requested report files (including one identified revision), seven transcripts. Six report-pair tests show explicit cross-mandate referrals; seven other transcript bodies remain unavailable. Separate mandates, products, 20/32 retrospective category support and financial gates remain unchanged. **No duplicate paid service or incremental net saving is established.**
+
+## Earlier — 15 October 2026 systematic census
 
 **[Current executive brief](docs/census_2025_2026_oct15_executive.md)** · [Source-frame audit](docs/census_2025_2026_oct15_v5.md) · [Effective activities](data/census_v5/effective_activity_register.csv) · [Six shared-production tests](data/census_v5/shared_production_recommendations.csv).
 

@@ -1,0 +1,15 @@
+record_id,report_symbol,meeting_record,meeting_date,prior_evidence_status,current_classification,report_reference_pages,full_transcript_checked,briefer_to_report_dependency,financial_duplication
+RM001,S/2025/109,S/PV.9875,2025-03-10,explicit_agenda_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 4, 7, 9, 12, 13, 15, 16, 18, 19, 20, 22, 27]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM002,S/2025/187,S/PV.9890,2025-04-03,explicit_agenda_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 7, 11, 14, 17, 20, 21]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM003,S/2025/342,S/PV.9931,2025-06-09,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM004,S/2025/372,S/PV.9942,2025-06-23,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM005,S/2025/495,S/PV.9974,2025-08-07,explicit_agenda_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 9, 13, 16, 17, 19, 21, 22]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM006,S/2025/554,S/PV.9998,2025-09-17,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM007,S/2025/789,S/PV.10058,2025-12-10,explicit_agenda_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 6, 11, 14, 21, 25, 28, 30]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM008,S/2025/772,S/PV.10060,2025-12-11,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM009,S/2025/771,S/PV.10073,2025-12-18,explicit_UN_Web_TV_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 5, 9, 13, 14, 15, 16, 20]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM010,S/2026/99,S/PV.10116,2026-03-09,topic_time_candidate_not_verified_agenda,explicit_Council_discussion_report_reference,"[7, 8, 12, 14, 23, 24]",True,not_established,not_established
+RM011,S/2026/431,S/PV.10165,2026-06-08,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM012,S/2026/445,S/PV.10167,2026-06-09,explicit_UN_Web_TV_report,explicit_agenda_or_presentation_report_reference,"[1, 2, 5, 6, 14, 15, 16]",True,explicit_presentation_or_formal_agenda_association; see separate content tests,not_established
+RM013,S/2026/537,S/PV.10195,2026-07-14,UN_distributed_press_preview_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established
+RM014,S/2026/724,S/PV.10223,2026-09-16,explicit_agenda_report,transcript_not_retrieved_prior_link_retained_not_promoted,[],False,not_established,not_established

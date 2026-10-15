@@ -1,0 +1,62 @@
+{
+  "package_id": "UNPO-OWNER-REVIEW-2026-10-15",
+  "prepared_at_user_request_utc": "2026-10-15T21:26:54Z",
+  "baseline_commit": "439092484503a2f24d397439a6d69fdfee53f08e",
+  "source_basis": "retained_public_research_and_existing_protocol; no new source adjudication or owner evidence",
+  "reference_id": "UNPO-REF-13.0",
+  "reference_version": "13.0",
+  "reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "protocol_version": "10.0",
+  "gap_rows": 16,
+  "request_status": "NOT_SENT",
+  "owner_reviews": 0,
+  "owner_approvals": 0,
+  "live_trials": 0,
+  "live_staff_records": 0,
+  "new_full_corpus_score": "not_run",
+  "historical_first_pass": {
+    "supported": 59,
+    "amendment_holds": 2
+  },
+  "separate_adopted_rechecks": {
+    "checked": 2,
+    "passed": 2
+  },
+  "live_use_gates": {
+    "SP08P1": "BLOCKED_FOR_LIVE_USE",
+    "SP09P1": "BLOCKED_FOR_LIVE_USE"
+  },
+  "course_watch": "paused_no_checks_run",
+  "rankings": "unchanged",
+  "mandates_and_approvals": "unchanged",
+  "staff_time_saved": "not_estimated",
+  "cash_savings": "not_estimated",
+  "pinned_inputs": {
+    "data/current_research_reference.json": "78ae364d0f8e3cfdbc35ad37cddca4f861365a30215e40e7ae4825d9acd34230",
+    "data/census_v13/research_reference.json": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+    "data/census_v13/adoption_record.json": "c5fbfe24c835d5d08cd122b589ba6e136289fdc581a45b8251f11021cdbe8008",
+    "data/census_v13/reference_lineage.csv": "17b68188ee8f045ed2c5dbc9e4c53be51384a4a49bca9e6daa056d485d5bff61",
+    "data/census_v13/affected_recheck.csv": "02cb867b2ae26cc16fee9430f6ac57cddb2e213ab4b7b8d4b5c48f53c325553e",
+    "data/census_v13/summary.json": "ddc48f7d7fe41f68d3df32a9c1fe74a635b8e2d500fcfa640a858463d1d806d9",
+    "data/census_v11/obligation_reviews.csv": "de6af1d3e47f3bb54a636bf9a07b9d388ed9921e9b3aff59b226afa9d64497d2",
+    "data/census_v10/protocol.json": "8b257060a493d867e5a7e28fafbb071b5e41c96d140c63565499515ecd8bb8ec",
+    "data/census_v10/activation_status.json": "907521e172a99645ecb535566c59cb1a85be23fd4fcd3202b2007ebc1bdf8d48",
+    "data/census_v10/product_obligations.csv": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+    "data/census_v10/component_scope.csv": "3edc179f76ef9ac87f1181649384332cd2e3fdcd644a031ff91478a5ce023162",
+    "data/census_v8/measurement_plan.csv": "c9c6f03e145e76a3ffe584161cb4d6292db7544c7ea46243e9dc73dc526f3359",
+    "docs/v10_owner_review_shadow_protocol.md": "55c24bf19460e82911de1a26e0068275765556ba07231f69e3d7b057bb7a810d",
+    "docs/v10_owner_decision_sheet.md": "1130b1a04e453981efe32f143cdac8b5889d85232abde104c752eeecae979475",
+    "docs/v8_consolidation_brief.md": "0e164dd9f3f98063bf7721be8315346b9e79d237d5374243af280b92b7da0f7a",
+    "docs/v9_consolidation_brief.md": "2d35ef4db46e59cea23945dfeefa6042b1d117430a1589533bda1485b9184286",
+    "data/acabq_2027_ranked_consolidation.csv": "a201538730c463950be1a0a92a0314fe8feca43d5ed072668032aa7bc39a426f",
+    "data/census_v10/templates/amendments.csv": "ec0dce0966faa479d534172ee3caef413afef58c8248d34e22fa3db34ad8da58",
+    "data/census_v10/templates/batches.csv": "d70628613e4914fdee805628769777dbdadd15c5b60f9ead78f17ecf4c273ff1",
+    "data/census_v10/templates/expected_tasks.csv": "56d3e01a206ecf8742932c8d444a54997545107586f4a2346994533efcb0c8d2",
+    "data/census_v10/templates/incidents.csv": "68b8615273460225b24270be6283a096b1de319eadd459e361faeaa2bcd48b2c",
+    "data/census_v10/templates/live_claim_enrollment.csv": "d72f51b5f247e6f5eb5893c668a69866602e96abb9cf19aff99bf6e76df7e89c",
+    "data/census_v10/templates/owner_reviews.csv": "20ca00eef8eac222bca396b9857cebaf87656e14de6d7d6651f88bf2ba396842",
+    "data/census_v10/templates/quality_reviews.csv": "823b543d40aabefd20bd32bfe95863fd4949c465f48520be762bae4363bbf354",
+    "data/census_v10/templates/update_waves.csv": "514995aec91ddff242e997ce85a6f933a3c4094476caf5d37742f38abec42f95",
+    "data/census_v10/templates/workload.csv": "c90173fb718fe749730bd8e08f107cf156696f92d8c05e76d81412495ff4a7c8"
+  }
+}

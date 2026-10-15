@@ -1,0 +1,80 @@
+name: Consolidated owner-review package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/consolidated_owner_review_decision_memo.md
+      - data/owner_review/evidence_gap_register.csv
+      - data/owner_review/package_contract.json
+      - scripts/validate_owner_review_package.py
+      - .github/workflows/owner_review_package.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: consolidated-owner-review-package
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate fixed sources and export review-only documents
+        run: python scripts/validate_owner_review_package.py --export
+      - name: Preserve every pre-existing repository file
+        run: |
+          if [ -n "$(git diff --name-only --diff-filter=DM 439092484503a2f24d397439a6d69fdfee53f08e --)" ]; then
+            echo 'Unexpected modification or deletion of a baseline file'
+            exit 1
+          fi
+      - name: Publish only the derived readable register and receipt
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/consolidated_owner_review_gaps.md data/owner_review/validation_receipt.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish consolidated owner-review register and source-preservation receipt'
+            git push origin HEAD:main
+          fi
+      - name: Assemble reviewed files and exact public prerequisites
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, shutil, subprocess
+          contract=json.loads(Path('data/owner_review/package_contract.json').read_text())
+          files=list(contract['pinned_inputs'])+[
+            'docs/consolidated_owner_review_decision_memo.md',
+            'docs/consolidated_owner_review_gaps.md',
+            'data/owner_review/evidence_gap_register.csv',
+            'data/owner_review/package_contract.json',
+            'data/owner_review/validation_receipt.json',
+            'scripts/validate_owner_review_package.py',
+            '.github/workflows/owner_review_package.yml']
+          target=Path('/tmp/owner-review-package')
+          for name in files:
+              dest=target/name
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(name,dest)
+          (target/'PUBLISHED_COMMIT.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+          (target/'README.txt').write_text(
+              'Read docs/consolidated_owner_review_decision_memo.md first.\n'
+              'The CSV and readable register contain the same 16 review questions, not verified workflow defects.\n'
+              'Run python scripts/validate_owner_review_package.py for offline source and preservation checks.\n'
+              'No requests sent, approvals obtained, gates opened, course checks run or new scores calculated.\n'
+              'Baseline references and source links remain pinned; original source PDFs are not duplicated here.\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: consolidated-owner-review-package
+          path: /tmp/owner-review-package
+          include-hidden-files: true
+          retention-days: 30

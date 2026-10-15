@@ -1,0 +1,62 @@
+[
+  {
+    "op": "test",
+    "path": "/47/observation_id",
+    "value": "V9:CY028"
+  },
+  {
+    "op": "test",
+    "path": "/47/source_sha256",
+    "value": "7c92ec6687a200cc6b2c88a3182ac3b038774d9695bebdebebaa6061473d4508"
+  },
+  {
+    "op": "test",
+    "path": "/47/source_assertion",
+    "value": "Joint Contact Rooms exchanged information on 202 instances and three persons in custody; preserve separate units."
+  },
+  {
+    "op": "test",
+    "path": "/47/qualified_values",
+    "value": "{\"count\":202,\"custody_exchange_count\":3,\"custody_unit\":\"individuals\",\"period\":\"2025-06-12/2025-12-15\",\"unit\":\"information_exchange_instances\"}"
+  },
+  {
+    "op": "replace",
+    "path": "/47/source_assertion",
+    "value": "Through the Joint Contact Rooms, the Technical Committee on Crime and Criminal Matters exchanged information in 202 instances and separately exchanged three individuals in custody. These are different actions and units."
+  },
+  {
+    "op": "replace",
+    "path": "/47/qualified_values",
+    "value": "{\"count\":202,\"custody_action\":\"exchange_of_individuals_in_custody\",\"custody_exchange_count\":3,\"custody_unit\":\"individuals\",\"information_exchange_instances\":202,\"period\":\"2025-06-12/2025-12-15\",\"unit\":\"information_exchange_instances\"}"
+  },
+  {
+    "op": "test",
+    "path": "/60/observation_id",
+    "value": "V9:CY041"
+  },
+  {
+    "op": "test",
+    "path": "/60/source_sha256",
+    "value": "0d4c5fe5226a353c8f8a59e21e174aa899cb1a4bee3f96cf8d6afd576a4ac0a0"
+  },
+  {
+    "op": "test",
+    "path": "/60/source_assertion",
+    "value": "Phase two extended through 2026; approximately 67% of EUR1.5m 2023-2026 allocation used by June; lifetime EUR1.7m is a different perimeter."
+  },
+  {
+    "op": "test",
+    "path": "/60/qualified_values",
+    "value": "{\"allocation_eur\":1500000,\"allocation_period\":\"2023-2026\",\"asof\":\"2026-06\",\"comparator\":\"approximately\",\"lifetime_utilized_eur_lower_bound\":1700000,\"percent\":67,\"phase\":2,\"savings\":null}"
+  },
+  {
+    "op": "replace",
+    "path": "/60/source_assertion",
+    "value": "Phase two was extended through 2026. By June 2026 approximately 67% of EUR1.5 million allocated for 2023-2026 had been utilized; more than EUR1.7 million had been utilized since inception in 2019. The two amounts have different perimeters and are not savings."
+  },
+  {
+    "op": "replace",
+    "path": "/60/qualified_values",
+    "value": "{\"allocation_eur\":1500000,\"allocation_period\":\"2023-2026\",\"asof\":\"2026-06\",\"comparator\":\"approximately\",\"lifetime_period_start_year\":2019,\"lifetime_utilized_eur_comparator\":\">\",\"lifetime_utilized_eur_lower_bound\":1700000,\"percent\":67,\"phase\":2,\"savings\":null}"
+  }
+]

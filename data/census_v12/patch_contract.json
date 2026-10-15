@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "2e8d5c6303d677f4c7fd797d6cd679309ce69f9d",
+  "candidate_reference_file": "data/census_v12/reference_preview.json",
+  "candidate_reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "forward_patch_sha256": "f7b44849eeac33ce50af4c0b50a7b17a9ed12d51da0c8eedc4d070b9d899559e",
+  "input_file": "data/census_v11/initial_candidate.json",
+  "input_sha256": "f111f2f0156a021a947129158f36cf5ef49d135eaf3b63df40a43836068afd51",
+  "inverse_patch_sha256": "5baac0033397f3f23d4b56db9977b070468b638709e272cec7df263dd34f2e94",
+  "patch_format": "RFC6902 test/replace subset; array positions guarded by identity and old values",
+  "patch_status": "prepared_not_adopted",
+  "permitted_fields": [
+    "source_assertion",
+    "qualified_values"
+  ],
+  "permitted_observations": [
+    "V9:CY028",
+    "V9:CY041"
+  ],
+  "promotion": "requires_explicit_research_reference_adoption; does_not_grant_live_authority",
+  "request_file": "data/census_v11/amendment_requests.json",
+  "request_sha256": "d71fc9e472d3455e3b257d8849ca5b8e7817d1b0989d6e7ff365df0d486a63c5",
+  "rollback": "discard preview layer; frozen files never modified; inverse patch restores input rows",
+  "version": "12.0-candidate"
+}

@@ -1,0 +1,13 @@
+{
+  "data/census_v12/closed_gate_receipt.json": "7c469df81830dda64fd3b2b3b636361a6ee98baeebfdc4eb7d50a3e65398ec59",
+  "data/census_v12/correction_diff.csv": "08fc467dbdaedc3dc0fcb84674a96224d15682297f34f1ecffda5038d6cdfb5b",
+  "data/census_v12/first_pass_lineage.csv": "575702858087ddbb849e6fb4142dfda4ab8bfde617dd00c5789bbf516b4103eb",
+  "data/census_v12/input_manifest.json": "5ec9b62157f3eeb08b0eab393b20a8381ec013976035670b2de287b33ea2bbfe",
+  "data/census_v12/patch_contract.json": "d2686fc5e176aebafd34a57a87d35b551fb6eafc0a01337627b78ee0ac9194be",
+  "data/census_v12/patch_summary.json": "666d3b14515277fb8b49f8cc0717f49d4f29e8cf86c1d1abff93464de0c2b536",
+  "data/census_v12/reference_delta.jsonpatch": "f7b44849eeac33ce50af4c0b50a7b17a9ed12d51da0c8eedc4d070b9d899559e",
+  "data/census_v12/reference_inverse.jsonpatch": "5baac0033397f3f23d4b56db9977b070468b638709e272cec7df263dd34f2e94",
+  "data/census_v12/reference_preview.json": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "data/census_v12/source_evidence.json": "be4c8656ea60ff55e786204129ffb54d937ed7ddbf4dfdd2f4b25f0694754afa",
+  "docs/v12_affected_support_preview.md": "fe4e97a925a89a4351ec1779e5a4241de4933d7844b4e4b33118d3fd6c666274"
+}

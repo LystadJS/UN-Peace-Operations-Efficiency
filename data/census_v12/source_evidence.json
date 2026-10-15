@@ -1,0 +1,26 @@
+[
+  {
+    "amendment_id": "AM11-01",
+    "original_url": "https://documents.un.org/api/symbol/access?j=N2536009&t=pdf&i=S/2026/9_1768322702079",
+    "page": 3,
+    "paragraph": 18,
+    "review_scope": "two retained original passages",
+    "semantic_review": "assistant_with_prior_exposure_not_independent_human_or_owner",
+    "source_excerpt": "exchanged information on 202 instances and exchanged three individuals in custody",
+    "source_path": "data/census_v9/sources/S_2026_9.pdf",
+    "source_sha256": "7c92ec6687a200cc6b2c88a3182ac3b038774d9695bebdebebaa6061473d4508",
+    "source_symbol": "S/2026/9"
+  },
+  {
+    "amendment_id": "AM11-02",
+    "original_url": "https://documents.un.org/api/symbol/access?s=S/2026/551&l=en&t=pdf",
+    "page": 5,
+    "paragraph": 29,
+    "review_scope": "two retained original passages",
+    "semantic_review": "assistant_with_prior_exposure_not_independent_human_or_owner",
+    "source_excerpt": "Over 1.7 million euros have been utilized",
+    "source_path": "data/census_v9/sources/S_2026_551.pdf",
+    "source_sha256": "0d4c5fe5226a353c8f8a59e21e174aa899cb1a4bee3f96cf8d6afd576a4ac0a0",
+    "source_symbol": "S/2026/551"
+  }
+]

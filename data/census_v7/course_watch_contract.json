@@ -1,0 +1,31 @@
+{
+  "contract_version": 1,
+  "created_on": "2026-10-15",
+  "baseline_commit": "c0529f9959ab2e12e36481754b2883a526bec6df",
+  "baseline_register": "data/census_v6/course_delivery_verification.csv",
+  "scheduler": "ChatGPT scheduled task",
+  "scheduler_creation_verified": true,
+  "task_title": "UN Course Completion Watch",
+  "recurrence": "weekly Friday mornings around 08:00 America/New_York",
+  "first_weekly_check_date": "2026-10-16",
+  "checks_executed_at_creation": 0,
+  "notification_rule": "Notify only for material new official status evidence, resolved identity conflicts or new material access blockers; unchanged evidence remains silent.",
+  "official_starting_source": "https://peacekeepingresourcehub.un.org/en/news",
+  "source_policy": "Official UN and verified official host-government or training-institution records only. Secondary reporting may identify a lead but cannot certify completion.",
+  "watch_population": [
+    {"listing_id":"V5C01","course":"UN police trainers","host":"Republic of Korea","planned_start":"2026-08-21","planned_end":"2026-09-11","baseline_status":"elapsed_schedule_completion_unverified","identity_hold":"Possible related host programme 24 August–18 September; reconcile three-week UN component versus four-week host programme before matching. Do not import its attendance."},
+    {"listing_id":"V5C02","course":"Senior national planners","host":"Egypt","planned_start":"2026-09-28","planned_end":"2026-10-09","baseline_status":"elapsed_schedule_completion_unverified","identity_hold":"Require exact course and cohort; absence of a published graduation is not cancellation."},
+    {"listing_id":"V5C03","course":"Senior mission leaders","host":"Denmark","planned_start":"2026-10-12","planned_end":"2026-10-23","baseline_status":"scheduled_span_includes_cutoff_delivery_unverified","identity_hold":"Scheduled start passing does not prove commencement."},
+    {"listing_id":"V5C04","course":"FPU pilot","host":"Italy","planned_start":"2026-11-02","planned_end":"2026-11-20","baseline_status":"future_schedule_not_yet_due"},
+    {"listing_id":"V5C05","course":"FPU command staff","host":"Italy","planned_start":"2026-11-23","planned_end":"2026-12-04","baseline_status":"future_schedule_not_yet_due"},
+    {"listing_id":"V5C06","course":"Strategic communications trainers","host":"Slovakia","planned_month":"2026-11","planned_start":null,"planned_end":null,"baseline_status":"future_schedule_not_yet_due","identity_hold":"Retain month precision until exact dates are officially established."},
+    {"listing_id":"V5C07","course":"Francophone senior national planners","host":"Morocco","planned_start":"2026-12-07","planned_end":"2026-12-18","baseline_status":"future_schedule_not_yet_due"},
+    {"listing_id":"V5C08","course":"Military observers","host":"Jordan","planned_start":"2026-12-07","planned_end":"2026-12-18","baseline_status":"future_schedule_not_yet_due"}
+  ],
+  "required_change_fields": ["listing_id","checked_at","prior_status","new_status","official_url","publication_date","actual_course_dates","host_and_location","exact_cohort_match_basis","delivery_statement","completion_count_unit","uncertainties","retrieval_status"],
+  "allowed_stage_distinctions": ["advertised","rescheduled","commenced","completed","certified","cancelled","unresolved"],
+  "completion_gate": "A course-specific official body explicitly states completion/graduation and its identity, dates, host and location can be reconciled. Opening or certification criteria alone are insufficient.",
+  "persistence_rule": "Append material new evidence in a dated course-watch update; never rewrite frozen V5/V6 registers. Verify commit read-back before claiming persistence. Record access or write failures accurately.",
+  "stop_rule": "After all eight cohorts have conclusive official dispositions, send one closing summary and disable the scheduled watch.",
+  "protected": {"mandated_deliverables":"unchanged","parent_and_mission_rankings":"unchanged","unique_people_across_courses":"not_estimated","duplicate_paid_services":"not_established","incremental_net_savings":"not_estimated"}
+}

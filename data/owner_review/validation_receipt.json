@@ -1,0 +1,31 @@
+{
+  "checks_passed": 175,
+  "course_checks_run": 0,
+  "gap_questions": 16,
+  "historical_first_pass": {
+    "amendment_holds": 2,
+    "supported": 59
+  },
+  "limitations": "Checks validate source identity, linkage and preservation. They do not independently verify substantive source claims, owner authority, an internal workflow gap, operational benefit or savings.",
+  "live_gate_changes": 0,
+  "new_owner_evidence": "none",
+  "new_scoring": "not_run",
+  "output_hashes": {
+    "data/owner_review/evidence_gap_register.csv": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+    "data/owner_review/package_contract.json": "2f4701b7050a562a0ff53dc340065b4134d1c98b1fd9fd3e57673df1b52ce672",
+    "docs/consolidated_owner_review_decision_memo.md": "cb99fe58ae9bc5cf12fe1233d29d6c04b826b6a546a500041bb021f234b073be",
+    "docs/consolidated_owner_review_gaps.md": "ee94624eb9df6920f68eca5031df62ef4d1ece52e6db3704180a4a2720488a3a"
+  },
+  "package_id": "UNPO-OWNER-REVIEW-2026-10-15",
+  "pinned_inputs_verified": 26,
+  "reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+  "reference_version": "13.0",
+  "requests_sent": 0,
+  "stage_counts": {
+    "AFTER_SHADOW_SEPARATE_AUTHORIZATION": 1,
+    "AFTER_SUBSTITUTION_SEPARATE_AUTHORIZATION": 1,
+    "BEFORE_ANY_LIVE_SHADOW": 4,
+    "OWNER_REVIEW": 10
+  },
+  "status": "PASS_package_integrity_not_owner_review_or_live_authorization"
+}

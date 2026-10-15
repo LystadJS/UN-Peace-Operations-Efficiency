@@ -1,0 +1,31 @@
+{
+  "status": "PASS_document_data_layout_structure_and_preservation_not_operational_validation",
+  "baseline_commit": "5c0fdb60eede8a5bb0e7ede9fd551ad4e3b65fb2",
+  "pages": 32,
+  "figures": 19,
+  "reference_groups": 20,
+  "checks_passed": 639,
+  "source_manifest_inputs": 46,
+  "additional_source_hashes": {
+    "data/public_deliverable_crosswalk_2027.csv": "416c06bfda37184200e0acda7dc9c772e01c8799a8abdb60cc77dbc9d44e6d6e",
+    "data/deliverable_training_comparison.csv": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+    "data/ga_unmiss_abolishments.csv": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+    "data/census_v10/product_obligations.csv": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+    "data/census_v13/affected_recheck.csv": "02cb867b2ae26cc16fee9430f6ac57cddb2e213ab4b7b8d4b5c48f53c325553e"
+  },
+  "preexisting_tracked_files_preserved": 486,
+  "reference_version": "13.0",
+  "live_use": "both_BLOCKED_FOR_LIVE_USE",
+  "rankings": "unchanged",
+  "course_checks_run": 0,
+  "new_staff_time_or_cash_savings": "not_estimated",
+  "manuscript_sha256": "114be4b5957e9a1caf87b7c9edd1005fde0cb732919f05642c5fc12af32bdcce",
+  "output_hashes": {
+    "deliverables/UN_Peace_Operations_White_Paper_2026-10-15.docx": "9aa7a0526d5dfc42b5156deae54a275eb9211e762912655dbb3dc775b9ab3913",
+    "deliverables/UN_Peace_Operations_White_Paper_2026-10-15.pdf": "cb8150e82d4d06d5b63e509034a299e0029e12652fbebbeee807590c2f0c6f35",
+    "analysis/chart_data.json": "d6b4f713a76d9033885a503e0c73a1c2628ad675a2e451a66a456256d8fb116d",
+    "analysis/functional_coverage.csv": "5b3d0797f00f14513cda0cb65833f048d921b9af4ca750b1f4331b3e8df86eba"
+  },
+  "visual_review": "32 local rendered pages inspected separately; automated checks are not visual review of a different runtime",
+  "limitations": "Whole-project synthesis of retained source records. Not exhaustive operational census, fresh budget authorization, independent owner review or realized savings audit."
+}

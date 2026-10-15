@@ -1,0 +1,20 @@
+family,function_ids,DPPA,DPO,selected_pilot_relevance,owner_validation,additional_savings_verified
+Regional strategy and direction,F01;F02;G01;G02;G26,2,3,True,False,False
+Mediation and good offices,F03;F22;F23,3,0,True,False,False
+Council reporting and procedure,F06;G03,1,1,True,False,False
+Military and ceasefire observation,G05;G23;G25,0,3,False,False,False
+Police and institutional support,G07;G21,0,2,False,False,False
+Disarmament and reintegration,F12;G08,1,1,False,False,False
+Security-sector reform,F13;G09,1,1,False,False,False
+Justice and corrections,F14;G10,1,1,False,False,False
+Mine action,G11,0,1,False,False,False
+Protection of civilians,G16,0,1,False,False,False
+"Gender, youth and disability",F16;F17;F26;G14;G15;G22,3,3,False,False,False
+Electoral support,F05;G27,1,1,False,False,False
+Peacebuilding institutions and funds,F10;F11,2,0,False,False,False
+Mission support and transitions,F04;F28;G04;G24,2,2,False,False,False
+Regional and financial partnerships,F15;F20;F21;F25;G18;G30,4,2,True,False,False
+"Policy, training and evaluation",F18;F24;G06;G12;G13,2,3,False,False,False
+"Data, knowledge and information",F19;G17;G19;G28;G29,1,4,True,False,False
+Shared management and services,F27;G20,1,1,False,False,False
+Distinct adjacent political mandates,F07;F08;F09;F29,4,0,False,False,False

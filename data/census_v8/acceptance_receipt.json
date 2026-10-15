@@ -1,0 +1,317 @@
+{
+  "independent_assertions": 35,
+  "independent_pdf_sources": [
+    {
+      "pages": 17,
+      "sha256": "5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9",
+      "source_id": "R1"
+    },
+    {
+      "pages": 21,
+      "sha256": "6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991",
+      "source_id": "B1"
+    },
+    {
+      "pages": 15,
+      "sha256": "2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc",
+      "source_id": "R2"
+    },
+    {
+      "pages": 18,
+      "sha256": "a8db525e9139e5f25b403f7e55b1877446c7c7d747fddfbc15fde2cea99ddc5b",
+      "source_id": "B2"
+    }
+  ],
+  "interpretation": "Constructed source/representation checks; no operational error rate, time saving, live clearance or net saving established.",
+  "positive_fixture_count": 4,
+  "results": [
+    {
+      "result": "PASS",
+      "test": "four retained office-specific products",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "source-qualified conflicting visit dates retained",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "June briefing not force-filled with three core event blocks",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "April briefing has no later-report observation or April 8 planning event",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "no report backfill of April withdrawal announcement",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "workshop publication retains existing distinct canonical identity",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "three core inputs have nine output appearances not twelve",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "announcement remains an announcement in both briefings",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "two page-linked notice corroborations are not editorial-dependency claims",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "separate Forum duration and representative-attendance point retained",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "prior-year context not redated from document year",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "R1 complete packet contract",
+      "type": "positive_fixture"
+    },
+    {
+      "result": "PASS",
+      "test": "B1 complete packet contract",
+      "type": "positive_fixture"
+    },
+    {
+      "result": "PASS",
+      "test": "R2 complete packet contract",
+      "type": "positive_fixture"
+    },
+    {
+      "result": "PASS",
+      "test": "B2 complete packet contract",
+      "type": "positive_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "silently normalize visit start date",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "hide known date discrepancy",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "convert greater-than attendance to exact count",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "convert adopted workplan to implemented",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "convert withdrawal announcement to completed withdrawal",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "backfill later report into earlier briefing",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "turn publication into another course",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "substitute Forum duration for representative attendance",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "transfer final product ownership",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "silently remove office-specific analysis",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "insert unsupported core event into June briefing",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "invent monetary saving",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "invent saved staff hours",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "promote Forum participant to sole organizer",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "redate prior-period activity",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "erase attributed earlier briefing reference",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "assign CNMC function to generic regional role",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "REJECTED_AS_EXPECTED",
+      "test": "fabricate joint final clearance",
+      "type": "synthetic_corruption_fixture"
+    },
+    {
+      "result": "PASS",
+      "test": "R1 independent PDF count and symbol",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O04 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O05 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O06 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O07 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O08 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O09 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "B1 independent PDF count and symbol",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O10 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O11 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O12 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O13 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O14 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "R2 independent PDF count and symbol",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O15 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O16 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O17 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O18 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O19 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O20 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O21 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "B2 independent PDF count and symbol",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O22 independent parser anchors",
+      "type": "independent_invariant"
+    },
+    {
+      "result": "PASS",
+      "test": "O23 independent parser anchors",
+      "type": "independent_invariant"
+    }
+  ],
+  "status": "PASS",
+  "synthetic_corruption_fixtures_rejected": 18,
+  "total_checks": 57
+}

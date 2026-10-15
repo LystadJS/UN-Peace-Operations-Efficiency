@@ -1,0 +1,5 @@
+product_id,checkpoint,own_output_observations,eligible_earlier_observations,conflict_flag,approval
+R1,2025-04-02,6,3,True,existing_office_and_SG_or_briefing_clearance_not_reassigned
+B1,2025-04-03,5,7,True,existing_office_and_SG_or_briefing_clearance_not_reassigned
+R2,2025-06-05,7,10,True,existing_office_and_SG_or_briefing_clearance_not_reassigned
+B2,2025-06-09,2,2,False,existing_office_and_SG_or_briefing_clearance_not_reassigned

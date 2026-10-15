@@ -28,6 +28,16 @@
   <a href="docs/initial_findings.md">Initial crosswalk findings</a>
 </p>
 
+## Current — V8 shared-production assessment
+
+**[Updated consolidation brief](docs/v8_consolidation_brief.md)** · [Full assessment](docs/v8_shared_production_assessment.md) · [Worked UNOWAS–UNOCA cycle](docs/v8_worked_reporting_cycle.md) · [Evidence matrix](data/census_v8/source_component_matrix.csv).
+
+The January–June 2025 pilot uses **six original sources, 10 selected components and 23 source observations** to reconstruct **four separate report/briefing support sheets**. Three core event inputs have nine selected appearances; this is a traceability result, not six eliminated jobs or a savings estimate. Conflicting dates, attribution, delivery stages, different observation units and office-specific approvals remain explicit.
+
+**C09 and C02 form one pilot; C05 is its enabler. All 14 frozen parent ranks and mission rankings remain unchanged.** Technical source/representation checks passed; live workflow benefit, avoided staff work, duplicate paid service and incremental net savings are not established. Compare the design with existing office processes before adding work or proposing operational changes.
+
+**Course-watch status: paused by user. V8 does not execute or reactivate scheduled or manual course checks.** Earlier V7 watch-creation statements are historical. [Acceptance receipt](data/census_v8/acceptance_receipt.json) · [Measurement plan](data/census_v8/measurement_plan.csv).
+
 ## Latest — Seven transcript gaps recovered; weekly course watch
 
 **[Current recovery and watch findings](docs/census_2025_2026_v7_recovery.md)** · [Seven original PDFs](data/census_v7/originals) · [Effective report–briefing links](data/census_v7/report_briefing_links_effective.csv) · [Weekly course-watch contract](data/census_v7/course_watch_contract.json).

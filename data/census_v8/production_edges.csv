@@ -1,0 +1,9 @@
+edge_id,from_source,to_source,component_id,kind,target_pages,anchors
+E01,R1,B1,,explicit_report_presentation,[2],"[""present the report"", ""S/2025/187""]"
+E02,R1,R2,P02,explicit_cross_report_referral,[13],"[""S/2025/187""]"
+E03,R1,R2,P03,explicit_cross_report_referral,[13],"[""S/2025/187""]"
+E04,R1,R2,P08,explicit_cross_report_referral,[13],"[""S/2025/187""]"
+E05,R2,B2,,explicit_report_agenda_association,[2],"[""S/2025/342""]"
+E06,B1,B2,P05,explicit_prior_briefing_attribution,[3],"[""S/PV.9890""]"
+E07,N01,R1,P01,same_event_corroboration_editorial_direction_unproven,[11],"[""Bama""]"
+E08,N02,R1,P03,same_event_corroboration_editorial_direction_unproven,[12],"[""26 and 27 February""]"

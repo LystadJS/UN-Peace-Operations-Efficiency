@@ -1,0 +1,5 @@
+product_id,checkpoint,packet_sha256,owner,clearance
+R1,2025-04-02,4f430fa5e0d5c3c60f6eefdb274cc65554ba97ccb877e74d183f8bde8cefe818,UNOWAS,not_newly_obtained
+B1,2025-04-03,c3919112c2a6f052ed186db191f417dd1dbb228f2104b8a4cde0ffb639444bae,UNOWAS,not_newly_obtained
+R2,2025-06-05,8966f508f97bb884fad702e99455309bc58702aa0d6aaaa2e693284399c905ce,UNOCA,not_newly_obtained
+B2,2025-06-09,86ff6f6e495fad66561c9503665cbd3bfc226cd50c084cc91ad9629b1b45755c,UNOCA,not_newly_obtained

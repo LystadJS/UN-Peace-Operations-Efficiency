@@ -1,0 +1,102 @@
+[
+  {
+    "path": "data/census_v8/claim_ledger.csv",
+    "sha256": "e8ba155f320b36d32611ecee8b8618ef22a22eb801c4a7e0aa600b5eb1519727"
+  },
+  {
+    "path": "data/census_v8/consolidation_overlay.csv",
+    "sha256": "5dffe43a20dc788fa9696a68bc09d758fa84f55399d8d8dbb5b9028676cca25c"
+  },
+  {
+    "path": "data/census_v8/frozen_input_manifest.json",
+    "sha256": "ea2e45024390ad81bca3e4494a235275b8795ca0b7a73d559a7cbe5b959dc036"
+  },
+  {
+    "path": "data/census_v8/measurement_plan.csv",
+    "sha256": "c9c6f03e145e76a3ffe584161cb4d6292db7544c7ea46243e9dc73dc526f3359"
+  },
+  {
+    "path": "data/census_v8/operational_status.json",
+    "sha256": "efb0b67ab39d303a2748ef15d1eed5552b8b0b99cf08ac2a86eaee75192b71f2"
+  },
+  {
+    "path": "data/census_v8/packet_views.json",
+    "sha256": "56cd48fe8e7bae36b5217ef506b1f3c9c24addcf694ac6d4235b318cac8ad3d6"
+  },
+  {
+    "path": "data/census_v8/pilot_design.json",
+    "sha256": "730ee69f7272b4719eafa74ac4e320f3503c1a7ecc4847393460dde61b17b51b"
+  },
+  {
+    "path": "data/census_v8/pilot_summary.json",
+    "sha256": "e7ecc66d614e8c15cdb93c3b956a8d8f496e9268b5e52f5b380fd6896655216b"
+  },
+  {
+    "path": "data/census_v8/product_version_register.csv",
+    "sha256": "13a707239be37120bc56923d6253b46f2aea5fd85fe592943b8976fc28742e25"
+  },
+  {
+    "path": "data/census_v8/production_edges.csv",
+    "sha256": "969001f804d40826ff62b58eff0cea2c8cd7a2f2ff3d61e55395bab28a1f2dce"
+  },
+  {
+    "path": "data/census_v8/replay_results.csv",
+    "sha256": "303542a79db3a8da5bb83e7adab81c53c837fdca1fd78f944fc8bdf5138decdb"
+  },
+  {
+    "path": "data/census_v8/source_component_matrix.csv",
+    "sha256": "c9d2df2b81a3639b865d4a5ad6d444c77dbece9b7f9e2dac172c790a2764c4f4"
+  },
+  {
+    "path": "data/census_v8/source_manifest.csv",
+    "sha256": "19d9dc6b714496f873a1150e9cf1d7b1d3c8d88faed17e3cf1a424d384e54392"
+  },
+  {
+    "path": "data/census_v8/source_text.json",
+    "sha256": "b6336b6700b09bb8a089cc9d2a2f5061b7bd2a589d131694a9527861e1b7b564"
+  },
+  {
+    "path": "data/census_v8/sources/N01.html",
+    "sha256": "2c376d2a684e09eeb52c5a3b1e8c0f156d63628e19248995937e30c13f3aa921"
+  },
+  {
+    "path": "data/census_v8/sources/N02.html",
+    "sha256": "4ec04c0c38dbaedf4622ea7cb246dac7ee1d9f91f499302e861116733d176333"
+  },
+  {
+    "path": "data/census_v8/sources/S_2025_187.pdf",
+    "sha256": "5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9"
+  },
+  {
+    "path": "data/census_v8/sources/S_2025_342.pdf",
+    "sha256": "2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc"
+  },
+  {
+    "path": "data/census_v8/sources/S_PV_9890.pdf",
+    "sha256": "6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991"
+  },
+  {
+    "path": "data/census_v8/sources/S_PV_9931.pdf",
+    "sha256": "a8db525e9139e5f25b403f7e55b1877446c7c7d747fddfbc15fde2cea99ddc5b"
+  },
+  {
+    "path": "data/census_v8/sources/notice_fetches.json",
+    "sha256": "7d52365e33923e753101826d6a23c6c4d7b95091d3e7eb8676686c6e98d44c4b"
+  },
+  {
+    "path": "data/census_v8/workload_log_template.csv",
+    "sha256": "0a8877c846f49ccc9ca027fb7fc6b8157bd83b6b08f12ce8260f0a93c3156fde"
+  },
+  {
+    "path": "docs/v8_consolidation_brief.md",
+    "sha256": "0e164dd9f3f98063bf7721be8315346b9e79d237d5374243af280b92b7da0f7a"
+  },
+  {
+    "path": "docs/v8_shared_production_assessment.md",
+    "sha256": "c37ef7cad8a448ad2c831116f3fba27f43fbf1ca27a354fab854f574d1c96be8"
+  },
+  {
+    "path": "docs/v8_worked_reporting_cycle.md",
+    "sha256": "11c6b7cb56dde524a0bb403e9fb0332698eff4622db36245a776ddbcb1bd751d"
+  }
+]

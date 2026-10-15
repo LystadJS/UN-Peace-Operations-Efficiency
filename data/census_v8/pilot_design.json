@@ -1,0 +1,787 @@
+{
+  "version": 8,
+  "asof": "2026-10-15",
+  "baseline_commit": "bdfe277893914ab9306af751854fd922d3edc731",
+  "capture_run": 38755500302,
+  "capture_artifact_id": 11983426429,
+  "capture_artifact_sha256": "bb0176740682079f11baf6898e8ce47e424b25c2b256b86f277d0d2d99bcb128",
+  "sources": [
+    {
+      "source_id": "R1",
+      "file": "sources/S_2025_187.pdf",
+      "title": "S/2025/187",
+      "issue_or_publication_date": "2025-03-26",
+      "replay_available_from": "2025-04-02",
+      "availability_basis": "Printed 020425 production marker used only as conservative replay proxy; not independently verified release timestamp",
+      "pages": 17,
+      "sha256": "5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9",
+      "official_url": "https://docs.un.org/en/S/2025/187"
+    },
+    {
+      "source_id": "B1",
+      "file": "sources/S_PV_9890.pdf",
+      "title": "S/PV.9890",
+      "issue_or_publication_date": "2025-04-03",
+      "replay_available_from": "2025-04-03",
+      "availability_basis": "Meeting date; statement occurrence known, later PDF publication time unverified",
+      "pages": 21,
+      "sha256": "6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991",
+      "official_url": "https://docs.un.org/en/S/PV.9890"
+    },
+    {
+      "source_id": "R2",
+      "file": "sources/S_2025_342.pdf",
+      "title": "S/2025/342",
+      "issue_or_publication_date": "2025-05-30",
+      "replay_available_from": "2025-06-05",
+      "availability_basis": "Printed 050625 production marker used only as conservative replay proxy; not independently verified release timestamp",
+      "pages": 15,
+      "sha256": "2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc",
+      "official_url": "https://docs.un.org/en/S/2025/342"
+    },
+    {
+      "source_id": "B2",
+      "file": "sources/S_PV_9931.pdf",
+      "title": "S/PV.9931",
+      "issue_or_publication_date": "2025-06-09",
+      "replay_available_from": "2025-06-09",
+      "availability_basis": "Meeting date; statement occurrence known, later PDF publication time unverified",
+      "pages": 18,
+      "sha256": "a8db525e9139e5f25b403f7e55b1877446c7c7d747fddfbc15fde2cea99ddc5b",
+      "official_url": "https://docs.un.org/en/S/PV.9931"
+    },
+    {
+      "source_id": "N01",
+      "file": "sources/N01.html",
+      "title": "Joint Nigeria mission public notice",
+      "issue_or_publication_date": "2025-02-01",
+      "replay_available_from": "2025-02-01",
+      "availability_basis": "Article masthead publication date; current capture does not prove unchanged historical bytes",
+      "pages": 1,
+      "sha256": "2c376d2a684e09eeb52c5a3b1e8c0f156d63628e19248995937e30c13f3aa921",
+      "official_url": "https://unowas.unmissions.org/en/news/unoca-and-unowas-renew-their-joint-commitment-to-support-stabilization-and"
+    },
+    {
+      "source_id": "N02",
+      "file": "sources/N02.html",
+      "title": "Joint Dakar workshop public notice",
+      "issue_or_publication_date": "2025-02-28",
+      "replay_available_from": "2025-02-28",
+      "availability_basis": "Article masthead and body date; current capture does not prove unchanged historical bytes",
+      "pages": 1,
+      "sha256": "4ec04c0c38dbaedf4622ea7cb246dac7ee1d9f91f499302e861116733d176333",
+      "official_url": "https://unowas.unmissions.org/en/news/west-and-central-africa-unowas-and-unoca-pool-their-efforts-to-strengthen-peaceful"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "P01",
+      "canonical_evidence_id": "EV001",
+      "title": "Joint Nigeria/Bama visit",
+      "classification": "already_joint_input",
+      "rule": "Retain disputed source-specific start dates; no new visit or eliminated travel claim."
+    },
+    {
+      "component_id": "P02",
+      "canonical_evidence_id": "EV002",
+      "title": "Governors Forum participation",
+      "classification": "already_joint_input",
+      "rule": "Forum is nested within the visit, not another field mission; participation day differs from event duration."
+    },
+    {
+      "component_id": "P03",
+      "canonical_evidence_id": "EV003",
+      "title": "Dakar farmer-herder workshop",
+      "classification": "already_joint_input",
+      "rule": "Preserve co-organizer roles, greater-than attendance, and adoption versus implementation of the workplan."
+    },
+    {
+      "component_id": "P04",
+      "canonical_evidence_id": "EV004",
+      "title": "UNOCA-led best-practice collection",
+      "classification": "distinct_knowledge_product",
+      "rule": "A publication issued at a workshop is not another workshop; early availability is not inferred from event date."
+    },
+    {
+      "component_id": "P05",
+      "canonical_evidence_id": null,
+      "title": "Niger MNJTF withdrawal announcement",
+      "classification": "attributed_time_specific_update",
+      "rule": "An announcement is not confirmed legal or operational completion; preserve attribution to the dated briefing."
+    },
+    {
+      "component_id": "P06",
+      "canonical_evidence_id": null,
+      "title": "CNMC demarcation side-event",
+      "classification": "protected_function",
+      "rule": "Same itinerary does not merge the CNMC legal function into the regional good-offices mandate."
+    },
+    {
+      "component_id": "P07",
+      "canonical_evidence_id": null,
+      "title": "8 April bilateral planning exchange",
+      "classification": "existing_coordination_baseline",
+      "rule": "Existing agreement on joint activities is baseline; no newly invented coordination meeting or saving."
+    },
+    {
+      "component_id": "P08",
+      "canonical_evidence_id": null,
+      "title": "17 December 2024 maritime workshop",
+      "classification": "prewindow_context_control",
+      "rule": "2025 document date does not move a December 2024 activity into the 2025 event population."
+    },
+    {
+      "component_id": "P09",
+      "canonical_evidence_id": null,
+      "title": "UNOWAS political analysis and recommendations",
+      "classification": "office_specific_analysis",
+      "rule": "Political judgments and their clearance are retained by the existing office/SG process."
+    },
+    {
+      "component_id": "P10",
+      "canonical_evidence_id": null,
+      "title": "UNOCA political analysis and recommendations",
+      "classification": "office_specific_analysis",
+      "rule": "Political judgments and their clearance are retained by the existing office/SG process."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "O01",
+      "component_id": "P01",
+      "source_id": "N01",
+      "pages": [
+        1
+      ],
+      "locator": "body paras 1-2",
+      "anchors": [
+        "27 to 31 January 2025",
+        "Bama"
+      ],
+      "paraphrase": "The two Special Representatives undertook a joint Nigeria mission and visited Bama.",
+      "values": {
+        "event_start": "2025-01-27",
+        "event_end": "2025-01-31",
+        "date_scope": "whole_visit",
+        "role": "joint_participants"
+      }
+    },
+    {
+      "observation_id": "O02",
+      "component_id": "P02",
+      "source_id": "N01",
+      "pages": [
+        1
+      ],
+      "locator": "body para 3",
+      "anchors": [
+        "29 to 31 January 2025",
+        "Forum"
+      ],
+      "paraphrase": "Both representatives participated in the Forum in Maiduguri.",
+      "values": {
+        "event_start": "2025-01-29",
+        "event_end": "2025-01-31",
+        "date_scope": "whole_forum",
+        "role": "participants_not_sole_organizers"
+      }
+    },
+    {
+      "observation_id": "O03",
+      "component_id": "P03",
+      "source_id": "N02",
+      "pages": [
+        1
+      ],
+      "locator": "body paras 1 and 4",
+      "anchors": [
+        "26 to 27 February 2025",
+        "More than thirty",
+        "work plan"
+      ],
+      "paraphrase": "The two offices co-organized the Dakar workshop; over 30 participated and a community-of-practice workplan was adopted.",
+      "values": {
+        "event_start": "2025-02-26",
+        "event_end": "2025-02-27",
+        "attendance_lower_bound": 30,
+        "attendance_comparator": ">",
+        "workplan_stage": "adopted_not_verified_implemented",
+        "role": "co_organizers"
+      }
+    },
+    {
+      "observation_id": "O04",
+      "component_id": "P01",
+      "source_id": "R1",
+      "pages": [
+        11
+      ],
+      "locator": "para 49",
+      "anchors": [
+        "28 to 31 January",
+        "Bama"
+      ],
+      "paraphrase": "The UNOWAS report records a joint northern Nigeria visit including Bama.",
+      "values": {
+        "event_start": "2025-01-28",
+        "event_end": "2025-01-31",
+        "date_scope": "whole_visit",
+        "role": "joint_participants"
+      }
+    },
+    {
+      "observation_id": "O05",
+      "component_id": "P02",
+      "source_id": "R1",
+      "pages": [
+        12,
+        13
+      ],
+      "locator": "para 54",
+      "anchors": [
+        "Governors",
+        "reconciliation"
+      ],
+      "paraphrase": "The UNOWAS report records joint Forum participation and the introduction of reconciliation and reintegration instruments.",
+      "values": {
+        "date_scope": "during_visit_exact_dates_not_stated",
+        "role": "participants_not_sole_organizers"
+      }
+    },
+    {
+      "observation_id": "O06",
+      "component_id": "P03",
+      "source_id": "R1",
+      "pages": [
+        12
+      ],
+      "locator": "para 53",
+      "anchors": [
+        "26 and 27 February",
+        "more than 30",
+        "workplan"
+      ],
+      "paraphrase": "The report records the joint workshop, over 30 participants, and adoption of a workplan.",
+      "values": {
+        "event_start": "2025-02-26",
+        "event_end": "2025-02-27",
+        "attendance_lower_bound": 30,
+        "attendance_comparator": ">",
+        "workplan_stage": "adopted_not_verified_implemented",
+        "role": "co_organizers"
+      }
+    },
+    {
+      "observation_id": "O07",
+      "component_id": "P06",
+      "source_id": "R1",
+      "pages": [
+        11,
+        12
+      ],
+      "locator": "para 50",
+      "anchors": [
+        "30 January",
+        "Mixed Commission"
+      ],
+      "paraphrase": "The UNOWAS head acted in his separate CNMC capacity on a border-demarcation side-event.",
+      "values": {
+        "event_start": "2025-01-30",
+        "event_end": "2025-01-30",
+        "role": "CNMC_chair",
+        "date_scope": "side_event"
+      }
+    },
+    {
+      "observation_id": "O08",
+      "component_id": "P08",
+      "source_id": "R1",
+      "pages": [
+        13
+      ],
+      "locator": "para 57",
+      "anchors": [
+        "17 December",
+        "UNODC"
+      ],
+      "paraphrase": "UNOWAS, UNOCA and UNODC facilitated a maritime technical-review workshop in December 2024.",
+      "values": {
+        "event_start": "2024-12-17",
+        "event_end": "2024-12-17",
+        "event_year": 2024
+      }
+    },
+    {
+      "observation_id": "O09",
+      "component_id": "P09",
+      "source_id": "R1",
+      "pages": [
+        15
+      ],
+      "locator": "paras 66-69",
+      "anchors": [
+        "ECOWAS",
+        "Observations and recommendations"
+      ],
+      "paraphrase": "The SG report contains West Africa-specific political judgments and recommendations.",
+      "values": {
+        "owner": "UNOWAS_existing_clearance"
+      }
+    },
+    {
+      "observation_id": "O10",
+      "component_id": "P01",
+      "source_id": "B1",
+      "pages": [
+        2
+      ],
+      "locator": "briefer opening",
+      "anchors": [
+        "Bama",
+        "In January"
+      ],
+      "paraphrase": "The UNOWAS briefer recounts the joint January visit and Bama stop.",
+      "values": {
+        "date_scope": "month_only",
+        "role": "joint_participants"
+      }
+    },
+    {
+      "observation_id": "O11",
+      "component_id": "P02",
+      "source_id": "B1",
+      "pages": [
+        2
+      ],
+      "locator": "briefer opening",
+      "anchors": [
+        "Governors Forum",
+        "mechanisms"
+      ],
+      "paraphrase": "The UNOWAS briefer recounts Forum participation and regional mechanisms.",
+      "values": {
+        "date_scope": "month_only",
+        "role": "participants_not_sole_organizers"
+      }
+    },
+    {
+      "observation_id": "O12",
+      "component_id": "P03",
+      "source_id": "B1",
+      "pages": [
+        4
+      ],
+      "locator": "briefer closing thematic section",
+      "anchors": [
+        "In February",
+        "farmers and herders"
+      ],
+      "paraphrase": "The briefer calls the joint February workshop a conference on farmer-herder dynamics.",
+      "values": {
+        "date_scope": "month_only",
+        "role": "co_organizers"
+      }
+    },
+    {
+      "observation_id": "O13",
+      "component_id": "P05",
+      "source_id": "B1",
+      "pages": [
+        2
+      ],
+      "locator": "briefer Lake Chad update",
+      "anchors": [
+        "announced its withdrawal",
+        "Niger"
+      ],
+      "paraphrase": "As of the 3 April statement, the Niger had announced withdrawal from the MNJTF.",
+      "values": {
+        "status": "announced",
+        "as_of": "2025-04-03",
+        "role": "UNOWAS_briefing_attribution"
+      }
+    },
+    {
+      "observation_id": "O14",
+      "component_id": "P09",
+      "source_id": "B1",
+      "pages": [
+        3,
+        4
+      ],
+      "locator": "briefer regional assessment",
+      "anchors": [
+        "Supporting dialogue",
+        "UNOWAS"
+      ],
+      "paraphrase": "The UNOWAS briefer retains office-specific assessment and good-offices priorities.",
+      "values": {
+        "owner": "UNOWAS_existing_clearance"
+      }
+    },
+    {
+      "observation_id": "O15",
+      "component_id": "P01",
+      "source_id": "R2",
+      "pages": [
+        12,
+        13
+      ],
+      "locator": "para 61",
+      "anchors": [
+        "27 to 31 January",
+        "Bama"
+      ],
+      "paraphrase": "The UNOCA report records the joint Nigeria visit with a different start date from R1.",
+      "values": {
+        "event_start": "2025-01-27",
+        "event_end": "2025-01-31",
+        "date_scope": "whole_visit",
+        "role": "joint_participants"
+      }
+    },
+    {
+      "observation_id": "O16",
+      "component_id": "P02",
+      "source_id": "R2",
+      "pages": [
+        13
+      ],
+      "locator": "para 62",
+      "anchors": [
+        "29 January",
+        "S/2025/187"
+      ],
+      "paraphrase": "UNOCA records its representative attending on 29 January and refers readers to the UNOWAS report.",
+      "values": {
+        "event_start": "2025-01-29",
+        "event_end": "2025-01-29",
+        "date_scope": "representative_attendance_day_not_forum_duration",
+        "role": "participant",
+        "explicit_reference": "R1"
+      }
+    },
+    {
+      "observation_id": "O17",
+      "component_id": "P03",
+      "source_id": "R2",
+      "pages": [
+        13
+      ],
+      "locator": "para 65 first sentence",
+      "anchors": [
+        "26 and 27 February",
+        "S/2025/187"
+      ],
+      "paraphrase": "UNOCA records the joint Dakar workshop and expressly cross-refers to the UNOWAS report.",
+      "values": {
+        "event_start": "2025-02-26",
+        "event_end": "2025-02-27",
+        "role": "co_organizers",
+        "explicit_reference": "R1"
+      }
+    },
+    {
+      "observation_id": "O18",
+      "component_id": "P04",
+      "source_id": "R2",
+      "pages": [
+        13
+      ],
+      "locator": "para 65 second sentence",
+      "anchors": [
+        "collection of best practices",
+        "leadership of UNOCA"
+      ],
+      "paraphrase": "A best-practice collection compiled under UNOCA leadership was published at the workshop.",
+      "values": {
+        "product_type": "publication_not_course",
+        "product_lead": "UNOCA",
+        "event_date_not_publication_availability": true
+      }
+    },
+    {
+      "observation_id": "O19",
+      "component_id": "P07",
+      "source_id": "R2",
+      "pages": [
+        13
+      ],
+      "locator": "para 67",
+      "anchors": [
+        "8 April",
+        "joint regional activities"
+      ],
+      "paraphrase": "The offices held a planning exchange on 8 April and agreed on joint initiatives.",
+      "values": {
+        "event_start": "2025-04-08",
+        "event_end": "2025-04-08",
+        "stage": "coordination_already_observed"
+      }
+    },
+    {
+      "observation_id": "O20",
+      "component_id": "P08",
+      "source_id": "R2",
+      "pages": [
+        13
+      ],
+      "locator": "para 63",
+      "anchors": [
+        "17 December",
+        "S/2025/187"
+      ],
+      "paraphrase": "UNOCA records the December 2024 maritime workshop and cross-refers to UNOWAS.",
+      "values": {
+        "event_start": "2024-12-17",
+        "event_end": "2024-12-17",
+        "event_year": 2024,
+        "explicit_reference": "R1"
+      }
+    },
+    {
+      "observation_id": "O21",
+      "component_id": "P10",
+      "source_id": "R2",
+      "pages": [
+        14
+      ],
+      "locator": "paras 68-70",
+      "anchors": [
+        "political transition in Chad",
+        "Observations and recommendations"
+      ],
+      "paraphrase": "The SG report retains Central Africa-specific judgments and recommendations.",
+      "values": {
+        "owner": "UNOCA_existing_clearance"
+      }
+    },
+    {
+      "observation_id": "O22",
+      "component_id": "P05",
+      "source_id": "B2",
+      "pages": [
+        3
+      ],
+      "locator": "briefer Lake Chad update",
+      "anchors": [
+        "On 3 April",
+        "S/PV.9890",
+        "announcement"
+      ],
+      "paraphrase": "The UNOCA briefer explicitly attributes the withdrawal announcement to the earlier UNOWAS briefing.",
+      "values": {
+        "status": "announced",
+        "as_of": "2025-06-09",
+        "role": "UNOCA_refers_to_UNOWAS",
+        "explicit_reference": "B1"
+      }
+    },
+    {
+      "observation_id": "O23",
+      "component_id": "P10",
+      "source_id": "B2",
+      "pages": [
+        3,
+        4
+      ],
+      "locator": "briefer country assessments",
+      "anchors": [
+        "Cameroon",
+        "good offices"
+      ],
+      "paraphrase": "UNOCA retains country-specific electoral, security and good-offices assessments.",
+      "values": {
+        "owner": "UNOCA_existing_clearance"
+      }
+    }
+  ],
+  "products": [
+    {
+      "product_id": "R1",
+      "symbol": "S/2025/187",
+      "owner": "UNOWAS",
+      "replay_checkpoint": "2025-04-02",
+      "scope": "SG report; stated reporting window 1 December 2024 to 31 March 2025",
+      "components": [
+        "P01",
+        "P02",
+        "P03",
+        "P06",
+        "P08",
+        "P09"
+      ],
+      "approval": "existing_office_and_SG_or_briefing_clearance_not_reassigned",
+      "deployment_status": "retrospective_demo_not_live"
+    },
+    {
+      "product_id": "B1",
+      "symbol": "S/PV.9890",
+      "owner": "UNOWAS",
+      "replay_checkpoint": "2025-04-03",
+      "scope": "UNOWAS briefer contribution only; not the Council debate or official transcript production",
+      "components": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "approval": "existing_office_and_SG_or_briefing_clearance_not_reassigned",
+      "deployment_status": "retrospective_demo_not_live"
+    },
+    {
+      "product_id": "R2",
+      "symbol": "S/2025/342",
+      "owner": "UNOCA",
+      "replay_checkpoint": "2025-06-05",
+      "scope": "SG report; six-month update since 29 November 2024; separate regional mandate",
+      "components": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P07",
+        "P08",
+        "P10"
+      ],
+      "approval": "existing_office_and_SG_or_briefing_clearance_not_reassigned",
+      "deployment_status": "retrospective_demo_not_live"
+    },
+    {
+      "product_id": "B2",
+      "symbol": "S/PV.9931",
+      "owner": "UNOCA",
+      "replay_checkpoint": "2025-06-09",
+      "scope": "UNOCA briefer contribution only; not the Council debate or official transcript production",
+      "components": [
+        "P05",
+        "P10"
+      ],
+      "approval": "existing_office_and_SG_or_briefing_clearance_not_reassigned",
+      "deployment_status": "retrospective_demo_not_live"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E01",
+      "from_source": "R1",
+      "to_source": "B1",
+      "component_id": null,
+      "kind": "explicit_report_presentation",
+      "target_pages": [
+        2
+      ],
+      "anchors": [
+        "present the report",
+        "S/2025/187"
+      ]
+    },
+    {
+      "edge_id": "E02",
+      "from_source": "R1",
+      "to_source": "R2",
+      "component_id": "P02",
+      "kind": "explicit_cross_report_referral",
+      "target_pages": [
+        13
+      ],
+      "anchors": [
+        "S/2025/187"
+      ]
+    },
+    {
+      "edge_id": "E03",
+      "from_source": "R1",
+      "to_source": "R2",
+      "component_id": "P03",
+      "kind": "explicit_cross_report_referral",
+      "target_pages": [
+        13
+      ],
+      "anchors": [
+        "S/2025/187"
+      ]
+    },
+    {
+      "edge_id": "E04",
+      "from_source": "R1",
+      "to_source": "R2",
+      "component_id": "P08",
+      "kind": "explicit_cross_report_referral",
+      "target_pages": [
+        13
+      ],
+      "anchors": [
+        "S/2025/187"
+      ]
+    },
+    {
+      "edge_id": "E05",
+      "from_source": "R2",
+      "to_source": "B2",
+      "component_id": null,
+      "kind": "explicit_report_agenda_association",
+      "target_pages": [
+        2
+      ],
+      "anchors": [
+        "S/2025/342"
+      ]
+    },
+    {
+      "edge_id": "E06",
+      "from_source": "B1",
+      "to_source": "B2",
+      "component_id": "P05",
+      "kind": "explicit_prior_briefing_attribution",
+      "target_pages": [
+        3
+      ],
+      "anchors": [
+        "S/PV.9890"
+      ]
+    },
+    {
+      "edge_id": "E07",
+      "from_source": "N01",
+      "to_source": "R1",
+      "component_id": "P01",
+      "kind": "same_event_corroboration_editorial_direction_unproven",
+      "target_pages": [
+        11
+      ],
+      "anchors": [
+        "Bama"
+      ]
+    },
+    {
+      "edge_id": "E08",
+      "from_source": "N02",
+      "to_source": "R1",
+      "component_id": "P03",
+      "kind": "same_event_corroboration_editorial_direction_unproven",
+      "target_pages": [
+        12
+      ],
+      "anchors": [
+        "26 and 27 February"
+      ]
+    }
+  ],
+  "safeguards": {
+    "mandated_deliverables": "unchanged",
+    "frozen_rankings": "unchanged",
+    "retrospective_2027_support": "20/32 unchanged",
+    "duplicate_paid_service": "not_established",
+    "incremental_net_savings": "not_estimated",
+    "staff_hours_saved": "not_estimated",
+    "live_implementation": "not_performed",
+    "course_watch": "paused_by_user_2026-10-15_not_executed_or_reenabled"
+  },
+  "limitations": [
+    "Selected public sources, not internal editorial histories or a complete reporting-cycle workload census.",
+    "Replay checkpoints are explicit proxies; first public availability and internal availability are unknown.",
+    "Reconstruction and negative controls are development demonstrations, not independent human validation or estimated error rates."
+  ]
+}

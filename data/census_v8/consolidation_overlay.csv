@@ -1,0 +1,15 @@
+candidate_id,frozen_rank,scope,v8_work_sequence,v8_finding,implementation_status,financial_status,rank_change,distinct_cost_pool,case_group
+C16,1,shared_services_office,conditional_extension_not_piloted,Focal-point administration may fit existing shared services; no staffing or charging redesign validated.,not_authorized_or_validated,not_estimated,none,not_established,SP08P1
+C07,2,cross_mission_transition,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C01,3,support_DPO_regional_desks,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C04,4,DPO_policy_evaluation_training,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C09,5,regional_partnerships,pilot_1_joint_with_C02,Worked joint-event packet; no additional joint travel or workshop proposed.,not_authorized_or_validated,not_estimated,none,not_established,SP08P1
+C02,6,political_reporting,pilot_1_joint_with_C09,Worked source-to-product views and attributed briefing update; distinct reports retained.,not_authorized_or_validated,not_estimated,none,not_established,SP08P1
+C05,7,knowledge_management,enabler_of_pilot_1_not_additional_saving,Use existing controlled storage and versioning; no new platform justified.,not_authorized_or_validated,not_estimated,none,not_established,SP08P1
+C12,8,UNIFIL,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C19,9,UNISFA,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C15,10,UNMISS,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C03,11,DPO_combined_PBPS_mine_police,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C08,12,UNSOS,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C13,13,MINUSCA_quick_impact_projects,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed
+C11,14,information_integrity,not_reassessed_in_V8,No V8 source-specific readiness change.,not_authorized_or_validated,not_estimated,none,not_established,not_reassessed

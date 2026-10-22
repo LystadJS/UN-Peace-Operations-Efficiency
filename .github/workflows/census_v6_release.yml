@@ -1,12 +1,6 @@
-name: V6 census release acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/census_v6_release.yml
+name: V6 census release acceptance (manual candidate only)
 permissions:
-  contents: write
-  actions: read
+  contents: read
 concurrency:
   group: census-v6-release
   cancel-in-progress: false
@@ -15,104 +9,72 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install pinned extraction environment
-        run: python -m pip install pypdf==6.1.1 beautifulsoup4==4.13.4 PyYAML==6.0.3
-      - name: Download the exact reviewed public source capture
-        uses: actions/download-artifact@v4
-        with:
-          name: cross-version-census-audit
-          run-id: 38742342482
-          github-token: ${{ github.token }}
-          path: /tmp/v6-reviewed-capture
-      - name: Prepare source bytes and deterministic candidate-order correction
-        run: |
-          mkdir -p data/census_v6/source_capture
-          cp /tmp/v6-reviewed-capture/data/census_v6/source_capture/* data/census_v6/source_capture/
-          cp -r /tmp/v6-reviewed-capture/v6_raw_sources .
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('scripts/audit_census_v6.py')
-          text=p.read_text()
-          # Lexically ordered SequenceMatcher comparisons add two reviewed,
-          # genuinely distinct Termez-course/New-York-briefing candidates.
-          # The five positive clusters and all 8,385 comparisons are unchanged.
-          text=text.replace("==189,'Pair-screen denominator changed'", "==191,'Pair-screen denominator changed'")
-          text=text.replace('189 candidate pairs were reviewed', '191 candidate pairs were reviewed')
-          p.write_text(text)
-          PY
-      - name: Build and independently authenticate V6 evidence views
-        run: python scripts/audit_census_v6.py --write
-      - name: Run every retained repository Python and R acceptance step
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import subprocess,yaml,json
-          steps=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())['jobs']['structural-quality-gates']['steps']
-          passed=[]
-          for step in steps:
-              if 'run' in step:
-                  print('ACCEPTANCE',step.get('name'),flush=True)
-                  subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-                  passed.append(step.get('name'))
-          subprocess.run(['python','scripts/audit_census_v6.py','--check'],check=True)
-          Path('data/census_v6/acceptance_receipt.json').write_text(json.dumps({'retained_run_steps':len(passed),'steps':passed,'v6_check':'passed','scope':'Structural/source checks; no inference of financial substitutability or missing-course non-delivery'},indent=2)+'\n')
-          PY
-      - name: Update current README entry without changing historical sections
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('README.md');text=p.read_text()
-          heading='## Latest — Cross-version identity and reuse audit'
-          if heading not in text:
-              anchor='## Latest — 15 October 2026 systematic census'
-              assert anchor in text,'README anchor changed'
-              block='''## Latest — Cross-version identity and reuse audit
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install pinned extraction environment
+      run: python -m pip install pypdf==6.1.1 beautifulsoup4==4.13.4 PyYAML==6.0.3
+    - name: Download the exact reviewed public source capture
+      uses: actions/download-artifact@v4
+      with:
+        name: cross-version-census-audit
+        run-id: 38742342482
+        github-token: ${{ github.token }}
+        path: /tmp/v6-reviewed-capture
+    - name: Prepare source bytes and deterministic candidate-order correction
+      run: |
+        mkdir -p data/census_v6/source_capture
+        cp /tmp/v6-reviewed-capture/data/census_v6/source_capture/* data/census_v6/source_capture/
+        cp -r /tmp/v6-reviewed-capture/v6_raw_sources .
+        python - <<'PY'
+        from pathlib import Path
+        p=Path('scripts/audit_census_v6.py')
+        text=p.read_text()
+        # Lexically ordered SequenceMatcher comparisons add two reviewed,
+        # genuinely distinct Termez-course/New-York-briefing candidates.
+        # The five positive clusters and all 8,385 comparisons are unchanged.
+        text=text.replace("==189,'Pair-screen denominator changed'", "==191,'Pair-screen denominator changed'")
+        text=text.replace('189 candidate pairs were reviewed', '191 candidate pairs were reviewed')
+        p.write_text(text)
+        PY
+    - name: Build and independently authenticate V6 evidence views
+      run: python scripts/audit_census_v6.py --write
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v6-retained-suite.json
+        python scripts/audit_census_v6.py --check
+    - name: Retain public-source audit package and acceptance evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: census-v6-validated-release
+        retention-days: 30
+        include-hidden-files: true
+        path: 'V6_PUBLISHED_COMMIT.txt
 
-          **[Current audit and executive findings](docs/census_2025_2026_v6_audit.md)** · [Canonical identities](data/census_v6/canonical_evidence_register.csv) · [Eight course dispositions](data/census_v6/course_delivery_verification.csv) · [Report reuse tests](data/census_v6/report_pair_reuse_tests.csv).
+          README.md
 
-          Thirteen curated registers/views contain **371 observations, 130 local IDs and 123 canonical evidence identities**, after five cross-version alias clusters absorb seven IDs. These are mixed-grain research identities, not 123 delivered events. All **8,385** ID pairs were screened and **191** candidates adjudicated. Historical records remain unchanged and reversibly mapped.
+          data/census_v6
 
-          **Eight course listings checked:** two elapsed schedules without verified completion, one schedule spanning the cutoff, and five future courses. No exact-cohort completion or unique-person total is inferred. **40 source PDFs authenticated**: 33 requested report files (including one identified revision), seven transcripts. Six report-pair tests show explicit cross-mandate referrals; seven other transcript bodies remain unavailable. Separate mandates, products, 20/32 retrospective category support and financial gates remain unchanged. **No duplicate paid service or incremental net saving is established.**
+          docs/census_2025_2026_v6_audit.md
 
-          '''
-              # Dedent the YAML block's Python string indentation.
-              import textwrap
-              block=textwrap.dedent(block)
-              text=text.replace(anchor,block+'## Earlier — 15 October 2026 systematic census',1)
-          text=text.replace('<a href="docs/census_2025_2026_oct15_executive.md"><strong>Current census and shared-production findings</strong></a>','<a href="docs/census_2025_2026_v6_audit.md"><strong>Current census and shared-production findings</strong></a>')
-          p.write_text(text)
-          PY
-      - name: Commit validated research outputs and exact tested audit code
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v6 docs/census_2025_2026_v6_audit.md README.md scripts/audit_census_v6.py
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish validated V6 identity, delivery and reuse audit with 191 ordered candidates'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > V6_PUBLISHED_COMMIT.txt
-      - name: Retain public-source audit package and acceptance evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: census-v6-validated-release
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            V6_PUBLISHED_COMMIT.txt
-            README.md
-            data/census_v6
-            docs/census_2025_2026_v6_audit.md
-            scripts/audit_census_v6.py
-            scripts/collect_census_v6_sources.py
-            scripts/recover_census_v6_sources.py
-            v6_raw_sources
+          scripts/audit_census_v6.py
+
+          scripts/collect_census_v6_sources.py
+
+          scripts/recover_census_v6_sources.py
+
+          v6_raw_sources
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

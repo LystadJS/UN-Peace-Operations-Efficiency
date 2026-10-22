@@ -1,19 +1,6 @@
-name: V8 shared-production pilot acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/v8_release.yml
-      - scripts/build_v8_design.py
-      - scripts/build_v8_pilot.py
-      - tests/check_v8_pilot.py
-      - docs/v8_shared_production_assessment.md
-      - docs/v8_consolidation_brief.md
-      - data/census_v8/measurement_plan.csv
-      - data/census_v8/workload_log_template.csv
+name: V8 shared-production pilot acceptance (manual candidate only)
 permissions:
-  contents: write
-  actions: read
+  contents: read
 concurrency:
   group: v8-reporting-pilot
   cancel-in-progress: false
@@ -22,125 +9,104 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.6.1'
-      - name: Install pinned source-checking environment
-        run: |
-          python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7 beautifulsoup4==4.14.3 PyYAML==6.0.3
-          mkdir -p /tmp/v8-acceptance
-          python -m pip freeze > /tmp/v8-acceptance/python-requirements.txt
-          Rscript -e 'sessionInfo()' > /tmp/v8-acceptance/R-session.txt
-          git rev-parse HEAD > /tmp/v8-acceptance/tested-code-commit.txt
-      - name: Recover exact six public sources and verify frozen pre-V8 corpus
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PY'
-          import hashlib, io, json, os, subprocess, zipfile
-          from pathlib import Path
-          from urllib.request import Request, build_opener, HTTPRedirectHandler
-          class SafeRedirect(HTTPRedirectHandler):
-              def redirect_request(self,req,fp,code,msg,headers,newurl):
-                  nxt=super().redirect_request(req,fp,code,msg,headers,newurl)
-                  if nxt is not None: nxt.remove_header('Authorization')
-                  return nxt
-          api='https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11983426429/zip'
-          with build_opener(SafeRedirect()).open(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as response:
-              payload=response.read()
-          assert hashlib.sha256(payload).hexdigest()=='bb0176740682079f11baf6898e8ce47e424b25c2b256b86f277d0d2d99bcb128'
-          out=Path('data/census_v8/sources');out.mkdir(parents=True,exist_ok=True)
-          names=['S_2025_187.pdf','S_PV_9890.pdf','S_2025_342.pdf','S_PV_9931.pdf','N01.html','N02.html','notice_fetches.json']
-          with zipfile.ZipFile(io.BytesIO(payload)) as z:
-              assert z.testzip() is None
-              for name in names:
-                  matches=[p for p in z.namelist() if p.endswith('data/census_v8/sources/'+name)]
-                  assert len(matches)==1,(name,matches)
-                  (out/name).write_bytes(z.read(matches[0]))
-          base='bdfe277893914ab9306af751854fd922d3edc731'
-          records=[]
-          files=subprocess.check_output(['git','ls-tree','-r','--name-only',base],text=True).splitlines()
-          for path in files:
-              if not path.startswith(('data/','docs/','scripts/','tests/')): continue
-              before=subprocess.check_output(['git','show',base+':'+path])
-              actual=Path(path).read_bytes()
-              assert before==actual,'Pre-V8 file changed: '+path
-              records.append({'path':path,'sha256':hashlib.sha256(before).hexdigest()})
-          assert len(records)==315,len(records)
-          Path('data/census_v8/frozen_input_manifest.json').write_text(json.dumps(sorted(records,key=lambda x:x['path']),indent=2,sort_keys=True)+'\n')
-          PY
-      - name: Build source-linked pilot and run independent source and corruption checks
-        run: |
-          python scripts/build_v8_design.py
-          python scripts/build_v8_pilot.py --build
-          python tests/check_v8_pilot.py --sources --write
-          python scripts/build_v8_pilot.py --check
-      - name: Execute every retained repository acceptance command
-        run: |
-          python - <<'PY'
-          import json, subprocess, yaml
-          from pathlib import Path
-          steps=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())['jobs']['structural-quality-gates']['steps']
-          receipt=[]
-          for step in steps:
-              if 'run' not in step: continue
-              print('RETAINED ACCEPTANCE:',step.get('name'),flush=True)
-              subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-              receipt.append({'name':step.get('name'),'result':'PASS'})
-          Path('/tmp/v8-acceptance/retained-acceptance.json').write_text(json.dumps({'passed_run_steps':len(receipt),'steps':receipt},indent=2)+'\n')
-          PY
-          python scripts/build_v8_pilot.py --check
-      - name: Check document links and update current README entry only
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          for path in Path('docs').glob('v8_*.md'):
-              for link in re.findall(r'\]\(([^)]+)\)',path.read_text()):
-                  if '://' not in link and not link.startswith('#'):
-                      assert (path.parent/link.split('#')[0]).exists(),(path,link)
-          p=Path('README.md');text=p.read_text()
-          heading='## Current — V8 shared-production assessment'
-          block='\n'.join([
-              heading,'',
-              '**[Updated consolidation brief](docs/v8_consolidation_brief.md)** · [Full assessment](docs/v8_shared_production_assessment.md) · [Worked UNOWAS–UNOCA cycle](docs/v8_worked_reporting_cycle.md) · [Evidence matrix](data/census_v8/source_component_matrix.csv).','',
-              'The January–June 2025 pilot uses **six original sources, 10 selected components and 23 source observations** to reconstruct **four separate report/briefing support sheets**. Three core event inputs have nine selected appearances; this is a traceability result, not six eliminated jobs or a savings estimate. Conflicting dates, attribution, delivery stages, different observation units and office-specific approvals remain explicit.','',
-              '**C09 and C02 form one pilot; C05 is its enabler. All 14 frozen parent ranks and mission rankings remain unchanged.** Technical source/representation checks passed; live workflow benefit, avoided staff work, duplicate paid service and incremental net savings are not established. Compare the design with existing office processes before adding work or proposing operational changes.','',
-              '**Course-watch status: paused by user. V8 does not execute or reactivate scheduled or manual course checks.** Earlier V7 watch-creation statements are historical. [Acceptance receipt](data/census_v8/acceptance_receipt.json) · [Measurement plan](data/census_v8/measurement_plan.csv).','',''])
-          if heading not in text:
-              anchor=text.index('\n## ')
-              text=text[:anchor+1]+block+text[anchor+1:]
-          p.write_text(text)
-          PY
-      - name: Publish validated research outputs without changing workflow permissions or historical evidence
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md data/census_v8 docs/v8_worked_reporting_cycle.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish V8 worked reporting pilot and mandate-preserving consolidation assessment'
-            git fetch origin main
-            test "$(git rev-parse origin/main)" = "$(git rev-parse HEAD^)"
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/v8-acceptance/published-commit.txt
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: v8-validated-reporting-pilot
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            /tmp/v8-acceptance
-            README.md
-            data
-            docs
-            scripts
-            tests
-            .github/workflows/validate.yml
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        r-version: 4.6.1
+    - name: Install pinned source-checking environment
+      run: |
+        python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7 beautifulsoup4==4.14.3 PyYAML==6.0.3
+        mkdir -p /tmp/v8-acceptance
+        python -m pip freeze > /tmp/v8-acceptance/python-requirements.txt
+        Rscript -e 'sessionInfo()' > /tmp/v8-acceptance/R-session.txt
+        git rev-parse HEAD > /tmp/v8-acceptance/tested-code-commit.txt
+    - name: Recover exact six public sources and verify frozen pre-V8 corpus
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        python - <<'PY'
+        import hashlib, io, json, os, subprocess, zipfile
+        from pathlib import Path
+        from scripts.frozen_audit_inputs import frozen_source_path
+        from urllib.request import Request, build_opener, HTTPRedirectHandler
+        class SafeRedirect(HTTPRedirectHandler):
+            def redirect_request(self,req,fp,code,msg,headers,newurl):
+                nxt=super().redirect_request(req,fp,code,msg,headers,newurl)
+                if nxt is not None: nxt.remove_header('Authorization')
+                return nxt
+        api='https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11983426429/zip'
+        with build_opener(SafeRedirect()).open(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as response:
+            payload=response.read()
+        assert hashlib.sha256(payload).hexdigest()=='bb0176740682079f11baf6898e8ce47e424b25c2b256b86f277d0d2d99bcb128'
+        out=Path('data/census_v8/sources');out.mkdir(parents=True,exist_ok=True)
+        names=['S_2025_187.pdf','S_PV_9890.pdf','S_2025_342.pdf','S_PV_9931.pdf','N01.html','N02.html','notice_fetches.json']
+        with zipfile.ZipFile(io.BytesIO(payload)) as z:
+            assert z.testzip() is None
+            for name in names:
+                matches=[p for p in z.namelist() if p.endswith('data/census_v8/sources/'+name)]
+                assert len(matches)==1,(name,matches)
+                (out/name).write_bytes(z.read(matches[0]))
+        base='bdfe277893914ab9306af751854fd922d3edc731'
+        records=[]
+        files=subprocess.check_output(['git','ls-tree','-r','--name-only',base],text=True).splitlines()
+        for path in files:
+            if not path.startswith(('data/','docs/','scripts/','tests/')): continue
+            before=subprocess.check_output(['git','show',base+':'+path])
+            actual=Path(path).read_bytes()
+            assert before==actual,'Pre-V8 file changed: '+path
+            records.append({'path':path,'sha256':hashlib.sha256(before).hexdigest()})
+        assert len(records)==315,len(records)
+        Path('data/census_v8/frozen_input_manifest.json').write_text(json.dumps(sorted(records,key=lambda x:x['path']),indent=2,sort_keys=True)+'\n')
+        PY
+    - name: Build source-linked pilot and run independent source and corruption checks
+      run: |
+        python scripts/build_v8_design.py
+        python scripts/build_v8_pilot.py --build
+        python tests/check_v8_pilot.py --sources --write
+        python scripts/build_v8_pilot.py --check
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v8-acceptance/retained-acceptance.json
+        python scripts/build_v8_pilot.py --check
+    - name: Check V8 document links without changing current navigation
+      run: |
+        python - <<'PY'
+        from pathlib import Path
+        import re
+        for path in Path('docs').glob('v8_*.md'):
+            for link in re.findall(r'\]\(([^)]+)\)',path.read_text()):
+                if '://' not in link and not link.startswith('#'):
+                    assert (path.parent/link.split('#')[0]).exists(),(path,link)
+        PY
+    - uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: v8-validated-reporting-pilot
+        retention-days: 30
+        include-hidden-files: true
+        path: '/tmp/v8-acceptance
+
+          README.md
+
+          data
+
+          docs
+
+          scripts
+
+          tests
+
+          .github/workflows/validate.yml
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

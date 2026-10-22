@@ -1,16 +1,6 @@
-name: V12 additive reference patch
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/prepare_v12_patch.py
-      - tests/check_v12_patch.py
-      - docs/v12_reference_correction_patch.md
-      - data/census_v12/**
-      - .github/workflows/v12_reference_patch.yml
-  pull_request:
+name: V12 additive reference patch (manual candidate only)
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: v12-reference-patch
   cancel-in-progress: false
@@ -19,82 +9,75 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install and record source-check environment
-        run: |
-          python -m pip install PyMuPDF==1.26.7 pypdf==5.9.0 beautifulsoup4==4.14.3 PyYAML
-          mkdir -p /tmp/v12_acceptance
-          python -m pip freeze > /tmp/v12_acceptance/requirements.txt
-          git rev-parse HEAD > /tmp/v12_acceptance/tested_commit.txt
-      - name: Prepare only absent candidate outputs or verify existing outputs
-        run: |
-          if [ -f data/census_v12/patch_summary.json ]; then
-            python scripts/prepare_v12_patch.py --check --source-check
-          else
-            python scripts/prepare_v12_patch.py --build --source-check
-          fi
-          python tests/check_v12_patch.py 2>&1 | tee /tmp/v12_acceptance/patch_tests.txt
-      - name: Run retained acceptance and first-pass safeguards
-        run: |
-          python - <<'PY'
-          import json,subprocess,yaml
-          from pathlib import Path
-          steps=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())['jobs']['structural-quality-gates']['steps']
-          passed=[]
-          for s in steps:
-              if 'run' in s:
-                  subprocess.run(['/bin/bash','-euo','pipefail','-c',s['run']],check=True)
-                  passed.append(s.get('name','unnamed'))
-          Path('/tmp/v12_acceptance/retained_suite.json').write_text(json.dumps({'passed_steps':len(passed),'steps':passed},indent=2)+'\n')
-          PY
-          python scripts/rehearse_v11.py --check
-          python tests/check_v11_tabletop.py
-          Rscript tests/check_v11_tabletop.R
-          python tests/check_v10_protocol.py
-          Rscript tests/check_v10_workload.R
-      - name: Verify all pre-V12 tracked files remain byte-identical
-        run: |
-          python - <<'PY'
-          import json,subprocess
-          from pathlib import Path
-          base='2e8d5c6303d677f4c7fd797d6cd679309ce69f9d'
-          names=subprocess.check_output(['git','ls-tree','-r','--name-only',base],text=True).splitlines()
-          for name in names:
-              old=subprocess.check_output(['git','show',base+':'+name])
-              if Path(name).read_bytes()!=old: raise AssertionError(name)
-          Path('/tmp/v12_acceptance/frozen_files.json').write_text(json.dumps({'baseline':base,'all_prior_tracked_files_unchanged':len(names)},indent=2)+'\n')
-          PY
-      - name: Publish candidate files only; never adopt or activate
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v12 docs/v12_affected_support_preview.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish prepared AM11 reference-correction candidate with first-pass holds and closed gates'
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/v12_acceptance/published_commit.txt
-      - name: Retain public candidate package and test evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: v12-reference-correction-candidate
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            /tmp/v12_acceptance
-            data
-            docs
-            scripts
-            tests
-            README.md
-            .github/workflows
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install and record source-check environment
+      run: |
+        python -m pip install PyMuPDF==1.26.7 pypdf==5.9.0 beautifulsoup4==4.14.3 PyYAML
+        mkdir -p /tmp/v12_acceptance
+        python -m pip freeze > /tmp/v12_acceptance/requirements.txt
+        git rev-parse HEAD > /tmp/v12_acceptance/tested_commit.txt
+    - name: Prepare only absent candidate outputs or verify existing outputs
+      run: |
+        if [ -f data/census_v12/patch_summary.json ]; then
+          python scripts/prepare_v12_patch.py --check --source-check
+        else
+          python scripts/prepare_v12_patch.py --build --source-check
+        fi
+        python tests/check_v12_patch.py 2>&1 | tee /tmp/v12_acceptance/patch_tests.txt
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v12_acceptance/retained_suite.json
+        python scripts/rehearse_v11.py --check
+        python tests/check_v11_tabletop.py
+        Rscript tests/check_v11_tabletop.R
+        python tests/check_v10_protocol.py
+        Rscript tests/check_v10_workload.R
+    - name: Verify all pre-V12 tracked files remain byte-identical
+      run: |
+        python - <<'PY'
+        import json,subprocess
+        from pathlib import Path
+        from scripts.frozen_audit_inputs import frozen_source_path
+        base='2e8d5c6303d677f4c7fd797d6cd679309ce69f9d'
+        names=subprocess.check_output(['git','ls-tree','-r','--name-only',base],text=True).splitlines()
+        for name in names:
+            old=subprocess.check_output(['git','show',base+':'+name])
+            if frozen_source_path(Path.cwd(),name).read_bytes()!=old: raise AssertionError(name)
+        Path('/tmp/v12_acceptance/frozen_files.json').write_text(json.dumps({'baseline':base,'all_prior_tracked_files_unchanged':len(names)},indent=2)+'\n')
+        PY
+    - name: Retain public candidate package and test evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: v12-reference-correction-candidate
+        retention-days: 30
+        include-hidden-files: true
+        path: '/tmp/v12_acceptance
+
+          data
+
+          docs
+
+          scripts
+
+          tests
+
+          README.md
+
+          .github/workflows
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

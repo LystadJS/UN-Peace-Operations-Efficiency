@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import sys
+from frozen_audit_inputs import frozen_source_path
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -31,7 +32,7 @@ def validate_scope(root):
         require(not path.is_absolute() and '..' not in path.parts, f'unsafe scope path: {name}')
         require(name not in paths, f'duplicate scope path: {name}')
         paths.add(name)
-        local = root / name
+        local = frozen_source_path(root, name)
         require(local.is_file() and not local.is_symlink(), f'missing or symlinked scope file: {name}')
         content = local.read_bytes()
         require(len(content) == row['size_bytes'], f'changed input size: {name}')

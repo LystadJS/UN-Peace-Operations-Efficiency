@@ -1,0 +1,42 @@
+name: Deeper Official Mission and Training Archive Frame
+
+on:
+  push:
+    paths:
+      - scripts/collect_deeper_archive_frame_v4.py
+      - .github/workflows/deeper_official_archives_v4.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: peace-operations-deep-archive-v4
+  cancel-in-progress: false
+
+jobs:
+  deep-index-source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned public source parser
+        run: python -m pip install beautifulsoup4==4.12.3
+      - name: Revalidate official-source URL and no-event rules
+        run: python tests/check_extended_archive_frame.py
+      - name: Collect bounded deeper pages without promoting listings to events
+        run: python scripts/collect_deeper_archive_frame_v4.py --pages 8
+      - name: Preserve historical source frames and commit new index snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/census_v4/deeper_official_archives
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: Index deeper official mission and learning archives; event verification pending'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

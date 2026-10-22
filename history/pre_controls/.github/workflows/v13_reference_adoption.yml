@@ -1,0 +1,79 @@
+name: V13 adopted research reference
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/adopt_v13_reference.py
+      - tests/check_v13_reference.py
+      - data/census_v13/**
+      - .github/workflows/v13_reference_adoption.yml
+  pull_request:
+    paths:
+      - scripts/adopt_v13_reference.py
+      - tests/check_v13_reference.py
+      - data/census_v13/**
+      - .github/workflows/v13_reference_adoption.yml
+permissions:
+  contents: write
+concurrency:
+  group: v13-reference-adoption
+  cancel-in-progress: false
+jobs:
+  adopted-reference-and-closed-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adopt exact authorized payload and recheck only affected views
+        run: |
+          set -euo pipefail
+          mkdir -p _v13_receipts
+          python scripts/adopt_v13_reference.py --build | tee _v13_receipts/build.json
+          python scripts/adopt_v13_reference.py --check | tee _v13_receipts/check.json
+          python tests/check_v13_reference.py 2>&1 | tee _v13_receipts/tests.txt
+          git diff --exit-code
+          python - <<'PY'
+          import hashlib,json,os,re,subprocess
+          from pathlib import Path
+          log=Path('_v13_receipts/tests.txt').read_text()
+          n=re.search(r'Ran (\d+) tests',log)
+          assert n and int(n[1])==13 and '\nOK\n' in log
+          inputs=json.loads(Path('data/census_v13/input_manifest.json').read_text())
+          outputs=json.loads(Path('data/census_v13/output_manifest.json').read_text())
+          for path,digest in {**inputs,**outputs}.items():
+              assert hashlib.sha256(Path(path).read_bytes()).hexdigest()==digest,path
+          receipt={'status':'PASS_research_adoption_not_live_authorization','workflow_run':int(os.environ['GITHUB_RUN_ID']),
+                   'tested_commit':os.environ['GITHUB_SHA'],'python_test_methods_passed':int(n[1]),
+                   'pinned_inputs_verified':len(inputs),'generated_payload_hashes_verified':len(outputs),
+                   'tracked_files_unmodified_before_publication':True,'affected_assertion_rechecks':2,
+                   'affected_product_views':2,'full_corpus_rescoring':'not_run','live_use':'BLOCKED_FOR_LIVE_USE',
+                   'source_semantic_review':'retained_V11_V12_not_reperformed','course_checks':0}
+          Path('_v13_receipts/acceptance.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
+          PY
+      - name: Publish only the new research reference and affected views
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/census_v13 docs/v13_reference_adoption.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Adopt research reference 13.0 with two affected rechecks and preserved first-pass outcomes'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > _v13_receipts/published_commit.txt
+      - name: Retain adoption outputs and acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v13-adopted-reference-acceptance
+          retention-days: 30
+          path: |
+            data/census_v13
+            docs/v13_reference_adoption.md
+            scripts/adopt_v13_reference.py
+            tests/check_v13_reference.py
+            _v13_receipts

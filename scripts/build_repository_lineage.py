@@ -12,6 +12,8 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
+from frozen_audit_inputs import frozen_source_path
+
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE = 'metadata/repository_audit_scope.json'
 NODE_OUT = 'metadata/lineage_nodes.csv'
@@ -206,7 +208,7 @@ def build(root=ROOT):
     paths = {f['path'] for f in scope['files']}
     edges, uncertain = set(), {}
     for file in scope['files']:
-        path=file['path']; body=(root/path).read_bytes()
+        path=file['path']; body=frozen_source_path(root,path).read_bytes()
         if hashlib.sha256(body).hexdigest()!=file['sha256']:
             raise ValueError('frozen input drift: '+path)
         if PurePosixPath(path).suffix in TEXT_EXT:

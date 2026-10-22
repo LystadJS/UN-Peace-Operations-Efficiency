@@ -1,0 +1,28 @@
+name: V10 fixed-scope and shadow-accounting safeguards
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  owner-review-protocol-guards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Validate fixed public scope and closed live-use gates
+        run: python scripts/build_v10_protocol.py --check
+      - name: Reject scope, attribution, savings and template corruptions
+        run: python tests/check_v10_protocol.py
+      - name: Verify synthetic workload accounting only
+        run: Rscript tests/check_v10_workload.R

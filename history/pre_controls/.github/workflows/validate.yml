@@ -1,0 +1,84 @@
+name: Crosswalk validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate baseline identifiers citations and recorded assumptions
+        run: python3 scripts/validate_crosswalk.py
+      - name: Validate mission budget and UN80 audit supplements
+        run: python3 scripts/validate_mission_audit.py
+      - name: Validate GA resolution and SPM source reconciliation
+        run: python3 scripts/validate_phase3.py
+      - name: Validate SPM 2027 mission and cluster reconciliation
+        run: python3 scripts/validate_spm_2027.py
+      - name: Validate source-linked transaction-control baselines
+        run: python3 scripts/validate_transaction_controls.py
+      - name: Prepare R for synthetic transaction-engine acceptance tests
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Exercise R transaction matcher on clearly synthetic fixture
+        run: |
+          Rscript scripts/audit_transaction_ledger.R tests/fixtures/transaction_ledger_SYNTHETIC.csv /tmp/un-peace-operations-synthetic
+          Rscript tests/check_transaction_engine.R /tmp/un-peace-operations-synthetic
+      - name: Validate public decision gates and nonadditive finance map
+        run: python3 scripts/validate_public_only.py
+      - name: Build reproducible public decision queue
+        run: |
+          Rscript scripts/render_public_decision_board.R . /tmp/peace-efficiency-public
+          Rscript tests/check_public_board.R /tmp/peace-efficiency-public
+      - name: Exercise conditional break-even engine using synthetic data only
+        run: |
+          Rscript scripts/evaluate_conditional_options.R tests/fixtures/scenarios_SYNTHETIC.csv /tmp/peace-efficiency-scenarios
+          Rscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios
+      - name: Check Phase 7 crosswalk and recommendation source status
+        run: python3 scripts/validate_phase7.py
+      - name: Reconcile ACABQ advice against 2027 SG proposals and research ranks
+        run: python3 scripts/validate_acabq_2027.py
+      - name: Validate nine Cluster III SG mission baselines and main ACABQ framework
+        run: python3 scripts/validate_phase9_clusterIII.py
+      - name: Validate selected retrospective public 2025-26 source identity and reuse adjudications
+        run: python3 scripts/validate_retrospective_matches.py
+      - name: Render and test retrospective 2025-26 research queue in base R
+        run: |
+          Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board
+          Rscript tests/check_retrospective_board.R /tmp/peace-retrospective-board
+      - name: Validate full official Council report and meeting indexes with scoped mission census
+        run: python3 scripts/validate_systematic_census.py
+      - name: Test Council index HTML parsing and quarantine of anomalies
+        run: python3 tests/check_council_index_parser.py
+      - name: Render systematic source census and test R summary outputs
+        run: |
+          Rscript scripts/render_systematic_census.R . /tmp/peace-systematic-census
+          Rscript tests/check_systematic_census_board.R /tmp/peace-systematic-census
+      - name: Validate scoped SG Council reports and public meeting field training coverage
+        run: python3 scripts/validate_census_2025_2026.py
+      - name: Validate October 12 archived Council, notice and curated-event source census
+        run: python3 scripts/validate_census_v2_release.py
+      - name: Validate 13 October mission training census extension
+        run: python3 scripts/validate_census_v3_extension.py
+      - name: Validate source-backed 2025-26 attendance and deeper official mission archives
+        run: python3 scripts/validate_census_v4_attendance.py
+      - name: Validate October 15 public census and canonical identity safeguards
+        run: |
+          python3 scripts/validate_census_v5.py
+          python3 scripts/finalize_census_v5.py --check
+      - name: Validate complete bounded cross-version identities and source reuse
+        run: python3 scripts/audit_census_v6.py --check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate V7 original transcript hashes and effective source references
+        run: |
+          python -m pip install --quiet PyMuPDF==1.26.7
+          python scripts/finalize_census_v7.py

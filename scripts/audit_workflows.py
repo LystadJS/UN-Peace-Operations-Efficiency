@@ -19,6 +19,8 @@ import sys
 
 import yaml
 
+from frozen_audit_inputs import frozen_source_path
+
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE = 'metadata/repository_audit_scope.json'
 OUT = 'metadata/workflow_audit.csv'
@@ -155,7 +157,7 @@ def outputs(root=ROOT):
         path = entry['path']
         if not path.startswith('.github/workflows/'):
             continue
-        body = (root / path).read_text()
+        body = frozen_source_path(root, path).read_text()
         if hashlib.sha256(body.encode()).hexdigest() != entry['sha256']:
             raise ValueError(f'frozen workflow changed: {path}')
         rows.append(inspect(path, body, entry['tracked']))

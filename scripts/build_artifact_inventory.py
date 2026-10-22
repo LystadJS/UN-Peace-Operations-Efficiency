@@ -10,6 +10,9 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 import re
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from frozen_audit_inputs import frozen_source_path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE = 'metadata/repository_audit_scope.json'
@@ -141,7 +144,7 @@ def build(root: Path):
     for item in sorted(scope['files'], key=lambda x: x['path']):
         path = item['path']
         require(not Path(path).is_absolute() and '..' not in Path(path).parts, f'Unsafe scope path: {path}')
-        body = (root / path).read_bytes()
+        body = frozen_source_path(root, path).read_bytes()
         require(sha(body) == item['sha256'] and len(body) == item['size_bytes'], f'Scope content changed: {path}')
         role, evidence, release, currency, currency_evidence = classify(path, memberships, pointer)
         producer, producer_status, producer_evidence = producer_for(root, path, memberships)

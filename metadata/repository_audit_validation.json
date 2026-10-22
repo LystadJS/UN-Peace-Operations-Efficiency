@@ -1,0 +1,72 @@
+{
+  "scope_id": "A01-A06-2026-10-22",
+  "baseline_commit": "32f02e5e689ad9f43e762d5985330df20dda1719",
+  "status": "PASS_structural_preservation_and_reproducibility",
+  "new_test_count": 82,
+  "existing_foundation_and_v13_tests": 37,
+  "counts": {
+    "frozen_inputs": 554,
+    "tracked_baseline": 543,
+    "foundation_additions": 11,
+    "datasets": 324,
+    "reviewed_dataset_semantics": 37,
+    "profile_only_datasets": 287,
+    "lineage_nodes": 554,
+    "static_lineage_edges": 4151,
+    "recognized_unresolved_lineage_expressions": 196,
+    "issue_source_field_mappings": 140,
+    "issue_sources": 17,
+    "workflows": 28,
+    "original_workflows": 27
+  },
+  "checks": [
+    {
+      "name": "inventory",
+      "exit_code": 0,
+      "result": "PASS: 554 frozen input files; roles={'analytical_data_unresolved': 213, 'ci_workflow': 28, 'configuration_or_unresolved': 1, 'control_record': 2, 'empty_or_design_template': 9, 'manifested_release_output': 106, 'navigation_and_status_document': 1, 'presentation_asset': 1, 'production_or_analysis_code': 60, 'report_component': 52, 'research_or_standard_document': 37, 'retained_source_capture': 24, 'test_code': 16, 'test_fixture': 4}\nCurrent authority and file-specific lineage remain explicit where not established; no files moved.\n......\n----------------------------------------------------------------------\nRan 6 tests in 0.311s\n\nOK\n"
+    },
+    {
+      "name": "datasets",
+      "exit_code": 0,
+      "result": "PASS: 324 datasets; 37 reviewed repository-semantic definitions; original sources not reauthenticated\n..........\n----------------------------------------------------------------------\nRan 10 tests in 3.372s\n\nOK\n"
+    },
+    {
+      "name": "status",
+      "exit_code": 0,
+      "result": "PASS: five-facet status schema; 0 supplied snapshot records structurally valid\nNo evidence, legal authority, operational implementation or live permission was authenticated.\n......................\n----------------------------------------------------------------------\nRan 22 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "name": "lineage",
+      "exit_code": 0,
+      "result": "PASS: frozen-scope lineage matches retained outputs\n.........\n----------------------------------------------------------------------\nRan 9 tests in 1.694s\n\nOK\n"
+    },
+    {
+      "name": "issues",
+      "exit_code": 0,
+      "result": "PASS: 140 source-field mappings across 17 source files; 0 supplied issue records\nModel only: no legacy migration, issue closure, substantive verification, or authority granted.\n..................\n----------------------------------------------------------------------\nRan 18 tests in 0.024s\n\nOK\n"
+    },
+    {
+      "name": "workflows",
+      "exit_code": 0,
+      "result": "PASS: frozen workflow audit and overlap/plan outputs reproduce exactly\n...........\n----------------------------------------------------------------------\nRan 11 tests in 0.117s\n\nOK\n"
+    },
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "result": "{\n  \"status\": \"PASS_scope_preservation_and_cross_product_coverage\",\n  \"scope_id\": \"A01-A06-2026-10-22\",\n  \"frozen_files\": 554,\n  \"tracked_inputs\": 543,\n  \"datasets\": 324,\n  \"workflows\": 28,\n  \"limitation\": \"Coverage and byte preservation only; semantic and dynamic-lineage gaps remain explicit.\"\n}\n......\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "name": "preservation",
+      "exit_code": 0,
+      "result": "PASS: nine-state dictionary; 0 supplied candidate records structurally valid\nEvidence receipt contents, institutional authority, and financial conclusions are not authenticated by this validator.\n........................\n----------------------------------------------------------------------\nRan 24 tests in 0.019s\n\nOK\n{\n  \"status\": \"PASS_research_adoption_and_affected_views_only\",\n  \"output_files\": 11,\n  \"adopted_amendments\": 2,\n  \"affected_views\": 2,\n  \"first_pass\": \"59 supported; 2 historical holds retained\",\n  \"post_amendment\": \"2 affected assertion checks passed\",\n  \"live_use\": \"BLOCKED_FOR_LIVE_USE\"\n}\ntest_affected_views_only (__main__.AdoptionTests.test_affected_views_only) ... ok\ntest_authority_separation (__main__.AdoptionTests.test_authority_separation) ... ok\ntest_collapsed_custody_action_rejected (__main__.AdoptionTests.test_collapsed_custody_action_rejected) ... ok\ntest_exact_amount_rejected (__main__.AdoptionTests.test_exact_amount_rejected) ... ok\ntest_exact_payload_identity (__main__.AdoptionTests.test_exact_payload_identity) ... ok\ntest_first_pass_not_rescored (__main__.AdoptionTests.test_first_pass_not_rescored) ... ok\ntest_inverse_returns_historical_rows (__main__.AdoptionTests.test_inverse_returns_historical_rows) ... ok\ntest_live_activation_rejected (__main__.AdoptionTests.test_live_activation_rejected) ... ok\ntest_preserved_inputs_and_outputs (__main__.AdoptionTests.test_preserved_inputs_and_outputs) ... ok\ntest_source_locator_loss_rejected (__main__.AdoptionTests.test_source_locator_loss_rejected) ... ok\ntest_strict_bound_loss_rejected (__main__.AdoptionTests.test_strict_bound_loss_rejected) ... ok\ntest_two_row_locality (__main__.AdoptionTests.test_two_row_locality) ... ok\ntest_unaffected_view_addition_rejected (__main__.AdoptionTests.test_unaffected_view_addition_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.066s\n\nOK\n"
+    }
+  ],
+  "limitations": [
+    "No actual repository-status snapshot or migrated master-issue records supplied; schema tests use synthetic records.",
+    "Dataset semantic review covers 37 artifacts; remaining 287 are profiled with unknowns.",
+    "Static lineage extraction is partial; unresolved expressions are not evidence of absent dependencies.",
+    "Workflow audit is static, not GitHub run or remote-setting verification; PyYAML 6.0.3 was available locally.",
+    "No full legacy R/Python suite rerun; existing frozen bytes, foundation gates and V13 preservation tested.",
+    "No existing tracked files edited, workflows changed, commits made, or GitHub pushes performed."
+  ]
+}

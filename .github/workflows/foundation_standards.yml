@@ -1,0 +1,39 @@
+name: Foundation standards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/foundation_standards.md'
+      - 'docs/desired_end_state.md'
+      - 'docs/decision_taxonomy.md'
+      - 'docs/candidate_advancement.md'
+      - 'docs/source_authority_standard.md'
+      - 'docs/cost_accounting_standard.md'
+      - 'docs/guardrail_standard.md'
+      - 'data/standards/**'
+      - 'scripts/validate_candidate_advancement.py'
+      - 'tests/check_candidate_advancement.py'
+      - '.github/workflows/foundation_standards.yml'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'data/standards/**'
+      - 'scripts/validate_candidate_advancement.py'
+      - 'tests/check_candidate_advancement.py'
+      - '.github/workflows/foundation_standards.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-evidence-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_candidate_advancement.py
+      - run: python tests/check_candidate_advancement.py

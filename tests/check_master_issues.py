@@ -145,6 +145,20 @@ class IssueTests(unittest.TestCase):
             s['sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
             v.check_sources(p, Path(tmp))
 
+    def test_root_json_pointer_and_empty_csv_rejection(self):
+        p = fixture()
+        s = p['issues'][0]['source_ref']
+        s.update(path='synthetic.json', format='json', id_field=None, selector='')
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'synthetic.json'
+            path.write_text(json.dumps(s['original_record']))
+            s['sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+            self.assertEqual(v.validate(p), 1)
+            v.check_sources(p, Path(tmp))
+        p = fixture()
+        p['issues'][0]['source_ref']['selector'] = ''
+        self.reject(p)
+
     def test_malformed_and_boolean_versions_fail(self):
         for payload in [None, [], {'schema_version': True, 'issues': []}]:
             self.reject(payload)

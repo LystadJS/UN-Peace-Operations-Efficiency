@@ -83,6 +83,11 @@ def validate(payload, schema=None, previous=None):
         require(iid not in ids, f'{iid}: duplicate issue ID')
         ids.add(iid)
         s = row['source_ref']
+        if s['format'] == 'csv':
+            require(present(s['id_field']) and present(s['selector']), f'{iid}: CSV source needs a nonempty ID field and selector')
+        else:
+            require(s['id_field'] is None and (s['selector'] == '' or s['selector'].startswith('/')),
+                    f'{iid}: JSON selector must be an RFC 6901 pointer, including empty root')
         key = (s['path'], s['sha256'], s['selector'])
         require(key not in source_ids, f'{iid}: same source row represented twice')
         source_ids.add(key)
@@ -143,14 +148,16 @@ def check_sources(payload, root=ROOT):
         path = root / relative
         require(hashlib.sha256(path.read_bytes()).hexdigest() == source['sha256'], f'{path}: source hash mismatch')
         if source['format'] == 'csv':
+            require(present(source['id_field']) and present(source['selector']), 'CSV source selector must be nonempty')
             with path.open(newline='') as handle:
                 matches = [r for r in csv.DictReader(handle) if r.get(source['id_field']) == source['selector']]
             require(len(matches) == 1, f'{path}: selector not unique')
             selected = matches[0]
         else:
-            require(source['id_field'] is None and source['selector'].startswith('/'), 'JSON selector must be pointer')
+            require(source['id_field'] is None and (source['selector'] == '' or source['selector'].startswith('/')), 'JSON selector must be pointer')
             selected = read(path)
-            for raw in source['selector'][1:].split('/'):
+            tokens = source['selector'][1:].split('/') if source['selector'] else []
+            for raw in tokens:
                 token = raw.replace('~1', '/').replace('~0', '~')
                 selected = selected[int(token)] if isinstance(selected, list) else selected[token]
         require(selected == source['original_record'], f'{path}: source row changed or altered snapshot')
@@ -187,7 +194,7 @@ def main():
         if args.check_sources:
             check_sources(payload)
         print(f'PASS: {counts[0]} source-field mappings across {counts[1]} source files; {n} supplied issue records')
-        print('Model only: no legacy migration, issue closure, substantive verification, or authority granted.')
+        print('Structural validation only: this validator performs no migration, issue closure, substantive verification, or authority grant.')
         return 0
     except (ValueError, OSError, TypeError, KeyError, IndexError) as error:
         print(f'FAIL: {error}', file=sys.stderr)

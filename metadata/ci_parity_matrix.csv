@@ -1,0 +1,102 @@
+old_workflow,old_job,old_step,old_name,old_run,new_group,new_step_id,disposition
+".github/workflows/validate.yml","structural-quality-gates","2","Validate baseline identifiers citations and recorded assumptions","python3 scripts/validate_crosswalk.py","baseline","baseline-2","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","3","Validate mission budget and UN80 audit supplements","python3 scripts/validate_mission_audit.py","baseline","baseline-3","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","4","Validate GA resolution and SPM source reconciliation","python3 scripts/validate_phase3.py","baseline","baseline-4","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","5","Validate SPM 2027 mission and cluster reconciliation","python3 scripts/validate_spm_2027.py","baseline","baseline-5","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","6","Validate source-linked transaction-control baselines","python3 scripts/validate_transaction_controls.py","baseline","baseline-6","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","8","Exercise R transaction matcher on clearly synthetic fixture","Rscript scripts/audit_transaction_ledger.R tests/fixtures/transaction_ledger_SYNTHETIC.csv /tmp/un-peace-operations-synthetic
+Rscript tests/check_transaction_engine.R /tmp/un-peace-operations-synthetic
+","baseline","baseline-8","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","9","Validate public decision gates and nonadditive finance map","python3 scripts/validate_public_only.py","baseline","baseline-9","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","10","Build reproducible public decision queue","Rscript scripts/render_public_decision_board.R . /tmp/peace-efficiency-public
+Rscript tests/check_public_board.R /tmp/peace-efficiency-public
+","baseline","baseline-10","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","11","Exercise conditional break-even engine using synthetic data only","Rscript scripts/evaluate_conditional_options.R tests/fixtures/scenarios_SYNTHETIC.csv /tmp/peace-efficiency-scenarios
+Rscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios
+","baseline","baseline-11","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","12","Check Phase 7 crosswalk and recommendation source status","python3 scripts/validate_phase7.py","baseline","baseline-12","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","13","Reconcile ACABQ advice against 2027 SG proposals and research ranks","python3 scripts/validate_acabq_2027.py","baseline","baseline-13","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","14","Validate nine Cluster III SG mission baselines and main ACABQ framework","python3 scripts/validate_phase9_clusterIII.py","baseline","baseline-14","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","15","Validate selected retrospective public 2025-26 source identity and reuse adjudications","python3 scripts/validate_retrospective_matches.py","baseline","baseline-15","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","16","Render and test retrospective 2025-26 research queue in base R","Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board
+Rscript tests/check_retrospective_board.R /tmp/peace-retrospective-board
+","baseline","baseline-16","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","17","Validate full official Council report and meeting indexes with scoped mission census","python3 scripts/validate_systematic_census.py","baseline","baseline-17","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","18","Test Council index HTML parsing and quarantine of anomalies","python3 tests/check_council_index_parser.py","baseline","baseline-18","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","19","Render systematic source census and test R summary outputs","Rscript scripts/render_systematic_census.R . /tmp/peace-systematic-census
+Rscript tests/check_systematic_census_board.R /tmp/peace-systematic-census
+","baseline","baseline-19","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","20","Validate scoped SG Council reports and public meeting field training coverage","python3 scripts/validate_census_2025_2026.py","baseline","baseline-20","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","21","Validate October 12 archived Council, notice and curated-event source census","python3 scripts/validate_census_v2_release.py","baseline","baseline-21","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","22","Validate 13 October mission training census extension","python3 scripts/validate_census_v3_extension.py","baseline","baseline-22","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","23","Validate source-backed 2025-26 attendance and deeper official mission archives","python3 scripts/validate_census_v4_attendance.py","baseline","baseline-23","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","24","Validate October 15 public census and canonical identity safeguards","python3 scripts/validate_census_v5.py
+python3 scripts/finalize_census_v5.py --check
+","baseline","baseline-24","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","25","Validate complete bounded cross-version identities and source reuse","python3 scripts/audit_census_v6.py --check","baseline","baseline-25","runner_exact"
+".github/workflows/validate.yml","structural-quality-gates","27","Validate V7 original transcript hashes and effective source references","python -m pip install --quiet PyMuPDF==1.26.7
+python scripts/finalize_census_v7.py
+","baseline","baseline-27","runner_command_with_install_promoted_to_setup"
+".github/workflows/v8_validate.yml","source-and-packet-guards","3","Install independent PDF parser","python -m pip install PyMuPDF==1.26.7","v8","","promoted_to_pinned_setup"
+".github/workflows/v8_validate.yml","source-and-packet-guards","4","Verify retained V8 outputs and frozen pre-V8 evidence","python scripts/build_v8_pilot.py --check","v8","v8-4","runner_exact"
+".github/workflows/v8_validate.yml","source-and-packet-guards","5","Test product-specific source contracts and deliberate corruption fixtures","python tests/check_v8_pilot.py --sources","v8","v8-5","runner_exact"
+".github/workflows/v9_checks.yml","cyprus-source-and-product-guards","3","Install pinned source parsers","python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7","v9","","promoted_to_pinned_setup"
+".github/workflows/v9_checks.yml","cyprus-source-and-product-guards","4","Verify retained Cyprus products and source-qualified claims","python scripts/v9_cyprus.py --check --test","v9","v9-4","runner_exact"
+".github/workflows/v10_protocol_ci.yml","owner-review-protocol-guards","4","Validate fixed public scope and closed live-use gates","python scripts/build_v10_protocol.py --check","v10","v10-4","runner_exact"
+".github/workflows/v10_protocol_ci.yml","owner-review-protocol-guards","5","Reject scope, attribution, savings and template corruptions","python tests/check_v10_protocol.py","v10","v10-5","runner_exact"
+".github/workflows/v10_protocol_ci.yml","owner-review-protocol-guards","6","Verify synthetic workload accounting only","Rscript tests/check_v10_workload.R","v10","v10-6","runner_exact"
+".github/workflows/v11_validate.yml","tabletop-and-closed-gates","4","Validate retained first-pass results and closed live-use gates","python scripts/rehearse_v11.py --check
+python tests/check_v11_tabletop.py
+python scripts/build_v10_protocol.py --check
+","v11","v11-4","runner_exact"
+".github/workflows/v11_validate.yml","tabletop-and-closed-gates","5","Validate synthetic accounting without live observations","Rscript tests/check_v11_tabletop.R","v11","v11-5","runner_exact"
+".github/workflows/foundation_standards.yml","candidate-evidence-gates","3","unnamed","python scripts/validate_candidate_advancement.py","foundation","foundation-3","runner_exact"
+".github/workflows/foundation_standards.yml","candidate-evidence-gates","4","unnamed","python tests/check_candidate_advancement.py","foundation","foundation-4","runner_exact"
+".github/workflows/census_v6.yml","audit","3","Install source parsers","python -m pip install pypdf==6.1.1 beautifulsoup4==4.13.4","manual-capture","","retained_manual_capture"
+".github/workflows/census_v6.yml","audit","4","Record exact baseline","git rev-parse HEAD > BASELINE_COMMIT.txt","manual-capture","","retained_manual_capture"
+".github/workflows/census_v6.yml","audit","5","Capture public original sources","python scripts/collect_census_v6_sources.py
+python scripts/recover_census_v6_sources.py
+","manual-capture","","retained_manual_capture"
+".github/workflows/v8_source_capture.yml","capture","2","Capture original pilot sources and exact repository baseline","python3 - <<'PY'
+import hashlib, json, os, shutil, subprocess, zipfile, io
+from pathlib import Path
+from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
+class SafeRedirect(HTTPRedirectHandler):
+  def redirect_request(self,req,fp,code,msg,headers,newurl):
+    nxt=super().redirect_request(req,fp,code,msg,headers,newurl)
+    if nxt is not None: nxt.remove_header('Authorization')
+    return nxt
+out=Path('data/census_v8/sources'); out.mkdir(parents=True,exist_ok=True)
+api='https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11976194560/zip'
+opener=build_opener(SafeRedirect())
+with opener.open(Request(api,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}),timeout=60) as r: payload=r.read()
+assert hashlib.sha256(payload).hexdigest()=='0ab2787b82213cb8302898f0254927f2413f2b66041142e12c48bb50e577a600'
+expected={
+  'S_2025_187.pdf':'5dff319e54f293f5288311cdd4115efdaa5a04409556a1e83ed17b7bfdefcaf9',
+  'S_2025_342.pdf':'2db6110150595b1701b3404f2a7c76555b8b1a94677c94df240b8c2a282ee0dc',
+  'S_PV_9890.pdf':'6d536f80dc692dafa029282d65b68fcbf9564fbc7ea174a3629fceb4306c9991'}
+with zipfile.ZipFile(io.BytesIO(payload)) as z:
+  for dest,sha in expected.items():
+    hits=[n for n in z.namelist() if n.endswith('/'+sha+'.pdf')]
+    assert len(hits)==1,(dest,hits)
+    body=z.read(hits[0]); assert hashlib.sha256(body).hexdigest()==sha
+    (out/dest).write_bytes(body)
+shutil.copyfile('data/census_v7/originals/S_PV.9931.pdf',out/'S_PV_9931.pdf')
+notices={
+  'N01':'https://unowas.unmissions.org/en/news/unoca-and-unowas-renew-their-joint-commitment-to-support-stabilization-and',
+  'N02':'https://unowas.unmissions.org/en/news/west-and-central-africa-unowas-and-unoca-pool-their-efforts-to-strengthen-peaceful'}
+results=[]
+for sid,url in notices.items():
+  row={'source_id':sid,'url':url}
+  try:
+    with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; UN-public-evidence-pilot/8.0)'}),timeout=25) as r:
+      body=r.read(2000001); assert r.status==200 and len(body)<2000000
+      assert 'html' in r.headers.get('Content-Type','').lower()
+    sha=hashlib.sha256(body).hexdigest(); (out/(sid+'.html')).write_bytes(body)
+    row.update(status='retrieved_pending_body_review',sha256=sha,bytes=len(body))
+  except Exception as e: row.update(status='failed',error=type(e).__name__+':'+str(e))
+  results.append(row)
+(out/'notice_fetches.json').write_text(json.dumps(results,indent=2)+'\n')
+Path('V8_CAPTURE_HEAD.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+PY
+","manual-capture","","retained_manual_capture"

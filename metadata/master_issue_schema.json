@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:unpo:master-issues:1",
+  "title": "A05 master issue envelope — prospective, no migration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "issues"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/issue"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "format",
+        "id_field",
+        "selector",
+        "legacy_id",
+        "original_record"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "format": {
+          "enum": [
+            "csv",
+            "json"
+          ]
+        },
+        "id_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "selector": {
+          "type": "string",
+          "minLength": 1
+        },
+        "legacy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_record": {
+          "type": "object"
+        }
+      }
+    },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issue_id",
+        "aliases",
+        "parent_issue_id",
+        "source_ref",
+        "issue_type",
+        "summary",
+        "severity",
+        "severity_change_receipt",
+        "resolution_state",
+        "evidence_state",
+        "request_state",
+        "response_state",
+        "gate_status",
+        "blocking_claims",
+        "minimum_evidence",
+        "closure_rule",
+        "proposed_owner_role",
+        "accepted_owner_ref",
+        "normalization_receipt",
+        "resolution_receipt",
+        "source_evidence_refs",
+        "claim"
+      ],
+      "properties": {
+        "issue_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "parent_issue_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ref": {
+          "$ref": "#/$defs/source"
+        },
+        "issue_type": {
+          "enum": [
+            "DATA_QUALITY",
+            "SOURCE_DISCREPANCY",
+            "TRANSACTION_GAP",
+            "OWNER_QUESTION",
+            "RELEASE_GATE",
+            "AMENDMENT",
+            "DATE_EXCEPTION",
+            "CONTROL_EXCLUSION",
+            "OTHER"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "CRITICAL",
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "UNKNOWN"
+          ]
+        },
+        "severity_change_receipt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolution_state": {
+          "enum": [
+            "OPEN",
+            "DOCUMENTED_CONTAINED",
+            "RESOLVED",
+            "SUPERSEDED",
+            "DEFERRED",
+            "UNKNOWN"
+          ]
+        },
+        "evidence_state": {
+          "enum": [
+            "NOT_TESTED",
+            "NOT_ESTABLISHED",
+            "EVIDENCE_REQUIRED",
+            "REPORTED",
+            "VERIFIED",
+            "UNKNOWN"
+          ]
+        },
+        "request_state": {
+          "enum": [
+            "NOT_REQUESTED",
+            "REQUESTED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "response_state": {
+          "enum": [
+            "NOT_OBTAINED",
+            "PARTIAL",
+            "OBTAINED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "gate_status": {
+          "enum": [
+            "NOT_ASSESSED",
+            "BLOCKED",
+            "SATISFIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "blocking_claims": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "minimum_evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "closure_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proposed_owner_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accepted_owner_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "normalization_receipt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolution_receipt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "claim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "classification",
+            "amount",
+            "candidate_state",
+            "financial_validation_ref"
+          ],
+          "properties": {
+            "classification": {
+              "enum": [
+                "NO_MONETARY_CLAIM",
+                "RECOVERY",
+                "COST_AVOIDANCE",
+                "CASHABLE_SAVING",
+                "REALIZED_SAVING"
+              ]
+            },
+            "amount": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "candidate_state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "financial_validation_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

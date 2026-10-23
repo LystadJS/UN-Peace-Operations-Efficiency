@@ -1,0 +1,158 @@
+{
+  "case_id": "C05",
+  "title": "UNISFA stewardship of MINUSMA-transferred and underused assets",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained governing-text extraction identifies a review/control mechanism; underlying complete operational records, accountable owner confirmation and financial validation are absent.",
+  "current_arrangement": "Retained A/RES/80/275 paragraphs 10–11 requests underutilized asset assessment and accountable management of MINUSMA transfers; paragraphs 12 and 15 protect security and fleet capability. Serial-level transfer and utilization records are absent.",
+  "testable_mechanism": "Test whether usable transferred items can meet approved demand and avoid an otherwise necessary acquisition, or whether underuse reflects condition, access, maintenance or a justified readiness reserve.",
+  "feasible_alternative_to_test": "Repair, reassign or dispose of individually assessed assets under approved authority; retain justified operational reserves and protective capacity.",
+  "safeguards": [
+    "Vehicle serviceability and emergency availability",
+    "Counter-UAS and personnel protection within mandate",
+    "Safe accountable custody and authorized disposal"
+  ],
+  "cost_perimeter_and_nonadditivity": "Assess each serial over remaining service life. Carrying value and donor write-off are accounting transfers, not cash benefits. Net any avoidable external purchase against transport, storage, repair, spares, insurance and disposal proceeds; do not overlap the translation case or general mission budget.",
+  "minimum_records": [
+    "Donor MINUSMA release and UNISFA signed receipt with serial IDs and dates",
+    "Inventory/GL postings, ownership, condition, location and remaining life",
+    "Utilization logs, downtime, maintenance invoices and reserve rationale",
+    "Approved recipient demand, canceled requisition/PO and net transfer lifecycle costs"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNISFA property management and fleet engineering",
+    "MINUSMA liquidation asset custodian role",
+    "UNISFA procurement, finance and security planners"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 10,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D09",
+        "mission_id": "UNISFA",
+        "ga_resolution": "A/RES/80/275",
+        "operative_paragraph": "10",
+        "pdf_page": "2",
+        "directive_paraphrase": "Assess underutilized assets promptly and report on increased utilization",
+        "linked_candidate_id": "C19",
+        "directive_category": "specific_asset_review_required",
+        "official_url": "https://docs.un.org/en/A/RES/80/275",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 11,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D10",
+        "mission_id": "UNISFA",
+        "ga_resolution": "A/RES/80/275",
+        "operative_paragraph": "11",
+        "pdf_page": "2-3",
+        "directive_paraphrase": "Ensure systematic and accountable management of assets transferred from MINUSMA",
+        "linked_candidate_id": "C19",
+        "directive_category": "asset_transfer_control_required",
+        "official_url": "https://docs.un.org/en/A/RES/80/275",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 12,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D11",
+        "mission_id": "UNISFA",
+        "ga_resolution": "A/RES/80/275",
+        "operative_paragraph": "12",
+        "pdf_page": "3",
+        "directive_paraphrase": "Improve counter-UAS capability within mandate while reducing security losses",
+        "linked_candidate_id": "C19",
+        "directive_category": "mandate_capability_guardrail",
+        "official_url": "https://docs.un.org/en/A/RES/80/275",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 13,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D12",
+        "mission_id": "UNISFA",
+        "ga_resolution": "A/RES/80/275",
+        "operative_paragraph": "15",
+        "pdf_page": "3",
+        "directive_paraphrase": "Provide information on measures sustaining operational vehicle fleet",
+        "linked_candidate_id": "C19",
+        "directive_category": "specific_fleet_review_required",
+        "official_url": "https://docs.un.org/en/A/RES/80/275",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_mission_reconciliation.csv",
+      "csv_line": 2,
+      "sha256": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+      "source_snapshot": {
+        "mission_id": "UNISFA",
+        "sg_proposal_symbol": "A/80/614",
+        "sg_proposal_usd_thousands": "277238.1",
+        "ga_resolution": "A/RES/80/275",
+        "ga_fifth_committee_draft": "A/C.5/80/L.34",
+        "agenda_item": "149",
+        "ga_adoption_date": "2026-06-30",
+        "ga_adoption_status": "verified_in_uploaded_operative_resolution",
+        "funding_cycle": "2026-07-01_to_2027-06-30",
+        "ga_appropriation_usd_thousands": "304418.9",
+        "adopted_minus_proposed_usd_thousands": "-1398.8",
+        "reconciliation_status": "approved_maintenance_and_appropriation_components_verified",
+        "decision_reference_url": "https://www.un.org/en/ga/fifth/80/resdec80.shtml",
+        "operative_resolution_url": "https://docs.un.org/en/A/RES/80/275",
+        "cross_mission_summary_symbol": "A/C.5/80/20",
+        "decision_guardrail": "The GA inclusive appropriation includes shared support UNLB and RSCE; adopted_minus_proposed compares GA mission-maintenance gross against SG mission-maintenance gross; no new savings inferred",
+        "ga_approved_maintenance_usd_thousands": "275839.3",
+        "ga_approved_military_police_usd_thousands": "117294.6",
+        "ga_approved_civilian_usd_thousands": "50960.9",
+        "ga_approved_operational_usd_thousands": "107583.8",
+        "ga_support_account_share_usd_thousands": "22261.1",
+        "ga_logistics_base_share_usd_thousands": "3306.2",
+        "ga_regional_service_centre_share_usd_thousands": "3012.3",
+        "ga_staff_assessment_income_usd_thousands": "4521",
+        "appropriation_resolution_paragraph": "para_19",
+        "appropriation_resolution_pdf_page": "3",
+        "note_approved_annex_page": "2",
+        "approved_resource_note_url": "https://docs.un.org/en/A/C.5/80/20",
+        "uploaded_resolution_sha256": "0df2912747cd408c9d1ff91a2dc99e16241c8b39fc09f3cd3ccda12756117b0e",
+        "maintenance_difference_pct_of_SG_request": "-0.5"
+      }
+    }
+  ],
+  "case_specific_limit": "Low observed use alone would not establish avoidable cost: mission security, seasonality and serviceability can require reserve assets.",
+  "source_review_scope": "Retained repository extractions; primary resolution bytes are not newly authenticated and no current implementation or compliance determination is made.",
+  "handling": "Use approved restricted intake, minimum necessary fields and pseudonymization; no live financial, personnel, medical or security-sensitive records in this public repository.",
+  "reopen_condition": "Confirmed accountable owner and authorized complete linked records permit a validation-ready assessment; a draft request is not authority or evidence receipt."
+}

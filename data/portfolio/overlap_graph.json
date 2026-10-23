@@ -1,0 +1,828 @@
+{
+  "schema_version": "1.0",
+  "graph_id": "I03-OVERLAP-1.0",
+  "graph_semantics": "Pool co-membership is potential overlap, not demonstrated duplication or removable cost.",
+  "producer": "scripts/build_overlap_graph.py",
+  "source_sha256": {
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3"
+  },
+  "producer_sha256": "e209698d05f232f50181c5d38cf50494949a375c44ebec7eb6b310c52c611321",
+  "nodes": [
+    {
+      "node_id": "CASE01",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "RSCE client charging, retained local work and workforce",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C01"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C16",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C16"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P003"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P006"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "RSCE"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE02",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNIFIL–UNSCOL asset transfer and avoided procurement",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C02"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C12",
+          "source_path": "data/candidate_validation.csv"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C07",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C12"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P001"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "UNIFIL_UNSCOL"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE03",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "BINUH–UNSOH aviation and broader support",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C03"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C07",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P002"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "BINUH_UNSOH"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE04",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNISFA translation routing",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C04"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C19",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C19"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P004"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE05",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNISFA stewardship of transferred MINUSMA assets",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C05"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C19",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C19"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P005"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE06",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNSOS contractor fuel loss recovery",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C06"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C08",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C08"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P007"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE07",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "MONUSCO medical-insurance integrity",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C07"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C07",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P008"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE08",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNMISS approved post removals and output continuity",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C08"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C15",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C15"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P009"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE09",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "Training administration and procurement",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C09"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C04",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C04"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P014"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U05"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE10",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "DPPA–DPO regional political-operational functions",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C10"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C01",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C01"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P013"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U01"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE11",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNOWAS–UNOCA factual support production",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C11"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C09",
+          "source_path": "data/candidate_validation.csv"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C02",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C09"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C02"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P011"
+        },
+        {
+          "path": "data/census_v8/pilot_summary.json",
+          "key": null,
+          "value": null
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE12",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "Cyprus factual support production",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C12"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C02",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C02"
+        },
+        {
+          "path": "data/census_v9/pilot_summary.json",
+          "key": null,
+          "value": null
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE13",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "UNIFIL transition residual costs and liabilities",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C13"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C12",
+          "source_path": "data/candidate_validation.csv"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C07",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C12"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P001"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    },
+    {
+      "node_id": "CASE14",
+      "namespace": "NORMALIZED_INTERVENTION",
+      "title": "Existing joint structures and retained work",
+      "aliases": [
+        {
+          "namespace": "ROADMAP_CASE",
+          "value": "C14"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C16",
+          "source_path": "data/candidate_validation.csv"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C03",
+          "source_path": "data/candidate_validation.csv"
+        },
+        {
+          "namespace": "LEGACY_CANDIDATE",
+          "value": "C18",
+          "source_path": "data/candidate_validation.csv"
+        }
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C16"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C03"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C18"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P010"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U02"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U03"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U09"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U10"
+        }
+      ],
+      "candidate_state": "SCREENING_CANDIDATE",
+      "verified_benefit": null
+    }
+  ],
+  "hyperedges": [
+    {
+      "hyperedge_id": "POOL:RSCE_COST_BASE",
+      "pool_id": "RSCE_COST_BASE",
+      "member_node_ids": [
+        "CASE01"
+      ],
+      "boundary": "RSCE external service costs and matching internal charge pairs; internal AP/AR eliminates once",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:HQ_SHARED_SUPPORT",
+      "pool_id": "HQ_SHARED_SUPPORT",
+      "member_node_ids": [
+        "CASE01",
+        "CASE09",
+        "CASE10",
+        "CASE14"
+      ],
+      "boundary": "Shared HQ posts, chargebacks and administration potentially claimed by several interventions",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:LEBANON_TRANSITION",
+      "pool_id": "LEBANON_TRANSITION",
+      "member_node_ids": [
+        "CASE02",
+        "CASE13"
+      ],
+      "boundary": "UNIFIL–UNSCOL asset acquisition alternatives, transfer costs and retained transition liabilities",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:HAITI_SUPPORT",
+      "pool_id": "HAITI_SUPPORT",
+      "member_node_ids": [
+        "CASE03"
+      ],
+      "boundary": "BINUH–UNSOH aviation and nonaviation services; broader reimbursement contains subsets",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:UNISFA_LANGUAGE",
+      "pool_id": "UNISFA_LANGUAGE",
+      "member_node_ids": [
+        "CASE04"
+      ],
+      "boundary": "Identified translation service events, contracts and retained observer coverage",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:UNISFA_ASSETS",
+      "pool_id": "UNISFA_ASSETS",
+      "member_node_ids": [
+        "CASE05"
+      ],
+      "boundary": "Tagged transferred assets, procurement alternatives, maintenance and disposal costs",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:UNSOS_RECOVERY",
+      "pool_id": "UNSOS_RECOVERY",
+      "member_node_ids": [
+        "CASE06"
+      ],
+      "boundary": "Contractor fuel claim principal, receipts, enforcement costs and reversals",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:MONUSCO_CLAIMS",
+      "pool_id": "MONUSCO_CLAIMS",
+      "member_node_ids": [
+        "CASE07"
+      ],
+      "boundary": "Medical claim integrity, lawful recoveries and retained medical service costs",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:UNMISS_POST_BASELINE",
+      "pool_id": "UNMISS_POST_BASELINE",
+      "member_node_ids": [
+        "CASE08"
+      ],
+      "boundary": "Unique approved abolished posts, payroll effects, replacement work and transition liabilities",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:TRAINING_DELIVERY",
+      "pool_id": "TRAINING_DELIVERY",
+      "member_node_ids": [
+        "CASE09",
+        "CASE14"
+      ],
+      "boundary": "Course/cohort specific contracts, trainers, attendance, administration and qualifications",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:REGIONAL_WORKFLOW",
+      "pool_id": "REGIONAL_WORKFLOW",
+      "member_node_ids": [
+        "CASE10",
+        "CASE11",
+        "CASE14"
+      ],
+      "boundary": "Joint regional task, product and staff-time cost objects; overlap requires record reconciliation",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "hyperedge_id": "POOL:REPORT_PRODUCTION",
+      "pool_id": "REPORT_PRODUCTION",
+      "member_node_ids": [
+        "CASE11",
+        "CASE12"
+      ],
+      "boundary": "Source preparation events and staff time reused across distinct mandated final outputs",
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "evidence_class": "POTENTIAL_OVERLAP_REQUIRES_COST_OBJECT_RECONCILIATION",
+      "actual_duplicate_cost_proven": false,
+      "verified_benefit": null,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    }
+  ],
+  "pair_projection": [
+    {
+      "node_ids": [
+        "CASE01",
+        "CASE09"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE01",
+        "CASE10"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE01",
+        "CASE14"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE02",
+        "CASE13"
+      ],
+      "pool_ids": [
+        "LEBANON_TRANSITION"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE09",
+        "CASE10"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE09",
+        "CASE14"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT",
+        "TRAINING_DELIVERY"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE10",
+        "CASE11"
+      ],
+      "pool_ids": [
+        "REGIONAL_WORKFLOW"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE10",
+        "CASE14"
+      ],
+      "pool_ids": [
+        "HQ_SHARED_SUPPORT",
+        "REGIONAL_WORKFLOW"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE11",
+        "CASE12"
+      ],
+      "pool_ids": [
+        "REPORT_PRODUCTION"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    },
+    {
+      "node_ids": [
+        "CASE11",
+        "CASE14"
+      ],
+      "pool_ids": [
+        "REGIONAL_WORKFLOW"
+      ],
+      "interpretation": "DERIVED_CO_MEMBERSHIP_NOT_INDEPENDENT_EVIDENCE"
+    }
+  ],
+  "aggregation_allowed": false,
+  "verified_benefit_total": null,
+  "limitations": [
+    "Singleton pools are preserved, not discarded as isolated edges.",
+    "Pair projection does not replace the original pool hyperedges.",
+    "Roadmap C aliases and legacy C candidate aliases are separate namespaces; join only explicit source references.",
+    "No workload, cost-object, authority or financial adjudication is supplied by this graph."
+  ]
+}

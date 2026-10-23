@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "ledger_id": "I04-VERIFIED-BENEFITS-1",
+  "as_of": "2026-10-23",
+  "status": "EMPTY_NO_VERIFIED_BENEFITS",
+  "portfolio_completion": "NOT_OPERATIONALLY_ADJUDICATED",
+  "entries": [],
+  "reconciliation": {
+    "class_totals_usd": {
+      "CAPACITY_GAIN": null,
+      "CASHABLE_SAVING": null,
+      "CONTROL_IMPROVEMENT": null,
+      "COST_AVOIDANCE": null,
+      "NET_COST_INCREASE": null,
+      "NO_FINANCIAL_CLAIM": null,
+      "RECOVERY": null
+    },
+    "headline_realized_savings_usd": null,
+    "cross_class_total": null,
+    "cross_class_total_status": "PROHIBITED",
+    "recognized_records": 0,
+    "coverage_status": "NOT_ESTIMATED"
+  },
+  "source_basis": [
+    "docs/decision_taxonomy.md",
+    "docs/cost_accounting_standard.md",
+    "docs/candidate_advancement.md"
+  ],
+  "recognition_rules": [
+    "Savings requires actual FINANCIALLY_VALIDATED history plus a substantive financial-validation receipt; later operational states cannot bypass it.",
+    "Headline savings includes only realized cashable savings with implementation, observed financial effect and preserved operational guardrails.",
+    "Recovery, avoidance, capacity and validated opportunities remain separate classes; cross-class totals are prohibited.",
+    "The same cost-object and period cannot recur in another class or scenario. Split into evidenced disjoint cost objects before recognition.",
+    "Eliminate matched internal charges and credits once, retaining provider external cost and source residual cost.",
+    "Exclude already embedded proposals, approved baseline reforms and prior closures from newly attributable project benefits.",
+    "Unknown totals are null, not a measured zero; empty recognized coverage is not zero waste or a completed portfolio.",
+    "Restricted evidence references must point to approved storage; no underlying restricted records in public Git."
+  ],
+  "totals_reconciliation_receipt": {
+    "task_id": "I05",
+    "eligible_entry_ids": [],
+    "excluded_unverified_cases": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "included_internal_charge_entries": [],
+    "source_resource_totals_added_to_benefits": false,
+    "unresolved_overlap_amount": null,
+    "unresolved_overlap_status": "NOT_ESTIMATED",
+    "perimeter": "NEW_PROJECT_VERIFIED_EFFECTS_ONLY",
+    "coverage": "NO_OPERATIONAL_ADJUDICATIONS_OR_FINANCIALLY_VALIDATED_FINDINGS",
+    "limitations": "Arithmetic validator verifies structure and evidence-reference presence only; it cannot authenticate restricted records or replace independent substantive review."
+  }
+}

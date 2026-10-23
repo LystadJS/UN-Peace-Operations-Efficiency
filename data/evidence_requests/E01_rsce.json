@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E01",
+  "case_ids": [
+    "C01"
+  ],
+  "purpose": "RSCE service charges, retained work and service outcomes",
+  "proposed_custodian_roles": [
+    "RSCE finance/service owner",
+    "client mission finance and service owner"
+  ],
+  "tables": [
+    {
+      "table_id": "service_charges",
+      "grain": "One charge, credit, reversal or settlement line; preserve linked lines without netting",
+      "keys": [
+        "line_id"
+      ],
+      "fields": [
+        {
+          "name": "line_id",
+          "type": "string",
+          "purpose": "Stable pseudonymous record identity",
+          "required": true
+        },
+        {
+          "name": "service_case_id",
+          "type": "string",
+          "purpose": "Link charge to delivered service",
+          "required": true
+        },
+        {
+          "name": "payer_cost_object",
+          "type": "string",
+          "purpose": "Locate source cost without identifying a person",
+          "required": true
+        },
+        {
+          "name": "provider_cost_object",
+          "type": "string",
+          "purpose": "Identify receiving cost object",
+          "required": true
+        },
+        {
+          "name": "service_category",
+          "type": "string",
+          "purpose": "Compare like services",
+          "required": true
+        },
+        {
+          "name": "service_date",
+          "type": "date",
+          "purpose": "Align workload period",
+          "required": true
+        },
+        {
+          "name": "posting_date",
+          "type": "date",
+          "purpose": "Identify timing differences",
+          "required": true
+        },
+        {
+          "name": "amount",
+          "type": "decimal",
+          "purpose": "Reconcile signed gross and net charges",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Prevent mixed-unit aggregation",
+          "required": true
+        },
+        {
+          "name": "entry_type",
+          "type": "string",
+          "purpose": "Distinguish charge credit reversal settlement",
+          "required": true
+        },
+        {
+          "name": "linked_line_id",
+          "type": "string",
+          "purpose": "Trace corrections and settlements",
+          "required": true
+        },
+        {
+          "name": "external_cost_reference",
+          "type": "string",
+          "purpose": "Trace supplier expenditure in approved storage",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "local_retained_work",
+      "grain": "One service-category/entity/reporting-period workload and cost observation",
+      "keys": [
+        "observation_id"
+      ],
+      "fields": [
+        {
+          "name": "observation_id",
+          "type": "string",
+          "purpose": "Stable observation identity",
+          "required": true
+        },
+        {
+          "name": "entity_cost_object",
+          "type": "string",
+          "purpose": "Locate retained or receiving work",
+          "required": true
+        },
+        {
+          "name": "service_category",
+          "type": "string",
+          "purpose": "Match charge service",
+          "required": true
+        },
+        {
+          "name": "period_start",
+          "type": "date",
+          "purpose": "Define baseline/intervention window",
+          "required": true
+        },
+        {
+          "name": "period_end",
+          "type": "date",
+          "purpose": "Define baseline/intervention window",
+          "required": true
+        },
+        {
+          "name": "completed_units",
+          "type": "decimal",
+          "purpose": "Measure output denominator",
+          "required": true
+        },
+        {
+          "name": "paid_hours",
+          "type": "decimal",
+          "purpose": "Measure retained and transferred capacity",
+          "required": true
+        },
+        {
+          "name": "external_cost",
+          "type": "decimal",
+          "purpose": "Include contractor and supplier expense",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify financial unit",
+          "required": true
+        },
+        {
+          "name": "service_level_result",
+          "type": "string",
+          "purpose": "Assess quality and timeliness",
+          "required": true
+        },
+        {
+          "name": "exception_status",
+          "type": "string",
+          "purpose": "Retain missing and failed service observations",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "Preserve mandate, safety, readiness, quality, timeliness and transition controls; no operational intervention authorized."
+  ]
+}

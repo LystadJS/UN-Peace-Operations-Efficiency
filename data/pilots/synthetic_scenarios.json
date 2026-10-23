@@ -1,0 +1,3278 @@
+{
+  "schema_version": 1,
+  "design_task": "E13",
+  "classification": "SYNTHETIC_ONLY",
+  "actual_un_records": false,
+  "actual_owner_approvals": false,
+  "live_trial": false,
+  "description": "All identifiers, amounts, equal-service assertions, review receipts, weights and approvals in scenarios are fictional software inputs. None estimates a real UN intervention.",
+  "analysis_templates": {
+    "dossier": "data/portfolio/case_dossier_template.json",
+    "metrics": "data/portfolio/operational_metrics.json",
+    "comparability": "data/portfolio/comparability_rules.json",
+    "cost_model": "data/portfolio/cost_model.json",
+    "counterfactual": "data/portfolio/counterfactual_ladder.json",
+    "prioritization": "data/portfolio/prioritization_model.json",
+    "sensitivity": "data/portfolio/prioritization_sensitivity.json"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "SYN-POSITIVE",
+      "description": "Toy positive external-cost difference; no savings finding.",
+      "input": {
+        "case_id": "SYN-POSITIVE",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "5",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-ADVERSE",
+      "description": "Receiving, transition and residual costs can produce a net adverse outcome.",
+      "input": {
+        "case_id": "SYN-ADVERSE",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "140",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "-95",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-UNKNOWN",
+      "description": "Unknown source cost is not zero.",
+      "input": {
+        "case_id": "SYN-UNKNOWN",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": null,
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null,
+              "missing_reason": "Fictional missing evidence"
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "NOT_COMPUTABLE",
+        "net_cost_difference": null,
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-TRANSFER",
+      "description": "Large internal payment changes do not create external system benefit.",
+      "input": {
+        "case_id": "SYN-TRANSFER",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "4000000",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-4000000",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "5",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-MISSING-RECEIVER",
+      "description": "A transfer does not make receiving external cost free.",
+      "input": {
+        "case_id": "SYN-MISSING-RECEIVER",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "NOT_COMPUTABLE",
+        "net_cost_difference": null,
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-GUARD-FAIL",
+      "description": "Favorable toy cost difference cannot override safety failure.",
+      "input": {
+        "case_id": "SYN-GUARD-FAIL",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "FAIL",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "5",
+        "guard_status": "BLOCKED",
+        "priority_status": "BLOCKED"
+      }
+    },
+    {
+      "scenario_id": "SYN-PERIOD-MISMATCH",
+      "description": "Unbridged calendar/fiscal period differences block subtraction.",
+      "input": {
+        "case_id": "SYN-PERIOD-MISMATCH",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2027-06-30",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "NOT_COMPUTABLE",
+        "net_cost_difference": null,
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-ZERO",
+      "description": "Explicit evidenced toy zero difference remains zero without becoming savings.",
+      "input": {
+        "case_id": "SYN-ZERO",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "45",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "0",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-UNMATCHED-TRANSFER",
+      "description": "Unmatched internal credit blocks consolidated cost comparison.",
+      "input": {
+        "case_id": "SYN-UNMATCHED-TRANSFER",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-39",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "NOT_COMPUTABLE",
+        "net_cost_difference": null,
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      }
+    },
+    {
+      "scenario_id": "SYN-GUARD-UNKNOWN",
+      "description": "Unknown critical readiness does not pass by default.",
+      "input": {
+        "case_id": "SYN-GUARD-UNKNOWN",
+        "evidence_mode": "SYNTHETIC",
+        "baseline": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "100",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-30",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "intervention_scenario": {
+          "period_start": "2026-01-01",
+          "period_end": "2026-12-31",
+          "currency": "USD",
+          "unit": "currency_units",
+          "financial_status": "HYPOTHETICAL_COST",
+          "price_basis": "constant-2026",
+          "cost_view": "RESOURCE_ACCRUAL",
+          "service_definition": "same fictional service",
+          "required_output": "same fictional specification",
+          "entity_scope": [
+            "SOURCE",
+            "RECEIVER"
+          ],
+          "adjustment_receipts": {
+            "demand": "SYNTHETIC_REVIEW",
+            "security_conditions": "SYNTHETIC_REVIEW",
+            "geographic_coverage": "SYNTHETIC_REVIEW",
+            "language_coverage": "SYNTHETIC_REVIEW",
+            "quality": "SYNTHETIC_REVIEW",
+            "surge_reserve": "SYNTHETIC_REVIEW",
+            "mandate_change": "SYNTHETIC_REVIEW",
+            "vacancies": "SYNTHETIC_REVIEW",
+            "inflation": "SYNTHETIC_REVIEW",
+            "exchange_rates": "SYNTHETIC_REVIEW"
+          },
+          "coverage": {
+            "all_affected_entities": true,
+            "all_cost_components": true,
+            "receipt": "SYNTHETIC_COVERAGE",
+            "omitted_components": []
+          },
+          "costs": [
+            {
+              "record_id": "source",
+              "cost_object_id": "source",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "provider",
+              "cost_object_id": "provider",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RECEIVING_PROVIDER",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "50",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "transition",
+              "cost_object_id": "transition",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "TRANSITION_IMPLEMENTATION",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "20",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "ongoing",
+              "cost_object_id": "ongoing",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "ONGOING_COMPLIANCE",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "10",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "liability",
+              "cost_object_id": "liability",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RESIDUAL_LIABILITY",
+              "economic_boundary": "EXTERNAL_COST",
+              "amount": "5",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": null,
+              "transfer_id": null
+            },
+            {
+              "record_id": "payer",
+              "cost_object_id": "payer",
+              "component_id": "bounded-component",
+              "entity_id": "SOURCE",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_CHARGE",
+              "amount": "40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            },
+            {
+              "record_id": "recovery",
+              "cost_object_id": "recovery",
+              "component_id": "bounded-component",
+              "entity_id": "RECEIVER",
+              "role": "RETAINED_SOURCE",
+              "economic_boundary": "INTERNAL_RECOVERY",
+              "amount": "-40",
+              "source_receipt": "SYNTHETIC_ONLY",
+              "included_in": null,
+              "internal_pair_id": "transfer",
+              "transfer_id": "SYNTHETIC_TRANSFER"
+            }
+          ]
+        },
+        "counterfactual": {
+          "frozen": true,
+          "baseline_version": "SYNTHETIC_1",
+          "receipt": "SYNTHETIC_BASELINE",
+          "feasible": true,
+          "confounder_review_receipt": "SYNTHETIC_CONFOUNDERS",
+          "prebooked_included": true,
+          "prebooked_receipt": "SYNTHETIC_PREBOOKED"
+        },
+        "guards": [
+          {
+            "dimension": "mandate",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "safety",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "readiness",
+            "status": "UNKNOWN",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "quality",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "timeliness",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "transition",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "work_transfer",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          },
+          {
+            "dimension": "evidence_authority",
+            "status": "PASS",
+            "receipt": "SYNTHETIC_EVIDENCE",
+            "threshold_receipt": "SYNTHETIC_PROSPECTIVE_LIMIT",
+            "owner_approval_receipt": "SYNTHETIC_ONLY_NO_AUTHORITY"
+          }
+        ],
+        "priority_inputs": {
+          "criteria": {
+            "evidence_readiness": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "operational_importance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "reform_relevance": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "feasibility": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            },
+            "measurement_value": {
+              "value": "0.5",
+              "receipt": "SYNTHETIC_RUBRIC"
+            }
+          },
+          "weights": {
+            "evidence_readiness": "0.2",
+            "operational_importance": "0.2",
+            "reform_relevance": "0.2",
+            "feasibility": "0.2",
+            "measurement_value": "0.2"
+          },
+          "weight_receipt": "SYNTHETIC_ILLUSTRATIVE_ONLY"
+        },
+        "benefit_effects": []
+      },
+      "expected": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "net_cost_difference": "5",
+        "guard_status": "UNKNOWN",
+        "priority_status": "UNSCORABLE"
+      }
+    }
+  ]
+}

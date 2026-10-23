@@ -1,0 +1,1071 @@
+{
+  "case_id": "C12",
+  "title": "Cyprus factual support across distinct reporting obligations",
+  "evidence_cutoff": "2026-10-15",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained sources support a bounded validation question; complete operational/financial records, accountable owner confirmation and applicable authority are absent.",
+  "current_arrangement": "The retained Cyprus research compares UNFICYP and good-offices factual components while preserving distinct mandates, products, annex attribution and reporting cycles. SP09P1 is blocked for live use.",
+  "testable_mechanism": "Determine with both owners whether repeated preparation of a common factual component creates a specific controllable burden or qualification defect beyond the current jointly supported workflow.",
+  "feasible_alternative_to_test": "Retain current shared support where controls are equivalent; otherwise test one source-qualified component/update control with separate product acceptance and substantive clearance.",
+  "safeguards": [
+    "Keep UNFICYP and good-offices mandates, products and ownership distinct",
+    "Preserve cycle-specific implementation stages, annex attribution, units, periods and budget denominators",
+    "Keep live-use gates closed and course watch paused; no staff or clearance data collection without both owners and handling approval"
+  ],
+  "cost_perimeter_and_nonadditivity": "Eight selected reports across four cycles, fifteen components and forty-one observations are research scope, not workload or savings. Include all authoring/review/update/rework, setup and maintenance costs; benefits overlap C11 only through shared methods, not additive generic time assumptions.",
+  "minimum_records": [
+    "Both owners\u2019 current workflow and evidence that the proposed control adds rather than duplicates functionality",
+    "Approved case-specific shadow scope, selected obligations/components and expected-task denominator",
+    "Prospective source/version/update acknowledgements and product-specific qualification/clearance results",
+    "Actual authorized active/rework/wait time and full added-control costs against the current supported workflow"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNFICYP and Cyprus good-offices substantive/reporting owners",
+    "Both product source and clearance custodians",
+    "Independent protocol/quality reviewer"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 2,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GW01",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Existing-process equivalence",
+        "confirmed_basis": "Public products demonstrate joint activity and referrals; the internal source-to-clearance workflow has not been reviewed.",
+        "proposed_additional_control": "Use an existing record system only where a particular factual-support control is missing.",
+        "unresolved_question": "Would the proposed record replace or improve a named step, or simply duplicate a control already operating?",
+        "minimum_evidence": "One owner-approved walk-through per case of a current example: source intake, shared record, update, review and product clearance; a redacted process sketch is sufficient.",
+        "evidence_holder_role_not_assignment": "Existing substantive/reporting owners on both sides of each case.",
+        "closure_rule": "Document equivalent functionality and close the added proposal, or identify a specific missing step and its consequences; silence is not consent.",
+        "consequence_while_open": "Do not claim incremental value or proceed to live shadow without a case-specific gap finding.",
+        "observation_ids": "V8:O17;V8:O19;V9:CY003;V9:CY005",
+        "source_paths": "docs/v8_consolidation_brief.md;docs/v9_consolidation_brief.md;docs/v10_owner_decision_sheet.md",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 7,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "G09-01",
+        "case_ids": "SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Existing joint committee support",
+        "confirmed_basis": "Good-offices auspices, UNFICYP support and a co-facilitated youth-committee meeting are existing arrangements; later reports refer across streams.",
+        "proposed_additional_control": "Add only missing role, event-identity or source-reference fields within existing support arrangements.",
+        "unresolved_question": "Do current committee and reporting records already supply the proposed linkage and role distinctions?",
+        "minimum_evidence": "One sanitized committee-to-report example and the existing custodian arrangement; no participant-level identities required.",
+        "evidence_holder_role_not_assignment": "Good-offices and UNFICYP reporting owners and relevant existing committee custodians.",
+        "closure_rule": "Retain equivalent joint records or identify a specific absent linkage; do not create another coordinating unit.",
+        "consequence_while_open": "No newly achieved coordination, merged participant lists or duplicated committee event claim.",
+        "observation_ids": "V9:CY003;V9:CY004;V9:CY005;V9:CY027;V9:CY032;V9:CY033",
+        "source_paths": "data/census_v13/research_reference.json",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 8,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "G09-02",
+        "case_ids": "SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Green Line trade export comparator",
+        "confirmed_basis": "Both July 2025 reports print EUR15.2 million trade but different export comparators, EUR4.12 billion and EUR2.14 billion, with nonidentical descriptions.",
+        "proposed_additional_control": "Keep competing values, definitions, periods and vintages attributed; block an unqualified common ratio.",
+        "unresolved_question": "Are the comparators different statistical perimeters/vintages or a correctable source error?",
+        "minimum_evidence": "Underlying official statistical table/version and definition used for each report, or a documented custodian reconciliation; no invented denominator.",
+        "evidence_holder_role_not_assignment": "Relevant statistical/source custodian, routed through existing reporting owners.",
+        "closure_rule": "Record a supported reconciliation in a separately authorized research amendment, or retain the unresolved qualified pair. Do not overwrite reference 13.0 here.",
+        "consequence_while_open": "Blocks a harmonized trade/export ratio, not every other pilot component or the owner-review discussion.",
+        "observation_ids": "V9:CY009;V9:CY010",
+        "source_paths": "data/census_v13/research_reference.json",
+        "status": "OPEN_SOURCE_DEFINITION_UNRESOLVED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 9,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "G09-03",
+        "case_ids": "SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Implementation stage and changing scope",
+        "confirmed_basis": "Crossing enlargement moves from planned to commenced to reported completion; additional crossings and the expanded mixed-stage cemetery portfolio remain separate scopes.",
+        "proposed_additional_control": "Use stable project IDs with stage, scope version, observation cutoff and separately dated completion evidence.",
+        "unresolved_question": "Can existing project/reporting records already represent those changes without false completion or aggregation?",
+        "minimum_evidence": "Sanitized lifecycle histories from the relevant existing custodian for one crossing and one cemetery scope; actual completion evidence only when an exact date is required.",
+        "evidence_holder_role_not_assignment": "Existing good-offices/UNFICYP reporting custodians and relevant project implementer, including UNDP where the reference identifies that role.",
+        "closure_rule": "Retain equivalent records or specify a missing scope/stage field; distinguish a completion-marking event from the physical completion day.",
+        "consequence_while_open": "No claim of new crossing openings, 70 completed sites or a measured operational failure.",
+        "observation_ids": "V9:CY006;V9:CY007;V9:CY020;V9:CY024;V9:CY025;V9:CY030;V9:CY036;V9:CY037;V9:CY038",
+        "source_paths": "data/census_v13/research_reference.json",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 10,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "G09-04",
+        "case_ids": "SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Action, unit, party and operational attribution",
+        "confirmed_basis": "Reference 13.0 separates 202 information-exchange instances from the exchange of three individuals in custody; leaders submissions and buffer-zone operational reporting retain separate attribution.",
+        "proposed_additional_control": "Preserve action plus number/unit and authorship; distinguish shared fact, attributed submission and owner-only operational detail.",
+        "unresolved_question": "Do local controls already preserve these distinctions, and is there evidence of a specific gap beyond errors found in our research summary?",
+        "minimum_evidence": "One sanitized attributed support record and the local authorship/qualification check; no names of persons in custody, patrol details or confidential political contacts.",
+        "evidence_holder_role_not_assignment": "Existing substantive owners and locally approved factual/review custodians.",
+        "closure_rule": "Verify equivalent controls or define a missing action/attribution check; the AM11-01 research repair is not evidence of an error by UN staff.",
+        "consequence_while_open": "No combined 205-item measure, Secretariat endorsement of party text, or substitution for operational activity.",
+        "observation_ids": "V9:CY014;V9:CY018;V9:CY019;V9:CY028;V9:CY034;V9:CY035",
+        "source_paths": "data/census_v13/research_reference.json;data/census_v13/adoption_record.json",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 11,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "G09-05",
+        "case_ids": "SP09P1",
+        "decision_stage": "OWNER_REVIEW",
+        "topic": "Utilization denominator and lifetime bound",
+        "confirmed_basis": "Reference 13.0 preserves more than EUR1.7 million since 2019 separately from approximately 67% of EUR1.5 million allocated for 2023-2026.",
+        "proposed_additional_control": "Carry the comparator, phase, allocation, period and observation date together; prohibit cross-perimeter efficiency or savings calculations.",
+        "unresolved_question": "Does the existing financial/reporting interface already protect these qualifiers and prevent invalid trend comparisons?",
+        "minimum_evidence": "A sanitized definition/version record for the stated allocation and lifetime measure; no ledger download or personnel cost data needed for initial review.",
+        "evidence_holder_role_not_assignment": "Existing programme/financial source custodian and the good-offices reporting owner.",
+        "closure_rule": "Confirm the existing control or identify the missing qualifier; no amount is re-estimated and no amendment is pending for the adopted AM11-02 repair.",
+        "consequence_while_open": "No utilization-efficiency trend, exact lifetime amount or avoidable-cost pool inferred.",
+        "observation_ids": "V9:CY021;V9:CY031;V9:CY041",
+        "source_paths": "data/census_v13/research_reference.json;data/census_v13/adoption_record.json",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 12,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GA01",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "BEFORE_ANY_LIVE_SHADOW",
+        "topic": "Case-specific authority and task ownership",
+        "confirmed_basis": "V10 approval fields remain incomplete; selecting the research reference did not grant institutional authority.",
+        "proposed_additional_control": "Use the existing decision sheet and local activation record; no new approval mechanism.",
+        "unresolved_question": "Have both owners accepted the specific gap, scope, roles, product deadlines and normal-process fallback?",
+        "minimum_evidence": "Case-local authorized decisions and a protected receipt; keep signatures, identities and contacts out of public GitHub.",
+        "evidence_holder_role_not_assignment": "Authorized representatives of both existing workflows in each case.",
+        "closure_rule": "Complete authentic local authorization and all V10 requirements under a separate instruction; one case cannot authorize the other.",
+        "consequence_while_open": "Both live gates stay closed. This package records no approval or activation.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;docs/v10_owner_decision_sheet.md;data/census_v10/activation_status.json",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 13,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GA02",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "BEFORE_ANY_LIVE_SHADOW",
+        "topic": "Approved information handling",
+        "confirmed_basis": "Public research storage is not approved storage for internal drafts, live staff logs or incident narratives.",
+        "proposed_additional_control": "Use existing approved storage, minimum necessary data and locally controlled pseudonymous records.",
+        "unresolved_question": "What information, access, retention, staff notice and incident route are authorized for this limited evaluation?",
+        "minimum_evidence": "Local records/security determination and approved access/retention arrangements, referenced by non-sensitive receipt only.",
+        "evidence_holder_role_not_assignment": "Relevant local records, security/privacy authority and measurement custodian.",
+        "closure_rule": "Document and authenticate the permitted boundary before collection; hashes do not make private content automatically publishable.",
+        "consequence_while_open": "No live input collection or external transfer; no upload of sensitive evidence to this repository.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;docs/v10_owner_decision_sheet.md",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 14,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GA03",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "BEFORE_ANY_LIVE_SHADOW",
+        "topic": "Prospective scope and comparable quality review",
+        "confirmed_basis": "The 61 historical obligations are fixed research items; future live claims and product windows are not yet enrolled.",
+        "proposed_additional_control": "Predeclare eligible families, matched input waves, language/tasks, exposure and reviewer rubric under V10.",
+        "unresolved_question": "Can each method receive comparable inputs and be judged on the same factual-support duties without carryover or hidden dependence?",
+        "minimum_evidence": "Approved future product/claim manifest, source-access timestamps, declared reviewer exposure and both-method task boundary; include failures and pending items.",
+        "evidence_holder_role_not_assignment": "Both product owners and a locally nominated reviewer/measurement custodian.",
+        "closure_rule": "Freeze before outcomes; record matched update waves. If parity is not demonstrable, withhold the comparison and retain normal production.",
+        "consequence_while_open": "No full-report versus short-fact-sheet comparison; no independent-review or causal-effect claim.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;docs/v10_owner_decision_sheet.md;data/census_v10/product_obligations.csv",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 15,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GA04",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "BEFORE_ANY_LIVE_SHADOW",
+        "topic": "Effort limits, capture and added burden",
+        "confirmed_basis": "No live time or update latency has been measured; V10 sets accounting rules but leaves numerical ceilings and buffers unset.",
+        "proposed_additional_control": "Use existing empty instruments to distinguish normal, shadow, common, setup and evaluation effort; retain all shifted and failed work.",
+        "unresolved_question": "What additional burden is permissible, and can comparable task time be captured without estimates or missing work?",
+        "minimum_evidence": "Owner-set person-minute ceiling and deadline buffer, expected-task roster, capture procedure and escalation/stop route before any live measurement.",
+        "evidence_holder_role_not_assignment": "Both workflow owners and local workload custodian.",
+        "closure_rule": "Set limits prospectively. Missing or estimated time makes complete-process contrasts ineligible; material quality failures preclude advancement despite speed.",
+        "consequence_while_open": "No live collection without limits; any later shadow contrast remains descriptive, not labor saved.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;docs/v10_owner_decision_sheet.md;data/census_v8/measurement_plan.csv",
+        "status": "OPEN_OWNER_EVIDENCE_REQUIRED",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 16,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GF01",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "AFTER_SHADOW_SEPARATE_AUTHORIZATION",
+        "topic": "Actual substitution",
+        "confirmed_basis": "Retrospective source reuse and a future parallel shadow do not establish that an existing work step disappears.",
+        "proposed_additional_control": "Only later, test replacement of one named step under separately authorized conditions.",
+        "unresolved_question": "Can the step be removed without reducing output quality or transferring concealed work to another team?",
+        "minimum_evidence": "Separate approved substitution design, accountable step owner, comparable quality results and observed replacement/shifted effort; not a hypothetical percentage.",
+        "evidence_holder_role_not_assignment": "Existing workflow owners and independent/declaration-qualified evaluator as locally approved.",
+        "closure_rule": "Demonstrate actual displacement and full added burden or do not claim capacity gain. Preserve dissent and failed replacement.",
+        "consequence_while_open": "Not an entry requirement for discussing the proposal; blocks any avoided-labor claim.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;docs/v8_consolidation_brief.md;docs/v9_consolidation_brief.md",
+        "status": "NOT_TESTED_LATER_GATE",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/owner_review/evidence_gap_register.csv",
+      "csv_line": 17,
+      "sha256": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+      "source_snapshot": {
+        "gap_id": "GF02",
+        "case_ids": "SP08P1;SP09P1",
+        "decision_stage": "AFTER_SUBSTITUTION_SEPARATE_AUTHORIZATION",
+        "topic": "Cancelable costs and net cash",
+        "confirmed_basis": "No eligible avoidable-cost pool or incremental cash saving is established; overlapping case labels are not separate funded pools.",
+        "proposed_additional_control": "Only after substitution evidence, assess cancelable cost objects, added operating costs, transitions and funding boundaries once.",
+        "unresolved_question": "Would verified workload displacement release expenditure rather than only create capacity?",
+        "minimum_evidence": "Authorized cost-object and cancellation evidence with baseline, transition/operating liabilities and nonadditive allocation; no gross budgets or salary-times-hours shortcut.",
+        "evidence_holder_role_not_assignment": "Relevant authorized finance/budget owners, only for a later approved assessment.",
+        "closure_rule": "Substantiate cash release net of added costs or retain not estimated. Count shared C02/C05/C09 enabling work only once.",
+        "consequence_while_open": "No dollar/percentage savings target, post reduction, budget cut or ranking change supported by this package.",
+        "observation_ids": "",
+        "source_paths": "docs/v10_owner_review_shadow_protocol.md;data/acabq_2027_ranked_consolidation.csv",
+        "status": "NOT_ESTABLISHED_LATER_GATE",
+        "request_status": "NOT_SENT",
+        "owner_response": "NOT_OBTAINED"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 22,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY001",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY001",
+        "product_id": "V9:P1",
+        "component_id": "V9:K01",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 23,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY002",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY002",
+        "product_id": "V9:G1",
+        "component_id": "V9:K01",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 24,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY003",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY003",
+        "product_id": "V9:P1",
+        "component_id": "V9:K02",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 25,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY004",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY004",
+        "product_id": "V9:G1",
+        "component_id": "V9:K02",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 26,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY005",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY005",
+        "product_id": "V9:G1",
+        "component_id": "V9:K03",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 27,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY006",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY006",
+        "product_id": "V9:P1",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 28,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY007",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY007",
+        "product_id": "V9:G1",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 29,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY008",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY008",
+        "product_id": "V9:G1",
+        "component_id": "V9:K05",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 30,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY009",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY009",
+        "product_id": "V9:P1",
+        "component_id": "V9:K06",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 31,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY010",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY010",
+        "product_id": "V9:G1",
+        "component_id": "V9:K06",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 32,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY011",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY011",
+        "product_id": "V9:P1",
+        "component_id": "V9:K07",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 33,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY012",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY012",
+        "product_id": "V9:G1",
+        "component_id": "V9:K07",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 34,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY013",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY013",
+        "product_id": "V9:G1",
+        "component_id": "V9:K08",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 35,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY014",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY014",
+        "product_id": "V9:P1",
+        "component_id": "V9:K09",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 36,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY015",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY015",
+        "product_id": "V9:G1",
+        "component_id": "V9:K10",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 37,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY016",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY016",
+        "product_id": "V9:P1",
+        "component_id": "V9:K11",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 38,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY017",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY017",
+        "product_id": "V9:G1",
+        "component_id": "V9:K11",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 39,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY018",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY018",
+        "product_id": "V9:G1",
+        "component_id": "V9:K12",
+        "required_action": "party_attribution_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 40,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY019",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY019",
+        "product_id": "V9:G1",
+        "component_id": "V9:K12",
+        "required_action": "party_attribution_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 41,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY020",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY020",
+        "product_id": "V9:G1",
+        "component_id": "V9:K13",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 42,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY021",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY021",
+        "product_id": "V9:G1",
+        "component_id": "V9:K15",
+        "required_action": "source_qualified_reference",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 43,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY022",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY022",
+        "product_id": "V9:P0",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 44,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY023",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY023",
+        "product_id": "V9:G0",
+        "component_id": "V9:K10",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 45,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY024",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY024",
+        "product_id": "V9:P2",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 46,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY025",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY025",
+        "product_id": "V9:G2",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 47,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY026",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY026",
+        "product_id": "V9:G2",
+        "component_id": "V9:K05",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 48,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY027",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY027",
+        "product_id": "V9:P2",
+        "component_id": "V9:K08",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 49,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY028",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY028",
+        "product_id": "V9:G2",
+        "component_id": "V9:K08",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 50,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY029",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY029",
+        "product_id": "V9:G2",
+        "component_id": "V9:K03",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 51,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY030",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY030",
+        "product_id": "V9:G2",
+        "component_id": "V9:K13",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 52,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY031",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY031",
+        "product_id": "V9:G2",
+        "component_id": "V9:K15",
+        "required_action": "source_qualified_reference",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 53,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY032",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY032",
+        "product_id": "V9:P3",
+        "component_id": "V9:K14",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 54,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY033",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY033",
+        "product_id": "V9:G3",
+        "component_id": "V9:K14",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 55,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY034",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY034",
+        "product_id": "V9:G3",
+        "component_id": "V9:K09",
+        "required_action": "source_qualified_reference",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 56,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY035",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY035",
+        "product_id": "V9:P3",
+        "component_id": "V9:K09",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 57,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY036",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY036",
+        "product_id": "V9:G3",
+        "component_id": "V9:K04",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 58,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY037",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY037",
+        "product_id": "V9:G3",
+        "component_id": "V9:K05",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 59,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY038",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY038",
+        "product_id": "V9:G3",
+        "component_id": "V9:K13",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 60,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY039",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY039",
+        "product_id": "V9:G3",
+        "component_id": "V9:K03",
+        "required_action": "shared_fact",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 61,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY040",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY040",
+        "product_id": "V9:G3",
+        "component_id": "V9:K11",
+        "required_action": "owner_only",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/census_v10/product_obligations.csv",
+      "csv_line": 62,
+      "sha256": "df511a8ac721738bb3de57d9c0be1d5fe4ce57eed9bcbf8e13533e22e0e1cb70",
+      "source_snapshot": {
+        "obligation_id": "OB:V9:CY041",
+        "case_id": "SP09P1",
+        "observation_id": "V9:CY041",
+        "product_id": "V9:G3",
+        "component_id": "V9:K15",
+        "required_action": "source_qualified_reference",
+        "denominator_role": "fixed_selected_product_obligation",
+        "assessment_status": "not_assessed_by_owners"
+      }
+    },
+    {
+      "path": "data/owner_review/package_contract.json",
+      "json_pointer": "",
+      "sha256": "2f4701b7050a562a0ff53dc340065b4134d1c98b1fd9fd3e57673df1b52ce672",
+      "source_snapshot": {
+        "reference_version": "13.0",
+        "request_status": "NOT_SENT",
+        "owner_reviews": 0,
+        "owner_approvals": 0,
+        "live_trials": 0,
+        "live_use_gates": {
+          "SP08P1": "BLOCKED_FOR_LIVE_USE",
+          "SP09P1": "BLOCKED_FOR_LIVE_USE"
+        },
+        "course_watch": "paused_no_checks_run",
+        "historical_first_pass": {
+          "supported": 59,
+          "amendment_holds": 2
+        },
+        "separate_adopted_rechecks": {
+          "checked": 2,
+          "passed": 2
+        },
+        "new_full_corpus_score": "not_run"
+      },
+      "snapshot_scope": "selected top-level fields, not full document"
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 2,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M01",
+        "measure": "Source traceability",
+        "numerator_or_expression": "Selected factual claims with approved source locator and version",
+        "denominator_or_perimeter": "All selected factual claims per product",
+        "unit": "claim-level",
+        "control": "Freeze claim inclusion before comparison; independent owner review",
+        "current_status": "not_measured_in_live_workflow",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 3,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M02",
+        "measure": "Qualification fidelity",
+        "numerator_or_expression": "Missing or altered date/count/status/role/attribution qualifications",
+        "denominator_or_perimeter": "All selected qualified claims per product",
+        "unit": "claim-level",
+        "control": "Retain disagreement and updates; no unknown-to-zero conversion",
+        "current_status": "not_measured_in_live_workflow",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 4,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M03",
+        "measure": "Timeliness",
+        "numerator_or_expression": "Minutes from approved input update to acknowledged product-specific update",
+        "denominator_or_perimeter": "All eligible updates with both timestamps",
+        "unit": "update-level",
+        "control": "Record waiting, missing acknowledgements and deadline exceptions separately",
+        "current_status": "not_measured_in_live_workflow",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 5,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M04",
+        "measure": "Net capacity",
+        "numerator_or_expression": "Actual baseline staff minutes minus replacement-process minutes across both offices",
+        "denominator_or_perimeter": "Comparable cycle and scoped components",
+        "unit": "work-step-level",
+        "control": "Include acquisition, reconciliation, drafting, review, coordination and maintenance; paired shadow work is not avoided work",
+        "current_status": "not_estimated",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 6,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M05",
+        "measure": "Operational overhead",
+        "numerator_or_expression": "Staff minutes required only for register upkeep or new approvals",
+        "denominator_or_perimeter": "Same scoped components and cycle",
+        "unit": "work-step-level",
+        "control": "Count work displaced onto any office or shared service",
+        "current_status": "not_estimated",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 7,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M06",
+        "measure": "Mandate and security guardrails",
+        "numerator_or_expression": "Delayed required products, reassigned approvals, unauthorized disclosures",
+        "denominator_or_perimeter": "All pilot products and transfers",
+        "unit": "product-or-transfer-level",
+        "control": "Prospective zero tolerance for unauthorized mandate/approval changes or disclosures; stop and revert",
+        "current_status": "not_tested_live",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    },
+    {
+      "path": "data/census_v9/measurement_plan.csv",
+      "csv_line": 8,
+      "sha256": "f06c05fd7b96a8984a2fa4d31c439d7ebd7939d567d9c15005735b92a144ec5a",
+      "source_snapshot": {
+        "metric_id": "M07",
+        "measure": "Incremental cash",
+        "numerator_or_expression": "Eligible cancelable recurring cost avoided less additional operating and transition costs",
+        "denominator_or_perimeter": "One nonadditive pilot cost perimeter",
+        "unit": "cost-object-level",
+        "control": "No salary cash release from hours alone; no gross budgets, internal chargebacks or already booked efficiencies as new savings",
+        "current_status": "not_estimated",
+        "cyprus_application": "Protect annex attribution, cycle-specific implementation stages, units and budget denominators; compare against current jointly supported workflow."
+      }
+    }
+  ],
+  "case_specific_limit": "Cycle-specific source agreement is not substitutability of mandated reporting; neither product may be eliminated on the basis of this research.",
+  "handling": "No identifiable payroll, participant, medical, security, live transaction or restricted clearance records in this public dossier; use authorized restricted intake and approved safe derivatives.",
+  "reopen_condition": "Confirm owner and authority, obtain authenticated complete linked records, define comparator and guardrails, and adjudicate validation-ready evidence. A prepared request or software pass is insufficient."
+}

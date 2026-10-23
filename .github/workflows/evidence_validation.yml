@@ -1,0 +1,31 @@
+name: Case evidence and synthetic rehearsal
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate declared evidence and synthetic behavior
+        run: |
+          python -B scripts/validate_case_dossiers.py
+          python -B scripts/validate_public_evidence_boundary.py
+          python -B scripts/rehearse_portfolio.py --check --check-requests
+          python -B scripts/validate_benefit_ledger.py
+          python -B tests/check_operational_evidence.py
+          python -B tests/check_evidence_reconciliation.py
+          python -B tests/check_net_benefit.py
+          python -B tests/check_public_evidence_boundary.py
+          python -B tests/check_portfolio_rehearsal.py
+          python -B tests/check_benefit_ledger.py
+          python -B tests/check_case_dossiers.py
+      - name: Verify validation leaves tracked files unchanged
+        run: git diff --exit-code

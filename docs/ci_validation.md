@@ -1,5 +1,7 @@
 # A12 — Explicit read-only validation groups
 
+The 23 October integration bounds each R setup step to five minutes after hosted installations stalled before validation. The overall job limit remains thirty minutes. A setup timeout fails the job; retry the affected job and require the complete validation group to pass before merging. The phase-specific reform, portfolio and evidence adapters are now manual; [public release acceptance](portfolio_validation.md) runs their combined checks automatically alongside the retained research workflows.
+
 Routine validation is consolidated through [reusable_validation.yml](../.github/workflows/reusable_validation.yml) and an explicit [acceptance runner](../scripts/run_validation_suite.py). It never extracts commands from live workflow YAML. The [group manifest](../metadata/validation_groups.json) defines exact commands, Python 3.12, R requirements, and pinned Python dependencies.
 
 ## Command and environment parity

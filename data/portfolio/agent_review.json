@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "review_id": "I08-AGENT-PORTFOLIO-REVIEW-2026-10-23",
+  "reviewer": "Separate portfolio reviewer agent r01_obligations",
+  "review_kind": "AGENT_RESEARCH_AND_SOFTWARE_REVIEW_NOT_INSTITUTIONAL_AUDIT",
+  "status": "QUALIFIED_PUBLIC_BASELINE_REVIEW_FINDINGS_RESOLVED",
+  "authored_components_disclosure": [
+    "R01 obligation contract and validator",
+    "R12 compliance dictionary",
+    "R15 reform baseline validator",
+    "R09/R11/R13/R14/R16/R18 reform views and shared generator"
+  ],
+  "independence_boundary": "Reviewer did not author P/C/E/X financial, case, evidence, pilot or execution artifacts inspected. Reform-view authorship precludes independent assurance over those components; separate R17 review applies there.",
+  "scope": [
+    "Direct inspection of financial perimeter/nonadditivity, scenario evaluation, benefit recognition and evidence-matching code",
+    "All 14 case dossiers and 230 source-file hashes / CSV snapshot comparisons",
+    "Three draft pilot charters, 24 unset threshold dimensions, 6 unsent request contracts and 21 blocked operational execution records",
+    "Actual local rerun of 10 explicit synthetic scenarios and declaration tests"
+  ],
+  "primary_un_authentication_performed": false,
+  "tests": [
+    {
+      "script": "tests/check_financial_baseline.py",
+      "tests": 7,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_portfolio_coverage.py",
+      "tests": 4,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_intervention_register.py",
+      "tests": 10,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_intervention_evaluation.py",
+      "tests": 22,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_operational_evidence.py",
+      "tests": 11,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_evidence_reconciliation.py",
+      "tests": 12,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_net_benefit.py",
+      "tests": 8,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_public_evidence_boundary.py",
+      "tests": 7,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_benefit_ledger.py",
+      "tests": 14,
+      "result": "PASS"
+    },
+    {
+      "script": "tests/check_decision_portfolio.py",
+      "tests": 20,
+      "result": "PASS"
+    }
+  ],
+  "additional_checks": [
+    {
+      "command": "scripts/rehearse_portfolio.py --check",
+      "result": "PASS_10_SYNTHETIC_SCENARIOS"
+    },
+    {
+      "command": "scripts/validate_financial_nonadditivity.py",
+      "result": "PASS"
+    },
+    {
+      "command": "scripts/build_financial_baseline.py --check",
+      "result": "PASS"
+    },
+    {
+      "command": "scripts/build_portfolio_coverage.py --check",
+      "result": "PASS"
+    },
+    {
+      "command": "scripts/build_intervention_register.py --check",
+      "result": "PASS"
+    },
+    {
+      "command": "scripts/validate_public_evidence_boundary.py",
+      "result": "PASS_KNOWN_PATHS_AND_REQUEST_DECLARATIONS_ONLY"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "I08-L01",
+      "status": "RESOLVED_RETESTED",
+      "severity": "MEDIUM",
+      "finding": "Benefit ledger validator accepts negative monetary effects in CASHABLE_SAVING, RECOVERY or COST_AVOIDANCE classes.",
+      "reproduction": "Synthetic test fixture changed to net_amount=-10 validates without errors and reconciles headline savings to -10.",
+      "current_data_impact": "None: actual ledger remains empty with null amounts.",
+      "required_correction": "Enforce strictly positive amounts for positive benefit classes and a documented sign convention for NET_COST_INCREASE; add mutation tests.",
+      "correction": "Validator and reconciler reject nonpositive positive-benefit amounts and require strictly negative NET_COST_INCREASE. Complete F03 event/check/receipt history is validated and tied to ledger identity, version, financial-review receipt and savings perimeter; state strings alone fail. Fourteen ledger tests and actual empty-ledger validation passed."
+    },
+    {
+      "finding_id": "I08-L02",
+      "status": "RESOLVED_RETESTED",
+      "severity": "MEDIUM",
+      "finding": "Outcome denominator zero was accepted despite documented positive-denominator requirement.",
+      "correction": "E08 now rejects denominator<=0 and nonfinite/nondecimal values; 11 intake tests pass."
+    },
+    {
+      "finding_id": "I08-L03",
+      "status": "RESOLVED_RETESTED",
+      "severity": "MEDIUM",
+      "finding": "Public portfolio generator checked state strings anywhere in serialized dossier, which could mask changed top-level states.",
+      "correction": "Generator compares exact top-level case states, absent financial validation, all five null benefit categories with NOT_ESTIMATED status, absent owner/authority/request acceptance, normalized case maturity, null ledger totals, execution counts, unsent request rows/tracks and blocked pilot/rehearsal authority. Twenty mutation tests passed."
+    }
+  ],
+  "conclusion": "Current public framework supports further authorized validation, not completed operational adjudication, implementation, compliance or financial-benefit recognition. No real benefits are estimated; evidence/owner/threshold/authorization gates remain blocked. Final operational release requires substantive records and independent institutional review.",
+  "source_sha256": {
+    "data/adjudications/execution_gates.json": "7cf33875fa03a13db34d440f2bf1a2c35e4ad5ba352e3f422b5f6b2386cf754d",
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/cases/C04.json": "355d3f85c606bc4d6e7e058b3d44d144a410771e8989592c3eaeb3f1a689a4d9",
+    "data/cases/C05.json": "fbb4ad3b570fbe29fa363ade28d39734cccc6166fd344d72ce523e5b8aea4119",
+    "data/cases/C06.json": "651982b20960c7e2f1bccd0c6275d592ce9fa2cd38a2ac446a38220c0eb49578",
+    "data/cases/C07.json": "0ff275080456d44de6f80969ca4df10e108ec340b5dfb65d491c933878213bc3",
+    "data/cases/C08.json": "6232aaa3a2bff0a3ea9b2ec89c361887e5c9795c58dfc032d71df28beb015ed3",
+    "data/cases/C09.json": "5b01453c53d5992965040c1adf36cf374f6023ec1493770f98a4f3fa4e29ef4b",
+    "data/cases/C10.json": "842a70e1ad709929e3cff0ea43dd942fa0a676cb66be04fafe66c0b8b14ec23d",
+    "data/cases/C11.json": "e0eff9b95f378f8869f8e3eb3a0af60002df3603d5b1039c6951f354e9a6b105",
+    "data/cases/C12.json": "a612a2998a74c7b1b6241c89b1981c6457fc9cedd4605e7c7ecf926481e9e083",
+    "data/cases/C13.json": "8047ebdd444a45597e6e91614b884ffbb19cec66e83f81012bc58fafd8c1a095",
+    "data/cases/C14.json": "1b402619b2b094ea28c3a3f22914cf8d9e07f72eabb93e7e451a536254a3e999",
+    "data/evidence_requests/E01_rsce.json": "ed3a6f7e45eb4ce68d4065ca4171fce131c1170b806fc5e8701ec6c9cee37550",
+    "data/evidence_requests/E02_assets.json": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+    "data/evidence_requests/E03_haiti.json": "7b91fecc699c65d83c1f54097139f4173f32e3deb10a66ed2841931de7aaad14",
+    "data/evidence_requests/E04_ga_directed.json": "31884da2cd8f10911b3c1acae15b84743ce5cad521d29451b265deddd48c05bb",
+    "data/evidence_requests/E05_training.json": "d29f34413050e106a9e6bf5f174bcf87cfc6fb013ef604060c41090c7101ed9d",
+    "data/evidence_requests/E06_reporting_owners.json": "daac4b33a1fad22323c0578ad9809ca9cef9cda32a0a0cc9f92fe10c57de8d88",
+    "data/pilots/charters.json": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+    "data/pilots/rehearsal_receipt.json": "736cffbe5d526b9cff68c5a83107e04e060ca464ad110568674af0e8b5795de8",
+    "data/pilots/request_status.json": "f86a75c98135ff046455096864a87d8a18121a77e32f395448dff8f4f1b3af60",
+    "data/pilots/synthetic_scenarios.json": "699fe62fd5e26d26b2a44480e49563680dc7b2287137dd022c29f104fcd8c3da",
+    "data/pilots/thresholds.json": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3",
+    "data/portfolio/case_dossier_template.json": "a31d934eff5a153645ffd89881a2e6e7db24c7f32305fc12ad1c540a98d45014",
+    "data/portfolio/comparability_rules.json": "9d23e5c9e97c780d98a064d36d96c7fc8a2a0140fd32f2f00556c37b4bb21a61",
+    "data/portfolio/cost_model.json": "13f4fffd9007a3cce25b272bb0365567d4a8bb15631dde02bc4038de5eb46f04",
+    "data/portfolio/counterfactual_ladder.json": "e62c5b759e41c07e30a73aaa5af989f5aa2357909ae27d5b4649301561f09211",
+    "data/portfolio/coverage_matrix.json": "0349e5924877d3c1b05df21503d239e0d6bd5d934e6c411ad274f89ba0bfca2a",
+    "data/portfolio/dataset_contracts.json": "42cbd717169b975340d502219e2cab532e9903cf754116b87e4c03acb7c54590",
+    "data/portfolio/entities.json": "478c447f27c9ff08653ca7dfb553de7b0ab2745e8d092c20887b409db82f3a58",
+    "data/portfolio/financial_baseline.json": "a0ba39837df779eb258e760a04fc1aade153b54e8e7469d809ebf7925504e58b",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/operational_metrics.json": "9fc4a2f0521fd4402a84aff45757fd1b0f9217c71c05ca504cb01936a4f60bad",
+    "data/portfolio/overlap_graph.json": "6740b2afcc3c9cab4a9e5b587e2420d4eeec5a74005ad881ddbc2efcc8b10ed5",
+    "data/portfolio/prioritization_model.json": "db754e87f06b8943c971db022026aa84fb9fc3a6cbb3fc559db8aa7a615ae0c5",
+    "data/portfolio/prioritization_sensitivity.json": "70d9062c570e7d2cc9e50d023dd10a1a7b9a7e1b574ea6941139e738bd5b418e",
+    "data/portfolio/restricted_adjudication_status.json": "de2e2a623b0f6198dc0d4b740358d77c1271a26a57a5b86f0b9852d2af874f43",
+    "data/portfolio/verified_benefit_ledger.json": "d41ded977037f6001b220696f8b5afe00714444685dc9343d4f93d3167fb8a6d",
+    "data/realization/implementation_gates.json": "364b300b22d0cd9732d6c4b601ae2e48b73778a321e215f9619528074710bd33",
+    "docs/evidence_reconciliation.md": "3215498983e63105752da7d554b9325c18479af6125555c852b9aec5a7568812",
+    "docs/operational_adjudication_blockers.md": "09f3242e8ff3e4c838eefcb9b13f1b4a4b4587ff0bead95c1860788b28896d5f",
+    "docs/secure_evidence_intake.md": "9ce77a0770c0aa793973382594f9a1f1c75dca250ae1f5e5a62678d4c881e1cf",
+    "scripts/build_decision_portfolio.py": "21c60f826cb4180ee77ca5b72712c4d83d0012cda4cf419ef6cfcfa77304f297",
+    "scripts/calculate_net_benefit.py": "9515db72591a99afaae35b13e15eb991bfd2e9e89d96a55903bc7777dd2d8f04",
+    "scripts/evaluate_intervention.py": "23050303f0ead3691e944e66711d74158bde6626bb8f7eae62644a2e15fe260a",
+    "scripts/reconcile_evidence_transactions.py": "c3f915c84c90a1e3ed8acc912e74e3b4acd4f67b66843e68389224e74b23995a",
+    "scripts/rehearse_portfolio.py": "c0a50043af6f17a3d00430296ee101f85fdc52e1cf2a67db475a88ffcc8566c9",
+    "scripts/validate_benefit_ledger.py": "46a7b2a838ff5d7880e6b29842fb14a213b4c3c7685f4cd3f7882b61e07d7ae9",
+    "scripts/validate_candidate_advancement.py": "bd7a8ff40eab3eed38d5f7f54bc9b304fe7a4cd6b8b7b1368e4fc3000160446e",
+    "scripts/validate_financial_nonadditivity.py": "8c91f6fcfc05b3933dc20ec7217db23819bf685bbabde304b684c73fed7131bf",
+    "scripts/validate_operational_evidence.py": "821f56277ba60033051e0965a45765b6c643a6e40126d97bdd886a822965b48d",
+    "scripts/validate_public_evidence_boundary.py": "ef26ee3560d0117a0cca6ee71cce08c12b75a07336bcebfe2a7f635ac0f066fc",
+    "tests/check_benefit_ledger.py": "9eb05729f1bc25634ed6de8c73b51daeddfc505311b7d15f012844dff09a5fc7",
+    "tests/check_decision_portfolio.py": "b35ccbba4ab6034dca3fae25bddb07f7c41d4b7399ebe65e62c29a4b882fea0c",
+    "tests/check_evidence_reconciliation.py": "c66125343805a29d5b13f62231c18880f496cb7ff6931e1de0de24c8780f9a6f",
+    "tests/check_financial_baseline.py": "4e4d29d220d23efd343f092757afaabb2d305fe0d537cdc35bf7c80708751da6",
+    "tests/check_intervention_evaluation.py": "51e5cbefecc2ade29e1ad874dc70419864f2e4eb66e65362fd20ebe1cca57d99",
+    "tests/check_intervention_register.py": "7c12a134b0c3d829d7360a283ce5b8cc7a212b693cb15431b45adc7e8df5d702",
+    "tests/check_net_benefit.py": "07bc9a3a3180de4c3aeeb002c41199ac71bfb7fd5c6d0784673599c81adf9f34",
+    "tests/check_operational_evidence.py": "7cf209c7c9a69b04c687bf48fd66cf56ae4b2ad91e61fa467e5d75480c4c6f8a",
+    "tests/check_portfolio_coverage.py": "2152cc895b83284109b20d616aaad05a1efcbfb2b3c5ef25db972d3f496d60c2",
+    "tests/check_public_evidence_boundary.py": "e00221b896e3924c1d81be14c6dd32c856e079a2de90d5186e47ac615a7da751"
+  },
+  "limitations": [
+    "Repository snapshots were authenticated against local bytes, not independently against all original UN texts.",
+    "Passing declaration tests does not establish evidence authenticity, complete record populations, legal applicability or owner authority.",
+    "Synthetic approvals, outcomes and amounts cannot be recognized as actual results.",
+    "Source hashes record reviewed bytes; subsequent changes require scoped reassessment.",
+    "Synthetic fixtures can exercise successful declaration validation; declared gate receipts and controlled-history locators still require trusted authentication before any actual recognition."
+  ]
+}

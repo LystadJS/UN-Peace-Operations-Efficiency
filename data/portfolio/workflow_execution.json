@@ -1,0 +1,1766 @@
+{
+  "schema_version": 1,
+  "ledger_id": "WORKFLOW-EXECUTION-1",
+  "as_of": "2026-10-23",
+  "scope": "114 fixed roadmap tasks plus eight conditional Wave9 template steps; templates repeat only for institutionally approved interventions.",
+  "counts": {
+    "fixed_tasks": 114,
+    "conditional_template_steps": 8,
+    "total_entries": 122,
+    "artifact_delivery": {
+      "PRESENT": 122
+    },
+    "work_product_modes": {
+      "BLOCKED_NOT_EXECUTED": 22,
+      "DOCUMENTED_STANDARD": 6,
+      "DRAFT_UNSENT": 7,
+      "PARTIAL_AUTHORITY_BASELINE": 18,
+      "PREPARATION_ONLY": 8,
+      "PUBLIC_RESEARCH_OUTPUT": 10,
+      "PUBLIC_VALIDATION_BASELINE": 1,
+      "RESEARCH_CONTROL": 28,
+      "SCREENING_BLOCKED": 14,
+      "TEMPLATE_NOT_EXECUTED": 8
+    },
+    "substantive_operational_audits_completed": 0,
+    "minimum_required_operational_audits": 3,
+    "minimum_service_types": 2,
+    "financial_adjudications_completed": 0
+  },
+  "completion_gates": [
+    {
+      "gate": 1,
+      "status": "PARTIAL",
+      "reason": "Controls and identities exist; complete lifecycle, mandate, instrument and operational-perimeter coverage remain open."
+    },
+    {
+      "gate": 2,
+      "status": "PARTIAL",
+      "reason": "Dossiers, tools and rehearsals exist; actual baselines, accepted owners and prospective numeric thresholds remain missing."
+    },
+    {
+      "gate": 3,
+      "status": "BLOCKED",
+      "reason": "Zero substantive operational audits against at least three across two service types, and no financial adjudication."
+    },
+    {
+      "gate": 4,
+      "status": "BLOCKED",
+      "reason": "No approved implementation, verified realization or substantively accepted no-change decision."
+    }
+  ],
+  "claim_boundary": "Artifact delivery, eligibility disposition, synthetic rehearsal and substantive execution are separate. PRESENT never means operationally completed. No commit SHA or runtime CI result is inferred.",
+  "tasks": [
+    {
+      "task_id": "F01",
+      "one_prompt_task": "Define desired end state and portfolio completion criteria",
+      "principal_result": "docs/desired_end_state.md",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/desired_end_state.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "F02",
+      "one_prompt_task": "Define the eight controlled efficiency and benefit terms",
+      "principal_result": "docs/decision_taxonomy.md",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/decision_taxonomy.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "F03",
+      "one_prompt_task": "Define candidate states and evidence thresholds with a validator",
+      "principal_result": "data/standards/candidate_states.json",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/standards/candidate_states.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "F04",
+      "one_prompt_task": "Define source authority and claim-specific evidence hierarchy",
+      "principal_result": "docs/source_authority_standard.md",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/source_authority_standard.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "F05",
+      "one_prompt_task": "Define financial perimeter, nonadditivity and counterfactual rules",
+      "principal_result": "docs/cost_accounting_standard.md",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/cost_accounting_standard.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "F06",
+      "one_prompt_task": "Define mandate, safety, readiness, quality and transition safeguards",
+      "principal_result": "docs/guardrail_standard.md",
+      "work_product_mode": "DOCUMENTED_STANDARD",
+      "blocking_dependency": "Application to actual cases still requires source evidence and competent ownership.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/guardrail_standard.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A01",
+      "one_prompt_task": "Inventory and classify every frozen-scope repository file",
+      "principal_result": "metadata/artifact_inventory.csv",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/artifact_inventory.csv",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A02",
+      "one_prompt_task": "Catalog every frozen dataset's grain, keys, period, sources and limits",
+      "principal_result": "metadata/dataset_registry.csv",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/dataset_registry.csv",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A03",
+      "one_prompt_task": "Define orthogonal repository currency, adoption, approval and implementation states",
+      "principal_result": "metadata/repository_status_schema.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/repository_status_schema.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A04",
+      "one_prompt_task": "Map scripts, workflows, sources, tests and generated artifacts",
+      "principal_result": "metadata/lineage_edges.csv",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/lineage_edges.csv",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A05",
+      "one_prompt_task": "Define one schema for quality issues, gaps, owner questions and release gates",
+      "principal_result": "metadata/master_issue_schema.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/master_issue_schema.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A06",
+      "one_prompt_task": "Audit workflow overlap, permissions, publishing and obsolete triggers",
+      "principal_result": "metadata/workflow_audit.csv",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/workflow_audit.csv",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A07",
+      "one_prompt_task": "Create canonical artifact and release manifests with hashes and supersession",
+      "principal_result": "metadata/canonical_manifest.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/canonical_manifest.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A08",
+      "one_prompt_task": "Migrate legacy issue observations losslessly into one register",
+      "principal_result": "data/issues/current_issues.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/issues/current_issues.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A09",
+      "one_prompt_task": "Generate authoritative scoped current project status",
+      "principal_result": "docs/current_status.md",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/current_status.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A10",
+      "one_prompt_task": "Rewrite navigation around Commander's intent, current status and history",
+      "principal_result": "README.md",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "README.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A11",
+      "one_prompt_task": "Test contradictory status, stale current links, lineage and historical marking",
+      "principal_result": "scripts/validate_project_consistency.py",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/validate_project_consistency.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A12",
+      "one_prompt_task": "Consolidate routine read-only CI and preserve release-specific checks",
+      "principal_result": "metadata/validation_groups.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/validation_groups.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A13",
+      "one_prompt_task": "Isolate publication into explicitly triggered provenance-checked workflows",
+      "principal_result": "metadata/publication_policy.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/publication_policy.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "A14",
+      "one_prompt_task": "Generate deterministic structural project-health receipt",
+      "principal_result": "metadata/project_health.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/project_health.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R01",
+      "one_prompt_task": "Define obligation schema and authority vocabulary",
+      "principal_result": "data/reforms/obligation_schema.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/obligation_schema.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R02",
+      "one_prompt_task": "Inventory repository UN80, UNGA80/81, ACABQ and reform claims",
+      "principal_result": "metadata/reform_claim_inventory.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/reform_claim_inventory.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R03",
+      "one_prompt_task": "Register official GA80 instruments within declared coverage",
+      "principal_result": "data/reforms/unga80_instruments.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/unga80_instruments.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R04",
+      "one_prompt_task": "Register official GA81 instruments at the ongoing-session cutoff",
+      "principal_result": "data/reforms/unga81_instruments.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/unga81_instruments.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R05",
+      "one_prompt_task": "Extract supported mandatory actions and qualified operative effects from GA80",
+      "principal_result": "data/reforms/unga80_actions.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/unga80_actions.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R06",
+      "one_prompt_task": "Extract GA81 actions only when adopted operative text is authenticated",
+      "principal_result": "data/reforms/unga81_actions.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/unga81_actions.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R07",
+      "one_prompt_task": "Register ACABQ recommendations separately from adopted authority",
+      "principal_result": "data/reforms/acabq_recommendations.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/acabq_recommendations.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R08",
+      "one_prompt_task": "Register SG proposals and announced arrangements without assuming approval",
+      "principal_result": "data/reforms/sg_proposals.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/sg_proposals.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R09",
+      "one_prompt_task": "Crosswalk provisions to entities, functions, candidates, dates and gaps",
+      "principal_result": "data/reforms/obligation_crosswalk.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/obligation_crosswalk.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R10",
+      "one_prompt_task": "Reconcile the eleven retained UN80 arrangements and authority status",
+      "principal_result": "data/reforms/un80_arrangement_reconciliation.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/un80_arrangement_reconciliation.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R11",
+      "one_prompt_task": "Record implementation evidence and its verification limits",
+      "principal_result": "data/reforms/implementation_evidence.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/implementation_evidence.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R12",
+      "one_prompt_task": "Define evidence-qualified reform compliance statuses",
+      "principal_result": "data/reforms/compliance_statuses.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/compliance_statuses.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R13",
+      "one_prompt_task": "Define reform efficiency measures and operational guardrails",
+      "principal_result": "data/reforms/reform_metrics.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/reform_metrics.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R14",
+      "one_prompt_task": "Prepare minimum reform evidence requests without dispatch",
+      "principal_result": "data/reforms/evidence_requests.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/evidence_requests.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R15",
+      "one_prompt_task": "Validate authority and implementation declarations",
+      "principal_result": "scripts/validate_reform_baseline.py",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/validate_reform_baseline.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R16",
+      "one_prompt_task": "Generate executive view of partial reform evidence and compliance gaps",
+      "principal_result": "docs/reform_compliance_view.md",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/reform_compliance_view.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R17",
+      "one_prompt_task": "Perform separate-agent review of declared reform source scope",
+      "principal_result": "docs/reform_independent_review.md",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/reform_independent_review.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "R18",
+      "one_prompt_task": "Freeze a versioned partial reform research baseline",
+      "principal_result": "data/reforms/baseline_release.json",
+      "work_product_mode": "PARTIAL_AUTHORITY_BASELINE",
+      "blocking_dependency": "Complete instrument coverage, applicability, final-text verification where missing and implementation evidence remain unresolved.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/reforms/baseline_release.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P01",
+      "one_prompt_task": "Create canonical identities and explicit unresolved entity references",
+      "principal_result": "data/portfolio/entities.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/entities.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P02",
+      "one_prompt_task": "Declare dataset contracts without promoting structural profiles to semantic approval",
+      "principal_result": "data/portfolio/dataset_contracts.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/dataset_contracts.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P03",
+      "one_prompt_task": "Create a canonical financial baseline with perimeter controls",
+      "principal_result": "data/portfolio/financial_baseline.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/financial_baseline.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P04",
+      "one_prompt_task": "Validate nonadditive financial totals and component relationships",
+      "principal_result": "scripts/validate_financial_nonadditivity.py",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/validate_financial_nonadditivity.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P05",
+      "one_prompt_task": "Report identity, finance, function, reform and operational coverage separately",
+      "principal_result": "data/portfolio/coverage_matrix.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/coverage_matrix.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P06",
+      "one_prompt_task": "Normalize the intervention register and preserve parent-child scope",
+      "principal_result": "data/portfolio/interventions.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/interventions.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P07",
+      "one_prompt_task": "Define nonadditive benefit pools",
+      "principal_result": "data/portfolio/benefit_pools.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/benefit_pools.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P08",
+      "one_prompt_task": "Create standard case dossier template",
+      "principal_result": "data/portfolio/case_dossier_template.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/case_dossier_template.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P09",
+      "one_prompt_task": "Define operational metric catalog without invented observations",
+      "principal_result": "data/portfolio/operational_metrics.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/operational_metrics.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P10",
+      "one_prompt_task": "Define service, period and workload comparability adjustments",
+      "principal_result": "data/portfolio/comparability_rules.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/comparability_rules.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P11",
+      "one_prompt_task": "Define full-system cost model including transition and retained cost",
+      "principal_result": "data/portfolio/cost_model.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/cost_model.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P12",
+      "one_prompt_task": "Define counterfactual and attribution evidence ladder",
+      "principal_result": "data/portfolio/counterfactual_ladder.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/counterfactual_ladder.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P13",
+      "one_prompt_task": "Define intervention prioritization without fabricated approved rankings",
+      "principal_result": "data/portfolio/prioritization_model.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/prioritization_model.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "P14",
+      "one_prompt_task": "Design weight sensitivity analysis and expose unapproved assumptions",
+      "principal_result": "data/portfolio/prioritization_sensitivity.json",
+      "work_product_mode": "RESEARCH_CONTROL",
+      "blocking_dependency": "Underlying source truth and substantive use remain limited to declared scope; passing structure does not establish institutional approval.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/prioritization_sensitivity.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C01",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for RSCE charges and retained local work",
+      "principal_result": "data/cases/C01.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C01.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C02",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNIFIL–UNSCOL asset reuse",
+      "principal_result": "data/cases/C02.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C02.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C03",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for BINUH–UNSOH support",
+      "principal_result": "data/cases/C03.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C03.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C04",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNISFA translation",
+      "principal_result": "data/cases/C04.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C04.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C05",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNISFA transferred assets",
+      "principal_result": "data/cases/C05.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C05.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C06",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNSOS fuel contractor recovery",
+      "principal_result": "data/cases/C06.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C06.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C07",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for MONUSCO medical-insurance controls",
+      "principal_result": "data/cases/C07.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C07.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C08",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNMISS post changes and service continuity",
+      "principal_result": "data/cases/C08.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C08.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C09",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for training administration and procurement",
+      "principal_result": "data/cases/C09.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C09.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C10",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for DPPA–DPO regional functions",
+      "principal_result": "data/cases/C10.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C10.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C11",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNOWAS–UNOCA factual support",
+      "principal_result": "data/cases/C11.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C11.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C12",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for Cyprus factual support",
+      "principal_result": "data/cases/C12.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C12.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C13",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for UNIFIL residual transition liabilities",
+      "principal_result": "data/cases/C13.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C13.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "C14",
+      "one_prompt_task": "Prepare evidence-qualified case dossier for existing joint structures",
+      "principal_result": "data/cases/C14.json",
+      "work_product_mode": "SCREENING_BLOCKED",
+      "blocking_dependency": "Authenticated operational/financial population, accepted owner, authority, comparable baseline and prospective safeguards not obtained.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/cases/C14.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E01",
+      "one_prompt_task": "Prepare minimum RSCE charge, service and retained-work request",
+      "principal_result": "data/evidence_requests/E01_rsce.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E01_rsce.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E02",
+      "one_prompt_task": "Prepare asset-transfer and avoided-procurement evidence request",
+      "principal_result": "data/evidence_requests/E02_assets.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E02_assets.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E03",
+      "one_prompt_task": "Prepare Haiti support service and full-cost request",
+      "principal_result": "data/evidence_requests/E03_haiti.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E03_haiti.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E04",
+      "one_prompt_task": "Prepare separate translation, transferred-asset, fuel-recovery and medical-control requests",
+      "principal_result": "data/evidence_requests/E04_ga_directed.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E04_ga_directed.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E05",
+      "one_prompt_task": "Prepare course-event training administration and procurement request",
+      "principal_result": "data/evidence_requests/E05_training.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E05_training.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E06",
+      "one_prompt_task": "Prepare both-owner review and permitted reporting-workflow evidence request",
+      "principal_result": "data/evidence_requests/E06_reporting_owners.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/evidence_requests/E06_reporting_owners.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E07",
+      "one_prompt_task": "Define restricted intake, pseudonymization and public Git exclusion controls",
+      "principal_result": "docs/secure_evidence_intake.md",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/secure_evidence_intake.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E08",
+      "one_prompt_task": "Validate declared transaction, asset, post, workload and outcome evidence",
+      "principal_result": "scripts/validate_operational_evidence.py",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/validate_operational_evidence.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E09",
+      "one_prompt_task": "Extend matching for reversals, partial settlement, timing and one-to-many allocation",
+      "principal_result": "scripts/reconcile_evidence_transactions.py",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/reconcile_evidence_transactions.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E10",
+      "one_prompt_task": "Calculate comparable net-benefit scenarios with operational guardrails",
+      "principal_result": "scripts/calculate_net_benefit.py",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "scripts/calculate_net_benefit.py",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E11",
+      "one_prompt_task": "Prepare RSCE, UNIFIL and Haiti pilot charters without activation",
+      "principal_result": "data/pilots/charters.json",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/pilots/charters.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E12",
+      "one_prompt_task": "Define prospective thresholds and stop-rule approval dependencies",
+      "principal_result": "data/pilots/thresholds.json",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/pilots/thresholds.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E13",
+      "one_prompt_task": "Create explicitly synthetic data scenarios and analysis templates",
+      "principal_result": "data/pilots/synthetic_scenarios.json",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/pilots/synthetic_scenarios.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E14",
+      "one_prompt_task": "Rehearse public/synthetic method behavior without real-world findings",
+      "principal_result": "data/pilots/rehearsal_receipt.json",
+      "work_product_mode": "PREPARATION_ONLY",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/pilots/rehearsal_receipt.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "E15",
+      "one_prompt_task": "Register preparation, dispatch, response and access states separately",
+      "principal_result": "data/pilots/request_status.json",
+      "work_product_mode": "DRAFT_UNSENT",
+      "blocking_dependency": "Collection and activation require accepted owners, competent authorization, permitted records and prospective thresholds; requests remain unsent.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/pilots/request_status.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X01",
+      "one_prompt_task": "Reconcile authenticated records for RSCE",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X02",
+      "one_prompt_task": "Assess operational counterfactual for RSCE",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X03",
+      "one_prompt_task": "Substantively adjudicate case for RSCE",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X04",
+      "one_prompt_task": "Reconcile authenticated records for UNIFIL–UNSCOL",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X05",
+      "one_prompt_task": "Assess operational counterfactual for UNIFIL–UNSCOL",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X06",
+      "one_prompt_task": "Substantively adjudicate case for UNIFIL–UNSCOL",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X07",
+      "one_prompt_task": "Reconcile authenticated records for BINUH–UNSOH",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X08",
+      "one_prompt_task": "Assess operational counterfactual for BINUH–UNSOH",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X09",
+      "one_prompt_task": "Substantively adjudicate case for BINUH–UNSOH",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X10",
+      "one_prompt_task": "Reconcile authenticated records for best eligible GA-directed case",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X11",
+      "one_prompt_task": "Assess operational counterfactual for best eligible GA-directed case",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X12",
+      "one_prompt_task": "Substantively adjudicate case for best eligible GA-directed case",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X13",
+      "one_prompt_task": "Reconcile authenticated records for training",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X14",
+      "one_prompt_task": "Assess operational counterfactual for training",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X15",
+      "one_prompt_task": "Substantively adjudicate case for training",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X16",
+      "one_prompt_task": "Reconcile authenticated records for UNOWAS–UNOCA",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X17",
+      "one_prompt_task": "Assess operational counterfactual for UNOWAS–UNOCA",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X18",
+      "one_prompt_task": "Substantively adjudicate case for UNOWAS–UNOCA",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X19",
+      "one_prompt_task": "Reconcile authenticated records for Cyprus",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X20",
+      "one_prompt_task": "Assess operational counterfactual for Cyprus",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "X21",
+      "one_prompt_task": "Substantively adjudicate case for Cyprus",
+      "principal_result": "data/adjudications/execution_gates.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Authorized complete records, accountable owner and substantive review authority not obtained; earlier audit phases are not executed.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/adjudications/execution_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I01",
+      "one_prompt_task": "Generate public screening portfolio from actual case dispositions",
+      "principal_result": "data/portfolio/public_portfolio.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/public_portfolio.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I02",
+      "one_prompt_task": "Adjudicate authorized restricted evidence and disclose only approved derivatives",
+      "principal_result": "data/portfolio/restricted_adjudication_status.json",
+      "work_product_mode": "BLOCKED_NOT_EXECUTED",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/restricted_adjudication_status.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I03",
+      "one_prompt_task": "Generate overlap graph without adding unverified benefit amounts",
+      "principal_result": "data/portfolio/overlap_graph.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/overlap_graph.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I04",
+      "one_prompt_task": "Create verified-benefit ledger with unknown rather than fabricated zero totals",
+      "principal_result": "data/portfolio/verified_benefit_ledger.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/verified_benefit_ledger.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I05",
+      "one_prompt_task": "Reconcile eligible benefit totals and exclude overlaps or embedded baseline effects",
+      "principal_result": "data/portfolio/verified_benefit_ledger.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/verified_benefit_ledger.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I06",
+      "one_prompt_task": "Write Commander's decision memo with evidence-qualified next decisions",
+      "principal_result": "docs/commander_decision_memo.md",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/commander_decision_memo.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I07",
+      "one_prompt_task": "Write partial reform-to-portfolio decision annex",
+      "principal_result": "docs/reform_portfolio_annex.md",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/reform_portfolio_annex.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I08",
+      "one_prompt_task": "Review portfolio methods and report agent independence boundaries",
+      "principal_result": "data/portfolio/agent_review.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/agent_review.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I09",
+      "one_prompt_task": "Publish leadership report on evidence, cases, gaps and actual completion",
+      "principal_result": "docs/leadership_portfolio_report.md",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "docs/leadership_portfolio_report.md",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "I10",
+      "one_prompt_task": "Integrate final roadmap outputs into generated status and README navigation",
+      "principal_result": "metadata/current_status.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "metadata/current_status.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false,
+        "integration_detected": true
+      }
+    },
+    {
+      "task_id": "I11",
+      "one_prompt_task": "Run full release validation with exact-commit runtime receipts",
+      "principal_result": "data/portfolio/validation_plan.json",
+      "work_product_mode": "PUBLIC_RESEARCH_OUTPUT",
+      "blocking_dependency": "Runtime checks require a separate exact-commit clean-worktree receipt in CI artifacts or approved temporary storage; plan existence is not a passing run.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/validation_plan.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false,
+        "runtime_validation_attested_by_this_ledger": false
+      }
+    },
+    {
+      "task_id": "I12",
+      "one_prompt_task": "Produce an honest versioned public validation release without decision-grade overclaim",
+      "principal_result": "data/portfolio/release_manifest.json",
+      "work_product_mode": "PUBLIC_VALIDATION_BASELINE",
+      "blocking_dependency": "Decision-grade completion requires substantive operational and financial adjudications; public artifacts cannot supply missing institutional evidence.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/portfolio/release_manifest.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false,
+        "decision_grade_operational_release": false
+      }
+    },
+    {
+      "task_id": "W901",
+      "one_prompt_task": "Approve intervention charter",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W902",
+      "one_prompt_task": "Approve prospective measurement register",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W903",
+      "one_prompt_task": "Freeze authenticated baseline",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W904",
+      "one_prompt_task": "Execute only the authorized intervention",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W905",
+      "one_prompt_task": "Measure complete operational and financial outcomes",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W906",
+      "one_prompt_task": "Reconcile transferred work and residual cost",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W907",
+      "one_prompt_task": "Independently review benefit realization",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    },
+    {
+      "task_id": "W908",
+      "one_prompt_task": "Decide scale, revise, retain or rollback",
+      "principal_result": "data/realization/implementation_gates.json",
+      "work_product_mode": "TEMPLATE_NOT_EXECUTED",
+      "blocking_dependency": "No intervention has competent institutional approval; instantiate eight steps per approved intervention only after its evidence and authority gates pass.",
+      "artifact_delivery_status": "PRESENT",
+      "completion_evidence": {
+        "artifact_path": "data/realization/implementation_gates.json",
+        "artifact_exists": true,
+        "verification_scope": "File existence only in this ledger; source-specific validators, substantive reviews and runtime receipts remain separate.",
+        "substantive_audit_completed": false
+      }
+    }
+  ]
+}

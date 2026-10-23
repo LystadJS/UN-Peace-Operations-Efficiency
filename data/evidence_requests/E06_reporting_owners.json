@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E06",
+  "case_ids": [
+    "C11",
+    "C12"
+  ],
+  "purpose": "Owner review and minimally scoped prospective workload/quality evidence for SP08P1 and SP09P1",
+  "proposed_custodian_roles": [
+    "UNOWAS and UNOCA authorized reporting owners",
+    "Cyprus good offices and UNFICYP authorized reporting owners"
+  ],
+  "tables": [
+    {
+      "table_id": "reporting_work_observations",
+      "grain": "One agreed product-component-task observation by role and reporting wave; no staff names or content",
+      "keys": [
+        "observation_token"
+      ],
+      "fields": [
+        {
+          "name": "observation_token",
+          "type": "string",
+          "purpose": "Pseudonymous observation identity",
+          "required": true
+        },
+        {
+          "name": "case_id",
+          "type": "string",
+          "purpose": "Separate SP08P1 and SP09P1",
+          "required": true
+        },
+        {
+          "name": "product_obligation_id",
+          "type": "string",
+          "purpose": "Preserve distinct mandated products",
+          "required": true
+        },
+        {
+          "name": "component_id",
+          "type": "string",
+          "purpose": "Avoid counting one component as multiple products",
+          "required": true
+        },
+        {
+          "name": "task_category",
+          "type": "string",
+          "purpose": "Separate drafting review translation clearance publication",
+          "required": true
+        },
+        {
+          "name": "role_category",
+          "type": "string",
+          "purpose": "Capture receiving and source workload without staff identity",
+          "required": true
+        },
+        {
+          "name": "reporting_wave",
+          "type": "string",
+          "purpose": "Preserve baseline/intervention comparability",
+          "required": true
+        },
+        {
+          "name": "paid_minutes",
+          "type": "decimal",
+          "purpose": "Measure effort prospectively without assumed saving",
+          "required": true
+        },
+        {
+          "name": "rework_minutes",
+          "type": "decimal",
+          "purpose": "Capture repeated and transferred work",
+          "required": true
+        },
+        {
+          "name": "due_date",
+          "type": "date",
+          "purpose": "Protect deadlines",
+          "required": true
+        },
+        {
+          "name": "completion_date",
+          "type": "date",
+          "purpose": "Measure timeliness",
+          "required": true
+        },
+        {
+          "name": "quality_adjudication",
+          "type": "string",
+          "purpose": "Protect independent attribution and factual quality",
+          "required": true
+        },
+        {
+          "name": "incident_status",
+          "type": "string",
+          "purpose": "Retain exceptions and stop-rule events",
+          "required": true
+        },
+        {
+          "name": "owner_permission_reference",
+          "type": "string",
+          "purpose": "Trace case-specific approved observation scope",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "Both relevant owners must approve each reporting case separately; existing BLOCKED_FOR_LIVE_USE gates remain closed.",
+    "Existing V10/V13 protocol and owner-review package govern activation; drafting this request does not send it or reopen the paused course watch."
+  ]
+}

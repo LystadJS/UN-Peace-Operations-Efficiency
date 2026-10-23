@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "release_id": "UNPO-PUBLIC-VALIDATION-BASELINE-2026-10-23",
+  "cutoff": "2026-10-23",
+  "release_class": "PUBLIC_VALIDATION_BASELINE",
+  "institutional_approval": "NOT_OBTAINED",
+  "decision_grade_portfolio": "BLOCKED",
+  "cases": [
+    {
+      "case_id": "C01",
+      "label": "RSCE charging and retained local work",
+      "dossier": "data/cases/C01.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C02",
+      "label": "UNIFIL–UNSCOL asset transfer",
+      "dossier": "data/cases/C02.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C03",
+      "label": "BINUH–UNSOH aviation and support",
+      "dossier": "data/cases/C03.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C04",
+      "label": "UNISFA translation",
+      "dossier": "data/cases/C04.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C05",
+      "label": "UNISFA transferred assets",
+      "dossier": "data/cases/C05.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C06",
+      "label": "UNSOS fuel contractor recovery",
+      "dossier": "data/cases/C06.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C07",
+      "label": "MONUSCO medical insurance",
+      "dossier": "data/cases/C07.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C08",
+      "label": "UNMISS post changes",
+      "dossier": "data/cases/C08.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C09",
+      "label": "Course-level training",
+      "dossier": "data/cases/C09.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C10",
+      "label": "DPPA–DPO regional functions",
+      "dossier": "data/cases/C10.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C11",
+      "label": "UNOWAS–UNOCA reporting",
+      "dossier": "data/cases/C11.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C12",
+      "label": "Cyprus reporting",
+      "dossier": "data/cases/C12.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C13",
+      "label": "UNIFIL residual transition liabilities",
+      "dossier": "data/cases/C13.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    },
+    {
+      "case_id": "C14",
+      "label": "Existing joint structures",
+      "dossier": "data/cases/C14.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "disposition": "BLOCKED_PENDING_EVIDENCE",
+      "substantive_adjudication_completed": false,
+      "verified_benefit": null,
+      "next_decision": "Obtain authorized minimum evidence and predeclare observation thresholds."
+    }
+  ],
+  "substantive_operational_adjudications": 0,
+  "minimum_substantive_operational_adjudications": 3,
+  "observed_service_types": 0,
+  "minimum_service_types": 2,
+  "verified_benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "cost_avoidance": null,
+    "recovery": null,
+    "capacity_gain": null,
+    "interpretation": "NOT_ESTIMATED; an empty verified ledger does not establish zero waste or zero possible benefit."
+  },
+  "completion_gates": [
+    {
+      "gate": 1,
+      "status": "PARTIAL",
+      "blockers": [
+        "Instrument population and applicability review incomplete.",
+        "Entity lifecycle, mandate links and accepted ownership not fully verified."
+      ]
+    },
+    {
+      "gate": 2,
+      "status": "PARTIAL",
+      "blockers": [
+        "Actual baseline-dependent thresholds remain unset.",
+        "Evidence intake/authority not obtained; synthetic rehearsals are software tests only."
+      ]
+    },
+    {
+      "gate": 3,
+      "status": "BLOCKED",
+      "blockers": [
+        "No substantive operational audits completed.",
+        "No accepted operational/financial adjudications or independent institutional review."
+      ]
+    },
+    {
+      "gate": 4,
+      "status": "BLOCKED",
+      "blockers": [
+        "No intervention has institutional approval or observed realization.",
+        "No accepted substantive no-change adjudication."
+      ]
+    }
+  ],
+  "constraints": {
+    "SP08P1": "BLOCKED_FOR_LIVE_USE",
+    "SP09P1": "BLOCKED_FOR_LIVE_USE",
+    "course_watch": "PAUSED",
+    "external_requests": "NOT_SENT",
+    "operational_execution": "NOT_AUTHORIZED"
+  },
+  "source_sha256": {
+    "data/adjudications/execution_gates.json": "7cf33875fa03a13db34d440f2bf1a2c35e4ad5ba352e3f422b5f6b2386cf754d",
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/cases/C04.json": "355d3f85c606bc4d6e7e058b3d44d144a410771e8989592c3eaeb3f1a689a4d9",
+    "data/cases/C05.json": "fbb4ad3b570fbe29fa363ade28d39734cccc6166fd344d72ce523e5b8aea4119",
+    "data/cases/C06.json": "651982b20960c7e2f1bccd0c6275d592ce9fa2cd38a2ac446a38220c0eb49578",
+    "data/cases/C07.json": "0ff275080456d44de6f80969ca4df10e108ec340b5dfb65d491c933878213bc3",
+    "data/cases/C08.json": "6232aaa3a2bff0a3ea9b2ec89c361887e5c9795c58dfc032d71df28beb015ed3",
+    "data/cases/C09.json": "5b01453c53d5992965040c1adf36cf374f6023ec1493770f98a4f3fa4e29ef4b",
+    "data/cases/C10.json": "842a70e1ad709929e3cff0ea43dd942fa0a676cb66be04fafe66c0b8b14ec23d",
+    "data/cases/C11.json": "e0eff9b95f378f8869f8e3eb3a0af60002df3603d5b1039c6951f354e9a6b105",
+    "data/cases/C12.json": "a612a2998a74c7b1b6241c89b1981c6457fc9cedd4605e7c7ecf926481e9e083",
+    "data/cases/C13.json": "8047ebdd444a45597e6e91614b884ffbb19cec66e83f81012bc58fafd8c1a095",
+    "data/cases/C14.json": "1b402619b2b094ea28c3a3f22914cf8d9e07f72eabb93e7e451a536254a3e999",
+    "data/pilots/charters.json": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+    "data/pilots/rehearsal_receipt.json": "736cffbe5d526b9cff68c5a83107e04e060ca464ad110568674af0e8b5795de8",
+    "data/pilots/request_status.json": "f86a75c98135ff046455096864a87d8a18121a77e32f395448dff8f4f1b3af60",
+    "data/pilots/thresholds.json": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3",
+    "data/portfolio/coverage_matrix.json": "0349e5924877d3c1b05df21503d239e0d6bd5d934e6c411ad274f89ba0bfca2a",
+    "data/portfolio/dataset_contracts.json": "42cbd717169b975340d502219e2cab532e9903cf754116b87e4c03acb7c54590",
+    "data/portfolio/entities.json": "478c447f27c9ff08653ca7dfb553de7b0ab2745e8d092c20887b409db82f3a58",
+    "data/portfolio/financial_baseline.json": "a0ba39837df779eb258e760a04fc1aade153b54e8e7469d809ebf7925504e58b",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/verified_benefit_ledger.json": "d41ded977037f6001b220696f8b5afe00714444685dc9343d4f93d3167fb8a6d",
+    "data/realization/implementation_gates.json": "364b300b22d0cd9732d6c4b601ae2e48b73778a321e215f9619528074710bd33",
+    "data/reforms/baseline_release.json": "297780bcd0cf1d8a91f8d2f1d3dfb318075b784ef46d9921008038af113bd3b2",
+    "data/reforms/unga80_actions.json": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
+    "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d"
+  },
+  "limitations": [
+    "Public and synthetic work does not replace internal ledgers, workloads, service outcomes or owner authority.",
+    "UNGA80 actions are selected provisions; UNGA81 review is bounded and is not an exhaustive legal determination.",
+    "Agent review is software/research review, not independent UN institutional or professional audit assurance."
+  ]
+}

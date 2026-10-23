@@ -51,6 +51,8 @@ def build(root=ROOT):
              'scripts/build_canonical_manifest.py', 'scripts/generate_current_status.py',
              'scripts/validate_master_issues.py', 'scripts/frozen_audit_inputs.py',
              'metadata/master_issue_schema.json']
+    paths += ['data/portfolio/public_portfolio.json', 'data/reforms/baseline_release.json',
+              'data/portfolio/release_manifest.json', 'data/portfolio/workflow_execution.json']
     paths.extend(sorted(path.relative_to(root).as_posix() for path in (root/'.github/workflows').glob('*.yml')))
     loaded = {name: (root/name).read_bytes() for name in paths}
     read = lambda path: json.loads(loaded[path])
@@ -68,9 +70,9 @@ def build(root=ROOT):
     summary = summarize(status, manifest, issues, migration)
     return {
         'schema_version': 1,
-        'receipt_id': 'A14-STRUCTURAL-2026-10-22',
-        'control_design_as_of': '2026-10-22',
-        'evidence_scope': 'Retained research and finance evidence through source-specific cutoffs; no new UN source review.',
+        'receipt_id': 'I10-STRUCTURAL-2026-10-23',
+        'control_design_as_of': '2026-10-23',
+        'evidence_scope': 'Retained finance/research cutoffs and qualified 23 October public reform/portfolio controls; structural checks do not authenticate the selected UN primary texts.',
         'status': 'STRUCTURAL_CHECKS_PASSED_RUNTIME_CI_NOT_ASSERTED',
         'summary': summary,
         'checks': {

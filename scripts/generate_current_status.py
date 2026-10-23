@@ -14,7 +14,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_JSON = 'metadata/current_status.json'
 OUTPUT_MD = 'docs/current_status.md'
-DESIGN_DATE = '2026-10-22'
+DESIGN_DATE = '2026-10-23'
 BASE_INPUTS = [
     'metadata/canonical_manifest.json',
     'data/issues/current_issues.json',
@@ -34,6 +34,8 @@ BASE_INPUTS = [
     'data/spm_2027_financing_controls.csv',
     'data/spm_2027_embedded_efficiencies.csv',
     'data/acabq_2027_mission_reconciliation.csv',
+    'data/portfolio/public_portfolio.json',
+    'data/reforms/baseline_release.json',
 ]
 
 
@@ -85,6 +87,13 @@ def current_manifest_designations(manifest):
 
 
 def build(root=ROOT):
+    portfolio = read_json(root, 'data/portfolio/public_portfolio.json')
+    reforms = read_json(root, 'data/reforms/baseline_release.json')
+    require(portfolio['release_class'] == 'PUBLIC_VALIDATION_BASELINE' and portfolio['decision_grade_portfolio'] == 'BLOCKED', 'portfolio release class changed; review status')
+    require(portfolio['substantive_operational_adjudications'] == 0 and len(portfolio['cases']) == 14, 'portfolio adjudication facts changed; review status')
+    require(all(r['candidate_state'] == 'SCREENING_CANDIDATE' and r['disposition'] == 'BLOCKED_PENDING_EVIDENCE' for r in portfolio['cases']), 'portfolio case states changed; review status')
+    require({r['case_id'] for r in portfolio['cases']} == {f'C{i:02}' for i in range(1,15)}, 'portfolio case population changed')
+    require(all(value is None for key,value in portfolio['verified_benefits'].items() if key != 'interpretation'), 'portfolio benefits changed; review status')
     manifest = read_json(root, BASE_INPUTS[0])
     issue_envelope = read_json(root, BASE_INPUTS[1])
     migration = read_json(root, BASE_INPUTS[2])
@@ -211,7 +220,7 @@ def build(root=ROOT):
         'schema_version': 1,
         'artifact_role': 'generated_authoritative_project_status_for_declared_retained_sources',
         'design_date': DESIGN_DATE,
-        'evidence_scope': 'Retained repository evidence through 8 October 2026 financial review and 15 October 2026 research review; no new legal, operational or source-authentication review.',
+        'evidence_scope': 'Financial evidence retains its 8 October 2026 cutoff and V8–V13 research its 15 October cutoff. The 23 October selected reform-source review is partial; no new operational evidence or institutional legal/compliance certification.',
         'authority_boundary': 'Project status view only; not a UN institutional determination, operational approval, or current UNGA81 compliance certification.',
         'canonical_manifest': {'path': BASE_INPUTS[0], 'current_designations': current_manifest_designations(manifest)},
         'research': {'reference_id': pointer['reference_id'], 'reference_version': pointer['reference_version'],
@@ -234,6 +243,8 @@ def build(root=ROOT):
             'source': 'data/census_v7/final_summary.json', 'retained_review_cutoff': recovery['asof'],
             'limitation': 'Retrieval/authentication does not mean exhaustive substantive comparison; V7 recovery supersedes the prior retrieval gap only.'},
         'finance': finance,
+        'portfolio': {'release_class': portfolio['release_class'], 'decision_grade_portfolio': portfolio['decision_grade_portfolio'], 'cases': len(portfolio['cases']), 'substantive_operational_adjudications': portfolio['substantive_operational_adjudications'], 'completion_gates': portfolio['completion_gates'], 'constraints': portfolio['constraints'], 'verified_benefits': portfolio['verified_benefits'], 'source': 'data/portfolio/public_portfolio.json'},
+        'reform_baseline': {'release_class': reforms['release_class'], 'selected_provisions': reforms['extracted_provision_count'], 'ga81_action_extraction': reforms['ga81_action_extraction'], 'verified_compliance_findings': reforms['verified_compliance_findings'], 'source': 'data/reforms/baseline_release.json'},
         'unified_issue_observations': {'records': len(issues),
             'resolution_states': issue_states,
             'source_populations': issue_sources,
@@ -242,7 +253,7 @@ def build(root=ROOT):
         'next_decisions': [
             'Obtain owner review of existing controls before proposing a live reporting shadow.',
             'Acquire authorized operational and transaction evidence for shared-service, asset-transfer and aviation/support audits.',
-            'Build the adopted UNGA80/81 obligation matrix with explicit authority and cutoff before asserting reform compliance.',
+            'Complete instrument-population and applicability review beyond the selected UNGA80/81 reform baseline before asserting compliance.',
             'Resolve dataset-semantic, canonicality and dynamic-lineage gaps before substantive consolidation.'],
         'source_hashes': source_hashes,
     }
@@ -255,6 +266,10 @@ def render(s):
         '**Generated project view from retained evidence.** Code/design date: '+s['design_date']+'. '+s['evidence_scope'], '',
         s['authority_boundary'], '',
         'The Commander’s intent is to identify specific peacekeeping inefficiencies and avoidable resource use while protecting mandated operations and linking recommendations to applicable adopted reform requirements.', '',
+        '## Portfolio readiness — 23 October', '',
+        f"The [public portfolio](decision_portfolio.md) contains **{s['portfolio']['cases']} screening cases** and **{s['portfolio']['substantive_operational_adjudications']} substantive operational adjudications**. The minimum is three across two service types. The release is a public validation baseline; a decision-grade or realized-benefit portfolio remains blocked. Foundation and validation-system completion gates are partial; decision and realization gates are blocked.", '',
+        f"The [reform baseline](reform_compliance_view.md) contains **{s['reform_baseline']['selected_provisions']} selected provision records**, rather than universally applicable mission obligations. UNGA81 adopted-action extraction remains unresolved within the bounded search. No verified compliance finding is asserted. See the [agent review](portfolio_agent_review.md) for its actual inspection scope and limits.", '',
+        'Six new evidence-request contracts cover ten case tracks. All remain unsent, collection remains unauthorized and proposed owners remain unaccepted. Three pilot charters are blocked; their numerical thresholds require actual baseline data. Ten synthetic scenarios test software behavior only. [Commander’s decision memo](commander_decision_memo.md) · [Full execution ledger](workflow_execution.md) · [Leadership report](leadership_portfolio_report.md).', '',
         '## Research reference and operational boundary', '',
         f"Research reference **{r['reference_version']}** is adopted for the fixed V8/V9 research obligations only. The historical first pass remains **{r['historical_supported']} supported and {r['historical_amendment_holds']} amendment holds** out of {r['fixed_obligations']} obligations. Both amendments were adopted; **{r['affected_assertions_passed']} affected assertions** passed separate rechecks. Current holds for those amendments: **{r['current_holds_for_adopted_amendments']}**. A fresh full-corpus score was **not run**.", '',
         '**Course watch: PAUSED.** Both `SP08P1` and `SP09P1` remain `BLOCKED_FOR_LIVE_USE`. Owner approvals and live trials in the retained package are zero. No live task is activated by this status update.', '',

@@ -1,0 +1,140 @@
+{
+  "case_id": "C07",
+  "title": "MONUSCO irregular medical-insurance claim controls",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained governing-text extraction identifies a review/control mechanism; underlying complete operational records, accountable owner confirmation and financial validation are absent.",
+  "current_arrangement": "The retained A/RES/80/278 paragraph 9 extraction requests stronger controls over irregular medical-insurance claims. Paragraphs 10–11 preserve mandate capability and medical-emergency readiness. No patient-level claims or adjudications are in the public corpus.",
+  "testable_mechanism": "Test whether eligibility, duplicate-claim and reimbursement checks prevent unsupported payments without delaying legitimate care. A flag is not fraud and a repeated amount is not a duplicate without claim-level linkage.",
+  "feasible_alternative_to_test": "Owner-approved confidential claim adjudication and control redesign, with expedited clinical exceptions and appeal review; retain necessary care and emergency evacuation capacity.",
+  "safeguards": [
+    "Timely medically necessary care and emergency evacuation",
+    "Patient confidentiality, minimum necessary data and clinical independence",
+    "Fair review, appeal and no automatic denial from algorithmic flags"
+  ],
+  "cost_perimeter_and_nonadditivity": "Separate prevention, correction and recovery. Count only supported overpayments or avoided future payments against a valid counterfactual, net of administration and delayed-care costs. Provider, insurer and mission reimbursements can represent one episode; reconcile once. No medical claim exposure or recovery is estimated.",
+  "minimum_records": [
+    "Pseudonymized episode/claim IDs, eligibility dates and approved coverage rules",
+    "Provider invoice, service date, procedure category, authorization and insurer adjudication",
+    "Payment, reversal, reimbursement and recovery links with appeal outcome",
+    "Control timestamps, care-delay indicators, exception handling and independent clinical review"
+  ],
+  "custodian_roles_to_confirm": [
+    "MONUSCO medical insurance benefits administrator",
+    "Authorized insurer claims and mission finance custodians",
+    "Independent medical reviewer and privacy/information-security role"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 3,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D02",
+        "mission_id": "MONUSCO",
+        "ga_resolution": "A/RES/80/278",
+        "operative_paragraph": "9",
+        "pdf_page": "2",
+        "directive_paraphrase": "Strengthen internal controls for irregular medical insurance claims",
+        "linked_candidate_id": "-",
+        "directive_category": "requested_internal_controls",
+        "official_url": "https://docs.un.org/en/A/RES/80/278",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 4,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D03",
+        "mission_id": "MONUSCO",
+        "ga_resolution": "A/RES/80/278",
+        "operative_paragraph": "10",
+        "pdf_page": "2",
+        "directive_paraphrase": "Ensure adequate resources for efficient and effective permanent-ceasefire support consistent with Security Council 2808",
+        "linked_candidate_id": "C07",
+        "directive_category": "mandate_capability_guardrail",
+        "official_url": "https://docs.un.org/en/A/RES/80/278",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 5,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D04",
+        "mission_id": "MONUSCO",
+        "ga_resolution": "A/RES/80/278",
+        "operative_paragraph": "11",
+        "pdf_page": "2",
+        "directive_paraphrase": "Maintain readiness and logistical flexibility for medical emergencies",
+        "linked_candidate_id": "C07",
+        "directive_category": "mandate_capability_guardrail",
+        "official_url": "https://docs.un.org/en/A/RES/80/278",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_mission_reconciliation.csv",
+      "csv_line": 4,
+      "sha256": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+      "source_snapshot": {
+        "mission_id": "MONUSCO",
+        "sg_proposal_symbol": "A/80/624",
+        "sg_proposal_usd_thousands": "874790.1",
+        "ga_resolution": "A/RES/80/278",
+        "ga_fifth_committee_draft": "A/C.5/80/L.37",
+        "agenda_item": "152",
+        "ga_adoption_date": "2026-06-30",
+        "ga_adoption_status": "verified_in_uploaded_operative_resolution",
+        "funding_cycle": "2026-07-01_to_2027-06-30",
+        "ga_appropriation_usd_thousands": "958318",
+        "adopted_minus_proposed_usd_thousands": "-6441.5",
+        "reconciliation_status": "approved_maintenance_and_appropriation_components_verified",
+        "decision_reference_url": "https://www.un.org/en/ga/fifth/80/resdec80.shtml",
+        "operative_resolution_url": "https://docs.un.org/en/A/RES/80/278",
+        "cross_mission_summary_symbol": "A/C.5/80/20",
+        "decision_guardrail": "The GA inclusive appropriation includes shared support UNLB and RSCE; adopted_minus_proposed compares GA mission-maintenance gross against SG mission-maintenance gross; no new savings inferred",
+        "ga_approved_maintenance_usd_thousands": "868348.6",
+        "ga_approved_military_police_usd_thousands": "380684.4",
+        "ga_approved_civilian_usd_thousands": "241146.5",
+        "ga_approved_operational_usd_thousands": "246517.7",
+        "ga_support_account_share_usd_thousands": "70078.5",
+        "ga_logistics_base_share_usd_thousands": "10408.1",
+        "ga_regional_service_centre_share_usd_thousands": "9482.8",
+        "ga_staff_assessment_income_usd_thousands": "26524.9",
+        "appropriation_resolution_paragraph": "para_15",
+        "appropriation_resolution_pdf_page": "3",
+        "note_approved_annex_page": "2",
+        "approved_resource_note_url": "https://docs.un.org/en/A/C.5/80/20",
+        "uploaded_resolution_sha256": "b7ea4182cd7c1646e32f86e365a77da938c0bea701c01ffd7a0dc30aeba2d590",
+        "maintenance_difference_pct_of_SG_request": "-0.7"
+      }
+    }
+  ],
+  "case_specific_limit": "No live medical records should enter Git. Public derivatives must suppress patient identifiers and rare combinations that could reidentify individuals; the project has no access authorization.",
+  "source_review_scope": "Retained repository extractions; primary resolution bytes are not newly authenticated and no current implementation or compliance determination is made.",
+  "handling": "Use approved restricted intake, minimum necessary fields and pseudonymization; no live financial, personnel, medical or security-sensitive records in this public repository.",
+  "reopen_condition": "Confirmed accountable owner and authorized complete linked records permit a validation-ready assessment; a draft request is not authority or evidence receipt."
+}

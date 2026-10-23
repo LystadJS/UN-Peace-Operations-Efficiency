@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E04",
+  "case_ids": [
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+  ],
+  "purpose": "Four GA-directed validation requests; authority must be checked against each applicable adopted provision",
+  "proposed_custodian_roles": [
+    "UNISFA translation and asset custodians",
+    "UNSOS fuel contract and finance custodians",
+    "MONUSCO claims control and finance custodians"
+  ],
+  "tables": [
+    {
+      "table_id": "translation_jobs",
+      "grain": "One requested translation job and its cost/workload outcomes",
+      "keys": [
+        "job_id"
+      ],
+      "fields": [
+        {
+          "name": "job_id",
+          "type": "string",
+          "purpose": "Pseudonymous job identity",
+          "required": true
+        },
+        {
+          "name": "language_pair",
+          "type": "string",
+          "purpose": "Test comparable service",
+          "required": true
+        },
+        {
+          "name": "requested_date",
+          "type": "date",
+          "purpose": "Measure demand",
+          "required": true
+        },
+        {
+          "name": "completed_date",
+          "type": "date",
+          "purpose": "Measure turnaround",
+          "required": true
+        },
+        {
+          "name": "output_units",
+          "type": "decimal",
+          "purpose": "Measure normalized translated volume",
+          "required": true
+        },
+        {
+          "name": "delivery_mode",
+          "type": "string",
+          "purpose": "Separate staff vendor and shared service",
+          "required": true
+        },
+        {
+          "name": "paid_hours",
+          "type": "decimal",
+          "purpose": "Capture source and receiving work",
+          "required": true
+        },
+        {
+          "name": "external_cost",
+          "type": "decimal",
+          "purpose": "Capture purchased translation",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify cost unit",
+          "required": true
+        },
+        {
+          "name": "quality_acceptance",
+          "type": "string",
+          "purpose": "Protect required language coverage and accuracy",
+          "required": true
+        },
+        {
+          "name": "rework_units",
+          "type": "decimal",
+          "purpose": "Capture displaced or repeated work",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "unisfa_asset_events",
+      "grain": "One asset custody, condition, transfer, deployment or disposal event",
+      "keys": [
+        "asset_event_id"
+      ],
+      "fields": [
+        {
+          "name": "asset_event_id",
+          "type": "string",
+          "purpose": "Stable event identity",
+          "required": true
+        },
+        {
+          "name": "asset_token",
+          "type": "string",
+          "purpose": "Pseudonymous asset linkage without serial disclosure",
+          "required": true
+        },
+        {
+          "name": "asset_class",
+          "type": "string",
+          "purpose": "Assess substitutability",
+          "required": true
+        },
+        {
+          "name": "event_type",
+          "type": "string",
+          "purpose": "Distinguish transfer acceptance deployment disposal",
+          "required": true
+        },
+        {
+          "name": "event_date",
+          "type": "date",
+          "purpose": "Establish chronology",
+          "required": true
+        },
+        {
+          "name": "source_entity",
+          "type": "string",
+          "purpose": "Locate source cost",
+          "required": true
+        },
+        {
+          "name": "receiving_entity",
+          "type": "string",
+          "purpose": "Locate receiving cost",
+          "required": true
+        },
+        {
+          "name": "condition_band",
+          "type": "string",
+          "purpose": "Test usable capacity",
+          "required": true
+        },
+        {
+          "name": "service_acceptance_status",
+          "type": "string",
+          "purpose": "Verify recipient capability",
+          "required": true
+        },
+        {
+          "name": "transfer_cost",
+          "type": "decimal",
+          "purpose": "Include transport preparation and handover expense",
+          "required": true
+        },
+        {
+          "name": "residual_liability_cost",
+          "type": "decimal",
+          "purpose": "Include storage maintenance disposal and transition obligations",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify financial unit",
+          "required": true
+        },
+        {
+          "name": "procurement_requirement_token",
+          "type": "string",
+          "purpose": "Link genuine pre-existing demand",
+          "required": true
+        },
+        {
+          "name": "procurement_commitment_status",
+          "type": "string",
+          "purpose": "Distinguish plan commitment cancellation and actual purchase",
+          "required": true
+        },
+        {
+          "name": "comparable_external_purchase_cost",
+          "type": "decimal",
+          "purpose": "Document bounded avoided procurement counterfactual",
+          "required": true
+        },
+        {
+          "name": "availability_result",
+          "type": "string",
+          "purpose": "Protect readiness",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "fuel_recovery_lines",
+      "grain": "One entitlement issue consumption invoice credit recovery or settlement line",
+      "keys": [
+        "line_id"
+      ],
+      "fields": [
+        {
+          "name": "line_id",
+          "type": "string",
+          "purpose": "Pseudonymous source identity",
+          "required": true
+        },
+        {
+          "name": "contract_token",
+          "type": "string",
+          "purpose": "Join entitlement rules without contractor identity",
+          "required": true
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "purpose": "Align accrual and recovery",
+          "required": true
+        },
+        {
+          "name": "entry_type",
+          "type": "string",
+          "purpose": "Distinguish issued consumed invoiced credited settled",
+          "required": true
+        },
+        {
+          "name": "quantity",
+          "type": "decimal",
+          "purpose": "Reconcile physical fuel units",
+          "required": true
+        },
+        {
+          "name": "quantity_unit",
+          "type": "string",
+          "purpose": "Prevent incompatible volume aggregation",
+          "required": true
+        },
+        {
+          "name": "entitlement_basis_reference",
+          "type": "string",
+          "purpose": "Trace authorized contractor share",
+          "required": true
+        },
+        {
+          "name": "amount",
+          "type": "decimal",
+          "purpose": "Reconcile gross receivable credit and settlement",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify financial unit",
+          "required": true
+        },
+        {
+          "name": "linked_line_id",
+          "type": "string",
+          "purpose": "Trace partial settlement reversal and timing",
+          "required": true
+        },
+        {
+          "name": "settlement_date",
+          "type": "date",
+          "purpose": "Verify actual recovery",
+          "required": true
+        },
+        {
+          "name": "collection_cost",
+          "type": "decimal",
+          "purpose": "Calculate net recovery",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "claims_control_aggregates",
+      "grain": "One non-identifying claim-control outcome by scheme category and period; no diagnosis or person identifiers",
+      "keys": [
+        "control_observation_id"
+      ],
+      "fields": [
+        {
+          "name": "control_observation_id",
+          "type": "string",
+          "purpose": "Stable non-personal observation identity",
+          "required": true
+        },
+        {
+          "name": "scheme_category",
+          "type": "string",
+          "purpose": "Compare control process",
+          "required": true
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "purpose": "Define reporting period",
+          "required": true
+        },
+        {
+          "name": "claim_count",
+          "type": "integer",
+          "purpose": "Provide denominator",
+          "required": true
+        },
+        {
+          "name": "flagged_count",
+          "type": "integer",
+          "purpose": "Separate suspected irregularities from adjudicated errors",
+          "required": true
+        },
+        {
+          "name": "adjudicated_invalid_amount",
+          "type": "decimal",
+          "purpose": "Record validated overpayment exposure",
+          "required": true
+        },
+        {
+          "name": "recovered_amount",
+          "type": "decimal",
+          "purpose": "Separate booked receivable from settled recovery",
+          "required": true
+        },
+        {
+          "name": "control_operating_cost",
+          "type": "decimal",
+          "purpose": "Account for review effort",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify financial unit",
+          "required": true
+        },
+        {
+          "name": "appeal_and_service_quality",
+          "type": "string",
+          "purpose": "Protect legitimate access and due process",
+          "required": true
+        },
+        {
+          "name": "adjudication_reference",
+          "type": "string",
+          "purpose": "Point to authorized restricted review without personal data",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "C04 translation, C05 UNISFA transferred assets, C06 UNSOS fuel recovery and C07 MONUSCO claims controls remain separate cases.",
+    "Medical request is aggregate-only. Any restricted claim-level verification requires separate explicit approval and secure institutional review."
+  ]
+}

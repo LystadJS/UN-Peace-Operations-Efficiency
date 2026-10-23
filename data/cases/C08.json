@@ -1,0 +1,235 @@
+{
+  "case_id": "C08",
+  "title": "UNMISS adopted post abolishments and output continuity",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained sources support a bounded validation question; complete operational/financial records, accountable owner confirmation and applicable authority are absent.",
+  "current_arrangement": "The retained A/RES/80/283 extraction records 91 abolished posts or positions, including 53 in Electoral Affairs. This is adopted establishment action; actual personnel actions, payroll effects and workload continuity are not verified.",
+  "testable_mechanism": "Reconcile the 91 unique establishment positions to effective personnel and payroll actions, then test whether required electoral and other services migrated, ceased lawfully, or returned through overtime, temporary contracts or another unit.",
+  "feasible_alternative_to_test": "Improve task routing and transition controls around already adopted changes; retain or restore necessary capability through competent authority if output continuity fails. Do not propose the same 91 abolishments as a new intervention.",
+  "safeguards": [
+    "Preserve mandated electoral assistance and residual electoral focal-point capacity",
+    "Protect human rights, field safety and response coverage across all affected units",
+    "Do not substitute staff workload or unpaid overtime for an alleged cost reduction"
+  ],
+  "cost_perimeter_and_nonadditivity": "The 53 Electoral Affairs posts are a subset of 91; never add them. Adopted establishment reductions and their budget effects belong in the counterfactual. Include remaining staff, consultants, overtime, contracts, separation and receiving-unit costs; authorization is not realized payroll reduction.",
+  "minimum_records": [
+    "Unique position/post IDs, adopted establishment table, effective personnel actions and last payroll dates",
+    "Fund/cost-centre payroll, vacancy, separation, consultant and temporary staffing records before and after transition",
+    "Mandate-to-task map, electoral service requests, required outputs, timeliness, quality, incidents and receiving-unit workload",
+    "Approved transition decisions, residual focal-point duties and independent output-continuity review"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNMISS Chief of Staff and electoral substantive lead",
+    "UNMISS HR, finance and mission support custodians",
+    "DPO electoral coordination and mandate owners"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 2,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB01",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Office of Chief of Staff",
+        "GA_abolished_posts_or_positions": "1",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 3,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB02",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Communications and Public Information Division",
+        "GA_abolished_posts_or_positions": "6",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 4,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB03",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Electoral Affairs Division",
+        "GA_abolished_posts_or_positions": "53",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 5,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB04",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Engineering Section",
+        "GA_abolished_posts_or_positions": "6",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 6,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB05",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Field Technology Section",
+        "GA_abolished_posts_or_positions": "2",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 7,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB06",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Heads of Field Offices Section",
+        "GA_abolished_posts_or_positions": "6",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 8,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB07",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Human Rights Division",
+        "GA_abolished_posts_or_positions": "2",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 9,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB08",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Office of the Police Commissioner",
+        "GA_abolished_posts_or_positions": "1",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 10,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB09",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Rule of Law and Security Institutions Section",
+        "GA_abolished_posts_or_positions": "9",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 11,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB10",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "State Administrative Officer Operations Section",
+        "GA_abolished_posts_or_positions": "1",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    },
+    {
+      "path": "data/ga_unmiss_abolishments.csv",
+      "csv_line": 12,
+      "sha256": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+      "source_snapshot": {
+        "abolition_record": "UNMISS_AB11",
+        "mission_id": "UNMISS",
+        "ga_resolution": "A/RES/80/283",
+        "section_in_annex": "Warehouse and Commodity Management Section",
+        "GA_abolished_posts_or_positions": "4",
+        "operative_paragraph": "9_and_Annex",
+        "source_pdf_pages": "4-6",
+        "official_url": "https://docs.un.org/en/A/RES/80/283",
+        "cost_status": "not_attributed_at_unit_level",
+        "interpretation": "Already abolished by General Assembly; not additional consolidation savings"
+      }
+    }
+  ],
+  "case_specific_limit": "The case tests implementation and continuity of an already adopted action; it does not establish that all 91 occupied posts disappeared or that 53 electoral positions were unnecessary.",
+  "handling": "No identifiable payroll, participant, medical, security, live transaction or restricted clearance records in this public dossier; use authorized restricted intake and approved safe derivatives.",
+  "reopen_condition": "Confirm owner and authority, obtain authenticated complete linked records, define comparator and guardrails, and adjudicate validation-ready evidence. A prepared request or software pass is insufficient."
+}

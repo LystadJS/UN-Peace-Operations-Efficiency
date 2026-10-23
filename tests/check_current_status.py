@@ -66,9 +66,17 @@ class CurrentStatusTests(unittest.TestCase):
 
     def test_build_date_does_not_replace_evidence_dates(self):
         s = g.build(self.root)
-        self.assertEqual(s['design_date'], '2026-10-22')
+        self.assertEqual(s['design_date'], '2026-10-23')
         self.assertEqual(s['finance']['advisory_coverage']['retained_review_cutoff'], '2026-10-08')
         self.assertEqual(s['research']['review_cutoff'], '2026-10-15')
+
+    def test_public_portfolio_cannot_become_operational_completion(self):
+        self.mutate_json('data/portfolio/public_portfolio.json', lambda x: x.update(substantive_operational_adjudications=3))
+        self.reject()
+
+    def test_unknown_public_benefit_cannot_become_zero(self):
+        self.mutate_json('data/portfolio/public_portfolio.json', lambda x: x['verified_benefits'].update(realized_saving=0))
+        self.reject()
 
     def test_reference_hash_drift_fails(self):
         pointer = g.read_json(self.root, 'data/current_research_reference.json')

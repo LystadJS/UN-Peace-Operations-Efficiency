@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "suite": "public-portfolio",
+  "design_task": "I11",
+  "python_minimum": "3.11",
+  "python_policy": "Runtime version observed in receipt; no claim of pinned Python patch version.",
+  "external_packages": [],
+  "network_required": false,
+  "publishes": false,
+  "timeout_seconds": 180,
+  "legacy_requirement": "All applicable A12 validation groups remain required separately; this suite neither replaces nor skips their Python/R/PDF checks.",
+  "scope_limit": "Explicit bounded software, hash, declaration and synthetic-model checks; not primary-source authentication or substantive UN operational adjudication.",
+  "required_tests": [
+    "tests/check_reform_obligations.py",
+    "tests/check_reform_claim_inventory.py",
+    "tests/check_acabq_register.py",
+    "tests/check_reform_baseline.py",
+    "tests/check_reform_views.py",
+    "tests/check_canonical_entities.py",
+    "tests/check_financial_baseline.py",
+    "tests/check_portfolio_coverage.py",
+    "tests/check_intervention_register.py",
+    "tests/check_intervention_evaluation.py",
+    "tests/check_case_dossiers.py",
+    "tests/check_public_evidence_boundary.py",
+    "tests/check_operational_evidence.py",
+    "tests/check_evidence_reconciliation.py",
+    "tests/check_net_benefit.py",
+    "tests/check_portfolio_rehearsal.py",
+    "tests/check_overlap_graph.py",
+    "tests/check_benefit_ledger.py",
+    "tests/check_decision_portfolio.py",
+    "tests/check_portfolio_release.py",
+    "tests/check_current_status.py",
+    "tests/check_readme_navigation.py",
+    "tests/check_project_consistency.py",
+    "tests/check_project_health.py",
+    "tests/check_portfolio_check_runner.py",
+    "tests/check_workflow_execution.py"
+  ],
+  "required_step_ids": [
+    "reform-claims",
+    "acabq-register",
+    "ga80-obligations",
+    "ga81-obligations",
+    "reform-baseline",
+    "reform-views",
+    "entity-registry",
+    "financial-baseline",
+    "financial-nonadditivity",
+    "portfolio-coverage",
+    "intervention-register",
+    "case-snapshots",
+    "public-evidence-boundary",
+    "synthetic-rehearsal",
+    "overlap-graph",
+    "benefit-ledger",
+    "decision-portfolio",
+    "current-status",
+    "readme-navigation",
+    "project-consistency",
+    "project-health",
+    "portfolio-release",
+    "check-reform-obligations",
+    "check-reform-claim-inventory",
+    "check-acabq-register",
+    "check-reform-baseline",
+    "check-reform-views",
+    "check-canonical-entities",
+    "check-financial-baseline",
+    "check-portfolio-coverage",
+    "check-intervention-register",
+    "check-intervention-evaluation",
+    "check-case-dossiers",
+    "check-public-evidence-boundary",
+    "check-operational-evidence",
+    "check-evidence-reconciliation",
+    "check-net-benefit",
+    "check-portfolio-rehearsal",
+    "check-overlap-graph",
+    "check-benefit-ledger",
+    "check-decision-portfolio",
+    "check-portfolio-release",
+    "check-current-status",
+    "check-readme-navigation",
+    "check-project-consistency",
+    "check-project-health",
+    "check-portfolio-check-runner",
+    "workflow-execution",
+    "check-workflow-execution",
+    "reform-vocabulary"
+  ],
+  "required_paths": [
+    "data/portfolio/dataset_contracts.json",
+    "data/portfolio/agent_review.json",
+    "docs/reform_independent_review.md",
+    "docs/commander_decision_memo.md",
+    "docs/reform_portfolio_annex.md",
+    "docs/leadership_portfolio_report.md",
+    "data/portfolio/restricted_adjudication_status.json",
+    "data/adjudications/execution_gates.json",
+    "data/realization/implementation_gates.json",
+    "data/pilots/request_status.json",
+    "data/reforms/baseline_release.json",
+    "docs/cases/C01.md",
+    "docs/cases/C02.md",
+    "docs/cases/C03.md",
+    "docs/cases/C04.md",
+    "docs/cases/C05.md",
+    "docs/cases/C06.md",
+    "docs/cases/C07.md",
+    "docs/cases/C08.md",
+    "docs/cases/C09.md",
+    "docs/cases/C10.md",
+    "docs/cases/C11.md",
+    "docs/cases/C12.md",
+    "docs/cases/C13.md",
+    "docs/cases/C14.md",
+    "data/portfolio/workflow_execution.json",
+    "docs/workflow_execution.md"
+  ],
+  "steps": [
+    {
+      "id": "reform-claims",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_reform_claim_inventory.py",
+        "--check"
+      ],
+      "tasks": [
+        "R02"
+      ]
+    },
+    {
+      "id": "acabq-register",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_acabq_register.py",
+        "--check"
+      ],
+      "tasks": [
+        "R07"
+      ]
+    },
+    {
+      "id": "ga80-obligations",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_reform_obligations.py",
+        "--records",
+        "data/reforms/unga80_actions.json"
+      ],
+      "tasks": [
+        "R01",
+        "R03",
+        "R05"
+      ]
+    },
+    {
+      "id": "ga81-obligations",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_reform_obligations.py",
+        "--records",
+        "data/reforms/unga81_actions.json"
+      ],
+      "tasks": [
+        "R04",
+        "R06"
+      ]
+    },
+    {
+      "id": "reform-baseline",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_reform_baseline.py"
+      ],
+      "tasks": [
+        "R08",
+        "R10",
+        "R12",
+        "R15"
+      ]
+    },
+    {
+      "id": "reform-views",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_reform_views.py",
+        "--check"
+      ],
+      "tasks": [
+        "R09",
+        "R11",
+        "R13",
+        "R14",
+        "R16",
+        "R18"
+      ]
+    },
+    {
+      "id": "entity-registry",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_canonical_entities.py",
+        "--check"
+      ],
+      "tasks": [
+        "P01"
+      ]
+    },
+    {
+      "id": "financial-baseline",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_financial_baseline.py",
+        "--check"
+      ],
+      "tasks": [
+        "P03"
+      ]
+    },
+    {
+      "id": "financial-nonadditivity",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_financial_nonadditivity.py"
+      ],
+      "tasks": [
+        "P04",
+        "P07"
+      ]
+    },
+    {
+      "id": "portfolio-coverage",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_portfolio_coverage.py",
+        "--check"
+      ],
+      "tasks": [
+        "P02",
+        "P05"
+      ]
+    },
+    {
+      "id": "intervention-register",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_intervention_register.py",
+        "--check"
+      ],
+      "tasks": [
+        "P06",
+        "P07"
+      ]
+    },
+    {
+      "id": "case-snapshots",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_case_dossiers.py"
+      ],
+      "tasks": [
+        "C01-C14"
+      ]
+    },
+    {
+      "id": "public-evidence-boundary",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_public_evidence_boundary.py"
+      ],
+      "tasks": [
+        "E01-E07"
+      ]
+    },
+    {
+      "id": "synthetic-rehearsal",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/rehearse_portfolio.py",
+        "--check",
+        "--check-requests"
+      ],
+      "tasks": [
+        "E11-E15"
+      ]
+    },
+    {
+      "id": "overlap-graph",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_overlap_graph.py",
+        "--check"
+      ],
+      "tasks": [
+        "I03"
+      ]
+    },
+    {
+      "id": "benefit-ledger",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_benefit_ledger.py"
+      ],
+      "tasks": [
+        "I04",
+        "I05"
+      ]
+    },
+    {
+      "id": "decision-portfolio",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_decision_portfolio.py",
+        "--check"
+      ],
+      "tasks": [
+        "X01-X21",
+        "I01",
+        "I02",
+        "I06-I09"
+      ]
+    },
+    {
+      "id": "current-status",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/generate_current_status.py",
+        "--check"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "readme-navigation",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_readme_navigation.py",
+        "--check"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "project-consistency",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_project_consistency.py"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "project-health",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_project_health.py",
+        "--check"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "portfolio-release",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_portfolio_release.py",
+        "--check"
+      ],
+      "tasks": [
+        "I12"
+      ]
+    },
+    {
+      "id": "check-reform-obligations",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_reform_obligations.py"
+      ],
+      "tasks": [
+        "R01"
+      ]
+    },
+    {
+      "id": "check-reform-claim-inventory",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_reform_claim_inventory.py"
+      ],
+      "tasks": [
+        "R02"
+      ]
+    },
+    {
+      "id": "check-acabq-register",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_acabq_register.py"
+      ],
+      "tasks": [
+        "R07"
+      ]
+    },
+    {
+      "id": "check-reform-baseline",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_reform_baseline.py"
+      ],
+      "tasks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "check-reform-views",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_reform_views.py"
+      ],
+      "tasks": [
+        "R09-R18"
+      ]
+    },
+    {
+      "id": "check-canonical-entities",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_canonical_entities.py"
+      ],
+      "tasks": [
+        "P01"
+      ]
+    },
+    {
+      "id": "check-financial-baseline",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_financial_baseline.py"
+      ],
+      "tasks": [
+        "P03-P04"
+      ]
+    },
+    {
+      "id": "check-portfolio-coverage",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_portfolio_coverage.py"
+      ],
+      "tasks": [
+        "P02-P05"
+      ]
+    },
+    {
+      "id": "check-intervention-register",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_intervention_register.py"
+      ],
+      "tasks": [
+        "P06-P07"
+      ]
+    },
+    {
+      "id": "check-intervention-evaluation",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_intervention_evaluation.py"
+      ],
+      "tasks": [
+        "P08-P14"
+      ]
+    },
+    {
+      "id": "check-case-dossiers",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_case_dossiers.py"
+      ],
+      "tasks": [
+        "C01-C14"
+      ]
+    },
+    {
+      "id": "check-public-evidence-boundary",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_public_evidence_boundary.py"
+      ],
+      "tasks": [
+        "E01-E07"
+      ]
+    },
+    {
+      "id": "check-operational-evidence",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_operational_evidence.py"
+      ],
+      "tasks": [
+        "E08"
+      ]
+    },
+    {
+      "id": "check-evidence-reconciliation",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_evidence_reconciliation.py"
+      ],
+      "tasks": [
+        "E09"
+      ]
+    },
+    {
+      "id": "check-net-benefit",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_net_benefit.py"
+      ],
+      "tasks": [
+        "E10"
+      ]
+    },
+    {
+      "id": "check-portfolio-rehearsal",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_portfolio_rehearsal.py"
+      ],
+      "tasks": [
+        "E11-E15"
+      ]
+    },
+    {
+      "id": "check-overlap-graph",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_overlap_graph.py"
+      ],
+      "tasks": [
+        "I03"
+      ]
+    },
+    {
+      "id": "check-benefit-ledger",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_benefit_ledger.py"
+      ],
+      "tasks": [
+        "I04-I05"
+      ]
+    },
+    {
+      "id": "check-decision-portfolio",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_decision_portfolio.py"
+      ],
+      "tasks": [
+        "I01-I09"
+      ]
+    },
+    {
+      "id": "check-portfolio-release",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_portfolio_release.py"
+      ],
+      "tasks": [
+        "I12"
+      ]
+    },
+    {
+      "id": "check-current-status",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_current_status.py"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "check-readme-navigation",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_readme_navigation.py"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "check-project-consistency",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_project_consistency.py"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "check-project-health",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_project_health.py"
+      ],
+      "tasks": [
+        "I10"
+      ]
+    },
+    {
+      "id": "check-portfolio-check-runner",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_portfolio_check_runner.py"
+      ],
+      "tasks": [
+        "I11"
+      ]
+    },
+    {
+      "id": "workflow-execution",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_workflow_execution.py",
+        "--check"
+      ],
+      "tasks": [
+        "I10",
+        "I12"
+      ]
+    },
+    {
+      "id": "check-workflow-execution",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_workflow_execution.py"
+      ],
+      "tasks": [
+        "I10",
+        "I12"
+      ]
+    },
+    {
+      "id": "reform-vocabulary",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_reform_obligations.py"
+      ],
+      "tasks": [
+        "R01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "case_id": "C09",
+  "title": "Course-level training administration and delivery",
+  "evidence_cutoff": "2026-10-15",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained sources support a bounded validation question; complete operational/financial records, accountable owner confirmation and applicable authority are absent.",
+  "current_arrangement": "Retained DPPA and DPO planned training totals describe different mandates and measures. Public course notices and completion evidence have incomplete delivery populations; the retained course watch is paused.",
+  "testable_mechanism": "At unique course-run and participant/cohort level, test whether separately funded administrative, procurement, platform or logistics tasks are substitutable while specialist content and training outcomes remain necessary.",
+  "feasible_alternative_to_test": "Share a specific administrative or procurement service where course-run evidence shows repeated avoidable work; retain distinct specialist instruction and necessary security or pedagogic controls.",
+  "safeguards": [
+    "Protect specialist military, police, civilian, language and accessibility requirements",
+    "Preserve delivery quality, competency outcomes and operational readiness",
+    "Do not treat scheduled events as delivered courses or duplicate participants as duplicate expenditure",
+    "Keep the course watch paused; no new monitoring or course delivery verification is authorized by this dossier"
+  ],
+  "cost_perimeter_and_nonadditivity": "Training days, participant-days, courses and staff effort are different denominators. Include instructors, participant duty time, travel, platforms, facilities, procurement, administration and transition costs across funds. Embedded reductions are baseline; overlapping subjects alone justify no financial estimate.",
+  "minimum_records": [
+    "Unique course-run ID, delivery dates/status, provider, curriculum/version, intended capability and prerequisites",
+    "Restricted participant/cohort IDs, completion and assessment results with safe public aggregates",
+    "Actual contracts, invoices, travel, platform/facility costs, instructor and administrative time by course-run",
+    "Current procurement/administrative process map, controls, retained obligations and owner-approved comparator"
+  ],
+  "custodian_roles_to_confirm": [
+    "DPPA and DPO training programme owners",
+    "Course provider and training procurement/finance custodians",
+    "Operational readiness and evaluation leads"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 2,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR01",
+        "comparison": "DPPA preventive diplomacy vs DPO policy training",
+        "planned_a_2027": "150",
+        "planned_b_2027": "360",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.14 p27",
+        "classification": "different_training_mandates"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 3,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR02",
+        "comparison": "DPPA preventive diplomacy vs DPO military training",
+        "planned_a_2027": "150",
+        "planned_b_2027": "136",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.9 p15",
+        "classification": "distinct_civil_military"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 4,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR03",
+        "comparison": "DPPA vs DPO police and justice training",
+        "planned_a_2027": "150",
+        "planned_b_2027": "50",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.11 p21",
+        "classification": "specialist_training"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 5,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR04",
+        "comparison": "Preventive diplomacy vs training of trainers",
+        "planned_a_2027": "150",
+        "planned_b_2027": "312",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.14 p27",
+        "classification": "common_methodology_only"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 6,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR05",
+        "comparison": "Political analysis vs military intelligence courses",
+        "planned_a_2027": "150",
+        "planned_b_2027": "16",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.9 p15",
+        "classification": "different_information_sensitivity"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 7,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR06",
+        "comparison": "Mission thematic advisors courses",
+        "planned_a_2027": "not_reported",
+        "planned_b_2027": "7",
+        "unit": "days",
+        "source_a": "S3 Table3.I.4 p16",
+        "source_b": "S5 Table5.I.14 p27",
+        "classification": "potential_instructor_sharing"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 8,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR07",
+        "comparison": "Council orientation vs police justice trainings",
+        "planned_a_2027": "16",
+        "planned_b_2027": "50",
+        "unit": "days",
+        "source_a": "S3 Table3.I.7 p25",
+        "source_b": "S5 Table5.I.11 p21",
+        "classification": "distinct_legal_roles"
+      }
+    },
+    {
+      "path": "data/deliverable_training_comparison.csv",
+      "csv_line": 9,
+      "sha256": "c329f75b2e6831598f0b98ebf5599a43f516a3f084040a6e10711de8df577485",
+      "source_snapshot": {
+        "id": "TR08",
+        "comparison": "UNOWAS peace workshops vs DPO strategic communication",
+        "planned_a_2027": "15",
+        "planned_b_2027": "5",
+        "unit": "days",
+        "source_a": "Add4 Table7 p17",
+        "source_b": "S5 Table5.I.9 p15",
+        "classification": "different_audiences"
+      }
+    },
+    {
+      "path": "data/candidate_validation.csv",
+      "csv_line": 5,
+      "sha256": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+      "source_snapshot": {
+        "candidate_id": "C04",
+        "name": "Consolidate overlapping training administration",
+        "crosswalk_ids": "CW016;CW030;CW021",
+        "priority": "high",
+        "proposed_test": "Match courses providers target audiences and completed sessions",
+        "possible_decision": "Common scheduling and LMS procurement where feasible",
+        "evidence_needed": "Course-level training data 2025-2027 and attendance",
+        "accountable_authority_to_confirm": "Joint departments plus training providers",
+        "risk_gate": "Military operational readiness",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      }
+    },
+    {
+      "path": "data/candidate_validation.csv",
+      "csv_line": 15,
+      "sha256": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+      "source_snapshot": {
+        "candidate_id": "C14",
+        "name": "Compare field conflict analysis tools",
+        "crosswalk_ids": "CW032;CW002",
+        "priority": "medium",
+        "proposed_test": "Inspect shared templates data sources and staff supporting local conflict tools",
+        "possible_decision": "Common data layer or reusable templates",
+        "evidence_needed": "Local analysis tool inventories training logs field feedback",
+        "accountable_authority_to_confirm": "DPO DPPA country teams",
+        "risk_gate": "Sensitivity of early warning",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      }
+    },
+    {
+      "path": "data/owner_review/package_contract.json",
+      "json_pointer": "",
+      "sha256": "2f4701b7050a562a0ff53dc340065b4134d1c98b1fd9fd3e57673df1b52ce672",
+      "source_snapshot": {
+        "course_watch": "paused_no_checks_run",
+        "cash_savings": "not_estimated",
+        "staff_time_saved": "not_estimated"
+      },
+      "snapshot_scope": "selected top-level fields, not full document"
+    }
+  ],
+  "case_specific_limit": "No course cancellation, duplicate-delivery finding, participant productivity estimate or automatic watch restart follows from planned totals.",
+  "handling": "No identifiable payroll, participant, medical, security, live transaction or restricted clearance records in this public dossier; use authorized restricted intake and approved safe derivatives.",
+  "reopen_condition": "Confirm owner and authority, obtain authenticated complete linked records, define comparator and guardrails, and adjudicate validation-ready evidence. A prepared request or software pass is insufficient."
+}

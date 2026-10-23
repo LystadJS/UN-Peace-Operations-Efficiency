@@ -29,6 +29,10 @@ CURRENT_ROLES = {
     'current_status': ('docs/current_status.md', 'generated project status at declared evidence cutoff', 'A09 user task authorization'),
     'health_receipt': ('metadata/project_health.json', 'deterministic structural project health', 'A14 user task authorization'),
     'navigation': ('README.md', 'current repository navigation', 'A10 user task authorization'),
+    'public_portfolio': ('data/portfolio/public_portfolio.json', 'fourteen screening cases and blocked operational completion gates', 'I01 public validation baseline; not operational adjudication'),
+    'reform_baseline': ('data/reforms/baseline_release.json', 'selected partial UNGA80/81 public research baseline', 'R18 source-qualified baseline and R17 agent review'),
+    'workflow_execution': ('data/portfolio/workflow_execution.json', 'artifact delivery and blocked substantive execution by roadmap task', 'I10 task execution integration'),
+    'portfolio_release': ('data/portfolio/release_manifest.json', 'public validation baseline artifact hashes; not decision-grade certification', 'I12 qualified public release'),
 }
 GENERATED = {
     'data/issues/current_issues.json': 'scripts/migrate_master_issues.py',
@@ -38,6 +42,11 @@ GENERATED = {
     'docs/project_health.md': 'scripts/build_project_health.py',
     'README.md': 'scripts/build_readme_navigation.py',
     'docs/release_history.md': 'scripts/build_readme_navigation.py',
+    'data/portfolio/public_portfolio.json': 'scripts/build_decision_portfolio.py',
+    'docs/decision_portfolio.md': 'scripts/build_decision_portfolio.py',
+    'data/reforms/baseline_release.json': 'scripts/build_reform_views.py',
+    'data/portfolio/workflow_execution.json': 'scripts/build_workflow_execution.py',
+    'data/portfolio/release_manifest.json': 'scripts/build_portfolio_release.py',
 }
 
 
@@ -122,7 +131,9 @@ def build(root=ROOT):
         artifacts.append(row)
     manifest = {
         'schema_version': 1, 'manifest_id': 'UNPO-CONTROLS-2026-10-22', 'evidence_cutoff': '2026-10-15',
-        'control_design_as_of': '2026-10-22', 'baseline_commit': BASELINE,
+        'control_design_as_of': '2026-10-23', 'baseline_commit': BASELINE,
+        'extended_portfolio_controls_as_of': '2026-10-23',
+        'evidence_cutoff_rule': 'The evidence_cutoff field describes the retained original research baseline; financial, reform and operational scopes retain their own explicit dates in current status and the public portfolio release.',
         'population_rule': '586 tracked input artifacts at baseline; archived controls and A07+ outputs are declared separately, not silently added to this denominator',
         'current_roles': {key: {'path': p, 'scope': scope, 'designation_basis': evidence} for key, (p, scope, evidence) in CURRENT_ROLES.items()},
         'artifacts': artifacts,

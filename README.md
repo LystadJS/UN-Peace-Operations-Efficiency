@@ -10,6 +10,8 @@ Identify specific UN peacekeeping functions and services with efficiency problem
 
 Read the **[generated current status](docs/current_status.md)** for the controlling project readout, source cutoffs, financial qualifications and unresolved decisions. Current status is generated from canonical records; earlier reports remain available through the [release history](docs/release_history.md).
 
+The [public decision portfolio](docs/decision_portfolio.md) now defines fourteen screening cases, evidence contracts and validation controls. **Zero substantive operational audits are complete; benefits remain unestimated.** Start with the [Commander’s decision memo](docs/commander_decision_memo.md), [leadership report](docs/leadership_portfolio_report.md), [partial reform baseline](docs/reform_compliance_view.md) and [task execution ledger](docs/workflow_execution.md). Internal evidence and accepted operational authority remain prerequisites for the decision-grade end state.
+
 | Resource | Use |
 | --- | --- |
 | [Current project status](docs/current_status.md) | Generated status, evidence cutoffs, financial boundaries, open gates and next decisions. |

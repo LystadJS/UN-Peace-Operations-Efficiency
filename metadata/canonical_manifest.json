@@ -2,8 +2,10 @@
   "schema_version": 1,
   "manifest_id": "UNPO-CONTROLS-2026-10-22",
   "evidence_cutoff": "2026-10-15",
-  "control_design_as_of": "2026-10-22",
+  "control_design_as_of": "2026-10-23",
   "baseline_commit": "9838cec16e9c14a5d87757c5ff6614ff1ae7dc24",
+  "extended_portfolio_controls_as_of": "2026-10-23",
+  "evidence_cutoff_rule": "The evidence_cutoff field describes the retained original research baseline; financial, reform and operational scopes retain their own explicit dates in current status and the public portfolio release.",
   "population_rule": "586 tracked input artifacts at baseline; archived controls and A07+ outputs are declared separately, not silently added to this denominator",
   "current_roles": {
     "research_reference": {
@@ -75,6 +77,26 @@
       "path": "README.md",
       "scope": "current repository navigation",
       "designation_basis": "A10 user task authorization"
+    },
+    "public_portfolio": {
+      "path": "data/portfolio/public_portfolio.json",
+      "scope": "fourteen screening cases and blocked operational completion gates",
+      "designation_basis": "I01 public validation baseline; not operational adjudication"
+    },
+    "reform_baseline": {
+      "path": "data/reforms/baseline_release.json",
+      "scope": "selected partial UNGA80/81 public research baseline",
+      "designation_basis": "R18 source-qualified baseline and R17 agent review"
+    },
+    "workflow_execution": {
+      "path": "data/portfolio/workflow_execution.json",
+      "scope": "artifact delivery and blocked substantive execution by roadmap task",
+      "designation_basis": "I10 task execution integration"
+    },
+    "portfolio_release": {
+      "path": "data/portfolio/release_manifest.json",
+      "scope": "public validation baseline artifact hashes; not decision-grade certification",
+      "designation_basis": "I12 qualified public release"
     }
   },
   "artifacts": [
@@ -7247,6 +7269,36 @@
     {
       "path": "docs/release_history.md",
       "producer": "scripts/build_readme_navigation.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "data/portfolio/public_portfolio.json",
+      "producer": "scripts/build_decision_portfolio.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "docs/decision_portfolio.md",
+      "producer": "scripts/build_decision_portfolio.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "data/reforms/baseline_release.json",
+      "producer": "scripts/build_reform_views.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "data/portfolio/workflow_execution.json",
+      "producer": "scripts/build_workflow_execution.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "data/portfolio/release_manifest.json",
+      "producer": "scripts/build_portfolio_release.py",
       "hash_mode": "producer_checked_no_self_hash",
       "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
     }

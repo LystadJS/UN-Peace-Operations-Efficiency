@@ -1,10 +1,18 @@
 # Current project status
 
-**Generated project view from retained evidence.** Code/design date: 2026-10-22. Retained repository evidence through 8 October 2026 financial review and 15 October 2026 research review; no new legal, operational or source-authentication review.
+**Generated project view from retained evidence.** Code/design date: 2026-10-23. Financial evidence retains its 8 October 2026 cutoff and V8–V13 research its 15 October cutoff. The 23 October selected reform-source review is partial; no new operational evidence or institutional legal/compliance certification.
 
 Project status view only; not a UN institutional determination, operational approval, or current UNGA81 compliance certification.
 
 The Commander’s intent is to identify specific peacekeeping inefficiencies and avoidable resource use while protecting mandated operations and linking recommendations to applicable adopted reform requirements.
+
+## Portfolio readiness — 23 October
+
+The [public portfolio](decision_portfolio.md) contains **14 screening cases** and **0 substantive operational adjudications**. The minimum is three across two service types. The release is a public validation baseline; a decision-grade or realized-benefit portfolio remains blocked. Foundation and validation-system completion gates are partial; decision and realization gates are blocked.
+
+The [reform baseline](reform_compliance_view.md) contains **65 selected provision records**, rather than universally applicable mission obligations. UNGA81 adopted-action extraction remains unresolved within the bounded search. No verified compliance finding is asserted. See the [agent review](portfolio_agent_review.md) for its actual inspection scope and limits.
+
+Six new evidence-request contracts cover ten case tracks. All remain unsent, collection remains unauthorized and proposed owners remain unaccepted. Three pilot charters are blocked; their numerical thresholds require actual baseline data. Ten synthetic scenarios test software behavior only. [Commander’s decision memo](commander_decision_memo.md) · [Full execution ledger](workflow_execution.md) · [Leadership report](leadership_portfolio_report.md).
 
 ## Research reference and operational boundary
 
@@ -45,7 +53,7 @@ Next decisions:
 
 - Obtain owner review of existing controls before proposing a live reporting shadow.
 - Acquire authorized operational and transaction evidence for shared-service, asset-transfer and aviation/support audits.
-- Build the adopted UNGA80/81 obligation matrix with explicit authority and cutoff before asserting reform compliance.
+- Complete instrument-population and applicability review beyond the selected UNGA80/81 reform baseline before asserting compliance.
 - Resolve dataset-semantic, canonicality and dynamic-lineage gaps before substantive consolidation.
 
 ## Navigation and reproduction

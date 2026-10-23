@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "base_branch": "main",
+  "publication_mode": "candidate_branch_and_pull_request",
+  "branch_prefix": "release-candidates/",
+  "maximum_zip_bytes": 33554432,
+  "maximum_uncompressed_bytes": 67108864,
+  "maximum_file_bytes": 16777216,
+  "allowed_current_paths": [
+    "README.md",
+    "docs/current_status.md",
+    "metadata/current_status.json",
+    "metadata/project_health.json",
+    "docs/project_health.md"
+  ],
+  "allowed_additive_release_prefix": "reports/releases/",
+  "additive_release_extensions": [
+    ".md",
+    ".json",
+    ".csv",
+    ".pdf",
+    ".docx",
+    ".png",
+    ".svg"
+  ],
+  "historical_candidate_workflows": [
+    ".github/workflows/additional_mission_training_frame.yml",
+    ".github/workflows/census_v5.yml",
+    ".github/workflows/census_v5_release.yml",
+    ".github/workflows/census_v6_release.yml",
+    ".github/workflows/census_v7_recovery.yml",
+    ".github/workflows/census_v7_release.yml",
+    ".github/workflows/deeper_official_archives_v4.yml",
+    ".github/workflows/mission_archive_census.yml",
+    ".github/workflows/owner_review_package.yml",
+    ".github/workflows/published_census_v2.yml",
+    ".github/workflows/recover_legacy_notice_dates.yml",
+    ".github/workflows/systematic_census.yml",
+    ".github/workflows/systematic_evidence_views.yml",
+    ".github/workflows/v10_protocol_release.yml",
+    ".github/workflows/v11_tabletop.yml",
+    ".github/workflows/v12_reference_patch.yml",
+    ".github/workflows/v13_reference_adoption.yml",
+    ".github/workflows/v8_release.yml",
+    ".github/workflows/v9_release.yml",
+    ".github/workflows/white_paper_2026.yml"
+  ],
+  "source_requirement": "successful workflow_dispatch run in this repository at exactly the current main head",
+  "protected_paths": [
+    "data/census_v2/",
+    "data/census_v3/",
+    "data/census_v4/",
+    "data/census_v5/",
+    "data/census_v6/",
+    "data/census_v7/",
+    "data/census_v8/",
+    "data/census_v9/",
+    "data/census_v10/",
+    "data/census_v11/",
+    "data/census_v12/",
+    "data/census_v13/",
+    "history/",
+    ".github/",
+    "scripts/",
+    "tests/"
+  ],
+  "legacy_step_dispositions": [
+    {
+      "path": ".github/workflows/additional_mission_training_frame.yml",
+      "removed": [
+        {
+          "job": "source-index-extension",
+          "step": "Save indexed source frame without promoting links to events",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/census_v5.yml",
+      "removed": [
+        {
+          "job": "collect-validate-publish",
+          "step": "Publish reviewed data and report without changing earlier freezes",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/census_v5_release.yml",
+      "removed": [
+        {
+          "job": "final-acceptance",
+          "step": "Commit only final census views and documentation",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/census_v6_release.yml",
+      "removed": [
+        {
+          "job": "release",
+          "step": "Update current README entry without changing historical sections",
+          "reason": "historical_readme_mutation_removed"
+        },
+        {
+          "job": "release",
+          "step": "Commit validated research outputs and exact tested audit code",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/census_v7_recovery.yml",
+      "removed": [
+        {
+          "job": "recover",
+          "step": "Commit only validated recovered sources and provenance",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/census_v7_release.yml",
+      "removed": [
+        {
+          "job": "release",
+          "step": "Add current README entry without rewriting historical findings",
+          "reason": "historical_readme_mutation_removed"
+        },
+        {
+          "job": "release",
+          "step": "Commit only accepted V7 outputs and current entry point",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/deeper_official_archives_v4.yml",
+      "removed": [
+        {
+          "job": "deep-index-source-audit",
+          "step": "Preserve historical source frames and commit new index snapshot",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/mission_archive_census.yml",
+      "removed": [
+        {
+          "job": "bounded-official-mission-news",
+          "step": "Publish public metadata and access limitations",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/owner_review_package.yml",
+      "removed": [
+        {
+          "job": "package",
+          "step": "Publish only the derived readable register and receipt",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/published_census_v2.yml",
+      "removed": [
+        {
+          "job": "source-frame-census",
+          "step": "Commit only audited public source-frame outputs",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/recover_legacy_notice_dates.yml",
+      "removed": [
+        {
+          "job": "authenticated-date-recovery",
+          "step": "Preserve only public metadata, not source HTML copies",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/systematic_census.yml",
+      "removed": [
+        {
+          "job": "harvest-official-public-index",
+          "step": "Commit published index snapshots (no confidential data)",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/systematic_evidence_views.yml",
+      "removed": [
+        {
+          "job": "build-and-audit",
+          "step": "Commit non-confidential source-linked summary views",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v10_protocol_release.yml",
+      "removed": [
+        {
+          "job": "release",
+          "step": "Publish only new protocol records and current entry point",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v11_tabletop.yml",
+      "removed": [
+        {
+          "job": "tabletop",
+          "step": "Publish additive tabletop records without activating a trial",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v12_reference_patch.yml",
+      "removed": [
+        {
+          "job": "candidate-patch",
+          "step": "Publish candidate files only; never adopt or activate",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v13_reference_adoption.yml",
+      "removed": [
+        {
+          "job": "adopted-reference-and-closed-gates",
+          "step": "Publish only the new research reference and affected views",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v8_release.yml",
+      "removed": [
+        {
+          "job": "acceptance",
+          "step": "Check document links and update current README entry only",
+          "reason": "historical_readme_mutation_removed"
+        },
+        {
+          "job": "acceptance",
+          "step": "Publish validated research outputs without changing workflow permissions or historical evidence",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/v9_release.yml",
+      "removed": [
+        {
+          "job": "release",
+          "step": "Update research entry point and publish only validated new files",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/white_paper_2026.yml",
+      "removed": [
+        {
+          "job": "publish",
+          "step": "Publish only White Paper outputs",
+          "reason": "publication_and_readme_mutation_removed"
+        }
+      ]
+    }
+  ]
+}

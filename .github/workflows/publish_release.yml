@@ -1,0 +1,116 @@
+name: Explicit release candidate preparation and publication
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Prepare a validated bundle or publish a previously prepared bundle as a draft PR
+        type: choice
+        options: [prepare, publish]
+        required: true
+      output_paths:
+        description: JSON array of approved output paths for preparation
+        default: '["docs/current_status.md", "metadata/current_status.json"]'
+        type: string
+        required: false
+      source_sha:
+        description: Exact tested main commit SHA (publish only)
+        type: string
+        required: false
+      run_id:
+        description: Successful preparation run ID (publish only)
+        type: string
+        required: false
+      artifact_name:
+        description: Preparation artifact name (publish only)
+        default: release-candidate-bundle
+        type: string
+        required: false
+      bundle_sha256:
+        description: SHA-256 printed by preparation for release-bundle.zip (publish only)
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: explicit-release-candidate-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: inputs.operation == 'prepare'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install retained source-checking environment
+        run: python -m pip install PyMuPDF==1.26.7 PyYAML==6.0.3
+      - name: Validate retained baseline before preparation
+        run: python scripts/run_validation_suite.py --group baseline --receipt /tmp/release-validation.json
+      - name: Validate current products and controls before preparation
+        run: python scripts/run_validation_suite.py --group repository-controls --receipt /tmp/release-controls.json
+      - name: Prepare deterministic bounded bundle
+        env:
+          OUTPUT_PATHS: ${{ inputs.output_paths }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          paths = json.loads(os.environ['OUTPUT_PATHS'])
+          if not isinstance(paths, list) or not paths or not all(isinstance(p, str) for p in paths):
+              raise ValueError('output_paths must be a nonempty JSON string array')
+          subprocess.run(['python', 'scripts/publish_release.py', 'prepare',
+              '--validation-receipt', '/tmp/release-validation.json',
+              '--controls-receipt', '/tmp/release-controls.json',
+              '--source-workflow', '.github/workflows/publish_release.yml',
+              '--output', '/tmp/release-bundle.zip', '--paths', *paths], check=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-candidate-bundle
+          path: /tmp/release-bundle.zip
+          retention-days: 30
+          if-no-files-found: error
+
+  publish-candidate:
+    if: inputs.operation == 'publish'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact provenance and create candidate branch with draft PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          SOURCE_RUN_ID: ${{ inputs.run_id }}
+          ARTIFACT_NAME: ${{ inputs.artifact_name }}
+          BUNDLE_SHA256: ${{ inputs.bundle_sha256 }}
+        run: |
+          python scripts/publish_release.py publish \
+            --repository "$REPOSITORY" --source-sha "$SOURCE_SHA" \
+            --run-id "$SOURCE_RUN_ID" --artifact-name "$ARTIFACT_NAME" \
+            --sha256 "$BUNDLE_SHA256"

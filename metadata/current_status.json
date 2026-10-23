@@ -1,0 +1,237 @@
+{
+  "artifact_role": "generated_authoritative_project_status_for_declared_retained_sources",
+  "authority_boundary": "Project status view only; not a UN institutional determination, operational approval, or current UNGA81 compliance certification.",
+  "canonical_manifest": {
+    "current_designations": [
+      {
+        "path": "docs/current_status.md",
+        "role": "current_status",
+        "scope": "generated project status at declared evidence cutoff"
+      },
+      {
+        "path": "data/spm_2027_embedded_efficiencies.csv",
+        "role": "embedded_efficiencies",
+        "scope": "already proposed 2027 efficiency measures"
+      },
+      {
+        "path": "docs/foundation_standards.md",
+        "role": "foundation",
+        "scope": "prospective portfolio decision standards"
+      },
+      {
+        "path": "data/ga_adopted_directives.csv",
+        "role": "ga_directives",
+        "scope": "15 retained mission financing directives"
+      },
+      {
+        "path": "data/ga_mission_reconciliation.csv",
+        "role": "ga_maintenance",
+        "scope": "six 2026/27 mission financing reconciliations"
+      },
+      {
+        "path": "metadata/project_health.json",
+        "role": "health_receipt",
+        "scope": "deterministic structural project health"
+      },
+      {
+        "path": "data/issues/current_issues.json",
+        "role": "issue_register",
+        "scope": "normalized legacy issue observations"
+      },
+      {
+        "path": "README.md",
+        "role": "navigation",
+        "scope": "current repository navigation"
+      },
+      {
+        "path": "data/owner_review/evidence_gap_register.csv",
+        "role": "owner_evidence_gaps",
+        "scope": "SP08P1/SP09P1 owner evidence questions"
+      },
+      {
+        "path": "docs/consolidated_owner_review_decision_memo.md",
+        "role": "owner_review",
+        "scope": "existing SP08P1/SP09P1 owner-review package"
+      },
+      {
+        "path": "data/current_research_reference.json",
+        "role": "research_pointer",
+        "scope": "fixed V8/V9 research obligations"
+      },
+      {
+        "path": "data/census_v13/research_reference.json",
+        "role": "research_reference",
+        "scope": "fixed V8/V9 research obligations"
+      },
+      {
+        "path": "docs/v10_owner_review_shadow_protocol.md",
+        "role": "shadow_protocol",
+        "scope": "SP08P1/SP09P1 live-shadow requirements"
+      },
+      {
+        "path": "data/spm_2027_mission_budget.csv",
+        "role": "spm_budget",
+        "scope": "36 calendar-2027 mission proposals"
+      }
+    ],
+    "path": "metadata/canonical_manifest.json"
+  },
+  "design_date": "2026-10-22",
+  "evidence_scope": "Retained repository evidence through 8 October 2026 financial review and 15 October 2026 research review; no new legal, operational or source-authentication review.",
+  "finance": {
+    "advisory_coverage": {
+      "population": 36,
+      "retained_review_cutoff": "2026-10-08",
+      "reviewed": 27,
+      "source": "data/acabq_2027_mission_reconciliation.csv",
+      "status": "advice coverage in retained corpus; not current publication certification",
+      "unreconciled": 9
+    },
+    "eleven_entity_maintenance": {
+      "entities": 11,
+      "period": "2026-07-01/2027-06-30",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/ga_approved_all_missions.csv",
+      "status": "approved-resource register, not complete operational audit",
+      "usd_millions": "4625.9401"
+    },
+    "embedded_efficiencies": {
+      "initiatives": 31,
+      "period": "calendar_2027",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/spm_2027_embedded_efficiencies.csv",
+      "status": "already embedded projected efficiencies; no new or realized saving",
+      "usd_millions": "14.6925"
+    },
+    "rsce_spm_share": {
+      "period": "calendar_2027 SPM proposal share",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/spm_2027_cluster_bridge.csv",
+      "status": "component of SPM total, not a saving",
+      "usd_millions": "3.2591"
+    },
+    "six_mission_maintenance": {
+      "entities": 6,
+      "period": "2026-07-01/2027-06-30",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/ga_mission_reconciliation.csv",
+      "status": "GA-approved maintenance in retained source corpus",
+      "usd_millions": "4028.1880"
+    },
+    "spm_missions": {
+      "entities": 36,
+      "period": "calendar_2027",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/spm_2027_mission_budget.csv",
+      "status": "SG proposal; not GA appropriation",
+      "usd_millions": "419.4119"
+    },
+    "spm_total_including_rsce": {
+      "period": "calendar_2027",
+      "retained_review_cutoff": "2026-10-08",
+      "source": "data/spm_2027_financing_controls.csv",
+      "status": "SG proposal; do not add components again",
+      "usd_millions": "422.6710"
+    }
+  },
+  "next_decisions": [
+    "Obtain owner review of existing controls before proposing a live reporting shadow.",
+    "Acquire authorized operational and transaction evidence for shared-service, asset-transfer and aviation/support audits.",
+    "Build the adopted UNGA80/81 obligation matrix with explicit authority and cutoff before asserting reform compliance.",
+    "Resolve dataset-semantic, canonicality and dynamic-lineage gaps before substantive consolidation."
+  ],
+  "operational_constraints": {
+    "cash_savings": "not_estimated",
+    "course_watch": "PAUSED",
+    "live_gates": {
+      "SP08P1": "BLOCKED_FOR_LIVE_USE",
+      "SP09P1": "BLOCKED_FOR_LIVE_USE"
+    },
+    "live_trials": 0,
+    "owner_approvals": 0,
+    "staff_time_saved": "not_estimated"
+  },
+  "owner_review": {
+    "questions": 16,
+    "requests_sent": 0,
+    "responses_obtained": 0,
+    "retained_review_cutoff": "2026-10-15",
+    "source": "data/owner_review/evidence_gap_register.csv"
+  },
+  "research": {
+    "adopted_amendments": 2,
+    "affected_assertions_passed": 2,
+    "affected_assertions_rechecked": 2,
+    "current_holds_for_adopted_amendments": 0,
+    "fixed_obligations": 61,
+    "fresh_full_corpus_score": "not_run",
+    "historical_amendment_holds": 2,
+    "historical_supported": 59,
+    "reference_id": "UNPO-REF-13.0",
+    "reference_path": "data/census_v13/research_reference.json",
+    "reference_sha256": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+    "reference_version": "13.0",
+    "review_cutoff": "2026-10-15",
+    "scope": "This pointer governs the fixed V8/V9 research-reference obligations, not unrelated mission-budget or operational evidence."
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "data/acabq_2027_mission_reconciliation.csv": "7c43125678001d2d913d5b0a3f52a85301f04f17d65ac74edc9a529a4b44669e",
+    "data/census_v11/obligation_reviews.csv": "de6af1d3e47f3bb54a636bf9a07b9d388ed9921e9b3aff59b226afa9d64497d2",
+    "data/census_v13/adoption_record.json": "c5fbfe24c835d5d08cd122b589ba6e136289fdc581a45b8251f11021cdbe8008",
+    "data/census_v13/reference_lineage.csv": "17b68188ee8f045ed2c5dbc9e4c53be51384a4a49bca9e6daa056d485d5bff61",
+    "data/census_v13/research_reference.json": "4059dfffbb370c131a27db760487eb425ae302d530c3509eaf3814e70bce2b65",
+    "data/census_v13/summary.json": "ddc48f7d7fe41f68d3df32a9c1fe74a635b8e2d500fcfa640a858463d1d806d9",
+    "data/census_v7/final_summary.json": "24fa02ee35769b3c5c9aa6884be4c2dbe41282b79fc24d219752e2fd6a6cc7ac",
+    "data/current_research_reference.json": "78ae364d0f8e3cfdbc35ad37cddca4f861365a30215e40e7ae4825d9acd34230",
+    "data/ga_approved_all_missions.csv": "6f3fe9d9f6d31b0dd0f26586017a5e1dae8379dec864e70d2a848e2423ecaf3c",
+    "data/ga_mission_reconciliation.csv": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+    "data/issues/current_issues.json": "440ad89d54efe3d5f4ebf16578c77df02eedd4d401ea8900ec0eb65bacf871f6",
+    "data/owner_review/evidence_gap_register.csv": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
+    "data/owner_review/package_contract.json": "2f4701b7050a562a0ff53dc340065b4134d1c98b1fd9fd3e57673df1b52ce672",
+    "data/spm_2027_cluster_bridge.csv": "3c914c5d52fed954f0c2c2be6eb6b1f1f61fe4adf6dc1e30da188739d2db9314",
+    "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+    "data/spm_2027_financing_controls.csv": "19d89f32a9543aa5a2725460363cb5a7605dbf0e6bf03a2863862fd0d44357e7",
+    "data/spm_2027_mission_budget.csv": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
+    "metadata/canonical_manifest.json": "09c32d5298e00d4f55c6a19b7d0353102f554bb221c2892f021cc8441d33695e",
+    "metadata/issue_migration_receipt.json": "afd0299200dc585334720f5f7eb8a9829665f7ce511f2fef0370a0a542c5b3ea"
+  },
+  "transcript_recovery": {
+    "limitation": "Retrieval/authentication does not mean exhaustive substantive comparison; V7 recovery supersedes the prior retrieval gap only.",
+    "recovered_pages": 187,
+    "recovered_transcripts": 7,
+    "remaining_retrieval_gaps": 0,
+    "retained_review_cutoff": "2026-10-15",
+    "source": "data/census_v7/final_summary.json"
+  },
+  "unified_issue_observations": {
+    "interpretation": "Source-linked migrated observations include historical/control rows; counts are not unique current operational defects. Resolution, evidence, requests, responses and gate states are independent.",
+    "migration_id": "A08-1.0",
+    "migration_receipt": "metadata/issue_migration_receipt.json",
+    "records": 117,
+    "resolution_states": {
+      "DOCUMENTED_CONTAINED": 27,
+      "OPEN": 81,
+      "RESOLVED": 9
+    },
+    "source_populations": {
+      "data/census_v10/activation_status.json": 2,
+      "data/census_v11/amendment_requests.json": 2,
+      "data/census_v11/closed_gate_receipt.json": 2,
+      "data/census_v12/closed_gate_receipt.json": 2,
+      "data/census_v12/correction_diff.csv": 2,
+      "data/census_v13/closed_gate_receipt.json": 2,
+      "data/census_v13/reference_lineage.csv": 2,
+      "data/census_v2/date_quality_exceptions.csv": 2,
+      "data/census_v4/attendance_exclusions_and_aggregates.csv": 15,
+      "data/census_v6/quality_exceptions.csv": 6,
+      "data/census_v6/review_decisions.json": 8,
+      "data/census_v8/operational_status.json": 1,
+      "data/owner_review/evidence_gap_register.csv": 16,
+      "data/public_release_gates.csv": 18,
+      "data/quality_issues.csv": 22,
+      "data/spm_2027_source_discrepancies.csv": 8,
+      "data/transaction_audit_issues.csv": 7
+    }
+  }
+}

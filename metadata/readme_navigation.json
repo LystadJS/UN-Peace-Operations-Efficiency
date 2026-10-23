@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "purpose": "Identify specific UN peacekeeping functions and services with efficiency problems or preventable waste; test feasible improvements while protecting mandate delivery and operational effectiveness, and connect recommendations to applicable adopted UNGA80/UNGA81 requirements.",
+  "current_roles": [
+    {"role": "current_project_status", "label": "Current project status", "path": "docs/current_status.md", "qualification": "Generated status, evidence cutoffs, financial boundaries, open gates and next decisions."},
+    {"role": "canonical_manifest", "label": "Canonical artifact and release manifest", "path": "metadata/canonical_manifest.json", "qualification": "Artifact roles, hashes and scoped supersession; designation is project research authority only."},
+    {"role": "master_issues", "label": "Unified issue register", "path": "data/issues/current_issues.json", "qualification": "Legacy evidence gaps and controls with preserved source records and distinct status axes."},
+    {"role": "decision_standard", "label": "Foundation standards", "path": "docs/foundation_standards.md", "qualification": "Definitions, evidence thresholds, source authority, accounting and operational safeguards."},
+    {"role": "repository_audit", "label": "Repository audit and lineage", "path": "docs/repository_audit.md", "qualification": "Frozen A01–A06 inventory, dataset registry, static lineage and CI review."},
+    {"role": "research_reference", "label": "Scoped research-reference pointer", "path": "data/current_research_reference.json", "qualification": "Reference 13.0 applies only to the fixed V8/V9 research obligations; it grants no live-use authority."}
+  ],
+  "priority_cases": [
+    {"label": "Shared services and RSCE", "test": "Reconcile client/provider charges, retained local work and service performance."},
+    {"label": "UNIFIL–UNSCOL transition assets", "test": "Verify asset receipts, avoided procurement, transfer costs and receiving-unit readiness."},
+    {"label": "BINUH–UNSOH aviation and support", "test": "Compare consolidated external costs, utilization, residual work and required availability."}
+  ],
+  "history": [
+    {"id": "baseline", "label": "Initial mandate/function crosswalk", "path": "docs/initial_findings.md", "scope": "Departmental documentary screening; similar functions are not verified duplication."},
+    {"id": "mission_finance", "label": "Mission and support-account baseline", "path": "docs/mission_budget_and_un80_audit.md", "scope": "Original proposals and allocation controls; later adopted financing is separately reconciled."},
+    {"id": "ga_finance", "label": "GA financing reconciliation", "path": "docs/appropriation_spm_consolidation_audit.md", "scope": "Adopted 2026/27 mission financing; its historical open-SPM statements must be read with the later SPM reconciliation."},
+    {"id": "spm_finance", "label": "SPM 2027 proposals", "path": "docs/spm_2027_reconciliation.md", "scope": "Calendar-year proposals, embedded efficiencies and discrepancies; no adopted 2027 appropriation inferred."},
+    {"id": "transaction_controls", "label": "Transaction-control assessment", "path": "docs/transaction_level_validation.md", "scope": "Three bounded cases and the internal evidence needed for verification."},
+    {"id": "public_framework", "label": "Public-only decision framework", "path": "docs/public_only_decision_framework.md", "scope": "Research opportunities and financing/release gates, not financial certification."},
+    {"id": "advisory", "label": "ACABQ reconciliation", "path": "docs/acabq_2027_reconciliation_status.md", "scope": "Advice reviewed within the retained source cutoff; advice is not GA adoption."},
+    {"id": "retrospective", "label": "Retrospective 2025–2026 matching", "path": "docs/retrospective_2025_2026_overlap_audit.md", "scope": "Selected activities and report relationships, not a representative duplication rate."},
+    {"id": "V2", "label": "V2 source-frame census", "path": "docs/systematic_2025_2026_census_oct12.md", "scope": "12 October snapshot; report identities, meeting variants and publication records have different grains."},
+    {"id": "V3", "label": "V3 additional archives", "path": "docs/census_2025_2026_extended_oct13.md", "scope": "Additional source and activity evidence; listings alone do not prove course delivery."},
+    {"id": "V4", "label": "V4 attendance review", "path": "docs/census_2025_2026_attendance_v4.md", "scope": "Attendance evidence and nonadditive programme/cohort controls."},
+    {"id": "V5", "label": "V5 refreshed census", "path": "docs/census_2025_2026_oct15_v5.md", "scope": "15 October source-frame and activity adjudications, with explicit coverage limits."},
+    {"id": "V6", "label": "V6 identity and reuse audit", "path": "docs/census_2025_2026_v6_audit.md", "scope": "Cross-version identities; its transcript-retrieval gaps are superseded only within the later V7 recovery scope."},
+    {"id": "V7", "label": "V7 transcript recovery", "path": "docs/census_2025_2026_v7_recovery.md", "scope": "Seven transcript recoveries. Historical watch-creation text does not override the later pause instruction."},
+    {"id": "V8", "label": "V8 UNOWAS–UNOCA reconstruction", "path": "docs/v8_shared_production_assessment.md", "scope": "Selected factual-support reconstruction; live workflow benefit and savings remain unverified."},
+    {"id": "V9", "label": "V9 Cyprus reconstruction", "path": "docs/v9_cyprus_transfer_assessment.md", "scope": "Selected reporting cycles; source/version controls do not establish operational savings."},
+    {"id": "V10", "label": "V10 owner-review protocol", "path": "docs/v10_owner_review_shadow_protocol.md", "scope": "Retained activation and measurement requirements; historical worked references are not automatic live clearance."},
+    {"id": "V11", "label": "V11 tabletop", "path": "docs/v11_public_tabletop.md", "scope": "Historical first pass: 59 supported unchanged and two amendment holds; no new full-corpus score inferred."},
+    {"id": "V12", "label": "V12 correction patch", "path": "docs/v12_reference_correction_patch.md", "scope": "Prepared correction of two assertions; adoption is documented separately in V13."},
+    {"id": "V13", "label": "V13 research adoption", "path": "docs/v13_reference_adoption.md", "scope": "Two affected assertions rechecked and adopted for research; historical first-pass outcomes remain intact."},
+    {"id": "owner_review", "label": "Consolidated owner-review package", "path": "docs/consolidated_owner_review_decision_memo.md", "scope": "Prepared questions and evidence requirements; no request transmission or owner approval is implied."},
+    {"id": "whitepaper", "label": "15 October portfolio white paper", "path": "reports/white_paper_2026-10-15/README.md", "scope": "Retained synthesis and publication artifacts; not a fresh legal-status review or operational census."}
+  ]
+}

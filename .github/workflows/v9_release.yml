@@ -1,16 +1,6 @@
-name: V9 Cyprus production-transfer acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/build_v9_design.py
-      - scripts/v9_cyprus.py
-      - docs/v9_cyprus_transfer_assessment.md
-      - docs/v9_consolidation_brief.md
-      - .github/workflows/v9_release.yml
+name: V9 Cyprus production-transfer acceptance (manual candidate only)
 permissions:
-  contents: write
-  actions: read
+  contents: read
 concurrency:
   group: v9-cyprus-release
   cancel-in-progress: false
@@ -19,121 +9,102 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install pinned source parsers
-        run: |
-          python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7 beautifulsoup4==4.14.3 PyYAML==6.0.3
-          mkdir -p /tmp/v9-acceptance
-          python -m pip freeze > /tmp/v9-acceptance/python-requirements.txt
-          git rev-parse HEAD > /tmp/v9-acceptance/input-commit.txt
-      - name: Generate reviewed design and recover exact retained originals
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python scripts/build_v9_design.py
-          python - <<'PY'
-          import hashlib, io, json, os, zipfile
-          from pathlib import Path
-          from urllib.request import Request, build_opener, HTTPRedirectHandler, urlopen
-          from urllib.error import HTTPError
-          from urllib.parse import urlsplit
-          design_path = Path('data/census_v9/reviewed_design.json')
-          assert hashlib.sha256(design_path.read_bytes()).hexdigest() == '4878dbbe77344be458ac948ada7de6124c44c8f575351af2835489ff88262dd7'
-          design = json.loads(design_path.read_text())
-          class NoRedirect(HTTPRedirectHandler):
-              def redirect_request(self, req, fp, code, msg, headers, newurl):
-                  return None
-          api = 'https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11977253134/zip'
-          request = Request(api, headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json'})
-          try:
-              with build_opener(NoRedirect()).open(request, timeout=60) as response:
-                  payload = response.read(64000001)
-          except HTTPError as error:
-              if error.code not in (301,302,303,307,308):
-                  raise
-              location = error.headers['Location']
-              assert urlsplit(location).scheme == 'https'
-              # Never forward the API credential to artifact storage.
-              with urlopen(Request(location), timeout=90) as response:
-                  payload = response.read(64000001)
-          assert len(payload) <= 64000000
-          expected = '400b3ce4b040a4c30f69c30844d95ab664c333556a2371cef8eca3feb2cd2479'
-          assert hashlib.sha256(payload).hexdigest() == expected
-          receipt=[]
-          with zipfile.ZipFile(io.BytesIO(payload)) as archive:
-              assert archive.testzip() is None
-              for source in design['sources']:
-                  hits=[n for n in archive.namelist() if n.endswith('/'+source['sha256']+'.pdf')]
-                  assert len(hits)==1, (source['source_id'],len(hits))
-                  body=archive.read(hits[0])
-                  assert body.startswith(b'%PDF') and hashlib.sha256(body).hexdigest()==source['sha256']
-                  target=Path(source['file']); target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body)
-                  receipt.append({'source_id':source['source_id'],'sha256':source['sha256'],'artifact_member':hits[0]})
-          Path('/tmp/v9-acceptance/source-recovery.json').write_text(json.dumps({'artifact_id':11977253134,'artifact_sha256':expected,'sources':receipt},indent=2)+'\n')
-          PY
-      - name: Build Cyprus views and run source and corruption tests
-        run: python scripts/v9_cyprus.py --build --check --test
-      - name: Run retained repository acceptance without changing gates
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json,subprocess,yaml
-          steps=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())['jobs']['structural-quality-gates']['steps']
-          passed=[]
-          for step in steps:
-              if 'run' not in step:
-                  continue
-              print('ACCEPTANCE:',step.get('name','unnamed'),flush=True)
-              subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-              passed.append(step.get('name','unnamed'))
-          for command in ('python scripts/build_v8_pilot.py --check','python tests/check_v8_pilot.py --sources'):
-              subprocess.run(['/bin/bash','-euo','pipefail','-c',command],check=True)
-          subprocess.run(['python','scripts/v9_cyprus.py','--check'],check=True)
-          Path('/tmp/v9-acceptance/retained-suite.json').write_text(json.dumps({'status':'PASS','retained_run_steps':len(passed),'steps':passed,'additional_V8_commands':2,'live_course_checks':0},indent=2)+'\n')
-          PY
-      - name: Update research entry point and publish only validated new files
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('README.md');text=p.read_text()
-          heading='## Latest — V9 Cyprus production-transfer assessment'
-          block=heading+'\n\n**[Decision brief](docs/v9_consolidation_brief.md)** · [Transfer assessment](docs/v9_cyprus_transfer_assessment.md) · [Worked report views](docs/v9_worked_cyprus_cycle.md) · [Source and acceptance evidence](data/census_v9/pilot_summary.json).\n\nThe V8 model transfers to a second selected reporting context as source/version and attribution controls: **eight reports, four cycles, 15 components, 41 observations, five directed referrals and 48 source/representation checks**. Cyprus already has joint committee support; no new coordinating unit, report merger, staff reduction or savings is justified by this test. The EUR4.12bn/EUR2.14bn export-comparator discrepancy remains unresolved, and planned, commenced and completed project stages stay separate. Frozen rankings and mandates are unchanged; the course watch remains paused.\n\n'
-          if heading not in text:
-              index=text.find('\n## ')
-              assert index>=0,'README insertion anchor missing'
-              text=text[:index+1]+block+text[index+1:]
-              p.write_text(text)
-          PY
-          python scripts/v9_cyprus.py --check
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md data/census_v9 docs/v9_worked_cyprus_cycle.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish V9 Cyprus transfer assessment with source-qualified views and preserved frozen controls'
-            git pull --rebase origin main
-            python scripts/v9_cyprus.py --check
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/v9-acceptance/published-commit.txt
-      - name: Retain reproducible package and acceptance receipts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: v9-validated-cyprus-transfer
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            /tmp/v9-acceptance
-            README.md
-            data
-            docs
-            scripts
-            tests
-            .github/workflows/validate.yml
-            .github/workflows/v9_release.yml
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install pinned source parsers
+      run: |
+        python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7 beautifulsoup4==4.14.3 PyYAML==6.0.3
+        mkdir -p /tmp/v9-acceptance
+        python -m pip freeze > /tmp/v9-acceptance/python-requirements.txt
+        git rev-parse HEAD > /tmp/v9-acceptance/input-commit.txt
+    - name: Generate reviewed design and recover exact retained originals
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        python scripts/build_v9_design.py
+        python - <<'PY'
+        import hashlib, io, json, os, zipfile
+        from pathlib import Path
+        from urllib.request import Request, build_opener, HTTPRedirectHandler, urlopen
+        from urllib.error import HTTPError
+        from urllib.parse import urlsplit
+        design_path = Path('data/census_v9/reviewed_design.json')
+        assert hashlib.sha256(design_path.read_bytes()).hexdigest() == '4878dbbe77344be458ac948ada7de6124c44c8f575351af2835489ff88262dd7'
+        design = json.loads(design_path.read_text())
+        class NoRedirect(HTTPRedirectHandler):
+            def redirect_request(self, req, fp, code, msg, headers, newurl):
+                return None
+        api = 'https://api.github.com/repos/LystadJS/UN-Peace-Operations-Efficiency/actions/artifacts/11977253134/zip'
+        request = Request(api, headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json'})
+        try:
+            with build_opener(NoRedirect()).open(request, timeout=60) as response:
+                payload = response.read(64000001)
+        except HTTPError as error:
+            if error.code not in (301,302,303,307,308):
+                raise
+            location = error.headers['Location']
+            assert urlsplit(location).scheme == 'https'
+            # Never forward the API credential to artifact storage.
+            with urlopen(Request(location), timeout=90) as response:
+                payload = response.read(64000001)
+        assert len(payload) <= 64000000
+        expected = '400b3ce4b040a4c30f69c30844d95ab664c333556a2371cef8eca3feb2cd2479'
+        assert hashlib.sha256(payload).hexdigest() == expected
+        receipt=[]
+        with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+            assert archive.testzip() is None
+            for source in design['sources']:
+                hits=[n for n in archive.namelist() if n.endswith('/'+source['sha256']+'.pdf')]
+                assert len(hits)==1, (source['source_id'],len(hits))
+                body=archive.read(hits[0])
+                assert body.startswith(b'%PDF') and hashlib.sha256(body).hexdigest()==source['sha256']
+                target=Path(source['file']); target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body)
+                receipt.append({'source_id':source['source_id'],'sha256':source['sha256'],'artifact_member':hits[0]})
+        Path('/tmp/v9-acceptance/source-recovery.json').write_text(json.dumps({'artifact_id':11977253134,'artifact_sha256':expected,'sources':receipt},indent=2)+'\n')
+        PY
+    - name: Build Cyprus views and run source and corruption tests
+      run: python scripts/v9_cyprus.py --build --check --test
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v9-acceptance/retained-suite.json
+        python scripts/build_v8_pilot.py --check
+        python tests/check_v8_pilot.py --sources
+        python scripts/v9_cyprus.py --check
+    - name: Recheck candidate Cyprus views without publishing
+      run: python scripts/v9_cyprus.py --check
+    - name: Retain reproducible package and acceptance receipts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: v9-validated-cyprus-transfer
+        retention-days: 30
+        include-hidden-files: true
+        path: '/tmp/v9-acceptance
+
+          README.md
+
+          data
+
+          docs
+
+          scripts
+
+          tests
+
+          .github/workflows/validate.yml
+
+          .github/workflows/v9_release.yml
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

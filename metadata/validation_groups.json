@@ -1,0 +1,555 @@
+{
+  "schema_version": 1,
+  "python_version": "3.12",
+  "shell": "/bin/bash -euo pipefail",
+  "groups": {
+    "baseline": {
+      "legacy_workflow": ".github/workflows/validate.yml",
+      "legacy_sha256": "0970ac9c2e55f6d8d48f9fe29f9ac09b6e11f0d6de485116b662a353427a8202",
+      "python_packages": [
+        "PyMuPDF==1.26.7"
+      ],
+      "requires_r": true,
+      "steps": [
+        {
+          "id": "baseline-2",
+          "name": "Validate baseline identifiers citations and recorded assumptions",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 2,
+          "run": "python3 scripts/validate_crosswalk.py"
+        },
+        {
+          "id": "baseline-3",
+          "name": "Validate mission budget and UN80 audit supplements",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 3,
+          "run": "python3 scripts/validate_mission_audit.py"
+        },
+        {
+          "id": "baseline-4",
+          "name": "Validate GA resolution and SPM source reconciliation",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 4,
+          "run": "python3 scripts/validate_phase3.py"
+        },
+        {
+          "id": "baseline-5",
+          "name": "Validate SPM 2027 mission and cluster reconciliation",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 5,
+          "run": "python3 scripts/validate_spm_2027.py"
+        },
+        {
+          "id": "baseline-6",
+          "name": "Validate source-linked transaction-control baselines",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 6,
+          "run": "python3 scripts/validate_transaction_controls.py"
+        },
+        {
+          "id": "baseline-8",
+          "name": "Exercise R transaction matcher on clearly synthetic fixture",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 8,
+          "run": "Rscript scripts/audit_transaction_ledger.R tests/fixtures/transaction_ledger_SYNTHETIC.csv /tmp/un-peace-operations-synthetic\nRscript tests/check_transaction_engine.R /tmp/un-peace-operations-synthetic\n"
+        },
+        {
+          "id": "baseline-9",
+          "name": "Validate public decision gates and nonadditive finance map",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 9,
+          "run": "python3 scripts/validate_public_only.py"
+        },
+        {
+          "id": "baseline-10",
+          "name": "Build reproducible public decision queue",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 10,
+          "run": "Rscript scripts/render_public_decision_board.R . /tmp/peace-efficiency-public\nRscript tests/check_public_board.R /tmp/peace-efficiency-public\n"
+        },
+        {
+          "id": "baseline-11",
+          "name": "Exercise conditional break-even engine using synthetic data only",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 11,
+          "run": "Rscript scripts/evaluate_conditional_options.R tests/fixtures/scenarios_SYNTHETIC.csv /tmp/peace-efficiency-scenarios\nRscript tests/check_public_scenarios.R /tmp/peace-efficiency-scenarios\n"
+        },
+        {
+          "id": "baseline-12",
+          "name": "Check Phase 7 crosswalk and recommendation source status",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 12,
+          "run": "python3 scripts/validate_phase7.py"
+        },
+        {
+          "id": "baseline-13",
+          "name": "Reconcile ACABQ advice against 2027 SG proposals and research ranks",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 13,
+          "run": "python3 scripts/validate_acabq_2027.py"
+        },
+        {
+          "id": "baseline-14",
+          "name": "Validate nine Cluster III SG mission baselines and main ACABQ framework",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 14,
+          "run": "python3 scripts/validate_phase9_clusterIII.py"
+        },
+        {
+          "id": "baseline-15",
+          "name": "Validate selected retrospective public 2025-26 source identity and reuse adjudications",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 15,
+          "run": "python3 scripts/validate_retrospective_matches.py"
+        },
+        {
+          "id": "baseline-16",
+          "name": "Render and test retrospective 2025-26 research queue in base R",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 16,
+          "run": "Rscript scripts/render_retrospective_board.R . /tmp/peace-retrospective-board\nRscript tests/check_retrospective_board.R /tmp/peace-retrospective-board\n"
+        },
+        {
+          "id": "baseline-17",
+          "name": "Validate full official Council report and meeting indexes with scoped mission census",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 17,
+          "run": "python3 scripts/validate_systematic_census.py"
+        },
+        {
+          "id": "baseline-18",
+          "name": "Test Council index HTML parsing and quarantine of anomalies",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 18,
+          "run": "python3 tests/check_council_index_parser.py"
+        },
+        {
+          "id": "baseline-19",
+          "name": "Render systematic source census and test R summary outputs",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 19,
+          "run": "Rscript scripts/render_systematic_census.R . /tmp/peace-systematic-census\nRscript tests/check_systematic_census_board.R /tmp/peace-systematic-census\n"
+        },
+        {
+          "id": "baseline-20",
+          "name": "Validate scoped SG Council reports and public meeting field training coverage",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 20,
+          "run": "python3 scripts/validate_census_2025_2026.py"
+        },
+        {
+          "id": "baseline-21",
+          "name": "Validate October 12 archived Council, notice and curated-event source census",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 21,
+          "run": "python3 scripts/validate_census_v2_release.py"
+        },
+        {
+          "id": "baseline-22",
+          "name": "Validate 13 October mission training census extension",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 22,
+          "run": "python3 scripts/validate_census_v3_extension.py"
+        },
+        {
+          "id": "baseline-23",
+          "name": "Validate source-backed 2025-26 attendance and deeper official mission archives",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 23,
+          "run": "python3 scripts/validate_census_v4_attendance.py"
+        },
+        {
+          "id": "baseline-24",
+          "name": "Validate October 15 public census and canonical identity safeguards",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 24,
+          "run": "python3 scripts/validate_census_v5.py\npython3 scripts/finalize_census_v5.py --check\n"
+        },
+        {
+          "id": "baseline-25",
+          "name": "Validate complete bounded cross-version identities and source reuse",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 25,
+          "run": "python3 scripts/audit_census_v6.py --check"
+        },
+        {
+          "id": "baseline-27",
+          "name": "Validate V7 original transcript hashes and effective source references",
+          "legacy_job": "structural-quality-gates",
+          "legacy_step": 27,
+          "run": "python scripts/finalize_census_v7.py\n"
+        }
+      ]
+    },
+    "v8": {
+      "legacy_workflow": ".github/workflows/v8_validate.yml",
+      "legacy_sha256": "c9cd672dfad40531d54f7af1deaa079302d7407b4ea0b7936beda31abe5b2b34",
+      "python_packages": [
+        "PyMuPDF==1.26.7"
+      ],
+      "requires_r": false,
+      "steps": [
+        {
+          "id": "v8-4",
+          "name": "Verify retained V8 outputs and frozen pre-V8 evidence",
+          "legacy_job": "source-and-packet-guards",
+          "legacy_step": 4,
+          "run": "python scripts/build_v8_pilot.py --check"
+        },
+        {
+          "id": "v8-5",
+          "name": "Test product-specific source contracts and deliberate corruption fixtures",
+          "legacy_job": "source-and-packet-guards",
+          "legacy_step": 5,
+          "run": "python tests/check_v8_pilot.py --sources"
+        }
+      ]
+    },
+    "v9": {
+      "legacy_workflow": ".github/workflows/v9_checks.yml",
+      "legacy_sha256": "77e2cbc30e5d0d6fe072988b2bafeacbfa670fea061b16e54b5ad42d4a41179a",
+      "python_packages": [
+        "pypdf==5.9.0",
+        "PyMuPDF==1.26.7"
+      ],
+      "requires_r": false,
+      "steps": [
+        {
+          "id": "v9-4",
+          "name": "Verify retained Cyprus products and source-qualified claims",
+          "legacy_job": "cyprus-source-and-product-guards",
+          "legacy_step": 4,
+          "run": "python scripts/v9_cyprus.py --check --test"
+        }
+      ]
+    },
+    "v10": {
+      "legacy_workflow": ".github/workflows/v10_protocol_ci.yml",
+      "legacy_sha256": "34e6b9d634c72d33ba191bf65eca1f8ead302f44fababcedca71a041c1e64396",
+      "python_packages": [],
+      "requires_r": true,
+      "steps": [
+        {
+          "id": "v10-4",
+          "name": "Validate fixed public scope and closed live-use gates",
+          "legacy_job": "owner-review-protocol-guards",
+          "legacy_step": 4,
+          "run": "python scripts/build_v10_protocol.py --check"
+        },
+        {
+          "id": "v10-5",
+          "name": "Reject scope, attribution, savings and template corruptions",
+          "legacy_job": "owner-review-protocol-guards",
+          "legacy_step": 5,
+          "run": "python tests/check_v10_protocol.py"
+        },
+        {
+          "id": "v10-6",
+          "name": "Verify synthetic workload accounting only",
+          "legacy_job": "owner-review-protocol-guards",
+          "legacy_step": 6,
+          "run": "Rscript tests/check_v10_workload.R"
+        }
+      ]
+    },
+    "v11": {
+      "legacy_workflow": ".github/workflows/v11_validate.yml",
+      "legacy_sha256": "e92d8a280143b234ac880daabc7e03d098263dece0b587e4ea9c8e410f91510c",
+      "python_packages": [
+        "pypdf==5.9.0",
+        "PyMuPDF==1.26.7"
+      ],
+      "requires_r": true,
+      "steps": [
+        {
+          "id": "v11-4",
+          "name": "Validate retained first-pass results and closed live-use gates",
+          "legacy_job": "tabletop-and-closed-gates",
+          "legacy_step": 4,
+          "run": "python scripts/rehearse_v11.py --check\npython tests/check_v11_tabletop.py\npython scripts/build_v10_protocol.py --check\n"
+        },
+        {
+          "id": "v11-5",
+          "name": "Validate synthetic accounting without live observations",
+          "legacy_job": "tabletop-and-closed-gates",
+          "legacy_step": 5,
+          "run": "Rscript tests/check_v11_tabletop.R"
+        }
+      ]
+    },
+    "foundation": {
+      "legacy_workflow": ".github/workflows/foundation_standards.yml",
+      "legacy_sha256": "e2228a83d3aebce252d0b92a8b1cfcee77a786fc0684a049e7879d65a64354b3",
+      "python_packages": [],
+      "requires_r": false,
+      "steps": [
+        {
+          "id": "foundation-3",
+          "name": "Legacy step 3",
+          "legacy_job": "candidate-evidence-gates",
+          "legacy_step": 3,
+          "run": "python scripts/validate_candidate_advancement.py"
+        },
+        {
+          "id": "foundation-4",
+          "name": "Legacy step 4",
+          "legacy_job": "candidate-evidence-gates",
+          "legacy_step": 4,
+          "run": "python tests/check_candidate_advancement.py"
+        }
+      ]
+    },
+    "repository-controls": {
+      "legacy_workflow": null,
+      "legacy_sha256": null,
+      "python_packages": [
+        "PyYAML==6.0.3"
+      ],
+      "requires_r": false,
+      "steps": [
+        {
+          "id": "controls-audit-inputs",
+          "name": "audit-inputs",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/validate_repository_audit.py"
+        },
+        {
+          "id": "controls-inventory",
+          "name": "inventory",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_artifact_inventory.py --check"
+        },
+        {
+          "id": "controls-datasets",
+          "name": "datasets",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_dataset_registry.py --check"
+        },
+        {
+          "id": "controls-status-model",
+          "name": "status-model",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/validate_repository_status.py"
+        },
+        {
+          "id": "controls-lineage",
+          "name": "lineage",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_repository_lineage.py --check"
+        },
+        {
+          "id": "controls-issue-model",
+          "name": "issue-model",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/validate_master_issues.py"
+        },
+        {
+          "id": "controls-workflow-history",
+          "name": "workflow-history",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/audit_workflows.py --check"
+        },
+        {
+          "id": "controls-manifest",
+          "name": "manifest",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_canonical_manifest.py --check"
+        },
+        {
+          "id": "controls-issue-migration",
+          "name": "issue-migration",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/migrate_master_issues.py --check"
+        },
+        {
+          "id": "controls-current-status",
+          "name": "current-status",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/generate_current_status.py --check"
+        },
+        {
+          "id": "controls-readme",
+          "name": "readme",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_readme_navigation.py --check"
+        },
+        {
+          "id": "controls-consistency",
+          "name": "Current project consistency",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/validate_project_consistency.py"
+        },
+        {
+          "id": "controls-health",
+          "name": "Deterministic project health",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/build_project_health.py --check"
+        },
+        {
+          "id": "controls-test-check_artifact_inventory-py",
+          "name": "check_artifact_inventory.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_artifact_inventory.py"
+        },
+        {
+          "id": "controls-test-check_dataset_registry-py",
+          "name": "check_dataset_registry.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_dataset_registry.py"
+        },
+        {
+          "id": "controls-test-check_repository_status-py",
+          "name": "check_repository_status.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_repository_status.py"
+        },
+        {
+          "id": "controls-test-check_repository_lineage-py",
+          "name": "check_repository_lineage.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_repository_lineage.py"
+        },
+        {
+          "id": "controls-test-check_master_issues-py",
+          "name": "check_master_issues.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_master_issues.py"
+        },
+        {
+          "id": "controls-test-check_workflow_audit-py",
+          "name": "check_workflow_audit.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_workflow_audit.py"
+        },
+        {
+          "id": "controls-test-check_repository_audit-py",
+          "name": "check_repository_audit.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_repository_audit.py"
+        },
+        {
+          "id": "controls-test-check_canonical_manifest-py",
+          "name": "check_canonical_manifest.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_canonical_manifest.py"
+        },
+        {
+          "id": "controls-test-check_issue_migration-py",
+          "name": "check_issue_migration.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_issue_migration.py"
+        },
+        {
+          "id": "controls-test-check_current_status-py",
+          "name": "check_current_status.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_current_status.py"
+        },
+        {
+          "id": "controls-test-check_readme_navigation-py",
+          "name": "check_readme_navigation.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_readme_navigation.py"
+        },
+        {
+          "id": "controls-test-check_project_consistency-py",
+          "name": "check_project_consistency.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_project_consistency.py"
+        },
+        {
+          "id": "controls-test-check_project_health-py",
+          "name": "check_project_health.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_project_health.py"
+        },
+        {
+          "id": "controls-test-check_validation_suite-py",
+          "name": "check_validation_suite.py",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_validation_suite.py"
+        },
+        {
+          "id": "controls-v12-checked",
+          "name": "v12-checked",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/prepare_v12_patch.py --check"
+        },
+        {
+          "id": "controls-v12-corruptions",
+          "name": "v12-corruptions",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_v12_patch.py"
+        },
+        {
+          "id": "controls-v13-checked",
+          "name": "v13-checked",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python scripts/adopt_v13_reference.py --check"
+        },
+        {
+          "id": "controls-v13-corruptions",
+          "name": "v13-corruptions",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_v13_reference.py"
+        },
+        {
+          "id": "controls-test-publication-workflow",
+          "name": "Safe publication workflow",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python tests/check_publication_workflow.py"
+        }
+      ]
+    },
+    "retained-whitepaper": {
+      "legacy_workflow": null,
+      "legacy_sha256": null,
+      "python_packages": [
+        "PyMuPDF==1.26.7",
+        "python-docx==1.2.0"
+      ],
+      "requires_r": false,
+      "steps": [
+        {
+          "id": "whitepaper-original-guard",
+          "name": "Original retained White Paper preservation and document checks",
+          "legacy_job": null,
+          "legacy_step": null,
+          "run": "python - <<'PY'\nimport io,os,subprocess,sys,tarfile,tempfile\nfrom pathlib import Path\nbaseline='32f02e5e689ad9f43e762d5985330df20dda1719'\nobject_store=Path(subprocess.check_output(['git','rev-parse','--git-path','objects'],text=True).strip()).resolve()\narchive=subprocess.check_output(['git','archive',baseline])\nwith tempfile.TemporaryDirectory(prefix='peace-whitepaper-retained-') as directory:\n    with tarfile.open(fileobj=io.BytesIO(archive)) as bundle:\n        bundle.extractall(directory,filter='data')\n    subprocess.run(['git','init','--quiet',directory],check=True)\n    environment=dict(os.environ,GIT_DIR=str(Path(directory)/'.git'),GIT_WORK_TREE=directory,\n                     GIT_INDEX_FILE=str(Path(directory)/'.git/index'),\n                     GIT_ALTERNATE_OBJECT_DIRECTORIES=str(object_store))\n    subprocess.run([sys.executable,'reports/white_paper_2026-10-15/validate.py'],\n                   cwd=directory,env=environment,check=True)\nPY\n"
+        }
+      ]
+    }
+  }
+}

@@ -1,12 +1,6 @@
-name: V7 recovery and watch acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/finalize_census_v7.py
-      - .github/workflows/census_v7_release.yml
+name: V7 recovery and watch acceptance (manual candidate only)
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: census-v7-release
   cancel-in-progress: false
@@ -15,94 +9,60 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install pinned source-check environment
-        run: python -m pip install pypdf==5.9.0 beautifulsoup4==4.14.3 PyMuPDF==1.26.7 PyYAML==6.0.3
-      - name: Build and independently validate effective source references
-        run: |
-          python scripts/finalize_census_v7.py --write
-          python scripts/finalize_census_v7.py
-      - name: Verify preservation of all earlier data files
-        run: |
-          python - <<'PY'
-          import json, subprocess
-          from pathlib import Path
-          base='c0529f9959ab2e12e36481754b2883a526bec6df'
-          changed=subprocess.check_output(['git','diff','--name-only',base,'--','data'],text=True).splitlines()
-          unexpected=[p for p in changed if not p.startswith('data/census_v7/')]
-          if unexpected: raise AssertionError('Earlier data changed: '+repr(unexpected))
-          Path('data/census_v7/frozen_preservation_receipt.json').write_text(json.dumps({
-              'baseline_commit':base,'prior_data_files_changed':unexpected,'status':'passed'},indent=2)+'\n')
-          PY
-      - name: Execute all retained Python and R acceptance steps
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json, subprocess, yaml
-          steps=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())['jobs']['structural-quality-gates']['steps']
-          passed=[]
-          for step in steps:
-              if 'run' not in step: continue
-              print('ACCEPTANCE:',step.get('name','unnamed'),flush=True)
-              subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-              passed.append(step.get('name','unnamed'))
-          Path('data/census_v7/acceptance_receipt.json').write_text(json.dumps({
-              'status':'passed','tested_base_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-              'retained_acceptance_run_steps':len(passed),'retained_step_names':passed,
-              'new_reference_checks':11,'new_independent_original_pdf_checks':7,
-              'earlier_data_files_changed':0,'source_recovery_run':38749901130},indent=2)+'\n')
-          PY
-      - name: Add current README entry without rewriting historical findings
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          path=Path('README.md'); text=path.read_text()
-          old='## Latest — Cross-version identity and reuse audit'
-          heading='## Latest — Seven transcript gaps recovered; weekly course watch'
-          block='''## Latest — Seven transcript gaps recovered; weekly course watch
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install pinned source-check environment
+      run: python -m pip install pypdf==5.9.0 beautifulsoup4==4.14.3 PyMuPDF==1.26.7 PyYAML==6.0.3
+    - name: Build and independently validate effective source references
+      run: |
+        python scripts/finalize_census_v7.py --write
+        python scripts/finalize_census_v7.py
+    - name: Verify preservation of all earlier data files
+      run: |
+        python - <<'PY'
+        import json, subprocess
+        from pathlib import Path
+        base='c0529f9959ab2e12e36481754b2883a526bec6df'
+        changed=subprocess.check_output(['git','diff','--name-only',base,'--','data'],text=True).splitlines()
+        unexpected=[p for p in changed if not p.startswith('data/census_v7/')]
+        if unexpected: raise AssertionError('Earlier data changed: '+repr(unexpected))
+        Path('data/census_v7/frozen_preservation_receipt.json').write_text(json.dumps({
+            'baseline_commit':base,'prior_data_files_changed':unexpected,'status':'passed'},indent=2)+'\n')
+        PY
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v7-retained-suite.json
+    - name: Retain accepted evidence, originals and executable checks
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: census-v7-recovery-watch-accepted
+        retention-days: 30
+        path: 'V7_PUBLISHED_COMMIT.txt
 
-          **[Current recovery and watch findings](docs/census_2025_2026_v7_recovery.md)** · [Seven original PDFs](data/census_v7/originals) · [Effective report–briefing links](data/census_v7/report_briefing_links_effective.csv) · [Weekly course-watch contract](data/census_v7/course_watch_contract.json).
+          data/census_v7
 
-          All **seven** previously missing original English Council records are recovered: **187 pages**. The effective 14-link register contains 13 explicit formal-agenda/presentation associations and one retained discussion-only association. Eleven specified reference checks include an explicit UNOCA-to-UNOWAS briefing reference. Complete-file authentication does not mean every substantive passage was compared.
+          data/census_v6/report_briefing_reuse_tests.csv
 
-          A **weekly Friday-morning official-source watch** is active for all eight unresolved course cohorts, beginning 16 October 2026. It distinguishes advertisements, commencement, completion, certification and rescheduling; setup does not certify any new course completion. Earlier census tables and mandate/ranking/financial controls remain unchanged. **No duplicate paid service or incremental net saving is established.**
+          docs/census_2025_2026_v7_recovery.md
 
-          '''
-          if heading not in text:
-              if old not in text: raise AssertionError('README anchor changed')
-              text=text.replace(old,block+'## Earlier — Cross-version identity and reuse audit',1)
-          path.write_text(text)
-          PY
-      - name: Commit only accepted V7 outputs and current entry point
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v7 docs/census_2025_2026_v7_recovery.md README.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish seven recovered transcript links and weekly official course-watch controls'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > V7_PUBLISHED_COMMIT.txt
-      - name: Retain accepted evidence, originals and executable checks
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: census-v7-recovery-watch-accepted
-          retention-days: 30
-          path: |
-            V7_PUBLISHED_COMMIT.txt
-            data/census_v7
-            data/census_v6/report_briefing_reuse_tests.csv
-            docs/census_2025_2026_v7_recovery.md
-            scripts/recover_census_v7_transcripts.py
-            scripts/recover_census_v7_layout.py
-            scripts/finalize_census_v7.py
+          scripts/recover_census_v7_transcripts.py
+
+          scripts/recover_census_v7_layout.py
+
+          scripts/finalize_census_v7.py
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

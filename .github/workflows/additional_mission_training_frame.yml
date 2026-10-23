@@ -1,43 +1,39 @@
-name: Additional Mission and Training Archive Frame
-
-on:
-  push:
-    paths:
-      - scripts/collect_extended_official_archive.py
-      - tests/check_extended_archive_frame.py
-      - .github/workflows/additional_mission_training_frame.yml
-  workflow_dispatch:
-
+name: Additional Mission and Training Archive Frame (manual candidate only)
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
   group: additional-un-mission-training-source-frame
   cancel-in-progress: false
-
 jobs:
   source-index-extension:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install pinned HTML parser
-        run: python -m pip install beautifulsoup4==4.12.3
-      - name: Check official-source and no-event-inference guards
-        run: python tests/check_extended_archive_frame.py
-      - name: Collect bounded pages of nine additional UN archive and training sources
-        run: python scripts/collect_extended_official_archive.py --max-pages 3 --workers 4
-      - name: Save indexed source frame without promoting links to events
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v3/archive_page_access.csv data/census_v3/archive_discovered_url_frame.csv data/census_v3/archive_collection_summary.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'data: Snapshot additional nine official archive and training listing frames'
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install pinned HTML parser
+      run: python -m pip install beautifulsoup4==4.12.3
+    - name: Check official-source and no-event-inference guards
+      run: python tests/check_extended_archive_frame.py
+    - name: Collect bounded pages of nine additional UN archive and training sources
+      run: python scripts/collect_extended_official_archive.py --max-pages 3 --workers 4
+    - name: Retain candidate outputs for review only
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: additional_mission_training_frame-candidate-only
+        retention-days: 14
+        path: 'data
+
+          docs
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

@@ -1,17 +1,6 @@
-name: V10 owner-review protocol acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/build_v10_protocol.py
-      - scripts/summarize_v10_workload.R
-      - tests/check_v10_protocol.py
-      - tests/check_v10_workload.R
-      - docs/v10_owner_review_shadow_protocol.md
-      - docs/v10_owner_decision_sheet.md
-      - .github/workflows/v10_protocol_release.yml
+name: V10 owner-review protocol acceptance (manual candidate only)
 permissions:
-  contents: write
+  contents: read
 defaults:
   run:
     shell: bash
@@ -23,82 +12,74 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install retained validation parsers
-        run: |
-          python -m pip install beautifulsoup4==4.14.3 PyMuPDF==1.26.7 pypdf==5.9.0 PyYAML==6.0.3
-          mkdir -p /tmp/v10-acceptance
-          git rev-parse HEAD > /tmp/v10-acceptance/input-commit.txt
-          python -m pip freeze > /tmp/v10-acceptance/python-requirements.txt
-          Rscript --version > /tmp/v10-acceptance/R-version.txt
-      - name: Build frozen public scope and empty instruments without live execution
-        run: python scripts/build_v10_protocol.py --build
-      - name: Test scope, gates and synthetic workload accounting
-        run: |
-          set -euo pipefail
-          python tests/check_v10_protocol.py 2>&1 | tee /tmp/v10-acceptance/python-tests.txt
-          Rscript tests/check_v10_workload.R | tee /tmp/v10-acceptance/R-tests.txt
-      - name: Run retained acceptance and prior pilot integrity checks
-        run: |
-          python - <<'PY'
-          import json, subprocess, yaml
-          from pathlib import Path
-          workflow=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())
-          passed=[]
-          for step in workflow['jobs']['structural-quality-gates']['steps']:
-              if 'run' not in step: continue
-              print('ACCEPTANCE:',step.get('name','unnamed'),flush=True)
-              subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-              passed.append(step.get('name','unnamed'))
-          for command in ['python scripts/build_v8_pilot.py --check','python scripts/v9_cyprus.py --check','python scripts/build_v10_protocol.py --check']:
-              subprocess.run(command.split(),check=True)
-          Path('/tmp/v10-acceptance/retained-suite.json').write_text(json.dumps({'status':'PASS','retained_run_steps':len(passed),'steps':passed,'v8_v9_integrity':'PASS','live_trials_run':0,'course_checks_run':0},indent=2)+'\n')
-          PY
-      - name: Publish only new protocol records and current entry point
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('README.md');text=p.read_text()
-          heading='## Current — V10 owner-review and shadow-cycle protocol'
-          if heading not in text:
-              block='\n'+heading+'\n\n[Joint protocol](docs/v10_owner_review_shadow_protocol.md) · [Owner decision sheet](docs/v10_owner_decision_sheet.md) · [Fixed obligations](data/census_v10/product_obligations.csv).\n\nThe public reference scope fixes 64 source observations, 25 components and 61 selected obligations across 12 product views. Nine instruments remain empty; case-local approvals and live activation are pending. Workload accounting separates normal, shadow, shared, setup and evaluation effort. No live trial, staff measurement or course check is started; mandate, ranking and financial safeguards remain unchanged.\n\n'
-              text=text+block
-              p.write_text(text)
-          PY
-          git diff --exit-code -- data/census_v8 data/census_v9 data/acabq_2027_ranked_consolidation.csv
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v10 README.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish validated V10 fixed-scope owner-review protocol and empty instruments'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/v10-acceptance/published-commit.txt
-      - name: Retain public protocol, inputs and acceptance receipts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: v10-validated-owner-review-protocol
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            /tmp/v10-acceptance
-            README.md
-            docs/v10*.md
-            docs/v8*.md
-            docs/v9*.md
-            data/census_v10
-            data/census_v8
-            data/census_v9
-            data/acabq_2027_ranked_consolidation.csv
-            scripts/build_v10_protocol.py
-            scripts/summarize_v10_workload.R
-            tests/check_v10_protocol.py
-            tests/check_v10_workload.R
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install retained validation parsers
+      run: |
+        python -m pip install beautifulsoup4==4.14.3 PyMuPDF==1.26.7 pypdf==5.9.0 PyYAML==6.0.3
+        mkdir -p /tmp/v10-acceptance
+        git rev-parse HEAD > /tmp/v10-acceptance/input-commit.txt
+        python -m pip freeze > /tmp/v10-acceptance/python-requirements.txt
+        Rscript --version > /tmp/v10-acceptance/R-version.txt
+    - name: Build frozen public scope and empty instruments without live execution
+      run: python scripts/build_v10_protocol.py --build
+    - name: Test scope, gates and synthetic workload accounting
+      run: |
+        set -euo pipefail
+        python tests/check_v10_protocol.py 2>&1 | tee /tmp/v10-acceptance/python-tests.txt
+        Rscript tests/check_v10_workload.R | tee /tmp/v10-acceptance/R-tests.txt
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v10-acceptance/retained-suite.json
+        python scripts/build_v8_pilot.py --check
+        python scripts/v9_cyprus.py --check
+        python scripts/build_v10_protocol.py --check
+    - name: Preserve prior pilot and rank bytes
+      run: |
+        git diff --exit-code -- data/census_v8 data/census_v9 data/acabq_2027_ranked_consolidation.csv
+    - name: Retain public protocol, inputs and acceptance receipts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: v10-validated-owner-review-protocol
+        retention-days: 30
+        include-hidden-files: true
+        path: '/tmp/v10-acceptance
+
+          README.md
+
+          docs/v10*.md
+
+          docs/v8*.md
+
+          docs/v9*.md
+
+          data/census_v10
+
+          data/census_v8
+
+          data/census_v9
+
+          data/acabq_2027_ranked_consolidation.csv
+
+          scripts/build_v10_protocol.py
+
+          scripts/summarize_v10_workload.R
+
+          tests/check_v10_protocol.py
+
+          tests/check_v10_workload.R
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

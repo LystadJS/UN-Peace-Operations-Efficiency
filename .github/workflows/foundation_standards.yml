@@ -1,0 +1,12 @@
+name: Foundation standards
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  candidate-evidence-gates:
+    uses: ./.github/workflows/reusable_validation.yml
+    with:
+      group: foundation

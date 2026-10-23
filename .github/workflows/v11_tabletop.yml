@@ -1,16 +1,6 @@
-name: V11 public tabletop acceptance
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/rehearse_v11.py
-      - scripts/build_v11_review_notes.py
-      - tests/check_v11_tabletop.py
-      - tests/check_v11_tabletop.R
-      - .github/workflows/v11_tabletop.yml
-  pull_request:
+name: V11 public tabletop acceptance (manual candidate only)
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: v11-public-tabletop
   cancel-in-progress: false
@@ -19,90 +9,70 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install pinned extraction environment
-        run: |
-          python -m pip install PyMuPDF==1.26.7 pypdf==5.9.0 beautifulsoup4==4.14.3 PyYAML
-          mkdir -p /tmp/v11_acceptance
-          python -m pip freeze > /tmp/v11_acceptance/requirements.txt
-          git rev-parse HEAD > /tmp/v11_acceptance/tested_commit.txt
-      - name: Rebuild assistant-adjudicated public tabletop only
-        run: |
-          python scripts/build_v11_review_notes.py
-          python scripts/rehearse_v11.py --build
-          python tests/check_v11_tabletop.py 2>&1 | tee /tmp/v11_acceptance/python_tests.txt
-          Rscript tests/check_v11_tabletop.R | tee /tmp/v11_acceptance/R_tabletop_tests.txt
-      - name: Run retained acceptance and V10 closed-gate checks
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json,subprocess,yaml
-          config=yaml.safe_load(Path('.github/workflows/validate.yml').read_text())
-          passed=[]
-          for step in config['jobs']['structural-quality-gates']['steps']:
-              if 'run' in step:
-                  subprocess.run(['/bin/bash','-euo','pipefail','-c',step['run']],check=True)
-                  passed.append(step.get('name','unnamed'))
-          Path('/tmp/v11_acceptance/retained_suite.json').write_text(json.dumps({'passed_steps':len(passed),'steps':passed},indent=2)+'\n')
-          PY
-          python tests/check_v10_protocol.py
-          Rscript tests/check_v10_workload.R
-      - name: Verify that all earlier research files remain unchanged
-        run: |
-          python - <<'PY'
-          import subprocess,hashlib,json
-          from pathlib import Path
-          base='cf9df9e19448f81ba666f5456245338540c6c681'
-          names=subprocess.check_output(['git','ls-tree','-r','--name-only',base,'--','data','docs','scripts','tests'],text=True).splitlines()
-          for name in names:
-              old=subprocess.check_output(['git','show',base+':'+name])
-              assert Path(name).read_bytes()==old,name
-          Path('/tmp/v11_acceptance/frozen_files.json').write_text(json.dumps({'baseline':base,'earlier_files_unchanged':len(names)},indent=2)+'\n')
-          PY
-      - name: Publish additive tabletop records without activating a trial
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('README.md');text=p.read_text()
-          title='## Latest: V11 public-source tabletop'
-          if title not in text:
-              text=text.replace('## Latest —','## Historical —')
-              block='\n'+title+'\n\n**[Tabletop findings](docs/v11_public_tabletop.md)** · [61 obligation reviews](data/census_v11/obligation_reviews.csv) · [12 support sheets](docs/v11_tabletop_support_sheets.md) · [Amendment requests](data/census_v11/amendment_requests.json).\n\nAll 61 fixed obligations were reviewed. 59 formulations are supported unchanged; two remain on amendment hold: one semantic action correction and one explicit strict-qualifier improvement. The 12 scenario cards were rehearsed by the assistant, not by institutional owners. Both live-use gates remain closed, the original references and rankings are unchanged, and no staff-time or savings estimate is made. The course watch remains paused.\n'
-              pos=text.find('\n## ')
-              assert pos>=0,'README heading anchor missing'
-              text=text[:pos]+block+text[pos:]
-              text=text.replace('href="docs/census_2025_2026_v6_audit.md"><strong>Current census and shared-production findings','href="docs/v11_public_tabletop.md"><strong>Current tabletop and shared-production findings')
-              p.write_text(text)
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/census_v11 docs/v11_public_tabletop.md docs/v11_tabletop_support_sheets.md README.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish V11 fixed-scope tabletop with retained failures and closed live gates'
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/v11_acceptance/published_commit.txt
-      - name: Retain public evidence and acceptance records
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: v11-public-tabletop-acceptance
-          retention-days: 30
-          include-hidden-files: true
-          path: |
-            /tmp/v11_acceptance
-            data
-            docs
-            scripts
-            tests
-            README.md
-            .github/workflows
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install pinned extraction environment
+      run: |
+        python -m pip install PyMuPDF==1.26.7 pypdf==5.9.0 beautifulsoup4==4.14.3 PyYAML
+        mkdir -p /tmp/v11_acceptance
+        python -m pip freeze > /tmp/v11_acceptance/requirements.txt
+        git rev-parse HEAD > /tmp/v11_acceptance/tested_commit.txt
+    - name: Rebuild assistant-adjudicated public tabletop only
+      run: |
+        python scripts/build_v11_review_notes.py
+        python scripts/rehearse_v11.py --build
+        python tests/check_v11_tabletop.py 2>&1 | tee /tmp/v11_acceptance/python_tests.txt
+        Rscript tests/check_v11_tabletop.R | tee /tmp/v11_acceptance/R_tabletop_tests.txt
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/v11_acceptance/retained_suite.json
+        python tests/check_v10_protocol.py
+        Rscript tests/check_v10_workload.R
+    - name: Verify that all earlier research files remain unchanged
+      run: |
+        python - <<'PY'
+        import subprocess,hashlib,json
+        from pathlib import Path
+        from scripts.frozen_audit_inputs import frozen_source_path
+        base='cf9df9e19448f81ba666f5456245338540c6c681'
+        names=subprocess.check_output(['git','ls-tree','-r','--name-only',base,'--','data','docs','scripts','tests'],text=True).splitlines()
+        for name in names:
+            old=subprocess.check_output(['git','show',base+':'+name])
+            assert frozen_source_path(Path.cwd(),name).read_bytes()==old,name
+        Path('/tmp/v11_acceptance/frozen_files.json').write_text(json.dumps({'baseline':base,'earlier_files_unchanged':len(names)},indent=2)+'\n')
+        PY
+    - name: Retain public evidence and acceptance records
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: v11-public-tabletop-acceptance
+        retention-days: 30
+        include-hidden-files: true
+        path: '/tmp/v11_acceptance
+
+          data
+
+          docs
+
+          scripts
+
+          tests
+
+          README.md
+
+          .github/workflows
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

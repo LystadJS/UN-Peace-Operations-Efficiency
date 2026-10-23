@@ -1,13 +1,6 @@
-name: Portfolio White Paper publication
-on:
-  push:
-    branches: [main]
-    paths:
-      - 'reports/white_paper_2026-10-15/*.py'
-      - 'reports/white_paper_2026-10-15/manuscript/**'
-      - '.github/workflows/white_paper_2026.yml'
+name: Portfolio White Paper publication (manual candidate only)
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: portfolio-whitepaper-2026
   cancel-in-progress: false
@@ -16,52 +9,74 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install and record document environment
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq libreoffice-writer fonts-liberation
-          python -m pip install numpy==2.3.5 matplotlib==3.10.8 python-docx==1.2.0 PyMuPDF==1.26.7
-          mkdir -p reports/white_paper_2026-10-15/analysis
-          python -m pip freeze > reports/white_paper_2026-10-15/analysis/runtime.txt
-      - name: Rebuild figures and narrative without altering source registers
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import hashlib
-          p=Path('reports/white_paper_2026-10-15')
-          text='<!-- page -->'.join((p/'manuscript'/f'part{i}.md').read_text() for i in (1,2,3))
-          assert hashlib.sha256(text.encode()).hexdigest()=='114be4b5957e9a1caf87b7c9edd1005fde0cb732919f05642c5fc12af32bdcce'
-          (p/'whitepaper.md').write_text(text)
-          PY
-          python reports/white_paper_2026-10-15/analyze.py
-          python reports/white_paper_2026-10-15/charts.py
-          python reports/white_paper_2026-10-15/build_doc.py
-          libreoffice -env:UserInstallation=file:///tmp/whitepaper-lo --headless --convert-to pdf --outdir reports/white_paper_2026-10-15/deliverables reports/white_paper_2026-10-15/deliverables/UN_Peace_Operations_White_Paper_2026-10-15.docx
-      - name: Check financial sums document structure and all earlier files
-        run: python reports/white_paper_2026-10-15/validate.py
-      - name: Publish only White Paper outputs
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f reports/white_paper_2026-10-15/analysis reports/white_paper_2026-10-15/figures reports/white_paper_2026-10-15/deliverables reports/white_paper_2026-10-15/whitepaper.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish 32-page portfolio White Paper with 19 figures and preserved financial boundaries'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/whitepaper-published-commit.txt
-      - name: Retain public White Paper and reproducibility evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: whitepaper-2026-10-15
-          retention-days: 30
-          path: |
-            reports/white_paper_2026-10-15
-            /tmp/whitepaper-published-commit.txt
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install and record document environment
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq libreoffice-writer fonts-liberation
+        python -m pip install numpy==2.3.5 matplotlib==3.10.8 python-docx==1.2.0 PyMuPDF==1.26.7
+        mkdir -p reports/white_paper_2026-10-15/analysis
+        python -m pip freeze > reports/white_paper_2026-10-15/analysis/runtime.txt
+    - name: Rebuild figures and narrative without altering source registers
+      run: |
+        python - <<'PY'
+        from pathlib import Path
+        import hashlib
+        p=Path('reports/white_paper_2026-10-15')
+        text='<!-- page -->'.join((p/'manuscript'/f'part{i}.md').read_text() for i in (1,2,3))
+        assert hashlib.sha256(text.encode()).hexdigest()=='114be4b5957e9a1caf87b7c9edd1005fde0cb732919f05642c5fc12af32bdcce'
+        (p/'whitepaper.md').write_text(text)
+        PY
+        python reports/white_paper_2026-10-15/analyze.py
+        python reports/white_paper_2026-10-15/charts.py
+        python reports/white_paper_2026-10-15/build_doc.py
+        libreoffice -env:UserInstallation=file:///tmp/whitepaper-lo --headless --convert-to pdf --outdir reports/white_paper_2026-10-15/deliverables reports/white_paper_2026-10-15/deliverables/UN_Peace_Operations_White_Paper_2026-10-15.docx
+    - name: Check financial sums document structure and all earlier files
+      run: |
+        python - <<'PY'
+        import io, json, os, shutil, subprocess, tarfile, tempfile
+        from pathlib import Path
+        live = Path.cwd()
+        # Validate the newly built report with original control bytes restored
+        # in an isolated tree, retaining every original preservation assertion.
+        # This never restores files into the live checkout.
+        with tempfile.TemporaryDirectory(prefix='whitepaper-preservation-') as temp:
+            isolated = Path(temp)
+            payload = subprocess.check_output(['git', 'archive', 'HEAD'])
+            with tarfile.open(fileobj=io.BytesIO(payload)) as archive:
+                archive.extractall(isolated, filter='data')
+            report = Path('reports/white_paper_2026-10-15')
+            shutil.copytree(live/report, isolated/report, dirs_exist_ok=True)
+            mapping = json.loads((live/'metadata/frozen_input_archive.json').read_text())
+            for row in mapping['files']:
+                destination = isolated/row['path']
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(live/row['archive_path'], destination)
+            environment = dict(os.environ, GIT_DIR=str(live/'.git'), GIT_WORK_TREE=str(isolated))
+            subprocess.run(['python', str(isolated/report/'validate.py')],
+                           cwd=isolated, env=environment, check=True)
+            shutil.copyfile(isolated/report/'analysis/validation_receipt.json',
+                            live/report/'analysis/validation_receipt.json')
+        PY
+    - name: Retain public White Paper and reproducibility evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: whitepaper-2026-10-15
+        retention-days: 30
+        path: 'reports/white_paper_2026-10-15
+
+          /tmp/whitepaper-published-commit.txt
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

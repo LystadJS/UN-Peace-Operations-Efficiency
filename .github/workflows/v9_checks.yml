@@ -7,14 +7,6 @@ permissions:
   contents: read
 jobs:
   cyprus-source-and-product-guards:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install pinned source parsers
-        run: python -m pip install pypdf==5.9.0 PyMuPDF==1.26.7
-      - name: Verify retained Cyprus products and source-qualified claims
-        run: python scripts/v9_cyprus.py --check --test
+    uses: ./.github/workflows/reusable_validation.yml
+    with:
+      group: v9

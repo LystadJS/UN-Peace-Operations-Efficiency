@@ -1,8 +1,6 @@
 name: V8 reporting pilot source capture
 on:
-  push:
-    branches: [main]
-    paths: [.github/workflows/v8_source_capture.yml]
+  workflow_dispatch:
 permissions:
   contents: read
   actions: read
@@ -12,6 +10,8 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Capture original pilot sources and exact repository baseline
         env:
           GH_TOKEN: ${{ github.token }}

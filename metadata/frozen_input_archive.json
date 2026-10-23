@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "scope_id": "A01-A06-2026-10-22",
+  "purpose": "Immutable prior controls underpinning frozen audit and explicit A07-A13 controlled evolution; non-A01 compatibility baselines retain original A05 versions.",
+  "files": [
+    {
+      "path": ".github/workflows/additional_mission_training_frame.yml",
+      "archive_path": "history/pre_controls/.github/workflows/additional_mission_training_frame.yml",
+      "sha256": "93dfa8937d099da3174f268604edbfc0162092af4930b46e80fb65b24cf193d0"
+    },
+    {
+      "path": ".github/workflows/census_v5.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v5.yml",
+      "sha256": "5bbb3f92e4041585e22872397e5a4b14921f017e1000102869a17ad9fdf5d6a0"
+    },
+    {
+      "path": ".github/workflows/census_v5_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v5_release.yml",
+      "sha256": "44ca5494e24f6aa56c6cb65ebc4f98c3e6730113c9cb2cdc2b1a7d486c7b982c"
+    },
+    {
+      "path": ".github/workflows/census_v6.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v6.yml",
+      "sha256": "637da9d8be207b486c757cb79db39374cc0a61e717d351c8f26e1ddffcc898d3"
+    },
+    {
+      "path": ".github/workflows/census_v6_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v6_release.yml",
+      "sha256": "190cd2521129f6d169a00ee216343df9b5cd36f8f605e7fd7e51595e17b5f79a"
+    },
+    {
+      "path": ".github/workflows/census_v7_recovery.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v7_recovery.yml",
+      "sha256": "843caf00bf5bd752320002bf14ec76a61ea0baa0b38bbe123bad133f4c3bc948"
+    },
+    {
+      "path": ".github/workflows/census_v7_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/census_v7_release.yml",
+      "sha256": "60565ac6813fbc7be6415f6c633c590a14c7f350ca1ef5e16ee7425ee89bda21"
+    },
+    {
+      "path": ".github/workflows/deeper_official_archives_v4.yml",
+      "archive_path": "history/pre_controls/.github/workflows/deeper_official_archives_v4.yml",
+      "sha256": "ad3bc9f14290cdfb77ad3a276ac52d8da174f661a22146d08dc452971b5c021a"
+    },
+    {
+      "path": ".github/workflows/foundation_standards.yml",
+      "archive_path": "history/pre_controls/.github/workflows/foundation_standards.yml",
+      "sha256": "e2228a83d3aebce252d0b92a8b1cfcee77a786fc0684a049e7879d65a64354b3"
+    },
+    {
+      "path": ".github/workflows/mission_archive_census.yml",
+      "archive_path": "history/pre_controls/.github/workflows/mission_archive_census.yml",
+      "sha256": "ff89234d27a2a15ab61c645bda9391c97c425916b86326ef7ddbe118323e1a17"
+    },
+    {
+      "path": ".github/workflows/owner_review_package.yml",
+      "archive_path": "history/pre_controls/.github/workflows/owner_review_package.yml",
+      "sha256": "1ac0cca0a4e8550f172b2e629a33f8d97059f6451ce60883c73db4aae95f4f19"
+    },
+    {
+      "path": ".github/workflows/published_census_v2.yml",
+      "archive_path": "history/pre_controls/.github/workflows/published_census_v2.yml",
+      "sha256": "bcd143da4e99761939b3f36c3f2b09844f852c9ddfb2f9f5ea7bbf575d7a2bc8"
+    },
+    {
+      "path": ".github/workflows/recover_legacy_notice_dates.yml",
+      "archive_path": "history/pre_controls/.github/workflows/recover_legacy_notice_dates.yml",
+      "sha256": "f06a0cef527e1ac9425b9aa2a318803793290b5041e73be356fb6c2f7b0707b0"
+    },
+    {
+      "path": ".github/workflows/systematic_census.yml",
+      "archive_path": "history/pre_controls/.github/workflows/systematic_census.yml",
+      "sha256": "49c5e6b74a35699cd391440241f6b5af85ddd69a13d94017b7102f5b7e869883"
+    },
+    {
+      "path": ".github/workflows/systematic_evidence_views.yml",
+      "archive_path": "history/pre_controls/.github/workflows/systematic_evidence_views.yml",
+      "sha256": "0de2709f6d1175e53972d7d50e11f393423d02ebbfd2d1ac7ac399d3625479d0"
+    },
+    {
+      "path": ".github/workflows/v10_protocol_ci.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v10_protocol_ci.yml",
+      "sha256": "34e6b9d634c72d33ba191bf65eca1f8ead302f44fababcedca71a041c1e64396"
+    },
+    {
+      "path": ".github/workflows/v10_protocol_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v10_protocol_release.yml",
+      "sha256": "1742e4c7bc8672693b91039e4be16afefb5c3cdc0cabbb85e4b1c389b18572c1"
+    },
+    {
+      "path": ".github/workflows/v11_tabletop.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v11_tabletop.yml",
+      "sha256": "272170437cdc7ea50d1fc44247d43e1adf631a66af7858acca04925ea57ae8bd"
+    },
+    {
+      "path": ".github/workflows/v11_validate.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v11_validate.yml",
+      "sha256": "e92d8a280143b234ac880daabc7e03d098263dece0b587e4ea9c8e410f91510c"
+    },
+    {
+      "path": ".github/workflows/v12_reference_patch.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v12_reference_patch.yml",
+      "sha256": "b7dfa66db45ccfcd65419580d0ded2de654ff1625d7f65b820d3251bd510cdf2"
+    },
+    {
+      "path": ".github/workflows/v13_reference_adoption.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v13_reference_adoption.yml",
+      "sha256": "aa3c8e62ed865f12b67dbccb1e12816ed09e0ebdf402560c7e623f62fc5c1762"
+    },
+    {
+      "path": ".github/workflows/v8_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v8_release.yml",
+      "sha256": "6ac8bc75b1f33c4e2c4122fa70091f711a6247170566dc177c6526f22432bbad"
+    },
+    {
+      "path": ".github/workflows/v8_source_capture.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v8_source_capture.yml",
+      "sha256": "5a9f4e2457c388fd471dfeaf64544c1614a1bc1c3ce7c25160aee00e7369f810"
+    },
+    {
+      "path": ".github/workflows/v8_validate.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v8_validate.yml",
+      "sha256": "c9cd672dfad40531d54f7af1deaa079302d7407b4ea0b7936beda31abe5b2b34"
+    },
+    {
+      "path": ".github/workflows/v9_checks.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v9_checks.yml",
+      "sha256": "77e2cbc30e5d0d6fe072988b2bafeacbfa670fea061b16e54b5ad42d4a41179a"
+    },
+    {
+      "path": ".github/workflows/v9_release.yml",
+      "archive_path": "history/pre_controls/.github/workflows/v9_release.yml",
+      "sha256": "084976378a3882bd219baba62618b9fbb891fe36fc195eec4f395941d05e1768"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "archive_path": "history/pre_controls/.github/workflows/validate.yml",
+      "sha256": "0970ac9c2e55f6d8d48f9fe29f9ac09b6e11f0d6de485116b662a353427a8202"
+    },
+    {
+      "path": ".github/workflows/white_paper_2026.yml",
+      "archive_path": "history/pre_controls/.github/workflows/white_paper_2026.yml",
+      "sha256": "9f8469f784da0d516d271cbac1530ad485929007fceaa3c3886a16a2520fb503"
+    },
+    {
+      "path": "README.md",
+      "archive_path": "history/pre_controls/README.md",
+      "sha256": "d734e69c9da2bb2156c359c3796d68596c3228e6c5831beb7f2230ac3498d4ce"
+    },
+    {
+      "path": "metadata/master_issue_schema.json",
+      "archive_path": "history/pre_controls/metadata/master_issue_schema.json",
+      "sha256": "577a3f97de8de40ce9c8f9ec2546eb625e2245955f2f695a4e71d46488503496"
+    },
+    {
+      "path": "scripts/validate_master_issues.py",
+      "archive_path": "history/pre_controls/scripts/validate_master_issues.py",
+      "sha256": "7bc8f1ab8d4673fbdaf80dfe49370b137a3c913812fc0f291374cd162e5bca3d"
+    },
+    {
+      "path": "tests/check_master_issues.py",
+      "archive_path": "history/pre_controls/tests/check_master_issues.py",
+      "sha256": "1e807deb9dffce32d94fcb504a75f410ec7565b721736353298ae02abf4faa0f"
+    }
+  ]
+}

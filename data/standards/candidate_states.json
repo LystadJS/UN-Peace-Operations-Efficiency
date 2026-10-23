@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "states": {
+    "SCREENING_CANDIDATE": {"requires": ["specific_hypothesis", "source_anchor"], "next": ["VALIDATION_READY", "RETAIN_CURRENT_PROCESS", "CLOSED_INSUFFICIENT_EVIDENCE"]},
+    "VALIDATION_READY": {"requires": ["bounded_intervention", "owner_role_and_custodian", "mandate_and_cost_perimeter", "evidence_request", "counterfactual_design", "prospective_guardrails", "nonadditivity_group"], "next": ["OPERATIONALLY_VALIDATED", "RETAIN_CURRENT_PROCESS", "CLOSED_INSUFFICIENT_EVIDENCE"]},
+    "OPERATIONALLY_VALIDATED": {"requires": ["actual_service_evidence", "comparable_baseline_and_alternative", "transferred_work_accounted", "operational_guardrails_passed"], "next": ["FINANCIALLY_VALIDATED", "IMPLEMENTATION_READY", "RETAIN_CURRENT_PROCESS", "CLOSED_INSUFFICIENT_EVIDENCE"]},
+    "FINANCIALLY_VALIDATED": {"requires": ["unique_cost_objects", "same_scope_counterfactual", "cancelable_or_released_cost", "full_system_net_cost", "incremental_not_prebooked", "timing_and_uncertainty", "financial_review_receipt"], "next": ["IMPLEMENTATION_READY", "RETAIN_CURRENT_PROCESS"]},
+    "IMPLEMENTATION_READY": {"requires": ["accepted_accountable_owner", "required_authorities", "frozen_baseline", "implementation_and_monitoring_plan", "stop_and_rollback_rules"], "next": ["REALIZATION_IN_PROGRESS", "RETAIN_CURRENT_PROCESS"]},
+    "REALIZATION_IN_PROGRESS": {"requires": ["authorized_change_started", "active_benefit_and_guardrail_monitoring", "deviations_and_transferred_cost_capture"], "next": ["REALIZED", "IMPLEMENTATION_READY", "RETAIN_CURRENT_PROCESS"]},
+    "REALIZED": {"requires": ["observation_period_completed", "observed_benefit", "cost_migration_reconciled", "continuing_guardrails_passed", "owner_acceptance", "independent_review"], "next": []},
+    "RETAIN_CURRENT_PROCESS": {"requires": ["evidence_based_retention_decision", "tested_scope_and_limitations"], "next": []},
+    "CLOSED_INSUFFICIENT_EVIDENCE": {"requires": ["missing_evidence_and_affected_claim", "collection_attempts_and_burden", "closure_and_reopening_rule"], "next": []}
+  },
+  "claim_classes": ["NOT_ASSESSED", "NO_FINANCIAL_CLAIM", "CAPACITY_GAIN", "CONTROL_IMPROVEMENT", "RECOVERY", "COST_AVOIDANCE", "CASHABLE_SAVING", "REALIZED_SAVING", "NET_COST_INCREASE"],
+  "savings_claim_classes": ["CASHABLE_SAVING", "REALIZED_SAVING"],
+  "record_fields": ["candidate_id", "version", "current_state", "claim_class", "savings_amount", "currency", "period", "history"],
+  "event_fields": ["state", "recorded_at", "evidence_cutoff", "actor", "rationale", "checks", "evidence_receipts", "validator_version"],
+  "validator_version": "1.0"
+}

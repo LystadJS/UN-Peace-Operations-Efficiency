@@ -1,82 +1,58 @@
-name: October 15 census final acceptance
-
-on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/finalize_census_v5.py
-      - .github/workflows/census_v5_release.yml
-
+name: October 15 census final acceptance (manual candidate only)
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
   group: public-census-v5-release
   cancel-in-progress: false
-
 jobs:
   final-acceptance:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - name: Install and record parsing environment
-        run: |
-          python -m pip install beautifulsoup4 PyYAML
-          mkdir -p /tmp/census-v5-release-html
-          python -m pip freeze > /tmp/census-v5-release-html/python-requirements.txt
-      - name: Finalize canonical identities and current research entry points
-        run: python scripts/finalize_census_v5.py --write
-      - name: Execute every run command in the repository acceptance workflow
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import subprocess
-          import yaml
-          workflow = yaml.safe_load(Path('.github/workflows/validate.yml').read_text())
-          steps = workflow['jobs']['structural-quality-gates']['steps']
-          count = 0
-          for step in steps:
-              if 'run' not in step:
-                  continue
-              print('ACCEPTANCE:', step.get('name', 'unnamed'), flush=True)
-              subprocess.run(['/bin/bash', '-euo', 'pipefail', '-c', step['run']], check=True)
-              count += 1
-          Path('/tmp/census-v5-release-html/acceptance-receipt.txt').write_text(
-              f'{count} repository acceptance run steps passed; includes retained Python and R tests.\n')
-          PY
-      - name: Commit only final census views and documentation
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          # The generated V5 gates ran above. Workflow configuration itself is
-          # maintained through the authenticated connector, not this job token.
-          git restore .github/workflows/validate.yml
-          git add README.md data/census_v5 docs/census_2025_2026_oct15_v5.md docs/census_2025_2026_oct15_executive.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Finalize October 15 census identity bridge and executive brief after full acceptance'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-          git rev-parse HEAD > /tmp/census-v5-release-html/published-commit.txt
-      - name: Retain verified research package and acceptance receipt
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-census-v5-final-acceptance
-          retention-days: 14
-          path: |
-            /tmp/census-v5-release-html
-            README.md
-            data/census_v5
-            docs/census_2025_2026_oct15_v5.md
-            docs/census_2025_2026_oct15_executive.md
-            scripts/collect_census_v5.py
-            scripts/validate_census_v5.py
-            scripts/finalize_census_v5.py
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+    - name: Install and record parsing environment
+      run: |
+        python -m pip install beautifulsoup4 PyYAML
+        mkdir -p /tmp/census-v5-release-html
+        python -m pip freeze > /tmp/census-v5-release-html/python-requirements.txt
+    - name: Finalize canonical identities and current research entry points
+      run: python scripts/finalize_census_v5.py --write
+    - name: Run explicit retained validation suite and release-specific guards
+      run: |
+        python scripts/run_validation_suite.py --group baseline --receipt /tmp/census-v5-release-html/acceptance-receipt.json
+    - name: Retain verified research package and acceptance receipt
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: public-census-v5-final-acceptance
+        retention-days: 14
+        path: '/tmp/census-v5-release-html
+
+          README.md
+
+          data/census_v5
+
+          docs/census_2025_2026_oct15_v5.md
+
+          docs/census_2025_2026_oct15_executive.md
+
+          scripts/collect_census_v5.py
+
+          scripts/validate_census_v5.py
+
+          scripts/finalize_census_v5.py
+
+          '
+    permissions:
+      contents: read
+      actions: read
+'on':
+  workflow_dispatch: {}

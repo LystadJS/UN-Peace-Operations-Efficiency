@@ -1,0 +1,174 @@
+{
+  "actual_financial_validations": 0,
+  "actual_operational_trials": 0,
+  "actual_owner_approvals": 0,
+  "actual_preparation_status": {
+    "actual_pilots_authorized": 0,
+    "actual_pilots_started": 0,
+    "charters": 3,
+    "threshold_dimensions": 24
+  },
+  "actual_savings_amount": null,
+  "design_task": "E14",
+  "execution_kind": "ACTUAL_LOCAL_SOFTWARE_EXECUTION_ON_EXPLICIT_SYNTHETIC_INPUTS",
+  "limitations": [
+    "Only bounded software behavior was exercised; no UN transaction or operational finding follows.",
+    "Toy monetary differences do not estimate an actual intervention, benefit or saving.",
+    "Synthetic PASS and owner receipts are fictional; all actual pilot activation gates remain blocked.",
+    "This deterministic receipt authenticates listed input bytes and reproducible outputs, not a hosted-CI run or live operation."
+  ],
+  "results": [
+    {
+      "candidate_advanced": false,
+      "input_sha256": "2cb0e943b8c114ed726d9e9dee23f5f82d315e8116cb138bfd09f9cdf2145cff",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": "5",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "57ced07ca6cb6c15bd502390941906989da412740096c2379ddb9f15fbdf2041",
+      "savings_amount": null,
+      "scenario_id": "SYN-POSITIVE"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "d466f087e6d17cb9e85bbd4ef3c306361c462cd78269513a15959d7094c524ef",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": "-95",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "06eed3c3f5e49a12a612ea0c87bb6e1b1bc17a26b0b1aab5bda7b19866cd7098",
+      "savings_amount": null,
+      "scenario_id": "SYN-ADVERSE"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "02a142b99c72482e60b57d6551ced4d91a29e2bf7d348d48e11e7eb369dd3279",
+      "observed": {
+        "cost_status": "NOT_COMPUTABLE",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": null,
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "254bef1c5bcf31c37d9335822073c1f1e6c81df6918e11c0d5072ef86563c204",
+      "savings_amount": null,
+      "scenario_id": "SYN-UNKNOWN"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "0134bf613830a0943a311d1fe20c0ad45011b0ddcad2f0523b0ac0250845449c",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": "5",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "4458870b1710f2ccfdf81bd9c768ad3c71f24e8a4988e55d41f405679af73018",
+      "savings_amount": null,
+      "scenario_id": "SYN-TRANSFER"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "d35e0c4dc646582ab5b41f50f9e7ad6d327d15b1f49eebaab540d86fc1ca44b3",
+      "observed": {
+        "cost_status": "NOT_COMPUTABLE",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": null,
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "ff96310ec8763a0559cdf86f56f8b6ab16a181e1f532ba8bfb0d250f8bf43aa1",
+      "savings_amount": null,
+      "scenario_id": "SYN-MISSING-RECEIVER"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "5f1413451a528b688f2ced0fc0986e70b82f1e1b1d594d83badcd1a7e41daec9",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "BLOCKED",
+        "net_cost_difference": "5",
+        "priority_status": "BLOCKED"
+      },
+      "result": "PASS",
+      "result_sha256": "33b45db3791ba2573ab6f474f20a23392094d8c02c4334c4beff05ca0f2ef32d",
+      "savings_amount": null,
+      "scenario_id": "SYN-GUARD-FAIL"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "0d97537713154802d40a0e5bcaa17f0ab42585cf0e2475e8506fc94f1f93c41e",
+      "observed": {
+        "cost_status": "NOT_COMPUTABLE",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": null,
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "b561a1dd6e837175f62e150ecbac5a67222b9b2dc548c82f846e9b9823718767",
+      "savings_amount": null,
+      "scenario_id": "SYN-PERIOD-MISMATCH"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "ba4ebd2aad033c20929856dab1f06cb3aee7605adcb5297a8f7f9c89920dc059",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": "0",
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "68a4c2b4ae846c33bc12d8d9e7f1e77d4605b6e77ce88d19bc62997c5a6503c4",
+      "savings_amount": null,
+      "scenario_id": "SYN-ZERO"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "178e70518ac1515995cb873f9a30d414d33fdf418dd6722f0cfcf95abd93297e",
+      "observed": {
+        "cost_status": "NOT_COMPUTABLE",
+        "guard_status": "DECLARED_PASS_NOT_AUTHENTICATED",
+        "net_cost_difference": null,
+        "priority_status": "SCORED_FOR_TRIAGE_ONLY"
+      },
+      "result": "PASS",
+      "result_sha256": "db2c2776f667a9e39987349074841bb2cb1f5603b3a64ecb1d9adb70c3cc4505",
+      "savings_amount": null,
+      "scenario_id": "SYN-UNMATCHED-TRANSFER"
+    },
+    {
+      "candidate_advanced": false,
+      "input_sha256": "0882dc2924bb77d945b9a91aacd29d550aa62589bb8b6e41787f0992779c5501",
+      "observed": {
+        "cost_status": "CALCULATED_UNVALIDATED",
+        "guard_status": "UNKNOWN",
+        "net_cost_difference": "5",
+        "priority_status": "UNSCORABLE"
+      },
+      "result": "PASS",
+      "result_sha256": "43e198fb6c9c9f0828177dd4dc8c8e2da54b7bc65fe0bbcac014adb4b062c09f",
+      "savings_amount": null,
+      "scenario_id": "SYN-GUARD-UNKNOWN"
+    }
+  ],
+  "runtime_ci_attestation": "NOT_SUPPLIED_BY_THIS_DETERMINISTIC_RECEIPT",
+  "scenario_count": 10,
+  "scenarios_passed": 10,
+  "schema_version": 1,
+  "source_hashes": {
+    "data/pilots/charters.json": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+    "data/pilots/synthetic_scenarios.json": "699fe62fd5e26d26b2a44480e49563680dc7b2287137dd022c29f104fcd8c3da",
+    "data/pilots/thresholds.json": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+    "scripts/evaluate_intervention.py": "23050303f0ead3691e944e66711d74158bde6626bb8f7eae62644a2e15fe260a",
+    "scripts/rehearse_portfolio.py": "c0a50043af6f17a3d00430296ee101f85fdc52e1cf2a67db475a88ffcc8566c9"
+  },
+  "status": "SYNTHETIC_SOFTWARE_REHEARSAL_PASSED"
+}

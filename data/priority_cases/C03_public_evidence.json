@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "case_id": "C03",
+  "title": "BINUH–UNSOH public authority and support evidence refresh",
+  "review_cutoff": "2026-10-23",
+  "review_status": "BOUNDED_PUBLIC_SOURCE_REFRESH_PARTIAL",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "operational_validation": "NOT_PERFORMED",
+  "financial_validation": "NOT_PERFORMED",
+  "owner_acceptance": "NOT_OBTAINED",
+  "requests_sent": false,
+  "benefits": {
+    "status": "NOT_ESTIMATED",
+    "amount": null
+  },
+  "scope": "Selected Council authority, official public support reporting and retained financial comparisons. Not an exhaustive amendment, budget-adoption or operational-performance review.",
+  "preserved_inputs": [
+    {
+      "path": "data/cases/C03.json",
+      "sha256": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef"
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db"
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1"
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "C03-PUB-01",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2793(2025)&t=pdf",
+      "symbol": "S/RES/2793(2025)",
+      "locator": "Final PDF printed pages 5–6, operative paragraphs 10(e) and 11; registry programme-expenditure disclaimer",
+      "source_date": "2025-09-30",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECURITY_COUNCIL_RESOLUTION",
+      "retrieval_status": "OFFICIAL_FINAL_PDF_OPENED_VIA_REGISTRY_VIEW_PDF",
+      "verification_status": "FINAL_DOCUMENT_IDENTITY_AND_SELECTED_OPERATIVE_PROVISIONS_CHECKED",
+      "claim": "OP10(e) directs cost-recovery mission support to BINUH, targeting full responsibility by 1 February 2026. OP11 requires separate quantifiable compacts between the UNSOH head and BINUH head, and between the UNSOH head and GSF Special Representative in consultation with the Force Commander.",
+      "limits": [
+        "A requirement for compacts does not establish that signed compacts were supplied or achieved.",
+        "Registry programme expenditure is not expenditure attributable to a mandate.",
+        "The original twelve-month GSF authorization cannot establish the current authorization period without follow-up instruments."
+      ],
+      "registry_url": "https://mandates.un.org/mandate/S/RES/2793%282025%29?subject=Haiti"
+    },
+    {
+      "source_id": "C03-PUB-02",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2814(2026)&t=pdf",
+      "symbol": "S/RES/2814(2026)",
+      "locator": "Final PDF printed pages 2–3, operative paragraphs 1, 3 and 7",
+      "source_date": "2026-01-29",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECURITY_COUNCIL_RESOLUTION",
+      "retrieval_status": "OFFICIAL_FINAL_PDF_OPENED_VIA_REGISTRY_VIEW_PDF",
+      "verification_status": "FINAL_DOCUMENT_IDENTITY_AND_SELECTED_OPERATIVE_PROVISIONS_CHECKED",
+      "claim": "The registry records BINUH extension through 31 January 2027. OP3 calls for coordination and avoidance of duplication; OP7 requests costed support options for a Haitian-led DDR programme and related justice/accountability work.",
+      "limits": [
+        "OP7 concerns its specified DDR/justice support scope, not authorization to aggregate all Haiti aviation or support costs.",
+        "These selected provisions do not establish compliance or a complete current mandate population."
+      ],
+      "registry_url": "https://mandates.un.org/mandate/S/RES/2814%282026%29?budget_location=%5B%22entity%22%2C%22BINUH%22%5D"
+    },
+    {
+      "source_id": "C03-PUB-03",
+      "url": "https://documents.un.org/doc/undoc/gen/n25/347/42/pdf/n2534742.pdf",
+      "symbol": "A/80/567",
+      "locator": "PDF pages 2–3 paragraphs 4 and 6; page 8 paragraph 20",
+      "source_date": "2025-12-10",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "ACABQ_ADVICE",
+      "retrieval_status": "OFFICIAL_FULL_PDF_TEXT_OPENED",
+      "verification_status": "DOCUMENT_IDENTITY_AND_SELECTED_PASSAGES_CHECKED",
+      "claim": "ACABQ distinguishes assessed GSF support, BINUH cost recovery and voluntary funding. It discusses the separate quantifiable compacts and seeks clearer authority/accountability and transition information in subsequent budget reporting.",
+      "limits": [
+        "ACABQ advice is not GA appropriation or proof of GA acceptance.",
+        "The report addresses October 2025–June 2026 financing; it does not verify calendar-2027 costs.",
+        "No raw PDF copy or file hash is retained by this packet."
+      ]
+    },
+    {
+      "source_id": "C03-PUB-04",
+      "url": "https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2026/04/report/united-nations-integrated-office-in-haiti-report-of-the-secretary-general/8788fc76-904c-49e0-abe6-6bab89bcf2de.pdf",
+      "symbol": "S/2026/325",
+      "locator": "Retained case paragraphs 40–41; fresh search index identifies the report and paragraph 1",
+      "source_date": "2026-04-14",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECRETARY_GENERAL_IMPLEMENTATION_REPORT",
+      "retrieval_status": "OFFICIAL_INDEX_RESULT_ONLY_DIRECT_PDF_403",
+      "verification_status": "REPORT_IDENTITY_INDEXED_HANDOVER_PASSAGE_NOT_FRESHLY_AUTHENTICATED",
+      "claim": "The retained dossier attributes the February handover and helicopter activity to paragraphs 40–41. This refresh found the official report index but did not freshly inspect those paragraphs.",
+      "limits": [
+        "Retained claims remain at their original evidence cutoff.",
+        "Reported handover is not a signed SLA, fulfilled compact, complete flight population, settled invoice or net-cost finding."
+      ]
+    },
+    {
+      "source_id": "C03-PUB-05",
+      "url": "https://www.un.org/tr/node/241867",
+      "symbol": null,
+      "locator": "Official establishment notice, first three paragraphs",
+      "source_date": "2026-04-20",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECRETARIAT_MANAGEMENT_REPORTING",
+      "retrieval_status": "OFFICIAL_INDEX_RESULT_ONLY_DIRECT_PAGE_403",
+      "verification_status": "INDEXED_MANAGEMENT_STATEMENT_NOT_OPERATIONAL_VERIFICATION",
+      "claim": "The indexed official notice reports that the February BINUH mission-support target was achieved and describes UNSOH operational establishment as of April.",
+      "limits": [
+        "Management reporting does not authenticate actual service coverage, performance, invoices or cash.",
+        "A later September operational update uses initial-operating-capability terminology; these descriptions must not be treated as quantified SLA acceptance."
+      ]
+    },
+    {
+      "source_id": "C03-PUB-06",
+      "url": "https://unsoh.unmissions.org/en/unsoh/news/unsoh-from-establishment-to-operational-support-delivery",
+      "symbol": null,
+      "locator": "Official article dated 21 September 2026, opening and initial-operating-capability discussion",
+      "source_date": "2026-09-21",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECRETARIAT_MANAGEMENT_REPORTING",
+      "retrieval_status": "OFFICIAL_INDEX_RESULT_ONLY_DIRECT_PAGE_403",
+      "verification_status": "INDEXED_MANAGEMENT_STATEMENT_NOT_OPERATIONAL_VERIFICATION",
+      "claim": "The indexed article describes UNSOH support to GSF and BINUH and identifies 1 April as initial operating capability while planned resources were still being established.",
+      "limits": [
+        "This is not a service-level or financial performance population.",
+        "No claim of full operational readiness is inferred from the article title or a reported milestone."
+      ]
+    },
+    {
+      "source_id": "C03-PUB-07",
+      "url": "https://mandates.un.org/mandate/S/RES/2829%20%282026%29?subject=Gangs",
+      "symbol": "S/RES/2829(2026)",
+      "locator": "Official registry operative paragraphs 1–3; official Council resolution index dated 29 September 2026",
+      "source_date": "2026-09-29",
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECURITY_COUNCIL_RESOLUTION_VIA_OFFICIAL_REGISTRY",
+      "retrieval_status": "OFFICIAL_REGISTRY_OPERATIVE_TEXT_OPENED_FINAL_PDF_LINK_FAILED",
+      "verification_status": "SELECTED_REGISTRY_OPERATIVE_PROVISIONS_CHECKED_FINAL_PDF_NOT_RETRIEVED",
+      "claim": "OP1 extends GSF until 31 March 2027 and requests continued logistical and operational support through UNSOH in full compliance with resolution 2793(2025). OP2 requests six-month reporting on the benchmarks in 2793 OP24. OP3 notes the Haiti–GSF status agreement of 27 July 2026.",
+      "limits": [
+        "The final PDF link redirected to the ODS error page; Council-index PDF access returned HTTP403.",
+        "The GSF end date is not independently assigned to every UNSOH service obligation.",
+        "Selected registry provisions do not prove performance, appropriation or completeness of later amendments."
+      ]
+    },
+    {
+      "source_id": "C03-PUB-08",
+      "url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.4",
+      "symbol": "A/81/6 (Sect. 3)/Add.4",
+      "locator": "Retained pages 107–109 paragraphs 273–275; control rows BH01–BH05",
+      "source_date": null,
+      "retrieved_on": "2026-10-23",
+      "authority_class": "SECRETARY_GENERAL_BUDGET_PROPOSAL_RETAINED_TRANSCRIPTION",
+      "retrieval_status": "SYMBOL_API_UNAVAILABLE_NO_FRESH_FULL_TEXT",
+      "verification_status": "REPOSITORY_TRANSCRIPTION_PRESERVED_NOT_FRESHLY_AUTHENTICATED",
+      "claim": "Retained controls record USD1.4m proposed aviation reduction, USD4m all-support reimbursement, USD3m versus USD1.6m aviation comparators and USD3.7964m net other-supplies/services increase containing the reimbursement.",
+      "limits": [
+        "These are retained proposal figures, not GA approvals or observed expenditure.",
+        "The USD1.4m effect is already embedded and cannot be newly attributed to this project.",
+        "The USD4m payment is an internal transfer across a broader service scope, not an amount to subtract directly from aviation reduction.",
+        "Supplier costs, retained work, transition costs and comparable fiscal periods remain unavailable."
+      ]
+    }
+  ],
+  "retrieval_attempts": [
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2FRES%2F2793%282025%29&t=pdf",
+      "outcome": "TOOL_UNAVAILABLE"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2FRES%2F2814%282026%29&t=pdf",
+      "outcome": "TOOL_UNAVAILABLE"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2FRES%2F2814+%282026%29&t=pdf",
+      "outcome": "REDIRECTED_TO_ODS_ERROR_PAGE"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2F81%2F6%20%28Sect.%203%29%2FAdd.4&t=pdf",
+      "outcome": "TOOL_UNAVAILABLE"
+    },
+    {
+      "url": "https://digitallibrary.un.org/nanna/record/4109537/files/S_2026_325-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "outcome": "HTTP_403"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/S/RES/2829%282026%29?subject=Haiti",
+      "outcome": "TOOL_UNAVAILABLE"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2FRES%2F2829+%282026%29&t=pdf",
+      "outcome": "REGISTRY_VIEW_PDF_REDIRECTED_TO_ODS_ERROR_PAGE"
+    },
+    {
+      "url": "https://docs.un.org/en/s/res/2829%282026%29",
+      "outcome": "COUNCIL_INDEX_PDF_HTTP_403"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2793(2025)&t=pdf",
+      "outcome": "SUCCESS_VIA_REGISTRY_VIEW_PDF_AFTER_DIRECT_OPEN_FAILURE"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2814(2026)&t=pdf",
+      "outcome": "SUCCESS_VIA_REGISTRY_VIEW_PDF_AFTER_DIRECT_OPEN_FAILURE"
+    }
+  ],
+  "public_questions_resolved_with_limits": [
+    "Final primary PDFs verify selected cost-recovery, coordination and separate-compact provisions in resolutions 2793 and 2814.",
+    "ACABQ advice distinguishes funding streams and identifies accountability/transition information needs.",
+    "Official indexed management reports corroborate that support delivery was reported; they do not supply independent operational acceptance.",
+    "The September 2829 registry operative text verifies continued UNSOH support linked to 2793 and a GSF extension to 31 March 2027; its final PDF remains unfetched."
+  ],
+  "public_questions_remaining": [
+    "Retrieve the final 2829 text and check later amendments/corrigenda and applicability; selected provisions in final 2793 and 2814 PDFs were checked.",
+    "Authenticate the 2027 BINUH proposal passages and any paragraph-specific GA disposition; do not substitute ACABQ advice.",
+    "Review subsequent implementation reporting, including the official October report identified as S/2026/800, for dated compact and support-performance evidence."
+  ],
+  "minimum_internal_evidence_addendum": [
+    {
+      "item": "BINUH-specific quantifiable compact",
+      "authority_basis": "S/RES/2793(2025) OP11, final primary PDF printed page 6",
+      "minimum_fields": [
+        "compact_id",
+        "version",
+        "UNSOH_head_signature_role",
+        "BINUH_head_signature_role",
+        "signature_dates",
+        "effective_period",
+        "service_scope",
+        "quantified_targets",
+        "measurement_method",
+        "exceptions",
+        "review_and_acceptance_receipts"
+      ],
+      "custodian_role_to_confirm": "BINUH and UNSOH mission support leadership",
+      "received": false
+    },
+    {
+      "item": "Separate GSF compact or approved allocation boundary",
+      "authority_basis": "S/RES/2793(2025) OP11, final primary PDF printed page 6",
+      "minimum_fields": [
+        "separate_compact_reference",
+        "shared_cost_pool",
+        "BINUH_allocation_key",
+        "GSF_allocation_key",
+        "period",
+        "approval_reference"
+      ],
+      "custodian_role_to_confirm": "UNSOH controller and mission support leadership",
+      "received": false
+    },
+    {
+      "item": "Actual matched services and full-system costs",
+      "authority_basis": "Case C03 decision question; not a newly inferred legal disclosure obligation",
+      "minimum_fields": [
+        "flight_or_service_id",
+        "service_period",
+        "vendor_cost",
+        "BINUH_debit",
+        "UNSOH_credit",
+        "settlement_or_reversal",
+        "retained_staff_cost",
+        "transition_cost",
+        "availability_and_safety_outcome"
+      ],
+      "custodian_role_to_confirm": "Both controllers, aviation/procurement and HR custodians",
+      "received": false
+    }
+  ],
+  "decision_boundary": "Public-source progress supports a more precise evidence request. It does not advance the candidate, authorize collection or implementation, verify a compact, establish financial validation or recognize savings.",
+  "review_limitations": [
+    "Selected bounded search only; absence of a fetched document does not establish that a document or requirement does not exist.",
+    "Official registry, final primary text, indexed official reporting and retained repository transcription are different evidence levels.",
+    "No raw PDF bytes or live restricted records were collected; no custodian was contacted."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "register_id": "P07-BENEFIT-POOLS-1.0",
+  "source_register_id": "P06-INTERVENTIONS-1.0",
+  "pools": [
+    {
+      "pool_id": "RSCE_COST_BASE",
+      "boundary": "RSCE external service costs and matching internal charge pairs; internal AP/AR eliminates once",
+      "intervention_ids": [
+        "CASE01"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "HQ_SHARED_SUPPORT",
+      "boundary": "Shared HQ posts, chargebacks and administration potentially claimed by several interventions",
+      "intervention_ids": [
+        "CASE01",
+        "CASE09",
+        "CASE10",
+        "CASE14"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "LEBANON_TRANSITION",
+      "boundary": "UNIFIL–UNSCOL asset acquisition alternatives, transfer costs and retained transition liabilities",
+      "intervention_ids": [
+        "CASE02",
+        "CASE13"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "HAITI_SUPPORT",
+      "boundary": "BINUH–UNSOH aviation and nonaviation services; broader reimbursement contains subsets",
+      "intervention_ids": [
+        "CASE03"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "UNISFA_LANGUAGE",
+      "boundary": "Identified translation service events, contracts and retained observer coverage",
+      "intervention_ids": [
+        "CASE04"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "UNISFA_ASSETS",
+      "boundary": "Tagged transferred assets, procurement alternatives, maintenance and disposal costs",
+      "intervention_ids": [
+        "CASE05"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "UNSOS_RECOVERY",
+      "boundary": "Contractor fuel claim principal, receipts, enforcement costs and reversals",
+      "intervention_ids": [
+        "CASE06"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "MONUSCO_CLAIMS",
+      "boundary": "Medical claim integrity, lawful recoveries and retained medical service costs",
+      "intervention_ids": [
+        "CASE07"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "UNMISS_POST_BASELINE",
+      "boundary": "Unique approved abolished posts, payroll effects, replacement work and transition liabilities",
+      "intervention_ids": [
+        "CASE08"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "TRAINING_DELIVERY",
+      "boundary": "Course/cohort specific contracts, trainers, attendance, administration and qualifications",
+      "intervention_ids": [
+        "CASE09",
+        "CASE14"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "REGIONAL_WORKFLOW",
+      "boundary": "Joint regional task, product and staff-time cost objects; overlap requires record reconciliation",
+      "intervention_ids": [
+        "CASE10",
+        "CASE11",
+        "CASE14"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    },
+    {
+      "pool_id": "REPORT_PRODUCTION",
+      "boundary": "Source preparation events and staff time reused across distinct mandated final outputs",
+      "intervention_ids": [
+        "CASE11",
+        "CASE12"
+      ],
+      "relationship": "POTENTIAL_SHARED_COST_OBJECTS_NOT_PROVEN_IDENTICAL",
+      "cost_objects": [],
+      "verified_benefit": null,
+      "aggregation_allowed": false,
+      "recognition_rule": "Assign a unique cost-object/period/counterfactual/benefit-category key; one recognized allocation across all cases, with sum of allocation shares at most1",
+      "mutual_exclusion_rule": "Alternative interventions on the same cost-object and period are mutually exclusive unless independently separable marginal effects are evidenced"
+    }
+  ],
+  "allocation_ledger": [],
+  "portfolio_benefit_total": null,
+  "rules": [
+    "Internal UN charges and corresponding credits eliminate once; measure underlying external resource use.",
+    "Parent exposures, child scopes and overlapping cases are never summed.",
+    "Already embedded reforms, approved post removals and closures belong in the counterfactual.",
+    "Recovery, cost avoidance, capacity gain, cashable saving and realized saving remain separate categories.",
+    "Pre-financial-validation monetary context cannot be recognized as a saving.",
+    "CASE02 asset effects and CASE13 residual costs require one shared Lebanon full-cost bridge."
+  ]
+}

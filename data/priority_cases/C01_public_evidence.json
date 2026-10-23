@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "case_id": "C01",
+  "artifact_role": "SCOPED_PUBLIC_EVIDENCE_REFRESH_NOT_OPERATIONAL_VALIDATION",
+  "reviewed_on": "2026-10-23",
+  "scope": "RSCE service arrangement, KJSO transfer, budget perimeter and staffing-model claims only; not a full instrument or service population review.",
+  "preservation": {
+    "legacy_dossier": "data/cases/C01.json",
+    "legacy_evidence_cutoff": "2026-10-08",
+    "legacy_bytes_changed": false,
+    "candidate_state": "SCREENING_CANDIDATE",
+    "disposition": "BLOCKED_PENDING_EVIDENCE",
+    "owner_acceptance": "NOT_OBTAINED",
+    "financial_validation": "NOT_PERFORMED",
+    "benefit_amount": null
+  },
+  "retrieval_policy": "Indexed official-source extracts support documentary reporting only. Direct access failed for the cited pages/PDFs; no raw PDF, checksum or independent operational authentication is claimed.",
+  "sources": [
+    {
+      "source_id": "C01-PUB-S01",
+      "url": "https://rsce.unmissions.org/en/news/a-new-chapter-rsce-expands-services-across-the-global-peacekeeping-community",
+      "title": "A New Chapter: RSCE expands services across the global Peacekeeping community.",
+      "publication_date": "2026-07-16",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_INDEXED_EXTRACT_DIRECT_403",
+      "authority_class": "MANAGEMENT_IMPLEMENTATION_REPORT",
+      "locator": "Opening paragraphs describing handover and phased transition",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S02",
+      "url": "https://www.unmissions.org/en/home-0/about-rsce",
+      "title": "About RSCE",
+      "source_updated_on": "2026-08-18",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_INDEXED_EXTRACT_DIRECT_403",
+      "authority_class": "MANAGEMENT_WEBSITE_REPORT",
+      "locator": "Our Resources; introductory client-service statement",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S03",
+      "url": "https://www.unmissions.org/en/home-0/news/rsce-hosts-un-under-secretary-general-for-operational-support-mr-atul-khare-amid",
+      "title": "RSCE Hosts UN Under-Secretary-General for Operational Support Mr. Atul Khare, Amid Expanding Mandate",
+      "publication_date": "2026-05-25",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_INDEXED_EXTRACT_NOT_FULL_TEXT_AUTHENTICATED",
+      "authority_class": "MANAGEMENT_IMPLEMENTATION_REPORT",
+      "locator": "Final paragraph on client transition and service population",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S04",
+      "url": "https://digitallibrary.un.org/nanna/record/4106033/files/A_80_611-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "symbol": "A/80/611",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_INDEXED_PARAGRAPHS_DIRECT_403",
+      "authority_class": "SG_BUDGET_PROPOSAL",
+      "locator": "Paragraphs55–58, printed p18; paragraphs69–70 indexed staffing extract",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S05",
+      "url": "https://static.un.org/en/ga/fifth/80/resdec80.shtml",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_INDEXED_TABLE_DIRECT_403",
+      "authority_class": "OFFICIAL_DECISION_INDEX_NOT_FINAL_OPERATIVE_TEXT",
+      "locator": "Agenda148; A/C.5/80/L.47 row and A/C.5/80/20 note row",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S06",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FC.5%2F80%2F20&t=pdf",
+      "symbol": "A/C.5/80/20",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "DIRECT_ACCESS_UNAVAILABLE_NO_EXACT_AMOUNT_REVERIFICATION",
+      "authority_class": "RETAINED_APPROVED_RESOURCE_NOTE_CLAIM",
+      "locator": "Legacy dossier Annexp3 and footnotea; not freshly authenticated",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S07",
+      "url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.1",
+      "symbol": "A/81/6 (Sect.3)/Add.1",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "TARGETED_OFFICIAL_SEARCH_NO_EXACT_RESULT_NO_REVERIFICATION",
+      "authority_class": "RETAINED_SG_PROPOSAL_CLAIM",
+      "locator": "Legacy dossier Table7p52; not freshly authenticated",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S08",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F273&t=pdf",
+      "symbol": "A/RES/80/273",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "DIRECT_ACCESS_UNAVAILABLE",
+      "authority_class": "FINAL_RESOLUTION_TEXT_NOT_AUTHENTICATED_IN_THIS_REFRESH",
+      "locator": "Final operative financing provisions required; official static index identifies candidate instrument",
+      "captured_file": null,
+      "sha256": null
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C01-PUB-01",
+      "source_refs": [
+        "C01-PUB-S01"
+      ],
+      "finding": "The dated official news extract reports assumption of KJSO administrative/transactional functions on1July2026, following a November2025–January2026 pilot and February–June2026 transition.",
+      "evidence_status": "IMPLEMENTATION_REPORTED_INDEX_ONLY",
+      "effect_on_case": "The retained planned-transfer description now has later management-reported handover evidence; operational verification remains absent.",
+      "not_established": [
+        "Complete service/client handover",
+        "KJSO final closeout or charging cessation",
+        "Actual workforce reduction",
+        "Service outcomes",
+        "Net cost effect"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-02",
+      "source_refs": [
+        "C01-PUB-S02"
+      ],
+      "finding": "The official resource extract reports364 approved posts and a rounded $45.91million budget for2026/27.",
+      "evidence_status": "MANAGEMENT_REPORTED_APPROVED_RESOURCES_INDEX_ONLY",
+      "effect_on_case": "Corroborates the scale of the retained corporate budget; the rounded website value does not reverify exact $45.9116million or actual expenditure.",
+      "not_established": [
+        "Actual filled posts",
+        "Payroll savings",
+        "Exact appropriation components",
+        "Actual chargeback vouchers"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-03",
+      "source_refs": [
+        "C01-PUB-S03"
+      ],
+      "finding": "The May25 official report describes16 new client entities assumed inApril2026 and32 entities served.",
+      "evidence_status": "MANAGEMENT_REPORTED_INDEX_ONLY",
+      "effect_on_case": "Supplies a dated client-population lead requiring reconciliation with the July handover statement and older client-mission wording.",
+      "not_established": [
+        "A reconciled current client denominator",
+        "Uniform service coverage for every client"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-04",
+      "source_refs": [
+        "C01-PUB-S04"
+      ],
+      "finding": "Indexed proposal paragraphs55–56 distinguish25 payroll FTE,10 further model FTE reductions,44 additional transactional positions and net9 projected positions; paragraph57 excludes management and field technology from that transactional model.",
+      "evidence_status": "PROPOSAL_METHODOLOGY_INDEX_CORROBORATED",
+      "effect_on_case": "Confirms that modeled service workload and proposed staffing actions must remain distinct from observed payroll exits.",
+      "not_established": [
+        "Adopted post actions",
+        "Actual abolished or transferred post IDs",
+        "Measured handling-time or output gains"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-05",
+      "source_refs": [
+        "C01-PUB-S04"
+      ],
+      "finding": "The separately indexed paragraph70 describes17 of25 payroll posts as proposed transfers to DOS Support Account payroll consolidation.",
+      "evidence_status": "PROPOSAL_INDEX_CORROBORATED",
+      "effect_on_case": "A provider-budget reduction may shift cost to another UN perimeter rather than eliminate full-system cost.",
+      "not_established": [
+        "Executed transfer",
+        "Whole-system saving",
+        "Unique post-level reconciliation"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-06",
+      "source_refs": [
+        "C01-PUB-S05",
+        "C01-PUB-S08"
+      ],
+      "finding": "The official static index maps RSCE financing to resolution80/273 and records the approved-resources note A/C.5/80/20 as taken note of.",
+      "evidence_status": "INDEX_ONLY_FINAL_TEXT_UNVERIFIED",
+      "effect_on_case": "Provides an adoption-text retrieval lead; no operative requirement or exact amount is promoted from this index.",
+      "not_established": [
+        "Final operative provisions",
+        "Exact financing appropriation from final text",
+        "All applicable mandates or incorporated advice"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-07",
+      "source_refs": [
+        "C01-PUB-S06",
+        "C01-PUB-S07"
+      ],
+      "finding": "Exact fiscal2026/27 total $45.9116million, mixed-client share $3.4432million and calendar2027 SPM proposal share $3.2591million remain retained-source claims, not newly authenticated amounts.",
+      "evidence_status": "RETAINED_NOT_FRESHLY_REVERIFIED",
+      "effect_on_case": "Keep period/client/fund perimeters separate; do not subtract the shares to infer overbilling.",
+      "not_established": [
+        "Client-level excess charge",
+        "Like-for-like denominator",
+        "Comparable paid cost"
+      ]
+    }
+  ],
+  "open_discrepancies": [
+    {
+      "discrepancy_id": "C01-PUB-D01",
+      "kind": "TIMING_AND_CLIENT_GRAIN_UNRESOLVED",
+      "source_refs": [
+        "C01-PUB-S01",
+        "C01-PUB-S02",
+        "C01-PUB-S03"
+      ],
+      "description": "Dated extracts refer to April client assumption, July formal function handover,32 entities and16 client missions. Different rollout milestones or population grains may explain these statements; no contradiction or single denominator is adjudicated.",
+      "minimum_resolution": "Dated service-line/client handover schedule, client roster and effective service commencement dates; official clarification of mission versus entity counts.",
+      "conclusion_blocked": "Current complete service population and transfer exposure."
+    },
+    {
+      "discrepancy_id": "C01-PUB-D02",
+      "kind": "OFFICIAL_INDEX_ROW_INCONSISTENCY",
+      "source_refs": [
+        "C01-PUB-S05",
+        "C01-PUB-S08"
+      ],
+      "description": "Search extracts of the www and static official Fifth Committee indexes displayed inconsistent nearby agenda148 row assignments. The static extract identifies80/273 for RSCE; final resolution text was unavailable.",
+      "minimum_resolution": "Retrieve final80/273 and plenary adoption record; inspect original table rows rather than infer operative effect from the index.",
+      "conclusion_blocked": "Final operative authority and exact appropriated amount."
+    }
+  ],
+  "next_bounded_scope": {
+    "recommended_research_slice": "One defined RSCE client/service line across the handover boundary, selected after custodian confirms usable linked records.",
+    "public_work_remaining": [
+      "Authenticate final80/273 and exact approved-resource note",
+      "Retrieve complete2027 SPM proposal table",
+      "Reconcile dated client/transfer descriptions without inferring a common denominator"
+    ],
+    "minimum_controlled_records": [
+      "Approved allocation basis and matching client debit/provider credit with reversals",
+      "Service-line/client commencement and KJSO closeout evidence",
+      "Unique post/fund/action mapping across RSCE, DOS and clients",
+      "Comparable actual volumes, handling time, queues, rework and service outcomes"
+    ],
+    "proposed_custodian_roles": [
+      "RSCE controller and service-line lead",
+      "Selected client finance/service manager",
+      "DOS/KJSO closeout and HR custodians"
+    ],
+    "accepted_owner": null,
+    "requests_sent": false,
+    "operational_activation_authorized": false,
+    "financial_finding_allowed": false
+  },
+  "decision_boundary": "A public management handover report improves the research baseline but does not advance candidate state or validate waste, duplication, capacity gain, recovery, cost avoidance or savings."
+}

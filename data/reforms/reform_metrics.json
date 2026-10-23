@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff": "2026-10-23",
+  "source_hashes": {
+    "data/reforms/unga80_actions.json": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
+    "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
+    "data/reforms/unga80_instruments.json": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
+    "data/reforms/unga81_instruments.json": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",
+    "data/reforms/acabq_recommendations.json": "b7c48ac1086b3404c16c2d4e0faae8a38a3229945b3efcdc7bcd69413cc1ac19",
+    "data/reforms/sg_proposals.json": "fd81bbe338a5d46ce42671db2b6179eed513802f1dbfed4fb49e8f3cf6de1daf",
+    "data/reforms/un80_arrangement_reconciliation.json": "923cba2ad61aa64a938bffcc0c0af9588ca1f090d04acc336b16f21a50469e26",
+    "data/candidate_validation.csv": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+    "data/reforms/compliance_statuses.json": "ac38b35fd0ec91c5ccd4b9199f37a3a7b7297d41714e56d0b3ac8e9b0aef2331",
+    "data/reforms/obligation_schema.json": "ca80d4bc5df59efc50018109c0cf3a79d3ee274910c053c031c1ff9307774830"
+  },
+  "scope": "Selected extracted provisions and retained proposal/advice records, not exhaustive session or mission compliance coverage.",
+  "limitations": [
+    "Selected provisions are not automatically mandatory requirements applicable to every peace operation.",
+    "Documentary adoption and repository publication do not establish implementation, owner approval or financial benefit."
+  ],
+  "register_id": "R13-MEASURES-GUARDS-1",
+  "metrics": [
+    {
+      "metric_id": "R-M01",
+      "name": "Obligation applicability coverage",
+      "definition": "Reviewed applicable provisions / extracted provisions; report excluded and unresolved separately",
+      "minimum_evidence": "Legal/substantive applicability review per action/entity/period",
+      "guardrail": "No global compliance score from a selected corpus",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    },
+    {
+      "metric_id": "R-M02",
+      "name": "Implementation evidence coverage",
+      "definition": "Material action components with authenticated implementation evidence / all material components in defined scope",
+      "minimum_evidence": "Dated administrative/operational records with coverage assessment",
+      "guardrail": "Reported and verified evidence remain separate",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    },
+    {
+      "metric_id": "R-M03",
+      "name": "Service continuity",
+      "definition": "Completed required outputs and timeliness against prospectively specified baseline and intervention periods",
+      "minimum_evidence": "Workload, service-level, quality, incident and readiness records",
+      "guardrail": "Mandate delivery, safety and readiness must remain within approved thresholds",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    },
+    {
+      "metric_id": "R-M04",
+      "name": "Full-system net cost",
+      "definition": "Comparable counterfactual system cost minus intervention system cost, including transition and transferred work",
+      "minimum_evidence": "Matched cost objects, full-system ledger and independent financial review",
+      "guardrail": "No savings designation before FINANCIALLY_VALIDATED; no sum across overlapping pools",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    },
+    {
+      "metric_id": "R-M05",
+      "name": "Capacity released and used",
+      "definition": "Observed reusable work hours separated from released payroll or external expenditure",
+      "minimum_evidence": "Time observations, staffing and redeployment records",
+      "guardrail": "Capacity is not a cashable saving; preserve output quality",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    },
+    {
+      "metric_id": "R-M06",
+      "name": "Due-action evidence completeness",
+      "definition": "Due applicable actions with adequate performance evidence / due applicable actions",
+      "minimum_evidence": "Sourced deadlines, applicability review and complete performance population",
+      "guardrail": "Missing evidence is not noncompliance",
+      "observed_value": null,
+      "target": null,
+      "threshold_status": "REQUIRES_OWNER_APPROVED_PROSPECTIVE_SPECIFICATION",
+      "measurement_status": "NOT_MEASURED"
+    }
+  ]
+}

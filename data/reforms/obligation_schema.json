@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "authority_classes": ["GA_ADOPTED", "COMMITTEE_RECOMMENDATION", "ACABQ_ADVICE", "SG_PROPOSAL", "ADMINISTRATIVE_AUTHORIZATION", "SC_MANDATE", "IMPLEMENTATION_REPORTED", "AUTHORITY_UNRESOLVED"],
+  "adoption_states": ["ADOPTED_VERIFIED", "PROPOSED", "RECOMMENDED", "ISSUED", "NOT_REVIEWED", "UNRESOLVED"],
+  "implementation_states": ["NOT_ASSESSED", "EVIDENCE_MISSING", "REPORTED", "PARTIALLY_VERIFIED", "VERIFIED"],
+  "compliance_states": ["NOT_ASSESSED", "AUTHORITY_UNRESOLVED", "NOT_APPLICABLE", "NOT_YET_DUE", "EVIDENCE_MISSING", "COMPLIANT_VERIFIED", "NONCOMPLIANT_VERIFIED"],
+  "required_fields": ["obligation_id", "authority_class", "issuing_organ", "document_symbol", "session", "evidence_cutoff", "source", "adoption", "provision", "competence", "implementation", "compliance"],
+  "source_fields": ["official_url", "retrieved_at", "locator", "version", "review_scope", "limitations"],
+  "adoption_fields": ["status", "date", "final_text_receipt", "adoption_record_receipt"],
+  "provision_fields": ["action", "addressee", "entities", "functions", "period", "deadline", "deadline_basis", "conditions", "effect"],
+  "competence_fields": ["assessment", "review_receipt", "mandate_financing_distinction"],
+  "implementation_fields": ["status", "evidence_receipts", "verified_components", "unverified_components"],
+  "compliance_fields": ["status", "assessment_receipt", "coverage_receipt"],
+  "provision_effects": ["DIRECTION", "AUTHORIZATION", "RECOMMENDATION", "REQUEST", "PROPOSAL", "UNRESOLVED"],
+  "unknown_rule": "Use null for unknown scalar values and empty lists for no collected evidence; explain limitations. Unknown is never a verified negative.",
+  "scope": "Structural declaration checks only; not authentication, legal interpretation, or institutional approval."
+}

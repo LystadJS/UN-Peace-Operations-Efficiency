@@ -1,0 +1,1469 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff": "2026-10-23",
+  "source_hashes": {
+    "data/reforms/unga80_actions.json": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
+    "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
+    "data/reforms/unga80_instruments.json": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
+    "data/reforms/unga81_instruments.json": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",
+    "data/reforms/acabq_recommendations.json": "b7c48ac1086b3404c16c2d4e0faae8a38a3229945b3efcdc7bcd69413cc1ac19",
+    "data/reforms/sg_proposals.json": "fd81bbe338a5d46ce42671db2b6179eed513802f1dbfed4fb49e8f3cf6de1daf",
+    "data/reforms/un80_arrangement_reconciliation.json": "923cba2ad61aa64a938bffcc0c0af9588ca1f090d04acc336b16f21a50469e26",
+    "data/candidate_validation.csv": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+    "data/reforms/compliance_statuses.json": "ac38b35fd0ec91c5ccd4b9199f37a3a7b7297d41714e56d0b3ac8e9b0aef2331",
+    "data/reforms/obligation_schema.json": "ca80d4bc5df59efc50018109c0cf3a79d3ee274910c053c031c1ff9307774830"
+  },
+  "scope": "Selected extracted provisions and retained proposal/advice records, not exhaustive session or mission compliance coverage.",
+  "limitations": [
+    "Selected provisions are not automatically mandatory requirements applicable to every peace operation.",
+    "Documentary adoption and repository publication do not establish implementation, owner approval or financial benefit."
+  ],
+  "register_id": "R11-IMPLEMENTATION-EVIDENCE-1",
+  "records": [
+    {
+      "record_id": "GA80-251-1",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-2",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-3",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-4",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-5",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-6",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-7",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-8",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-9",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-11",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-12",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-13",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-14",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-16",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-17",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-18",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-19",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-20",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-21",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-22",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-24",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-25",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-26",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-27",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-28",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-29",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-30",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_b_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_c_-resume",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_c_-conclude",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__i_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__ii_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__iii_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__iv_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__v_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__vi_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_d__vii_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_e_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_f_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-251-33_h_",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-5",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-10",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-11",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-12",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-13",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-14",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-15",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-16",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-18",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-21",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-22",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-26",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-28",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-34",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-38",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-39",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-41",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-47",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-54",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-62",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-86",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-87",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-89",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-90",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "GA80-242-94",
+      "record_kind": "EXTRACTED_PROVISION",
+      "authority_class": "GA_ADOPTED",
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      },
+      "operational_verification": "NOT_PERFORMED_BY_THIS_VIEW",
+      "owner_approval": "NOT_ESTABLISHED"
+    },
+    {
+      "record_id": "SG-U01",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Both documents describe advanced efforts to further consolidate shared regional structure",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U02",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Both documents describe consolidation of these capacities",
+      "implementation": {
+        "status": "IMPLEMENTATION_REPORTED",
+        "source_ref": "PBPSO-BRIEFING-ASR",
+        "scope": "Management reports office establishment and component integration; underlying staffing, authority, service and cost records not verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U03",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Both documents describe newly established joint Gender Unit",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U04",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Further coordination in policy functions is described",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U05",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Further coordination in training is described",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U06",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Further coordination in innovation is described",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U07",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Partner-facing coordination is identified for stronger links",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U08",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "Information integrity is identified for stronger links",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U09",
+      "record_kind": "JOINT_PLAN_REPORTED",
+      "documentary_claim": "Both documents refer to joint departmental action plan",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U10",
+      "record_kind": "EXISTING_ARRANGEMENT_REPORTED",
+      "documentary_claim": "Office reports to both Under-Secretaries-General; not presented here as newly created UN80 change",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    },
+    {
+      "record_id": "SG-U11",
+      "record_kind": "SG_PROPOSAL",
+      "documentary_claim": "2027 proposed UNOAU merger of sections; UNOAU 3.IV.11 says no substantive UN80 adjustments",
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "proposed_not_independently_verified"
+      },
+      "operational_verification": "NOT_INDEPENDENTLY_VERIFIED",
+      "owner_approval": "NOT_ESTABLISHED",
+      "benefit_amount": null
+    }
+  ],
+  "observed_verified_implementation_count": 0,
+  "zero_count_meaning": "No implementation verification established in this view; not zero reforms implemented in the UN."
+}

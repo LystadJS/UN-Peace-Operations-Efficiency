@@ -1,0 +1,33 @@
+name: Portfolio validation system
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate canonical analytical perimeter and models
+        run: |
+          python -B scripts/build_canonical_entities.py --check
+          python -B scripts/build_portfolio_coverage.py --check
+          python -B scripts/build_financial_baseline.py --check
+          python -B scripts/validate_financial_nonadditivity.py
+          python -B scripts/build_intervention_register.py --check
+          python -B tests/check_canonical_entities.py
+          python -B tests/check_portfolio_coverage.py
+          python -B tests/check_financial_baseline.py
+          python -B tests/check_intervention_register.py
+          python -B tests/check_intervention_evaluation.py
+      - name: Verify validation leaves tracked files unchanged
+        run: git diff --exit-code

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status_axes_are_orthogonal": true,
+  "compliance": {
+    "NOT_ASSESSED": "No completed applicability and performance assessment.",
+    "AUTHORITY_UNRESOLVED": "Controlling adopted authority or its applicable effect remains unresolved.",
+    "NOT_APPLICABLE": "A source-linked applicability assessment excludes the entity/action/period; not a performance finding.",
+    "NOT_YET_DUE": "A sourced prospective deadline has not elapsed at the evidence cutoff; no implication of completed performance.",
+    "EVIDENCE_MISSING": "Evidence is inadequate to adjudicate applicable performance; not a finding of noncompliance.",
+    "COMPLIANT_VERIFIED": "Applicable adopted obligation and sufficient scoped performance/coverage evidence have been reviewed.",
+    "NONCOMPLIANT_VERIFIED": "Applicable adopted obligation, elapsed sourced deadline, and sufficient scoped evidence of nonperformance have been reviewed."
+  },
+  "implementation": {
+    "NOT_ASSESSED": "Implementation evidence has not been assessed.",
+    "EVIDENCE_MISSING": "No adequate implementation evidence collected.",
+    "REPORTED": "An identified source reports implementation; independent verification is not asserted.",
+    "PARTIALLY_VERIFIED": "Evidence verifies specified components while material components remain unverified.",
+    "VERIFIED": "Evidence verifies all material components in the explicitly bounded scope."
+  },
+  "rules": [
+    "Source publication, adoption, implementation, compliance, candidate maturity and benefit realization are separate axes.",
+    "An adopted recommendation is not automatically a mandatory direction.",
+    "A proposal or advisory recommendation cannot supply governing adoption.",
+    "A reported organizational arrangement cannot establish actual incremental financial benefit.",
+    "No monetary finding is savings before FINANCIALLY_VALIDATED.",
+    "Null deadlines and missing evidence never support NONCOMPLIANT_VERIFIED.",
+    "NOT_YET_DUE requires an explicit sourced deadline later than the evidence cutoff.",
+    "NOT_APPLICABLE requires an explicit applicability assessment receipt."
+  ],
+  "limitations": "A vocabulary is not an applicability, legal, operational or financial adjudication."
+}

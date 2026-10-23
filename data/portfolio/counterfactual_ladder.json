@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "design_task": "P12",
+  "status": "PROSPECTIVE_DESIGN_LADDER",
+  "levels": [
+    {
+      "id": "DESCRIPTIVE_ONLY",
+      "supported": "Describe records and control gaps",
+      "not_supported": "Intervention attribution or cash saving"
+    },
+    {
+      "id": "PROCESS_TRACE",
+      "supported": "Test a bounded mechanism using service and transaction traces",
+      "not_supported": "Population causal effect from isolated examples"
+    },
+    {
+      "id": "MODELED_COMPARATOR",
+      "supported": "Estimate a disclosed scenario with sensitivity",
+      "not_supported": "Observed causal or realized effect"
+    },
+    {
+      "id": "MATCHED_COMPARISON",
+      "supported": "Compare adjusted comparable operational units",
+      "not_supported": "Elimination of unmeasured confounding"
+    },
+    {
+      "id": "QUASI_EXPERIMENT",
+      "supported": "Estimate effect under explicit identification assumptions and diagnostics",
+      "not_supported": "Automatic generalization across missions"
+    },
+    {
+      "id": "RANDOMIZED_PROSPECTIVE",
+      "supported": "Estimate assigned intervention effects within authorized eligible population",
+      "not_supported": "Authority to experiment or proof beyond sampled context"
+    }
+  ],
+  "selection_rule": "Choose the strongest feasible authorized design that fits the service and evidence. This is not an automatic numeric causal-quality score.",
+  "baseline_controls": [
+    "Mandate-compliant feasible alternative.",
+    "Already approved or embedded reforms included.",
+    "Freeze comparator selection before outcome inspection.",
+    "Maintain adverse observations, transferred work and residual liabilities.",
+    "State demand, security, mandate, timing and price confounders.",
+    "Credible continuing requirement and procurement path for avoidance.",
+    "Predeclare uncertainty and sensitivity."
+  ],
+  "missing_comparator_action": "Narrow to descriptive or control finding; withhold monetary attribution."
+}

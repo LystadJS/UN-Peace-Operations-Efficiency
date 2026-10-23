@@ -1,0 +1,572 @@
+{
+  "schema_version": "1.0",
+  "evidence_cutoff": "2026-10-23",
+  "scope": "Bounded reconciliation of the 11 existing repository U01–U11 arrangements; not an exhaustive UN80 reform census",
+  "source_authority_standard": "docs/source_authority_standard.md",
+  "source_receipts": [
+    {
+      "source_id": "S03",
+      "symbol": "A/81/6 (Sect. 3)",
+      "source_class": "SG_PROPOSAL",
+      "official_url": "https://digitallibrary.un.org/nanna/record/4110936/files/A_81_6_%28Sect._3%29-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "locator": "See per-record dppa_source and dppa_page; page numbers retained as supplied, not reverified",
+      "retrieval_date": "2026-10-23",
+      "retrieval_status": "DIRECT_ACCESS_FAILED",
+      "evidence_basis": "Retained repository transcriptions and source-manifest checksum; source PDF is not retained here",
+      "recorded_sha256": "3560d4343c577d52db6fbc3bcda67e49c79f7a33a3e18206c815cb414c1ca808"
+    },
+    {
+      "source_id": "S05",
+      "symbol": "A/81/6 (Sect. 5)",
+      "source_class": "SG_PROPOSAL",
+      "official_url": "https://docs.un.org/en/A/81/6%20%28Sect.%205%29",
+      "locator": "See per-record dpo_source and dpo_page; page numbers retained as supplied, not reverified",
+      "retrieval_date": "2026-10-23",
+      "retrieval_status": "DIRECT_ACCESS_FAILED",
+      "evidence_basis": "Retained repository transcriptions and source-manifest checksum; source PDF is not retained here",
+      "recorded_sha256": "844bff4ebe102f2ee6e17f6562eb4e41c74b07d79fdaf4a061aa4116c5195062"
+    },
+    {
+      "source_id": "SG-WP22-2025",
+      "symbol": null,
+      "source_class": "SG_PROPOSAL",
+      "official_url": "https://www.un.org/un80-initiative/sites/default/files/2025-11/UN80_Initiative_Action_Plan.pdf",
+      "locator": "Work Package 22, actions 1–2",
+      "retrieval_date": "2026-10-23",
+      "retrieval_status": "SEARCH_INDEX_EXCERPT_ONLY_DIRECT_ACCESS_403",
+      "evidence_basis": "Official-domain indexed excerpt describes planned PBPSO and WPS consolidation. No full-text authentication or adopted authority inferred",
+      "recorded_sha256": null
+    },
+    {
+      "source_id": "SG-PROGRESS-2026",
+      "symbol": null,
+      "source_class": "SG_PROPOSAL",
+      "official_url": "https://www.un.org/un80-initiative/sites/default/files/2026-04/UN80_Progress-Next-Steps_260427_2108.pdf",
+      "locator": "Advance copy; Work Package 22, actions 1,2,3,6,7",
+      "retrieval_date": "2026-10-23",
+      "retrieval_status": "SEARCH_INDEX_EXCERPT_ONLY_DIRECT_ACCESS_403",
+      "evidence_basis": "Official-domain indexed excerpt groups peace/security restructuring proposals. Progress framing does not establish all components implemented",
+      "recorded_sha256": null
+    },
+    {
+      "source_id": "PBPSO-BRIEFING-ASR",
+      "symbol": null,
+      "source_class": "IMPLEMENTATION_REPORTED",
+      "official_url": "https://transcripts.un.org/en/asset/k1u/k1ujz9s3tb",
+      "locator": "29 July, 80th-session informal plenary; ASG Peacebuilding and Peace Support, 9:07–22:57, transcript lines75–93",
+      "retrieval_date": "2026-10-23",
+      "retrieval_status": "PAGE_OPENED",
+      "evidence_basis": "Automatic speech recognition, explicitly not an official record/document. Year inferred2026 from session and speaker's January2026/six-month account; independently verify before relying on exact dates",
+      "recorded_sha256": null
+    }
+  ],
+  "input_hashes": {
+    "data/un80_register.csv": "8966966c331b1b1bd8abccb2811e6542f2bfae42aaaf9eefda3761a199f86935",
+    "data/un80_implementation_audit.csv": "d473a1079f67f06ed6cacdabdcadd1dc844de64167fa9f6cb5a75658e52a4cde",
+    "data/source_manifest.csv": "e4b92b3c142e1ac839b7ea932593c6f32970531383f7811cb4f2caa67316667b"
+  },
+  "limitations": [
+    "Original budget-source passages were retained from repository transcriptions, not newly authenticated in full.",
+    "GA adoption, competent administrative authorization, implementation verification and benefit realization are separate evidence questions.",
+    "Unknown is not no, noncompliance, zero benefit, or lack of institutional authority.",
+    "No new monetary finding or candidate advancement is established by this register."
+  ],
+  "register_id": "R08-SG-PROPOSALS-1.0",
+  "records": [
+    {
+      "proposal_id": "SG-U01",
+      "legacy_reform_id": "U01",
+      "title": "Single regional political-operational structure",
+      "proposal_class": "explicit_un80_consolidation",
+      "documentary_claim": "Both documents describe advanced efforts to further consolidate shared regional structure",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U01"
+        },
+        "csv_data_row": 1
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.4;3.I.11",
+        "dppa_page": "6",
+        "dpo_source": "5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Check organigrams HR allocations joint products and cost attribution"
+    },
+    {
+      "proposal_id": "SG-U02",
+      "legacy_reform_id": "U02",
+      "title": "Unified Peacebuilding and Peace Support Office covering DDR SSR justice and corrections",
+      "proposal_class": "explicit_un80_consolidation",
+      "documentary_claim": "Both documents describe consolidation of these capacities",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U02"
+        },
+        "csv_data_row": 2
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.11;3.I.84(d)",
+        "dppa_page": "6",
+        "dpo_source": "5.I.9;5.I.41(g)",
+        "dpo_page": "17"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "IMPLEMENTATION_REPORTED",
+        "source_ref": "PBPSO-BRIEFING-ASR",
+        "scope": "Management reports office establishment and component integration; underlying staffing, authority, service and cost records not verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Audit implementation by named branch and 2026 versus 2027 staffing"
+    },
+    {
+      "proposal_id": "SG-U03",
+      "legacy_reform_id": "U03",
+      "title": "Joint Gender Unit",
+      "proposal_class": "explicit_joint_unit",
+      "documentary_claim": "Both documents describe newly established joint Gender Unit",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U03"
+        },
+        "csv_data_row": 3
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.9;3.I.11",
+        "dppa_page": "6",
+        "dpo_source": "5.I.7;5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Check unified leadership workplan location funds and posts"
+    },
+    {
+      "proposal_id": "SG-U04",
+      "legacy_reform_id": "U04",
+      "title": "Closer policy coordination",
+      "proposal_class": "planned_un80_coordination",
+      "documentary_claim": "Further coordination in policy functions is described",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U04"
+        },
+        "csv_data_row": 4
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Cross-departmental policy ownership inventory"
+    },
+    {
+      "proposal_id": "SG-U05",
+      "legacy_reform_id": "U05",
+      "title": "Closer training coordination",
+      "proposal_class": "planned_un80_coordination",
+      "documentary_claim": "Further coordination in training is described",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U05"
+        },
+        "csv_data_row": 5
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Compare calendars enrolments curricula and trainers"
+    },
+    {
+      "proposal_id": "SG-U06",
+      "legacy_reform_id": "U06",
+      "title": "Closer innovation coordination",
+      "proposal_class": "planned_un80_coordination",
+      "documentary_claim": "Further coordination in innovation is described",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U06"
+        },
+        "csv_data_row": 6
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Platform and project portfolio mapping"
+    },
+    {
+      "proposal_id": "SG-U07",
+      "legacy_reform_id": "U07",
+      "title": "Partnerships coordination",
+      "proposal_class": "planned_crosscutting_coordination",
+      "documentary_claim": "Partner-facing coordination is identified for stronger links",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U07"
+        },
+        "csv_data_row": 7
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.7",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4",
+        "dpo_page": "4"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Identify partner ownership and non-duplicated delivery"
+    },
+    {
+      "proposal_id": "SG-U08",
+      "legacy_reform_id": "U08",
+      "title": "Information integrity coordination",
+      "proposal_class": "planned_crosscutting_coordination",
+      "documentary_claim": "Information integrity is identified for stronger links",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U08"
+        },
+        "csv_data_row": 8
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.7",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Identify approved data sharing and communications functions"
+    },
+    {
+      "proposal_id": "SG-U09",
+      "legacy_reform_id": "U09",
+      "title": "Joint disability inclusion action plan",
+      "proposal_class": "documented_joint_plan",
+      "documentary_claim": "Both documents refer to joint departmental action plan",
+      "source_treatment": "JOINT_PLAN_REPORTED",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U09"
+        },
+        "csv_data_row": 9
+      },
+      "retained_source_locators": {
+        "dppa_source": "3.I.10",
+        "dppa_page": "6",
+        "dpo_source": "5.I.8",
+        "dpo_page": "5"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Examine single monitoring schedule and resources"
+    },
+    {
+      "proposal_id": "SG-U10",
+      "legacy_reform_id": "U10",
+      "title": "Office for Coordination and Shared Services",
+      "proposal_class": "existing_shared_service_documented",
+      "documentary_claim": "Office reports to both Under-Secretaries-General; not presented here as newly created UN80 change",
+      "source_treatment": "EXISTING_ARRANGEMENT_REPORTED",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U10"
+        },
+        "csv_data_row": 10
+      },
+      "retained_source_locators": {
+        "dppa_source": "Annex I chart A",
+        "dppa_page": "115",
+        "dpo_source": "5.I.78",
+        "dpo_page": "34"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Determine shared office post charges and actual service recipients"
+    },
+    {
+      "proposal_id": "SG-U11",
+      "legacy_reform_id": "U11",
+      "title": "UNOAU Peace Support Operations Service internal merger",
+      "proposal_class": "other_2027_reorganization_not_un80",
+      "documentary_claim": "2027 proposed UNOAU merger of sections; UNOAU 3.IV.11 says no substantive UN80 adjustments",
+      "source_treatment": "SG_PROPOSAL",
+      "source_refs": [
+        "S03",
+        "S05"
+      ],
+      "repository_locator": {
+        "path": "data/un80_register.csv",
+        "key": {
+          "reform_id": "U11"
+        },
+        "csv_data_row": 11
+      },
+      "retained_source_locators": {
+        "dppa_source": "Annex I organizational justification",
+        "dppa_page": "114",
+        "dpo_source": "5.I.2(g)",
+        "dpo_page": "4"
+      },
+      "ga_adoption": {
+        "status": "NOT_VERIFIED",
+        "instrument": null,
+        "operative_paragraph": null
+      },
+      "administrative_authorization": {
+        "status": "NOT_VERIFIED",
+        "instrument": null
+      },
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "source_ref": null,
+        "scope": "proposed_not_independently_verified"
+      },
+      "financial_validation": "NOT_PERFORMED",
+      "realized_benefit": {
+        "status": "NOT_ESTIMATED",
+        "amount": null
+      },
+      "next_evidence": "Check service merger against UN-AU training and DPO advisor tasking"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+name: Reform authority baseline
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate authority, evidence states and generated views
+        run: |
+          python -B scripts/validate_reform_obligations.py
+          python -B scripts/build_reform_claim_inventory.py --check
+          python -B scripts/build_acabq_register.py --check
+          python -B scripts/validate_reform_baseline.py
+          python -B scripts/build_reform_views.py --check
+          python -B tests/check_reform_obligations.py
+          python -B tests/check_reform_claim_inventory.py
+          python -B tests/check_acabq_register.py
+          python -B tests/check_reform_baseline.py
+          python -B tests/check_reform_views.py
+      - name: Verify validation leaves tracked files unchanged
+        run: git diff --exit-code

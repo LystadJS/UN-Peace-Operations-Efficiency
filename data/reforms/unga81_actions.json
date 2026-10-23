@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "register_id": "R06-UNGA81-ACTIONS-2026-10-23",
+  "session": 81,
+  "evidence_cutoff": "2026-10-23",
+  "instrument_register": "data/reforms/unga81_instruments.json",
+  "extraction_status": "BLOCKED_PENDING_IN_SCOPE_ADOPTED_TEXT_VERIFICATION",
+  "obligations": [],
+  "zero_count_meaning": "No qualifying mandatory action was authenticated and extracted in this bounded review; not zero applicable obligations and not a compliance result.",
+  "release_gate": "Do not describe portfolio options as required by GA81 until the exact adopted provision, addressee, competence, conditions and period are verified.",
+  "gaps": [
+    {"gap_id":"GA81-G01","status":"EVIDENCE_MISSING","required_evidence":"Complete current adopted resolutions and decisions population through cutoff, including later or unindexed actions","next_action":"Refresh the official library table, plenary adopted texts and decisions register at each release."},
+    {"gap_id":"GA81-G02","status":"NOT_RETRIEVED","required_evidence":"Final adopted text and operative paragraphs for any potentially relevant efficiency, UN80, budget or mandate-review instrument","next_action":"Retrieve an official final text and adoption record, extract action-specific obligations under the R01 schema, and obtain substantive review."},
+    {"gap_id":"GA81-G03","status":"NOT_REVIEWED","required_evidence":"Any instrument modifying earlier GA80 requirements or approving 2027 programme-budget proposals","next_action":"Check Fifth Committee recommendations against subsequent plenary adoption; preserve proposed amounts until verified."}
+  ]
+}

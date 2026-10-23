@@ -1,0 +1,3902 @@
+{
+  "schema_version": 1,
+  "register_id": "R05-GA80-1",
+  "evidence_cutoff": "2026-10-23",
+  "scope": "Selected adopted requests, institutional directions and safeguards; not blanket binding obligations on Member States.",
+  "excluded_as_nonmandatory_or_context": {
+    "A/RES/80/251": [
+      "OP10 and15 encouragements",
+      "OP23,31,32 calls upon",
+      "OP33(a) participation condition and33(g) consensus aspiration"
+    ],
+    "A/RES/80/242": [
+      "Unselected sections and staffing-annex detail",
+      "OP20 encouragement is not blanket consolidation approval",
+      "OP91 invitation is not mandatory implementation"
+    ]
+  },
+  "obligations": [
+    {
+      "obligation_id": "GA80-251-1",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 1",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Apply lifecycle principles",
+        "addressee": "United Nations system",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Preserve pillar balance, multilingualism, Member State mandate prerogatives and adequate resourcing."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-2",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 2",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Provide mandate concept notes",
+        "addressee": "Proponents of new mandates",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-3",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 3",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Provide requested technical support",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-4",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 4",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Maintain comprehensive mandate registry",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-5",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 5",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Draft concise reviewable mandates",
+        "addressee": "General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-6",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 6",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Centralize mandate decision resources",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-7",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 7",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Limit unnecessary mandated activities",
+        "addressee": "General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-8",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 8",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Improve implementation reporting",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-9",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 9",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Resource unabsorbable mandates",
+        "addressee": "Member States",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Established programme planning and budgetary processes apply."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-11",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 11",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Coordinate implementation responsibilities",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Consistent with respective intergovernmental decisions."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-12",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 12",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Implement mandates effectively",
+        "addressee": "United Nations system",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-13",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 13",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Include mandate review clauses",
+        "addressee": "Member States",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Applies to all new and renewing mandates.",
+          "Three-to-five-year review cycles are encouraged, not an imposed universal cycle."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-14",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 14",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Review outcomes and impact",
+        "addressee": "General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-16",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 16",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Review mandated reports",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-06-30",
+        "deadline_basis": "OP16; end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-17",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 17",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Explore collective mandate reviews",
+        "addressee": "Member States",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-18",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 18",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Advise collective review mechanisms",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-09-30",
+        "deadline_basis": "OP18; end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-19",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 19",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Harmonize results management",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-20",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 20",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Preserve valid mandates",
+        "addressee": "Member States and implementing entities",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Until implementation, expiry or competent Member State change."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-21",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 21",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Develop objective renewal criteria",
+        "addressee": "General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-22",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 22",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Review existing mandate stock",
+        "addressee": "General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "OP25 exemptions apply; avoid existing review duplication."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-24",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 24",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Identify inactive duplicative mandates",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-12-31",
+        "deadline_basis": "OP24; end-of-month expressed as final calendar day.",
+        "conditions": [
+          "OP25 exemptions apply."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-25",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 25",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Respect stock-review exemptions",
+        "addressee": "Member States and Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "OP22–24 exclude Charter, universal norms, institution creation and ongoing international peace/security political situations unless Member States agree."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-26",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 26",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Review consideration frequency",
+        "addressee": "Member States",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-27",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 27",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Improve intergovernmental coordination",
+        "addressee": "Member States",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-28",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 28",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Review coordination mechanisms",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-29",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 29",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Develop interoperable decision tools",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "AI safeguards and human oversight required."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-30",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 30",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Support registry users",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_b_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(b)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Appoint two co-chairs",
+        "addressee": "President of General Assembly",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_c_-resume",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(c)-resume",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Resume working group",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-05-01",
+        "deadline_basis": "OP33(c): by 1 May 2026.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_c_-conclude",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(c)-conclude",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Conclude working group",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2027-04-30",
+        "deadline_basis": "OP33(c): no later than 30 April 2027.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__i_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(i)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Develop mandate templates",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-05-31",
+        "deadline_basis": "OP33(d)(i); end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__ii_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(ii)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Consider report review",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-07-31",
+        "deadline_basis": "OP33(d)(ii); end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__iii_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(iii)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Develop renewal criteria",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-08-31",
+        "deadline_basis": "OP33(d)(iii); end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__iv_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(iv)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Develop stock-review modalities",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2026-08-31",
+        "deadline_basis": "OP33(d)(iv); end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__v_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(v)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Consider collective reviews",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Mid-December 2026; exact day unspecified."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__vi_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(vi)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Facilitate digital-tool engagement",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Mid-February 2027; exact day unspecified."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_d__vii_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(d)(vii)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Consider inactive-mandate review",
+        "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": "2027-03-31",
+        "deadline_basis": "OP33(d)(vii); end-of-month expressed as final calendar day.",
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "NOT_YET_DUE",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_e_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(e)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Provide participation roadmap",
+        "addressee": "Working Group Co-Chairs",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_f_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(f)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Update Assembly",
+        "addressee": "Working Group Co-Chairs",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "By end of eightieth session; no exact day inferred."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-251-33_h_",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 33(h)",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2026-03-31",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-251",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Support working group",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-5",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 5",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Apply qualified ACABQ endorsement",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Subject to resolution provisions; each incorporated recommendation needs separate tracing."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-10",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 10",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Report resource synergies",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-11",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 11",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Follow legislative procedures",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-12",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 12",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Quantify efficiency effectiveness",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-13",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 13",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Report mandate-performance impacts",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-14",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 14",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Continue zero-based budgeting",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-15",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 15",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Identify appropriate efficiencies",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Absorb new mandate costs only where appropriate."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-16",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 16",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Propose structural realignments",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "2028 programme budget."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-18",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 18",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Use performance benchmarks",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-21",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 21",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Scale transactional staffing",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Demand, workload, productivity and funding differences."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-22",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 22",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Improve comparable financial data",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-26",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 26",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Assess relocation functions",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Functional proximity and field presence; evidence to Member States."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-28",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 28",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Protect six-language provision",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-34",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 34",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Strengthen spending reviews",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-38",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 38",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Screen downsized staff equally",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-39",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 39",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Report downsizing effects",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-41",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 41",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Justify vacant posts",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-47",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 47",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Explore section-one synergies",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-54",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 54",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Increase language workload standards",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "20 percent; report through future budgets."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-62",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 62",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Redeploy retained ASG post",
+        "addressee": "Secretary-General",
+        "entities": [
+          "DPO"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Office for Mine Action and Police; reports to USG Peace Operations."
+        ],
+        "effect": "DIRECTION"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-86",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 86",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Propose support-function consolidation",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": "OP86: in the Secretary-General's next budget report; no exact calendar date inferred.",
+        "conditions": [
+          "Present further options, including enhanced common administrative platforms, in the next budget report."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-87",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 87",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Involve and assess clients",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Platform design and post-implementation performance."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-89",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 89",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Coordinate ICT reporting",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "Respect existing mechanisms; avoid parallel structures."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-90",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 90",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Consolidate ICT expenditure information",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    },
+    {
+      "obligation_id": "GA80-242-94",
+      "authority_class": "GA_ADOPTED",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "evidence_cutoff": "2026-10-23",
+      "source": {
+        "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+        "retrieved_at": "2026-10-23",
+        "locator": "operative paragraph 94",
+        "version": "English final adopted text",
+        "review_scope": "Paraphrase of specified provision; institutional effect characterized for research.",
+        "limitations": [
+          "No implementation evidence reviewed.",
+          "Not a legal opinion or authority to change Council mandates."
+        ]
+      },
+      "adoption": {
+        "status": "ADOPTED_VERIFIED",
+        "date": "2025-12-30",
+        "final_text_receipt": "data/reforms/unga80_instruments.json#GA80-242",
+        "adoption_record_receipt": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf (page 1 adoption header and terminal plenary record)"
+      },
+      "provision": {
+        "action": "Minimize transition commitments",
+        "addressee": "Secretary-General",
+        "entities": [
+          "UN_SYSTEM"
+        ],
+        "functions": [
+          "governance",
+          "mandate_delivery"
+        ],
+        "period": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "conditions": [
+          "No additional Member State assessments."
+        ],
+        "effect": "REQUEST"
+      },
+      "competence": {
+        "assessment": "Assembly internal governance/budget direction or request to identified addressee; scope is provision-specific.",
+        "review_receipt": "docs/unga80_reform_baseline.md#competence-and-application",
+        "mandate_financing_distinction": "Does not independently alter Security Council peace-operation mandates; budget directions do not prove operational expenditure."
+      },
+      "implementation": {
+        "status": "NOT_ASSESSED",
+        "evidence_receipts": [],
+        "verified_components": [],
+        "unverified_components": [
+          "Delivery and results of this action"
+        ]
+      },
+      "compliance": {
+        "status": "EVIDENCE_MISSING",
+        "assessment_receipt": null,
+        "coverage_receipt": null
+      }
+    }
+  ]
+}

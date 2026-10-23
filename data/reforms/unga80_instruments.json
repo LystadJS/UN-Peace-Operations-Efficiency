@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "register_id": "R03-GA80-1",
+  "evidence_cutoff": "2026-10-23",
+  "scope": "Scoped public-source reform baseline; not a complete session-wide instrument census.",
+  "coverage": {
+    "fresh_final_texts": 2,
+    "retained_instruments_pending_reverification": 6,
+    "mandatory_action_extraction": "Selected obligations and guardrails; recommendations kept distinguishable.",
+    "remaining_gaps": [
+      "Mission financing primary-text re-verification.",
+      "Other GA80 budget, COE, reimbursement, support-account, UNLB and RSCE instruments.",
+      "Paragraph-specific endorsement tracing for each ACABQ recommendation.",
+      "Corrigenda and subsequent amending-instrument census.",
+      "UNGA79 predecessors 79/318 and decision79/571 are context, not mislabelled GA80 instruments."
+    ]
+  },
+  "instruments": [
+    {
+      "instrument_id": "GA80-251",
+      "document_symbol": "A/RES/80/251",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Mandate creation, implementation and review for an efficient and effective United Nations",
+      "authority_class": "GA_ADOPTED",
+      "adoption_status": "ADOPTED_VERIFIED",
+      "adoption_date": "2026-03-31",
+      "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F251&t=pdf",
+      "retrieved_at": "2026-10-23",
+      "version": "English final adopted text",
+      "review_scope": "All 33 numbered operative paragraphs and subparagraphs reviewed; selected actionable provisions extracted.",
+      "authentication": "Official UN document service rendered final adopted PDF; header and terminal plenary record agree on adoption.",
+      "captured_file": null,
+      "sha256": null,
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "No raw PDF retained; retrieval and interpretation receipt only.",
+        "No certification of implementation, compliance, financial benefit or completeness of all session instruments."
+      ],
+      "adoption_record": {
+        "locator": "PDF page 1 header; page 6 terminal record",
+        "plenary_meeting": "A/80/PV.76",
+        "corroboration_url": "https://public.e-delegate.un.org/reports/ga80_resolutions.html",
+        "corroboration_scope": "Official indexed resolution list reports adoption; final PDF itself retrieved."
+      }
+    },
+    {
+      "instrument_id": "GA80-242",
+      "document_symbol": "A/RES/80/242",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Questions relating to the proposed programme budget for 2026",
+      "authority_class": "GA_ADOPTED",
+      "adoption_status": "ADOPTED_VERIFIED",
+      "adoption_date": "2025-12-30",
+      "official_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F242&t=pdf",
+      "retrieved_at": "2026-10-23",
+      "version": "English final adopted text",
+      "review_scope": "Selected general reform, support-services and peacekeeping provisions; not exhaustive extraction of 102 operative paragraphs or staffing annex.",
+      "authentication": "Official UN document service rendered final adopted PDF; header and terminal plenary record agree on adoption.",
+      "captured_file": null,
+      "sha256": null,
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "No raw PDF retained; retrieval and interpretation receipt only.",
+        "No certification of implementation, compliance, financial benefit or completeness of all session instruments."
+      ],
+      "adoption_record": {
+        "locator": "PDF page 1 header; page 13 terminal record",
+        "plenary_meeting": "A/80/PV.69 (resumed)"
+      }
+    },
+    {
+      "instrument_id": "GA80-275",
+      "document_symbol": "A/RES/80/275",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: UNISFA (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/275",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    },
+    {
+      "instrument_id": "GA80-276",
+      "document_symbol": "A/RES/80/276",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: MINUSCA (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/276",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    },
+    {
+      "instrument_id": "GA80-278",
+      "document_symbol": "A/RES/80/278",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: MONUSCO (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/278",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    },
+    {
+      "instrument_id": "GA80-282",
+      "document_symbol": "A/RES/80/282",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: UNIFIL (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/282",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    },
+    {
+      "instrument_id": "GA80-283",
+      "document_symbol": "A/RES/80/283",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: UNMISS (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/283",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    },
+    {
+      "instrument_id": "GA80-285",
+      "document_symbol": "A/RES/80/285",
+      "session": "80",
+      "issuing_organ": "GENERAL_ASSEMBLY",
+      "title": "Financing: UNSOS (repository short label)",
+      "authority_class": "AUTHORITY_UNRESOLVED",
+      "adoption_status": "NOT_REVIEWED",
+      "adoption_date": null,
+      "official_url": "https://docs.un.org/en/A/RES/80/285",
+      "retrieved_at": null,
+      "attempted_at": "2026-10-23",
+      "review_scope": "Existing repository directive rows retained; current full-text retrieval unsuccessful.",
+      "legacy_source": "data/ga_adopted_directives.csv",
+      "legacy_claim": "Previously recorded as GA-adopted in retained research; not newly authenticated by this register.",
+      "implementation_status": "NOT_ASSESSED",
+      "limitations": [
+        "Official document service and/or docs.un.org access failed during this review.",
+        "Do not treat unsuccessful retrieval as absence, repeal or non-adoption."
+      ]
+    }
+  ]
+}

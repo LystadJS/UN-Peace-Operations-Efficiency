@@ -1,0 +1,1437 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff": "2026-10-23",
+  "source_hashes": {
+    "data/reforms/unga80_actions.json": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
+    "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
+    "data/reforms/unga80_instruments.json": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
+    "data/reforms/unga81_instruments.json": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",
+    "data/reforms/acabq_recommendations.json": "b7c48ac1086b3404c16c2d4e0faae8a38a3229945b3efcdc7bcd69413cc1ac19",
+    "data/reforms/sg_proposals.json": "fd81bbe338a5d46ce42671db2b6179eed513802f1dbfed4fb49e8f3cf6de1daf",
+    "data/reforms/un80_arrangement_reconciliation.json": "923cba2ad61aa64a938bffcc0c0af9588ca1f090d04acc336b16f21a50469e26",
+    "data/candidate_validation.csv": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+    "data/reforms/compliance_statuses.json": "ac38b35fd0ec91c5ccd4b9199f37a3a7b7297d41714e56d0b3ac8e9b0aef2331",
+    "data/reforms/obligation_schema.json": "ca80d4bc5df59efc50018109c0cf3a79d3ee274910c053c031c1ff9307774830"
+  },
+  "scope": "Selected extracted provisions and retained proposal/advice records, not exhaustive session or mission compliance coverage.",
+  "limitations": [
+    "Selected provisions are not automatically mandatory requirements applicable to every peace operation.",
+    "Documentary adoption and repository publication do not establish implementation, owner approval or financial benefit."
+  ],
+  "register_id": "R09-OBLIGATION-CROSSWALK-1",
+  "mapping_method": "Preserve extracted scopes; optional case title overlap requires at least two non-generic exact terms. Matches are leads, not legal applicability findings.",
+  "records": [
+    {
+      "obligation_id": "GA80-251-1",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 1",
+      "operative_effect": "DIRECTION",
+      "addressee": "United Nations system",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Preserve pillar balance, multilingualism, Member State mandate prerogatives and adequate resourcing."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-2",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 2",
+      "operative_effect": "DIRECTION",
+      "addressee": "Proponents of new mandates",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-3",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 3",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-4",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 4",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-5",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 5",
+      "operative_effect": "DIRECTION",
+      "addressee": "General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-6",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 6",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-7",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 7",
+      "operative_effect": "DIRECTION",
+      "addressee": "General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-8",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 8",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-9",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 9",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Established programme planning and budgetary processes apply."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-11",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 11",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Consistent with respective intergovernmental decisions."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-12",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 12",
+      "operative_effect": "DIRECTION",
+      "addressee": "United Nations system",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-13",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 13",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Applies to all new and renewing mandates.",
+        "Three-to-five-year review cycles are encouraged, not an imposed universal cycle."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-14",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 14",
+      "operative_effect": "DIRECTION",
+      "addressee": "General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-16",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 16",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-06-30",
+      "deadline_basis": "OP16; end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-17",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 17",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-18",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 18",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-09-30",
+      "deadline_basis": "OP18; end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-19",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 19",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-20",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 20",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States and implementing entities",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Until implementation, expiry or competent Member State change."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-21",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 21",
+      "operative_effect": "DIRECTION",
+      "addressee": "General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-22",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 22",
+      "operative_effect": "DIRECTION",
+      "addressee": "General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "OP25 exemptions apply; avoid existing review duplication."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-24",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 24",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-12-31",
+      "deadline_basis": "OP24; end-of-month expressed as final calendar day.",
+      "conditions": [
+        "OP25 exemptions apply."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-25",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 25",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States and Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "OP22–24 exclude Charter, universal norms, institution creation and ongoing international peace/security political situations unless Member States agree."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-26",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 26",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-27",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 27",
+      "operative_effect": "DIRECTION",
+      "addressee": "Member States",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-28",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 28",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-29",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 29",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "AI safeguards and human oversight required."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-30",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 30",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_b_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(b)",
+      "operative_effect": "DIRECTION",
+      "addressee": "President of General Assembly",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_c_-resume",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(c)-resume",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-05-01",
+      "deadline_basis": "OP33(c): by 1 May 2026.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_c_-conclude",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(c)-conclude",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2027-04-30",
+      "deadline_basis": "OP33(c): no later than 30 April 2027.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__i_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(i)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-05-31",
+      "deadline_basis": "OP33(d)(i); end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__ii_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(ii)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-07-31",
+      "deadline_basis": "OP33(d)(ii); end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__iii_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(iii)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-08-31",
+      "deadline_basis": "OP33(d)(iii); end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__iv_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(iv)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2026-08-31",
+      "deadline_basis": "OP33(d)(iv); end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__v_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(v)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Mid-December 2026; exact day unspecified."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__vi_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(vi)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Mid-February 2027; exact day unspecified."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_d__vii_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(d)(vii)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Ad Hoc Working Group on Mandate Implementation Review",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": "2027-03-31",
+      "deadline_basis": "OP33(d)(vii); end-of-month expressed as final calendar day.",
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_e_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(e)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Working Group Co-Chairs",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_f_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(f)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Working Group Co-Chairs",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "By end of eightieth session; no exact day inferred."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-251-33_h_",
+      "instrument": "A/RES/80/251",
+      "source_locator": "operative paragraph 33(h)",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-5",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 5",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Subject to resolution provisions; each incorporated recommendation needs separate tracing."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-10",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 10",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-11",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 11",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-12",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 12",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-13",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 13",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-14",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 14",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-15",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 15",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Absorb new mandate costs only where appropriate."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-16",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 16",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "2028 programme budget."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-18",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 18",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-21",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 21",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Demand, workload, productivity and funding differences."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-22",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 22",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-26",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 26",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Functional proximity and field presence; evidence to Member States."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-28",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 28",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-34",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 34",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-38",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 38",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-39",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 39",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-41",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 41",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-47",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 47",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-54",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 54",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "20 percent; report through future budgets."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-62",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 62",
+      "operative_effect": "DIRECTION",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "DPO"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Office for Mine Action and Police; reports to USG Peace Operations."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-86",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 86",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": "OP86: in the Secretary-General's next budget report; no exact calendar date inferred.",
+      "conditions": [
+        "Present further options, including enhanced common administrative platforms, in the next budget report."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-87",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 87",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Platform design and post-implementation performance."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-89",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 89",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "Respect existing mechanisms; avoid parallel structures."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-90",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 90",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    },
+    {
+      "obligation_id": "GA80-242-94",
+      "instrument": "A/RES/80/242",
+      "source_locator": "operative paragraph 94",
+      "operative_effect": "REQUEST",
+      "addressee": "Secretary-General",
+      "entities_as_extracted": [
+        "UN_SYSTEM"
+      ],
+      "functions_as_extracted": [
+        "governance",
+        "mandate_delivery"
+      ],
+      "deadline": null,
+      "deadline_basis": null,
+      "conditions": [
+        "No additional Member State assessments."
+      ],
+      "candidate_links": [],
+      "candidate_applicability_status": "NOT_ADJUDICATED",
+      "budget_link_status": "NOT_RECONCILED_TO_APPROPRIATION_OR_COST_OBJECTS",
+      "budget_amount": null
+    }
+  ]
+}

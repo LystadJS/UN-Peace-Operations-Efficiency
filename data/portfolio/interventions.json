@@ -1,0 +1,1746 @@
+{
+  "schema_version": "1.0",
+  "register_id": "P06-INTERVENTIONS-1.0",
+  "evidence_cutoff": "2026-10-23",
+  "scope": "Normalized retained source populations plus14 roadmap case scopes; populations overlap and are not additive",
+  "source_receipts": {
+    "candidates": {
+      "path": "data/candidate_validation.csv",
+      "key": "candidate_id",
+      "sha256": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+      "row_count": 19
+    },
+    "hierarchy": {
+      "path": "data/consolidation_comprehensive_2027.csv",
+      "key": "hierarchy_id",
+      "sha256": "33d86f7ffcda54743a5cff9920fff75435986158a976e57aea2a70496089de9a",
+      "row_count": 23
+    },
+    "opportunities": {
+      "path": "data/public_opportunity_register.csv",
+      "key": "opportunity_id",
+      "sha256": "9710c2bb28b35f52c2bd8bf27029d9e8e0606b1aa76755861d1869ec64f306f2",
+      "row_count": 18
+    },
+    "transactions": {
+      "path": "data/transaction_validation_cases.csv",
+      "key": "case_id",
+      "sha256": "d30788f7556ae0982b5f6ffdb04bc506d30059638d3691167ac0496c06725afc",
+      "row_count": 3
+    },
+    "arrangements": {
+      "path": "data/un80_register.csv",
+      "key": "reform_id",
+      "sha256": "8966966c331b1b1bd8abccb2811e6542f2bfae42aaaf9eefda3761a199f86935",
+      "row_count": 11
+    }
+  },
+  "legacy_populations": {
+    "candidates": [
+      {
+        "candidate_id": "C01",
+        "name": "Audit shared regional desk implementation",
+        "crosswalk_ids": "CW001;CW002",
+        "priority": "high",
+        "proposed_test": "Compare country desks products staffing and reporting lines before and after reform",
+        "possible_decision": "Preserve or redesign residual parallel workflows",
+        "evidence_needed": "Org charts payroll duty statements calendars HR assignment",
+        "accountable_authority_to_confirm": "DPPA and DPO leadership; Fifth Committee as applicable",
+        "risk_gate": "Political analysis coverage",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C02",
+        "name": "Identify parallel political reporting production",
+        "crosswalk_ids": "CW017;CW006;CW038",
+        "priority": "high",
+        "proposed_test": "Trace same source material through HQ briefs Council products and mission updates",
+        "possible_decision": "Common data preparation or editorial service",
+        "evidence_needed": "Report inventory authors hours templates frequency recipients",
+        "accountable_authority_to_confirm": "DPPA and DPO; mandated reporting bodies",
+        "risk_gate": "Council procedural obligations",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C03",
+        "name": "Audit Peacebuilding and Peace Support Office integration",
+        "crosswalk_ids": "CW010;CW011;CW012;CW028",
+        "priority": "high",
+        "proposed_test": "Reconcile DDR SSR justice and corrections positions and cost centres across 2025-2027",
+        "possible_decision": "Complete integration or remove genuinely duplicated management",
+        "evidence_needed": "Post roster chart of accounts deployment log transition records",
+        "accountable_authority_to_confirm": "DPPA and DPO; budget authority as applicable",
+        "risk_gate": "Mission specialist surge capacity",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C04",
+        "name": "Consolidate overlapping training administration",
+        "crosswalk_ids": "CW016;CW030;CW021",
+        "priority": "high",
+        "proposed_test": "Match courses providers target audiences and completed sessions",
+        "possible_decision": "Common scheduling and LMS procurement where feasible",
+        "evidence_needed": "Course-level training data 2025-2027 and attendance",
+        "accountable_authority_to_confirm": "Joint departments plus training providers",
+        "risk_gate": "Military operational readiness",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C05",
+        "name": "Review knowledge management platforms",
+        "crosswalk_ids": "CW018;CW025",
+        "priority": "high",
+        "proposed_test": "Inventory platforms user groups content licences and ownership",
+        "possible_decision": "Interoperability retirement of proven redundant platforms",
+        "evidence_needed": "Asset register costs usage logs security permissions",
+        "accountable_authority_to_confirm": "UN ICT governance and both departments",
+        "risk_gate": "Privacy and mission information security",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C06",
+        "name": "Review overlapping policy and guidance products",
+        "crosswalk_ids": "CW015;CW023",
+        "priority": "medium",
+        "proposed_test": "Match content versions mandate applicability and maintainers",
+        "possible_decision": "Shared standards with annexes for specialized missions",
+        "evidence_needed": "Policy document registry issuance authorities and revision cycles",
+        "accountable_authority_to_confirm": "Both departments with specialist advisers",
+        "risk_gate": "Protection civilian and CRSV requirements",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C07",
+        "name": "Review mission transition workflow integration",
+        "crosswalk_ids": "CW004;CW009;CW036",
+        "priority": "high",
+        "proposed_test": "Trace mission exit milestones against successor and PBF workplans",
+        "possible_decision": "Joint transition governance and sequencing",
+        "evidence_needed": "Mission transition plans financing schedules risk assessments",
+        "accountable_authority_to_confirm": "DPO DPPA and mission leadership",
+        "risk_gate": "Unbroken mandated protection and service coverage",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C08",
+        "name": "Map AU assistance requests and responsibilities",
+        "crosswalk_ids": "CW020;CW021;CW031",
+        "priority": "high",
+        "proposed_test": "Compare UNOAU and DPO help-desk demand intake advice and field experts",
+        "possible_decision": "Single request triage and explicit division of labor",
+        "evidence_needed": "UNOAU DPO requests task orders staff and cost mapping",
+        "accountable_authority_to_confirm": "UNOAU DPO and AU counterparts",
+        "risk_gate": "Resolution 2719 commitments",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C09",
+        "name": "Rationalize regional partner engagements",
+        "crosswalk_ids": "CW022;CW030;CW039",
+        "priority": "medium",
+        "proposed_test": "Match LAS AU and IFI meetings and partner-facing deliverables",
+        "possible_decision": "Unified engagement calendar with distinct technical leads",
+        "evidence_needed": "Meeting logs travel approvals outputs partner interviews",
+        "accountable_authority_to_confirm": "DPPA DPO UNOAU",
+        "risk_gate": "Political partner trust",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C10",
+        "name": "Improve cross-department evaluation reuse",
+        "crosswalk_ids": "CW019",
+        "priority": "medium",
+        "proposed_test": "Map evaluation contracts framework indicators and data repositories",
+        "possible_decision": "Joint methods and lessons repository",
+        "evidence_needed": "Evaluation calendar consultant expenditure CPAS documentation",
+        "accountable_authority_to_confirm": "DPPA DPO OIOS",
+        "risk_gate": "Evaluation independence and quality",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C11",
+        "name": "Review information integrity operations and tools",
+        "crosswalk_ids": "CW024;CW025",
+        "priority": "medium",
+        "proposed_test": "Map MAIE Unite Wave policy tools communications and analyst teams",
+        "possible_decision": "Shared platform maintenance with controlled mission-specific access",
+        "evidence_needed": "Platform audit information classification user logs",
+        "accountable_authority_to_confirm": "DPO DPPA OICT",
+        "risk_gate": "Sensitive operational information",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C12",
+        "name": "Audit Lebanon transition shared services",
+        "crosswalk_ids": "CW026;CW027",
+        "priority": "high",
+        "proposed_test": "Map UNIFIL UNTSO UNSCO UNDOF shared infrastructure and service agreements",
+        "possible_decision": "Adjust intermission services during scheduled drawdown",
+        "evidence_needed": "Agreements staff accommodation transport medical comms inventory",
+        "accountable_authority_to_confirm": "Mission leadership and UNSCO",
+        "risk_gate": "Mandated observation and observer safety",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C13",
+        "name": "Map CAR DDR and peacebuilding funding",
+        "crosswalk_ids": "CW028;CW037",
+        "priority": "medium",
+        "proposed_test": "Link MINUSCA DDR outputs to PBF project budgets deliverers and locations",
+        "possible_decision": "Coordinate or redesign overlapping delivery contracts only if evidenced",
+        "evidence_needed": "Project IDs grants implementing partners location service outputs",
+        "accountable_authority_to_confirm": "MINUSCA PBF government counterparts",
+        "risk_gate": "Host-country ownership and reintegration",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C14",
+        "name": "Compare field conflict analysis tools",
+        "crosswalk_ids": "CW032;CW002",
+        "priority": "medium",
+        "proposed_test": "Inspect shared templates data sources and staff supporting local conflict tools",
+        "possible_decision": "Common data layer or reusable templates",
+        "evidence_needed": "Local analysis tool inventories training logs field feedback",
+        "accountable_authority_to_confirm": "DPO DPPA country teams",
+        "risk_gate": "Sensitivity of early warning",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C15",
+        "name": "Electoral field support handoff",
+        "crosswalk_ids": "CW005",
+        "priority": "medium",
+        "proposed_test": "Separate DPPA technical advice from DPO security logistics for elections",
+        "possible_decision": "Single field tasking matrix not a mandated merger",
+        "evidence_needed": "Technical mission plans electoral field activity logs",
+        "accountable_authority_to_confirm": "DPPA electoral focal point and DPO mission leadership",
+        "risk_gate": "Electoral impartiality and security",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C16",
+        "name": "Measure costs of already shared services",
+        "crosswalk_ids": "CW029;CW038",
+        "priority": "high",
+        "proposed_test": "Audit OCCS actual allocation and internal charging",
+        "possible_decision": "Correct accounting or improve service operations",
+        "evidence_needed": "Staffing chart of accounts service logs ownership",
+        "accountable_authority_to_confirm": "DPPA DPO finance offices",
+        "risk_gate": "Do not double count existing shared capacity",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C17",
+        "name": "Protect distinct substantive mandates",
+        "crosswalk_ids": "CW007;CW033;CW034;CW035",
+        "priority": "high",
+        "proposed_test": "Use negative controls to audit similarity false positives",
+        "possible_decision": "Exclude nonoverlaps from savings claims",
+        "evidence_needed": "Mandate texts expert validation",
+        "accountable_authority_to_confirm": "Relevant legislative bodies",
+        "risk_gate": "Retain mandated output",
+        "savings_status": "not_applicable",
+        "assessment_state": "control"
+      },
+      {
+        "candidate_id": "C18",
+        "name": "Verify UN80 delivery and savings baseline",
+        "crosswalk_ids": "CW001;CW010;CW013;CW014;CW015;CW029",
+        "priority": "high",
+        "proposed_test": "Compare actual 2025 costs with approved 2026 and proposed 2027 post-level data",
+        "possible_decision": "Only recognize net additional efficiencies beyond reforms already booked",
+        "evidence_needed": "Budget post histories 2026 resolutions actual payroll",
+        "accountable_authority_to_confirm": "Both departments and budget oversight entities",
+        "risk_gate": "No double counting transfer as net saving",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      },
+      {
+        "candidate_id": "C19",
+        "name": "UNISFA translation centralization and transferred asset stewardship",
+        "crosswalk_ids": "CW029;CW038",
+        "priority": "high",
+        "proposed_test": "Reconcile Translation Unit centralization planned 2027/28 and underutilized/transferred MINUSMA assets to asset registers and annual service costs; adjacent mandated mission control rather than a proven DPPA-DPO duplication",
+        "possible_decision": "Optimize language-service routing or reuse assets with safety and authority constraints; avoid duplicate asset acquisitions",
+        "evidence_needed": "Res 80/275 paras 9-11; Translation Unit workload procurement invoices MINUSMA transfer IDs utilization condition and asset records",
+        "accountable_authority_to_confirm": "UNISFA mission support leadership, DPO, DOS and GA budget oversight",
+        "risk_gate": "Observer safety and maintenance of mandated translation services; asset condition",
+        "savings_status": "not_estimated",
+        "assessment_state": "screening"
+      }
+    ],
+    "hierarchy": [
+      {
+        "hierarchy_id": "U_C16",
+        "level": "umbrella",
+        "rank": "1",
+        "parent_id": "not_applicable",
+        "target": "shared_services_office",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Chapter I paras79-93; SG Add4 BINUH/UNSOH and CNMC/UNOWAS",
+        "action": "Clarify mandatory service baselines, client charging and retained delegated decisions",
+        "mandate_guardrail": "main_ACABQ_supports_investigation_no_direct_cut",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C07",
+        "level": "umbrella",
+        "rank": "2",
+        "parent_id": "not_applicable",
+        "target": "cross_mission_transition",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "SG Add4 Table3 pp9-11: $14.5604m of already estimated ClusterIII efficiencies; A/81/7 Chapter I para7",
+        "action": "Monitor budgeted mission transitions and residual service costs, not prospective new savings",
+        "mandate_guardrail": "Cluster_I_adjustments_only_not_incremental_net_savings",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C01",
+        "level": "umbrella",
+        "rank": "3",
+        "parent_id": "not_applicable",
+        "target": "support_DPO_regional_desks",
+        "funding_scope_usd_thousands": "10196.1",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Section 3 paras II.4-II.7; SG Add4 regional SPMs",
+        "action": "Compare regional offices, envoy interfaces and shared DPPA-DPO products",
+        "mandate_guardrail": "functional_overlap_hypothesis_no_verified_double_funding",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C04",
+        "level": "umbrella",
+        "rank": "4",
+        "parent_id": "not_applicable",
+        "target": "DPO_policy_evaluation_training",
+        "funding_scope_usd_thousands": "14142.8",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Chapter I paras68-69; SG Add4 planned training by mission",
+        "action": "Create course-specific cost and outcome comparisons; no identical training established",
+        "mandate_guardrail": "training_8.5k_UNMOGIP_only_not_department_savings",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C09",
+        "level": "umbrella",
+        "rank": "5",
+        "parent_id": "not_applicable",
+        "target": "regional_partnerships",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "SG Add4 UNOWAS/UNOCA transregional mandates and CNMC shared hosting; A/81/7 II.7",
+        "action": "Compare regional products and client/meeting audiences, not mission mergers",
+        "mandate_guardrail": "coordination_not_same_budget_output",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C02",
+        "level": "umbrella",
+        "rank": "6",
+        "parent_id": "not_applicable",
+        "target": "political_reporting",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "SG Add4 UNAMA-UNRCCA shared early-warning inputs; A/81/7 II.7",
+        "action": "Match named Council reports and source-to-recipient lineage",
+        "mandate_guardrail": "same_subject_not_same_authorized_deliverable",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C05",
+        "level": "umbrella",
+        "rank": "7",
+        "parent_id": "not_applicable",
+        "target": "knowledge_management",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Chapter I paras6,72-75,82-83",
+        "action": "Audit cross-entity ICT and information licenses and common knowledge management",
+        "mandate_guardrail": "central_cost_pool_not_specifically_costed",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C12",
+        "level": "umbrella",
+        "rank": "8",
+        "parent_id": "not_applicable",
+        "target": "UNIFIL",
+        "funding_scope_usd_thousands": "407625",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "SG Add4 Table3 UNSCOL/UNIFIL planned asset transfer; A/RES/80/282",
+        "action": "Validate physical transfer and service readiness; $438.1k already prebudgeted",
+        "mandate_guardrail": "prebudgeted_438.1k_not_additional",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C19",
+        "level": "umbrella",
+        "rank": "9",
+        "parent_id": "not_applicable",
+        "target": "UNISFA",
+        "funding_scope_usd_thousands": "275839.3",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/RES/80/275; A/81/7 Chapter I paras76,83",
+        "action": "GA-directed UNISFA translation and property stewardship review",
+        "mandate_guardrail": "GA_directed_review_without_verified_cost_pool",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C15",
+        "level": "umbrella",
+        "rank": "10",
+        "parent_id": "not_applicable",
+        "target": "UNMISS",
+        "funding_scope_usd_thousands": "976818.6",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/RES/80/283; A/81/7 Chapter I 44-52",
+        "action": "Track previous approved UNMISS abolishments and continuing output quality",
+        "mandate_guardrail": "baseline_already_adopted_not_additional_savings",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C03",
+        "level": "umbrella",
+        "rank": "11",
+        "parent_id": "not_applicable",
+        "target": "DPO_combined_PBPS_mine_police",
+        "funding_scope_usd_thousands": "27942.6",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Sections3 and5 and A/81/7/Add.3 para5 negative comparator",
+        "action": "Protect expert-police-mine action mandates while testing overhead",
+        "mandate_guardrail": "not_cited_as_direct_ACABQ_savings_item",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C08",
+        "level": "umbrella",
+        "rank": "12",
+        "parent_id": "not_applicable",
+        "target": "UNSOS",
+        "funding_scope_usd_thousands": "481550.4",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/RES/80/285; A/81/7 Chapter I para10",
+        "action": "Trace contractor claims without calling recoveries efficiency cuts",
+        "mandate_guardrail": "recoveries_not_new_operating_savings",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C13",
+        "level": "umbrella",
+        "rank": "13",
+        "parent_id": "not_applicable",
+        "target": "MINUSCA_quick_impact_projects",
+        "funding_scope_usd_thousands": "4000",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/RES/80/276; A/81/7 Chapter I paras77-78",
+        "action": "Protect separate QIP/PBF governance and funding rules",
+        "mandate_guardrail": "no_costed_duplicate_grants",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "U_C11",
+        "level": "umbrella",
+        "rank": "14",
+        "parent_id": "not_applicable",
+        "target": "information_integrity",
+        "funding_scope_usd_thousands": "not_costed",
+        "existing_prebudgeted_usd_thousands": "not_separately_attributable_at_umbrella_level",
+        "evidence": "A/81/7 Chapter I paras6 and73-75",
+        "action": "Document shared data/technology infrastructure; no verified overlap",
+        "mandate_guardrail": "no_current_Acabq_specific_cut",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM035",
+        "level": "clusterIII_mission_child",
+        "rank": "1",
+        "parent_id": "C07",
+        "target": "BINUH",
+        "funding_scope_usd_thousands": "31614.9",
+        "existing_prebudgeted_usd_thousands": "1400.0",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Verify BINUH-UNSOH already reported shared support handover and $1.4m prebudgeted aviation efficiency versus wider internal charge",
+        "mandate_guardrail": "BINUH statutory political mandate, UNSOH SLA and security/aviation readiness",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM031",
+        "level": "clusterIII_mission_child",
+        "rank": "2",
+        "parent_id": "C12",
+        "target": "UN Special Coordinator for Lebanon (UNSCOL)",
+        "funding_scope_usd_thousands": "10386.8",
+        "existing_prebudgeted_usd_thousands": "446.8",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Verify six UNIFIL vehicles and IT/rations receipt; $438.1k transfer benefit already in SPM proposed plan",
+        "mandate_guardrail": "UNIFIL drawdown security, environmental duties and asset acceptance retained",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM036",
+        "level": "clusterIII_mission_child",
+        "rank": "3",
+        "parent_id": "C07",
+        "target": "UNAMA",
+        "funding_scope_usd_thousands": "97167.8",
+        "existing_prebudgeted_usd_thousands": "7581.0",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Monitor already planned 61 UNAMA post abolishments and protection of Afghanistan monitoring outputs",
+        "mandate_guardrail": "Afghan field/human-rights monitoring, women consultations and security preserved",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM033",
+        "level": "clusterIII_mission_child",
+        "rank": "4",
+        "parent_id": "C07",
+        "target": "UNSMIL",
+        "funding_scope_usd_thousands": "83067.4",
+        "existing_prebudgeted_usd_thousands": "3132.7",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Verify UNSMIL Tripoli compound $2.63m budgeted efficiency and support-provider residual security costs",
+        "mandate_guardrail": "Safe Libya field posture and sensitive dialogue access; no budget gross amount as cost pool",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM034",
+        "level": "clusterIII_mission_child",
+        "rank": "5",
+        "parent_id": "C07",
+        "target": "UN Verification Mission in Colombia",
+        "funding_scope_usd_thousands": "75896.9",
+        "existing_prebudgeted_usd_thousands": "1937.8",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Validate Colombia fixed-wing flight discontinuation and alternative mandated verification access",
+        "mandate_guardrail": "Verification mission safety, emergency medical access, mandated observers and partners",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM028",
+        "level": "clusterIII_mission_child",
+        "rank": "6",
+        "parent_id": "C09",
+        "target": "UNOWAS",
+        "funding_scope_usd_thousands": "14108.5",
+        "existing_prebudgeted_usd_thousands": "0.0",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Join unique UNOWAS and UNOCA regional reports and meetings to identify genuinely reusable inputs",
+        "mandate_guardrail": "Preventive diplomacy, ECOWAS reporting and Council engagement must retain owner",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM032",
+        "level": "clusterIII_mission_child",
+        "rank": "7",
+        "parent_id": "C09",
+        "target": "UNOCA",
+        "funding_scope_usd_thousands": "6878.6",
+        "existing_prebudgeted_usd_thousands": "62.1",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Map UNOCA distinct mandates, UNOWAS-coordinated risk products and planned airline use",
+        "mandate_guardrail": "Separate Central Africa remit, ECCAS-facing institution and protective risk analysis",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM030",
+        "level": "clusterIII_mission_child",
+        "rank": "8",
+        "parent_id": "C16",
+        "target": "Cameroon-Nigeria Mixed Commission",
+        "funding_scope_usd_thousands": "3253.1",
+        "existing_prebudgeted_usd_thousands": "0.0",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Separate existing CNMC/UNOWAS co-location from additional independent administrative overhead",
+        "mandate_guardrail": "Cameroon-Nigeria sovereign boundary mandate and commission authority preserved",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      },
+      {
+        "hierarchy_id": "M_SPM029",
+        "level": "clusterIII_mission_child",
+        "rank": "9",
+        "parent_id": "C02",
+        "target": "UN Regional Centre for Preventive Diplomacy in Central Asia",
+        "funding_scope_usd_thousands": "2979.9",
+        "existing_prebudgeted_usd_thousands": "0.0",
+        "evidence": "SG_Add4_budget_and_Table3_ACABQ_main_general_only",
+        "action": "Map UNRCCA early-warning outputs versus UNAMA Afghanistan country-specific outputs",
+        "mandate_guardrail": "Separate central Asian good offices and Afghan country roles and data confidentiality",
+        "new_savings_usd": "not_estimated",
+        "do_not_sum_hierarchy": "yes"
+      }
+    ],
+    "opportunities": [
+      {
+        "opportunity_id": "P001",
+        "short_title": "UNIFIL–UNSCOL property and procurement",
+        "parent_candidate_id": "C12",
+        "related_evidence_ids": "SPML01",
+        "decision_class": "prebooked_efficiency_verification",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "UNIFIL/UNSCOL",
+        "published_cost_scope_description": "394000+36900+7200=438100",
+        "published_narrow_amount_usd": "438100",
+        "financial_stage": "2027_SG_estimated_efficiency_already_in_proposal",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "Add.4 pp7–11 Table3; A/RES/80/282 paras12–15",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Prepare asset-class handover and disposal/public tender inventory; separate booked avoided purchase from transfer costs",
+        "requires_authorized_data_later": "Certified asset receipt, canceled requisition and staff/security clearance",
+        "decision_authority_or_safeguard": "UNIFIL/UNSCOL property control; GA-mandated environmental and personnel-safety duties",
+        "date_trigger": "2026-12-31_ops_end_with_drawdown",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P002",
+        "short_title": "BINUH–UNSOH aviation and broader support",
+        "parent_candidate_id": "C07",
+        "related_evidence_ids": "SPML02",
+        "decision_class": "prebooked_efficiency_verification",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "BINUH/UNSOH",
+        "published_cost_scope_description": "2027_aviation_reduction_distinct_from_broader_4000000_reimbursement",
+        "published_narrow_amount_usd": "1400000",
+        "financial_stage": "2027_SG_estimated_efficiency_already_in_proposal",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "Add.4 pp107–109; S/2026/325 para40",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Map aviation versus nonaviation service catalogue and public handover chronology",
+        "requires_authorized_data_later": "Service billing payable/receivable pairs, settlement and supplier/flight costs",
+        "decision_authority_or_safeguard": "UNSOH mission support; preserve BINUH mandated service continuity",
+        "date_trigger": "service_reported_implemented_2026-02-01",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P003",
+        "short_title": "RSCE–Kuwait client charging perimeter",
+        "parent_candidate_id": "C16",
+        "related_evidence_ids": "SPML15",
+        "decision_class": "allocation_and_double_count_control",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "high",
+        "mandate_risk": "moderate",
+        "affected_entities": "RSCE/SPM/DOS",
+        "published_cost_scope_description": "SPM_2027_share_3259100_vs_FY2026_27_RSCE_budget_45911600_nonadditive",
+        "published_narrow_amount_usd": "3259100",
+        "financial_stage": "2027_SPM_share_is_cost_allocation_not_efficiency",
+        "budget_calendar": "multiple_fiscal_periods",
+        "source_anchor": "Add.1 pp13–15; A/C.5/80/20 Annex p3; A/80/643 paras195–196",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.1",
+        "public_work_package": "Construct public-side client/funding/period map; isolate original KJSO client transfers",
+        "requires_authorized_data_later": "Approved rate denominator; unique RSCE client AP/AR; KJSO shutdown balances",
+        "decision_authority_or_safeguard": "DOS/RSCE; Secretariat and GA funding boundaries",
+        "date_trigger": "shared_client_integration_2026",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P004",
+        "short_title": "UNISFA centralized translation",
+        "parent_candidate_id": "C19",
+        "related_evidence_ids": "GA_D08",
+        "decision_class": "ga_directed_control",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "UNISFA/DPO",
+        "published_cost_scope_description": "mission_translation_subline_not_identified",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "2026_27_GA_review_request_no_costed_saving",
+        "budget_calendar": "2026_27_GA_approved",
+        "source_anchor": "A/RES/80/275 para9 p2",
+        "public_source_url": "https://docs.un.org/en/A/RES/80/275",
+        "public_work_package": "Draft baseline operating model and alternatives for 2027/28; check publicly reported review follow-up",
+        "requires_authorized_data_later": "Workload by language and location; contracted interpretation rates; mandate and access checks",
+        "decision_authority_or_safeguard": "UNISFA leadership and GA budget approval; retain observer and safety coverage",
+        "date_trigger": "next_2027_28_budget_submission",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P005",
+        "short_title": "UNISFA transferred and underused assets",
+        "parent_candidate_id": "C19",
+        "related_evidence_ids": "GA_D09;GA_D10",
+        "decision_class": "ga_directed_control",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "UNISFA/MINUSMA/DOS",
+        "published_cost_scope_description": "asset_purchase_and_transfer_subline_not_identified",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "2026_27_GA_review_request_no_costed_saving",
+        "budget_calendar": "2026_27_GA_approved",
+        "source_anchor": "A/RES/80/275 paras10–11 pp2–3",
+        "public_source_url": "https://docs.un.org/en/A/RES/80/275",
+        "public_work_package": "Build public GA asset-management compliance checklist; track old MINUSMA transfer claims",
+        "requires_authorized_data_later": "Tagged asset disposition, condition, utilization, procurement alternatives and authority",
+        "decision_authority_or_safeguard": "UNISFA/DOS; force-protection and inventory custody",
+        "date_trigger": "next_2027_28_budget_submission",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P006",
+        "short_title": "RSCE staffing model versus establishment decisions",
+        "parent_candidate_id": "C16",
+        "related_evidence_ids": "WF01;WF09",
+        "decision_class": "workforce_baseline_control",
+        "public_track": "now",
+        "readiness_tier": "T1",
+        "qualitative_feasibility": "high",
+        "mandate_risk": "moderate",
+        "affected_entities": "DOS/RSCE/SPM_clients",
+        "published_cost_scope_description": "projected_net_plus_9_FTE_not_net_abolition",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "FTE_model_is_not_staff_payroll_saving",
+        "budget_calendar": "2026_27_support_account",
+        "source_anchor": "A/80/611 paras54–56; A/80/643 paras195–196",
+        "public_source_url": "https://docs.un.org/en/A/80/643",
+        "public_work_package": "Create approved-versus-proposed staffing schematic for 82/11/44/17 distinct movements",
+        "requires_authorized_data_later": "Post IDs actual establishment and end dates; service quality / workload proof",
+        "decision_authority_or_safeguard": "DOS HR; GA-approved establishment and reorganization",
+        "date_trigger": "current_plan_2026_27",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P007",
+        "short_title": "UNSOS contractor fuel loss recovery",
+        "parent_candidate_id": "C08",
+        "related_evidence_ids": "GA_D15",
+        "decision_class": "ga_directed_control",
+        "public_track": "now",
+        "readiness_tier": "T2",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "moderate",
+        "affected_entities": "UNSOS/DOS",
+        "published_cost_scope_description": "recovery_claim_amount_not_published_in_resolution",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "GA_recovery_followup_not_a_saving",
+        "budget_calendar": "2026_27_GA_approved",
+        "source_anchor": "A/RES/80/285 para4 p2",
+        "public_source_url": "https://docs.un.org/en/A/RES/80/285",
+        "public_work_package": "Record date and ownership of GA-requested contractor recovery follow-up; review subsequent public progress statements",
+        "requires_authorized_data_later": "Claims register, recovery entries, contractor settlement and enforcement obligations",
+        "decision_authority_or_safeguard": "UNSOS finance and GA oversight; creditor legal rights",
+        "date_trigger": "next_2027_finance_report",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P008",
+        "short_title": "MONUSCO medical-insurance integrity",
+        "parent_candidate_id": "C07",
+        "related_evidence_ids": "GA_D02",
+        "decision_class": "ga_directed_control",
+        "public_track": "now",
+        "readiness_tier": "T2",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "moderate",
+        "affected_entities": "MONUSCO/DOS",
+        "published_cost_scope_description": "irregular_claims_amount_not_reported_in_resolution",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "GA_internal_control_not_a_cost_cut",
+        "budget_calendar": "2026_27_GA_approved",
+        "source_anchor": "A/RES/80/278 para9 p2",
+        "public_source_url": "https://docs.un.org/en/A/RES/80/278",
+        "public_work_package": "Create public action log for irregular-claims recommendation; track reporting commitments",
+        "requires_authorized_data_later": "Case-level claims validation and recoveries; medical readiness constraints",
+        "decision_authority_or_safeguard": "MONUSCO controller; confidentiality and patient protection",
+        "date_trigger": "next_2027_finance_report",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P009",
+        "short_title": "UNMISS previously approved civilian post removals",
+        "parent_candidate_id": "C15",
+        "related_evidence_ids": "GA_D13",
+        "decision_class": "preapproved_reduction_implementation",
+        "public_track": "now",
+        "readiness_tier": "T2",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "UNMISS/DPO",
+        "published_cost_scope_description": "91_approved_abolishments_including_53_electoral",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "already_GA_approved_not_an_additional_cut",
+        "budget_calendar": "2026_27_GA_approved",
+        "source_anchor": "A/RES/80/283 para9 and annex pp4–6",
+        "public_source_url": "https://docs.un.org/en/A/RES/80/283",
+        "public_work_package": "Map abolished functions to remaining public budget deliverables; maintain an audit trail of baseline reductions",
+        "requires_authorized_data_later": "Unique post/position IDs, separations/transition costs and outputs after removal",
+        "decision_authority_or_safeguard": "UNMISS GA/DPO Security Council protection/electoral mandates",
+        "date_trigger": "2026_27_approved_budget_baseline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P010",
+        "short_title": "Cameroon–Nigeria Commission shared UNOWAS facilities",
+        "parent_candidate_id": "C16",
+        "related_evidence_ids": "SPML10",
+        "decision_class": "process_redesign_investigation",
+        "public_track": "now",
+        "readiness_tier": "T2",
+        "qualitative_feasibility": "high",
+        "mandate_risk": "moderate",
+        "affected_entities": "UNOWAS/CNMC",
+        "published_cost_scope_description": "whole_mission_proposal_not_addressable_expense",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "existing_colocation_not_savings",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.4 para78 p30",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Map shared office and chair functions; identify any genuinely parallel public administrative products",
+        "requires_authorized_data_later": "Allocation contracts, service utilization, distinct legal and border tasks",
+        "decision_authority_or_safeguard": "UNOWAS/CNMC and Cameroon/Nigeria counterparts; border-mandate obligations",
+        "date_trigger": "no_named_deadline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P011",
+        "short_title": "UNOWAS–UNOCA transregional reporting",
+        "parent_candidate_id": "C09",
+        "related_evidence_ids": "SPML09",
+        "decision_class": "process_redesign_investigation",
+        "public_track": "now",
+        "readiness_tier": "T3",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "moderate",
+        "affected_entities": "UNOWAS/UNOCA",
+        "published_cost_scope_description": "not_separately_priced",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "related_activity_not_proven_duplicate",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.4 para22 p14",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Compare publicly available issues and report catalogs for Gulf of Guinea/Lake Chad duplicated analytical work",
+        "requires_authorized_data_later": "Underlying author rosters access rights and reporting audiences",
+        "decision_authority_or_safeguard": "Both SRSGs; preserve country/partner mandates",
+        "date_trigger": "no_named_deadline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P012",
+        "short_title": "UNAMA–Central Asia centre regional early warning",
+        "parent_candidate_id": "C02",
+        "related_evidence_ids": "SPML11",
+        "decision_class": "process_redesign_investigation",
+        "public_track": "now",
+        "readiness_tier": "T3",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "UNAMA/UNRCCA",
+        "published_cost_scope_description": "not_separately_priced",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "coordination_not_proven_duplicate",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.4 paras49 and52 pp22–23",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Compare overlapping public early-warning and regional workshop outputs without removing country missions",
+        "requires_authorized_data_later": "Source security rules and approved report/workload obligations",
+        "decision_authority_or_safeguard": "UNAMA/UNRCCA leadership; civil protection and security",
+        "date_trigger": "no_named_deadline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P013",
+        "short_title": "Joint DPPA–DPO regional political-operational desks",
+        "parent_candidate_id": "C01",
+        "related_evidence_ids": "CW001;CW002",
+        "decision_class": "process_redesign_investigation",
+        "public_track": "now",
+        "readiness_tier": "T3",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "DPPA/DPO",
+        "published_cost_scope_description": "DPO_support_account_slice_10196100_is_not_duplicated_cost",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "combined_unit_component_fund_scope_only",
+        "budget_calendar": "2026_27_DPO_SG_support",
+        "source_anchor": "A/80/631 p44; Section3 and Section5 proposed 2027 organigrams",
+        "public_source_url": "https://docs.un.org/en/A/80/631",
+        "public_work_package": "Compare public organigram and jointly issued product/workflow descriptions before requesting HR records",
+        "requires_authorized_data_later": "Position-level time/cost IDs and delegated authorities",
+        "decision_authority_or_safeguard": "Joint bureau leadership; SC mandated readiness",
+        "date_trigger": "no_named_deadline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P014",
+        "short_title": "DPPA–DPO training calendar and procurement",
+        "parent_candidate_id": "C04",
+        "related_evidence_ids": "CW016;CW019",
+        "decision_class": "process_redesign_investigation",
+        "public_track": "now",
+        "readiness_tier": "T3",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "DPPA/DPO",
+        "published_cost_scope_description": "DPO_policy_training_division_14142800_includes_unrelated_functions",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "full_division_not_a_savings_ceiling",
+        "budget_calendar": "2026_27_DPO_SG_support",
+        "source_anchor": "A/80/631 p44 and A/81/6 (Sect. 5) pp22–27",
+        "public_source_url": "https://docs.un.org/en/A/80/631",
+        "public_work_package": "Compare curricula venues and learner populations in existing published training products",
+        "requires_authorized_data_later": "Course cost invoices contracts and mandated safety competencies",
+        "decision_authority_or_safeguard": "DPO military/police readiness and DPPA political training",
+        "date_trigger": "no_named_deadline",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P015",
+        "short_title": "SPM shared electronic subscriptions",
+        "parent_candidate_id": "C05",
+        "related_evidence_ids": "EFF003",
+        "decision_class": "prebooked_efficiency_monitor",
+        "public_track": "watch",
+        "readiness_tier": "T4",
+        "qualitative_feasibility": "high",
+        "mandate_risk": "low",
+        "affected_entities": "Great_Lakes_SPM/Dag_Hammarskjold_Library",
+        "published_cost_scope_description": "2027_estimated_15000",
+        "published_narrow_amount_usd": "15000",
+        "financial_stage": "already_in_2027_SPM_efficiencies",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.2 p8 Table3",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.2",
+        "public_work_package": "Document existing cross-UN library sharing as reusable policy example",
+        "requires_authorized_data_later": "Actual licencing cost/vendor coverage needed for wider estimate",
+        "decision_authority_or_safeguard": "UN Library information services",
+        "date_trigger": "2027_implementation",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P016",
+        "short_title": "UNSMIL Tripoli facility contract restructuring",
+        "parent_candidate_id": "C07",
+        "related_evidence_ids": "EFF018",
+        "decision_class": "prebooked_efficiency_monitor",
+        "public_track": "watch",
+        "readiness_tier": "T4",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "moderate",
+        "affected_entities": "UNSMIL/DOS",
+        "published_cost_scope_description": "2027_estimated_2630000",
+        "published_narrow_amount_usd": "2630000",
+        "financial_stage": "already_in_2027_SPM_efficiencies",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.4 p9 Table3",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Compare planned facility footprint and contract narrative to earlier published performance",
+        "requires_authorized_data_later": "Vendor executed rates, unspent liabilities, and security protections",
+        "decision_authority_or_safeguard": "UNSMIL compound security",
+        "date_trigger": "2027_implementation",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P017",
+        "short_title": "Colombia mission aviation fleet consolidation",
+        "parent_candidate_id": "C07",
+        "related_evidence_ids": "EFF020",
+        "decision_class": "prebooked_efficiency_monitor",
+        "public_track": "watch",
+        "readiness_tier": "T4",
+        "qualitative_feasibility": "moderate",
+        "mandate_risk": "high",
+        "affected_entities": "Colombia_Verification_Mission/DOS",
+        "published_cost_scope_description": "2027_estimated_1605700",
+        "published_narrow_amount_usd": "1605700",
+        "financial_stage": "already_in_2027_SPM_efficiencies",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.4 p10 Table3",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+        "public_work_package": "Compare flight-hour estimates and service coverage after planned aircraft retirement",
+        "requires_authorized_data_later": "Actual supplier costs and casualty evacuation coverage",
+        "decision_authority_or_safeguard": "Verification mission access/safety",
+        "date_trigger": "2027_implementation",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      },
+      {
+        "opportunity_id": "P018",
+        "short_title": "Sanctions-delisting independence protection",
+        "parent_candidate_id": "C17",
+        "related_evidence_ids": "SPML13",
+        "decision_class": "negative_control",
+        "public_track": "negative",
+        "readiness_tier": "T0",
+        "qualitative_feasibility": "not_applicable",
+        "mandate_risk": "critical",
+        "affected_entities": "Sanctions_panels/Ombudsperson",
+        "published_cost_scope_description": "separate_due_process_mandates",
+        "published_narrow_amount_usd": "not_costed",
+        "financial_stage": "do_not_merge_mandated_decision_functions",
+        "budget_calendar": "2027_calendar_SPM",
+        "source_anchor": "A/81/6 (Sect. 3)/Add.3 sanctions and delisting sections",
+        "public_source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.3",
+        "public_work_package": "Record sanctions investigation versus due-process safeguards as a negative control",
+        "requires_authorized_data_later": "No joint substantive decision-making allowed merely due to common data",
+        "decision_authority_or_safeguard": "UN Security Council sanctions and fair process",
+        "date_trigger": "standing_legal_guardrail",
+        "incremental_net_savings_usd": "not_estimated",
+        "does_this_support_a_cut": "no_requires_decision_gates",
+        "review_date": "2026-10-08"
+      }
+    ],
+    "transactions": [
+      {
+        "case_id": "UNIFIL_UNSCOL",
+        "already_budgeted_2027_efficiency_usd": "438100",
+        "other_proposed_allocation_or_payment_usd": "not_applicable",
+        "implementation_status": "Asset transfers proposed in 2027 SPM financial estimates",
+        "transaction_evidence_gap": "No signed transfer manifest, serial, inventory posting or canceled purchase order",
+        "acceptance_test": "Asset release and receipt match to canceled planned acquisition and net transfer costs",
+        "cross_pillar_link": "SPML01",
+        "verified_invoice_asset_or_charge_pairs": "0",
+        "additional_addressable_usd": "not_estimated",
+        "net_realized_savings_usd": "not_estimated"
+      },
+      {
+        "case_id": "BINUH_UNSOH",
+        "already_budgeted_2027_efficiency_usd": "1400000",
+        "other_proposed_allocation_or_payment_usd": "4000000",
+        "implementation_status": "Report S/2026/325 para40 confirms service support handover on 1 Feb 2026",
+        "transaction_evidence_gap": "No service invoices BINUH AP UNSOH AR matching or vendor costs",
+        "acceptance_test": "Same-service same-period invoice charge receipt and external supplier costs",
+        "cross_pillar_link": "SPML02",
+        "verified_invoice_asset_or_charge_pairs": "0",
+        "additional_addressable_usd": "not_estimated",
+        "net_realized_savings_usd": "not_estimated"
+      },
+      {
+        "case_id": "RSCE",
+        "already_budgeted_2027_efficiency_usd": "not_an_efficiency",
+        "other_proposed_allocation_or_payment_usd": "3259100",
+        "implementation_status": "RSCE exists; Kuwait Joint Support Office transfer planned 1 Jul 2026",
+        "transaction_evidence_gap": "No client-by-client allocation voucher, transaction volumes or chargeback settlements",
+        "acceptance_test": "Match client charge to RSCE credits and approved shared-service cost base",
+        "cross_pillar_link": "SPML15",
+        "verified_invoice_asset_or_charge_pairs": "0",
+        "additional_addressable_usd": "not_estimated",
+        "net_realized_savings_usd": "not_estimated"
+      }
+    ],
+    "arrangements": [
+      {
+        "reform_id": "U01",
+        "reform": "Single regional political-operational structure",
+        "reform_category": "explicit_un80_consolidation",
+        "dppa_source": "3.I.4;3.I.11",
+        "dppa_page": "6",
+        "dpo_source": "5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Both documents describe advanced efforts to further consolidate shared regional structure",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Check organigrams HR allocations joint products and cost attribution"
+      },
+      {
+        "reform_id": "U02",
+        "reform": "Unified Peacebuilding and Peace Support Office covering DDR SSR justice and corrections",
+        "reform_category": "explicit_un80_consolidation",
+        "dppa_source": "3.I.11;3.I.84(d)",
+        "dppa_page": "6",
+        "dpo_source": "5.I.9;5.I.41(g)",
+        "dpo_page": "17",
+        "proposal_characterization": "Both documents describe consolidation of these capacities",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Audit implementation by named branch and 2026 versus 2027 staffing"
+      },
+      {
+        "reform_id": "U03",
+        "reform": "Joint Gender Unit",
+        "reform_category": "explicit_joint_unit",
+        "dppa_source": "3.I.9;3.I.11",
+        "dppa_page": "6",
+        "dpo_source": "5.I.7;5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Both documents describe newly established joint Gender Unit",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Check unified leadership workplan location funds and posts"
+      },
+      {
+        "reform_id": "U04",
+        "reform": "Closer policy coordination",
+        "reform_category": "planned_un80_coordination",
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Further coordination in policy functions is described",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Cross-departmental policy ownership inventory"
+      },
+      {
+        "reform_id": "U05",
+        "reform": "Closer training coordination",
+        "reform_category": "planned_un80_coordination",
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Further coordination in training is described",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Compare calendars enrolments curricula and trainers"
+      },
+      {
+        "reform_id": "U06",
+        "reform": "Closer innovation coordination",
+        "reform_category": "planned_un80_coordination",
+        "dppa_source": "3.I.7;3.I.11",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Further coordination in innovation is described",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Platform and project portfolio mapping"
+      },
+      {
+        "reform_id": "U07",
+        "reform": "Partnerships coordination",
+        "reform_category": "planned_crosscutting_coordination",
+        "dppa_source": "3.I.7",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4",
+        "dpo_page": "4",
+        "proposal_characterization": "Partner-facing coordination is identified for stronger links",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Identify partner ownership and non-duplicated delivery"
+      },
+      {
+        "reform_id": "U08",
+        "reform": "Information integrity coordination",
+        "reform_category": "planned_crosscutting_coordination",
+        "dppa_source": "3.I.7",
+        "dppa_page": "5",
+        "dpo_source": "5.I.4;5.I.9",
+        "dpo_page": "5",
+        "proposal_characterization": "Information integrity is identified for stronger links",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Identify approved data sharing and communications functions"
+      },
+      {
+        "reform_id": "U09",
+        "reform": "Joint disability inclusion action plan",
+        "reform_category": "documented_joint_plan",
+        "dppa_source": "3.I.10",
+        "dppa_page": "6",
+        "dpo_source": "5.I.8",
+        "dpo_page": "5",
+        "proposal_characterization": "Both documents refer to joint departmental action plan",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Examine single monitoring schedule and resources"
+      },
+      {
+        "reform_id": "U10",
+        "reform": "Office for Coordination and Shared Services",
+        "reform_category": "existing_shared_service_documented",
+        "dppa_source": "Annex I chart A",
+        "dppa_page": "115",
+        "dpo_source": "5.I.78",
+        "dpo_page": "34",
+        "proposal_characterization": "Office reports to both Under-Secretaries-General; not presented here as newly created UN80 change",
+        "implementation_verification": "not_independently_verified",
+        "review_gate": "Determine shared office post charges and actual service recipients"
+      },
+      {
+        "reform_id": "U11",
+        "reform": "UNOAU Peace Support Operations Service internal merger",
+        "reform_category": "other_2027_reorganization_not_un80",
+        "dppa_source": "Annex I organizational justification",
+        "dppa_page": "114",
+        "dpo_source": "5.I.2(g)",
+        "dpo_page": "4",
+        "proposal_characterization": "2027 proposed UNOAU merger of sections; UNOAU 3.IV.11 says no substantive UN80 adjustments",
+        "implementation_verification": "proposed_not_independently_verified",
+        "review_gate": "Check service merger against UN-AU training and DPO advisor tasking"
+      }
+    ]
+  },
+  "interventions": [
+    {
+      "intervention_id": "CASE01",
+      "roadmap_case_id": "C01",
+      "title": "RSCE client charging, retained local work and workforce",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "RSCE_COST_BASE",
+        "HQ_SHARED_SUPPORT"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C16"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P003"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P006"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "RSCE"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE02",
+      "roadmap_case_id": "C02",
+      "title": "UNIFIL–UNSCOL asset transfer and avoided procurement",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "LEBANON_TRANSITION"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C12"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P001"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "UNIFIL_UNSCOL"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE03",
+      "roadmap_case_id": "C03",
+      "title": "BINUH–UNSOH aviation and broader support",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "HAITI_SUPPORT"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P002"
+        },
+        {
+          "path": "data/transaction_validation_cases.csv",
+          "key": "case_id",
+          "value": "BINUH_UNSOH"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE04",
+      "roadmap_case_id": "C04",
+      "title": "UNISFA translation routing",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "UNISFA_LANGUAGE"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C19"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P004"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE05",
+      "roadmap_case_id": "C05",
+      "title": "UNISFA stewardship of transferred MINUSMA assets",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "UNISFA_ASSETS"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C19"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P005"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE06",
+      "roadmap_case_id": "C06",
+      "title": "UNSOS contractor fuel loss recovery",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "UNSOS_RECOVERY"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C08"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P007"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE07",
+      "roadmap_case_id": "C07",
+      "title": "MONUSCO medical-insurance integrity",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "MONUSCO_CLAIMS"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P008"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE08",
+      "roadmap_case_id": "C08",
+      "title": "UNMISS approved post removals and output continuity",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "UNMISS_POST_BASELINE"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C15"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P009"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE09",
+      "roadmap_case_id": "C09",
+      "title": "Training administration and procurement",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "TRAINING_DELIVERY",
+        "HQ_SHARED_SUPPORT"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C04"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P014"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U05"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE10",
+      "roadmap_case_id": "C10",
+      "title": "DPPA–DPO regional political-operational functions",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "REGIONAL_WORKFLOW",
+        "HQ_SHARED_SUPPORT"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C01"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P013"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U01"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE11",
+      "roadmap_case_id": "C11",
+      "title": "UNOWAS–UNOCA factual support production",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "REGIONAL_WORKFLOW",
+        "REPORT_PRODUCTION"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C09"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C02"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P011"
+        },
+        {
+          "path": "data/census_v8/pilot_summary.json",
+          "key": null,
+          "value": null
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE12",
+      "roadmap_case_id": "C12",
+      "title": "Cyprus factual support production",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "REPORT_PRODUCTION"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C02"
+        },
+        {
+          "path": "data/census_v9/pilot_summary.json",
+          "key": null,
+          "value": null
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE13",
+      "roadmap_case_id": "C13",
+      "title": "UNIFIL transition residual costs and liabilities",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "LEBANON_TRANSITION"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C12"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C07"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P001"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    },
+    {
+      "intervention_id": "CASE14",
+      "roadmap_case_id": "C14",
+      "title": "Existing joint structures and retained work",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "state_history": [],
+      "financial_validation": "NOT_PERFORMED",
+      "benefit_amount": null,
+      "benefit_status": "NOT_ESTIMATED",
+      "cost_objects": [],
+      "cost_object_identification": "REQUIRES_UNIQUE_RECORDS",
+      "benefit_pool_ids": [
+        "HQ_SHARED_SUPPORT",
+        "REGIONAL_WORKFLOW",
+        "TRAINING_DELIVERY"
+      ],
+      "source_refs": [
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C16"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C03"
+        },
+        {
+          "path": "data/candidate_validation.csv",
+          "key": "candidate_id",
+          "value": "C18"
+        },
+        {
+          "path": "data/public_opportunity_register.csv",
+          "key": "opportunity_id",
+          "value": "P010"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U02"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U03"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U09"
+        },
+        {
+          "path": "data/un80_register.csv",
+          "key": "reform_id",
+          "value": "U10"
+        }
+      ],
+      "institutional_authorization": "NOT_ESTABLISHED_BY_REPOSITORY",
+      "next_gate": "Define comparison and obtain authenticated workload, full-system costs, authority and service safeguards"
+    }
+  ],
+  "source_population_counts": {
+    "legacy_candidates": 19,
+    "umbrella_rows": 14,
+    "mission_child_rows": 9,
+    "public_opportunities": 18,
+    "roadmap_cases": 14
+  },
+  "aggregation_allowed": false,
+  "portfolio_benefit_total": null,
+  "limitations": [
+    "Legacy C identifiers, roadmap C identifiers and CASE identifiers are separate namespaces.",
+    "Historical rank/exposure is preserved as a source snapshot, never promoted to benefit.",
+    "Cases split and cross-link legacy candidates; counts across populations must not be added.",
+    "No internal records, approvals or validated cost objects have been supplied."
+  ]
+}

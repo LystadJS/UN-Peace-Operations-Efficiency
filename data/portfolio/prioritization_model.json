@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "design_task": "P13",
+  "status": "RESEARCH_TRIAGE_DESIGN_NOT_EMPIRICAL_RANKING",
+  "purpose": "Prioritize evidence collection among eligible bounded cases; cannot approve implementation or certify benefits.",
+  "criteria": [
+    "evidence_readiness",
+    "operational_importance",
+    "reform_relevance",
+    "feasibility",
+    "measurement_value"
+  ],
+  "criterion_definitions": {
+    "evidence_readiness": "Availability and usability of the minimum required records; distinguish possession from authentication and completeness.",
+    "operational_importance": "Consequences for required mandate outputs, safety, readiness and service continuity within a defined work slice.",
+    "reform_relevance": "Specificity and strength of the documented link to an applicable adopted provision; proposals remain distinguishable.",
+    "feasibility": "Practical ability to obtain evidence and evaluate a reversible alternative, including owner acceptance, burden and constraints.",
+    "measurement_value": "Ability of the proposed measurement to resolve a consequential decision uncertainty beyond existing evidence."
+  },
+  "criterion_domain": "Finite decimal string from 0 through 1 with case-specific rubric/source receipt. No default value for missing evidence.",
+  "weights": null,
+  "weight_policy": "An explicitly reviewed vector must include every criterion, nonnegative decimal weights summing exactly to one, with weight_receipt. No approved weights currently exist.",
+  "illustrative_only": true,
+  "formula": "Sum weight times declared normalized criterion value after all guards pass.",
+  "critical_gate_rule": "FAIL blocks scoring; missing, UNKNOWN or unauthenticated guard declarations make case UNSCORABLE; money never offsets safeguard failure.",
+  "guard_dimensions": [
+    "mandate",
+    "safety",
+    "readiness",
+    "quality",
+    "timeliness",
+    "transition",
+    "work_transfer",
+    "evidence_authority"
+  ],
+  "pass_requirements": [
+    "evidence receipt",
+    "prospective threshold receipt",
+    "owner approval receipt"
+  ],
+  "not_applicable_requirements": [
+    "scope justification",
+    "reviewer acceptance receipt"
+  ],
+  "not_scoring_inputs": [
+    "Whole mission budget exposure",
+    "Unvalidated monetary opportunity amount",
+    "Counts of documentary appearances"
+  ],
+  "unknown_action": "UNSCORABLE",
+  "advancement_authority": "None; candidate advancement and institutional approval remain separate."
+}

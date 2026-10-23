@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build bounded reform views without promoting documentary evidence to outcomes."""
 import argparse
+import csv
 from collections import Counter
 import hashlib
 import json
@@ -9,7 +10,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = [f"data/reforms/{name}.json" for name in ("unga80_actions", "unga81_actions", "unga80_instruments", "unga81_instruments", "acabq_recommendations", "sg_proposals", "un80_arrangement_reconciliation")]
-INPUTS += ["data/portfolio/interventions.json", "data/reforms/compliance_statuses.json", "data/reforms/obligation_schema.json"]
+INPUTS += ["data/candidate_validation.csv", "data/reforms/compliance_statuses.json", "data/reforms/obligation_schema.json"]
 
 
 def tokens(text):
@@ -17,11 +18,12 @@ def tokens(text):
 
 
 def build(root=ROOT):
-    inputs = {path: json.loads((root / path).read_text()) for path in INPUTS}
+    inputs = {path: json.loads((root / path).read_text()) for path in INPUTS if path.endswith('.json')}
     hashes = {path: hashlib.sha256((root / path).read_bytes()).hexdigest() for path in INPUTS}
     obligations = [r for session in (80, 81) for r in inputs[f"data/reforms/unga{session}_actions.json"]["obligations"]]
     proposals = inputs["data/reforms/sg_proposals.json"]["records"]
-    candidates = inputs["data/portfolio/interventions.json"]["interventions"]
+    with (root/'data/candidate_validation.csv').open(newline='') as handle:
+        candidates = list(csv.DictReader(handle))
     common = {"schema_version": 1, "evidence_cutoff": "2026-10-23", "source_hashes": hashes,
               "scope": "Selected extracted provisions and retained proposal/advice records, not exhaustive session or mission compliance coverage.",
               "limitations": ["Selected provisions are not automatically mandatory requirements applicable to every peace operation.", "Documentary adoption and repository publication do not establish implementation, owner approval or financial benefit."]}
@@ -31,9 +33,9 @@ def build(root=ROOT):
         terms = tokens(" ".join([provision["action"], provision["addressee"], *provision["entities"], *provision["functions"]]))
         links = []
         for candidate in candidates:
-            overlap = sorted(terms & tokens(candidate["title"]))
+            overlap = sorted(terms & tokens(candidate["name"]))
             if len(overlap) >= 2:
-                links.append({"intervention_id": candidate["intervention_id"], "matching_terms": overlap, "link_status": "PRELIMINARY_TEXT_MATCH_NOT_APPLICABILITY", "applicability_review_receipt": None})
+                links.append({"candidate_id": candidate["candidate_id"], "namespace": "LEGACY_CANDIDATE_VALIDATION_NOT_ROADMAP_CASE_ID", "source": "data/candidate_validation.csv", "matching_terms": overlap, "link_status": "PRELIMINARY_TEXT_MATCH_NOT_APPLICABILITY", "applicability_review_receipt": None})
         crosswalk.append({"obligation_id": row["obligation_id"], "instrument": row["document_symbol"], "source_locator": row["source"]["locator"],
             "operative_effect": provision["effect"], "addressee": provision["addressee"], "entities_as_extracted": provision["entities"],
             "functions_as_extracted": provision["functions"], "deadline": provision["deadline"], "deadline_basis": provision["deadline_basis"],

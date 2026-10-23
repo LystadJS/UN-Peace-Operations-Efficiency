@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "design_task": "P09",
+  "status": "PROSPECTIVE_METRIC_CATALOG",
+  "threshold_policy": "No universal operational targets. Applicable owner-approved floors, ceilings, margins and observation windows must be frozen before outcomes are inspected.",
+  "metrics": [
+    {
+      "id": "MANDATE_COVERAGE",
+      "dimension": "mandate",
+      "numerator": "Required outputs delivered to specification",
+      "denominator": "All applicable required outputs due",
+      "unit": "proportion",
+      "aggregation": "Output-level coverage with critical exceptions retained",
+      "direction": "higher",
+      "limits": "Counts do not establish impact; preserve language, geography, beneficiaries and independent control functions."
+    },
+    {
+      "id": "SAFETY_EXPOSURE",
+      "dimension": "safety",
+      "numerator": "Relevant incidents by severity and exposure type",
+      "denominator": "Comparable exposure units appropriate to service",
+      "unit": "case-specific rate",
+      "aggregation": "Report counts, exposure and severity separately",
+      "direction": "case-specific",
+      "limits": "No observed incident does not establish safety; dependence and reporting completeness matter."
+    },
+    {
+      "id": "READINESS_AVAILABILITY",
+      "dimension": "readiness",
+      "numerator": "Required capability available and serviceable",
+      "denominator": "Capability required for same demand and contingency floor",
+      "unit": "proportion plus critical availability",
+      "aggregation": "Capability by location/time and surge reserve",
+      "direction": "higher",
+      "limits": "Low utilization does not establish removable reserve."
+    },
+    {
+      "id": "CRITICAL_ERROR_RATE",
+      "dimension": "quality",
+      "numerator": "Confirmed errors by severity, including failed tasks",
+      "denominator": "All eligible completed, failed and pending service events",
+      "unit": "case-specific rate",
+      "aggregation": "Event-level severity and rework; independent operational units identified",
+      "direction": "lower",
+      "limits": "Do not remove failures or count repeated appearances as independent events."
+    },
+    {
+      "id": "TURNAROUND_DISTRIBUTION",
+      "dimension": "timeliness",
+      "numerator": "Elapsed service times including outstanding-event censoring",
+      "denominator": "All eligible ordinary and urgent requests",
+      "unit": "time",
+      "aggregation": "Distribution and mandatory deadline breaches; urgent events separate",
+      "direction": "lower",
+      "limits": "Mean alone can hide tails; backlog and censoring must remain visible."
+    },
+    {
+      "id": "HANDOVER_ACCEPTANCE",
+      "dimension": "transition",
+      "numerator": "Accepted tested dependencies with documented custody",
+      "denominator": "All required handover dependencies",
+      "unit": "proportion plus critical exceptions",
+      "aggregation": "Dependency-level acceptance before source capability removal",
+      "direction": "higher",
+      "limits": "Signed handover alone does not establish receiver performance."
+    },
+    {
+      "id": "NET_WORKLOAD",
+      "dimension": "work_transfer",
+      "numerator": "Source retained plus receiver added plus parallel, overtime and contractor effort",
+      "denominator": "Comparable completed service units at preserved quality",
+      "unit": "hours per service unit",
+      "aggregation": "Entities and work slices reconciled with full exception denominator",
+      "direction": "lower",
+      "limits": "Released hours are capacity; salary conversion does not demonstrate cash release."
+    },
+    {
+      "id": "EVIDENCE_COVERAGE",
+      "dimension": "evidence_authority",
+      "numerator": "Authenticated in-scope records with usable joins and authority receipts",
+      "denominator": "Declared eligible population including missing and conflicting records",
+      "unit": "proportion plus critical missing fields",
+      "aggregation": "Grain-specific coverage with missingness and selection mechanisms",
+      "direction": "higher",
+      "limits": "Complete rows do not prove factual truth, legal effect or causal identification."
+    }
+  ],
+  "required_case_fields": [
+    "metric_id",
+    "service_slice",
+    "eligible_population",
+    "baseline_version",
+    "period",
+    "unit",
+    "independent_units",
+    "dependency_structure",
+    "source_receipt",
+    "missingness",
+    "prospective_threshold",
+    "threshold_rationale",
+    "owner_approval_receipt",
+    "uncertainty_method",
+    "stop_rule",
+    "fallback"
+  ],
+  "universal_thresholds": null
+}

@@ -6,7 +6,7 @@
     {
       "candidate_id": "C02-UF01-RESEARCH",
       "version": "1.0",
-      "current_state": "SCREENING_CANDIDATE",
+      "current_state": "VALIDATION_READY",
       "claim_class": "NO_FINANCIAL_CLAIM",
       "savings_amount": null,
       "currency": null,
@@ -30,6 +30,53 @@
             "source_anchor": [
               "data/transaction_control_baseline.csv",
               "data/priority_cases/C02_public_evidence.json"
+            ]
+          }
+        },
+        {
+          "state": "VALIDATION_READY",
+          "recorded_at": "2026-10-23T19:03:04+00:00",
+          "evidence_cutoff": "2026-10-23",
+          "actor": "Codex / owner-authorized project research review",
+          "rationale": "Independent scoped review found all seven F03 research-design criteria met for the UF01 proposal-position child. This advances project research design only; access, owner acceptance, operational validation, financial validation and transfer authority remain absent.",
+          "validator_version": "1.0",
+          "checks": {
+            "bounded_intervention": true,
+            "owner_role_and_custodian": true,
+            "mandate_and_cost_perimeter": true,
+            "evidence_request": true,
+            "counterfactual_design": true,
+            "prospective_guardrails": true,
+            "nonadditivity_group": true
+          },
+          "evidence_receipts": {
+            "bounded_intervention": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "owner_role_and_custodian": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "mandate_and_cost_perimeter": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "evidence_request": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "counterfactual_design": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "prospective_guardrails": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
+            ],
+            "nonadditivity_group": [
+              "data/priority_cases/C02_UF01_readiness_review.json",
+              "data/priority_cases/C02_UF01_research_scope.json"
             ]
           }
         }

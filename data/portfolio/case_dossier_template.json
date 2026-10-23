@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "design_task": "P08",
+  "status": "UNPOPULATED_RESEARCH_TEMPLATE",
+  "case_id": null,
+  "version": null,
+  "current_state": "SCREENING_CANDIDATE",
+  "hypothesis": null,
+  "intervention": null,
+  "entities": [],
+  "mandate_sources": [],
+  "reform_obligation_ids": [],
+  "required_outputs": [],
+  "proposed_owner_role": null,
+  "accepted_owner": null,
+  "approval_receipts": [],
+  "evidence_cutoff": null,
+  "evidence_mode": null,
+  "source_receipts": [],
+  "datasets": [],
+  "cost_object_ids": [],
+  "benefit_pool_ids": [],
+  "nonadditivity_groups": [],
+  "counterfactual": {
+    "frozen": false,
+    "baseline_version": null,
+    "receipt": null,
+    "feasible": null,
+    "confounder_review_receipt": null,
+    "prebooked_included": null,
+    "prebooked_receipt": null
+  },
+  "baseline": null,
+  "intervention_scenario": null,
+  "guards": [
+    {
+      "dimension": "mandate",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "safety",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "readiness",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "quality",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "timeliness",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "transition",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "work_transfer",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    },
+    {
+      "dimension": "evidence_authority",
+      "status": "UNKNOWN",
+      "receipt": null,
+      "threshold_receipt": null,
+      "owner_approval_receipt": null,
+      "justification": null
+    }
+  ],
+  "benefit_effects": [],
+  "priority_inputs": {
+    "criteria": {
+      "evidence_readiness": null,
+      "operational_importance": null,
+      "reform_relevance": null,
+      "feasibility": null,
+      "measurement_value": null
+    },
+    "weights": null,
+    "weight_receipt": null
+  },
+  "minimum_evidence_request": null,
+  "missing_evidence": [],
+  "decision": {
+    "disposition": null,
+    "reviewer": null,
+    "receipt": null,
+    "limitations": []
+  },
+  "savings_amount": null,
+  "limitations": [
+    "An unpopulated dossier is not validation ready or operational authority.",
+    "Safe public receipts only; restricted raw records stay in approved storage.",
+    "Evaluation input uses intervention_scenario to avoid overloading the prose intervention field."
+  ]
+}

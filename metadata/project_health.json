@@ -30,6 +30,7 @@
     ".github/workflows/census_v7_recovery.yml": "1fadbbf90f47308250cf7807dcab3f84e3a4f691bddad1e87a4ae36783c40a1e",
     ".github/workflows/census_v7_release.yml": "4012fc215abfc37c26ecce5fead7d4f2bd8803f2194af37747da5d79d26e126d",
     ".github/workflows/deeper_official_archives_v4.yml": "7e47000c3bb8573cc3f4c90a0ee8ac574072edcdd5a2c154ccbd8ac21a5af370",
+    ".github/workflows/evidence_validation.yml": "884e11a8c8532fb6e0d64229e109dfbf419b87b8c0eb33d0787a5208552830c0",
     ".github/workflows/foundation_standards.yml": "8fd580e994ffff39fd4441e7a3da2fa810ca13f27d97289bc74e4545c05c1671",
     ".github/workflows/mission_archive_census.yml": "aa0a3bcf02497fa1c671347e7ef825fd30ca4e4b0deedad2941647f1be5fa1bf",
     ".github/workflows/owner_review_package.yml": "ef2ca16d3e8043d9f2662e27d6af940cbef405b9de1daf21c292daaeb93a2d36",

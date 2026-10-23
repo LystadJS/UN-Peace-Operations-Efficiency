@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "WAVE9-CONDITIONAL-REALIZATION-1",
+  "as_of": "2026-10-23",
+  "status": "BLOCKED_NO_APPROVED_INTERVENTIONS",
+  "approved_interventions": [],
+  "executions": [],
+  "template_is_not_authorization": true,
+  "institutional_approval_obtained": false,
+  "instantiate_only_when": "A specific intervention has documented competent institutional approval, accountable owner, IMPLEMENTATION_READY evidence, financial-validation history for savings claims, permitted records and accepted operational guardrails.",
+  "conditional_eight_step_template": [
+    {
+      "template_step": 1,
+      "phase": "CHARTER",
+      "required_work": "Approve a scoped intervention charter, competent authority, accountable owner, guardrails and stop authority.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 2,
+      "phase": "MEASUREMENT_REGISTER",
+      "required_work": "Predeclare service, finance, safety, quality, readiness and uncertainty measures with data handling.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 3,
+      "phase": "BASELINE_FREEZE",
+      "required_work": "Freeze authenticated feasible baseline including existing reforms and signed comparator/attribution rules.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 4,
+      "phase": "AUTHORIZED_EXECUTION",
+      "required_work": "Execute only the approved change in the permitted environment; preserve change log and rollback path.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 5,
+      "phase": "MEASURE_OUTCOMES",
+      "required_work": "Observe complete financial and operational outcomes over the predeclared window, including adverse results.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 6,
+      "phase": "TRANSFERRED_WORK_RECONCILIATION",
+      "required_work": "Reconcile provider, retained and downstream work, internal charge elimination and all transition/residual liabilities.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 7,
+      "phase": "INDEPENDENT_BENEFIT_REALIZATION",
+      "required_work": "Independently assess attribution, net financial effect and operational safeguards; recognize only eligible disjoint effects.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    },
+    {
+      "template_step": 8,
+      "phase": "SCALE_REVISE_RETAIN_ROLLBACK",
+      "required_work": "Competent owner decides scale, revise, retain current arrangement or rollback based on observed evidence.",
+      "status": "TEMPLATE_NOT_EXECUTED",
+      "required_approval_receipt": null,
+      "required_evidence_receipt": null,
+      "next_gate": "Previous step independently accepted and competent owner confirms this step may proceed."
+    }
+  ],
+  "stop_rule": "Stop or roll back under the named competent owner if predeclared safety, mandate, readiness or service thresholds fail; do not invent numeric thresholds without approved baselines.",
+  "completion_boundary": "Repository planning can complete; live implementation and realized-benefit assurance remain blocked until actual approvals and observations exist."
+}

@@ -1,0 +1,203 @@
+{
+  "case_id": "C10",
+  "title": "DPPA\u2013DPO regional political-operational functions",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained sources support a bounded validation question; complete operational/financial records, accountable owner confirmation and applicable authority are absent.",
+  "current_arrangement": "The retained budget narratives describe an existing shared regional political-operational structure and further consolidation. The DPO support-account slice is not the cost of the entire joint structure.",
+  "testable_mechanism": "Trace actual country/region task ownership, separately resourced preparation and clearance against the already shared structure; test whether a residual parallel task is substitutable rather than a needed political, military or mission-control contribution.",
+  "feasible_alternative_to_test": "Adjust a named intake, task-routing or factual-support step inside existing joint arrangements, conditional on owners confirming an unmet function; retain current structure where distinct substantive contributions are required.",
+  "safeguards": [
+    "Protect political independence, military/operational expertise and crisis-response coverage",
+    "Retain regional/country mandate distinctions and accountable substantive clearance",
+    "Do not create a parallel central repository or management layer before checking existing shared controls"
+  ],
+  "cost_perimeter_and_nonadditivity": "SA02 10,196.1 thousand is a DPO support-account portion, not whole-system joint-office cost or duplicative expenditure. Reconcile regular, support-account and extrabudgetary funds, unique staff assignments and mission inputs. Existing integration is the baseline; overlap with C14 cannot be added.",
+  "minimum_records": [
+    "Approved and actual organizational charts, country-desk assignments and unique post/fund roster",
+    "Current source-to-product workflow and task ownership on comparable live examples",
+    "Actual staff effort, shared products, queues, revisions, quality and crisis coverage",
+    "Full funding/cost-centre map and already implemented or budgeted reform changes"
+  ],
+  "custodian_roles_to_confirm": [
+    "DPPA and DPO regional leadership and shared desk managers",
+    "Departmental executive offices, HR and budget custodians",
+    "Receiving mission substantive and operational owners"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 2,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD01",
+        "deliverable": "Security Council reports",
+        "dppa_2027": "50",
+        "dpo_2027": "21",
+        "unit": "documents",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 Table5.I.5 page11",
+        "classification": "distinct_report_populations"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 3,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD02",
+        "deliverable": "GA reports versus Council letters",
+        "dppa_2027": "16",
+        "dpo_2027": "10",
+        "unit": "documents",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 Table5.I.5 page11",
+        "classification": "different_outputs"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 4,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD03",
+        "deliverable": "Security Council meetings",
+        "dppa_2027": "80",
+        "dpo_2027": "34",
+        "unit": "meetings",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 Table5.I.5 page11",
+        "classification": "shared_event_not_duplicate_work"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 5,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD04",
+        "deliverable": "Regional partners consulted",
+        "dppa_2027": ">24",
+        "dpo_2027": "5",
+        "unit": "organizations",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 Table5.I.5 page11",
+        "classification": "different_operational_roles"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 6,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD05",
+        "deliverable": "SPM mediation versus PK planning",
+        "dppa_2027": "~22",
+        "dpo_2027": "not_reported",
+        "unit": "missions",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 para5.I.16 page7",
+        "classification": "complementary_mandate_recipients"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 7,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD06",
+        "deliverable": "Political versus operational data systems",
+        "dppa_2027": "unquantified",
+        "dpo_2027": "unquantified",
+        "unit": "systems",
+        "source_a": "Section3 Table3.I.4 page16",
+        "source_b": "Section5 Table5.I.14 page27",
+        "classification": "different_platform_functions"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 8,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD07",
+        "deliverable": "Joint regional structure",
+        "dppa_2027": "documented",
+        "dpo_2027": "documented",
+        "unit": "organization",
+        "source_a": "Section3 paras3.I.7-11 pages4-6",
+        "source_b": "Section5 paras5.I.4-9 pages4-5",
+        "classification": "existing_collaborative_reform"
+      }
+    },
+    {
+      "path": "data/deliverable_dppa_dpo_regional.csv",
+      "csv_line": 9,
+      "sha256": "e07661167803fce445a6f64c0de813bc523926deac75de336fac13b3213fef55",
+      "source_snapshot": {
+        "id": "DD08",
+        "deliverable": "Council procedure and PK meetings",
+        "dppa_2027": "400",
+        "dpo_2027": "34",
+        "unit": "meetings",
+        "source_a": "Section3 Table3.I.7 page25",
+        "source_b": "Section5 Table5.I.5 page11",
+        "classification": "distinct_legal_functions"
+      }
+    },
+    {
+      "path": "data/un80_implementation_audit.csv",
+      "csv_line": 2,
+      "sha256": "d473a1079f67f06ed6cacdabdcadd1dc844de64167fa9f6cb5a75658e52a4cde",
+      "source_snapshot": {
+        "reform_id": "U01",
+        "reform_short_name": "regional_operational_structure",
+        "documentary_characterization": "documented_continuation_and_further_consolidation",
+        "implementation_status": "implementation_not_independently_verified",
+        "citation_anchor": "A/81/6 Sect3 3.I.11 p6; A/81/6 Sect5 5.I.9 p5; A/80/631 p44",
+        "cost_allocation_finding": "10196.1_thousand_support_account_DPO_slice_not_total",
+        "support_account_allocation_id": "SA02",
+        "verification_needed": "HR roster; shared organigrams; products; cost centre; 2025/26 revised baseline",
+        "risk_control": "Do not classify 10196.1 as duplicative cost",
+        "net_incremental_savings": "not_estimated"
+      }
+    },
+    {
+      "path": "data/support_account_units.csv",
+      "csv_line": 3,
+      "sha256": "17b743ebbfd13172a2eb3489fbc9e250318e080639159b3430db68864b30cc71",
+      "source_snapshot": {
+        "allocation_id": "SA02",
+        "parent_source": "A/80/631",
+        "fiscal_period": "2026-07-01/2027-06-30",
+        "funding_stream": "peacekeeping_support_account_other_assessed",
+        "allocation_scope": "Single regional political-operational structure",
+        "apportioned_2025_26_usd_thousands": "12519.6",
+        "proposed_2026_27_usd_thousands": "10196.1",
+        "change_usd_thousands": "-2323.5",
+        "page": "44",
+        "official_url": "https://digitallibrary.un.org/nanna/record/4109170/files/A_80_631-EN.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0#page=44",
+        "attribution_limit": "DPO support-account portion; NOT whole DPPA-DPO joint-structure cost"
+      }
+    }
+  ],
+  "case_specific_limit": "Shared attendance, reporting tables or related geography do not establish duplicate substantive work, duplicate funding or implemented savings.",
+  "handling": "No identifiable payroll, participant, medical, security, live transaction or restricted clearance records in this public dossier; use authorized restricted intake and approved safe derivatives.",
+  "reopen_condition": "Confirm owner and authority, obtain authenticated complete linked records, define comparator and guardrails, and adjudicate validation-ready evidence. A prepared request or software pass is insufficient."
+}

@@ -1,0 +1,355 @@
+{
+  "case_id": "C01",
+  "title": "RSCE charges, retained local work and service capacity",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Public proposal/report evidence supports an audit mechanism; complete paired operational and transaction records and accountable owner review are absent.",
+  "current_arrangement": "The retained corpus describes RSCE shared services and a planned Kuwait client transfer; it does not establish which local tasks actually ceased.",
+  "testable_mechanism": "Test whether client offices still perform separately resourced substitutable transaction processing after RSCE handover, or whether chargebacks fail to mirror provider credits.",
+  "feasible_alternative_to_test": "A service-line routing and charging redesign, conditional on measured local work and retained delegated decisions; retain the current routing if apparent duplication is a required control.",
+  "safeguards": [
+    "Payroll continuity, timely vendor payment and segregation of duties",
+    "Client accountability for delegated substantive decisions",
+    "Service quality, queue time and rework must not deteriorate"
+  ],
+  "cost_perimeter_and_nonadditivity": "Calendar-2027 SPM share3.2591m, fiscal2026/27 corporate45.9116m and mixed-client3.4432m share have different scopes. Never subtract them to allege overbilling. Eliminate internal allocations once and include retained local staff and provider cost.",
+  "minimum_records": [
+    "Client/service-line period allocation denominator and approval",
+    "Mirror client debit, RSCE credit, settlement and reversals",
+    "Unique post IDs, local retained tasks, payroll and transfers",
+    "Actual transaction volumes, handling times, queue/rework and SLA outcomes"
+  ],
+  "custodian_roles_to_confirm": [
+    "RSCE controller",
+    "Client mission finance and service-line managers",
+    "DOS HR and former Kuwait office closeout custodians"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 5,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC04",
+        "source_name": "A/81/6 (Sect. 3)/Add.1",
+        "exact_locator": "pp.13-15 paras51-55; p52 Table7",
+        "what_this_supports": "RSCE SPM 2027 share 3.2591m and Kuwait planned clients transfer",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.1",
+        "evidence_type": "SPM_budget_and_plan",
+        "limitations": "no_client_accounting",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 6,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC05",
+        "source_name": "A/C.5/80/20",
+        "exact_locator": "Annex p3 and footnote a",
+        "what_this_supports": "RSCE 2026/27 approved total $45.9116m and multi-entity $3.4432m share",
+        "source_url": "https://docs.un.org/en/A/C.5/80/20",
+        "evidence_type": "GA_approved_budget",
+        "limitations": "not_client_journals",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 7,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC06",
+        "source_name": "A/80/611",
+        "exact_locator": "paras54-58 p18",
+        "what_this_supports": "RSCE model: -25 payroll FTE; -10 other processing; +44 Kuwait clients; net +9",
+        "source_url": "https://digitallibrary.un.org/record/4106033",
+        "evidence_type": "budget_methodology_projection",
+        "limitations": "not_actual_FTE",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 8,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC07",
+        "source_name": "RSCE current site",
+        "exact_locator": "last updated 18 Aug 2026",
+        "what_this_supports": "RSCE current budget $45.91m and 364 posts",
+        "source_url": "https://www.unmissions.org/en/home-0/about-rsce",
+        "evidence_type": "official_website_reporting",
+        "limitations": "not_sla_or_chargeback",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 12,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC11",
+        "source_name": "RSCE finance and compliance page",
+        "exact_locator": "updated 30 July 2026",
+        "what_this_supports": "Service line reviews transactions and management reports",
+        "source_url": "https://rsce.unmissions.org/en/financial-services-and-compliance-monitoring-section",
+        "evidence_type": "internal_control_process_description",
+        "limitations": "no_underlying_transaction_reports",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 13,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC12",
+        "source_name": "A/80/643",
+        "exact_locator": "paras194-196 pp42-43",
+        "what_this_supports": "Kuwait location-independent client posts 82 proposed abolished; 11 extra UNMIK UNFICYP; 44 transactional and 1 management new at RSCE; 17 payroll posts transferred to DOS",
+        "source_url": "https://digitallibrary.un.org/record/4109171",
+        "evidence_type": "proposed_organizational_changes",
+        "limitations": "Not proof posts actually removed or unique payroll record",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 10,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "RS01",
+        "case_id": "RSCE",
+        "payer_or_source_entity": "SPM_client_entities",
+        "recipient_entity": "RSCE",
+        "object": "2027_SPM_RSEC_cost_share",
+        "published_amount_usd": "3259100",
+        "amount_category": "proposed_internal_allocation_not_savings",
+        "existing_efficiency_id": "RSCE_SPM_SHARE",
+        "evidence_anchor": "Add1 p52 Table7",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.1",
+        "implementation_evidence": "proposed_only",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 11,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "RS02",
+        "case_id": "RSCE",
+        "payer_or_source_entity": "SPM_client_entities",
+        "recipient_entity": "RSCE",
+        "object": "2026_SPM_approved_cost_share",
+        "published_amount_usd": "2323000",
+        "amount_category": "prior_approved_allocation_not_savings",
+        "existing_efficiency_id": "not_efficiency",
+        "evidence_anchor": "Add1 p32 Table4; p52 Table7",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.1",
+        "implementation_evidence": "approved_prior_budget",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 12,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "RS03",
+        "case_id": "RSCE",
+        "payer_or_source_entity": "RSCE_clients",
+        "recipient_entity": "RSCE",
+        "object": "2026_27_GA_approved_RSCE_total",
+        "published_amount_usd": "45911600",
+        "amount_category": "approved_corporate_total_not_savings",
+        "existing_efficiency_id": "not_efficiency",
+        "evidence_anchor": "A/C.5/80/20 Annex p3",
+        "source_url": "https://docs.un.org/en/A/C.5/80/20",
+        "implementation_evidence": "GA_approved",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 13,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "RS04",
+        "case_id": "RSCE",
+        "payer_or_source_entity": "SPM_and_observer_clients",
+        "recipient_entity": "RSCE",
+        "object": "2026_27_mixed_client_share_SPM_UNTSO_UNMOGIP",
+        "published_amount_usd": "3443200",
+        "amount_category": "footnote_share_mixed_scope_not_savings",
+        "existing_efficiency_id": "not_efficiency",
+        "evidence_anchor": "A/C.5/80/20 p3 footnote a",
+        "source_url": "https://docs.un.org/en/A/C.5/80/20",
+        "implementation_evidence": "GA_approved",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 13,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ12",
+        "case_id": "RSCE",
+        "evidence_package": "Kuwait_shared_office_closeout",
+        "minimum_keys_or_fields": "old_client;service_line;last_invoice;balances;post_ids;handover_date",
+        "responsible_custodian_to_confirm": "DOS RSCE and Kuwait liquidation team",
+        "linked_controls": "RS01;RS02",
+        "purpose": "Confirm prior shared-service unit ceased charging",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 14,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ13",
+        "case_id": "RSCE",
+        "evidence_package": "client_cost_allocation_schedule",
+        "minimum_keys_or_fields": "client_id;service_line;period;rate;denominator;allocation;approval",
+        "responsible_custodian_to_confirm": "RSCE budget and finance",
+        "linked_controls": "RS01;RS02;RS04",
+        "purpose": "Recompute share with correct denominator and period",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 15,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ14",
+        "case_id": "RSCE",
+        "evidence_package": "client_vs_RSCE_GL_AP_AR",
+        "minimum_keys_or_fields": "allocation_id;RSCE_credit;client_debit;posting_date;period;invoice;settlement;amount",
+        "responsible_custodian_to_confirm": "RSCE and each SPM finance office",
+        "linked_controls": "RS01;RS03;RS04",
+        "purpose": "Identify duplicate or unmatched charges",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 16,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ15",
+        "case_id": "RSCE",
+        "evidence_package": "actual_transaction_volume_and_FTE",
+        "minimum_keys_or_fields": "service_line;projected_volume;actual_volume;time_per_case;FTE;waiting_days;quality",
+        "responsible_custodian_to_confirm": "RSCE service line managers",
+        "linked_controls": "RS03",
+        "purpose": "Compare A/80/611 staffing model with actual workloads",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 17,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ16",
+        "case_id": "RSCE",
+        "evidence_package": "workforce_post_unique_identifiers",
+        "minimum_keys_or_fields": "post_id;old_unit;new_unit;abolished;approved_date;actual_date;fund;payroll",
+        "responsible_custodian_to_confirm": "DOS and RSCE HR",
+        "linked_controls": "RS03",
+        "purpose": "Audit payroll -25 FTE, other efficiencies -10, transferred clients +44; net +9",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 18,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ17",
+        "case_id": "RSCE",
+        "evidence_package": "approved_finance_allocation_perimeters",
+        "minimum_keys_or_fields": "FY2026_27_total;mixed_share_3443200;2027_calendar_SPM_share_3259100;observer_mission_share",
+        "responsible_custodian_to_confirm": "RSCE controller",
+        "linked_controls": "RS01;RS03;RS04",
+        "purpose": "Separate 2027 SPM proposed and 2026/27 adopted mixed client financing",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 19,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ18",
+        "case_id": "RSCE",
+        "evidence_package": "KJSO_RSCEx_DOS_post_number_match",
+        "minimum_keys_or_fields": "post_id;former_unit;approved_table;receiving_unit;salary_fund;effective_date;last_payroll;employment_status",
+        "responsible_custodian_to_confirm": "DOS_RSCEx_Kuwait_HR_finance",
+        "linked_controls": "RS03",
+        "purpose": "Reconcile 82 client post abolishments 11 extra UNMIK/UNFICYP proposals and 17 RSCE payroll transfers without mixing model FTE",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_validation_cases.csv",
+      "csv_line": 4,
+      "sha256": "d30788f7556ae0982b5f6ffdb04bc506d30059638d3691167ac0496c06725afc",
+      "source_snapshot": {
+        "case_id": "RSCE",
+        "already_budgeted_2027_efficiency_usd": "not_an_efficiency",
+        "other_proposed_allocation_or_payment_usd": "3259100",
+        "implementation_status": "RSCE exists; Kuwait Joint Support Office transfer planned 1 Jul 2026",
+        "transaction_evidence_gap": "No client-by-client allocation voucher, transaction volumes or chargeback settlements",
+        "acceptance_test": "Match client charge to RSCE credits and approved shared-service cost base",
+        "cross_pillar_link": "SPML15",
+        "verified_invoice_asset_or_charge_pairs": "0",
+        "additional_addressable_usd": "not_estimated",
+        "net_realized_savings_usd": "not_estimated"
+      }
+    }
+  ],
+  "case_specific_limit": "Modeled -25 payroll FTE, -10 other processing, +44 client workload and net+9 are not observed post abolishments; 82 proposed client posts,17 payroll transfers and11 additional proposals require unique-ID reconciliation.",
+  "handling": "No live transactions, payroll identifiers or medical/security-sensitive records may be committed to this public dossier; use approved restricted intake.",
+  "reopen_condition": "Authorized complete linked records and confirmed accountable owner permit validation-ready review; do not infer readiness from a draft evidence request."
+}

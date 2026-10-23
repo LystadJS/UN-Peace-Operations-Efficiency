@@ -18,7 +18,7 @@
   },
   "public_evidence": {
     "path": "data/priority_cases/C01_public_evidence.json",
-    "sha256": "f3113dfa037e1be3886dba889663f5f7634654082cf3d521a5f7bdea65e0f50e",
+    "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
     "claim_refs": [
       "C01-PUB-01",
       "C01-PUB-03"

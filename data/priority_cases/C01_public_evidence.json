@@ -14,7 +14,7 @@
     "financial_validation": "NOT_PERFORMED",
     "benefit_amount": null
   },
-  "retrieval_policy": "Indexed official-source extracts support documentary reporting only. Direct access failed for the cited pages/PDFs; no raw PDF, checksum or independent operational authentication is claimed.",
+  "retrieval_policy": "Official final A/RES/80/273 text was opened through the registry View PDF link and selected provisions authenticated. Management reports and proposal extracts remain indexed-only with direct access failures. No raw PDF bytes or file checksum is claimed.",
   "sources": [
     {
       "source_id": "C01-PUB-S01",
@@ -105,6 +105,31 @@
       "locator": "Final operative financing provisions required; official static index identifies candidate instrument",
       "captured_file": null,
       "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S09",
+      "url": "https://mandates.un.org/mandate/A/RES/80/273",
+      "symbol": "A/RES/80/273",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_REGISTRY_TEXT_OPENED_VIA_SEARCH_RESULT",
+      "authority_class": "OFFICIAL_OPERATIVE_REDISPLAY",
+      "locator": "Operative paragraphs3,6,7(a–c) and View PDF link",
+      "captured_file": null,
+      "sha256": null
+    },
+    {
+      "source_id": "C01-PUB-S10",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F273&t=pdf",
+      "symbol": "A/RES/80/273",
+      "adopted_on": "2026-06-30",
+      "distributed_on": "2026-07-01",
+      "retrieved_on": "2026-10-23",
+      "retrieval_status": "OFFICIAL_FINAL_PDF_TEXT_OPENED_VIA_REGISTRY_LINK",
+      "authority_class": "GA_ADOPTED_FINAL_TEXT",
+      "locator": "Page1 adoption header/OP3/footnote2;page2 OP6–7 and terminal94thplenary adoption record",
+      "verification_scope": "Document identity, adoption header/terminal record and selected financing/incorporation provisions; not verification of implementation or all incorporated advice.",
+      "captured_file": null,
+      "sha256": null
     }
   ],
   "claims": [
@@ -183,31 +208,47 @@
     {
       "claim_id": "C01-PUB-06",
       "source_refs": [
-        "C01-PUB-S05",
-        "C01-PUB-S08"
+        "C01-PUB-S09",
+        "C01-PUB-S10"
       ],
-      "finding": "The official static index maps RSCE financing to resolution80/273 and records the approved-resources note A/C.5/80/20 as taken note of.",
-      "evidence_status": "INDEX_ONLY_FINAL_TEXT_UNVERIFIED",
-      "effect_on_case": "Provides an adoption-text retrieval lead; no operative requirement or exact amount is promoted from this index.",
+      "finding": "Final resolution80/273, adopted30June2026 at the94thplenary, approves USD45,911,600 maintenance for1July2026–30June2027 in OP6. OP3 endorses the related ACABQ report identified as A/80/604/Add.4 in footnote2.",
+      "evidence_status": "ADOPTED_FINAL_TEXT_SELECTED_PROVISIONS_AUTHENTICATED",
+      "effect_on_case": "Resolves the exact fiscal maintenance approval and final instrument anchor. Incorporated recommendation applicability still requires the referenced advice text.",
       "not_established": [
-        "Final operative provisions",
-        "Exact financing appropriation from final text",
-        "All applicable mandates or incorporated advice"
+        "Actual expenditure or filled posts",
+        "Implementation of incorporated advice",
+        "Whole-system savings",
+        "Complete mandate/amendment review"
       ]
     },
     {
       "claim_id": "C01-PUB-07",
       "source_refs": [
-        "C01-PUB-S06",
+        "C01-PUB-S10",
         "C01-PUB-S07"
       ],
-      "finding": "Exact fiscal2026/27 total $45.9116million, mixed-client share $3.4432million and calendar2027 SPM proposal share $3.2591million remain retained-source claims, not newly authenticated amounts.",
-      "evidence_status": "RETAINED_NOT_FRESHLY_REVERIFIED",
-      "effect_on_case": "Keep period/client/fund perimeters separate; do not subtract the shares to infer overbilling.",
+      "finding": "Final OP7(a) assigns USD42,468,400 to active client peacekeeping budgets; OP7(b) assigns USD3,443,200 to specified mixed clients subject to approval in the2027programmebudget context. OP7(c) identifies USD5,157,200 staff-assessment income offsetting7(a). The separate calendar2027SPM USD3,259,100 remains retained and not freshly authenticated.",
+      "evidence_status": "FINAL_TEXT_FISCAL_COMPONENTS_VERIFIED_CALENDAR_PROPOSAL_RETAINED",
+      "effect_on_case": "FY components reconcile45,911,600=42,468,400+3,443,200; staff assessment is an offset, not another additive requirement. Conditional mixed-client financing is not identical to a calendar2027SPM appropriation.",
       "not_established": [
-        "Client-level excess charge",
-        "Like-for-like denominator",
-        "Comparable paid cost"
+        "Client-level paid excess or duplicate charge",
+        "Final calendar2027programmebudget disposition",
+        "Same-period/client/fund comparability",
+        "External net-cost effect"
+      ]
+    },
+    {
+      "claim_id": "C01-PUB-08",
+      "source_refs": [
+        "C01-PUB-S10"
+      ],
+      "finding": "The mixed-client financing clause separately names political-affairs clients and observer operations and preserves a further programme-budget approval condition.",
+      "evidence_status": "ADOPTED_FINAL_TEXT_CONDITIONAL_FINANCING_PROVISION_AUTHENTICATED",
+      "effect_on_case": "Audit the specified entity/period/fund allocation boundary and approval condition before testing client-level charges.",
+      "not_established": [
+        "Automatic unconditional calendar2027approval",
+        "A common denominator for all RSCEclients",
+        "Actual allocation vouchers or payments"
       ]
     }
   ],
@@ -223,24 +264,13 @@
       "description": "Dated extracts refer to April client assumption, July formal function handover,32 entities and16 client missions. Different rollout milestones or population grains may explain these statements; no contradiction or single denominator is adjudicated.",
       "minimum_resolution": "Dated service-line/client handover schedule, client roster and effective service commencement dates; official clarification of mission versus entity counts.",
       "conclusion_blocked": "Current complete service population and transfer exposure."
-    },
-    {
-      "discrepancy_id": "C01-PUB-D02",
-      "kind": "OFFICIAL_INDEX_ROW_INCONSISTENCY",
-      "source_refs": [
-        "C01-PUB-S05",
-        "C01-PUB-S08"
-      ],
-      "description": "Search extracts of the www and static official Fifth Committee indexes displayed inconsistent nearby agenda148 row assignments. The static extract identifies80/273 for RSCE; final resolution text was unavailable.",
-      "minimum_resolution": "Retrieve final80/273 and plenary adoption record; inspect original table rows rather than infer operative effect from the index.",
-      "conclusion_blocked": "Final operative authority and exact appropriated amount."
     }
   ],
   "next_bounded_scope": {
     "recommended_research_slice": "One defined RSCE client/service line across the handover boundary, selected after custodian confirms usable linked records.",
     "public_work_remaining": [
-      "Authenticate final80/273 and exact approved-resource note",
-      "Retrieve complete2027 SPM proposal table",
+      "Review incorporated A/80/604/Add.4 recommendations and case-specific applicability",
+      "Retrieve complete2027SPMproposal table and applicable final disposition",
       "Reconcile dated client/transfer descriptions without inferring a common denominator"
     ],
     "minimum_controlled_records": [
@@ -259,5 +289,19 @@
     "operational_activation_authorized": false,
     "financial_finding_allowed": false
   },
-  "decision_boundary": "A public management handover report improves the research baseline but does not advance candidate state or validate waste, duplication, capacity gain, recovery, cost avoidance or savings."
+  "decision_boundary": "A public management handover report improves the research baseline but does not advance candidate state or validate waste, duplication, capacity gain, recovery, cost avoidance or savings.",
+  "resolved_discrepancies": [
+    {
+      "discrepancy_id": "C01-PUB-D02",
+      "kind": "INDEX_ANCHOR_RESOLVED_BY_FINAL_TEXT",
+      "source_refs": [
+        "C01-PUB-S05",
+        "C01-PUB-S10"
+      ],
+      "description": "Search extracts of the www and static official Fifth Committee indexes displayed inconsistent nearby agenda148 row assignments. The static extract identifies80/273 for RSCE; final resolution text was unavailable.",
+      "minimum_resolution": "Retrieve final80/273 and plenary adoption record; inspect original table rows rather than infer operative effect from the index.",
+      "conclusion_blocked": null,
+      "resolution": "Final80/273 adoption header and terminal record establish the controlling financing instrument and exact selected provisions. Inconsistent nearby search-index rows are not used for operative interpretation."
+    }
+  ]
 }

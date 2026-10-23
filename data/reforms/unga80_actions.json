@@ -708,7 +708,10 @@
         "period": null,
         "deadline": null,
         "deadline_basis": null,
-        "conditions": [],
+        "conditions": [
+          "Applies to all new and renewing mandates.",
+          "Three-to-five-year review cycles are encouraged, not an imposed universal cycle."
+        ],
         "effect": "DIRECTION"
       },
       "competence": {
@@ -3628,8 +3631,10 @@
         ],
         "period": null,
         "deadline": null,
-        "deadline_basis": null,
-        "conditions": [],
+        "deadline_basis": "OP86: in the Secretary-General's next budget report; no exact calendar date inferred.",
+        "conditions": [
+          "Present further options, including enhanced common administrative platforms, in the next budget report."
+        ],
         "effect": "REQUEST"
       },
       "competence": {

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "evidence_cutoff": "2026-10-23",
   "source_hashes": {
-    "data/reforms/unga80_actions.json": "5493841ed60ba9ea5cea21bb67169b7d8a53ea2cc7ebd2f3312da9590cee03d5",
+    "data/reforms/unga80_actions.json": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
     "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
     "data/reforms/unga80_instruments.json": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
     "data/reforms/unga81_instruments.json": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",

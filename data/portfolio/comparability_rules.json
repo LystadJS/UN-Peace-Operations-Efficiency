@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "design_task": "P10",
+  "status": "PROSPECTIVE_COMPARABILITY_CONTRACT",
+  "equal_fields": [
+    "period_start",
+    "period_end",
+    "currency",
+    "unit",
+    "financial_status",
+    "price_basis",
+    "cost_view",
+    "service_definition",
+    "required_output"
+  ],
+  "set_equal_fields": [
+    "entity_scope"
+  ],
+  "required_adjustment_receipts": [
+    "demand",
+    "security_conditions",
+    "geographic_coverage",
+    "language_coverage",
+    "quality",
+    "surge_reserve",
+    "mandate_change",
+    "vacancies",
+    "inflation",
+    "exchange_rates"
+  ],
+  "rule": "The bounded calculator requires exact frame alignment. Perform and document supported bridges upstream; a comparison note alone never authorizes subtraction of unequal frames.",
+  "prohibited_shortcuts": [
+    "Uniform prorating between calendar and July-June budgets without service-level evidence.",
+    "Treating approved/requested/expended/paid values as equivalent.",
+    "Treating closure or removed mandate output as efficiency.",
+    "Converting hours to cash release without executable financial evidence.",
+    "Treating internal reimbursement as external system cost.",
+    "Treating correlated appearances or paragraphs as independent operational trials."
+  ],
+  "adjustment_requirements": [
+    "Frozen transformation and source versions.",
+    "Source and target units, time and populations.",
+    "Effect on required output and residual uncertainty.",
+    "Case-specific reviewer receipt."
+  ],
+  "failure_action": "WITHHOLD_NET_COMPARISON"
+}

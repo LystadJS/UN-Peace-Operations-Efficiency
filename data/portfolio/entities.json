@@ -1,0 +1,4226 @@
+{
+  "schema_version": 1,
+  "task_id": "P01",
+  "identity_version": "P01-1.0",
+  "evidence_cutoff": "2026-10-15",
+  "lifecycle_as_of": null,
+  "identity_rule": "Stable source keys; exact reviewed aliases only. Identity does not establish legal or operational status.",
+  "sources": [
+    {
+      "path": "data/spm_2027_mission_budget.csv",
+      "sha256": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
+      "rows": 36,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/ga_approved_all_missions.csv",
+      "sha256": "6f3fe9d9f6d31b0dd0f26586017a5e1dae8379dec864e70d2a848e2423ecaf3c",
+      "rows": 11,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/mission_budget_register.csv",
+      "sha256": "2d663b0cccd3a448cb8bd440c9feebec7d521b423d3626507e0b22ecf167d28e",
+      "rows": 6,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/ga_mission_reconciliation.csv",
+      "sha256": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+      "rows": 6,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/functional_inventory.csv",
+      "sha256": "f881ba3b226423976eb8933be025b41b2282299bdbe64a157b4cd9fa43cee180",
+      "rows": 59,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/support_account_units.csv",
+      "sha256": "17b743ebbfd13172a2eb3489fbc9e250318e080639159b3430db68864b30cc71",
+      "rows": 5,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "rows": 12,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "rows": 15,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "rows": 18,
+      "evidence_cutoff": "2026-10-15",
+      "cutoff_basis": "retained project baseline; not freshly verified"
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "UNPO-ALLOCATION-SA01",
+      "display_name": "DPO office of USG",
+      "entity_type": "COMPOSITE_BUDGET_ALLOCATION_NOT_ORGANIZATION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/support_account_units.csv",
+          "locator": "CSV row 2; allocation_id=SA01"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-ALLOCATION-SA02",
+      "display_name": "Single regional political-operational structure",
+      "entity_type": "COMPOSITE_BUDGET_ALLOCATION_NOT_ORGANIZATION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/support_account_units.csv",
+          "locator": "CSV row 3; allocation_id=SA02"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-ALLOCATION-SA03",
+      "display_name": "Office of Military Affairs",
+      "entity_type": "COMPOSITE_BUDGET_ALLOCATION_NOT_ORGANIZATION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/support_account_units.csv",
+          "locator": "CSV row 4; allocation_id=SA03"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-ALLOCATION-SA04",
+      "display_name": "Office for Mine Action and Police AND Peacebuilding and Peace Support Office",
+      "entity_type": "COMPOSITE_BUDGET_ALLOCATION_NOT_ORGANIZATION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/support_account_units.csv",
+          "locator": "CSV row 5; allocation_id=SA04"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-ALLOCATION-SA05",
+      "display_name": "Policy Evaluation and Training Division",
+      "entity_type": "COMPOSITE_BUDGET_ALLOCATION_NOT_ORGANIZATION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/support_account_units.csv",
+          "locator": "CSV row 6; allocation_id=SA05"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-DOS",
+      "display_name": "Department of Operational Support",
+      "entity_type": "DEPARTMENT",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/transaction_evidence_requests.csv",
+          "locator": "request_id=REQ12; request_id=REQ16; proposed custodian requires confirmation"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-DPO",
+      "display_name": "Department of Peace Operations",
+      "entity_type": "DEPARTMENT",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 31; function_id=G01"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 32; function_id=G02"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 33; function_id=G03"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 34; function_id=G04"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 35; function_id=G05"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 36; function_id=G06"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 37; function_id=G07"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 38; function_id=G08"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 39; function_id=G09"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 40; function_id=G10"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 41; function_id=G11"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 42; function_id=G12"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 43; function_id=G13"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 44; function_id=G14"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 45; function_id=G15"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 46; function_id=G16"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 47; function_id=G17"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 48; function_id=G18"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 49; function_id=G19"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 50; function_id=G20"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 51; function_id=G21"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 52; function_id=G22"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 53; function_id=G23"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 54; function_id=G24"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 55; function_id=G25"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 56; function_id=G26"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 57; function_id=G27"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 58; function_id=G28"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 59; function_id=G29"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 60; function_id=G30"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-DPPA",
+      "display_name": "Department of Political and Peacebuilding Affairs",
+      "entity_type": "DEPARTMENT",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 2; function_id=F01"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 3; function_id=F02"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 4; function_id=F03"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 5; function_id=F04"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 6; function_id=F05"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 7; function_id=F06"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 8; function_id=F07"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 9; function_id=F08"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 10; function_id=F09"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 11; function_id=F10"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 12; function_id=F11"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 13; function_id=F12"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 14; function_id=F13"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 15; function_id=F14"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 16; function_id=F15"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 17; function_id=F16"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 18; function_id=F17"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 19; function_id=F18"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 20; function_id=F19"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 21; function_id=F20"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 22; function_id=F21"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 23; function_id=F22"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 24; function_id=F23"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 25; function_id=F24"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 26; function_id=F25"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 27; function_id=F26"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 28; function_id=F27"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 29; function_id=F28"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 30; function_id=F29"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-MINURSO",
+      "display_name": "MINURSO",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 2; mission_id=MINURSO"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-MINUSCA",
+      "display_name": "MINUSCA",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 3; mission_id=MINUSCA"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 2; mission_id=MINUSCA"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 3; mission_id=MINUSCA"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-MINUSMA",
+      "display_name": "MINUSMA",
+      "entity_type": "HISTORICAL_MISSION_REFERENCE",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_adopted_directives.csv",
+          "locator": "directive_id=GA_D10; transferred assets"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-MONUSCO",
+      "display_name": "MONUSCO",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 4; mission_id=MONUSCO"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 3; mission_id=MONUSCO"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 4; mission_id=MONUSCO"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-RSCE",
+      "display_name": "Regional Service Centre in Entebbe",
+      "entity_type": "SHARED_SERVICE_CENTRE",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "locator": "recipient_entity=RSCE"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM001",
+      "display_name": "Good offices in Cyprus",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 2; spm_id=SPM001"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM002",
+      "display_name": "Special Adviser on Prevention of Genocide",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 3; spm_id=SPM002"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM003",
+      "display_name": "Personal Envoy for Western Sahara",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 4; spm_id=SPM003"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM004",
+      "display_name": "Implementation of Security Council resolution 1559 (2004)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 5; spm_id=SPM004"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM005",
+      "display_name": "UN Representative to Geneva International Discussions",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 6; spm_id=SPM005"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM006",
+      "display_name": "Special Envoy for Syria",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 7; spm_id=SPM006"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM007",
+      "display_name": "Special Envoy for Horn of Africa",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 8; spm_id=SPM007"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM008",
+      "display_name": "Special Envoy for Great Lakes Region",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 9; spm_id=SPM008"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM009",
+      "display_name": "Special Envoy for Yemen",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 10; spm_id=SPM009"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM010",
+      "display_name": "Special Envoy on Myanmar",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 11; spm_id=SPM010"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM011",
+      "display_name": "Personal Envoy for Sudan",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 12; spm_id=SPM011"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM012",
+      "display_name": "Senior Representative on Security Council resolution 2792 (2025)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 13; spm_id=SPM012"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM013",
+      "display_name": "Group of Experts on DRC",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 14; spm_id=SPM013"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM014",
+      "display_name": "Panel of Experts on Sudan",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 15; spm_id=SPM014"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM015",
+      "display_name": "Support to Security Council Committee 1718 (2006)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 16; spm_id=SPM015"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM016",
+      "display_name": "Panel of Experts on Libya",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 17; spm_id=SPM016"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM017",
+      "display_name": "Panel of Experts on Central African Republic (2745)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 18; spm_id=SPM017"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM018",
+      "display_name": "Panel of Experts on Yemen",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 19; spm_id=SPM018"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM019",
+      "display_name": "Panel of Experts on South Sudan",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 20; spm_id=SPM019"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM020",
+      "display_name": "Analytical Support and Sanctions Monitoring Team (1526/2253)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 21; spm_id=SPM020"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM021",
+      "display_name": "Ombudsperson for sanctions delisting (1904)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 22; spm_id=SPM021"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM022",
+      "display_name": "Panel of Experts pursuant to 2713 (2023)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 23; spm_id=SPM022"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM023",
+      "display_name": "Panel of Experts on Haiti",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 24; spm_id=SPM023"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM024",
+      "display_name": "Focal Point for Delisting",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 25; spm_id=SPM024"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM025",
+      "display_name": "Panel of Experts on Iran",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 26; spm_id=SPM025"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM026",
+      "display_name": "Support to Security Council Committee 1540 (2004)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 27; spm_id=SPM026"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM027",
+      "display_name": "Counter-Terrorism Committee Executive Directorate",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 28; spm_id=SPM027"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM028",
+      "display_name": "UNOWAS",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 29; spm_id=SPM028"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM029",
+      "display_name": "UN Regional Centre for Preventive Diplomacy in Central Asia",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 30; spm_id=SPM029"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM030",
+      "display_name": "Cameroon-Nigeria Mixed Commission",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 31; spm_id=SPM030"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM031",
+      "display_name": "UN Special Coordinator for Lebanon (UNSCOL)",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 32; spm_id=SPM031"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM032",
+      "display_name": "UNOCA",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 33; spm_id=SPM032"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM033",
+      "display_name": "UNSMIL",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 34; spm_id=SPM033"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM034",
+      "display_name": "UN Verification Mission in Colombia",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 35; spm_id=SPM034"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM035",
+      "display_name": "BINUH",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 36; spm_id=SPM035"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-SPM036",
+      "display_name": "UNAMA",
+      "entity_type": "SPECIAL_POLITICAL_MISSION_OR_MANDATE_BUDGET_ENTITY",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/spm_2027_mission_budget.csv",
+          "locator": "CSV row 37; spm_id=SPM036"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNDOF",
+      "display_name": "UNDOF",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 5; mission_id=UNDOF"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNFICYP",
+      "display_name": "UNFICYP",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 6; mission_id=UNFICYP"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIFIL",
+      "display_name": "UNIFIL",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 7; mission_id=UNIFIL"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 4; mission_id=UNIFIL"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 5; mission_id=UNIFIL"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNISFA",
+      "display_name": "UNISFA",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 8; mission_id=UNISFA"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 5; mission_id=UNISFA"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 2; mission_id=UNISFA"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-01BC51822F9C",
+      "display_name": "Subprogramme 1 regional coordination",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 26; function_id=F25"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "display_name": "Subprogramme 1 Operations",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 32; function_id=G02"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 33; function_id=G03"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 34; function_id=G04"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 57; function_id=G27"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-27D984C25D78",
+      "display_name": "Department cross-cutting functions",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 19; function_id=F18"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-28292DDEC625",
+      "display_name": "Subprogramme 2 Military",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 35; function_id=G05"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 36; function_id=G06"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 58; function_id=G28"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-28ABAD02D0D8",
+      "display_name": "Subprogramme 4 Decolonization",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 9; function_id=F08"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-3A8FC81EB33D",
+      "display_name": "Office for Coordination and Shared Services",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 50; function_id=G20"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-3BC79D643E98",
+      "display_name": "Subprogramme 1",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 27; function_id=F26"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-3D97B2B84382",
+      "display_name": "Subprogramme 7 Cooperation with the League of Arab States",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 16; function_id=F15"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-41EEE44693AF",
+      "display_name": "Office for Coordination and Shared Services",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 28; function_id=F27"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-4DE962538E38",
+      "display_name": "Office of Counter-Terrorism",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 30; function_id=F29"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-569EE0347FD5",
+      "display_name": "Executive direction and management",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 56; function_id=G26"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-594D80F12B86",
+      "display_name": "Department external coordination",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 60; function_id=G30"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-5FA3C2124610",
+      "display_name": "Department data and reporting",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 20; function_id=F19"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "display_name": "Peacebuilding and Peace Support Office",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 13; function_id=F12"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 14; function_id=F13"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 15; function_id=F14"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-619CF44C1F33",
+      "display_name": "Subprogramme 3 Security Council affairs",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 7; function_id=F06"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 8; function_id=F07"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-831CC129C337",
+      "display_name": "Joint Gender Unit",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 44; function_id=G14"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "display_name": "Subprogramme 3 Rule of law and security institutions",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 37; function_id=G07"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 38; function_id=G08"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 39; function_id=G09"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 40; function_id=G10"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 41; function_id=G11"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 51; function_id=G21"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-89DA44FA7834",
+      "display_name": "Cross-cutting policy and operations",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 47; function_id=G17"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-90400AD08FB6",
+      "display_name": "Subprogramme 1 Prevention management and resolution of conflicts",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 3; function_id=F02"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 4; function_id=F03"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 5; function_id=F04"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-94023E27473C",
+      "display_name": "Shared regional political-operational structure",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 2; function_id=F01"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-95CAAEAE7509",
+      "display_name": "Joint Gender Unit",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 17; function_id=F16"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-9BA09835DCA1",
+      "display_name": "Subprogramme 2 Electoral assistance",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 6; function_id=F05"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-9F37358EF895",
+      "display_name": "Department evaluation activities",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 25; function_id=F24"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-A24BF9ABB939",
+      "display_name": "Subprogramme 5 Question of Palestine",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 10; function_id=F09"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-A911A010DBCC",
+      "display_name": "Joint disability inclusion action plan",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 18; function_id=F17"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-AF973928745B",
+      "display_name": "United Nations Office to the African Union",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 21; function_id=F20"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 22; function_id=F21"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "display_name": "Subprogramme 4 Policy evaluation and training",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 42; function_id=G12"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 43; function_id=G13"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 46; function_id=G16"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 49; function_id=G19"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 52; function_id=G22"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 59; function_id=G29"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-C70227736642",
+      "display_name": "Partnership and training functions",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 48; function_id=G18"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-CAE5397A4FFA",
+      "display_name": "Office of United Nations Special Coordinator for Middle East Peace Process",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 23; function_id=F22"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-D1717F88BDA7",
+      "display_name": "Executive direction and management",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 24; function_id=F23"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-D698A8AD7DBF",
+      "display_name": "Shared regional political-operational structure",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 31; function_id=G01"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "display_name": "Subprogramme 6 Peacebuilding and Peace Support Office",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 11; function_id=F10"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 12; function_id=F11"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 29; function_id=F28"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNIT-F66AAF4C154A",
+      "display_name": "Joint disability inclusion action plan",
+      "entity_type": "SOURCE_FUNCTION_OR_UNIT_LABEL",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 45; function_id=G15"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNLB",
+      "display_name": "United Nations Logistics Base",
+      "entity_type": "LOGISTICS_BASE",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "ga_logistics_base_share_usd_thousands"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNMIK",
+      "display_name": "UNMIK",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 9; mission_id=UNMIK"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNMISS",
+      "display_name": "UNMISS",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 10; mission_id=UNMISS"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 6; mission_id=UNMISS"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 6; mission_id=UNMISS"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNMOGIP",
+      "display_name": "UN Military Observer Group in India and Pakistan",
+      "entity_type": "OBSERVER_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 55; function_id=G25"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNSOH",
+      "display_name": "UNSOH",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 11; mission_id=UNSOH"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNSOS",
+      "display_name": "UNSOS",
+      "entity_type": "PEACEKEEPING_OR_SUPPORT_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/ga_approved_all_missions.csv",
+          "locator": "CSV row 12; mission_id=UNSOS"
+        },
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "CSV row 7; mission_id=UNSOS"
+        },
+        {
+          "path": "data/ga_mission_reconciliation.csv",
+          "locator": "CSV row 7; mission_id=UNSOS"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNTMIS",
+      "display_name": "UNTMIS",
+      "entity_type": "MISSION_REFERENCE",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/mission_budget_register.csv",
+          "locator": "mission_id=UNSOS; interpretation_guardrail"
+        }
+      ]
+    },
+    {
+      "entity_id": "UNPO-UNTSO",
+      "display_name": "United Nations Truce Supervision Organization",
+      "entity_type": "OBSERVER_MISSION",
+      "lifecycle_status": "UNKNOWN_NOT_VERIFIED",
+      "mandate_status": "NOT_ADJUDICATED",
+      "implementation_status": "NOT_VERIFIED",
+      "source_references": [
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 53; function_id=G23"
+        },
+        {
+          "path": "data/functional_inventory.csv",
+          "locator": "CSV row 54; function_id=G24"
+        }
+      ]
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 10; function_id=F09",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 5 Question of Palestine",
+      "entity_id": "UNPO-UNIT-A24BF9ABB939",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 10; function_id=F09",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 11; function_id=F10",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 6 Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 11; function_id=F10",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 12; function_id=F11",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 6 Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 12; function_id=F11",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 13; function_id=F12",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 13; function_id=F12",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 14; function_id=F13",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 14; function_id=F13",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 15; function_id=F14",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 15; function_id=F14",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 16; function_id=F15",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 7 Cooperation with the League of Arab States",
+      "entity_id": "UNPO-UNIT-3D97B2B84382",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 16; function_id=F15",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 17; function_id=F16",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Joint Gender Unit",
+      "entity_id": "UNPO-UNIT-95CAAEAE7509",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 17; function_id=F16",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 18; function_id=F17",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Joint disability inclusion action plan",
+      "entity_id": "UNPO-UNIT-A911A010DBCC",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 18; function_id=F17",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 19; function_id=F18",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Department cross-cutting functions",
+      "entity_id": "UNPO-UNIT-27D984C25D78",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 19; function_id=F18",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 20; function_id=F19",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Department data and reporting",
+      "entity_id": "UNPO-UNIT-5FA3C2124610",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 20; function_id=F19",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 21; function_id=F20",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "United Nations Office to the African Union",
+      "entity_id": "UNPO-UNIT-AF973928745B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 21; function_id=F20",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 22; function_id=F21",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "United Nations Office to the African Union",
+      "entity_id": "UNPO-UNIT-AF973928745B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 22; function_id=F21",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 23; function_id=F22",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Office of United Nations Special Coordinator for Middle East Peace Process",
+      "entity_id": "UNPO-UNIT-CAE5397A4FFA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 23; function_id=F22",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 24; function_id=F23",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Executive direction and management",
+      "entity_id": "UNPO-UNIT-D1717F88BDA7",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 24; function_id=F23",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 25; function_id=F24",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Department evaluation activities",
+      "entity_id": "UNPO-UNIT-9F37358EF895",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 25; function_id=F24",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 26; function_id=F25",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 regional coordination",
+      "entity_id": "UNPO-UNIT-01BC51822F9C",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 26; function_id=F25",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 27; function_id=F26",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1",
+      "entity_id": "UNPO-UNIT-3BC79D643E98",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 27; function_id=F26",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 28; function_id=F27",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Office for Coordination and Shared Services",
+      "entity_id": "UNPO-UNIT-41EEE44693AF",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 28; function_id=F27",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 29; function_id=F28",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 6 Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 29; function_id=F28",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 2; function_id=F01",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Shared regional political-operational structure",
+      "entity_id": "UNPO-UNIT-94023E27473C",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 2; function_id=F01",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 30; function_id=F29",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Office of Counter-Terrorism",
+      "entity_id": "UNPO-UNIT-4DE962538E38",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 30; function_id=F29",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 31; function_id=G01",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Shared regional political-operational structure",
+      "entity_id": "UNPO-UNIT-D698A8AD7DBF",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 31; function_id=G01",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 32; function_id=G02",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Operations",
+      "entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 32; function_id=G02",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 33; function_id=G03",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Operations",
+      "entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 33; function_id=G03",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 34; function_id=G04",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Operations",
+      "entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 34; function_id=G04",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 35; function_id=G05",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 2 Military",
+      "entity_id": "UNPO-UNIT-28292DDEC625",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 35; function_id=G05",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 36; function_id=G06",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 2 Military",
+      "entity_id": "UNPO-UNIT-28292DDEC625",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 36; function_id=G06",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 37; function_id=G07",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 37; function_id=G07",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 38; function_id=G08",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 38; function_id=G08",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 39; function_id=G09",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 39; function_id=G09",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 3; function_id=F02",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Prevention management and resolution of conflicts",
+      "entity_id": "UNPO-UNIT-90400AD08FB6",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 3; function_id=F02",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 40; function_id=G10",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 40; function_id=G10",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 41; function_id=G11",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 41; function_id=G11",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 42; function_id=G12",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 42; function_id=G12",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 43; function_id=G13",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 43; function_id=G13",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 44; function_id=G14",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Joint Gender Unit",
+      "entity_id": "UNPO-UNIT-831CC129C337",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 44; function_id=G14",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 45; function_id=G15",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Joint disability inclusion action plan",
+      "entity_id": "UNPO-UNIT-F66AAF4C154A",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 45; function_id=G15",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 46; function_id=G16",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 46; function_id=G16",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "Cross-cutting policy and operations",
+      "entity_id": "UNPO-UNIT-89DA44FA7834",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 47; function_id=G17",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 47; function_id=G17",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 48; function_id=G18",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Partnership and training functions",
+      "entity_id": "UNPO-UNIT-C70227736642",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 48; function_id=G18",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 49; function_id=G19",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 49; function_id=G19",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 4; function_id=F03",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Prevention management and resolution of conflicts",
+      "entity_id": "UNPO-UNIT-90400AD08FB6",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 4; function_id=F03",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 50; function_id=G20",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Office for Coordination and Shared Services",
+      "entity_id": "UNPO-UNIT-3A8FC81EB33D",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 50; function_id=G20",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 51; function_id=G21",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Rule of law and security institutions",
+      "entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 51; function_id=G21",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 52; function_id=G22",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 52; function_id=G22",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 53; function_id=G23",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNTSO",
+      "entity_id": "UNPO-UNTSO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 53; function_id=G23",
+      "mapping_basis": "reviewed_observer_mission_identity"
+    },
+    {
+      "alias": "United Nations Truce Supervision Organization",
+      "entity_id": "UNPO-UNTSO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 53; function_id=G23",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 54; function_id=G24",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNTSO",
+      "entity_id": "UNPO-UNTSO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 54; function_id=G24",
+      "mapping_basis": "reviewed_observer_mission_identity"
+    },
+    {
+      "alias": "United Nations Truce Supervision Organization",
+      "entity_id": "UNPO-UNTSO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 54; function_id=G24",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 55; function_id=G25",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UN Military Observer Group in India and Pakistan",
+      "entity_id": "UNPO-UNMOGIP",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 55; function_id=G25",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "UNMOGIP",
+      "entity_id": "UNPO-UNMOGIP",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 55; function_id=G25",
+      "mapping_basis": "reviewed_observer_mission_identity"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 56; function_id=G26",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Executive direction and management",
+      "entity_id": "UNPO-UNIT-569EE0347FD5",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 56; function_id=G26",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 57; function_id=G27",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Operations",
+      "entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 57; function_id=G27",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 58; function_id=G28",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 2 Military",
+      "entity_id": "UNPO-UNIT-28292DDEC625",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 58; function_id=G28",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 59; function_id=G29",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Policy evaluation and training",
+      "entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 59; function_id=G29",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 5; function_id=F04",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 1 Prevention management and resolution of conflicts",
+      "entity_id": "UNPO-UNIT-90400AD08FB6",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 5; function_id=F04",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPO",
+      "entity_id": "UNPO-DPO",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 60; function_id=G30",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Department external coordination",
+      "entity_id": "UNPO-UNIT-594D80F12B86",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 60; function_id=G30",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 6; function_id=F05",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 2 Electoral assistance",
+      "entity_id": "UNPO-UNIT-9BA09835DCA1",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 6; function_id=F05",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 7; function_id=F06",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Security Council affairs",
+      "entity_id": "UNPO-UNIT-619CF44C1F33",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 7; function_id=F06",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 8; function_id=F07",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 3 Security Council affairs",
+      "entity_id": "UNPO-UNIT-619CF44C1F33",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 8; function_id=F07",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "DPPA",
+      "entity_id": "UNPO-DPPA",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 9; function_id=F08",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Subprogramme 4 Decolonization",
+      "entity_id": "UNPO-UNIT-28ABAD02D0D8",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 9; function_id=F08",
+      "mapping_basis": "exact_department_scoped_label"
+    },
+    {
+      "alias": "MINUSMA",
+      "entity_id": "UNPO-MINUSMA",
+      "source_path": "data/ga_adopted_directives.csv",
+      "source_locator": "directive_id=GA_D10; transferred assets",
+      "mapping_basis": "reviewed_explicit_reference"
+    },
+    {
+      "alias": "UNMISS",
+      "entity_id": "UNPO-UNMISS",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 10; mission_id=UNMISS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNSOH",
+      "entity_id": "UNPO-UNSOH",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 11; mission_id=UNSOH",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNSOS",
+      "entity_id": "UNPO-UNSOS",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 12; mission_id=UNSOS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MINURSO",
+      "entity_id": "UNPO-MINURSO",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 2; mission_id=MINURSO",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MINUSCA",
+      "entity_id": "UNPO-MINUSCA",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 3; mission_id=MINUSCA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MONUSCO",
+      "entity_id": "UNPO-MONUSCO",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 4; mission_id=MONUSCO",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNDOF",
+      "entity_id": "UNPO-UNDOF",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 5; mission_id=UNDOF",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNFICYP",
+      "entity_id": "UNPO-UNFICYP",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 6; mission_id=UNFICYP",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 7; mission_id=UNIFIL",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNISFA",
+      "entity_id": "UNPO-UNISFA",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 8; mission_id=UNISFA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNMIK",
+      "entity_id": "UNPO-UNMIK",
+      "source_path": "data/ga_approved_all_missions.csv",
+      "source_locator": "CSV row 9; mission_id=UNMIK",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNISFA",
+      "entity_id": "UNPO-UNISFA",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 2; mission_id=UNISFA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MINUSCA",
+      "entity_id": "UNPO-MINUSCA",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 3; mission_id=MINUSCA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MONUSCO",
+      "entity_id": "UNPO-MONUSCO",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 4; mission_id=MONUSCO",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 5; mission_id=UNIFIL",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNMISS",
+      "entity_id": "UNPO-UNMISS",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 6; mission_id=UNMISS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNSOS",
+      "entity_id": "UNPO-UNSOS",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 7; mission_id=UNSOS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNLB",
+      "entity_id": "UNPO-UNLB",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "ga_logistics_base_share_usd_thousands",
+      "mapping_basis": "reviewed_explicit_reference"
+    },
+    {
+      "alias": "MINUSCA",
+      "entity_id": "UNPO-MINUSCA",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 2; mission_id=MINUSCA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "MONUSCO",
+      "entity_id": "UNPO-MONUSCO",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 3; mission_id=MONUSCO",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 4; mission_id=UNIFIL",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNISFA",
+      "entity_id": "UNPO-UNISFA",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 5; mission_id=UNISFA",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNMISS",
+      "entity_id": "UNPO-UNMISS",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 6; mission_id=UNMISS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNSOS",
+      "entity_id": "UNPO-UNSOS",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "CSV row 7; mission_id=UNSOS",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "UNTMIS",
+      "entity_id": "UNPO-UNTMIS",
+      "source_path": "data/mission_budget_register.csv",
+      "source_locator": "mission_id=UNSOS; interpretation_guardrail",
+      "mapping_basis": "reviewed_explicit_reference"
+    },
+    {
+      "alias": "SPM009",
+      "entity_id": "UNPO-SPM009",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 10; spm_id=SPM009",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Envoy for Yemen",
+      "entity_id": "UNPO-SPM009",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 10; spm_id=SPM009",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM010",
+      "entity_id": "UNPO-SPM010",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 11; spm_id=SPM010",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Envoy on Myanmar",
+      "entity_id": "UNPO-SPM010",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 11; spm_id=SPM010",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Personal Envoy for Sudan",
+      "entity_id": "UNPO-SPM011",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 12; spm_id=SPM011",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM011",
+      "entity_id": "UNPO-SPM011",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 12; spm_id=SPM011",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM012",
+      "entity_id": "UNPO-SPM012",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 13; spm_id=SPM012",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Senior Representative on Security Council resolution 2792 (2025)",
+      "entity_id": "UNPO-SPM012",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 13; spm_id=SPM012",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Group of Experts on DRC",
+      "entity_id": "UNPO-SPM013",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 14; spm_id=SPM013",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM013",
+      "entity_id": "UNPO-SPM013",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 14; spm_id=SPM013",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Sudan",
+      "entity_id": "UNPO-SPM014",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 15; spm_id=SPM014",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM014",
+      "entity_id": "UNPO-SPM014",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 15; spm_id=SPM014",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM015",
+      "entity_id": "UNPO-SPM015",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 16; spm_id=SPM015",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Support to Security Council Committee 1718 (2006)",
+      "entity_id": "UNPO-SPM015",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 16; spm_id=SPM015",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Libya",
+      "entity_id": "UNPO-SPM016",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 17; spm_id=SPM016",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM016",
+      "entity_id": "UNPO-SPM016",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 17; spm_id=SPM016",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Central African Republic (2745)",
+      "entity_id": "UNPO-SPM017",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 18; spm_id=SPM017",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM017",
+      "entity_id": "UNPO-SPM017",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 18; spm_id=SPM017",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Yemen",
+      "entity_id": "UNPO-SPM018",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 19; spm_id=SPM018",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM018",
+      "entity_id": "UNPO-SPM018",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 19; spm_id=SPM018",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on South Sudan",
+      "entity_id": "UNPO-SPM019",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 20; spm_id=SPM019",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM019",
+      "entity_id": "UNPO-SPM019",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 20; spm_id=SPM019",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Analytical Support and Sanctions Monitoring Team (1526/2253)",
+      "entity_id": "UNPO-SPM020",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 21; spm_id=SPM020",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM020",
+      "entity_id": "UNPO-SPM020",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 21; spm_id=SPM020",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Ombudsperson for sanctions delisting (1904)",
+      "entity_id": "UNPO-SPM021",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 22; spm_id=SPM021",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM021",
+      "entity_id": "UNPO-SPM021",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 22; spm_id=SPM021",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts pursuant to 2713 (2023)",
+      "entity_id": "UNPO-SPM022",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 23; spm_id=SPM022",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM022",
+      "entity_id": "UNPO-SPM022",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 23; spm_id=SPM022",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Haiti",
+      "entity_id": "UNPO-SPM023",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 24; spm_id=SPM023",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM023",
+      "entity_id": "UNPO-SPM023",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 24; spm_id=SPM023",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Focal Point for Delisting",
+      "entity_id": "UNPO-SPM024",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 25; spm_id=SPM024",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM024",
+      "entity_id": "UNPO-SPM024",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 25; spm_id=SPM024",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Panel of Experts on Iran",
+      "entity_id": "UNPO-SPM025",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 26; spm_id=SPM025",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM025",
+      "entity_id": "UNPO-SPM025",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 26; spm_id=SPM025",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM026",
+      "entity_id": "UNPO-SPM026",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 27; spm_id=SPM026",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Support to Security Council Committee 1540 (2004)",
+      "entity_id": "UNPO-SPM026",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 27; spm_id=SPM026",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Counter-Terrorism Committee Executive Directorate",
+      "entity_id": "UNPO-SPM027",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 28; spm_id=SPM027",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM027",
+      "entity_id": "UNPO-SPM027",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 28; spm_id=SPM027",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM028",
+      "entity_id": "UNPO-SPM028",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 29; spm_id=SPM028",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNOWAS",
+      "entity_id": "UNPO-SPM028",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 29; spm_id=SPM028",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Good offices in Cyprus",
+      "entity_id": "UNPO-SPM001",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 2; spm_id=SPM001",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM001",
+      "entity_id": "UNPO-SPM001",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 2; spm_id=SPM001",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM029",
+      "entity_id": "UNPO-SPM029",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 30; spm_id=SPM029",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UN Regional Centre for Preventive Diplomacy in Central Asia",
+      "entity_id": "UNPO-SPM029",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 30; spm_id=SPM029",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNRCCA",
+      "entity_id": "UNPO-SPM029",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 30; spm_id=SPM029",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Cameroon-Nigeria Mixed Commission",
+      "entity_id": "UNPO-SPM030",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 31; spm_id=SPM030",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM030",
+      "entity_id": "UNPO-SPM030",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 31; spm_id=SPM030",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM031",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 32; spm_id=SPM031",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UN Special Coordinator for Lebanon (UNSCOL)",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 32; spm_id=SPM031",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNSCOL",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 32; spm_id=SPM031",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM032",
+      "entity_id": "UNPO-SPM032",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 33; spm_id=SPM032",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNOCA",
+      "entity_id": "UNPO-SPM032",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 33; spm_id=SPM032",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM033",
+      "entity_id": "UNPO-SPM033",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 34; spm_id=SPM033",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNSMIL",
+      "entity_id": "UNPO-SPM033",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 34; spm_id=SPM033",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM034",
+      "entity_id": "UNPO-SPM034",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 35; spm_id=SPM034",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UN Verification Mission in Colombia",
+      "entity_id": "UNPO-SPM034",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 35; spm_id=SPM034",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNVMC",
+      "entity_id": "UNPO-SPM034",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 35; spm_id=SPM034",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 36; spm_id=SPM035",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM035",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 36; spm_id=SPM035",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM036",
+      "entity_id": "UNPO-SPM036",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 37; spm_id=SPM036",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UNAMA",
+      "entity_id": "UNPO-SPM036",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 37; spm_id=SPM036",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM002",
+      "entity_id": "UNPO-SPM002",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 3; spm_id=SPM002",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Adviser on Prevention of Genocide",
+      "entity_id": "UNPO-SPM002",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 3; spm_id=SPM002",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Personal Envoy for Western Sahara",
+      "entity_id": "UNPO-SPM003",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 4; spm_id=SPM003",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM003",
+      "entity_id": "UNPO-SPM003",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 4; spm_id=SPM003",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Implementation of Security Council resolution 1559 (2004)",
+      "entity_id": "UNPO-SPM004",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 5; spm_id=SPM004",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM004",
+      "entity_id": "UNPO-SPM004",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 5; spm_id=SPM004",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM005",
+      "entity_id": "UNPO-SPM005",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 6; spm_id=SPM005",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "UN Representative to Geneva International Discussions",
+      "entity_id": "UNPO-SPM005",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 6; spm_id=SPM005",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM006",
+      "entity_id": "UNPO-SPM006",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 7; spm_id=SPM006",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Envoy for Syria",
+      "entity_id": "UNPO-SPM006",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 7; spm_id=SPM006",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM007",
+      "entity_id": "UNPO-SPM007",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 8; spm_id=SPM007",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Envoy for Horn of Africa",
+      "entity_id": "UNPO-SPM007",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 8; spm_id=SPM007",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "SPM008",
+      "entity_id": "UNPO-SPM008",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 9; spm_id=SPM008",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "Special Envoy for Great Lakes Region",
+      "entity_id": "UNPO-SPM008",
+      "source_path": "data/spm_2027_mission_budget.csv",
+      "source_locator": "CSV row 9; spm_id=SPM008",
+      "mapping_basis": "reviewed_spm_row_identity"
+    },
+    {
+      "alias": "DPO office of USG",
+      "entity_id": "UNPO-ALLOCATION-SA01",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 2; allocation_id=SA01",
+      "mapping_basis": "budget_scope_only_do_not_merge_with_unit"
+    },
+    {
+      "alias": "SA01",
+      "entity_id": "UNPO-ALLOCATION-SA01",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 2; allocation_id=SA01",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "SA02",
+      "entity_id": "UNPO-ALLOCATION-SA02",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 3; allocation_id=SA02",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Single regional political-operational structure",
+      "entity_id": "UNPO-ALLOCATION-SA02",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 3; allocation_id=SA02",
+      "mapping_basis": "budget_scope_only_do_not_merge_with_unit"
+    },
+    {
+      "alias": "Office of Military Affairs",
+      "entity_id": "UNPO-ALLOCATION-SA03",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 4; allocation_id=SA03",
+      "mapping_basis": "budget_scope_only_do_not_merge_with_unit"
+    },
+    {
+      "alias": "SA03",
+      "entity_id": "UNPO-ALLOCATION-SA03",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 4; allocation_id=SA03",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Office for Mine Action and Police AND Peacebuilding and Peace Support Office",
+      "entity_id": "UNPO-ALLOCATION-SA04",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 5; allocation_id=SA04",
+      "mapping_basis": "budget_scope_only_do_not_merge_with_unit"
+    },
+    {
+      "alias": "SA04",
+      "entity_id": "UNPO-ALLOCATION-SA04",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 5; allocation_id=SA04",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "Policy Evaluation and Training Division",
+      "entity_id": "UNPO-ALLOCATION-SA05",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 6; allocation_id=SA05",
+      "mapping_basis": "budget_scope_only_do_not_merge_with_unit"
+    },
+    {
+      "alias": "SA05",
+      "entity_id": "UNPO-ALLOCATION-SA05",
+      "source_path": "data/support_account_units.csv",
+      "source_locator": "CSV row 6; allocation_id=SA05",
+      "mapping_basis": "exact_source_key"
+    },
+    {
+      "alias": "RSCE",
+      "entity_id": "UNPO-RSCE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 10; control_id=RS01; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "RSCE",
+      "entity_id": "UNPO-RSCE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 11; control_id=RS02; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "RSCE",
+      "entity_id": "UNPO-RSCE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 12; control_id=RS03; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "RSCE",
+      "entity_id": "UNPO-RSCE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 13; control_id=RS04; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 2; control_id=UF01; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNSCOL",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 2; control_id=UF01; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 3; control_id=UF02; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNSCOL",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 3; control_id=UF02; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNIFIL",
+      "entity_id": "UNPO-UNIFIL",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 4; control_id=UF03; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNSCOL",
+      "entity_id": "UNPO-SPM031",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 4; control_id=UF03; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 5; control_id=BH01; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNSOH",
+      "entity_id": "UNPO-UNSOH",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 5; control_id=BH01; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 6; control_id=BH02; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "UNSOH",
+      "entity_id": "UNPO-UNSOH",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 6; control_id=BH02; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 7; control_id=BH03; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 7; control_id=BH03; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 8; control_id=BH04; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 8; control_id=BH04; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 9; control_id=BH05; column=payer_or_source_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "BINUH",
+      "entity_id": "UNPO-SPM035",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 9; control_id=BH05; column=recipient_entity",
+      "mapping_basis": "reviewed_existing_exact_acronym"
+    },
+    {
+      "alias": "RSCE",
+      "entity_id": "UNPO-RSCE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "recipient_entity=RSCE",
+      "mapping_basis": "reviewed_explicit_reference"
+    },
+    {
+      "alias": "DOS",
+      "entity_id": "UNPO-DOS",
+      "source_path": "data/transaction_evidence_requests.csv",
+      "source_locator": "request_id=REQ12; request_id=REQ16; proposed custodian requires confirmation",
+      "mapping_basis": "prospective_reference_not_verified"
+    }
+  ],
+  "relationships": [
+    {
+      "from_entity_id": "UNPO-UNISFA",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 2; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "3306.2",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNISFA",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 2; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "3012.3",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-MINUSCA",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 3; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "12201.8",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-MINUSCA",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 3; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "11117",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-MONUSCO",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 4; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "10408.1",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-MONUSCO",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 4; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "9482.8",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNIFIL",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 5; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "4885.8",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNIFIL",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 5; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "1023.8",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNMISS",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 6; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "11708.1",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNMISS",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 6; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "10667.3",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNSOS",
+      "to_entity_id": "UNPO-UNLB",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 7; column=ga_logistics_base_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "5771.9",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNSOS",
+      "to_entity_id": "UNPO-RSCE",
+      "relationship": "INCLUSIVE_APPROPRIATION_CONTAINS_COST_SHARE",
+      "source_path": "data/ga_mission_reconciliation.csv",
+      "source_locator": "CSV row 7; column=ga_regional_service_centre_share_usd_thousands",
+      "period": "2026-07-01_to_2027-06-30",
+      "amount_usd_thousands": "5258.8",
+      "interpretation_limit": "Accounting inclusion only; not an extra additive cost, operational dependency or organizational parentage."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-94023E27473C",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 2; function_id=F01",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-90400AD08FB6",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 3; function_id=F02",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-90400AD08FB6",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 4; function_id=F03",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-90400AD08FB6",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 5; function_id=F04",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-9BA09835DCA1",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 6; function_id=F05",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-619CF44C1F33",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 7; function_id=F06",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-619CF44C1F33",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 8; function_id=F07",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-28ABAD02D0D8",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 9; function_id=F08",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-A24BF9ABB939",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 10; function_id=F09",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 11; function_id=F10",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 12; function_id=F11",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 13; function_id=F12",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 14; function_id=F13",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-5FF4116E31B2",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 15; function_id=F14",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-3D97B2B84382",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 16; function_id=F15",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-95CAAEAE7509",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 17; function_id=F16",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-A911A010DBCC",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 18; function_id=F17",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-27D984C25D78",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 19; function_id=F18",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-5FA3C2124610",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 20; function_id=F19",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-AF973928745B",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 21; function_id=F20",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-AF973928745B",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 22; function_id=F21",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-CAE5397A4FFA",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 23; function_id=F22",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-D1717F88BDA7",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 24; function_id=F23",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-9F37358EF895",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 25; function_id=F24",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-01BC51822F9C",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 26; function_id=F25",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-3BC79D643E98",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 27; function_id=F26",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-41EEE44693AF",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 28; function_id=F27",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-DF01FD2B0B5F",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 29; function_id=F28",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-4DE962538E38",
+      "to_entity_id": "UNPO-DPPA",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 30; function_id=F29",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-D698A8AD7DBF",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 31; function_id=G01",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 32; function_id=G02",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 33; function_id=G03",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 34; function_id=G04",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-28292DDEC625",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 35; function_id=G05",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-28292DDEC625",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 36; function_id=G06",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 37; function_id=G07",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 38; function_id=G08",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 39; function_id=G09",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 40; function_id=G10",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 41; function_id=G11",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 42; function_id=G12",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 43; function_id=G13",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-831CC129C337",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 44; function_id=G14",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-F66AAF4C154A",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 45; function_id=G15",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 46; function_id=G16",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-89DA44FA7834",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 47; function_id=G17",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C70227736642",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 48; function_id=G18",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 49; function_id=G19",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-3A8FC81EB33D",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 50; function_id=G20",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-8379AAA9F0C1",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 51; function_id=G21",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 52; function_id=G22",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNTSO",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 53; function_id=G23",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNTSO",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 54; function_id=G24",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNMOGIP",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 55; function_id=G25",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-569EE0347FD5",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 56; function_id=G26",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-1E0B3232C62B",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 57; function_id=G27",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-28292DDEC625",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 58; function_id=G28",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-C3E0FDFE9F14",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 59; function_id=G29",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    },
+    {
+      "from_entity_id": "UNPO-UNIT-594D80F12B86",
+      "to_entity_id": "UNPO-DPO",
+      "relationship": "DESCRIBED_UNDER_DEPARTMENT_IN_SOURCE",
+      "source_path": "data/functional_inventory.csv",
+      "source_locator": "CSV row 60; function_id=G30",
+      "interpretation_limit": "Programme presentation only; not proof of implemented organigram, exclusive ownership or full-cost inclusion."
+    }
+  ],
+  "unresolved_references": [
+    {
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 10; control_id=RS01; column=payer_or_source_entity",
+      "raw_value": "SPM_client_entities",
+      "status": "UNRESOLVED_AGGREGATE_OR_ALIAS",
+      "entity_id": null,
+      "required_action": "Identify constituent cost objects and periods; do not allocate to one mission by name similarity."
+    },
+    {
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 11; control_id=RS02; column=payer_or_source_entity",
+      "raw_value": "SPM_client_entities",
+      "status": "UNRESOLVED_AGGREGATE_OR_ALIAS",
+      "entity_id": null,
+      "required_action": "Identify constituent cost objects and periods; do not allocate to one mission by name similarity."
+    },
+    {
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 12; control_id=RS03; column=payer_or_source_entity",
+      "raw_value": "RSCE_clients",
+      "status": "UNRESOLVED_AGGREGATE_OR_ALIAS",
+      "entity_id": null,
+      "required_action": "Identify constituent cost objects and periods; do not allocate to one mission by name similarity."
+    },
+    {
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "CSV row 13; control_id=RS04; column=payer_or_source_entity",
+      "raw_value": "SPM_and_observer_clients",
+      "status": "UNRESOLVED_AGGREGATE_OR_ALIAS",
+      "entity_id": null,
+      "required_action": "Identify constituent cost objects and periods; do not allocate to one mission by name similarity."
+    }
+  ],
+  "limitations": [
+    "Source function labels can denote programmes, offices or cross-cutting activities; they are not all organizations.",
+    "Equivalent shared-office labels in DPPA and DPO remain separately scoped until ownership and identity are verified.",
+    "UNLB is not automatically aliased to UNGSC; broader support configurations require explicit scope verification.",
+    "Lifecycle dates, current mandates and organizational implementation remain unverified.",
+    "DOS is retained as a prospective reference only; no custodian authority or hierarchy is inferred.",
+    "This is the named retained budget/function population, not a complete census of all United Nations entities."
+  ],
+  "validation": {
+    "entity_count": 94,
+    "alias_rows": 254,
+    "ambiguous_source_aliases": [
+      {
+        "source_path": "data/functional_inventory.csv",
+        "alias": "Executive direction and management",
+        "entity_ids": [
+          "UNPO-UNIT-569EE0347FD5",
+          "UNPO-UNIT-D1717F88BDA7"
+        ]
+      },
+      {
+        "source_path": "data/functional_inventory.csv",
+        "alias": "Joint Gender Unit",
+        "entity_ids": [
+          "UNPO-UNIT-831CC129C337",
+          "UNPO-UNIT-95CAAEAE7509"
+        ]
+      },
+      {
+        "source_path": "data/functional_inventory.csv",
+        "alias": "Joint disability inclusion action plan",
+        "entity_ids": [
+          "UNPO-UNIT-A911A010DBCC",
+          "UNPO-UNIT-F66AAF4C154A"
+        ]
+      },
+      {
+        "source_path": "data/functional_inventory.csv",
+        "alias": "Office for Coordination and Shared Services",
+        "entity_ids": [
+          "UNPO-UNIT-3A8FC81EB33D",
+          "UNPO-UNIT-41EEE44693AF"
+        ]
+      },
+      {
+        "source_path": "data/functional_inventory.csv",
+        "alias": "Shared regional political-operational structure",
+        "entity_ids": [
+          "UNPO-UNIT-94023E27473C",
+          "UNPO-UNIT-D698A8AD7DBF"
+        ]
+      }
+    ],
+    "unresolved_reference_count": 4
+  }
+}

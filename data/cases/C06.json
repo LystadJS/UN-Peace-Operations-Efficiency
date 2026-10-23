@@ -1,0 +1,122 @@
+{
+  "case_id": "C06",
+  "title": "UNSOS recovery for fuel contractor nonperformance",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained governing-text extraction identifies a review/control mechanism; underlying complete operational records, accountable owner confirmation and financial validation are absent.",
+  "current_arrangement": "The retained A/RES/80/285 paragraph 4 extraction calls for action and reporting on delayed recovery of economic losses from fuel contractor nonperformance. Paragraph 3 requires attention to mandate impacts of liquidity contingencies. No contract claim amount or settled receipt is retained.",
+  "testable_mechanism": "Test whether a documented enforceable loss has been correctly assessed, pursued and collected, and whether collection delays arise from missing evidence, dispute, insolvency or administrative processing.",
+  "feasible_alternative_to_test": "An authorized contract-claim reconciliation and recovery workplan, with dispute escalation and continuity of fuel supply; retain legitimate disputed amounts pending adjudication.",
+  "safeguards": [
+    "Fuel availability for UNSOS and supported operations",
+    "Contractual due process and competent legal authority",
+    "No public disclosure of privileged dispute or vendor-sensitive material"
+  ],
+  "cost_perimeter_and_nonadditivity": "Recovery is distinct from cost avoidance and recurring savings. Reconcile gross claim, credits, offsets, collection expense, taxes, settlement and receipt once. Do not count receivable recognition as cash collection or combine recovered past loss with future procurement reductions.",
+  "minimum_records": [
+    "Signed contract, amendments, performance obligations and remedy clauses",
+    "Delivery/quality tests, nonperformance events, validated loss calculation and claim notices",
+    "Dispute status, approvals, limitation dates and settlement terms",
+    "Receivable ledger, credit notes, offsets, actual bank/treasury receipt and recovery costs"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNSOS fuel contract manager and procurement",
+    "UNSOS finance receivables controller",
+    "Authorized legal adviser and claims/treasury roles"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 15,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D14",
+        "mission_id": "UNSOS",
+        "ga_resolution": "A/RES/80/285",
+        "operative_paragraph": "3",
+        "pdf_page": "2",
+        "directive_paraphrase": "Report on mandate consequences of liquidity contingency measures for UNSOS and AUSSOM",
+        "linked_candidate_id": "C08",
+        "directive_category": "mandate_capability_guardrail",
+        "official_url": "https://docs.un.org/en/A/RES/80/285",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 16,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D15",
+        "mission_id": "UNSOS",
+        "ga_resolution": "A/RES/80/285",
+        "operative_paragraph": "4",
+        "pdf_page": "2",
+        "directive_paraphrase": "Address delayed recovery of economic losses from fuel contractor nonperformance and report back",
+        "linked_candidate_id": "C08",
+        "directive_category": "explicit_recovery_followup",
+        "official_url": "https://docs.un.org/en/A/RES/80/285",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_mission_reconciliation.csv",
+      "csv_line": 7,
+      "sha256": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+      "source_snapshot": {
+        "mission_id": "UNSOS",
+        "sg_proposal_symbol": "A/80/628",
+        "sg_proposal_usd_thousands": "481671.8",
+        "ga_resolution": "A/RES/80/285",
+        "ga_fifth_committee_draft": "A/C.5/80/L.43",
+        "agenda_item": "159",
+        "ga_adoption_date": "2026-06-30",
+        "ga_adoption_status": "verified_in_uploaded_operative_resolution",
+        "funding_cycle": "2026-07-01_to_2027-06-30",
+        "ga_appropriation_usd_thousands": "531443.7",
+        "adopted_minus_proposed_usd_thousands": "-121.4",
+        "reconciliation_status": "approved_maintenance_and_appropriation_components_verified",
+        "decision_reference_url": "https://www.un.org/en/ga/fifth/80/resdec80.shtml",
+        "operative_resolution_url": "https://docs.un.org/en/A/RES/80/285",
+        "cross_mission_summary_symbol": "A/C.5/80/20",
+        "decision_guardrail": "The GA inclusive appropriation includes shared support UNLB and RSCE; adopted_minus_proposed compares GA mission-maintenance gross against SG mission-maintenance gross; no new savings inferred",
+        "ga_approved_maintenance_usd_thousands": "481550.4",
+        "ga_approved_military_police_usd_thousands": "112903.8",
+        "ga_approved_civilian_usd_thousands": "104190.3",
+        "ga_approved_operational_usd_thousands": "264456.3",
+        "ga_support_account_share_usd_thousands": "38862.6",
+        "ga_logistics_base_share_usd_thousands": "5771.9",
+        "ga_regional_service_centre_share_usd_thousands": "5258.8",
+        "ga_staff_assessment_income_usd_thousands": "10253.8",
+        "appropriation_resolution_paragraph": "para_8",
+        "appropriation_resolution_pdf_page": "2",
+        "note_approved_annex_page": "3",
+        "approved_resource_note_url": "https://docs.un.org/en/A/C.5/80/20",
+        "uploaded_resolution_sha256": "cf9e7a5ef6541aa003021fbb45ea2e4245451ebe04778663c6ece5cc6ed2086d",
+        "maintenance_difference_pct_of_SG_request": "0"
+      }
+    }
+  ],
+  "case_specific_limit": "The resolution follow-up establishes an investigation and reporting basis, not a recoverable amount, enforceability determination or contractor culpability finding by this project.",
+  "source_review_scope": "Retained repository extractions; primary resolution bytes are not newly authenticated and no current implementation or compliance determination is made.",
+  "handling": "Use approved restricted intake, minimum necessary fields and pseudonymization; no live financial, personnel, medical or security-sensitive records in this public repository.",
+  "reopen_condition": "Confirmed accountable owner and authorized complete linked records permit a validation-ready assessment; a draft request is not authority or evidence receipt."
+}

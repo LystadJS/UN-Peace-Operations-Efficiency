@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "design_task": "E15",
+  "as_of": "2026-10-23",
+  "scope": "Six draft request contracts; ten case-specific request tracks, including four distinct E04 subgroups and two E06 owner-review tracks.",
+  "counts": {
+    "draft_contracts": 6,
+    "case_tracks": 10,
+    "requests_sent": 0,
+    "responses_obtained": 0,
+    "accepted_owners": 0,
+    "approved_collections": 0
+  },
+  "requests": [
+    {
+      "request_id": "E01",
+      "contract_path": "data/evidence_requests/E01_rsce.json",
+      "case_ids": [
+        "C01"
+      ],
+      "table_ids": [
+        "service_charges",
+        "local_retained_work"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    },
+    {
+      "request_id": "E02",
+      "contract_path": "data/evidence_requests/E02_assets.json",
+      "case_ids": [
+        "C02"
+      ],
+      "table_ids": [
+        "asset_events"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    },
+    {
+      "request_id": "E03",
+      "contract_path": "data/evidence_requests/E03_haiti.json",
+      "case_ids": [
+        "C03"
+      ],
+      "table_ids": [
+        "support_service_lines"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    },
+    {
+      "request_id": "E04",
+      "contract_path": "data/evidence_requests/E04_ga_directed.json",
+      "case_ids": [
+        "C04",
+        "C05",
+        "C06",
+        "C07"
+      ],
+      "table_ids": [
+        "translation_jobs",
+        "unisfa_asset_events",
+        "fuel_recovery_lines",
+        "claims_control_aggregates"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    },
+    {
+      "request_id": "E05",
+      "contract_path": "data/evidence_requests/E05_training.json",
+      "case_ids": [
+        "C09"
+      ],
+      "table_ids": [
+        "course_events"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    },
+    {
+      "request_id": "E06",
+      "contract_path": "data/evidence_requests/E06_reporting_owners.json",
+      "case_ids": [
+        "C11",
+        "C12"
+      ],
+      "table_ids": [
+        "reporting_work_observations"
+      ],
+      "preparation_status": "DRAFT_PREPARED",
+      "dispatch_status": "NOT_SENT",
+      "collection_status": "NOT_AUTHORIZED",
+      "response_status": "NOT_OBTAINED",
+      "accepted_owner": null,
+      "recipient_identity": null,
+      "dispatch_receipt": null,
+      "response_receipts": [],
+      "access_approval_receipts": [],
+      "requested_at": null,
+      "received_at": null,
+      "burden_estimate": null,
+      "burden_status": "UNKNOWN",
+      "followup_due": null,
+      "limitations": [
+        "Preparation is not dispatch, access approval, owner acceptance or receipt of evidence."
+      ]
+    }
+  ],
+  "case_tracks": [
+    {
+      "track_id": "E01-C01",
+      "request_id": "E01",
+      "case_id": "C01",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E02-C02",
+      "request_id": "E02",
+      "case_id": "C02",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E03-C03",
+      "request_id": "E03",
+      "case_id": "C03",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E04-C04",
+      "request_id": "E04",
+      "case_id": "C04",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E04-C05",
+      "request_id": "E04",
+      "case_id": "C05",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E04-C06",
+      "request_id": "E04",
+      "case_id": "C06",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E04-C07",
+      "request_id": "E04",
+      "case_id": "C07",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E05-C09",
+      "request_id": "E05",
+      "case_id": "C09",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E06-C11",
+      "request_id": "E06",
+      "case_id": "C11",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    },
+    {
+      "track_id": "E06-C12",
+      "request_id": "E06",
+      "case_id": "C12",
+      "dispatch_status": "NOT_SENT",
+      "response_status": "NOT_OBTAINED",
+      "approved_collection": false
+    }
+  ],
+  "legacy_requests": {
+    "path": "data/transaction_evidence_requests.csv",
+    "status": "PREPARATORY_NOT_EVIDENCE_OF_DISPATCH",
+    "note": "REQ01–REQ18 are legacy evidence-package rows, not eighteen sent requests."
+  },
+  "external_actions_performed": [],
+  "next_action": "Research preparation only. Dispatch, collection or owner engagement requires actual competent authority and approved handling; no automatic sending."
+}

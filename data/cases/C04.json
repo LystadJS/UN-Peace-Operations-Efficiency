@@ -1,0 +1,104 @@
+{
+  "case_id": "C04",
+  "title": "UNISFA translation routing and centralized capacity",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained governing-text extraction identifies a review/control mechanism; underlying complete operational records, accountable owner confirmation and financial validation are absent.",
+  "current_arrangement": "The retained A/RES/80/275 paragraph 9 extraction requests review of Translation Unit centralization and performance in the 2027/28 budget. Actual job-level demand, staffing and delivery data are absent.",
+  "testable_mechanism": "Test whether centralized assignment and common terminology reduce repeated translation or idle capacity while meeting field language and confidentiality needs. Centralization itself is not proof of efficiency.",
+  "feasible_alternative_to_test": "Pilot an owner-approved routing rule with an escalation route for urgent or sensitive work; retain local coverage where access or turnaround requires it.",
+  "safeguards": [
+    "Urgent operational interpretation and field access",
+    "Language accuracy, confidentiality and impartiality",
+    "No unapproved removal of mandated language capability"
+  ],
+  "cost_perimeter_and_nonadditivity": "Compare the same language pairs, urgency classes and delivered quality over matched periods. Include retained field staff, central staff, vendor contracts, secure connectivity, coordination and rework; distinguish translation from interpretation. No cost or capacity baseline is available.",
+  "minimum_records": [
+    "Job ID, language pair, word count or interpretation hours, request/delivery timestamps and urgency",
+    "Requester, receiving unit, assignment route, duplication links and quality/rework assessment",
+    "Unique post/contract IDs, actual paid hours and vendor invoices",
+    "Approved service standards and documented field/security exceptions"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNISFA Translation Unit manager",
+    "UNISFA substantive requesters and mission support",
+    "DOS language-service coordination and procurement roles"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 9,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D08",
+        "mission_id": "UNISFA",
+        "ga_resolution": "A/RES/80/275",
+        "operative_paragraph": "9",
+        "pdf_page": "2",
+        "directive_paraphrase": "Review centralization and performance of Translation Unit in the 2027/28 budget",
+        "linked_candidate_id": "C19",
+        "directive_category": "specific_review_required",
+        "official_url": "https://docs.un.org/en/A/RES/80/275",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_mission_reconciliation.csv",
+      "csv_line": 2,
+      "sha256": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+      "source_snapshot": {
+        "mission_id": "UNISFA",
+        "sg_proposal_symbol": "A/80/614",
+        "sg_proposal_usd_thousands": "277238.1",
+        "ga_resolution": "A/RES/80/275",
+        "ga_fifth_committee_draft": "A/C.5/80/L.34",
+        "agenda_item": "149",
+        "ga_adoption_date": "2026-06-30",
+        "ga_adoption_status": "verified_in_uploaded_operative_resolution",
+        "funding_cycle": "2026-07-01_to_2027-06-30",
+        "ga_appropriation_usd_thousands": "304418.9",
+        "adopted_minus_proposed_usd_thousands": "-1398.8",
+        "reconciliation_status": "approved_maintenance_and_appropriation_components_verified",
+        "decision_reference_url": "https://www.un.org/en/ga/fifth/80/resdec80.shtml",
+        "operative_resolution_url": "https://docs.un.org/en/A/RES/80/275",
+        "cross_mission_summary_symbol": "A/C.5/80/20",
+        "decision_guardrail": "The GA inclusive appropriation includes shared support UNLB and RSCE; adopted_minus_proposed compares GA mission-maintenance gross against SG mission-maintenance gross; no new savings inferred",
+        "ga_approved_maintenance_usd_thousands": "275839.3",
+        "ga_approved_military_police_usd_thousands": "117294.6",
+        "ga_approved_civilian_usd_thousands": "50960.9",
+        "ga_approved_operational_usd_thousands": "107583.8",
+        "ga_support_account_share_usd_thousands": "22261.1",
+        "ga_logistics_base_share_usd_thousands": "3306.2",
+        "ga_regional_service_centre_share_usd_thousands": "3012.3",
+        "ga_staff_assessment_income_usd_thousands": "4521",
+        "appropriation_resolution_paragraph": "para_19",
+        "appropriation_resolution_pdf_page": "3",
+        "note_approved_annex_page": "2",
+        "approved_resource_note_url": "https://docs.un.org/en/A/C.5/80/20",
+        "uploaded_resolution_sha256": "0df2912747cd408c9d1ff91a2dc99e16241c8b39fc09f3cd3ccda12756117b0e",
+        "maintenance_difference_pct_of_SG_request": "-0.5"
+      }
+    }
+  ],
+  "case_specific_limit": "A review requested for the 2027/28 budget is not proof that centralization was implemented or that current local work is waste.",
+  "source_review_scope": "Retained repository extractions; primary resolution bytes are not newly authenticated and no current implementation or compliance determination is made.",
+  "handling": "Use approved restricted intake, minimum necessary fields and pseudonymization; no live financial, personnel, medical or security-sensitive records in this public repository.",
+  "reopen_condition": "Confirmed accountable owner and authorized complete linked records permit a validation-ready assessment; a draft request is not authority or evidence receipt."
+}

@@ -33,6 +33,7 @@
     ".github/workflows/foundation_standards.yml": "8fd580e994ffff39fd4441e7a3da2fa810ca13f27d97289bc74e4545c05c1671",
     ".github/workflows/mission_archive_census.yml": "aa0a3bcf02497fa1c671347e7ef825fd30ca4e4b0deedad2941647f1be5fa1bf",
     ".github/workflows/owner_review_package.yml": "ef2ca16d3e8043d9f2662e27d6af940cbef405b9de1daf21c292daaeb93a2d36",
+    ".github/workflows/portfolio_validation.yml": "acc9f67ff02ed5eeb96e71c082e51a99a1b418380e5684983c50c6daf4d88293",
     ".github/workflows/publish_release.yml": "0dec0af6fb97bae5cb0f9c2c589a492b38e083a45d6a7e116e6cb286b50467ed",
     ".github/workflows/published_census_v2.yml": "a8f5613b30ff3bb90d089b93bb7e6c138383df1c3ff85055b39e68ae1980aeb4",
     ".github/workflows/recover_legacy_notice_dates.yml": "ecb44184b12263775fc5ac145054a770cd72664b56b186a9d696ca47cac7e8ec",

@@ -10,5 +10,3 @@ outputs/internal/
 # Local test outputs
 out/
 _tmp/
-__pycache__/
-*.py[cod]

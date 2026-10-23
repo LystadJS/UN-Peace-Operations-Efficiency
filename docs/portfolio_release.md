@@ -1,6 +1,6 @@
 # Public validation baseline release — I12
 
-**PUBLIC_VALIDATION_BASELINE; decision-grade portfolio BLOCKED.** This local release manifest records 369 filesystem artifacts with byte counts and SHA-256 hashes. It does not create a GitHub release, publish files, authorize operational implementation or attest runtime CI.
+**PUBLIC_VALIDATION_BASELINE; decision-grade portfolio BLOCKED.** This local release manifest records 413 filesystem artifacts with byte counts and SHA-256 hashes. It does not create a GitHub release, publish files, authorize operational implementation or attest runtime CI.
 
 The [machine-readable manifest](../data/portfolio/release_manifest.json) declares its directory populations, required core artifacts, source cutoffs and explicit exclusions. It includes ready untracked files so that the final review population does not silently omit work awaiting commit. Root integration must regenerate after all edits, commit the complete reviewed population and validate the exact final commit separately.
 

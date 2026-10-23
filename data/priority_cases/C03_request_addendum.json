@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "case_id": "C03",
+  "addendum_id": "C03-COMPACT-PERFORMANCE-01",
+  "prepared_on": "2026-10-23",
+  "status": "DRAFT_UNSENT",
+  "requests_sent": false,
+  "owner_acceptance": "NOT_OBTAINED",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "status": "NOT_ESTIMATED",
+    "amount": null
+  },
+  "purpose": "Supplement REQ07–REQ11 with compact-specific performance and allocation evidence; preserve legacy requests and their unanswered status.",
+  "legacy_requests": [
+    "REQ07",
+    "REQ08",
+    "REQ09",
+    "REQ10",
+    "REQ11"
+  ],
+  "source_packet": "data/priority_cases/C03_public_evidence.json",
+  "source_packet_sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+  "authority_basis": [
+    {
+      "symbol": "S/RES/2793(2025)",
+      "locator": "OP10(e), printed page 5; OP11, printed page 6",
+      "source_id": "C03-PUB-01",
+      "interpretation": "Standard BINUH support on cost recovery; separate quantifiable compacts with Head of BINUH and GSF Special Representative, latter in consultation with Force Commander. This is an evidence-request rationale, not an authority to disclose restricted records."
+    },
+    {
+      "symbol": "S/RES/2814(2026)",
+      "locator": "OP1, OP3 and OP7",
+      "source_id": "C03-PUB-02",
+      "interpretation": "BINUH extension and coordination safeguard; OP7 costed options limited to specified DDR/justice scope."
+    },
+    {
+      "symbol": "S/RES/2829(2026)",
+      "locator": "Official registry OP1–2; final PDF unavailable",
+      "source_id": "C03-PUB-07",
+      "interpretation": "Continued UNSOH support in full compliance with 2793; no inference of enacted GA funding."
+    }
+  ],
+  "requested_period": {
+    "baseline": "Custodian to identify complete comparable period before 1 February 2026 handover, with demand/seasonality and missing-record declaration.",
+    "post_transfer": "From 1 February 2026 through latest closed accounting month available at approved intake; supply cutoff, late entries and reversals.",
+    "comparability": "Keep calendar 2026/2027 proposals separate from July–June financial periods; no 2027 actuals presumed."
+  },
+  "requests": [
+    {
+      "request_id": "C03-ADD01",
+      "supplements": [
+        "REQ07"
+      ],
+      "package": "BINUH compact and amendments",
+      "grain": "One effective compact/version and signatory/approval history",
+      "minimum_fields": [
+        "compact_id",
+        "version",
+        "signed_instrument_or_restricted_reference",
+        "UNSOH_head_role",
+        "BINUH_head_role",
+        "signature_dates",
+        "effective_from",
+        "effective_to",
+        "amendment_or_supersession",
+        "service_catalogue",
+        "exceptions",
+        "delegations_if_applicable"
+      ],
+      "custodian_roles_to_confirm": "BINUH and UNSOH heads / mission support custodians to confirm",
+      "purpose": "Authenticate actual compact separately from public requirement.",
+      "received": false,
+      "record_count": null,
+      "owner_confirmed": false
+    },
+    {
+      "request_id": "C03-ADD02",
+      "supplements": [
+        "REQ07"
+      ],
+      "package": "Quantifiable performance and acceptance",
+      "grain": "One service-target-period with linked outcome and acceptance",
+      "minimum_fields": [
+        "compact_id",
+        "service_id",
+        "period_start",
+        "period_end",
+        "target_value",
+        "target_unit",
+        "target_definition",
+        "measurement_method",
+        "observed_value",
+        "denominator",
+        "missingness",
+        "incident_or_exception_reference",
+        "responsible_role",
+        "review_date",
+        "acceptance_or_dispute_reference",
+        "readiness_and_safety_guardrail_outcome"
+      ],
+      "custodian_roles_to_confirm": "BINUH service owner and UNSOH service managers to confirm",
+      "purpose": "Test actual output, availability, emergency evacuation, flight safety and continuity against agreed quantified terms.",
+      "received": false,
+      "record_count": null,
+      "owner_confirmed": false
+    },
+    {
+      "request_id": "C03-ADD03",
+      "supplements": [
+        "REQ07",
+        "REQ10"
+      ],
+      "package": "Separate GSF boundary and funding carveouts",
+      "grain": "One shared cost pool/allocation rule/effective period; redacted compact reference sufficient initially",
+      "minimum_fields": [
+        "separate_GSF_compact_reference",
+        "UNSOH_head_role",
+        "GSF_special_representative_role",
+        "Force_Commander_consultation_reference",
+        "effective_period",
+        "service_scope_boundary",
+        "shared_cost_pool",
+        "allocation_driver",
+        "BINUH_share",
+        "GSF_share",
+        "other_beneficiary_share",
+        "allocation_approval_reference",
+        "fund_and_funding_channel",
+        "exclusions_and_reconciliation"
+      ],
+      "custodian_roles_to_confirm": "UNSOH controller and leadership to confirm",
+      "purpose": "Avoid allocating GSF, HNP/OAS or voluntary-funded costs to BINUH. Distinguish assessed GSF support, BINUH cost recovery and voluntary personnel/support channels; no blanket funding assumption.",
+      "received": false,
+      "record_count": null,
+      "owner_confirmed": false
+    },
+    {
+      "request_id": "C03-ADD04",
+      "supplements": [
+        "REQ08",
+        "REQ09",
+        "REQ10",
+        "REQ11"
+      ],
+      "package": "Matched service and full-system cost bridge",
+      "grain": "One service/flight cost item linked to paired internal charge and settlement, plus retained personnel and transition cost",
+      "minimum_fields": [
+        "service_or_flight_id",
+        "service_date",
+        "service_category",
+        "vendor_invoice_reference",
+        "external_supplier_cost",
+        "cost_currency",
+        "exchange_rate_basis",
+        "BINUH_AP_reference",
+        "UNSOH_AR_reference",
+        "charge_id",
+        "service_period",
+        "settlement_or_clearing_reference",
+        "reversal_reference",
+        "allocation_rule_reference",
+        "retained_or_transferred_post_reference",
+        "payroll_period_and_cost",
+        "transition_cost",
+        "completeness_reconciliation"
+      ],
+      "custodian_roles_to_confirm": "Both finance controllers, aviation/procurement/HR and settlement custodians to confirm",
+      "purpose": "Eliminate paired internal transfers; compare equal-service equal-period external and retained costs, including readiness. Keep embedded USD1.4m baseline and USD4m internal reimbursement nonadditive.",
+      "received": false,
+      "record_count": null,
+      "owner_confirmed": false
+    }
+  ],
+  "handling": "Draft only. Confirm accountable owner, custodian and authorized restricted intake before transmission; retain live records outside public repository. Redacted instrument/reference and aggregate allocation evidence may suffice initially. No passenger identities, medical details, tactical routes or unneeded GSF operational material requested.",
+  "acceptance_boundary": "Receipt completeness and owner review are prerequisites to a separate advancement decision. A signed compact alone does not establish achieved service or financial validation."
+}

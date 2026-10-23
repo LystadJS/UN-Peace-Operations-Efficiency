@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "review_id": "C02-INDEPENDENT-SOURCE-REVIEW-2026-10-23",
+  "case_id": "C02",
+  "review_date": "2026-10-23",
+  "review_kind": "SEPARATE_AGENT_SCOPED_PRIMARY_TEXT_REVIEW",
+  "reviewer_authorship_disclosure": "Reviewer authored the priority dataset semantic supplement, not C02_public_evidence.json or its source claims.",
+  "reviewed_packet": "data/priority_cases/C02_public_evidence.json",
+  "reviewed_packet_sha256": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+  "status": "QUALIFIED_SCOPED_REVIEW_NO_MATERIAL_CONTRADICTION_OBSERVED",
+  "source_checks": [
+    {
+      "source_id": "C02-S01",
+      "official_url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2790(2025)&t=pdf",
+      "access_path": "Opened official Mandate Registry resolution page, then clicked View PDF; direct API open failed.",
+      "independent_access": "FINAL_OFFICIAL_FOUR_PAGE_PDF_RENDERED",
+      "locators": ["page 1 adoption header", "page 2 OP1 and OP5", "pages 2-3 OP6", "page 3 OP7-9"],
+      "verified_scope": "28 August 2025 adoption at meeting 9989; mandate ends 31 December 2026; phased withdrawal and retained protection/medical functions; later liquidation; asset transfer governed by UN financial rules.",
+      "recipient_boundary": "OP9 refers to a designated entity and does not designate UNSCOL or approve particular vehicles, ICT items or consumables.",
+      "source_effect_limit": "No actual transfer, safe release date, recipient approval, acquisition cancellation or financial benefit is established.",
+      "raw_pdf_retained": false,
+      "raw_pdf_sha256": null
+    },
+    {
+      "source_id": "C02-S03",
+      "official_url": "https://documents.un.org/api/symbol/access?l=en&s=S/2007/85&t=pdf",
+      "access_path": "UNSCOL filtered registry index -> S/2007/85 detail -> View PDF; direct opens failed.",
+      "independent_access": "FINAL_OFFICIAL_ONE_PAGE_PDF_RENDERED",
+      "locators": ["distribution date 13 February 2007", "letter dated 8 February 2007", "substantive second paragraph"],
+      "verified_scope": "Secretary-General describes the proposed Special Coordinator's political representation and coordination role.",
+      "source_effect_limit": "Founding role description is not a procurement delegation or specific asset-transfer approval; later mandate history was not exhaustively reviewed.",
+      "raw_pdf_retained": false,
+      "raw_pdf_sha256": null
+    },
+    {
+      "source_id": "C02-S04",
+      "official_url": "https://documents.un.org/api/symbol/access?l=en&s=S/2007/86&t=pdf",
+      "access_path": "UNSCOL filtered registry index -> S/2007/86 detail -> View PDF; direct opens failed.",
+      "independent_access": "FINAL_OFFICIAL_ONE_PAGE_PDF_RENDERED",
+      "locators": ["letter dated 13 February 2007", "sole substantive paragraph"],
+      "verified_scope": "Council President relays that Council members took note of the intended appointment.",
+      "source_effect_limit": "The limited take-note effect is preserved; no asset-specific authorization follows.",
+      "raw_pdf_retained": false,
+      "raw_pdf_sha256": null
+    },
+    {
+      "source_id": "C02-S07",
+      "official_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+      "independent_access": "RETAINED_REPOSITORY_AMOUNTS_CHECKED_PRIMARY_BUDGET_TEXT_NOT_REAUTHENTICATED",
+      "verified_scope": "394000 + 36900 + 7200 USD = 438100 USD in the retained control rows; packet correctly preserves the already embedded proposal classification.",
+      "source_effect_limit": "The amount is not newly attributable or realized benefit; no A/81 symbol establishes GA adoption.",
+      "fresh_primary_pdf_verified": false
+    }
+  ],
+  "index_only_boundary_check": {
+    "official_url": "https://main.un.org/securitycouncil/en/content/resolutions-0",
+    "observed_scope": "Official resolution index labels S/RES/2829 (2026), dated 29 September 2026, as Haiti/GSF.",
+    "c02_packet_contains_2829": false,
+    "interpretation": "No Haiti resolution is imported as C02 Lebanon authority. This is an index-level scope check, not final-text review of 2829."
+  },
+  "not_independently_retrieved_in_this_review": [
+    "C02-S05 DPPA management factsheet; author's access classification remains index excerpt only.",
+    "C02-S06 historical UNGM vehicle-washing EOI; no procurement award or payment claim is made."
+  ],
+  "remaining_material_gaps": [
+    "Fresh full budget Add.4 verification and relevant adopted financing/incorporated advice.",
+    "Complete subsequent amendment/corrigendum and case-specific applicability review.",
+    "Specific donor/recipient authority, signed physical handover, paired inventories, approved recipient need and canceled purchase commitments.",
+    "Full transfer, residual, operating and foregone-disposal costs plus accepted safeguards and owner."
+  ],
+  "candidate_state_after_review": "SCREENING_CANDIDATE",
+  "financial_validation_after_review": "NOT_PERFORMED",
+  "benefit_amount": null,
+  "institutional_legal_assurance": false,
+  "operational_adjudication_performed": false,
+  "finding": "The checked public claims are appropriately qualified. Independent primary-text checks reduce selected authority uncertainty while leaving operational and financial conclusions blocked."
+}

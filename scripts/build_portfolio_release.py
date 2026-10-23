@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'data/portfolio/release_manifest.json'
 DOCUMENT = 'docs/portfolio_release.md'
 PREFIXES = ('data/reforms/', 'data/portfolio/', 'data/cases/', 'data/evidence_requests/',
-            'data/pilots/', 'data/adjudications/', 'data/realization/',
+            'data/pilots/', 'data/adjudications/', 'data/realization/', 'data/priority_cases/',
             'docs/', 'scripts/', 'tests/', '.github/workflows/', 'metadata/')
 EXCLUSIONS = {
     MANIFEST: 'Self hash excluded to avoid a circular manifest; manifest is verified by regeneration.',
@@ -41,6 +41,8 @@ REQUIRED = (
     'docs/secure_evidence_intake.md', 'scripts/build_portfolio_release.py',
     'tests/check_portfolio_release.py', '.github/workflows/reusable_validation.yml',
     'metadata/validation_groups.json',
+    'data/priority_cases/progress.json', 'data/priority_cases/research_candidates.json',
+    'docs/priority_case_progress.md',
 ) + tuple(f'data/cases/C{i:02}.json' for i in range(1, 15)) + tuple(f'docs/cases/C{i:02}.md' for i in range(1, 15)) + (
     'data/evidence_requests/E01_rsce.json', 'data/evidence_requests/E02_assets.json',
     'data/evidence_requests/E03_haiti.json', 'data/evidence_requests/E04_ga_directed.json',

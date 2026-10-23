@@ -36,6 +36,7 @@ BASE_INPUTS = [
     'data/acabq_2027_mission_reconciliation.csv',
     'data/portfolio/public_portfolio.json',
     'data/reforms/baseline_release.json',
+    'data/priority_cases/progress.json',
 ]
 
 
@@ -87,6 +88,13 @@ def current_manifest_designations(manifest):
 
 
 def build(root=ROOT):
+    priority = read_json(root, 'data/priority_cases/progress.json')
+    require(priority['actual_operational_audits_completed'] == 0 and priority['financial_adjudications_completed'] == 0,
+            'Priority operational findings changed; substantive status review required')
+    require(priority['benefits'] == 'NOT_ESTIMATED' and priority['requests_sent'] == 0 and priority['accepted_accountable_owners'] == 0 and priority['approved_collections'] == 0,
+            'Priority benefit/access facts changed; substantive status review required')
+    require(all(r['current_state'] in ('SCREENING_CANDIDATE','VALIDATION_READY') and r['claim_class']=='NO_FINANCIAL_CLAIM'
+                for r in priority['child_research_units']), 'Priority research state exceeds reviewed design boundary')
     portfolio = read_json(root, 'data/portfolio/public_portfolio.json')
     reforms = read_json(root, 'data/reforms/baseline_release.json')
     require(portfolio['release_class'] == 'PUBLIC_VALIDATION_BASELINE' and portfolio['decision_grade_portfolio'] == 'BLOCKED', 'portfolio release class changed; review status')
@@ -243,6 +251,12 @@ def build(root=ROOT):
             'source': 'data/census_v7/final_summary.json', 'retained_review_cutoff': recovery['asof'],
             'limitation': 'Retrieval/authentication does not mean exhaustive substantive comparison; V7 recovery supersedes the prior retrieval gap only.'},
         'finance': finance,
+        'priority_followup': {'source': 'data/priority_cases/progress.json',
+            'child_research_units': priority['child_research_units'],
+            'selected_semantic_datasets': priority['selected_semantic_datasets'],
+            'selected_lineage_expressions': priority['selected_lineage_expressions'],
+            'access_case_selection': priority['operational_access_case_selection'],
+            'actual_operational_audits_completed': priority['actual_operational_audits_completed']},
         'portfolio': {'release_class': portfolio['release_class'], 'decision_grade_portfolio': portfolio['decision_grade_portfolio'], 'cases': len(portfolio['cases']), 'substantive_operational_adjudications': portfolio['substantive_operational_adjudications'], 'completion_gates': portfolio['completion_gates'], 'constraints': portfolio['constraints'], 'verified_benefits': portfolio['verified_benefits'], 'source': 'data/portfolio/public_portfolio.json'},
         'reform_baseline': {'release_class': reforms['release_class'], 'selected_provisions': reforms['extracted_provision_count'], 'ga81_action_extraction': reforms['ga81_action_extraction'], 'verified_compliance_findings': reforms['verified_compliance_findings'], 'source': 'data/reforms/baseline_release.json'},
         'unified_issue_observations': {'records': len(issues),
@@ -268,6 +282,8 @@ def render(s):
         'The Commander’s intent is to identify specific peacekeeping inefficiencies and avoidable resource use while protecting mandated operations and linking recommendations to applicable adopted reform requirements.', '',
         '## Portfolio readiness — 23 October', '',
         f"The [public portfolio](decision_portfolio.md) contains **{s['portfolio']['cases']} screening cases** and **{s['portfolio']['substantive_operational_adjudications']} substantive operational adjudications**. The minimum is three across two service types. The release is a public validation baseline; a decision-grade or realized-benefit portfolio remains blocked. Foundation and validation-system completion gates are partial; decision and realization gates are blocked.", '',
+        'The [priority-case follow-up](priority_case_progress.md) supplements the three preserved parent dossiers with refreshed public authority, targeted request addenda, a five-entity authority overlay and separate bounded research-unit review. Child research units: `'+json.dumps(s['priority_followup']['child_research_units'],sort_keys=True)+'`. Research readiness supplies no collection permission, accepted institutional owner, operational trial or financial finding.', '',
+        f"The scoped follow-up reviews **{s['priority_followup']['selected_semantic_datasets']} consequential datasets** and **{s['priority_followup']['selected_lineage_expressions']} selected lineage expressions**. Original audit populations remain frozen. The first operational-access case remains undetermined pending confirmed access.", '',
         f"The [reform baseline](reform_compliance_view.md) contains **{s['reform_baseline']['selected_provisions']} selected provision records**, rather than universally applicable mission obligations. UNGA81 adopted-action extraction remains unresolved within the bounded search. No verified compliance finding is asserted. See the [agent review](portfolio_agent_review.md) for its actual inspection scope and limits.", '',
         'Six new evidence-request contracts cover ten case tracks. All remain unsent, collection remains unauthorized and proposed owners remain unaccepted. Three pilot charters are blocked; their numerical thresholds require actual baseline data. Ten synthetic scenarios test software behavior only. [Commander’s decision memo](commander_decision_memo.md) · [Full execution ledger](workflow_execution.md) · [Leadership report](leadership_portfolio_report.md).', '',
         '## Research reference and operational boundary', '',

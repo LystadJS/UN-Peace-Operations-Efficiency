@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "case_id": "C03",
+  "review_type": "SEPARATE_AGENT_SELECTED_PRIMARY_SOURCE_REVIEW",
+  "reviewed_on": "2026-10-23",
+  "reviewer_role": "Parallel source reviewer; not an institutional approver",
+  "reviewed_artifact": {
+    "path": "data/priority_cases/C03_public_evidence.json",
+    "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978"
+  },
+  "conclusion": "QUALIFIED_PUBLIC_EVIDENCE_PACKET",
+  "review_scope": "Independent selected operative-text checks; not exhaustive mandate, budget-adoption or operational assurance.",
+  "checked_sources": [
+    {
+      "source_id": "C03-PUB-01",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2793(2025)&t=pdf",
+      "locator": "Printed pages 5\u20136, OP10(e), OP11",
+      "independent_retrieval": "FINAL_PDF_OPENED_VIA_OFFICIAL_REGISTRY_VIEW_PDF",
+      "confirmed": "Final adopted 30 September 2025 text requires BINUH cost-recovery support targeting full responsibility by 1 February 2026 and separate quantifiable compacts for BINUH and GSF.",
+      "limit": "No signed compact, actual cost-recovery population or compliance established."
+    },
+    {
+      "source_id": "C03-PUB-02",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2814(2026)&t=pdf",
+      "locator": "Printed pages 2\u20133, OP1, OP3, OP7",
+      "independent_retrieval": "FINAL_PDF_OPENED_VIA_OFFICIAL_REGISTRY_VIEW_PDF",
+      "confirmed": "Final adopted 29 January 2026 text extends BINUH through 31 January 2027, addresses coordination and specifies costed DDR/justice support options.",
+      "limit": "OP7 does not establish a blanket aviation cost perimeter or an actual efficiency outcome."
+    },
+    {
+      "source_id": "C03-PUB-03",
+      "url": "https://documents.un.org/doc/undoc/gen/n25/347/42/pdf/n2534742.pdf",
+      "locator": "Printed pages 2\u20133 paragraphs 4,6; page 8 paragraph 20",
+      "independent_retrieval": "OFFICIAL_FULL_PDF_OPENED_SELECTED_PASSAGES",
+      "confirmed": "ACABQ advice dated 10 December 2025 distinguishes assessed GSF support, BINUH cost recovery and voluntary channels, and seeks accountability/transition information.",
+      "limit": "Advice is not GA appropriation or calendar-2027 actual cost evidence."
+    },
+    {
+      "source_id": "C03-PUB-07",
+      "url": "https://mandates.un.org/mandate/S/RES/2829%20%282026%29?subject=Gangs",
+      "locator": "Registry OP1\u20133",
+      "independent_retrieval": "OFFICIAL_REGISTRY_OPENED_FINAL_PDF_CLICK_REDIRECTED_TO_ODS_ERROR",
+      "confirmed": "Registry extends GSF to 31 March 2027, links continued UNSOH support to 2793, specifies benchmark reporting and notes a 27 July 2026 status agreement.",
+      "limit": "Final PDF not authenticated; GSF end date is not assigned automatically to every UNSOH obligation."
+    }
+  ],
+  "other_source_classification_checks": [
+    {
+      "source_ids": [
+        "C03-PUB-04",
+        "C03-PUB-05",
+        "C03-PUB-06"
+      ],
+      "assessment": "Packet accurately labels retained/indexed management reporting as lacking fresh operational assurance; reviewer did not independently retrieve these passages."
+    },
+    {
+      "source_ids": [
+        "C03-PUB-08"
+      ],
+      "assessment": "Retained proposal values remain unauthenticated in this review; no adopted appropriation, actual expenditure or saving inferred."
+    }
+  ],
+  "remaining_limits": [
+    "Selected provisions only; later amendments, corrigenda and complete current authority population not certified.",
+    "No raw PDF bytes or hashes retained; checks concern source identity and selected displayed text.",
+    "Compacts, invoices, service performance, allocation keys, retained and transition costs remain absent.",
+    "Indexed management claims and retained financial transcriptions have not been upgraded by this review."
+  ],
+  "required_next_evidence": [
+    "Final 2829 PDF and bounded later-amendment check.",
+    "Signed BINUH compact and separate GSF allocation boundary.",
+    "Actual matched service/cost/recovery and quality/safety records across comparable periods."
+  ],
+  "decision_boundary": {
+    "candidate_state": "SCREENING_CANDIDATE",
+    "disposition": "BLOCKED_PENDING_EVIDENCE",
+    "financial_validation": "NOT_PERFORMED",
+    "owner_acceptance": "NOT_OBTAINED",
+    "benefit_amount": null,
+    "requests_sent": false
+  }
+}

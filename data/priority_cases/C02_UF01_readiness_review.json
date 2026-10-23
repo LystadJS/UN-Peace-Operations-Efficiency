@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "review_id": "C02-UF01-F03-INDEPENDENT-RESEARCH-READINESS-2026-10-23",
+  "reviewed_on": "2026-10-23",
+  "review_kind": "SEPARATE_AGENT_SUBSTANTIVE_DESIGN_REVIEW",
+  "scope_path": "data/priority_cases/C02_UF01_research_scope.json",
+  "scope_sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+  "research_scope_id": "C02-UF01-VEHICLES-RESEARCH-1",
+  "scope_version": 1,
+  "parent_case_id": "C02",
+  "parent_intervention_id": "CASE02",
+  "recommended_state": "VALIDATION_READY",
+  "recommendation_scope": "ONLY_THE_FROZEN_CHILD_RESEARCH_SCOPE",
+  "all_seven_required_checks_pass": true,
+  "checks": {
+    "bounded_intervention": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#population",
+        "data/priority_cases/C02_UF01_research_scope.json#period",
+        "data/transaction_control_baseline.csv#control_id=UF01",
+        "data/spm_2027_embedded_efficiencies.csv#efficiency_id=EFF019"
+      ],
+      "rationale": "The research population is fixed to all six retained UF01 proposal positions: four light and two armoured vehicles, proposed from UNIFIL to UNSCOL in the calendar-2027 proposal. It preserves rejected, unavailable, substituted and non-transferred outcomes, excludes UF02/UF03 and requires successor scope control. These are explicit proposal positions, not invented physical assets. Actual serials, transfer dates and observation windows are future mapping evidence, not prerequisites to defining this source-version-bound research unit."
+    },
+    "owner_role_and_custodian": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#proposed_roles",
+        "data/priority_cases/C02_request_addendum.json#proposed_custodian_roles"
+      ],
+      "rationale": "UNSCOL recipient property/procurement/finance research decision roles, UNIFIL donor transition/property/finance custodians and competent release/designation roles are explicitly proposed. F03 research readiness requires proposed roles and custodians. No accepted institutional owner or authority is asserted; acceptance remains a separate later requirement."
+    },
+    "mandate_and_cost_perimeter": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#authority_application",
+        "data/priority_cases/C02_UF01_research_scope.json#counterfactual",
+        "data/priority_cases/C02_source_review.json#source_checks",
+        "docs/cost_accounting_standard.md"
+      ],
+      "rationale": "The design applies the inspected-source review's OP6/7 protected withdrawal/liquidation context and OP9 designated-entity/financial-rules limit, while preserving that UNSCOL and these vehicles are not specifically approved by the general clause. It defines donor/recipient external whole-life and residual cost, foregone disposal proceeds, lifecycle/fiscal bridges and elimination of internal transfers. Missing specific designation and release are operational holds, not silently assumed authority for this research."
+    },
+    "evidence_request": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#evidence_request",
+        "data/evidence_requests/E02_assets.json",
+        "data/priority_cases/C02_request_addendum.json"
+      ],
+      "rationale": "The existing E02 fields and targeted addendum request proposal-position mapping, full inventory/custody, need/procurement chronology, competent approvals, protected-capability clearance, costs and service suitability. The purpose and private token joins are stated, requests remain unsent, and no raw identifiers are fabricated or requested for public Git."
+    },
+    "counterfactual_design": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#research_question",
+        "data/priority_cases/C02_UF01_research_scope.json#counterfactual",
+        "data/priority_cases/C02_UF01_research_scope.json#amount_classification",
+        "data/priority_cases/C02_UF01_research_scope.json#nonadditivity"
+      ],
+      "rationale": "The comparison keeps the same approved functional need and equivalent quantity/service, and contrasts transfer plus all costs with otherwise-needed lawful acquisition or other feasible provision. The design requires prospective need, feasibility, price/life, period and allocation freezes; retains no-transfer/current-process outcomes; and excludes the embedded394000 USD from any new incremental recognition. Actual need, quotations and performance remain to be evidenced rather than treated as present."
+    },
+    "prospective_guardrails": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#prospective_guardrails",
+        "docs/guardrail_standard.md",
+        "data/priority_cases/C02_request_addendum.json#field_level_additions"
+      ],
+      "rationale": "Vehicle-specific constraints protect source withdrawal/medical/enabling/liquidation capability, custody, recipient suitability, service continuity and funded support. Missing or unknown authority/capability, incomplete cohort mapping, incomparable costs and safety/service breaches stop release. The design explicitly measures baseline/standards then freezes justified thresholds before outcome comparison, with hold/current-process fallback. Unknown numerical thresholds are not presented as passed operational results or waived future requirements."
+    },
+    "nonadditivity_group": {
+      "status": "PASS",
+      "evidence_receipts": [
+        "data/priority_cases/C02_UF01_research_scope.json#nonadditivity",
+        "data/portfolio/interventions.json#CASE02",
+        "data/portfolio/benefit_pools.json#LEBANON_TRANSITION",
+        "data/transaction_control_baseline.csv#UF01",
+        "data/spm_2027_embedded_efficiencies.csv#EFF019"
+      ],
+      "rationale": "The child is bound to CASE02 and LEBANON_TRANSITION, with CASE13 shared residual/transition costs and UF02/UF03 overlap explicitly retained. One cost-object/period/alternative is recognized once. UF01's394000 USD is already embedded inside the retained proposal and is not a second or newly attributable benefit."
+    }
+  },
+  "conclusion": "Recommend VALIDATION_READY for this version-bound child research design. The exact proposed population, proposed roles/custodians, mandate/cost boundaries, evidence plan, counterfactual, prospective safeguards and overlap controls are substantively specified. This is neither operational validation nor approval to collect records or transfer assets.",
+  "reviewer_independence": {
+    "reviewer_role": "Separate project agent from the UF01 scope author",
+    "authored_components_disclosure": [
+      "Reviewer authored evidence_access_readiness.json and first_case_activation.md, the earlier general C01–C03 access/design package.",
+      "Reviewer authored C01_historical_audit.json and its historical-index lead note."
+    ],
+    "not_authored": [
+      "C02_UF01_research_scope.json or its companion",
+      "C02 public source packet, separate source review or request addendum",
+      "E02 contract, original UF01/EFF019 source rows, intervention register or benefit pools"
+    ],
+    "boundary": "Independent of this child scope author within the same AI-assisted project; not institutional, legal, financial or professional audit assurance. Common project standards and prior access-design discussion were shared."
+  },
+  "independently_checked": {
+    "scope_source_hash_count": 10,
+    "scope_source_hashes_match": true,
+    "review_source_hash_count": 14,
+    "retained_row_check": "Directly read UF01 vehicles_six_4_light_2_armoured, published_amount_usd394000, EFF019 projected_2027_efficiency_usd_thousands394, proposed-only/already-embedded labels and missing actual transaction IDs.",
+    "amount_conversion": "394 thousand USD equals394000 USD; no benefit calculation or new claim.",
+    "proposal_position_boundary": "Six class/count proposal positions are not six authenticated VINs or a signed physical-transfer cohort.",
+    "mandate_review_boundary": "Inspected the separate C02_source_review and scope application; this reviewer did not independently retrieve the legal PDFs again.",
+    "f03_check_inventory": "Exact seven required keys independently compared to data/standards/candidate_states.json; no operational-state checks substituted for research-design checks."
+  },
+  "preserved_boundaries": {
+    "parent_case_state": "SCREENING_CANDIDATE",
+    "parent_state_changed": false,
+    "candidate_state_event_created": false,
+    "collection_authorized": false,
+    "requests_sent": 0,
+    "accepted_owner": null,
+    "operational_baseline": null,
+    "actual_transfer_identifiers": null,
+    "verified_transaction_pairs": 0,
+    "operational_adjudications": 0,
+    "financial_validation": "NOT_PERFORMED",
+    "recognized_benefit": null
+  },
+  "activation_and_later_evidence_holds": [
+    "Authenticate the retained budget PDF and current applicable amendments/rules; revise scope prospectively if the source-defined cohort is wrong or superseded.",
+    "Establish actual competent recipient designation, donor release, custody acceptance, approved need and protected-capability clearance before any release.",
+    "Obtain separately authorized restricted intake, complete asset/need/cost mapping and accepted accountable roles; none is supplied by this recommendation.",
+    "Measure actual baseline and applicable standards, then freeze justified operational thresholds and comparable observation rules before outcome review.",
+    "Retain complete failed/rejected/no-transfer outcomes, residual/shared costs and the prebooked394000 USD exclusion; no savings claim before FINANCIALLY_VALIDATED."
+  ],
+  "recommendation_change_rule": "A substantive change to the reviewed scope bytes, proposal population, cost/authority meaning or safeguard design requires a new review and version-preserving disposition; do not silently reuse this recommendation.",
+  "selection_boundary": "Research readiness of this child does not establish that C02 has better institutional record access than C01 or C03. First operational-access case remains undetermined in the access package.",
+  "source_sha256": {
+    "data/priority_cases/C02_UF01_research_scope.json": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+    "docs/priority_cases/C02_UF01_research_scope.md": "2df59978696560fda4541e9ac1102ab9915cb93a7470e761b8e26395b2fb2214",
+    "data/standards/candidate_states.json": "96a56e92fd4505ed8f36bf52f3b1759ae5b9733937be25d6e7d53c0bb7ecef7f",
+    "docs/candidate_advancement.md": "ce0008ab03c506b3d37e2ea7c1082f9ca21b9e82138d1ac1090edb9c0280168a",
+    "docs/guardrail_standard.md": "86b95f01f3fbe4bfc41af8b898fb78aff5da2eadb4a33d07ea843649fb69248d",
+    "docs/cost_accounting_standard.md": "a4cbb419391a643f1dcbaef6f122249916c33cba0dbb8ff6cf81aca9e99b001b",
+    "data/priority_cases/C02_source_review.json": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+    "data/priority_cases/C02_public_evidence.json": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+    "data/priority_cases/C02_request_addendum.json": "3cba3eaf53bdebc400bd5e4aceef3f7eb9e994297660349a98198ac163e32ac1",
+    "data/evidence_requests/E02_assets.json": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+    "data/transaction_control_baseline.csv": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+    "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3"
+  }
+}

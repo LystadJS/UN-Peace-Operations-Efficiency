@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "case_id": "C01",
+  "artifact_type": "EVIDENCE_REQUEST_ADDENDUM_DECLARATIONS_ONLY",
+  "request_id": "E01-C01-CUTOVER-ADDENDUM",
+  "prepared_on": "2026-10-23",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "request_sent": false,
+  "actual_records_received": false,
+  "burden_estimate": "UNKNOWN",
+  "accountable_owner": null,
+  "base_contract": {
+    "path": "data/evidence_requests/E01_rsce.json",
+    "sha256": "ed3a6f7e45eb4ce68d4065ca4171fce131c1170b806fc5e8701ec6c9cee37550",
+    "unchanged": true
+  },
+  "public_evidence": {
+    "path": "data/priority_cases/C01_public_evidence.json",
+    "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+    "claim_refs": [
+      "C01-PUB-01",
+      "C01-PUB-03"
+    ],
+    "discrepancy": "C01-PUB-D01",
+    "evidence_status": "INDEXED_OFFICIAL_MANAGEMENT_REPORTS_NOT_SIGNED_CUTOVER_RECORDS"
+  },
+  "purpose": "Resolve the client/service-line effective cutover and separate predecessor billing, provider commencement and retained delegated client work before selecting any baseline or testing duplication.",
+  "reported_milestones_not_observation_windows": [
+    {
+      "reported_date_or_month": "2026-04",
+      "reported_scope": "16 new client entities assumed; scope and effective date require custodian reconciliation",
+      "source_claim": "C01-PUB-03"
+    },
+    {
+      "reported_date_or_month": "2026-07-01",
+      "reported_scope": "Formal KJSO administrative/transactional function handover reported after phased transition",
+      "source_claim": "C01-PUB-01"
+    }
+  ],
+  "selection": {
+    "case_slice": null,
+    "client_id": null,
+    "service_line": null,
+    "selection_rule": "Select one bounded client/service-line only after accountable custodian confirms linkage, completeness and permissible handling; include adverse and missing observations.",
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "posting_lag_allowance": null,
+    "comparable_period_rule": "Agree actual cutover, accrual/service-date alignment, posting lag, workload/service eligibility and comparable periods before outcome review. Public reporting dates do not set the observation window."
+  },
+  "tables": [
+    {
+      "table_id": "client_service_cutover_bridge",
+      "grain": "One client/service-line/phase interval with a specific scope and effective-date authority.",
+      "keys": [
+        "client_service_phase_id"
+      ],
+      "link_to_base_contract": "client_service_phase_id must map to E01 service_case_id/service_category through a custodian-held crosswalk.",
+      "fields": [
+        {
+          "name": "client_service_phase_id",
+          "type": "string",
+          "purpose": "Stable pseudonymous client-service-phase identity",
+          "required": true
+        },
+        {
+          "name": "client_entity_token",
+          "type": "string",
+          "purpose": "Distinguish client entity from mission/population label without personal identifiers",
+          "required": true
+        },
+        {
+          "name": "service_line_code",
+          "type": "string",
+          "purpose": "Identify exact transferred or retained service",
+          "required": true
+        },
+        {
+          "name": "phase",
+          "type": "string",
+          "purpose": "Separate pilot, commencement, transition and formal handover",
+          "required": true
+        },
+        {
+          "name": "scope_description_code",
+          "type": "string",
+          "purpose": "Identify included/excluded task coverage using controlled codes",
+          "required": true
+        },
+        {
+          "name": "effective_start",
+          "type": "date",
+          "purpose": "Record evidenced actual service commencement",
+          "required": true
+        },
+        {
+          "name": "effective_end",
+          "type": "date",
+          "purpose": "Preserve phased ending or still-active scope; missingness explicit",
+          "required": false
+        },
+        {
+          "name": "cutover_authority_receipt",
+          "type": "string",
+          "purpose": "Opaque receipt to approved effective-date and scope authority in restricted storage",
+          "required": true
+        },
+        {
+          "name": "completeness_status",
+          "type": "string",
+          "purpose": "Identify unknown/excluded client or service coverage rather than assume full handover",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "predecessor_provider_charge_bridge",
+      "grain": "One economic service event with linked predecessor/provider/client accounting lines; gross lines retained separately.",
+      "keys": [
+        "economic_service_event_token",
+        "accounting_line_token"
+      ],
+      "link_to_base_contract": "accounting_line_token links to E01 service_charges.line_id; economic_service_event_token links records belonging to the same eligible delivered service.",
+      "fields": [
+        {
+          "name": "economic_service_event_token",
+          "type": "string",
+          "purpose": "Distinguish one delivered service from repeated descriptions",
+          "required": true
+        },
+        {
+          "name": "accounting_line_token",
+          "type": "string",
+          "purpose": "Link gross journal, credit, reversal or settlement line",
+          "required": true
+        },
+        {
+          "name": "client_service_phase_id",
+          "type": "string",
+          "purpose": "Join line to evidenced cutover scope",
+          "required": true
+        },
+        {
+          "name": "entity_role",
+          "type": "string",
+          "purpose": "Identify predecessor, RSCE provider, client or receiving DOS cost role",
+          "required": true
+        },
+        {
+          "name": "service_date",
+          "type": "date",
+          "purpose": "Align delivered service rather than compare posting dates alone",
+          "required": true
+        },
+        {
+          "name": "posting_date",
+          "type": "date",
+          "purpose": "Retain accrual/settlement timing differences",
+          "required": true
+        },
+        {
+          "name": "entry_type",
+          "type": "string",
+          "purpose": "Separate charge, credit, reversal, settlement and closeout",
+          "required": true
+        },
+        {
+          "name": "linked_line_token",
+          "type": "string",
+          "purpose": "Tie corrections and mirrored inter-entity lines without automatic netting",
+          "required": false
+        },
+        {
+          "name": "last_predecessor_service_charge_receipt",
+          "type": "string",
+          "purpose": "Link evidenced final predecessor service-period charge and unresolved trailing adjustments",
+          "required": false
+        },
+        {
+          "name": "first_provider_service_charge_receipt",
+          "type": "string",
+          "purpose": "Link evidenced first provider service-period charge",
+          "required": false
+        },
+        {
+          "name": "overlap_explanation_status",
+          "type": "string",
+          "purpose": "Keep alleged duplicate, timing, split service and required residual control explanations distinct",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "delegation_retained_work_bridge",
+      "grain": "One client/service-line/task ownership interval and workload observation.",
+      "keys": [
+        "task_ownership_interval_token"
+      ],
+      "link_to_base_contract": "Map client_service_phase_id and task code to E01 local_retained_work observation_id/service_category; no monetary conversion of hours.",
+      "fields": [
+        {
+          "name": "task_ownership_interval_token",
+          "type": "string",
+          "purpose": "Stable ownership/work interval identity",
+          "required": true
+        },
+        {
+          "name": "client_service_phase_id",
+          "type": "string",
+          "purpose": "Join retained or transferred task to actual service coverage",
+          "required": true
+        },
+        {
+          "name": "task_code",
+          "type": "string",
+          "purpose": "Distinguish transaction processing from client approvals and statutory/delegated controls",
+          "required": true
+        },
+        {
+          "name": "performing_entity_role",
+          "type": "string",
+          "purpose": "Locate provider, predecessor, client or DOS work",
+          "required": true
+        },
+        {
+          "name": "delegation_basis_receipt",
+          "type": "string",
+          "purpose": "Link competent assignment/segregation-of-duties authority",
+          "required": true
+        },
+        {
+          "name": "work_retention_reason_code",
+          "type": "string",
+          "purpose": "Retain necessary local control, different scope, transition support and unresolved explanations",
+          "required": true
+        },
+        {
+          "name": "workload_observation_receipt",
+          "type": "string",
+          "purpose": "Link actual volume, paid hours, queue/rework and service-outcome observations",
+          "required": true
+        },
+        {
+          "name": "handover_acceptance_receipt",
+          "type": "string",
+          "purpose": "Link actual scope-specific acceptance or unresolved exception, not a press release",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "missingness_rule": "A missing final predecessor charge, first provider charge, acceptance receipt or workload observation remains missing. Do not infer cessation, zero cost, full coverage or duplicate service from absence.",
+  "financial_boundary": "Internal predecessor/client/provider charges are not external full-system expenditure; eliminate matched internal pairs once, include DOS and client retained work, and reconcile separate fiscal/client/fund perimeters. No savings designation before FINANCIALLY_VALIDATED.",
+  "approval_required": [
+    "Competent authority and accepted accountable client/provider owners",
+    "Purpose-bound fields and stable token/linkage method",
+    "Actual cutover and complete service population including exclusions",
+    "Comparable observation periods and posting-lag treatment",
+    "Collection burden, handling, retention and public-derivative review",
+    "Prospective service quality, timeliness, readiness and stop rules"
+  ],
+  "proposed_custodian_roles": [
+    "RSCE controller and selected service-line lead",
+    "Selected client finance/service manager with delegated-authority custody",
+    "KJSO closeout custodian and DOS receiving payroll/service custodian where applicable"
+  ],
+  "handling": {
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "identifiers": "Pseudonymous organizational/service-event keys only; actual tokens, records and re-identification maps remain outside public Git.",
+    "excluded": "No personal names, email, bank details, payroll person identifiers or security-sensitive narratives.",
+    "public_derivative": "Only reviewed non-identifying aggregates and opaque source receipts after approval; an unsent contract is not collection permission."
+  },
+  "candidate_state": "SCREENING_CANDIDATE",
+  "operational_activation_authorized": false,
+  "financial_validation": "NOT_PERFORMED",
+  "benefit_amount": null
+}

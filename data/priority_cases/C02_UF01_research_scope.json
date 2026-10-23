@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "research_scope_id": "C02-UF01-VEHICLES-RESEARCH-1",
+  "parent_case_id": "C02",
+  "parent_intervention_id": "CASE02",
+  "created_on": "2026-10-23",
+  "artifact_type": "PROPOSED_RESEARCH_SCOPE_NOT_STATE_EVENT",
+  "scope_version": 1,
+  "parent_state_preserved": "SCREENING_CANDIDATE",
+  "institutional_approval": false,
+  "owner_acceptance": "NOT_OBTAINED",
+  "collection_authority": "NOT_OBTAINED",
+  "request_status": "DRAFT_NOT_SENT",
+  "scope_freeze": "Project research design frozen to the retained proposal version; not an approved operational cohort or observation baseline.",
+  "population": {
+    "source_control_key": "data/transaction_control_baseline.csv#control_id=UF01",
+    "embedded_efficiency_key": "data/spm_2027_embedded_efficiencies.csv#efficiency_id=EFF019",
+    "source_object": "vehicles_six_4_light_2_armoured",
+    "proposed_quantity": 6,
+    "proposed_light_vehicle_quantity": 4,
+    "proposed_armoured_vehicle_quantity": 2,
+    "quantity_unit": "vehicles",
+    "source_entity": "UNIFIL",
+    "source_entity_id": "UNPO-UNIFIL",
+    "proposed_recipient": "UNSCOL",
+    "proposed_recipient_entity_id": "UNPO-SPM031",
+    "selection_rule": "All six proposed vehicle positions represented by retained UF01, whether subsequently transferred, unavailable, rejected, canceled, substituted or retained by the donor. No selection on successful transfer or favorable cost outcome. These are proposal positions, not six identified physical vehicles.",
+    "physical_asset_identifiers": null,
+    "procurement_requirement_identifiers": null,
+    "mapping_rule": "Custodian maps proposal positions through E02 private asset_token and procurement_requirement_token with quantity and class reconciliation. No invented VINs, need identifiers or one-to-one procurement-line assumption. Record unmatched positions and class/count discrepancies explicitly.",
+    "change_control": "Any change in proposed population, class or functional need requires a versioned successor scope with reasons before outcome assessment; retain original six-position denominator and all dispositions.",
+    "excluded": "UF02 ICT, UF03 consumables and unrelated transition assets; shared attributable costs and liabilities are still bridged, not silently excluded."
+  },
+  "period": {
+    "research_proposal_period": "2027-01-01/2027-12-31",
+    "period_status": "CALENDAR_2027_SG_PROPOSAL_NOT_ACTUAL_OBSERVATION_WINDOW",
+    "actual_transfer_dates": null,
+    "actual_baseline_dates": null,
+    "observation_rule": "Map all events meeting this proposal-defined need to dated closed records. Capture preparatory costs, transfer dates, remaining useful life and residual liabilities even outside calendar 2027; reconcile them through a separate lifecycle and fiscal-period bridge. Freeze comparable observation windows before outcome comparison, never use an arbitrary post-transfer successful subset.",
+    "fiscal_separation": "Calendar-2027 SPM proposal and July-June peacekeeping appropriations remain distinct. Do not subtract their gross amounts."
+  },
+  "amount_classification": {
+    "published_proposal_amount_usd": 394000,
+    "published_source_amount_usd_thousands": 394,
+    "amount_status": "ALREADY_EMBEDDED_PROPOSED_EFFICIENCY",
+    "additional_benefit_recognized": false,
+    "additional_benefit_usd": null,
+    "cashable_saving_usd": null,
+    "realized_saving_usd": null,
+    "source_qualification": "Retained UF01/EFF019 transcription of A/81/6 (Sect.3)/Add.4 pp7-9 Table3; primary budget PDF not freshly authenticated. Not GA approval, transaction evidence, validated saving or a new incremental opportunity."
+  },
+  "research_question": "For the complete retained six-vehicle proposal cohort, could safe authorized transfer satisfy the same approved UNSCOL transport need at lower external whole-life cost while preserving donor withdrawal and liquidation capability?",
+  "counterfactual": {
+    "comparison_unit": "Same functionally equivalent approved recipient need represented by this proposed four-light/two-armoured vehicle cohort; actual approved need remains to be evidenced.",
+    "alternative": "Otherwise-required lawful external acquisition or other documented feasible provision of the same need and service standard, compared with transfer plus all incremental and residual costs. If need, authority or donor release is absent, retain current process or close the hypothesis.",
+    "cost_perimeter": [
+      "Recipient acquisition or other feasible provision, including cancelable commitment and cancellation costs",
+      "Transfer preparation, transport, security, insurance and custody",
+      "Inspection, repair, adaptation, maintenance, fuel and remaining useful-life differences",
+      "Donor replacement or retained withdrawal/liquidation capacity and residual liabilities",
+      "Foregone lawful disposal proceeds and allocable shared transition costs",
+      "Recipient operating/support cost and end-of-life disposition"
+    ],
+    "measurement_rule": "Use comparable functionality, quantity, currency, price date, remaining life and service level. Eliminate internal UN transfers in consolidated totals; retain entity cash effects separately. Book value is not replacement acquisition cost. Record uncertainty and alternatives, not a positive amount absent records.",
+    "pre_outcome_freeze": "Authenticate budget source and freeze actual approved need, comparable prices, feasible alternative, matching and allocation rules before comparing outcomes; no requirement to pretend these observations already exist."
+  },
+  "authority_application": {
+    "adopted_source": "S/RES/2790(2025), independently inspected final text in C02_source_review",
+    "OP6": "Protect withdrawal functions including security, enabling and medical capability; no vehicle release that compromises these functions.",
+    "OP7": "Liquidation follows withdrawal with required protected capability; recipient research does not accelerate donor release.",
+    "OP9": "Practical safe transfer to a designated entity under UN practices and financial rules. It does not name UNSCOL or approve these six vehicles.",
+    "recipient_role_context": "S/2007/85 and S/2007/86 establish political/coordination context; neither grants asset-transfer approval.",
+    "research_application": "Testing a retained proposal is permitted as project research design. No operational release, recipient designation or collection permission is inferred.",
+    "execution_receipts_required": [
+      "Competent designation covering UNSCOL and relevant assets",
+      "Donor release and financial/property-rule competence",
+      "Recipient acceptance and approved functional need",
+      "Current amendments and applicable administrative rules review"
+    ]
+  },
+  "proposed_roles": {
+    "accountable_research_role": "UNSCOL recipient property/procurement and finance decision role, proposed only",
+    "donor_custodians": "UNIFIL transition/property and finance custodians",
+    "recipient_custodians": "UNSCOL property, procurement and finance custodians",
+    "competence_review": "Competent designated-recipient and donor-release approval authorities",
+    "acceptance": "All proposed; no named institution or individual has accepted this research or authorized execution."
+  },
+  "evidence_request": {
+    "base_contract": "data/evidence_requests/E02_assets.json",
+    "addendum": "data/priority_cases/C02_request_addendum.json",
+    "reuse_rule": "Reuse asset_events, private asset_token and procurement_requirement_token, transfer_authority_and_release, asset_need_allocation and procurement_disposition; no parallel transaction register.",
+    "minimum_receipts": [
+      "Proposal-position to current asset/class/count mapping including unmatched, rejected and canceled positions",
+      "Dated donor and recipient inventories and condition/remaining-life assessments",
+      "Approved recipient need and feasible alternative with quotes, commitment and cancellation status",
+      "Designation, competent donor release and signed paired custody/acceptance",
+      "Donor withdrawal/liquidation protected-capability clearance",
+      "Dated external and residual cost records with currency, fiscal bridge, reversals and allocation",
+      "Service availability and suitability baseline and post-disposition evidence"
+    ],
+    "privacy_rule": "Raw VINs, personal data and sensitive operational details stay with authorized custodians; repository uses authorized tokens and disclosure-safe receipts."
+  },
+  "prospective_guardrails": {
+    "mandatory_constraints": [
+      "No release without competent authorization, safe custody and approved recipient need",
+      "Preserve donor withdrawal, safety, medical, enabling and liquidation capability under OP6-7",
+      "Recipient vehicle suitability, protection, service continuity and funded support must be evidenced",
+      "No irreversible commitment, dispatch or collection is authorized by this scope"
+    ],
+    "sequence": "Before activation: measure relevant baseline and demand; identify applicable mandatory standards; obtain justified prospective numeric thresholds and accepted decision roles; freeze those thresholds before outcome comparison. Mandatory constraints cannot be traded against a monetary result.",
+    "numeric_thresholds": null,
+    "operational_assessment": "NOT_PERFORMED",
+    "stop_conditions": [
+      "Missing designation or donor release",
+      "Protected donor capacity impaired or unknown",
+      "Recipient need, functional equivalence, suitability or support unproved",
+      "Incomplete cohort reconciliation or incomparable costs",
+      "Safety, custody or service-standard breach"
+    ],
+    "fallback": "Hold release; retain current process or documented safe alternative; preserve rejected/no-transfer outcomes and escalate to competent authorities."
+  },
+  "nonadditivity": {
+    "group": "LEBANON_TRANSITION",
+    "parent": "CASE02",
+    "overlap_review": [
+      "CASE13 residual-liability and shared transition cost boundary",
+      "UF01/EFF019 already-embedded proposal amount",
+      "UF02 and UF03 remain separate class scopes but may share transition cost objects"
+    ],
+    "recognition_rule": "One cost object, period and feasible alternative can be credited once across the group. Reconcile shared costs and any prebooked proposal effect before incremental recognition; 394000 USD cannot be added as new benefit."
+  },
+  "research_gate_self_assessment": {
+    "target_state_recommendation": "VALIDATION_READY",
+    "recommendation_only": true,
+    "independent_review_status": "PENDING",
+    "state_event_created": false,
+    "scope": "Only this proposed child research scope; not the parent, execution or an institutional certification.",
+    "checks": [
+      {
+        "check": "bounded_intervention",
+        "status": "PASS",
+        "basis": "Complete source-version-bound UF01 proposal population, four light and two armoured positions, fixed inclusion/exclusion and failed-outcome retention rules. Physical identity is requested rather than fabricated.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#population"
+      },
+      {
+        "check": "owner_role_and_custodian",
+        "status": "PASS",
+        "basis": "Specific donor, recipient and competent approval roles proposed; acceptance is an activation requirement, not fabricated design evidence.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#proposed_roles"
+      },
+      {
+        "check": "mandate_and_cost_perimeter",
+        "status": "PASS",
+        "basis": "OP6/7/9 explicitly applied to vehicle research with designation/release boundary and whole-life/fiscal-period cost rules; no execution authority asserted.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#authority_application"
+      },
+      {
+        "check": "evidence_request",
+        "status": "PASS",
+        "basis": "E02 plus C02 request addendum cover exact mapping, approvals, need, custody, costs and service evidence for this cohort.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#evidence_request"
+      },
+      {
+        "check": "counterfactual_design",
+        "status": "PASS",
+        "basis": "Same approved functional need and full-cohort comparison against otherwise-required feasible provision, including transfer and residual cost, retention/no-transfer outcomes and pre-outcome matching freeze.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#counterfactual"
+      },
+      {
+        "check": "prospective_guardrails",
+        "status": "PASS",
+        "basis": "Vehicle-specific mandatory constraints, baseline-to-threshold sequence, stops and safe fallback specified; all actual measurements and thresholds remain unset.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#prospective_guardrails"
+      },
+      {
+        "check": "nonadditivity_group",
+        "status": "PASS",
+        "basis": "LEBANON_TRANSITION, CASE02/CASE13 shared cost review and UF01/EFF019 embedded-amount exclusion are explicit.",
+        "receipt": "data/priority_cases/C02_UF01_research_scope.json#nonadditivity"
+      }
+    ]
+  },
+  "operational_baseline": null,
+  "verified_transaction_pairs": 0,
+  "operational_audits": 0,
+  "financial_validation": "NOT_PERFORMED",
+  "source_sha256": {
+    "data/transaction_control_baseline.csv": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+    "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+    "data/priority_cases/C02_public_evidence.json": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+    "data/priority_cases/C02_source_review.json": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+    "data/priority_cases/C02_request_addendum.json": "3cba3eaf53bdebc400bd5e4aceef3f7eb9e994297660349a98198ac163e32ac1",
+    "data/evidence_requests/E02_assets.json": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+    "data/standards/candidate_states.json": "96a56e92fd4505ed8f36bf52f3b1759ae5b9733937be25d6e7d53c0bb7ecef7f",
+    "docs/guardrail_standard.md": "86b95f01f3fbe4bfc41af8b898fb78aff5da2eadb4a33d07ea843649fb69248d",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3"
+  }
+}

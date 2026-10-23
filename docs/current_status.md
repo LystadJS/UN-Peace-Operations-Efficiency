@@ -10,6 +10,10 @@ The Commander’s intent is to identify specific peacekeeping inefficiencies and
 
 The [public portfolio](decision_portfolio.md) contains **14 screening cases** and **0 substantive operational adjudications**. The minimum is three across two service types. The release is a public validation baseline; a decision-grade or realized-benefit portfolio remains blocked. Foundation and validation-system completion gates are partial; decision and realization gates are blocked.
 
+The [priority-case follow-up](priority_case_progress.md) supplements the three preserved parent dossiers with refreshed public authority, targeted request addenda, a five-entity authority overlay and separate bounded research-unit review. Child research units: `[{"candidate_id": "C02-UF01-RESEARCH", "claim_class": "NO_FINANCIAL_CLAIM", "current_state": "VALIDATION_READY", "version": "1.0"}]`. Research readiness supplies no collection permission, accepted institutional owner, operational trial or financial finding.
+
+The scoped follow-up reviews **11 consequential datasets** and **6 selected lineage expressions**. Original audit populations remain frozen. The first operational-access case remains undetermined pending confirmed access.
+
 The [reform baseline](reform_compliance_view.md) contains **65 selected provision records**, rather than universally applicable mission obligations. UNGA81 adopted-action extraction remains unresolved within the bounded search. No verified compliance finding is asserted. See the [agent review](portfolio_agent_review.md) for its actual inspection scope and limits.
 
 Six new evidence-request contracts cover ten case tracks. All remain unsent, collection remains unauthorized and proposed owners remain unaccepted. Three pilot charters are blocked; their numerical thresholds require actual baseline data. Ten synthetic scenarios test software behavior only. [Commander’s decision memo](commander_decision_memo.md) · [Full execution ledger](workflow_execution.md) · [Leadership report](leadership_portfolio_report.md).

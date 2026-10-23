@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "review_id": "PRIORITY-C01-C03-SEMANTICS-2026-10-23",
+  "review_date": "2026-10-23",
+  "source_evidence_cutoff": "Retained source-specific dates; no primary-source refresh by this review.",
+  "scope": "Eleven retained datasets material to C01–C03; preserved historical 324-dataset audit remains unchanged.",
+  "datasets": [
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "source_sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "rows": 12,
+      "grain": "One published budget/arrangement control, not one transaction",
+      "reviewed_row_key": [
+        "control_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "control_id": 0,
+        "case_id": 0,
+        "payer_or_source_entity": 0,
+        "recipient_entity": 0,
+        "object": 0,
+        "published_amount_usd": 0,
+        "amount_category": 0,
+        "existing_efficiency_id": 0,
+        "evidence_anchor": 0,
+        "source_url": 0,
+        "implementation_evidence": 0,
+        "transaction_document_id": 12,
+        "transaction_verified": 0,
+        "additional_net_savings_usd": 12,
+        "fiscal_rule": 0
+      },
+      "unit_and_period": "USD; mixed calendar and July–June periods identified in fiscal_rule",
+      "interpretation_limit": "Published amounts have distinct embedded-efficiency, internal-allocation, prior-comparator and category-delta classes; rows cannot be summed.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "source_sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "rows": 18,
+      "grain": "One legacy requested evidence package; not a dispatched message or received record",
+      "reviewed_row_key": [
+        "request_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "request_id": 0,
+        "case_id": 0,
+        "evidence_package": 0,
+        "minimum_keys_or_fields": 0,
+        "responsible_custodian_to_confirm": 0,
+        "linked_controls": 0,
+        "purpose": 0,
+        "received_status": 18,
+        "internal_only": 0
+      },
+      "unit_and_period": "No observed monetary amount or observation period",
+      "interpretation_limit": "linked_controls is a semicolon-separated many-to-many relation; received_status=not_provided is missing evidence, not a negative finding.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "source_sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "rows": 12,
+      "grain": "One retained document or official-page source description",
+      "reviewed_row_key": [
+        "source_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "source_id": 0,
+        "source_name": 0,
+        "exact_locator": 0,
+        "what_this_supports": 0,
+        "source_url": 0,
+        "evidence_type": 0,
+        "limitations": 0,
+        "assessed_on": 0
+      },
+      "unit_and_period": "assessed_on is retained review date, not publication/adoption date",
+      "interpretation_limit": "Source claims and locators are transcriptions; IDs do not authenticate primary text or turn proposals into adopted requirements.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/transaction_validation_cases.csv",
+      "source_sha256": "d30788f7556ae0982b5f6ffdb04bc506d30059638d3691167ac0496c06725afc",
+      "rows": 3,
+      "grain": "One umbrella transaction-audit case summary",
+      "reviewed_row_key": [
+        "case_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "case_id": 0,
+        "already_budgeted_2027_efficiency_usd": 1,
+        "other_proposed_allocation_or_payment_usd": 1,
+        "implementation_status": 0,
+        "transaction_evidence_gap": 0,
+        "acceptance_test": 0,
+        "cross_pillar_link": 0,
+        "verified_invoice_asset_or_charge_pairs": 0,
+        "additional_addressable_usd": 3,
+        "net_realized_savings_usd": 3
+      },
+      "unit_and_period": "USD monetary strings and explicit unavailable/not-applicable tokens",
+      "interpretation_limit": "case_id is RSCE/UNIFIL_UNSCOL/BINUH_UNSOH, not roadmap C01/C02/C03; zero verified pairs is an evidence count, not zero waste.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/rsce_workforce_model_vs_post_actions.csv",
+      "source_sha256": "33f807b9a2a303a6c3d056509d9c8e741b2f78eeb6e85fe658839791580f9c12",
+      "rows": 9,
+      "grain": "One model component, subtotal, proposed post action or reassignment",
+      "reviewed_row_key": [
+        "line_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "line_id": 0,
+        "measure": 0,
+        "recorded_amount": 0,
+        "unit_and_inclusion": 0,
+        "source_anchor": 0,
+        "accounting_control": 0,
+        "implemented_post_level_proof": 9,
+        "potential_incremental_savings": 9
+      },
+      "unit_and_period": "Mixed modeled FTE, proposed posts and reassigned posts",
+      "interpretation_limit": "Only WF01–WF03 form the WF04 model subtotal; WF05–WF09 have different populations and cannot be netted into it.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/spm_2027_embedded_efficiencies.csv",
+      "source_sha256": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+      "rows": 31,
+      "grain": "One initiative already priced into the calendar-2027 SG proposal",
+      "reviewed_row_key": [
+        "efficiency_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "efficiency_id": 0,
+        "cluster_id": 0,
+        "initiative": 0,
+        "projected_2027_efficiency_usd_thousands": 0,
+        "function_class": 0,
+        "source_anchor": 0,
+        "status": 0,
+        "incremental_2027_savings_available": 31,
+        "attribution_rule": 0
+      },
+      "unit_and_period": "USD thousands; calendar_2027; proposal",
+      "interpretation_limit": "An estimate of an embedded measure is neither a new incremental project benefit nor an observed saving.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/public_opportunity_register.csv",
+      "source_sha256": "9710c2bb28b35f52c2bd8bf27029d9e8e0606b1aa76755861d1869ec64f306f2",
+      "rows": 18,
+      "grain": "One public research opportunity linked to legacy candidate/evidence IDs",
+      "reviewed_row_key": [
+        "opportunity_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "opportunity_id": 0,
+        "short_title": 0,
+        "parent_candidate_id": 0,
+        "related_evidence_ids": 0,
+        "decision_class": 0,
+        "public_track": 0,
+        "readiness_tier": 0,
+        "qualitative_feasibility": 1,
+        "mandate_risk": 0,
+        "affected_entities": 0,
+        "published_cost_scope_description": 0,
+        "published_narrow_amount_usd": 0,
+        "financial_stage": 0,
+        "budget_calendar": 0,
+        "source_anchor": 0,
+        "public_source_url": 0,
+        "public_work_package": 0,
+        "requires_authorized_data_later": 0,
+        "decision_authority_or_safeguard": 0,
+        "date_trigger": 0,
+        "incremental_net_savings_usd": 18,
+        "does_this_support_a_cut": 0,
+        "review_date": 0
+      },
+      "unit_and_period": "USD narrow disclosed amount; row-specific calendar and financial_stage",
+      "interpretation_limit": "parent_candidate_id uses the legacy candidate namespace; it must not join directly to roadmap Cxx case IDs.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "source_sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "rows": 15,
+      "grain": "One retained resolution-paragraph directive transcription",
+      "reviewed_row_key": [
+        "directive_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "directive_id": 0,
+        "mission_id": 0,
+        "ga_resolution": 0,
+        "operative_paragraph": 0,
+        "pdf_page": 0,
+        "directive_paraphrase": 0,
+        "linked_candidate_id": 1,
+        "directive_category": 0,
+        "official_url": 0,
+        "financial_exposure_usd_thousands": 15,
+        "savings_inference": 0
+      },
+      "unit_and_period": "USD thousands where quantified; nonnumeric unavailable tokens allowed",
+      "interpretation_limit": "Repository authority classification is retained, not newly authenticated; mission_id and linked_candidate_id are not unique keys.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/spm_2027_mission_budget.csv",
+      "source_sha256": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
+      "rows": 36,
+      "grain": "One SPM mission/mandate budget entity with multiple annual measures",
+      "reviewed_row_key": [
+        "spm_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "spm_id": 0,
+        "cluster_id": 0,
+        "mission_name": 0,
+        "functional_category": 0,
+        "regular_budget_2025_appropriation_usd_thousands": 0,
+        "regular_budget_2025_expenditure_usd_thousands": 0,
+        "regular_budget_2026_approved_usd_thousands": 0,
+        "regular_budget_2027_proposed_usd_thousands": 0,
+        "proposal_2027_minus_2026_approved_usd_thousands": 0,
+        "personnel_2026_approved_table2": 0,
+        "personnel_2027_proposed_table2": 0,
+        "personnel_count_definition": 0,
+        "fiscal_period": 0,
+        "funding_stream": 0,
+        "budget_status": 0,
+        "source_symbol": 0,
+        "source_pdf_page": 0,
+        "source_table": 0,
+        "uploaded_source_sha256": 0,
+        "official_symbol_locator": 0,
+        "verified_source": 0,
+        "incremental_savings_usd_thousands": 36
+      },
+      "unit_and_period": "USD thousands; 2025 appropriation/expenditure,2026 approved,2027 proposed",
+      "interpretation_limit": "Personnel table2 includes multiple categories; no year-to-year subtraction is a verified efficiency or payroll finding.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/public_finance_nodes.csv",
+      "source_sha256": "f7330996d164da17514e8c42262d9d0d8922567575e8ad1542827b0a1c939be2",
+      "rows": 24,
+      "grain": "One financial control total, component, memo or comparator",
+      "reviewed_row_key": [
+        "finance_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "finance_id": 0,
+        "description": 0,
+        "amount_usd_thousands": 0,
+        "reporting_period": 0,
+        "funding_status": 0,
+        "inclusion_type": 0,
+        "source_anchor": 0,
+        "source_url": 0,
+        "guardrail": 0
+      },
+      "unit_and_period": "USD thousands; mixed periods, funds and statuses explicitly attached",
+      "interpretation_limit": "Parent and child nodes overlap; memo and transfer nodes cannot be treated as independent expenses or benefits.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    },
+    {
+      "path": "data/public_finance_edges.csv",
+      "source_sha256": "7e60c3473f2b4c9d089753f54da47135b71cf5e4a419248701ff717909d6acf0",
+      "rows": 21,
+      "grain": "One directed inclusion/comparability relationship between finance nodes",
+      "reviewed_row_key": [
+        "edge_id"
+      ],
+      "duplicate_key_values": [],
+      "empty_or_explicit_unavailable_counts": {
+        "edge_id": 0,
+        "parent_id": 0,
+        "related_id": 0,
+        "relationship": 0,
+        "can_sum_child_into_parent": 0,
+        "inclusion_note": 0
+      },
+      "unit_and_period": "No independent monetary unit",
+      "interpretation_limit": "can_sum_child_into_parent is qualified by relationship and inclusion_note; never sum all graph nodes.",
+      "review_status": "SCOPED_REPOSITORY_SEMANTICS_REVIEWED",
+      "primary_source_reauthenticated": false,
+      "operational_population_complete": false
+    }
+  ],
+  "joins": {
+    "request_to_control": {
+      "grain": "one request/control membership",
+      "rows": 38,
+      "broken_references": [],
+      "memberships": [
+        {
+          "request_id": "REQ01",
+          "control_id": "UF01"
+        },
+        {
+          "request_id": "REQ01",
+          "control_id": "UF02"
+        },
+        {
+          "request_id": "REQ01",
+          "control_id": "UF03"
+        },
+        {
+          "request_id": "REQ02",
+          "control_id": "UF01"
+        },
+        {
+          "request_id": "REQ02",
+          "control_id": "UF02"
+        },
+        {
+          "request_id": "REQ02",
+          "control_id": "UF03"
+        },
+        {
+          "request_id": "REQ03",
+          "control_id": "UF01"
+        },
+        {
+          "request_id": "REQ03",
+          "control_id": "UF02"
+        },
+        {
+          "request_id": "REQ03",
+          "control_id": "UF03"
+        },
+        {
+          "request_id": "REQ04",
+          "control_id": "UF01"
+        },
+        {
+          "request_id": "REQ04",
+          "control_id": "UF02"
+        },
+        {
+          "request_id": "REQ05",
+          "control_id": "UF01"
+        },
+        {
+          "request_id": "REQ05",
+          "control_id": "UF02"
+        },
+        {
+          "request_id": "REQ05",
+          "control_id": "UF03"
+        },
+        {
+          "request_id": "REQ06",
+          "control_id": "UF03"
+        },
+        {
+          "request_id": "REQ07",
+          "control_id": "BH01"
+        },
+        {
+          "request_id": "REQ07",
+          "control_id": "BH02"
+        },
+        {
+          "request_id": "REQ08",
+          "control_id": "BH02"
+        },
+        {
+          "request_id": "REQ09",
+          "control_id": "BH02"
+        },
+        {
+          "request_id": "REQ10",
+          "control_id": "BH01"
+        },
+        {
+          "request_id": "REQ10",
+          "control_id": "BH03"
+        },
+        {
+          "request_id": "REQ10",
+          "control_id": "BH04"
+        },
+        {
+          "request_id": "REQ11",
+          "control_id": "BH02"
+        },
+        {
+          "request_id": "REQ11",
+          "control_id": "BH05"
+        },
+        {
+          "request_id": "REQ12",
+          "control_id": "RS01"
+        },
+        {
+          "request_id": "REQ12",
+          "control_id": "RS02"
+        },
+        {
+          "request_id": "REQ13",
+          "control_id": "RS01"
+        },
+        {
+          "request_id": "REQ13",
+          "control_id": "RS02"
+        },
+        {
+          "request_id": "REQ13",
+          "control_id": "RS04"
+        },
+        {
+          "request_id": "REQ14",
+          "control_id": "RS01"
+        },
+        {
+          "request_id": "REQ14",
+          "control_id": "RS03"
+        },
+        {
+          "request_id": "REQ14",
+          "control_id": "RS04"
+        },
+        {
+          "request_id": "REQ15",
+          "control_id": "RS03"
+        },
+        {
+          "request_id": "REQ16",
+          "control_id": "RS03"
+        },
+        {
+          "request_id": "REQ17",
+          "control_id": "RS01"
+        },
+        {
+          "request_id": "REQ17",
+          "control_id": "RS03"
+        },
+        {
+          "request_id": "REQ17",
+          "control_id": "RS04"
+        },
+        {
+          "request_id": "REQ18",
+          "control_id": "RS03"
+        }
+      ]
+    },
+    "embedded_efficiency_to_control": [
+      {
+        "control_id": "UF01",
+        "efficiency_id": "EFF019",
+        "usd_matches_thousands_times_1000": true
+      },
+      {
+        "control_id": "UF02",
+        "efficiency_id": "EFF026",
+        "usd_matches_thousands_times_1000": true
+      },
+      {
+        "control_id": "UF03",
+        "efficiency_id": "EFF029",
+        "usd_matches_thousands_times_1000": true
+      },
+      {
+        "control_id": "BH01",
+        "efficiency_id": "EFF022",
+        "usd_matches_thousands_times_1000": true
+      }
+    ],
+    "financial_graph": {
+      "edges": 21,
+      "broken_endpoints": [],
+      "edge_semantics_must_govern_aggregation": true
+    },
+    "canonical_entity_ids": {
+      "RSCE": "UNPO-RSCE",
+      "UNIFIL": "UNPO-UNIFIL",
+      "UNSCOL": "UNPO-SPM031",
+      "BINUH": "UNPO-SPM035",
+      "UNSOH": "UNPO-UNSOH"
+    },
+    "entity_registry_sha256": "478c447f27c9ff08653ca7dfb553de7b0ab2745e8d092c20887b409db82f3a58",
+    "case_namespace_mapping": {
+      "RSCE": "C01",
+      "UNIFIL_UNSCOL": "C02",
+      "BINUH_UNSOH": "C03"
+    },
+    "source_url_join": "No certified URL-only source join: documents cover multiple claims, URL spelling variants and paragraph-specific scopes; use explicit locator review.",
+    "legacy_candidate_namespace": "Never join public_opportunity_register.parent_candidate_id or ga_adopted_directives.linked_candidate_id directly to roadmap Cxx IDs."
+  },
+  "observations": {
+    "verified_transaction_pairs": {
+      "UNIFIL_UNSCOL": 0,
+      "BINUH_UNSOH": 0,
+      "RSCE": 0
+    },
+    "transaction_document_ids_unavailable": 12,
+    "transaction_verified_no": 12,
+    "legacy_evidence_packages_not_received": 18,
+    "physical_asset_or_invoice_keys": "Absent: control IDs, document IDs and request IDs cannot substitute for VIN/serial, invoice line or settlement identity."
+  },
+  "resolved": [
+    "Reviewed grains and row keys for eleven retained datasets; verified no blank or duplicate selected keys.",
+    "Expanded explicit request/control links and verified all endpoints.",
+    "Verified four embedded-efficiency/control joins after explicit USD-thousands conversion.",
+    "Verified finance-graph endpoint completeness and the five priority canonical identity mappings."
+  ],
+  "unresolved": [
+    "Underlying UN primary text, adoption and operative applicability require the separate case source review.",
+    "No actual invoice/asset/post/workload population exists in these controls; operational duplication and financial benefit cannot be adjudicated.",
+    "Global historical dataset semantic counts and dynamic-lineage gaps are not automatically reduced by this scoped supplement.",
+    "Identity joins establish label correspondence only; current mandate/lifecycle/implementation status is not certified."
+  ],
+  "candidate_advancement": "NONE",
+  "benefit_recognition": "NONE"
+}

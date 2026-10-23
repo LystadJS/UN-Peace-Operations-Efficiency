@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "design_task": "E11",
+  "assembled_on": "2026-10-23",
+  "status": "DRAFTS_BLOCKED_FOR_ACTIVATION",
+  "purpose": "Prepare authorized observational validation and, only after separate approval, a reversible intervention comparison.",
+  "institutional_approval": false,
+  "live_trial_started": false,
+  "charters": [
+    {
+      "pilot_id": "PILOT-RSCE",
+      "case_id": "C01",
+      "title": "RSCE service-line charges, retained work and capacity",
+      "case_packet": "data/cases/C01.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "proposed_entities": [
+        "RSCE",
+        "SPM_CLIENTS",
+        "DOS",
+        "KJSO_PREDECESSOR"
+      ],
+      "hypothesis": "Some transaction work or charges may persist after shared-service handover; required client decisions and controls may explain apparent duplication.",
+      "comparison_design": "Same client/service-line, eligible transactions, period, demand, delegation and SLA; reconcile both sides of allocation, settlement, retained local work and provider external cost.",
+      "minimum_evidence": [
+        "Approved client/service-line allocation denominator",
+        "Mirror charge/recovery, settlement, reversal and timing records",
+        "Unique post and task records including client retained work",
+        "Service volume, queue, rework, payment/payroll continuity and SLA data"
+      ],
+      "proposed_owner_roles": [
+        "RSCE controller",
+        "Client finance and service-line accountable managers",
+        "DOS HR and predecessor closeout custodians"
+      ],
+      "accepted_accountable_owner": null,
+      "owner_acceptance_receipt": null,
+      "operational_authority_receipts": [],
+      "evidence_access_approval_receipts": [],
+      "threshold_approval_receipts": [],
+      "baseline_version": null,
+      "baseline_period": null,
+      "measurement_window": null,
+      "independent_sample_size": null,
+      "power_or_precision_plan": null,
+      "threshold_register": "data/pilots/thresholds.json",
+      "nonadditivity_rule": "RSCE corporate total, mixed-client share and calendar SPM allocation are different perimeters; do not subtract them as overbilling.",
+      "request_task": "E01",
+      "request_status": "NOT_SENT",
+      "records_status": "NOT_OBTAINED",
+      "activation_status": "BLOCKED",
+      "activation_gaps": [
+        "Accepted accountable owner and exact scope authorization",
+        "Approved evidence handling and access",
+        "Usable comparable baseline and complete linked records",
+        "Prospective numerical thresholds, exposure/sample plan and observation window",
+        "Funded receiver capability and assigned fallback/rollback authority"
+      ],
+      "phases": [
+        {
+          "phase": "PREPARE_RESEARCH",
+          "status": "DRAFT_REPOSITORY_DESIGN_ONLY"
+        },
+        {
+          "phase": "AUTHENTICATE_BASELINE",
+          "status": "BLOCKED_PENDING_ACCESS_OWNER_AND_RECORDS"
+        },
+        {
+          "phase": "FREEZE_COMPARISON",
+          "status": "BLOCKED_PENDING_BASELINE_AND_THRESHOLDS"
+        },
+        {
+          "phase": "AUTHORIZED_REVERSIBLE_COMPARISON",
+          "status": "NOT_AUTHORIZED"
+        },
+        {
+          "phase": "ADJUDICATE",
+          "status": "BLOCKED_PENDING_ACTUAL_EVIDENCE"
+        }
+      ],
+      "stop_and_fallback": "Protect payroll, vendor-payment continuity and segregation of duties; fall back to approved current routing.",
+      "fallback_owner": null,
+      "stop_authority": null,
+      "restart_rule": "No automatic restart; competent owner decision, resolved trigger and prospectively versioned plan required.",
+      "financial_validation": "NOT_PERFORMED",
+      "benefits": {
+        "capacity_gain": null,
+        "recovery": null,
+        "cost_avoidance": null,
+        "cashable_saving": null,
+        "realized_saving": null
+      },
+      "limitations": [
+        "Research charter does not grant access or operational permission.",
+        "Reported historical implementation is distinct from this unstarted pilot.",
+        "Synthetic rehearsal is not a live operational trial."
+      ]
+    },
+    {
+      "pilot_id": "PILOT-UNIFIL-ASSETS",
+      "case_id": "C02",
+      "title": "UNIFIL–UNSCOL asset receipt and procurement avoidance",
+      "case_packet": "data/cases/C02.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "proposed_entities": [
+        "UNIFIL",
+        "UNSCOL"
+      ],
+      "hypothesis": "Transferred serviceable assets may meet a continuing requirement without an otherwise credible purchase; transfer, refurbishment and residual liabilities may offset the effect.",
+      "comparison_design": "Same asset/lot and requirement; match release, acceptance, inventory and procurement cancellation before computing net external acquisition/transfer cost.",
+      "minimum_evidence": [
+        "Serial/VIN or lot, release and acceptance documents",
+        "Both inventories, condition, service life and custody records",
+        "Continuing approved requirement and credible procurement path",
+        "Canceled/changed procurement, sunk commitments, transport, refurbishment, disposal and residual liabilities"
+      ],
+      "proposed_owner_roles": [
+        "UNIFIL property and finance custodians",
+        "UNSCOL property, procurement and finance custodians"
+      ],
+      "accepted_accountable_owner": null,
+      "owner_acceptance_receipt": null,
+      "operational_authority_receipts": [],
+      "evidence_access_approval_receipts": [],
+      "threshold_approval_receipts": [],
+      "baseline_version": null,
+      "baseline_period": null,
+      "measurement_window": null,
+      "independent_sample_size": null,
+      "power_or_precision_plan": null,
+      "threshold_register": "data/pilots/thresholds.json",
+      "nonadditivity_rule": "Existing proposed vehicle, ICT and ration effects are prebooked; parent and components cannot be counted again as new effects.",
+      "request_task": "E02",
+      "request_status": "NOT_SENT",
+      "records_status": "NOT_OBTAINED",
+      "activation_status": "BLOCKED",
+      "activation_gaps": [
+        "Accepted accountable owner and exact scope authorization",
+        "Approved evidence handling and access",
+        "Usable comparable baseline and complete linked records",
+        "Prospective numerical thresholds, exposure/sample plan and observation window",
+        "Funded receiver capability and assigned fallback/rollback authority"
+      ],
+      "phases": [
+        {
+          "phase": "PREPARE_RESEARCH",
+          "status": "DRAFT_REPOSITORY_DESIGN_ONLY"
+        },
+        {
+          "phase": "AUTHENTICATE_BASELINE",
+          "status": "BLOCKED_PENDING_ACCESS_OWNER_AND_RECORDS"
+        },
+        {
+          "phase": "FREEZE_COMPARISON",
+          "status": "BLOCKED_PENDING_BASELINE_AND_THRESHOLDS"
+        },
+        {
+          "phase": "AUTHORIZED_REVERSIBLE_COMPARISON",
+          "status": "NOT_AUTHORIZED"
+        },
+        {
+          "phase": "ADJUDICATE",
+          "status": "BLOCKED_PENDING_ACTUAL_EVIDENCE"
+        }
+      ],
+      "stop_and_fallback": "Do not remove mission-critical source capability; protect custody, asset safety, environmental obligations and accepted receiver serviceability.",
+      "fallback_owner": null,
+      "stop_authority": null,
+      "restart_rule": "No automatic restart; competent owner decision, resolved trigger and prospectively versioned plan required.",
+      "financial_validation": "NOT_PERFORMED",
+      "benefits": {
+        "capacity_gain": null,
+        "recovery": null,
+        "cost_avoidance": null,
+        "cashable_saving": null,
+        "realized_saving": null
+      },
+      "limitations": [
+        "Research charter does not grant access or operational permission.",
+        "Reported historical implementation is distinct from this unstarted pilot.",
+        "Synthetic rehearsal is not a live operational trial."
+      ]
+    },
+    {
+      "pilot_id": "PILOT-HAITI",
+      "case_id": "C03",
+      "title": "BINUH–UNSOH aviation and support full-system cost",
+      "case_packet": "data/cases/C03.json",
+      "candidate_state": "SCREENING_CANDIDATE",
+      "proposed_entities": [
+        "BINUH",
+        "UNSOH",
+        "RSCE_SETTLEMENT"
+      ],
+      "hypothesis": "Shared support may reduce external delivery cost while preserving readiness; intermission payments and reported handover alone cannot establish the effect.",
+      "comparison_design": "Same service and flight requirement, period, threat/demand exposure and readiness; eliminate internal reimbursements and include provider vendor cost, retained posts and residual obligations.",
+      "minimum_evidence": [
+        "Signed scope/SLA, effective dates and service performance terms",
+        "Paired AP/AR, invoice, settlement, reversal and service-period records",
+        "Flight IDs/hours, vendor bills, allocation keys and readiness",
+        "Retained/transferred posts, payroll, overtime, separation cost and emergency capability"
+      ],
+      "proposed_owner_roles": [
+        "BINUH and UNSOH mission support accountable managers",
+        "Both finance controllers and RSCE settlement custodians",
+        "UNSOH aviation, procurement and HR custodians"
+      ],
+      "accepted_accountable_owner": null,
+      "owner_acceptance_receipt": null,
+      "operational_authority_receipts": [],
+      "evidence_access_approval_receipts": [],
+      "threshold_approval_receipts": [],
+      "baseline_version": null,
+      "baseline_period": null,
+      "measurement_window": null,
+      "independent_sample_size": null,
+      "power_or_precision_plan": null,
+      "threshold_register": "data/pilots/thresholds.json",
+      "nonadditivity_rule": "Aviation proposal reduction is embedded; broader all-support reimbursement is an internal payment with different scope and is not netted mechanically.",
+      "request_task": "E03",
+      "request_status": "NOT_SENT",
+      "records_status": "NOT_OBTAINED",
+      "activation_status": "BLOCKED",
+      "activation_gaps": [
+        "Accepted accountable owner and exact scope authorization",
+        "Approved evidence handling and access",
+        "Usable comparable baseline and complete linked records",
+        "Prospective numerical thresholds, exposure/sample plan and observation window",
+        "Funded receiver capability and assigned fallback/rollback authority"
+      ],
+      "phases": [
+        {
+          "phase": "PREPARE_RESEARCH",
+          "status": "DRAFT_REPOSITORY_DESIGN_ONLY"
+        },
+        {
+          "phase": "AUTHENTICATE_BASELINE",
+          "status": "BLOCKED_PENDING_ACCESS_OWNER_AND_RECORDS"
+        },
+        {
+          "phase": "FREEZE_COMPARISON",
+          "status": "BLOCKED_PENDING_BASELINE_AND_THRESHOLDS"
+        },
+        {
+          "phase": "AUTHORIZED_REVERSIBLE_COMPARISON",
+          "status": "NOT_AUTHORIZED"
+        },
+        {
+          "phase": "ADJUDICATE",
+          "status": "BLOCKED_PENDING_ACTUAL_EVIDENCE"
+        }
+      ],
+      "stop_and_fallback": "Preserve flight safety, emergency evacuation, security access and mission prioritization through an authorized fallback.",
+      "fallback_owner": null,
+      "stop_authority": null,
+      "restart_rule": "No automatic restart; competent owner decision, resolved trigger and prospectively versioned plan required.",
+      "financial_validation": "NOT_PERFORMED",
+      "benefits": {
+        "capacity_gain": null,
+        "recovery": null,
+        "cost_avoidance": null,
+        "cashable_saving": null,
+        "realized_saving": null
+      },
+      "limitations": [
+        "Research charter does not grant access or operational permission.",
+        "Reported historical implementation is distinct from this unstarted pilot.",
+        "Synthetic rehearsal is not a live operational trial."
+      ]
+    }
+  ]
+}

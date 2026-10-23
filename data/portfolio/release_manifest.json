@@ -256,8 +256,8 @@
     },
     {
       "path": ".github/workflows/reusable_validation.yml",
-      "sha256": "3bcf84677028ffe2ae01f75e3f00ddf59041ece8e9b8619da480ca015381f1e9",
-      "bytes": 2556
+      "sha256": "41fad1ff3c7a338e3713e2506f22a6738ccf44cdacb15bea37c157bccddb7a2d",
+      "bytes": 2583
     },
     {
       "path": ".github/workflows/systematic_census.yml",
@@ -811,8 +811,8 @@
     },
     {
       "path": "docs/ci_validation.md",
-      "sha256": "1b6861fa20e30175143fec2303bf6f73256153eaa36f803f8f15d106e4b9ae75",
-      "bytes": 7509
+      "sha256": "d94285c1fcdf7b2050d98a987121c1ee22cab678c474b65a5efeea9417c058da",
+      "bytes": 8010
     },
     {
       "path": "docs/commander_decision_memo.md",

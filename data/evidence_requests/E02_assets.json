@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E02",
+  "case_ids": [
+    "C02"
+  ],
+  "purpose": "UNIFIL–UNSCOL asset use, actual external costs and pre-existing procurement need",
+  "proposed_custodian_roles": [
+    "UNIFIL asset/finance/transition owner",
+    "UNSCOL receiving asset/service owner"
+  ],
+  "tables": [
+    {
+      "table_id": "asset_events",
+      "grain": "One asset custody, condition, transfer, deployment or disposal event",
+      "keys": [
+        "asset_event_id"
+      ],
+      "fields": [
+        {
+          "name": "asset_event_id",
+          "type": "string",
+          "purpose": "Stable event identity",
+          "required": true
+        },
+        {
+          "name": "asset_token",
+          "type": "string",
+          "purpose": "Pseudonymous asset linkage without serial disclosure",
+          "required": true
+        },
+        {
+          "name": "asset_class",
+          "type": "string",
+          "purpose": "Assess substitutability",
+          "required": true
+        },
+        {
+          "name": "event_type",
+          "type": "string",
+          "purpose": "Distinguish transfer acceptance deployment disposal",
+          "required": true
+        },
+        {
+          "name": "event_date",
+          "type": "date",
+          "purpose": "Establish chronology",
+          "required": true
+        },
+        {
+          "name": "source_entity",
+          "type": "string",
+          "purpose": "Locate source cost",
+          "required": true
+        },
+        {
+          "name": "receiving_entity",
+          "type": "string",
+          "purpose": "Locate receiving cost",
+          "required": true
+        },
+        {
+          "name": "condition_band",
+          "type": "string",
+          "purpose": "Test usable capacity",
+          "required": true
+        },
+        {
+          "name": "service_acceptance_status",
+          "type": "string",
+          "purpose": "Verify recipient capability",
+          "required": true
+        },
+        {
+          "name": "transfer_cost",
+          "type": "decimal",
+          "purpose": "Include transport preparation and handover expense",
+          "required": true
+        },
+        {
+          "name": "residual_liability_cost",
+          "type": "decimal",
+          "purpose": "Include storage maintenance disposal and transition obligations",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify financial unit",
+          "required": true
+        },
+        {
+          "name": "procurement_requirement_token",
+          "type": "string",
+          "purpose": "Link genuine pre-existing demand",
+          "required": true
+        },
+        {
+          "name": "procurement_commitment_status",
+          "type": "string",
+          "purpose": "Distinguish plan commitment cancellation and actual purchase",
+          "required": true
+        },
+        {
+          "name": "comparable_external_purchase_cost",
+          "type": "decimal",
+          "purpose": "Document bounded avoided procurement counterfactual",
+          "required": true
+        },
+        {
+          "name": "availability_result",
+          "type": "string",
+          "purpose": "Protect readiness",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "Preserve mandate, safety, readiness, quality, timeliness and transition controls; no operational intervention authorized."
+  ]
+}

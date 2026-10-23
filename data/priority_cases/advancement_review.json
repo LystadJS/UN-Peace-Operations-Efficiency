@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "review_id": "PRIORITY-F03-DESIGN-REVIEW-2026-10-23",
+  "review_date": "2026-10-23",
+  "standard": "data/standards/candidate_states.json#states.VALIDATION_READY",
+  "required_checks": [
+    "bounded_intervention",
+    "owner_role_and_custodian",
+    "mandate_and_cost_perimeter",
+    "evidence_request",
+    "counterfactual_design",
+    "prospective_guardrails",
+    "nonadditivity_group"
+  ],
+  "reviewer_authorship_disclosure": "Reviewer authored the priority semantic supplement and C02 scoped source review, not the original case dossiers, request contracts, access package or public-source packets.",
+  "status_definitions": {
+    "PASS": "Reviewed criterion is present at the research-design level only.",
+    "PARTIAL": "A specific research-design or applicability gap prevents a complete design-entry receipt.",
+    "UNKNOWN": "The review lacks enough evidence to judge the research criterion."
+  },
+  "cases": [
+    {
+      "case_id": "C01",
+      "current_parent_state": "SCREENING_CANDIDATE",
+      "assessment_scope": "Research-design prerequisites only; no operational validation or institutional approval",
+      "checks": [
+        {
+          "check": "bounded_intervention",
+          "status": "PARTIAL",
+          "reason": "The umbrella covers RSCE charging, retained work and workforce effects. No particular client/service/closed accounting cohort is yet frozen.",
+          "receipts": [
+            "data/cases/C01.json",
+            "data/priority_cases/evidence_access_readiness.json#cases/C01/proposed_smallest_slice"
+          ],
+          "next_research_action": "Freeze one source-defined client/service cohort or an explicit reproducible eligibility rule and exclusions before outcome inspection; reconcile April and July cutover reports at client/service level."
+        },
+        {
+          "check": "owner_role_and_custodian",
+          "status": "PASS",
+          "reason": "Specific proposed accountable and custodian roles are documented. F03 does not require accepted institutional ownership at this research-design entry gate.",
+          "receipts": [
+            "data/evidence_requests/E01_rsce.json",
+            "data/pilots/charters.json#C01"
+          ],
+          "next_research_action": "Confirm actual acceptance and permissible access separately before dispatch or collection; do not treat this PASS as accepted ownership."
+        },
+        {
+          "check": "mandate_and_cost_perimeter",
+          "status": "PARTIAL",
+          "reason": "Financial perimeters are separated, but the selected client's delegated decisions, service coverage and applicable cutover/cost period remain unbound.",
+          "receipts": [
+            "data/cases/C01.json",
+            "data/priority_cases/C01_public_evidence.json",
+            "data/portfolio/financial_baseline.json"
+          ],
+          "next_research_action": "Attach the selected service/client's applicable mandate, delegation and allocation-period boundaries; distinguish reported provider commencement from particular client cutover."
+        },
+        {
+          "check": "evidence_request",
+          "status": "PASS",
+          "reason": "The purpose-bound minimum request contract exists. The priority addendum identifies new scope/authority linkage questions; dispatch and receipt are separate from design readiness.",
+          "receipts": [
+            "data/evidence_requests/E01_rsce.json",
+            "data/priority_cases/C01_request_addendum.json"
+          ],
+          "next_research_action": "Bind the contract and applicable addendum to the frozen child scope; retain DRAFT_NOT_SENT and no collection authority until genuine approval."
+        },
+        {
+          "check": "counterfactual_design",
+          "status": "PASS",
+          "reason": "The charter defines a same-service/need and comparable-period alternative, transferred work/cost coverage and reasons to retain the current arrangement. Actual comparable observations belong to later operational validation.",
+          "receipts": [
+            "data/pilots/charters.json#C01",
+            "data/cases/C01.json"
+          ],
+          "next_research_action": "Instantiate the existing matching and alternative-selection rules in the frozen bounded unit before examining outcome data; reject unequal service/need comparisons."
+        },
+        {
+          "check": "prospective_guardrails",
+          "status": "PASS",
+          "reason": "Research guardrail design identifies protected capabilities and stop/fallback principles; F06 requires baseline measurement followed by justified prospective thresholds before outcome comparison. Missing numeric thresholds and accepted owners block activation, not automatically this design check.",
+          "receipts": [
+            "docs/guardrail_standard.md",
+            "data/pilots/charters.json#C01",
+            "data/pilots/thresholds.json",
+            "data/priority_cases/C01_request_addendum.json"
+          ],
+          "next_research_action": "Carry case-specific mandatory constraints and the baseline-to-threshold-to-comparison sequence into the child scope. All actual operational guard assessments remain unperformed."
+        },
+        {
+          "check": "nonadditivity_group",
+          "status": "PASS",
+          "reason": "The normalized intervention and benefit-pool records identify existing overlapping cost boundaries. No benefit allocation or total is recognized.",
+          "receipts": [
+            "data/portfolio/interventions.json#CASE01",
+            "data/portfolio/benefit_pools.json"
+          ],
+          "next_research_action": "Preserve all parent-pool links and unique cost-object/period/alternative accounting in any child scope."
+        }
+      ],
+      "counts": {
+        "PASS": 5,
+        "PARTIAL": 2,
+        "UNKNOWN": 0
+      },
+      "recommended_parent_transition": null,
+      "reason": "Freeze the exact research unit and attach its mandate/cost applicability receipt. These are remaining project/public research actions; absent internal records and accepted owners are not used as automatic reasons to deny VALIDATION_READY.",
+      "source_parent_case_preserved": true
+    },
+    {
+      "case_id": "C02",
+      "current_parent_state": "SCREENING_CANDIDATE",
+      "assessment_scope": "Research-design prerequisites only; no operational validation or institutional approval",
+      "checks": [
+        {
+          "check": "bounded_intervention",
+          "status": "PARTIAL",
+          "reason": "The umbrella combines vehicles, ICT and consumables and has not frozen a recipient requirement or asset-class cohort.",
+          "receipts": [
+            "data/cases/C02.json",
+            "data/priority_cases/evidence_access_readiness.json#cases/C02/proposed_smallest_slice"
+          ],
+          "next_research_action": "Freeze a successor research scope for the retained UF01 six-vehicle proposal (four light, two armoured), preserving proposal status, including non-transfers and rejections; do not invent VINs or deliveries."
+        },
+        {
+          "check": "owner_role_and_custodian",
+          "status": "PASS",
+          "reason": "Specific proposed accountable and custodian roles are documented. F03 does not require accepted institutional ownership at this research-design entry gate.",
+          "receipts": [
+            "data/evidence_requests/E02_assets.json",
+            "data/pilots/charters.json#C02"
+          ],
+          "next_research_action": "Confirm actual acceptance and permissible access separately before dispatch or collection; do not treat this PASS as accepted ownership."
+        },
+        {
+          "check": "mandate_and_cost_perimeter",
+          "status": "PARTIAL",
+          "reason": "The general OP9 asset clause does not designate UNSCOL. The exact research asset class and recipient-need/cost boundary must be attached to this distinction.",
+          "receipts": [
+            "data/cases/C02.json",
+            "data/priority_cases/C02_public_evidence.json",
+            "data/portfolio/financial_baseline.json"
+          ],
+          "next_research_action": "Apply OP6/7/9 and retained UF01 proposal classification to the frozen vehicle cohort; identify recipient designation and donor release as execution evidence still required."
+        },
+        {
+          "check": "evidence_request",
+          "status": "PASS",
+          "reason": "The purpose-bound minimum request contract exists. The priority addendum identifies new scope/authority linkage questions; dispatch and receipt are separate from design readiness.",
+          "receipts": [
+            "data/evidence_requests/E02_assets.json",
+            "data/priority_cases/C02_request_addendum.json"
+          ],
+          "next_research_action": "Bind the contract and applicable addendum to the frozen child scope; retain DRAFT_NOT_SENT and no collection authority until genuine approval."
+        },
+        {
+          "check": "counterfactual_design",
+          "status": "PASS",
+          "reason": "The charter defines a same-service/need and comparable-period alternative, transferred work/cost coverage and reasons to retain the current arrangement. Actual comparable observations belong to later operational validation.",
+          "receipts": [
+            "data/pilots/charters.json#C02",
+            "data/cases/C02.json"
+          ],
+          "next_research_action": "Instantiate the existing matching and alternative-selection rules in the frozen bounded unit before examining outcome data; reject unequal service/need comparisons."
+        },
+        {
+          "check": "prospective_guardrails",
+          "status": "PASS",
+          "reason": "Research guardrail design identifies protected capabilities and stop/fallback principles; F06 requires baseline measurement followed by justified prospective thresholds before outcome comparison. Missing numeric thresholds and accepted owners block activation, not automatically this design check.",
+          "receipts": [
+            "docs/guardrail_standard.md",
+            "data/pilots/charters.json#C02",
+            "data/pilots/thresholds.json",
+            "data/priority_cases/C02_request_addendum.json"
+          ],
+          "next_research_action": "Carry case-specific mandatory constraints and the baseline-to-threshold-to-comparison sequence into the child scope. All actual operational guard assessments remain unperformed."
+        },
+        {
+          "check": "nonadditivity_group",
+          "status": "PASS",
+          "reason": "The normalized intervention and benefit-pool records identify existing overlapping cost boundaries. No benefit allocation or total is recognized.",
+          "receipts": [
+            "data/portfolio/interventions.json#CASE02",
+            "data/portfolio/benefit_pools.json"
+          ],
+          "next_research_action": "Preserve all parent-pool links and unique cost-object/period/alternative accounting in any child scope."
+        }
+      ],
+      "counts": {
+        "PASS": 5,
+        "PARTIAL": 2,
+        "UNKNOWN": 0
+      },
+      "recommended_parent_transition": null,
+      "reason": "Freeze the exact research unit and attach its mandate/cost applicability receipt. These are remaining project/public research actions; absent internal records and accepted owners are not used as automatic reasons to deny VALIDATION_READY.",
+      "source_parent_case_preserved": true
+    },
+    {
+      "case_id": "C03",
+      "current_parent_state": "SCREENING_CANDIDATE",
+      "assessment_scope": "Research-design prerequisites only; no operational validation or institutional approval",
+      "checks": [
+        {
+          "check": "bounded_intervention",
+          "status": "PARTIAL",
+          "reason": "Aviation and broader mission support remain combined at umbrella level; no service/billing cohort is frozen.",
+          "receipts": [
+            "data/cases/C03.json",
+            "data/priority_cases/evidence_access_readiness.json#cases/C03/proposed_smallest_slice"
+          ],
+          "next_research_action": "Freeze one service-specific BINUH component and a reproducible closed-period selection rule, with all unsuccessful/unmatched lines and late corrections retained; do not invent billing dates."
+        },
+        {
+          "check": "owner_role_and_custodian",
+          "status": "PASS",
+          "reason": "Specific proposed accountable and custodian roles are documented. F03 does not require accepted institutional ownership at this research-design entry gate.",
+          "receipts": [
+            "data/evidence_requests/E03_haiti.json",
+            "data/pilots/charters.json#C03"
+          ],
+          "next_research_action": "Confirm actual acceptance and permissible access separately before dispatch or collection; do not treat this PASS as accepted ownership."
+        },
+        {
+          "check": "mandate_and_cost_perimeter",
+          "status": "PARTIAL",
+          "reason": "BINUH/UNSOH responsibilities and separate compact scopes must be bound to the selected service and time frame; indexed/latest-renewal limits remain explicit.",
+          "receipts": [
+            "data/cases/C03.json",
+            "data/priority_cases/C03_public_evidence.json",
+            "data/portfolio/financial_baseline.json"
+          ],
+          "next_research_action": "Attach current source-qualified Council/compact responsibilities and same-service cost perimeter; prevent GSF authorization dates or broad reimbursements from substituting for BINUH service scope."
+        },
+        {
+          "check": "evidence_request",
+          "status": "PASS",
+          "reason": "The purpose-bound minimum request contract exists. The priority addendum identifies new scope/authority linkage questions; dispatch and receipt are separate from design readiness.",
+          "receipts": [
+            "data/evidence_requests/E03_haiti.json",
+            "data/priority_cases/C03_request_addendum.json"
+          ],
+          "next_research_action": "Bind the contract and applicable addendum to the frozen child scope; retain DRAFT_NOT_SENT and no collection authority until genuine approval."
+        },
+        {
+          "check": "counterfactual_design",
+          "status": "PASS",
+          "reason": "The charter defines a same-service/need and comparable-period alternative, transferred work/cost coverage and reasons to retain the current arrangement. Actual comparable observations belong to later operational validation.",
+          "receipts": [
+            "data/pilots/charters.json#C03",
+            "data/cases/C03.json"
+          ],
+          "next_research_action": "Instantiate the existing matching and alternative-selection rules in the frozen bounded unit before examining outcome data; reject unequal service/need comparisons."
+        },
+        {
+          "check": "prospective_guardrails",
+          "status": "PASS",
+          "reason": "Research guardrail design identifies protected capabilities and stop/fallback principles; F06 requires baseline measurement followed by justified prospective thresholds before outcome comparison. Missing numeric thresholds and accepted owners block activation, not automatically this design check.",
+          "receipts": [
+            "docs/guardrail_standard.md",
+            "data/pilots/charters.json#C03",
+            "data/pilots/thresholds.json",
+            "data/priority_cases/C03_request_addendum.json"
+          ],
+          "next_research_action": "Carry case-specific mandatory constraints and the baseline-to-threshold-to-comparison sequence into the child scope. All actual operational guard assessments remain unperformed."
+        },
+        {
+          "check": "nonadditivity_group",
+          "status": "PASS",
+          "reason": "The normalized intervention and benefit-pool records identify existing overlapping cost boundaries. No benefit allocation or total is recognized.",
+          "receipts": [
+            "data/portfolio/interventions.json#CASE03",
+            "data/portfolio/benefit_pools.json"
+          ],
+          "next_research_action": "Preserve all parent-pool links and unique cost-object/period/alternative accounting in any child scope."
+        }
+      ],
+      "counts": {
+        "PASS": 5,
+        "PARTIAL": 2,
+        "UNKNOWN": 0
+      },
+      "recommended_parent_transition": null,
+      "reason": "Freeze the exact research unit and attach its mandate/cost applicability receipt. These are remaining project/public research actions; absent internal records and accepted owners are not used as automatic reasons to deny VALIDATION_READY.",
+      "source_parent_case_preserved": true
+    }
+  ],
+  "summary": {
+    "reviewed_cases": 3,
+    "reviewed_check_instances": 21,
+    "PASS": 15,
+    "PARTIAL": 6,
+    "UNKNOWN": 0,
+    "parent_state_changes": 0,
+    "operational_audits_completed": 0,
+    "financial_validations_completed": 0
+  },
+  "distinctions": [
+    "VALIDATION_READY is research-design maturity, not an accepted institutional assignment or permission to collect records or change operations.",
+    "Proposed owner/custodian roles and a draft request can satisfy their research checks without institutional acceptance or dispatch.",
+    "Prospective guardrail design may specify an authorized baseline-measurement and threshold-freeze sequence; it must not invent numeric thresholds or certify operational guardrail success.",
+    "Exact research eligibility rules can be prospectively defined from a retained public proposal without inventing actual asset IDs, dates or outcomes.",
+    "A successor child scope needs a distinct reviewed record and independent gate receipt before any F03 history event. Historical parent versions remain preserved."
+  ],
+  "next_actions": [
+    {
+      "case_id": "C01",
+      "action": "Freeze one source-defined client/service cohort or an explicit reproducible eligibility rule and exclusions before outcome inspection; reconcile April and July cutover reports at client/service level."
+    },
+    {
+      "case_id": "C02",
+      "action": "Freeze a successor research scope for the retained UF01 six-vehicle proposal (four light, two armoured), preserving proposal status, including non-transfers and rejections; do not invent VINs or deliveries."
+    },
+    {
+      "case_id": "C03",
+      "action": "Freeze one service-specific BINUH component and a reproducible closed-period selection rule, with all unsuccessful/unmatched lines and late corrections retained; do not invent billing dates."
+    }
+  ],
+  "source_sha256": {
+    "data/standards/candidate_states.json": "96a56e92fd4505ed8f36bf52f3b1759ae5b9733937be25d6e7d53c0bb7ecef7f",
+    "docs/candidate_advancement.md": "ce0008ab03c506b3d37e2ea7c1082f9ca21b9e82138d1ac1090edb9c0280168a",
+    "docs/guardrail_standard.md": "86b95f01f3fbe4bfc41af8b898fb78aff5da2eadb4a33d07ea843649fb69248d",
+    "data/pilots/charters.json": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+    "data/pilots/thresholds.json": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3",
+    "data/priority_cases/evidence_access_readiness.json": "092f79db6d978484289d0346f6998532e1f8ef73b65ea6af21af9406fce79f50",
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/priority_cases/C01_public_evidence.json": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+    "data/priority_cases/C01_request_addendum.json": "fac0778a79878e706291afc7136f772ff3779fc25ce5d753935a24af38c507c5",
+    "data/priority_cases/C02_public_evidence.json": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+    "data/priority_cases/C02_request_addendum.json": "3cba3eaf53bdebc400bd5e4aceef3f7eb9e994297660349a98198ac163e32ac1",
+    "data/priority_cases/C03_public_evidence.json": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+    "data/priority_cases/C03_request_addendum.json": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+    "data/evidence_requests/E01_rsce.json": "ed3a6f7e45eb4ce68d4065ca4171fce131c1170b806fc5e8701ec6c9cee37550",
+    "data/evidence_requests/E02_assets.json": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+    "data/evidence_requests/E03_haiti.json": "7b91fecc699c65d83c1f54097139f4173f32e3deb10a66ed2841931de7aaad14"
+  }
+}

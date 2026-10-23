@@ -1,0 +1,257 @@
+{
+  "case_id": "C02",
+  "title": "UNIFIL–UNSCOL asset transfer and avoided procurement",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Public proposal/report evidence supports an audit mechanism; complete paired operational and transaction records and accountable owner review are absent.",
+  "current_arrangement": "UNSCOL2027 estimates propose use of UNIFIL vehicles, ICT and consumables. No signed physical handover or canceled procurement is retained.",
+  "testable_mechanism": "Test whether usable transferred assets replace an otherwise necessary, cancellable external acquisition after all transfer and residual costs.",
+  "feasible_alternative_to_test": "Transfer identified safe serviceable assets only where recipient need and donor release authority are demonstrated; retain or dispose otherwise under authorized procedures.",
+  "safeguards": [
+    "UNIFIL withdrawal safety and accountable asset custody",
+    "Recipient vehicle protection and ICT security",
+    "Ration expiry, condition and transport security"
+  ],
+  "cost_perimeter_and_nonadditivity": "438100USD is394000vehicles+36900ICT+7200consumables already embedded in2027 proposal. Transfer book value is not an external cost saving. Deduct transport, refurbishment, installation, residual liabilities and foregone disposal proceeds; do not rebook EFF019/EFF026/EFF029.",
+  "minimum_records": [
+    "Serial/VIN and lot-level donor release and signed recipient acceptance",
+    "Paired inventory/GL movements and condition/remaining life",
+    "Recipient approved need and requisition/PO cancellation with liabilities",
+    "Transfer, refurbishment, installation, disposal and operating costs"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNIFIL and UNSCOL property custodians",
+    "UNSCOL procurement and finance controllers",
+    "Both missions supply and warehouse managers"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 2,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC01",
+        "source_name": "A/81/6 (Sect. 3)/Add.4",
+        "exact_locator": "pp.7-11 Table3",
+        "what_this_supports": "UNIFIL assets efficiency $394k $36.9k $7.2k and BINUH $1.4m",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.4",
+        "evidence_type": "proposal_estimate",
+        "limitations": "not_transfer_manifest_or_payment",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_sources.csv",
+      "csv_line": 9,
+      "sha256": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+      "source_snapshot": {
+        "source_id": "DOC08",
+        "source_name": "UNGM EOIUNIFIL22026",
+        "exact_locator": "issued 24 Oct 2023",
+        "what_this_supports": "Vehicle washing services solicitation covers UNIFIL and UNSCOL",
+        "source_url": "https://www.ungm.org/Public/Notice/217790",
+        "evidence_type": "historical_RFI_not_award",
+        "limitations": "not_2027_asset_transfer",
+        "assessed_on": "2026-10-08"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 2,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "UF01",
+        "case_id": "UNIFIL_UNSCOL",
+        "payer_or_source_entity": "UNIFIL",
+        "recipient_entity": "UNSCOL",
+        "object": "vehicles_six_4_light_2_armoured",
+        "published_amount_usd": "394000",
+        "amount_category": "embedded_2027_efficiency",
+        "existing_efficiency_id": "EFF019",
+        "evidence_anchor": "Add4 p7 and p9 Table3",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.4",
+        "implementation_evidence": "proposed_only",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 3,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "UF02",
+        "case_id": "UNIFIL_UNSCOL",
+        "payer_or_source_entity": "UNIFIL",
+        "recipient_entity": "UNSCOL",
+        "object": "ICT_computers_accessories",
+        "published_amount_usd": "36900",
+        "amount_category": "embedded_2027_efficiency",
+        "existing_efficiency_id": "EFF026",
+        "evidence_anchor": "Add4 p7 and p10 Table3",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.4",
+        "implementation_evidence": "proposed_only",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_control_baseline.csv",
+      "csv_line": 4,
+      "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+      "source_snapshot": {
+        "control_id": "UF03",
+        "case_id": "UNIFIL_UNSCOL",
+        "payer_or_source_entity": "UNIFIL",
+        "recipient_entity": "UNSCOL",
+        "object": "rations_and_consumables",
+        "published_amount_usd": "7200",
+        "amount_category": "embedded_2027_efficiency",
+        "existing_efficiency_id": "EFF029",
+        "evidence_anchor": "Add4 p8 and p10 Table3",
+        "source_url": "https://docs.un.org/en/A/81/6%20(Sect.%203)/Add.4",
+        "implementation_evidence": "proposed_only",
+        "transaction_document_id": "not_available",
+        "transaction_verified": "no",
+        "additional_net_savings_usd": "not_estimated",
+        "fiscal_rule": "2027_calendar_SPM_vs_2026_27_JulJun_GA_must_remain_separate"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 2,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ01",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "UNIFIL_outgoing_assets",
+        "minimum_keys_or_fields": "asset_id;VIN_or_serial;asset_class;book_value;location;service_life;inventory_date",
+        "responsible_custodian_to_confirm": "UNIFIL property manager",
+        "linked_controls": "UF01;UF02;UF03",
+        "purpose": "Identify physical units and original carrying values",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 3,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ02",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "signed_release_acceptance",
+        "minimum_keys_or_fields": "asset_id;transfer_document_id;release_date;receipt_date;source;destination;quantity;condition",
+        "responsible_custodian_to_confirm": "UNIFIL and UNSCOL property custodians",
+        "linked_controls": "UF01;UF02;UF03",
+        "purpose": "Verify both sides of asset handover and quantities",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 4,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ03",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "asset_GL_and_disposal_entries",
+        "minimum_keys_or_fields": "asset_id;posting_date;document;fund;cost_center;transfer_value;account",
+        "responsible_custodian_to_confirm": "UNIFIL and UNSCOL financial controllers",
+        "linked_controls": "UF01;UF02;UF03",
+        "purpose": "Reconcile derecognition and receipt and ensure no double asset",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 5,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ04",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "purchase_requisitions_PO_cancellations",
+        "minimum_keys_or_fields": "requisition;PO;vendor;planned_price;cancel_date;committed_liability;period",
+        "responsible_custodian_to_confirm": "UNSCOL procurement",
+        "linked_controls": "UF01;UF02",
+        "purpose": "Prove acquisition actually avoided and not already irrevocably committed",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 6,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ05",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "transport_refurbishment_security_costs",
+        "minimum_keys_or_fields": "invoice;transport;security;repairs;installation;amount;date;fund",
+        "responsible_custodian_to_confirm": "UNIFIL and UNSCOL supply",
+        "linked_controls": "UF01;UF02;UF03",
+        "purpose": "Determine actual net avoidable cost after transfer expenses",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_evidence_requests.csv",
+      "csv_line": 7,
+      "sha256": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+      "source_snapshot": {
+        "request_id": "REQ06",
+        "case_id": "UNIFIL_UNSCOL",
+        "evidence_package": "ration_lots_goods_movement",
+        "minimum_keys_or_fields": "stock_lot;expiry;quantity_issued;quantity_received;goods_receipt;issue_note;value",
+        "responsible_custodian_to_confirm": "UNIFIL and UNSCOL warehouses",
+        "linked_controls": "UF03",
+        "purpose": "Check rations quality receipt and expiry",
+        "received_status": "not_provided",
+        "internal_only": "yes_do_not_commit_live_transactions_to_public_repo"
+      }
+    },
+    {
+      "path": "data/transaction_validation_cases.csv",
+      "csv_line": 2,
+      "sha256": "d30788f7556ae0982b5f6ffdb04bc506d30059638d3691167ac0496c06725afc",
+      "source_snapshot": {
+        "case_id": "UNIFIL_UNSCOL",
+        "already_budgeted_2027_efficiency_usd": "438100",
+        "other_proposed_allocation_or_payment_usd": "not_applicable",
+        "implementation_status": "Asset transfers proposed in 2027 SPM financial estimates",
+        "transaction_evidence_gap": "No signed transfer manifest, serial, inventory posting or canceled purchase order",
+        "acceptance_test": "Asset release and receipt match to canceled planned acquisition and net transfer costs",
+        "cross_pillar_link": "SPML01",
+        "verified_invoice_asset_or_charge_pairs": "0",
+        "additional_addressable_usd": "not_estimated",
+        "net_realized_savings_usd": "not_estimated"
+      }
+    }
+  ],
+  "case_specific_limit": "A2023 joint vehicle-washing solicitation is a historical common-service notice, not a2027 asset transfer or award/payment record.",
+  "handling": "No live transactions, payroll identifiers or medical/security-sensitive records may be committed to this public dossier; use approved restricted intake.",
+  "reopen_condition": "Authorized complete linked records and confirmed accountable owner permit validation-ready review; do not infer readiness from a draft evidence request."
+}

@@ -1,0 +1,13 @@
+# C03 independent source review
+
+The selected public-source packet is supported with qualifications. This separate-agent review checked primary operative provisions, rather than accepting the author’s source labels alone. It does not constitute institutional approval, financial validation or operational assurance.
+
+The final [2793 resolution](https://documents.un.org/api/symbol/access?l=en&s=S/RES/2793(2025)&t=pdf), printed pages 5–6, OP10(e) and OP11, confirms BINUH cost-recovery support and separate quantifiable compacts for BINUH and GSF. The February target is an authority milestone; it does not demonstrate actual complete service coverage or receipt of signed compacts. The final [2814 resolution](https://documents.un.org/api/symbol/access?l=en&s=S/RES/2814(2026)&t=pdf), printed pages 2–3, OP1, OP3 and OP7, confirms the BINUH extension and coordination provisions. Its costed-options provision concerns the specified DDR/justice work. It cannot support combining every Haiti aviation and support cost. Both final PDFs were independently opened through their official registry links.
+
+[ACABQ A/80/567](https://documents.un.org/doc/undoc/gen/n25/347/42/pdf/n2534742.pdf), paragraphs 4, 6 and 20, distinguishes funding channels and identifies accountability and transition information needs. This remains advisory evidence concerning October 2025–June 2026 financing. It does not establish GA adoption or actual calendar-2027 costs.
+
+The [2829 official registry](https://mandates.un.org/mandate/S/RES/2829%20%282026%29?subject=Gangs), OP1–3, independently confirms a GSF extension to 31 March 2027, continued UNSOH support linked to 2793, benchmark reporting and the noted status agreement. Clicking its final-PDF link independently reproduced an ODS error. Registry verification therefore remains distinct from final-PDF authentication.
+
+The review does not upgrade indexed management statements or retained proposal transcriptions. In particular, the reported aviation reduction and broader reimbursement are not comparable proof of net savings. Actual supplier costs, internal allocation and settlement, retained work, transition costs and service outcomes remain necessary. The next evidence package should obtain the signed BINUH compact, separate GSF allocation boundary and matched actual services and full costs.
+
+The machine-readable receipt binds this review to the source packet’s exact SHA256. No raw PDF bytes were retained. No custodian was contacted. The case remains SCREENING_CANDIDATE and BLOCKED_PENDING_EVIDENCE; owner acceptance is absent and benefit amount remains null.

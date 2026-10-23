@@ -74,6 +74,14 @@ class CurrentStatusTests(unittest.TestCase):
         self.mutate_json('data/portfolio/public_portfolio.json', lambda x: x.update(substantive_operational_adjudications=3))
         self.reject()
 
+    def test_public_assessment_cannot_mask_missing_acceptance(self):
+        self.mutate_json('data/public_assessment/portfolio.json', lambda x: x.update(peer_review_status='CHANGES_REQUIRED'))
+        self.reject()
+
+    def test_public_assessment_cannot_recognize_a_benefit(self):
+        self.mutate_json('data/public_assessment/portfolio.json', lambda x: x.update(recognized_benefit=0))
+        self.reject()
+
     def test_unknown_public_benefit_cannot_become_zero(self):
         self.mutate_json('data/portfolio/public_portfolio.json', lambda x: x['verified_benefits'].update(realized_saving=0))
         self.reject()

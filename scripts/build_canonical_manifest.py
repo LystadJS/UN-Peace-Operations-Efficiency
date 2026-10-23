@@ -15,6 +15,7 @@ BASELINE = '9838cec16e9c14a5d87757c5ff6614ff1ae7dc24'
 MANIFEST = 'metadata/canonical_manifest.json'
 INDEX = 'metadata/release_index.csv'
 CURRENT_ROLES = {
+    'public_assessment': ('data/public_assessment/portfolio.json', 'three detailed public-evidence assessments within fourteen retained screening cases', 'user-authorized public-evidence completion target, 23 October 2026'),
     'research_reference': ('data/census_v13/research_reference.json', 'fixed V8/V9 research obligations', 'data/current_research_reference.json:reference_path'),
     'research_pointer': ('data/current_research_reference.json', 'fixed V8/V9 research obligations', 'V13 project research designation'),
     'owner_review': ('docs/consolidated_owner_review_decision_memo.md', 'existing SP08P1/SP09P1 owner-review package', 'data/owner_review/package_contract.json'),
@@ -36,6 +37,8 @@ CURRENT_ROLES = {
     'priority_progress': ('data/priority_cases/progress.json', 'C01–C03 public evidence and bounded child research readiness, with historical parents preserved', 'Owner-authorized priority follow-up, 23 October 2026'),
 }
 GENERATED = {
+    'data/public_assessment/portfolio.json': 'scripts/build_public_assessment.py',
+    'docs/public_assessment_brief.md': 'scripts/build_public_assessment.py',
     'data/issues/current_issues.json': 'scripts/migrate_master_issues.py',
     'docs/current_status.md': 'scripts/generate_current_status.py',
     'metadata/current_status.json': 'scripts/generate_current_status.py',
@@ -186,7 +189,8 @@ def main():
             target.parent.mkdir(parents=True, exist_ok=True); target.write_text(text)
         elif not target.is_file() or target.read_text() != text:
             raise SystemExit('FAIL: canonical output drift: ' + path)
-    print('PASS: canonical manifest and release index; 586 baseline artifacts and 32 archived controls')
+    archived_count = len(json.loads((ROOT / 'metadata/frozen_input_archive.json').read_text())['files'])
+    print(f'PASS: canonical manifest and release index; 586 baseline artifacts and {archived_count} archived controls')
 
 
 if __name__ == '__main__':

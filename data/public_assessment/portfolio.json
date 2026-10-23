@@ -1,0 +1,844 @@
+{
+  "schema_version": 1,
+  "assessment_id": "PUBLIC-PRIORITY-2026-10-23",
+  "as_of": "2026-10-23",
+  "primary_end_state": "An independently reviewed, reproducible public-evidence efficiency and reform-accountability assessment that answers bounded questions with qualified findings and actionable next decisions, without requiring unavailable operational records or claiming operational validation.",
+  "detailed_case_count": 3,
+  "parent_portfolio_count": 14,
+  "scope_exclusions": [
+    {
+      "case_id": "C04",
+      "label": "UNISFA translation",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C05",
+      "label": "UNISFA transferred assets",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C06",
+      "label": "UNSOS fuel contractor recovery",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C07",
+      "label": "MONUSCO medical insurance",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C08",
+      "label": "UNMISS post changes",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C09",
+      "label": "Course-level training",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C10",
+      "label": "DPPA–DPO regional functions",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C11",
+      "label": "UNOWAS–UNOCA reporting",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C12",
+      "label": "Cyprus reporting",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C13",
+      "label": "UNIFIL residual transition liabilities",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C14",
+      "label": "Existing joint structures",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    }
+  ],
+  "public_question_count": 16,
+  "disposition_counts": {
+    "SUPPORTED_CONCERN": 3,
+    "CONDITIONAL_OPPORTUNITY": 3,
+    "UNRESOLVED_QUESTION": 6,
+    "RETAIN_CURRENT_PROCESS": 4
+  },
+  "disposition_namespace": "PUBLIC_ASSESSMENT_QUESTION; RETAIN_CURRENT_PROCESS does not change F03 state",
+  "cases": [
+    {
+      "case_id": "C01",
+      "source_path": "data/public_assessment/C01.json",
+      "scope": "Bounded public assessment of RSCE financing, KJSO transition, staffing-model interpretation and historical onboarding/separation controls. Public-source synthesis; not an exhaustive legal or performance audit.",
+      "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+      "question_count": 6,
+      "disposition_counts": {
+        "SUPPORTED_CONCERN": 1,
+        "CONDITIONAL_OPPORTUNITY": 1,
+        "UNRESOLVED_QUESTION": 2,
+        "RETAIN_CURRENT_PROCESS": 2
+      },
+      "questions": [
+        {
+          "question_id": "C01-Q01",
+          "question": "Do published budget amounts establish overcharging or an addressable saving?",
+          "disposition": "RETAIN_CURRENT_PROCESS",
+          "answer": "No. The authenticated fiscal maintenance approval is a financing perimeter, not a waste estimate.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C01_public_evidence.json",
+              "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+              "locator": "Claims06–08; S10 final A/RES/80/273 OP6–7"
+            },
+            {
+              "path": "data/transaction_control_baseline.csv",
+              "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+              "locator": "RS01–RS04"
+            }
+          ],
+          "interpretation": "Maintain separate fiscal, client and fund scopes. The mixed-client amount is part of the maintenance total, while staff-assessment income offsets the active-client share.",
+          "alternative_explanations": [
+            "Different calendar/fiscal periods and mixed political/observer populations explain why displayed shares differ."
+          ],
+          "limits": [
+            "Actual allocation vouchers and settlement are unavailable.",
+            "The retained calendar2027 SPM proposal has not been freshly authenticated."
+          ],
+          "next_action": "Publish the exact approval and comparability warning; do not recommend changing charges from aggregate differences.",
+          "reopen_trigger": "Same-period client allocation evidence or a final programme-budget instrument establishes a specific comparable discrepancy."
+        },
+        {
+          "question_id": "C01-Q02",
+          "question": "Is the current public client and cutover description sufficiently reconciled?",
+          "disposition": "SUPPORTED_CONCERN",
+          "answer": "The reviewed reporting leaves an unresolved scope and timing reconciliation: April client assumption, July formal handover,32entities and16clientmissions.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C01_public_evidence.json",
+              "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+              "locator": "Claims01–03; discrepancyD01; S01–S03"
+            }
+          ],
+          "interpretation": "This is a concern about the interpretability of the reviewed public account, not evidence of duplicate spending. A dated client-by-service roster would make the reform auditable.",
+          "alternative_explanations": [
+            "Phased commencement and formal handover can be different events.",
+            "Entities and missions may be different population grains."
+          ],
+          "limits": [
+            "Management extracts are indexed; direct pages were blocked.",
+            "No contradiction or complete current denominator is established."
+          ],
+          "next_action": "Publish a request for a dated service/client bridge and distinguish publication dates from operational effective dates.",
+          "reopen_trigger": "An official dated roster or transition clarification reconciles both population grain and service coverage."
+        },
+        {
+          "question_id": "C01-Q03",
+          "question": "Could residual client or predecessor processing be consolidated?",
+          "disposition": "CONDITIONAL_OPPORTUNITY",
+          "answer": "Service-line routing consolidation is plausible only where separately resourced work is substitutable after actual cutover.",
+          "evidence": [
+            {
+              "path": "data/cases/C01.json",
+              "sha256": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+              "locator": "testable_mechanism; feasible_alternative_to_test; safeguards"
+            },
+            {
+              "path": "data/priority_cases/C01_request_addendum.json",
+              "sha256": "fac0778a79878e706291afc7136f772ff3779fc25ce5d753935a24af38c507c5",
+              "locator": "tables client_service_cutover_bridge, predecessor_provider_charge_bridge, delegation_retained_work_bridge"
+            }
+          ],
+          "interpretation": "A duplicate-processing mechanism is testable; public management handover reporting alone neither proves that it exists nor quantifies its extent.",
+          "alternative_explanations": [
+            "Retained client approval may be a necessary delegated decision.",
+            "Trailing closeout adjustments, split service scope or temporary transition controls may explain apparent overlap."
+          ],
+          "limits": [
+            "No paired actual tasks, last predecessor charge or first provider charge.",
+            "No whole-system cost or quality baseline."
+          ],
+          "next_action": "Publish the bounded opportunity and retain existing routing pending evidence; avoid adding another tracking system by default.",
+          "reopen_trigger": "Public evaluation or authorized paired task/service/charge evidence identifies avoidable repeated processing while preserving controls."
+        },
+        {
+          "question_id": "C01-Q04",
+          "question": "Do staffing-model reductions establish actual workforce or cash savings?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "No. Proposal workload arithmetic yields net+9positions from -25,-10,+44;17of25payrollposts are described as proposed transfers to DOS.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C01_public_evidence.json",
+              "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+              "locator": "Claims04–05; S04 A/80/611 paras55–58,70"
+            }
+          ],
+          "interpretation": "A transfer can relocate budget cost without removing whole-system expenditure. Modeled FTE changes cannot be equated to actual post exits.",
+          "alternative_explanations": [
+            "Demand expansion may require additional processing capacity.",
+            "Payroll consolidation may shift rather than extinguish funded work."
+          ],
+          "limits": [
+            "Proposal paragraphs are indexed rather than freshly full-text authenticated.",
+            "Adopted post-by-post decisions, actual payroll and service outcomes are absent."
+          ],
+          "next_action": "Publish a model-versus-execution distinction; classify no monetary benefit from these figures.",
+          "reopen_trigger": "Adopted staffing tables and subsequent public performance reporting reconcile unique posts, receiving funds and actual outcomes."
+        },
+        {
+          "question_id": "C01-Q05",
+          "question": "Do the historical onboarding/separation findings prove a current efficiency problem?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "They establish a historical research lead, not persistence: the indexed2024/028audit concerned July2021–June2023 and five recommendation themes.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C01_historical_audit.json",
+              "sha256": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+              "locator": "report; historical_report_interpretation; sources OIOS-PUBLIC-DOWNLOAD and RSCE-IMPLEMENTATION-NEWS"
+            }
+          ],
+          "interpretation": "Workflow chronology and delay visibility are a useful targeted research question. Neither historical weaknesses nor a general100%implementation headline settles current effectiveness.",
+          "alternative_explanations": [
+            "Recommendations may have been completed.",
+            "Client input delays or necessary control checks may explain part of the processing time."
+          ],
+          "limits": [
+            "Full report not retrieved; current report-specific closure unknown.",
+            "Management implementation article publication date and exact report coverage unknown."
+          ],
+          "next_action": "Publish the dated historical context with no present-tense waste allegation; seek report-specific closure and current follow-up reporting.",
+          "reopen_trigger": "A report-specific OIOS closure/follow-up record or current evaluation establishes remediation or recurrence."
+        },
+        {
+          "question_id": "C01-Q06",
+          "question": "Should required approvals and service controls be removed to capture apparent efficiency?",
+          "disposition": "RETAIN_CURRENT_PROCESS",
+          "answer": "No public evidence supports removing delegated approvals, segregation of duties or continuity controls.",
+          "evidence": [
+            {
+              "path": "data/cases/C01.json",
+              "sha256": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+              "locator": "safeguards; feasible_alternative_to_test"
+            },
+            {
+              "path": "data/priority_cases/C01_historical_audit.json",
+              "sha256": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+              "locator": "design_relevance.protect_existing_controls; prospective_guardrail_design"
+            }
+          ],
+          "interpretation": "Preserve current required controls while considering substitutable transaction processing separately.",
+          "alternative_explanations": [
+            "Apparent repetition may implement distinct provider and client responsibilities."
+          ],
+          "limits": [
+            "Current service-level performance and control-design effectiveness not operationally tested."
+          ],
+          "next_action": "Retain required client decisions and continuity arrangements; any future redesign must protect payroll, vendor payment, confidentiality, timeliness and rework performance.",
+          "reopen_trigger": "A competent-authority control review and measured service outcomes show an alternative meets obligations with less avoidable processing."
+        }
+      ],
+      "financial_observations": [
+        {
+          "amount": 45911600,
+          "currency": "USD",
+          "period": "1July2026–30June2027",
+          "classification": "PUBLISHED_BUDGET",
+          "source_path": "data/priority_cases/C01_public_evidence.json",
+          "source_locator": "S10 A/RES/80/273 OP6",
+          "interpretation": "Approved maintenance requirement; no eligible pool or benefit recognized."
+        },
+        {
+          "amount": 42468400,
+          "currency": "USD",
+          "period": "1July2026–30June2027",
+          "classification": "PUBLISHED_BUDGET",
+          "source_path": "data/priority_cases/C01_public_evidence.json",
+          "source_locator": "S10 OP7(a)",
+          "interpretation": "Active client peacekeeping financing component within total; not additive to total."
+        },
+        {
+          "amount": 3443200,
+          "currency": "USD",
+          "period": "FY2026/27 maintenance financing;2027programmebudget approval condition",
+          "classification": "PUBLISHED_BUDGET",
+          "source_path": "data/priority_cases/C01_public_evidence.json",
+          "source_locator": "S10 OP7(b)",
+          "interpretation": "Mixed-client component subject to further programme-budget approval; not unconditional calendar2027SPMappropriation."
+        },
+        {
+          "amount": 5157200,
+          "currency": "USD",
+          "period": "FY2026/27",
+          "classification": "PUBLISHED_BUDGET",
+          "source_path": "data/priority_cases/C01_public_evidence.json",
+          "source_locator": "S10 OP7(c)",
+          "interpretation": "Staff-assessment income offsets OP7(a); not an additional maintenance requirement."
+        },
+        {
+          "amount": 3259100,
+          "currency": "USD",
+          "period": "Calendar2027",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/priority_cases/C01_public_evidence.json",
+          "source_locator": "S07 retained A/81/6(Sect3)/Add1 Table7p52; claim07",
+          "interpretation": "Retained SPM allocation proposal, not freshly authenticated; different period/population from mixed fiscal share. Not a saving."
+        }
+      ],
+      "case_synthesis": {
+        "overall_judgment": "Public reporting reconciliation merits follow-up; consolidation remains conditional and current waste or monetary benefit is not established.",
+        "mixed_question_dispositions_preserved": true,
+        "recommended_decision": "Publish with limitations, retain required operational controls and reconsider specific questions only when their stated evidence triggers occur.",
+        "not_an_f03_advancement": true
+      },
+      "proposed_responsible_roles": [
+        {
+          "role": "Repository research/publication maintainer",
+          "purpose": "Publish the bounded assessment and track public clarification leads.",
+          "acceptance_status": "NOT_CONFIRMED"
+        },
+        {
+          "role": "RSCE public-information and budget-reporting focal roles",
+          "purpose": "Potential source of dated client/service scope and financing clarification; no contact or collection initiated.",
+          "acceptance_status": "NOT_CONFIRMED"
+        }
+      ],
+      "historical_parent_f03_state": "SCREENING_CANDIDATE"
+    },
+    {
+      "case_id": "C02",
+      "source_path": "data/public_assessment/C02.json",
+      "scope": "Bounded public assessment of UNIFIL–UNSCOL proposed vehicles, ICT and consumables; vehicle child scope covers all six UF01 proposal positions. Public question dispositions are separate from F03 candidate states.",
+      "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+      "question_count": 5,
+      "disposition_counts": {
+        "SUPPORTED_CONCERN": 1,
+        "CONDITIONAL_OPPORTUNITY": 1,
+        "UNRESOLVED_QUESTION": 2,
+        "RETAIN_CURRENT_PROCESS": 1
+      },
+      "questions": [
+        {
+          "question_id": "C02-PQ01",
+          "question": "Does the proposed asset reuse present a credible efficiency opportunity?",
+          "disposition": "CONDITIONAL_OPPORTUNITY",
+          "answer": "Yes, as a public proposal to satisfy recipient requirements with existing assets. Lower net cost and feasible safe release remain unproved.",
+          "evidence": [
+            {
+              "path": "data/transaction_control_baseline.csv",
+              "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+              "locator": "control_id UF01–UF03; implementation_evidence and transaction_verified"
+            },
+            {
+              "path": "data/priority_cases/C02_UF01_research_scope.json",
+              "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+              "locator": "population; counterfactual; amount_classification"
+            }
+          ],
+          "interpretation": "The bounded vehicle review covers all six proposal positions: four light and two armoured vehicles. These are not six authenticated physical assets. UF02 ICT and UF03 consumables are outside that child cohort.",
+          "alternative_explanations": [
+            "New acquisition or retention may be preferable if condition, remaining life, donor demand or transport/support cost makes reuse unsuitable."
+          ],
+          "limits": [
+            "Actual recipient need, available inventory, asset condition, equivalent alternative and canceled commitments are unavailable.",
+            "The retained budget transcription is not freshly authenticated final budget text."
+          ],
+          "next_action": "Retain the public opportunity as conditional; use the existing E02/addendum if evidence becomes available.",
+          "reopen_trigger": "An adopted applicable budget or a complete mapped six-position cohort with documented need, alternatives, protected donor capability and full costs becomes public or is lawfully supplied."
+        },
+        {
+          "question_id": "C02-PQ02",
+          "question": "Does public authority authorize the specific UNIFIL-to-UNSCOL transfer?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "No specific recipient or lot approval is established by the reviewed public evidence. Resolution2790 OP9 supplies general designated-entity transfer language, subject to UN practices and financial rules.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C02_source_review.json",
+              "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+              "locator": "source_checks C02-S01/C02-S03/C02-S04; remaining_material_gaps"
+            }
+          ],
+          "interpretation": "Final Council text and founding letters establish the legal context; UNSCOL political coordination does not confer lot-specific property or procurement approval.",
+          "alternative_explanations": [
+            "Competent designation, delegated approval or transfer documentation may exist outside the reviewed public record."
+          ],
+          "limits": [
+            "No exhaustive later amendment, administrative delegation or recipient-designation review.",
+            "Absence of public approval evidence is not proof that a transfer would be unlawful."
+          ],
+          "next_action": "Record the approval question as unresolved and make no actual-transfer assertion.",
+          "reopen_trigger": "A competent designation, donor release and recipient acceptance covering the actual assets, or a definitive public instrument, is obtained."
+        },
+        {
+          "question_id": "C02-PQ03",
+          "question": "Can the embedded amounts be counted as a new project benefit?",
+          "disposition": "SUPPORTED_CONCERN",
+          "answer": "No. The retained proposal already includes USD394000 for vehicles and USD438100 across vehicles, ICT and consumables. Adding the vehicle amount again to that aggregate would duplicate the same proposal component.",
+          "evidence": [
+            {
+              "path": "data/transaction_control_baseline.csv",
+              "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+              "locator": "UF01 394000; UF02 36900; UF03 7200; embedded_2027_efficiency"
+            },
+            {
+              "path": "data/spm_2027_embedded_efficiencies.csv",
+              "sha256": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+              "locator": "EFF019/EFF026/EFF029; status and attribution_rule"
+            },
+            {
+              "path": "data/priority_cases/C02_source_review.json",
+              "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+              "locator": "source_checks C02-S07"
+            }
+          ],
+          "interpretation": "This is a supported accounting concern about potential double counting, not evidence that the UN has duplicated spending or that the project has already booked a duplicate benefit.",
+          "alternative_explanations": [
+            "The total and vehicle component may legitimately appear separately as an aggregate and its breakdown if clearly labeled nonadditive."
+          ],
+          "limits": [
+            "Primary Add.4 budget text was not freshly authenticated; no GA adoption or actual expenditure established.",
+            "There is no recognized project benefit and no quantified incremental opportunity."
+          ],
+          "next_action": "Keep the components and aggregate linked, with the aggregate nonadditive to its components.",
+          "reopen_trigger": "Authenticated source corrections or a separately evidenced incremental counterfactual changes the classification; financial recognition requires its own gate."
+        },
+        {
+          "question_id": "C02-PQ04",
+          "question": "Should donor assets be released on the strength of the proposal alone?",
+          "disposition": "RETAIN_CURRENT_PROCESS",
+          "answer": "No. Retain applicable approved custody, procurement and release procedures until competent authorities establish safe availability and recipient suitability; this assessment recommends no transfer execution.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C02_source_review.json",
+              "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+              "locator": "source_checks C02-S01; recipient_boundary/source_effect_limit"
+            },
+            {
+              "path": "data/priority_cases/C02_UF01_research_scope.json",
+              "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+              "locator": "authority_application OP6/OP7/OP9; prospective_guardrails"
+            }
+          ],
+          "interpretation": "OP6 protects withdrawal functions including security, enabling and medical capability. OP7 liquidation and residual guards and OP9 financial-rule requirements remain material constraints; a calendar-2027 recipient proposal does not accelerate donor release.",
+          "alternative_explanations": [
+            "Some assets may be genuinely surplus before others, and a documented asset-specific release could be appropriate."
+          ],
+          "limits": [
+            "No asset-level donor readiness reservation or approved release timetable is established.",
+            "Retaining current procedures is a public decision disposition, not an F03 terminal state for the parent or child."
+          ],
+          "next_action": "Preserve current controls and all six proposal-position outcomes, including retained, unavailable, rejected or substituted assets.",
+          "reopen_trigger": "Documented current donor need, condition, protected-function clearance, recipient need and competent release/acceptance permit a fresh decision."
+        },
+        {
+          "question_id": "C02-PQ05",
+          "question": "Can public evidence establish waste, completed transfers or net financial results?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "No. Public sources support a proposal and transition constraints, but do not authenticate completed handovers, canceled procurement, service performance or a net whole-life cost result.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C02_public_evidence.json",
+              "sha256": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+              "locator": "source_records C02-S01/C02-S06/C02-S07; internal_evidence_still_required"
+            },
+            {
+              "path": "data/transaction_control_baseline.csv",
+              "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+              "locator": "UF01–UF03 transaction_document_id=not_available; transaction_verified=no"
+            },
+            {
+              "path": "data/priority_cases/C02_UF01_research_scope.json",
+              "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+              "locator": "counterfactual; period; nonadditivity"
+            }
+          ],
+          "interpretation": "The historical joint vehicle-washing EOI is evidence of a shared procurement intention at its date, not an award, current contract, asset transfer or proof of waste. Unknown results stay unknown.",
+          "alternative_explanations": [
+            "Transfers may be beneficial, neutral, costly or not implemented; necessary donor retention or noncancelable acquisition can explain lack of a benefit."
+          ],
+          "limits": [
+            "No current signed transfers, linked inventories, commitments or matched full costs.",
+            "Book value, proposal reduction and cash effects have different meanings; calendar-2027 SPM and July–June peacekeeping periods are not directly subtractable."
+          ],
+          "next_action": "Close this bounded public review with explicit limitations rather than postpone its conclusion indefinitely for inaccessible records. Preserve the reopen route and no benefit recognition.",
+          "reopen_trigger": "A reliable public audit, transfer/performance report or authorized linked record set establishes implementation, equivalent need, total external costs and service outcomes."
+        }
+      ],
+      "financial_observations": [
+        {
+          "amount": 394000,
+          "currency": "USD",
+          "period": "2027-01-01/2027-12-31 (SG proposal)",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "UF01 / EFF019",
+          "interpretation": "Vehicle component; all six proposal positions. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+        },
+        {
+          "amount": 36900,
+          "currency": "USD",
+          "period": "2027-01-01/2027-12-31 (SG proposal)",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "UF02 / EFF026",
+          "interpretation": "ICT component, outside vehicle child scope. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+        },
+        {
+          "amount": 7200,
+          "currency": "USD",
+          "period": "2027-01-01/2027-12-31 (SG proposal)",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "UF03 / EFF029",
+          "interpretation": "Consumables component, outside vehicle child scope. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+        },
+        {
+          "amount": 438100,
+          "currency": "USD",
+          "period": "2027-01-01/2027-12-31 (SG proposal)",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "UF01 + UF02 + UF03",
+          "interpretation": "Arithmetic aggregate of the three components; do not add to them or add394000 again. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+        }
+      ],
+      "case_synthesis": {
+        "overall_judgment": "Public evidence supports a conditional reuse opportunity and a specific accounting caution against double counting embedded proposal estimates. It does not establish waste, specific transfer approval, implementation or net financial benefit; donor safeguards justify retaining applicable current release controls.",
+        "mixed_question_dispositions_preserved": true,
+        "recommended_decision": "Complete the bounded public review with limitations; retain the opportunity as conditional and current release controls, recognize no benefit, and reopen only the affected questions when their documented evidence triggers are met. Assign source monitoring to a proposed project research maintainer; do not imply institutional acceptance or dispatch requests.",
+        "not_an_f03_advancement": true
+      },
+      "proposed_responsible_roles": [
+        {
+          "role": "Project research maintainer",
+          "purpose": "Maintain the public assessment, track official source updates and reopen individual questions when documented triggers are met; no institutional approval or operational direction.",
+          "acceptance_status": "NOT_CONFIRMED"
+        },
+        {
+          "role": "UNIFIL donor property/transition and UNSCOL recipient property/procurement/finance custodians",
+          "purpose": "If separately authorized and willing, clarify designation, protected donor need, all-six-position mapping, recipient requirement and full costs through existing E02 channels.",
+          "acceptance_status": "NOT_CONFIRMED"
+        }
+      ],
+      "historical_parent_f03_state": "SCREENING_CANDIDATE"
+    },
+    {
+      "case_id": "C03",
+      "source_path": "data/public_assessment/C03.json",
+      "scope": "Bounded public assessment of BINUH–UNSOH support, compact accountability and published financial comparisons; public dispositions are separate from F03 candidate advancement states.",
+      "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+      "question_count": 5,
+      "disposition_counts": {
+        "SUPPORTED_CONCERN": 1,
+        "CONDITIONAL_OPPORTUNITY": 1,
+        "UNRESOLVED_QUESTION": 2,
+        "RETAIN_CURRENT_PROCESS": 1
+      },
+      "questions": [
+        {
+          "question_id": "C03-Q01",
+          "question": "Does the public financing comparison demonstrate waste or a net benefit?",
+          "disposition": "SUPPORTED_CONCERN",
+          "answer": "The retained figures create a supported accounting and attribution concern: the USD1.4m aviation proposal effect and USD4m all-support reimbursement have different scopes and cannot be offset or added as project benefits. They do not demonstrate operational waste.",
+          "evidence": [
+            {
+              "path": "data/transaction_control_baseline.csv",
+              "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+              "locator": "BH01–BH05"
+            },
+            {
+              "path": "data/priority_cases/C03_public_evidence.json",
+              "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+              "locator": "C03-PUB-08"
+            },
+            {
+              "path": "data/priority_cases/C03_source_review.json",
+              "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+              "locator": "other_source_classification_checks C03-PUB-08"
+            }
+          ],
+          "interpretation": "Supported concern concerns interpretation of published comparisons, not a finding that expenditure is improper. The reimbursement is an internal transfer; the category increase already includes it.",
+          "alternative_explanations": [
+            "Broader support scope, cost migration, different allocations and different periods could explain apparent increases."
+          ],
+          "limits": [
+            "Fresh full proposal and GA disposition unavailable; vendor, retained and transition costs unknown."
+          ],
+          "next_action": "Retain the nonadditivity rule and publish no net benefit estimate.",
+          "reopen_trigger": "Authenticated comparable scope/period costs and disposition evidence permit an updated public comparison; matched actuals are required for financial validation."
+        },
+        {
+          "question_id": "C03-Q02",
+          "question": "Is shared support a credible efficiency mechanism?",
+          "disposition": "CONDITIONAL_OPPORTUNITY",
+          "answer": "Pooling support can be evaluated as a conditional opportunity if required BINUH outputs and readiness can be sustained at lower full-system cost. Public authority and reported handover identify the arrangement but do not measure its efficiency.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C03_public_evidence.json",
+              "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+              "locator": "C03-PUB-01, C03-PUB-04–06"
+            },
+            {
+              "path": "data/priority_cases/C03_request_addendum.json",
+              "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+              "locator": "requests C03-ADD02 and C03-ADD04"
+            }
+          ],
+          "interpretation": "A testable mechanism is available; no magnitude or probability of gain is established.",
+          "alternative_explanations": [
+            "Pooling may lower duplication, but transition, standby capacity, service demand or retained costs may offset it."
+          ],
+          "limits": [
+            "No complete workload, performance, external-cost or retained-cost population."
+          ],
+          "next_action": "Preserve the opportunity as conditional; use the draft evidence requirements if authorized records become available.",
+          "reopen_trigger": "Comparable service demand, full cost and safety/readiness outcomes become available or an official audit supplies equivalent assurance."
+        },
+        {
+          "question_id": "C03-Q03",
+          "question": "Are separate BINUH and GSF compacts and cost-recovery boundaries established and functioning?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "The final 2793 text specifies BINUH cost-recovery support and separate quantifiable compacts with the Head of BINUH and GSF Special Representative, the latter in consultation with the Force Commander. Actual instruments, approvals and performance are not present.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C03_public_evidence.json",
+              "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+              "locator": "C03-PUB-01 and C03-PUB-03"
+            },
+            {
+              "path": "data/priority_cases/C03_source_review.json",
+              "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+              "locator": "checked_sources C03-PUB-01 and C03-PUB-03"
+            },
+            {
+              "path": "data/priority_cases/C03_request_addendum.json",
+              "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+              "locator": "C03-ADD01–03"
+            }
+          ],
+          "interpretation": "Public requirements are verified; absence from this repository does not establish missing compacts or noncompliance.",
+          "alternative_explanations": [
+            "Compacts may exist internally; public reporting may summarize rather than disclose them."
+          ],
+          "limits": [
+            "No actual compact, consultation receipt, allocation rule or accepted quantified result. ACABQ advice is not GA approval."
+          ],
+          "next_action": "Record the question as unresolved, with separate compact and funding boundaries in the unsent addendum.",
+          "reopen_trigger": "Official publication or authorized receipt of effective compacts, allocation rules and performance/acceptance records."
+        },
+        {
+          "question_id": "C03-Q04",
+          "question": "What current authority can be stated from the reviewed public sources?",
+          "disposition": "UNRESOLVED_QUESTION",
+          "answer": "Final 2814 selected text extends BINUH to 31 January 2027. The official 2829 registry records GSF extension to 31 March 2027 and continued UNSOH support in full compliance with 2793. Final 2829 PDF and exhaustive later-amendment completeness remain unverified.",
+          "evidence": [
+            {
+              "path": "data/priority_cases/C03_public_evidence.json",
+              "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+              "locator": "C03-PUB-01–02 and C03-PUB-07; retrieval_attempts"
+            },
+            {
+              "path": "data/priority_cases/C03_source_review.json",
+              "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+              "locator": "checked_sources and remaining_limits"
+            }
+          ],
+          "interpretation": "Selected authority is established at the stated evidence levels. Neither GSF expiration nor comprehensive UNSOH authority can be inferred from the original twelve-month authorization alone.",
+          "alternative_explanations": [
+            "Later instruments or corrigenda may affect selected obligations; registry wording may require reconciliation with final text."
+          ],
+          "limits": [
+            "Registry-level 2829 verification only; no complete authority or appropriation review. 2814 OP7 has its specified DDR/justice scope."
+          ],
+          "next_action": "Use the qualified authority statement; preserve final-text and budget-disposition gaps.",
+          "reopen_trigger": "Final 2829 text, relevant later amendments or paragraph-specific GA budget disposition becomes accessible."
+        },
+        {
+          "question_id": "C03-Q05",
+          "question": "Should the project recommend changing the current support arrangement now?",
+          "disposition": "RETAIN_CURRENT_PROCESS",
+          "answer": "Retain the current arrangement for purposes of this project recommendation pending stronger evidence; no cancellation, staffing reduction or service change is justified by this public review.",
+          "evidence": [
+            {
+              "path": "data/cases/C03.json",
+              "sha256": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+              "locator": "safeguards, financial_validation, decision_reason"
+            },
+            {
+              "path": "data/priority_cases/C03_request_addendum.json",
+              "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+              "locator": "acceptance_boundary; requests C03-ADD02–04"
+            }
+          ],
+          "interpretation": "This is a public assessment disposition, not an F03 advancement state, institutional approval or assurance that the existing arrangement is optimal.",
+          "alternative_explanations": [
+            "Current support may already be efficient; a better alternative could exist but remains unmeasured."
+          ],
+          "limits": [
+            "Emergency evacuation, aircraft availability, flight safety and mandate continuity cannot be traded against an unverified budget effect."
+          ],
+          "next_action": "Maintain screening-candidate status and refrain from assigning a benefit or implementation authority.",
+          "reopen_trigger": "Evidence demonstrates an alternative meeting mandate and safety/readiness safeguards with validated comparable costs and accountable-owner review."
+        }
+      ],
+      "financial_observations": [
+        {
+          "amount": 1400000,
+          "currency": "USD",
+          "period": "calendar 2027 versus 2026 proposal comparison",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "BH01",
+          "interpretation": "Retained aviation reduction already embedded; not incremental project benefit. Full proposal not freshly authenticated; no recognized saving."
+        },
+        {
+          "amount": 4000000,
+          "currency": "USD",
+          "period": "calendar 2027 proposal",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "BH02",
+          "interpretation": "All-support internal reimbursement; eliminate paired transfer in a system-cost assessment. Full proposal not freshly authenticated; no recognized saving."
+        },
+        {
+          "amount": 3000000,
+          "currency": "USD",
+          "period": "calendar 2026 budget comparator",
+          "classification": "PUBLISHED_BUDGET",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "BH03",
+          "interpretation": "Retained transcription identifies prior approved aviation budget; no fresh GA approval verification or actual expenditure. Full proposal not freshly authenticated; no recognized saving."
+        },
+        {
+          "amount": 1600000,
+          "currency": "USD",
+          "period": "calendar 2027 proposal",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "BH04",
+          "interpretation": "Proposed aviation category, not comparable all-support cost. Full proposal not freshly authenticated; no recognized saving."
+        },
+        {
+          "amount": 3796400,
+          "currency": "USD",
+          "period": "calendar 2027 proposed category increase",
+          "classification": "PROPOSAL_ESTIMATE",
+          "source_path": "data/transaction_control_baseline.csv",
+          "source_locator": "BH05",
+          "interpretation": "Other supplies/services net category increase already contains USD4m reimbursement; nonadditive. Full proposal not freshly authenticated; no recognized saving."
+        }
+      ],
+      "case_synthesis": {
+        "overall_judgment": "Public evidence supports an accounting-attribution concern and conditional shared-support opportunity, while actual compacts, performance, complete authority and net costs remain unresolved. No operational waste or financial benefit is established.",
+        "mixed_question_dispositions_preserved": true,
+        "recommended_decision": "Retain the current arrangement for project recommendation purposes, preserve nonadditive financial comparisons, and reopen individual questions upon stronger authoritative public or authorized comparable evidence.",
+        "not_an_f03_advancement": true
+      },
+      "proposed_responsible_roles": [
+        {
+          "role": "Repository research maintainer",
+          "purpose": "Maintain the qualified public assessment, monitor material official publications and initiate a documented question-specific refresh when a reopening trigger is met.",
+          "acceptance_status": "NOT_CONFIRMED"
+        },
+        {
+          "role": "BINUH and UNSOH mission support and finance custodians",
+          "purpose": "If authorized intake is later pursued, confirm compact scope, allocation boundaries, comparable performance and full-system cost evidence; this proposal does not assign institutional accountability.",
+          "acceptance_status": "NOT_CONFIRMED"
+        }
+      ],
+      "historical_parent_f03_state": "SCREENING_CANDIDATE"
+    }
+  ],
+  "completion_rubric": {
+    "PA01": "PASS",
+    "PA02": "PASS",
+    "PA03": "PASS",
+    "PA04": "PASS",
+    "PA05": "PASS",
+    "PA06": "PASS",
+    "PA07": "PASS",
+    "PA08": "PASS",
+    "PA09": "PASS"
+  },
+  "public_assessment_complete": true,
+  "public_assessment_status": "COMPLETE_WITH_LIMITATIONS",
+  "primary_public_assessment_status": "COMPLETE_WITH_LIMITATIONS",
+  "peer_review_status": "PASS",
+  "independent_review_present": true,
+  "completion_basis": "Validated bounded inputs plus independent PA01–PA09 review; agent review is not UN institutional approval.",
+  "operational_validation_optional": true,
+  "operational_validations_completed": 0,
+  "recognized_benefit": null,
+  "monetary_headline": null,
+  "monetary_aggregation": "PROHIBITED; observations retain separate periods, scopes and classifications",
+  "source_sha256": {
+    "data/adjudications/execution_gates.json": "7cf33875fa03a13db34d440f2bf1a2c35e4ad5ba352e3f422b5f6b2386cf754d",
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/portfolio/verified_benefit_ledger.json": "d41ded977037f6001b220696f8b5afe00714444685dc9343d4f93d3167fb8a6d",
+    "data/priority_cases/C01_historical_audit.json": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+    "data/priority_cases/C01_public_evidence.json": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+    "data/priority_cases/C01_request_addendum.json": "fac0778a79878e706291afc7136f772ff3779fc25ce5d753935a24af38c507c5",
+    "data/priority_cases/C02_UF01_research_scope.json": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+    "data/priority_cases/C02_public_evidence.json": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+    "data/priority_cases/C02_source_review.json": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+    "data/priority_cases/C03_public_evidence.json": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+    "data/priority_cases/C03_request_addendum.json": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+    "data/priority_cases/C03_source_review.json": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+    "data/public_assessment/C01.json": "0a885032e7ea6dd4fe84e72036e568ff07a39800186767931d1958bd79ba16b2",
+    "data/public_assessment/C02.json": "bd376ceca59b0645f5bc4e62a43c37a1477f3498e2323837393288c737a89d91",
+    "data/public_assessment/C03.json": "4b9ee28484113869870b8a8408a8f300637d9d494898e340ab0eefa6a4e48bfe",
+    "data/public_assessment/peer_review.json": "52880b7c514a6d0553e1de015d4534a29b867824337a69a216bc8d8478e1d3f3",
+    "data/public_assessment/scope.json": "f3a7767634ad8267f65455ee5ef4fb6c2350ac104b78934fc21f264f7603e2ed",
+    "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+    "data/transaction_control_baseline.csv": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1"
+  }
+}

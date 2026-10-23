@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "case_id": "C03",
+  "as_of": "2026-10-23",
+  "scope": "Bounded public assessment of BINUH–UNSOH support, compact accountability and published financial comparisons; public dispositions are separate from F03 candidate advancement states.",
+  "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+  "completion_meaning": "The bounded questions are answered or explicitly unresolved. This does not certify all source gaps closed, mandate compliance, operational validation or financial benefits.",
+  "operational_validation": "NOT_PERFORMED",
+  "recognized_benefit": null,
+  "questions": [
+    {
+      "question_id": "C03-Q01",
+      "question": "Does the public financing comparison demonstrate waste or a net benefit?",
+      "disposition": "SUPPORTED_CONCERN",
+      "answer": "The retained figures create a supported accounting and attribution concern: the USD1.4m aviation proposal effect and USD4m all-support reimbursement have different scopes and cannot be offset or added as project benefits. They do not demonstrate operational waste.",
+      "evidence": [
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+          "locator": "BH01–BH05"
+        },
+        {
+          "path": "data/priority_cases/C03_public_evidence.json",
+          "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+          "locator": "C03-PUB-08"
+        },
+        {
+          "path": "data/priority_cases/C03_source_review.json",
+          "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+          "locator": "other_source_classification_checks C03-PUB-08"
+        }
+      ],
+      "interpretation": "Supported concern concerns interpretation of published comparisons, not a finding that expenditure is improper. The reimbursement is an internal transfer; the category increase already includes it.",
+      "alternative_explanations": [
+        "Broader support scope, cost migration, different allocations and different periods could explain apparent increases."
+      ],
+      "limits": [
+        "Fresh full proposal and GA disposition unavailable; vendor, retained and transition costs unknown."
+      ],
+      "next_action": "Retain the nonadditivity rule and publish no net benefit estimate.",
+      "reopen_trigger": "Authenticated comparable scope/period costs and disposition evidence permit an updated public comparison; matched actuals are required for financial validation."
+    },
+    {
+      "question_id": "C03-Q02",
+      "question": "Is shared support a credible efficiency mechanism?",
+      "disposition": "CONDITIONAL_OPPORTUNITY",
+      "answer": "Pooling support can be evaluated as a conditional opportunity if required BINUH outputs and readiness can be sustained at lower full-system cost. Public authority and reported handover identify the arrangement but do not measure its efficiency.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C03_public_evidence.json",
+          "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+          "locator": "C03-PUB-01, C03-PUB-04–06"
+        },
+        {
+          "path": "data/priority_cases/C03_request_addendum.json",
+          "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+          "locator": "requests C03-ADD02 and C03-ADD04"
+        }
+      ],
+      "interpretation": "A testable mechanism is available; no magnitude or probability of gain is established.",
+      "alternative_explanations": [
+        "Pooling may lower duplication, but transition, standby capacity, service demand or retained costs may offset it."
+      ],
+      "limits": [
+        "No complete workload, performance, external-cost or retained-cost population."
+      ],
+      "next_action": "Preserve the opportunity as conditional; use the draft evidence requirements if authorized records become available.",
+      "reopen_trigger": "Comparable service demand, full cost and safety/readiness outcomes become available or an official audit supplies equivalent assurance."
+    },
+    {
+      "question_id": "C03-Q03",
+      "question": "Are separate BINUH and GSF compacts and cost-recovery boundaries established and functioning?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "The final 2793 text specifies BINUH cost-recovery support and separate quantifiable compacts with the Head of BINUH and GSF Special Representative, the latter in consultation with the Force Commander. Actual instruments, approvals and performance are not present.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C03_public_evidence.json",
+          "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+          "locator": "C03-PUB-01 and C03-PUB-03"
+        },
+        {
+          "path": "data/priority_cases/C03_source_review.json",
+          "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+          "locator": "checked_sources C03-PUB-01 and C03-PUB-03"
+        },
+        {
+          "path": "data/priority_cases/C03_request_addendum.json",
+          "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+          "locator": "C03-ADD01–03"
+        }
+      ],
+      "interpretation": "Public requirements are verified; absence from this repository does not establish missing compacts or noncompliance.",
+      "alternative_explanations": [
+        "Compacts may exist internally; public reporting may summarize rather than disclose them."
+      ],
+      "limits": [
+        "No actual compact, consultation receipt, allocation rule or accepted quantified result. ACABQ advice is not GA approval."
+      ],
+      "next_action": "Record the question as unresolved, with separate compact and funding boundaries in the unsent addendum.",
+      "reopen_trigger": "Official publication or authorized receipt of effective compacts, allocation rules and performance/acceptance records."
+    },
+    {
+      "question_id": "C03-Q04",
+      "question": "What current authority can be stated from the reviewed public sources?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "Final 2814 selected text extends BINUH to 31 January 2027. The official 2829 registry records GSF extension to 31 March 2027 and continued UNSOH support in full compliance with 2793. Final 2829 PDF and exhaustive later-amendment completeness remain unverified.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C03_public_evidence.json",
+          "sha256": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+          "locator": "C03-PUB-01–02 and C03-PUB-07; retrieval_attempts"
+        },
+        {
+          "path": "data/priority_cases/C03_source_review.json",
+          "sha256": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+          "locator": "checked_sources and remaining_limits"
+        }
+      ],
+      "interpretation": "Selected authority is established at the stated evidence levels. Neither GSF expiration nor comprehensive UNSOH authority can be inferred from the original twelve-month authorization alone.",
+      "alternative_explanations": [
+        "Later instruments or corrigenda may affect selected obligations; registry wording may require reconciliation with final text."
+      ],
+      "limits": [
+        "Registry-level 2829 verification only; no complete authority or appropriation review. 2814 OP7 has its specified DDR/justice scope."
+      ],
+      "next_action": "Use the qualified authority statement; preserve final-text and budget-disposition gaps.",
+      "reopen_trigger": "Final 2829 text, relevant later amendments or paragraph-specific GA budget disposition becomes accessible."
+    },
+    {
+      "question_id": "C03-Q05",
+      "question": "Should the project recommend changing the current support arrangement now?",
+      "disposition": "RETAIN_CURRENT_PROCESS",
+      "answer": "Retain the current arrangement for purposes of this project recommendation pending stronger evidence; no cancellation, staffing reduction or service change is justified by this public review.",
+      "evidence": [
+        {
+          "path": "data/cases/C03.json",
+          "sha256": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+          "locator": "safeguards, financial_validation, decision_reason"
+        },
+        {
+          "path": "data/priority_cases/C03_request_addendum.json",
+          "sha256": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+          "locator": "acceptance_boundary; requests C03-ADD02–04"
+        }
+      ],
+      "interpretation": "This is a public assessment disposition, not an F03 advancement state, institutional approval or assurance that the existing arrangement is optimal.",
+      "alternative_explanations": [
+        "Current support may already be efficient; a better alternative could exist but remains unmeasured."
+      ],
+      "limits": [
+        "Emergency evacuation, aircraft availability, flight safety and mandate continuity cannot be traded against an unverified budget effect."
+      ],
+      "next_action": "Maintain screening-candidate status and refrain from assigning a benefit or implementation authority.",
+      "reopen_trigger": "Evidence demonstrates an alternative meeting mandate and safety/readiness safeguards with validated comparable costs and accountable-owner review."
+    }
+  ],
+  "financial_observations": [
+    {
+      "amount": 1400000,
+      "currency": "USD",
+      "period": "calendar 2027 versus 2026 proposal comparison",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "BH01",
+      "interpretation": "Retained aviation reduction already embedded; not incremental project benefit. Full proposal not freshly authenticated; no recognized saving."
+    },
+    {
+      "amount": 4000000,
+      "currency": "USD",
+      "period": "calendar 2027 proposal",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "BH02",
+      "interpretation": "All-support internal reimbursement; eliminate paired transfer in a system-cost assessment. Full proposal not freshly authenticated; no recognized saving."
+    },
+    {
+      "amount": 3000000,
+      "currency": "USD",
+      "period": "calendar 2026 budget comparator",
+      "classification": "PUBLISHED_BUDGET",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "BH03",
+      "interpretation": "Retained transcription identifies prior approved aviation budget; no fresh GA approval verification or actual expenditure. Full proposal not freshly authenticated; no recognized saving."
+    },
+    {
+      "amount": 1600000,
+      "currency": "USD",
+      "period": "calendar 2027 proposal",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "BH04",
+      "interpretation": "Proposed aviation category, not comparable all-support cost. Full proposal not freshly authenticated; no recognized saving."
+    },
+    {
+      "amount": 3796400,
+      "currency": "USD",
+      "period": "calendar 2027 proposed category increase",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "BH05",
+      "interpretation": "Other supplies/services net category increase already contains USD4m reimbursement; nonadditive. Full proposal not freshly authenticated; no recognized saving."
+    }
+  ],
+  "retrieval_followup": [
+    {
+      "retrieved_on": "2026-10-23",
+      "url": "https://mandates.un.org/mandate/S/RES/2829%20%282026%29?subject=Gangs",
+      "outcome": "Official registry OP1–3 reopened; View PDF link again redirected to ODS error. Final PDF remains unavailable."
+    },
+    {
+      "retrieved_on": "2026-10-23",
+      "query": "site.un.org A/81/6 Add.4 BINUH 2027",
+      "outcome": "No usable official full proposal result in bounded search; retained-transcription classification unchanged."
+    }
+  ],
+  "case_synthesis": {
+    "overall_judgment": "Public evidence supports an accounting-attribution concern and conditional shared-support opportunity, while actual compacts, performance, complete authority and net costs remain unresolved. No operational waste or financial benefit is established.",
+    "mixed_question_dispositions_preserved": true,
+    "recommended_decision": "Retain the current arrangement for project recommendation purposes, preserve nonadditive financial comparisons, and reopen individual questions upon stronger authoritative public or authorized comparable evidence.",
+    "not_an_f03_advancement": true
+  },
+  "proposed_responsible_roles": [
+    {
+      "role": "Repository research maintainer",
+      "purpose": "Maintain the qualified public assessment, monitor material official publications and initiate a documented question-specific refresh when a reopening trigger is met.",
+      "acceptance_status": "NOT_CONFIRMED"
+    },
+    {
+      "role": "BINUH and UNSOH mission support and finance custodians",
+      "purpose": "If authorized intake is later pursued, confirm compact scope, allocation boundaries, comparable performance and full-system cost evidence; this proposal does not assign institutional accountability.",
+      "acceptance_status": "NOT_CONFIRMED"
+    }
+  ]
+}

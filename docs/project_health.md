@@ -4,7 +4,7 @@ This document is generated from [the machine-readable health receipt](../metadat
 
 **Structural checks passed; full runtime CI is not asserted by this receipt.**
 
-The receipt checks 586 canonical input-artifact records, 19 designated current roles and 117 migrated issue observations. It validates current-status regeneration, source snapshots, issue identities and migration counts. Source hashes make the result reproducible for unchanged inputs; publishing it does not supply institutional approval or operational evidence.
+The receipt checks 586 canonical input-artifact records, 20 designated current roles and 117 migrated issue observations. It validates current-status regeneration, source snapshots, issue identities and migration counts. Source hashes make the result reproducible for unchanged inputs; publishing it does not supply institutional approval or operational evidence.
 
 Cash savings and staff time saved remain **not estimated**. Both reporting live-use gates remain closed, and the course watch remains **paused**. Historical observations, current questions and control constraints are included together in source-observation totals; resolution and gate-status distributions remain separate. None is automatically a verified operational defect.
 

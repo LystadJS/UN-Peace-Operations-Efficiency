@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "assessment_id": "PUBLIC-PRIORITY-2026-10-23",
+  "as_of": "2026-10-23",
+  "primary_end_state": "An independently reviewed, reproducible public-evidence efficiency and reform-accountability assessment that answers bounded questions with qualified findings and actionable next decisions, without requiring unavailable operational records or claiming operational validation.",
+  "priority_case_ids": [
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "parent_portfolio_count": 14,
+  "parent_triage_case_ids": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14"
+  ],
+  "scope_exclusions": [
+    {
+      "case_id": "C04",
+      "label": "UNISFA translation",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C05",
+      "label": "UNISFA transferred assets",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C06",
+      "label": "UNSOS fuel contractor recovery",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C07",
+      "label": "MONUSCO medical insurance",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C08",
+      "label": "UNMISS post changes",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C09",
+      "label": "Course-level training",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C10",
+      "label": "DPPA\u2013DPO regional functions",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C11",
+      "label": "UNOWAS\u2013UNOCA reporting",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C12",
+      "label": "Cyprus reporting",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C13",
+      "label": "UNIFIL residual transition liabilities",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    },
+    {
+      "case_id": "C14",
+      "label": "Existing joint structures",
+      "coverage": "RETAINED_SCREENING_TRIAGE_NOT_DETAILED_PUBLIC_ASSESSMENT",
+      "rationale": "Retained in the fourteen-case denominator and historical dossier; this initial detailed release prioritizes C01-C03. No substantive finding or resolution inferred for this case.",
+      "reopening_trigger": "Material authoritative public evidence or a documented prospective reprioritization creates a versioned detailed scope.",
+      "proposed_responsible_role": "Project research release maintainer for triage; relevant mandate/service and finance custodian roles remain proposed in the retained case dossier.",
+      "next_decision": "Retain screening coverage; reassess detailed inclusion when the reopening trigger occurs."
+    }
+  ],
+  "disposition_vocabulary": [
+    "SUPPORTED_CONCERN",
+    "CONDITIONAL_OPPORTUNITY",
+    "UNRESOLVED_QUESTION",
+    "RETAIN_CURRENT_PROCESS"
+  ],
+  "completion_criteria": [
+    {
+      "id": "PA01",
+      "criterion": "Freeze cutoff, three detailed priority cases and all fourteen parent-case triage entries, with exclusions and reasons visible."
+    },
+    {
+      "id": "PA02",
+      "criterion": "For each detailed priority case, answer the public decision question with claim-level authoritative receipts, evidence dates, contrary evidence, limitations and one qualified public-assessment disposition."
+    },
+    {
+      "id": "PA03",
+      "criterion": "Separate adopted obligations, proposals, management reports, historical findings and interpretation; report selected GA80/GA81 coverage and unresolved instrument searches without universal compliance claims."
+    },
+    {
+      "id": "PA04",
+      "criterion": "Classify every material monetary reference by source, unit, period, proposal/adoption/actual status and embedded versus incremental treatment; publish no unsupported savings or additive totals."
+    },
+    {
+      "id": "PA05",
+      "criterion": "Review every material conclusion and recommendation by a reviewer other than its author, identifying agent review and unresolved disagreements explicitly."
+    },
+    {
+      "id": "PA06",
+      "criterion": "Regenerate the public assessment, case receipts and leadership brief reproducibly from versioned public inputs; preserve prior baselines and resolve critical release contradictions."
+    },
+    {
+      "id": "PA07",
+      "criterion": "Close feasible public-research gaps through documented searches and source comparison; retain unavailable or inconclusive evidence as explicit limits, with exact blocked conclusions and next public or optional operational evidence."
+    },
+    {
+      "id": "PA08",
+      "criterion": "Record a concrete next decision, proposed responsible role and reopening trigger for every detailed case and screening disposition; retain adverse and no-change conclusions."
+    },
+    {
+      "id": "PA09",
+      "criterion": "Confirm zero restricted records disclosed, zero unsupported savings claims, zero known double-counted amounts and zero unresolved critical authority or current-status errors in release claims."
+    }
+  ],
+  "operational_validation_optional": true,
+  "savings_before_financial_validation_forbidden": true,
+  "completion_status": "DEFINED_NOT_YET_ACCEPTED",
+  "operational_gate_status": "PRIOR_UNMET_GATES_PRESERVED_NOT_DECLARED_FULFILLED",
+  "coverage_boundary": "Three detailed public assessments and fourteen visible parent screening/triage entries; not fourteen operational audits, universal mission coverage or exhaustive GA80/GA81 compliance coverage.",
+  "financial_policy": "No positive dollar target. Unknown differs from zero. Public assessment dispositions do not advance F03 states or authorize savings language.",
+  "historical_records_policy": "Preserve all prior candidate states, source qualifications, evidence requests, operational gates and benefit ledgers.",
+  "release_owner_role": "Project research release maintainer, not an accepted UN operational owner"
+}

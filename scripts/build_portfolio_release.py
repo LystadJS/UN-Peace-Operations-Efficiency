@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'data/portfolio/release_manifest.json'
 DOCUMENT = 'docs/portfolio_release.md'
 PREFIXES = ('data/reforms/', 'data/portfolio/', 'data/cases/', 'data/evidence_requests/',
-            'data/pilots/', 'data/adjudications/', 'data/realization/', 'data/priority_cases/',
+            'data/pilots/', 'data/adjudications/', 'data/realization/', 'data/priority_cases/', 'data/public_assessment/',
             'docs/', 'scripts/', 'tests/', '.github/workflows/', 'metadata/')
 EXCLUSIONS = {
     MANIFEST: 'Self hash excluded to avoid a circular manifest; manifest is verified by regeneration.',
@@ -43,6 +43,10 @@ REQUIRED = (
     'metadata/validation_groups.json',
     'data/priority_cases/progress.json', 'data/priority_cases/research_candidates.json',
     'docs/priority_case_progress.md',
+    'data/public_assessment/scope.json', 'data/public_assessment/portfolio.json',
+    'data/public_assessment/peer_review.json', 'docs/public_assessment_brief.md',
+    'docs/public_assessment_standard.md', 'scripts/build_public_assessment.py',
+    'tests/check_public_assessment.py',
 ) + tuple(f'data/cases/C{i:02}.json' for i in range(1, 15)) + tuple(f'docs/cases/C{i:02}.md' for i in range(1, 15)) + (
     'data/evidence_requests/E01_rsce.json', 'data/evidence_requests/E02_assets.json',
     'data/evidence_requests/E03_haiti.json', 'data/evidence_requests/E04_ga_directed.json',
@@ -135,9 +139,19 @@ def check_claim_boundary(root):
 def build(root=ROOT):
     paths = scope_files(root)
     gates = check_claim_boundary(root)
+    assessment = read(root, 'data/public_assessment/portfolio.json')
+    if (assessment.get('public_assessment_status') != 'COMPLETE_WITH_LIMITATIONS'
+            or assessment.get('public_assessment_complete') is not True
+            or assessment.get('peer_review_status') != 'PASS'
+            or assessment.get('recognized_benefit') is not None
+            or assessment.get('operational_validations_completed') != 0):
+        raise ValueError('public assessment acceptance or operational/benefit boundary changed')
     return {
         'schema_version': 1, 'release_id': 'UNPO-PUBLIC-VALIDATION-BASELINE-1', 'task_id': 'I12',
         'release_class': 'PUBLIC_VALIDATION_BASELINE', 'decision_grade_portfolio': 'BLOCKED',
+        'primary_public_assessment': {'status': assessment['public_assessment_status'],
+            'detailed_cases': assessment['detailed_case_count'], 'parent_screening_cases': 14,
+            'source': 'data/public_assessment/portfolio.json'},
         'institutional_approval': 'NOT_OBTAINED', 'publication_action': 'LOCAL_MANIFEST_ONLY',
         'source_cutoffs': {
             'reform_scoped_source_review': '2026-10-23',
@@ -178,11 +192,11 @@ def validate_manifest(value, root=ROOT):
 def render(value):
     return f'''# Public validation baseline release — I12
 
-**PUBLIC_VALIDATION_BASELINE; decision-grade portfolio BLOCKED.** This local release manifest records {value['artifact_count']} filesystem artifacts with byte counts and SHA-256 hashes. It does not create a GitHub release, publish files, authorize operational implementation or attest runtime CI.
+**Primary public assessment: {value['primary_public_assessment']['status']}; retained operational decision-grade portfolio: BLOCKED.** This local PUBLIC_VALIDATION_BASELINE manifest records {value['artifact_count']} filesystem artifacts with byte counts and SHA-256 hashes. It does not create a GitHub release, publish files, authorize operational implementation or attest runtime CI.
 
 The [machine-readable manifest](../data/portfolio/release_manifest.json) declares its directory populations, required core artifacts, source cutoffs and explicit exclusions. It includes ready untracked files so that the final review population does not silently omit work awaiting commit. Root integration must regenerate after all edits, commit the complete reviewed population and validate the exact final commit separately.
 
-All fourteen cases remain screening candidates blocked pending evidence, with zero substantive operational adjudications and unestimated benefits. Foundation and validation-system completion are partial; decision-portfolio and realization gates remain blocked. Read the [leadership report](leadership_portfolio_report.md) and [public portfolio](decision_portfolio.md) for the substantive limits. Scoped reform review is through 2026-10-23; retained financial baseline is through {value['source_cutoffs']['financial_retained_baseline']}; historical research/owner controls retain their 2026-10-15 cutoff. Individual case dates remain explicit.
+The [primary public assessment](public_assessment_brief.md) completes three detailed cases within fourteen visible screening cases under the [amended desired end state](desired_end_state.md). All fourteen historical parent cases retain their operational screening dispositions, with zero substantive operational adjudications and unestimated benefits. The original foundation and validation-system gates remain partial; operational decision-portfolio and realization gates remain blocked. Read the retained [leadership report](leadership_portfolio_report.md) and [operational portfolio](decision_portfolio.md) for that optional later path. Scoped reform review is through 2026-10-23; retained financial baseline is through {value['source_cutoffs']['financial_retained_baseline']}; historical research/owner controls retain their 2026-10-15 cutoff. Individual case dates remain explicit.
 
 The manifest and this rendering omit their own hashes. Generated current-status, navigation, project-health and runtime/orchestration outputs are separately checked to avoid dependency cycles; the final agent review is excluded because it can inspect the manifest. The exclusions are not permission to skip their validation. Declared directory hashing includes both new roadmap work and retained control/document dependencies; it is not a claim that all entries are new research or current operational evidence.
 

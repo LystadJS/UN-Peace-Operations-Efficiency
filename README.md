@@ -10,7 +10,9 @@ Identify specific UN peacekeeping functions and services with efficiency problem
 
 Read the **[generated current status](docs/current_status.md)** for the controlling project readout, source cutoffs, financial qualifications and unresolved decisions. Current status is generated from canonical records; earlier reports remain available through the [release history](docs/release_history.md).
 
-The [public decision portfolio](docs/decision_portfolio.md) now defines fourteen screening cases, evidence contracts and validation controls. **Zero substantive operational audits are complete; benefits remain unestimated.** Start with the [Commander’s decision memo](docs/commander_decision_memo.md), [leadership report](docs/leadership_portfolio_report.md), [partial reform baseline](docs/reform_compliance_view.md) and [task execution ledger](docs/workflow_execution.md). Internal evidence and accepted operational authority remain prerequisites for the decision-grade end state.
+The primary deliverable is a **[public-evidence efficiency and reform-accountability assessment](docs/public_assessment_brief.md)**, scoped to three detailed priority cases within fourteen retained screening cases. Read its [completion standard](docs/public_assessment_standard.md), [versioned desired end state](docs/desired_end_state.md) and [agent review](docs/public_assessment_review.md). Public assessment completion does not establish operational waste, comprehensive reform compliance or financial benefits.
+
+The retained [operational decision portfolio](docs/decision_portfolio.md) defines fourteen screening cases, evidence contracts and validation controls. **Zero substantive operational audits are complete; benefits remain unestimated.** Its [Commander’s decision memo](docs/commander_decision_memo.md), [leadership report](docs/leadership_portfolio_report.md), [partial reform baseline](docs/reform_compliance_view.md) and [task execution ledger](docs/workflow_execution.md) preserve the earlier operational pathway. Internal evidence and accepted operational authority remain prerequisites for that optional decision-grade pathway; they are not prerequisites to publishing evidence-qualified public conclusions.
 
 The [priority-case progress update](docs/priority_case_progress.md) records the latest C01–C03 public-source findings, request addenda, selected semantic/lineage work and bounded research-unit readiness. It preserves historical parent dossiers and separates research design from authority to collect records or change operations.
 
@@ -25,7 +27,7 @@ The [priority-case progress update](docs/priority_case_progress.md) records the 
 
 ## Decision focus
 
-The initial operational validation priorities are:
+The detailed public-assessment priorities, with an optional later operational-validation pathway, are:
 
 - **Shared services and RSCE:** Reconcile client/provider charges, retained local work and service performance.
 - **UNIFIL–UNSCOL transition assets:** Verify asset receipts, avoided procurement, transfer costs and receiving-unit readiness.

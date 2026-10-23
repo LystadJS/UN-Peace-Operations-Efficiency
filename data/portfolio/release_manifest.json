@@ -4,6 +4,12 @@
   "task_id": "I12",
   "release_class": "PUBLIC_VALIDATION_BASELINE",
   "decision_grade_portfolio": "BLOCKED",
+  "primary_public_assessment": {
+    "status": "COMPLETE_WITH_LIMITATIONS",
+    "detailed_cases": 3,
+    "parent_screening_cases": 14,
+    "source": "data/public_assessment/portfolio.json"
+  },
   "institutional_approval": "NOT_OBTAINED",
   "publication_action": "LOCAL_MANIFEST_ONLY",
   "source_cutoffs": {
@@ -73,6 +79,7 @@
     "data/adjudications/",
     "data/realization/",
     "data/priority_cases/",
+    "data/public_assessment/",
     "docs/",
     "scripts/",
     "tests/",
@@ -112,6 +119,13 @@
     "data/priority_cases/progress.json",
     "data/priority_cases/research_candidates.json",
     "docs/priority_case_progress.md",
+    "data/public_assessment/scope.json",
+    "data/public_assessment/portfolio.json",
+    "data/public_assessment/peer_review.json",
+    "docs/public_assessment_brief.md",
+    "docs/public_assessment_standard.md",
+    "scripts/build_public_assessment.py",
+    "tests/check_public_assessment.py",
     "data/cases/C01.json",
     "data/cases/C02.json",
     "data/cases/C03.json",
@@ -166,7 +180,7 @@
     "*.pyc",
     "*.pyo"
   ],
-  "artifact_count": 413,
+  "artifact_count": 427,
   "artifacts": [
     {
       "path": ".github/workflows/additional_mission_training_frame.yml",
@@ -555,8 +569,8 @@
     },
     {
       "path": "data/portfolio/validation_plan.json",
-      "sha256": "5da4ed60427f139bb5448bfa857a2879a7ccc67f7cc8115a5b5bb5e6b5692ecc",
-      "bytes": 16687
+      "sha256": "87f8218c54af10ed0f14b645f2464dc5bd3f8cb72abc3beafe5421dd5ae07cf1",
+      "bytes": 17422
     },
     {
       "path": "data/portfolio/verified_benefit_ledger.json",
@@ -662,6 +676,36 @@
       "path": "data/priority_cases/research_candidates_initial.json",
       "sha256": "515b0362f41319406bb36aafb0d471ec7ac0130654fa10a401baf7bc4cfbae08",
       "bytes": 1318
+    },
+    {
+      "path": "data/public_assessment/C01.json",
+      "sha256": "0a885032e7ea6dd4fe84e72036e568ff07a39800186767931d1958bd79ba16b2",
+      "bytes": 14592
+    },
+    {
+      "path": "data/public_assessment/C02.json",
+      "sha256": "bd376ceca59b0645f5bc4e62a43c37a1477f3498e2323837393288c737a89d91",
+      "bytes": 13941
+    },
+    {
+      "path": "data/public_assessment/C03.json",
+      "sha256": "4b9ee28484113869870b8a8408a8f300637d9d494898e340ab0eefa6a4e48bfe",
+      "bytes": 13627
+    },
+    {
+      "path": "data/public_assessment/peer_review.json",
+      "sha256": "52880b7c514a6d0553e1de015d4534a29b867824337a69a216bc8d8478e1d3f3",
+      "bytes": 6461
+    },
+    {
+      "path": "data/public_assessment/portfolio.json",
+      "sha256": "4e66d504ccc6ef0e05057d1b0ab62a0e57555b10b65bf3b6b07f9f630facfec9",
+      "bytes": 55915
+    },
+    {
+      "path": "data/public_assessment/scope.json",
+      "sha256": "f3a7767634ad8267f65455ee5ef4fb6c2350ac104b78934fc21f264f7603e2ed",
+      "bytes": 12820
     },
     {
       "path": "data/realization/implementation_gates.json",
@@ -960,8 +1004,8 @@
     },
     {
       "path": "docs/desired_end_state.md",
-      "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe",
-      "bytes": 13159
+      "sha256": "b5c0b138fbe4e6e04f2d79fd8649ff36d085389c606a64b24682ad1e297462a0",
+      "bytes": 15657
     },
     {
       "path": "docs/evidence_reconciliation.md",
@@ -1040,8 +1084,8 @@
     },
     {
       "path": "docs/portfolio_validation.md",
-      "sha256": "f9f639baf779571a76c91c6fbe8cea09f1f02b13b6bf527e1a3440168c4dc3f6",
-      "bytes": 4154
+      "sha256": "12eead30e6a4629d3a2eff5c29df50c211f5a24c727843b2693ca54d535911b2",
+      "bytes": 4369
     },
     {
       "path": "docs/priority_case_progress.md",
@@ -1137,6 +1181,36 @@
       "path": "docs/project_consistency.md",
       "sha256": "b81f3d97d4c28694d76e6e9fd1c88c4e8ccb4ffbfc8ca2f57619def318161933",
       "bytes": 1679
+    },
+    {
+      "path": "docs/public_assessment/C01.md",
+      "sha256": "aa3ad0aaac1d99f5d6ae90841b4d8edef96896e1f8277d24ec69e3603c012041",
+      "bytes": 8238
+    },
+    {
+      "path": "docs/public_assessment/C02.md",
+      "sha256": "5a26329382c4153d1cf182fed05ab0b923dcf508a747a30dc61dd546af6166a8",
+      "bytes": 5089
+    },
+    {
+      "path": "docs/public_assessment/C03.md",
+      "sha256": "07a741f979071a0350058e69a55fa343c2362a908e27137b34425eeeb2961122",
+      "bytes": 4280
+    },
+    {
+      "path": "docs/public_assessment_brief.md",
+      "sha256": "3674d84db01012768b0037026ffa2e22b997ff89c8220ae8feca613bf16def5e",
+      "bytes": 6186
+    },
+    {
+      "path": "docs/public_assessment_review.md",
+      "sha256": "ed672b90cc3f7a2c8eb0257880b575b3f7fd411f2ea5e92cb9f2adc6a41ef79b",
+      "bytes": 2049
+    },
+    {
+      "path": "docs/public_assessment_standard.md",
+      "sha256": "c2c00b1e0e313825adb4ea9be8a2c4fce3e9d15e1f2ccf962cbda5d7e831036c",
+      "bytes": 7910
     },
     {
       "path": "docs/public_deliverable_overlap_2027.md",
@@ -1355,8 +1429,8 @@
     },
     {
       "path": "metadata/canonical_manifest.json",
-      "sha256": "416451d65555bd02ce813b38c1ff141b9ffff84c3dafff3a7253398e247294c1",
-      "bytes": 373607
+      "sha256": "f9ec003b1634e416a3d32087909cfe3e1eee029d91f4f54e5dcb522e326c13cd",
+      "bytes": 374580
     },
     {
       "path": "metadata/ci_parity_matrix.csv",
@@ -1370,8 +1444,8 @@
     },
     {
       "path": "metadata/frozen_input_archive.json",
-      "sha256": "e674f0cc7984a5e0550072e69d61052710ff1167d4a86f43403eb4f8cb4ec712",
-      "bytes": 7797
+      "sha256": "85bc603045284c9a54ce4227f83f6babc438c8bc2fe12198c1e4141dbbeb0edd",
+      "bytes": 8008
     },
     {
       "path": "metadata/issue_migration_receipt.json",
@@ -1495,8 +1569,8 @@
     },
     {
       "path": "scripts/build_canonical_manifest.py",
-      "sha256": "a88cd6465e112831684c18d2ec8f8c6b8d71dd5c6baedb1f84a8aa8dc1f5ebdd",
-      "bytes": 14541
+      "sha256": "5b600a1a265d73e7139f2d92c5d8330336fe5ceac2e1e0080335ab3f117b8ac4",
+      "bytes": 15046
     },
     {
       "path": "scripts/build_dataset_registry.py",
@@ -1535,8 +1609,8 @@
     },
     {
       "path": "scripts/build_portfolio_release.py",
-      "sha256": "8bd03ae755972a6377c7ca8e740786a9c3227b5cda2c37f99bab14cb3b05c0ab",
-      "bytes": 14799
+      "sha256": "2e31460266ddfe3674acca31564c710b4b9ceaed44fe2942ace854872d8f724e",
+      "bytes": 16209
     },
     {
       "path": "scripts/build_priority_progress.py",
@@ -1549,9 +1623,14 @@
       "bytes": 8158
     },
     {
+      "path": "scripts/build_public_assessment.py",
+      "sha256": "e69852fe1211fdb7679e4b8cdae5b74ec3fa03e9dfe72f7a447b2c90be7c3639",
+      "bytes": 16865
+    },
+    {
       "path": "scripts/build_readme_navigation.py",
-      "sha256": "e02bd816abe1303248183160b6fce607c1b68d2b80e2f3193e5c0ad8b5a309ba",
-      "bytes": 12581
+      "sha256": "3cf50c31013e47fe863fdcc8aa2a46c55630f2cd9d194fbea913d4d237f3786d",
+      "bytes": 13278
     },
     {
       "path": "scripts/build_reform_claim_inventory.py",
@@ -1675,8 +1754,8 @@
     },
     {
       "path": "scripts/generate_current_status.py",
-      "sha256": "566ff1c45c4c1f93bc6aa07e7a955c6bf7af195b577c595be3b7fbd232035f87",
-      "bytes": 29365
+      "sha256": "b7b08551992d78993453ad20e2b90b7af1f0e6f2e8bd4413bed200f360f8242b",
+      "bytes": 31737
     },
     {
       "path": "scripts/migrate_master_issues.py",
@@ -1975,8 +2054,8 @@
     },
     {
       "path": "tests/check_current_status.py",
-      "sha256": "ade4c26112142ad73c54350656bed85ed3ad38b4bd4db927e10a0a5eb2c2bf1c",
-      "bytes": 7486
+      "sha256": "1ae27d5b8d214fd06631a2933e0618814e033680a24cbe9f6af59750dc97300f",
+      "bytes": 7899
     },
     {
       "path": "tests/check_dataset_registry.py",
@@ -2082,6 +2161,11 @@
       "path": "tests/check_project_health.py",
       "sha256": "9aecada6917e3ec3b381cf048ad108aaf5741f88296ecbed6ef3cf9c39f97c02",
       "bytes": 2096
+    },
+    {
+      "path": "tests/check_public_assessment.py",
+      "sha256": "47c54781fdf522eb93f717cf64237534573f223929f364c902689a7da6159460",
+      "bytes": 5908
     },
     {
       "path": "tests/check_public_board.R",

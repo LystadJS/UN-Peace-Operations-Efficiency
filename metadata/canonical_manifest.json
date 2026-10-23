@@ -8,6 +8,11 @@
   "evidence_cutoff_rule": "The evidence_cutoff field describes the retained original research baseline; financial, reform and operational scopes retain their own explicit dates in current status and the public portfolio release.",
   "population_rule": "586 tracked input artifacts at baseline; archived controls and A07+ outputs are declared separately, not silently added to this denominator",
   "current_roles": {
+    "public_assessment": {
+      "path": "data/public_assessment/portfolio.json",
+      "scope": "three detailed public-evidence assessments within fourteen retained screening cases",
+      "designation_basis": "user-authorized public-evidence completion target, 23 October 2026"
+    },
     "research_reference": {
       "path": "data/census_v13/research_reference.json",
       "scope": "fixed V8/V9 research obligations",
@@ -4927,9 +4932,12 @@
       "currency": "CURRENT",
       "scope": "designated project control role",
       "designation_basis": "F01-A07 project control task designation",
-      "hash_mode": "immutable_sha256",
-      "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe",
-      "frozen_baseline": null,
+      "hash_mode": "mutable_control_with_archived_baseline",
+      "sha256": null,
+      "frozen_baseline": {
+        "archive_path": "history/pre_controls/docs/desired_end_state.md",
+        "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe"
+      },
       "hash_observation": "A07 working implementation; baseline commit defines population, not all observed bytes"
     },
     {
@@ -7235,6 +7243,18 @@
     }
   ],
   "generated_artifacts": [
+    {
+      "path": "data/public_assessment/portfolio.json",
+      "producer": "scripts/build_public_assessment.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "docs/public_assessment_brief.md",
+      "producer": "scripts/build_public_assessment.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
     {
       "path": "data/issues/current_issues.json",
       "producer": "scripts/migrate_master_issues.py",

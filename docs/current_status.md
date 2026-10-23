@@ -8,7 +8,9 @@ The Commander’s intent is to identify specific peacekeeping inefficiencies and
 
 ## Portfolio readiness — 23 October
 
-The [public portfolio](decision_portfolio.md) contains **14 screening cases** and **0 substantive operational adjudications**. The minimum is three across two service types. The release is a public validation baseline; a decision-grade or realized-benefit portfolio remains blocked. Foundation and validation-system completion gates are partial; decision and realization gates are blocked.
+The primary [public-evidence assessment](public_assessment_brief.md) is **COMPLETE_WITH_LIMITATIONS**, covering **16 bounded questions in 3 detailed cases** within **14 visible parent screening cases**. Public dispositions: `{"CONDITIONAL_OPPORTUNITY": 3, "RETAIN_CURRENT_PROCESS": 4, "SUPPORTED_CONCERN": 3, "UNRESOLVED_QUESTION": 6}`. The [amended desired end state](desired_end_state.md) and [public completion standard](public_assessment_standard.md) permit qualified unknowns without waiting for inaccessible internal records. [Agent acceptance review](public_assessment_review.md) is separate from institutional or operational validation.
+
+The retained [operational portfolio](decision_portfolio.md) contains **14 screening cases** and **0 substantive operational adjudications**. Its optional later target remains three across two service types. Those original gates remain partial or blocked; public assessment completion does not fulfill them or establish realized benefits. The eleven cases outside detailed public scope retain their historical screening dispositions.
 
 The [priority-case follow-up](priority_case_progress.md) supplements the three preserved parent dossiers with refreshed public authority, targeted request addenda, a five-entity authority overlay and separate bounded research-unit review. Child research units: `[{"candidate_id": "C02-UF01-RESEARCH", "claim_class": "NO_FINANCIAL_CLAIM", "current_state": "VALIDATION_READY", "version": "1.0"}]`. Research readiness supplies no collection permission, accepted institutional owner, operational trial or financial finding.
 
@@ -55,10 +57,10 @@ Current artifact designations, source hashes and supersession are governed by th
 
 Next decisions:
 
-- Obtain owner review of existing controls before proposing a live reporting shadow.
-- Acquire authorized operational and transaction evidence for shared-service, asset-transfer and aviation/support audits.
-- Complete instrument-population and applicability review beyond the selected UNGA80/81 reform baseline before asserting compliance.
-- Resolve dataset-semantic, canonicality and dynamic-lineage gaps before substantive consolidation.
+- Use the public-assessment brief and its case-specific dispositions for public research and policy follow-up; preserve source and financial qualifications.
+- Reopen bounded questions when material public evidence, adopted authority, corrected sources or a documented scope change arrives; the other eleven cases remain visible screening entries.
+- Extend instrument-population and applicability review beyond the selected UNGA80/81 baseline before asserting broader reform compliance.
+- If authorized operational access becomes available, resume the retained owner, baseline, safeguards and financial-validation pathway. Live reporting remains blocked and the course watch paused.
 
 ## Navigation and reproduction
 

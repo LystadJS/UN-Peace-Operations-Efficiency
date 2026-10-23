@@ -39,7 +39,8 @@
     "tests/check_workflow_execution.py",
     "tests/check_priority_semantics.py",
     "tests/check_priority_lineage.py",
-    "tests/check_priority_progress.py"
+    "tests/check_priority_progress.py",
+    "tests/check_public_assessment.py"
   ],
   "required_step_ids": [
     "reform-claims",
@@ -98,7 +99,9 @@
     "priority-progress",
     "check-priority-semantics",
     "check-priority-lineage",
-    "check-priority-progress"
+    "check-priority-progress",
+    "public-assessment",
+    "check-public-assessment"
   ],
   "required_paths": [
     "data/portfolio/dataset_contracts.json",
@@ -130,7 +133,12 @@
     "docs/workflow_execution.md",
     "data/priority_cases/progress.json",
     "data/priority_cases/research_candidates.json",
-    "data/priority_cases/research_candidates_initial.json"
+    "data/priority_cases/research_candidates_initial.json",
+    "data/public_assessment/scope.json",
+    "data/public_assessment/portfolio.json",
+    "data/public_assessment/peer_review.json",
+    "docs/public_assessment_brief.md",
+    "docs/public_assessment_standard.md"
   ],
   "steps": [
     {
@@ -824,6 +832,29 @@
         "C02",
         "C03",
         "F03"
+      ]
+    },
+    {
+      "id": "public-assessment",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_public_assessment.py",
+        "--check"
+      ],
+      "tasks": [
+        "PUBLIC-ASSESSMENT"
+      ]
+    },
+    {
+      "id": "check-public-assessment",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_public_assessment.py"
+      ],
+      "tasks": [
+        "PUBLIC-ASSESSMENT"
       ]
     }
   ]

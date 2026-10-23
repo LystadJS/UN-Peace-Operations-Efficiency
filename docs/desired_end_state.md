@@ -1,3 +1,19 @@
+# Desired end state — public assessment amendment
+
+**Controlling primary-completion amendment | 23 October 2026 | Prior operational criteria retained below, unmet**
+
+The primary deliverable is a source-backed public assessment of peacekeeping efficiency and reform accountability: what the available evidence supports, what remains conditional or unknown, and what decision or evidence would resolve each question. This route addresses the practical likelihood that operational records will remain unavailable. It does not certify waste, UN compliance, institutional approval or realized benefits.
+
+The [public assessment standard](public_assessment_standard.md) and [frozen scope](../data/public_assessment/scope.json) control primary publication and completion. The initial scope covers detailed public assessments of C01–C03 and transparent screening/triage of all fourteen historical parent cases; the other eleven are explicitly outside detailed assessment, not removed from the denominator. Selected reform evidence cannot stand for exhaustive UNGA80/81 coverage.
+
+Completion requires evidence-qualified answers and dispositions, financial-class separation, independent scoped review, a reproducible leadership brief, closure or explicit limitation of feasible public-research gaps, and reopening triggers. A supported concern, conditional opportunity, unresolved question or reasoned decision to retain the current process can satisfy the public method. No positive monetary result is required. Definitions and acceptance criteria are in the controlling standard; this amendment does not declare them achieved.
+
+Operational validation is an optional deeper route when authorized records become available. Its accepted owners, actual baselines, operational audits and implementation/realization gates remain mandatory for those respective claims, but are not prerequisites for publishing or completing the public assessment. Public completion is never described as operational realization. F03 advancement states and the prohibition on savings language before FINANCIALLY_VALIDATED remain unchanged.
+
+## Retained optional operational path — original F01 text
+
+The original 22 October standard follows unchanged. Its mandatory gate language applies to the optional decision-grade operational and realization path. It no longer defines the primary public-assessment publication/completion gate. None of its unmet conditions is retroactively fulfilled or waived for an operational claim.
+
 # F01 — Desired end state and portfolio completion criteria
 
 **Project standard | Defined 22 October 2026 | Normative design, not a finding of implementation or savings**

@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "case_id": "C01",
+  "as_of": "2026-10-23",
+  "scope": "Bounded public assessment of RSCE financing, KJSO transition, staffing-model interpretation and historical onboarding/separation controls. Public-source synthesis; not an exhaustive legal or performance audit.",
+  "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+  "questions": [
+    {
+      "question_id": "C01-Q01",
+      "question": "Do published budget amounts establish overcharging or an addressable saving?",
+      "disposition": "RETAIN_CURRENT_PROCESS",
+      "answer": "No. The authenticated fiscal maintenance approval is a financing perimeter, not a waste estimate.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C01_public_evidence.json",
+          "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+          "locator": "Claims06\u201308; S10 final A/RES/80/273 OP6\u20137"
+        },
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+          "locator": "RS01\u2013RS04"
+        }
+      ],
+      "interpretation": "Maintain separate fiscal, client and fund scopes. The mixed-client amount is part of the maintenance total, while staff-assessment income offsets the active-client share.",
+      "alternative_explanations": [
+        "Different calendar/fiscal periods and mixed political/observer populations explain why displayed shares differ."
+      ],
+      "limits": [
+        "Actual allocation vouchers and settlement are unavailable.",
+        "The retained calendar2027 SPM proposal has not been freshly authenticated."
+      ],
+      "next_action": "Publish the exact approval and comparability warning; do not recommend changing charges from aggregate differences.",
+      "reopen_trigger": "Same-period client allocation evidence or a final programme-budget instrument establishes a specific comparable discrepancy."
+    },
+    {
+      "question_id": "C01-Q02",
+      "question": "Is the current public client and cutover description sufficiently reconciled?",
+      "disposition": "SUPPORTED_CONCERN",
+      "answer": "The reviewed reporting leaves an unresolved scope and timing reconciliation: April client assumption, July formal handover,32entities and16clientmissions.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C01_public_evidence.json",
+          "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+          "locator": "Claims01\u201303; discrepancyD01; S01\u2013S03"
+        }
+      ],
+      "interpretation": "This is a concern about the interpretability of the reviewed public account, not evidence of duplicate spending. A dated client-by-service roster would make the reform auditable.",
+      "alternative_explanations": [
+        "Phased commencement and formal handover can be different events.",
+        "Entities and missions may be different population grains."
+      ],
+      "limits": [
+        "Management extracts are indexed; direct pages were blocked.",
+        "No contradiction or complete current denominator is established."
+      ],
+      "next_action": "Publish a request for a dated service/client bridge and distinguish publication dates from operational effective dates.",
+      "reopen_trigger": "An official dated roster or transition clarification reconciles both population grain and service coverage."
+    },
+    {
+      "question_id": "C01-Q03",
+      "question": "Could residual client or predecessor processing be consolidated?",
+      "disposition": "CONDITIONAL_OPPORTUNITY",
+      "answer": "Service-line routing consolidation is plausible only where separately resourced work is substitutable after actual cutover.",
+      "evidence": [
+        {
+          "path": "data/cases/C01.json",
+          "sha256": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+          "locator": "testable_mechanism; feasible_alternative_to_test; safeguards"
+        },
+        {
+          "path": "data/priority_cases/C01_request_addendum.json",
+          "sha256": "fac0778a79878e706291afc7136f772ff3779fc25ce5d753935a24af38c507c5",
+          "locator": "tables client_service_cutover_bridge, predecessor_provider_charge_bridge, delegation_retained_work_bridge"
+        }
+      ],
+      "interpretation": "A duplicate-processing mechanism is testable; public management handover reporting alone neither proves that it exists nor quantifies its extent.",
+      "alternative_explanations": [
+        "Retained client approval may be a necessary delegated decision.",
+        "Trailing closeout adjustments, split service scope or temporary transition controls may explain apparent overlap."
+      ],
+      "limits": [
+        "No paired actual tasks, last predecessor charge or first provider charge.",
+        "No whole-system cost or quality baseline."
+      ],
+      "next_action": "Publish the bounded opportunity and retain existing routing pending evidence; avoid adding another tracking system by default.",
+      "reopen_trigger": "Public evaluation or authorized paired task/service/charge evidence identifies avoidable repeated processing while preserving controls."
+    },
+    {
+      "question_id": "C01-Q04",
+      "question": "Do staffing-model reductions establish actual workforce or cash savings?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "No. Proposal workload arithmetic yields net+9positions from -25,-10,+44;17of25payrollposts are described as proposed transfers to DOS.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C01_public_evidence.json",
+          "sha256": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+          "locator": "Claims04\u201305; S04 A/80/611 paras55\u201358,70"
+        }
+      ],
+      "interpretation": "A transfer can relocate budget cost without removing whole-system expenditure. Modeled FTE changes cannot be equated to actual post exits.",
+      "alternative_explanations": [
+        "Demand expansion may require additional processing capacity.",
+        "Payroll consolidation may shift rather than extinguish funded work."
+      ],
+      "limits": [
+        "Proposal paragraphs are indexed rather than freshly full-text authenticated.",
+        "Adopted post-by-post decisions, actual payroll and service outcomes are absent."
+      ],
+      "next_action": "Publish a model-versus-execution distinction; classify no monetary benefit from these figures.",
+      "reopen_trigger": "Adopted staffing tables and subsequent public performance reporting reconcile unique posts, receiving funds and actual outcomes."
+    },
+    {
+      "question_id": "C01-Q05",
+      "question": "Do the historical onboarding/separation findings prove a current efficiency problem?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "They establish a historical research lead, not persistence: the indexed2024/028audit concerned July2021\u2013June2023 and five recommendation themes.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C01_historical_audit.json",
+          "sha256": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+          "locator": "report; historical_report_interpretation; sources OIOS-PUBLIC-DOWNLOAD and RSCE-IMPLEMENTATION-NEWS"
+        }
+      ],
+      "interpretation": "Workflow chronology and delay visibility are a useful targeted research question. Neither historical weaknesses nor a general100%implementation headline settles current effectiveness.",
+      "alternative_explanations": [
+        "Recommendations may have been completed.",
+        "Client input delays or necessary control checks may explain part of the processing time."
+      ],
+      "limits": [
+        "Full report not retrieved; current report-specific closure unknown.",
+        "Management implementation article publication date and exact report coverage unknown."
+      ],
+      "next_action": "Publish the dated historical context with no present-tense waste allegation; seek report-specific closure and current follow-up reporting.",
+      "reopen_trigger": "A report-specific OIOS closure/follow-up record or current evaluation establishes remediation or recurrence."
+    },
+    {
+      "question_id": "C01-Q06",
+      "question": "Should required approvals and service controls be removed to capture apparent efficiency?",
+      "disposition": "RETAIN_CURRENT_PROCESS",
+      "answer": "No public evidence supports removing delegated approvals, segregation of duties or continuity controls.",
+      "evidence": [
+        {
+          "path": "data/cases/C01.json",
+          "sha256": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+          "locator": "safeguards; feasible_alternative_to_test"
+        },
+        {
+          "path": "data/priority_cases/C01_historical_audit.json",
+          "sha256": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+          "locator": "design_relevance.protect_existing_controls; prospective_guardrail_design"
+        }
+      ],
+      "interpretation": "Preserve current required controls while considering substitutable transaction processing separately.",
+      "alternative_explanations": [
+        "Apparent repetition may implement distinct provider and client responsibilities."
+      ],
+      "limits": [
+        "Current service-level performance and control-design effectiveness not operationally tested."
+      ],
+      "next_action": "Retain required client decisions and continuity arrangements; any future redesign must protect payroll, vendor payment, confidentiality, timeliness and rework performance.",
+      "reopen_trigger": "A competent-authority control review and measured service outcomes show an alternative meets obligations with less avoidable processing."
+    }
+  ],
+  "financial_observations": [
+    {
+      "amount": 45911600,
+      "currency": "USD",
+      "period": "1July2026\u201330June2027",
+      "classification": "PUBLISHED_BUDGET",
+      "source_path": "data/priority_cases/C01_public_evidence.json",
+      "source_locator": "S10 A/RES/80/273 OP6",
+      "interpretation": "Approved maintenance requirement; no eligible pool or benefit recognized."
+    },
+    {
+      "amount": 42468400,
+      "currency": "USD",
+      "period": "1July2026\u201330June2027",
+      "classification": "PUBLISHED_BUDGET",
+      "source_path": "data/priority_cases/C01_public_evidence.json",
+      "source_locator": "S10 OP7(a)",
+      "interpretation": "Active client peacekeeping financing component within total; not additive to total."
+    },
+    {
+      "amount": 3443200,
+      "currency": "USD",
+      "period": "FY2026/27 maintenance financing;2027programmebudget approval condition",
+      "classification": "PUBLISHED_BUDGET",
+      "source_path": "data/priority_cases/C01_public_evidence.json",
+      "source_locator": "S10 OP7(b)",
+      "interpretation": "Mixed-client component subject to further programme-budget approval; not unconditional calendar2027SPMappropriation."
+    },
+    {
+      "amount": 5157200,
+      "currency": "USD",
+      "period": "FY2026/27",
+      "classification": "PUBLISHED_BUDGET",
+      "source_path": "data/priority_cases/C01_public_evidence.json",
+      "source_locator": "S10 OP7(c)",
+      "interpretation": "Staff-assessment income offsets OP7(a); not an additional maintenance requirement."
+    },
+    {
+      "amount": 3259100,
+      "currency": "USD",
+      "period": "Calendar2027",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/priority_cases/C01_public_evidence.json",
+      "source_locator": "S07 retained A/81/6(Sect3)/Add1 Table7p52; claim07",
+      "interpretation": "Retained SPM allocation proposal, not freshly authenticated; different period/population from mixed fiscal share. Not a saving."
+    }
+  ],
+  "operational_validation": "NOT_PERFORMED",
+  "recognized_benefit": null,
+  "financial_validation": "NOT_PERFORMED",
+  "eligible_benefit_pool": null,
+  "candidate_state": "SCREENING_CANDIDATE",
+  "analytical_disposition_boundary": "Question dispositions are public analytical judgments, not F03 advancement states.",
+  "recommended_decision": "Publish this completed bounded assessment now. Treat reporting reconciliation and targeted process consolidation as follow-up questions; retain current required controls and recognize no savings. Internal records are not prerequisites to publishing these limited conclusions.",
+  "mandate_safeguards": [
+    "No mandate/service withdrawal inferred from budget movements.",
+    "Preserve payroll and vendor-payment continuity, delegated client decisions, segregation of duties and confidentiality.",
+    "Any later redesign must protect readiness, timeliness, queue/rework and service quality."
+  ],
+  "public_information_gaps": [
+    "Full staffing proposal, incorporated A/80/604/Add4 advice and applicable final calendar2027disposition.",
+    "Dated client/service roster and clarified April/July milestones.",
+    "Report-specific OIOS closure/follow-up; full public audit text."
+  ],
+  "operational_unknowables_from_current_public_corpus": [
+    "Actual duplicate work or overcharges, complete client billing and settlement population.",
+    "Actual filled posts, transferred funds, released cash or usable capacity.",
+    "Current task-attributed delays, retained-work costs, transition costs and outcomes."
+  ],
+  "publication_readiness": "READY_WITH_EXPLICIT_LIMITATIONS; no internal collection required or initiated",
+  "requests_sent": false,
+  "proposed_responsible_roles": [
+    {
+      "role": "Repository research/publication maintainer",
+      "purpose": "Publish the bounded assessment and track public clarification leads.",
+      "acceptance_status": "NOT_CONFIRMED"
+    },
+    {
+      "role": "RSCE public-information and budget-reporting focal roles",
+      "purpose": "Potential source of dated client/service scope and financing clarification; no contact or collection initiated.",
+      "acceptance_status": "NOT_CONFIRMED"
+    }
+  ],
+  "case_synthesis": {
+    "overall_judgment": "Public reporting reconciliation merits follow-up; consolidation remains conditional and current waste or monetary benefit is not established.",
+    "mixed_question_dispositions_preserved": true,
+    "recommended_decision": "Publish with limitations, retain required operational controls and reconsider specific questions only when their stated evidence triggers occur.",
+    "not_an_f03_advancement": true
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "case_id": "C02",
+  "artifact_type": "MINIMUM_EVIDENCE_REQUEST_ADDENDUM",
+  "extends_request_id": "E02",
+  "extends_contract": "data/evidence_requests/E02_assets.json",
+  "extends_contract_sha256": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+  "authority_research_source": "data/priority_cases/C02_public_evidence.json",
+  "source_version_rule": "Use the source packet's checked S/RES/2790(2025) OP6,7,9; preserve subsequent amendments and specific administrative approvals separately.",
+  "as_of": "2026-10-23",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_to_collect": "NOT_OBTAINED",
+  "owner_acceptance": "NOT_OBTAINED",
+  "accountable_owner": null,
+  "proposed_custodian_roles": [
+    "UNIFIL transition/property and financial custodians",
+    "UNSCOL recipient property, procurement and finance custodians",
+    "Competent donor release and designated-recipient approval authorities"
+  ],
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "rule": "Custodians must approve comparable observation windows and accrual/commitment treatment before collection."
+  },
+  "authority_boundary": "OP9 requires safe transfer to the designated entity under UN practices and financial rules. It does not name UNSCOL, approve these particular assets or supersede withdrawal/security/medical capability and liquidation protection under OP6–7.",
+  "existing_fields_reused": {
+    "table_id": "asset_events",
+    "keys": [
+      "asset_event_id"
+    ],
+    "joins": [
+      "asset_token",
+      "procurement_requirement_token"
+    ],
+    "do_not_duplicate": [
+      "source_entity",
+      "receiving_entity",
+      "condition_band",
+      "transfer_cost",
+      "residual_liability_cost",
+      "currency",
+      "procurement_commitment_status",
+      "comparable_external_purchase_cost",
+      "availability_result"
+    ]
+  },
+  "field_level_additions": [
+    {
+      "table_id": "transfer_authority_and_release",
+      "grain": "One specific release/recipient approval scope or signed custody decision; not a generic resolution paragraph",
+      "keys": [
+        "approval_token"
+      ],
+      "joins_to_existing": [
+        {
+          "existing_table": "asset_events",
+          "existing_field": "asset_token",
+          "via": "asset_or_lot_token"
+        }
+      ],
+      "fields": [
+        {
+          "name": "approval_token",
+          "type": "string",
+          "purpose": "Stable reference to the specific administrative authority and custody decision.",
+          "required": true
+        },
+        {
+          "name": "asset_or_lot_token",
+          "type": "string",
+          "purpose": "Custodian-held mapping to serialized asset or stock lot; do not disclose raw VIN/serial in Git.",
+          "required": true
+        },
+        {
+          "name": "designated_recipient_entity",
+          "type": "string",
+          "purpose": "Establish that this recipient, rather than merely an unspecified entity, was designated.",
+          "required": true
+        },
+        {
+          "name": "authority_instrument_receipt",
+          "type": "string",
+          "purpose": "Identify competent approval under applicable financial/property rules.",
+          "required": true
+        },
+        {
+          "name": "approval_scope",
+          "type": "string",
+          "purpose": "Record included asset class, quantity boundary and conditions.",
+          "required": true
+        },
+        {
+          "name": "approval_date",
+          "type": "date",
+          "purpose": "Establish approval chronology before release.",
+          "required": true
+        },
+        {
+          "name": "effective_period_start",
+          "type": "date",
+          "purpose": "Match approval coverage to transfer events.",
+          "required": true
+        },
+        {
+          "name": "effective_period_end",
+          "type": "date",
+          "purpose": "Identify expiry or explicitly reviewed open-ended authority.",
+          "required": true
+        },
+        {
+          "name": "donor_release_receipt",
+          "type": "string",
+          "purpose": "Verify authorized donor release.",
+          "required": true
+        },
+        {
+          "name": "recipient_acceptance_receipt",
+          "type": "string",
+          "purpose": "Verify authorized physical custody acceptance separately from a proposed receiving need.",
+          "required": true
+        },
+        {
+          "name": "approving_role_code",
+          "type": "string",
+          "purpose": "Record competent role without personal identifiers.",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "asset_need_allocation",
+      "grain": "One asset or lot quantity allocated to one approved recipient need/procurement line",
+      "keys": [
+        "allocation_token"
+      ],
+      "joins_to_existing": [
+        {
+          "existing_table": "asset_events",
+          "existing_field": "asset_token",
+          "via": "asset_or_lot_token"
+        },
+        {
+          "existing_table": "asset_events",
+          "existing_field": "procurement_requirement_token",
+          "via": "procurement_requirement_token"
+        }
+      ],
+      "fields": [
+        {
+          "name": "allocation_token",
+          "type": "string",
+          "purpose": "Prevent repeated substitution credit for the same quantity.",
+          "required": true
+        },
+        {
+          "name": "asset_or_lot_token",
+          "type": "string",
+          "purpose": "Match current donor and recipient inventories with private serial/lot crosswalk.",
+          "required": true
+        },
+        {
+          "name": "procurement_requirement_token",
+          "type": "string",
+          "purpose": "Reuse the E02 requirement key rather than creating a second need population.",
+          "required": true
+        },
+        {
+          "name": "approved_need_receipt",
+          "type": "string",
+          "purpose": "Establish legitimate recipient demand before transfer.",
+          "required": true
+        },
+        {
+          "name": "inventory_snapshot_date",
+          "type": "date",
+          "purpose": "Use a dated current inventory and distinguish already-held spare capacity.",
+          "required": true
+        },
+        {
+          "name": "condition_assessment_receipt",
+          "type": "string",
+          "purpose": "Support condition, remaining useful life and suitability for the actual need.",
+          "required": true
+        },
+        {
+          "name": "remaining_life_or_expiry_receipt",
+          "type": "string",
+          "purpose": "Use assessed life for equipment and expiry/quality for consumable lots.",
+          "required": true
+        },
+        {
+          "name": "allocated_quantity",
+          "type": "decimal",
+          "purpose": "Quantify proposed/actual replacement in matching units without assuming one asset equals one procurement line.",
+          "required": true
+        },
+        {
+          "name": "quantity_unit",
+          "type": "string",
+          "purpose": "Prevent mixing counts, lots, litres or service capacity.",
+          "required": true
+        },
+        {
+          "name": "substitution_coverage_receipt",
+          "type": "string",
+          "purpose": "Evidence equivalent functionality; record partial replacement and remaining need.",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "procurement_disposition",
+      "grain": "One commitment/cancellation event for an existing recipient procurement requirement",
+      "keys": [
+        "procurement_event_token"
+      ],
+      "joins_to_existing": [
+        {
+          "existing_table": "asset_events",
+          "existing_field": "procurement_requirement_token",
+          "via": "procurement_requirement_token"
+        }
+      ],
+      "fields": [
+        {
+          "name": "procurement_event_token",
+          "type": "string",
+          "purpose": "Distinguish original need, commitment, cancellation and correction events.",
+          "required": true
+        },
+        {
+          "name": "procurement_requirement_token",
+          "type": "string",
+          "purpose": "Link to existing E02 need and asset allocation.",
+          "required": true
+        },
+        {
+          "name": "procurement_line_token",
+          "type": "string",
+          "purpose": "Link requisition/PO line without exposing vendor or banking details in public derivatives.",
+          "required": true
+        },
+        {
+          "name": "event_date",
+          "type": "date",
+          "purpose": "Determine whether expenditure was avoidable at the decision date.",
+          "required": true
+        },
+        {
+          "name": "commitment_status",
+          "type": "string",
+          "purpose": "Distinguish uncommitted plan, cancellable order, irreversible liability and actual receipt.",
+          "required": true
+        },
+        {
+          "name": "cancellation_receipt",
+          "type": "string",
+          "purpose": "Authenticate cancellation where claimed; absence is an explicit missing input.",
+          "required": true
+        },
+        {
+          "name": "noncancelable_liability",
+          "type": "decimal",
+          "purpose": "Retain actual unavoidable liabilities rather than crediting full cancelled headline price.",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Match monetary units.",
+          "required": true
+        },
+        {
+          "name": "counterfactual_purchase_receipt",
+          "type": "string",
+          "purpose": "Evidence the necessary external purchase, price, period and remaining demand; list book value separately.",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "protected_capability_reservations",
+      "grain": "One applicable protection/readiness reservation or release clearance for an asset or lot",
+      "keys": [
+        "reservation_token"
+      ],
+      "joins_to_existing": [
+        {
+          "existing_table": "asset_events",
+          "existing_field": "asset_token",
+          "via": "asset_or_lot_token"
+        }
+      ],
+      "fields": [
+        {
+          "name": "reservation_token",
+          "type": "string",
+          "purpose": "Preserve every material hold or approved clearance.",
+          "required": true
+        },
+        {
+          "name": "asset_or_lot_token",
+          "type": "string",
+          "purpose": "Prevent releasing a resource still required for withdrawal or liquidation.",
+          "required": true
+        },
+        {
+          "name": "reservation_function",
+          "type": "string",
+          "purpose": "Classify security, medical/evacuation, enabling support, protected withdrawal or liquidation guard requirement at minimum necessary detail.",
+          "required": true
+        },
+        {
+          "name": "reservation_status",
+          "type": "string",
+          "purpose": "Distinguish current hold, conditional release and authorized clearance.",
+          "required": true
+        },
+        {
+          "name": "clearance_receipt",
+          "type": "string",
+          "purpose": "Evidence competent operational acceptance without disclosing tactical details.",
+          "required": true
+        },
+        {
+          "name": "assessed_period",
+          "type": "string",
+          "purpose": "Match withdrawal/liquidation or receiving-service need.",
+          "required": true
+        },
+        {
+          "name": "guardrail_review_receipt",
+          "type": "string",
+          "purpose": "Link prospective service, safety and readiness assessment; numerical thresholds remain unset pending actual baseline.",
+          "required": true
+        }
+      ]
+    },
+    {
+      "table_id": "incremental_and_residual_cost_components",
+      "grain": "One unique external cost object or eliminated internal pair in a matched period/counterfactual",
+      "keys": [
+        "cost_component_token"
+      ],
+      "joins_to_existing": [
+        {
+          "existing_table": "asset_events",
+          "existing_field": "asset_token",
+          "via": "asset_or_lot_token"
+        },
+        {
+          "existing_table": "asset_events",
+          "existing_field": "procurement_requirement_token",
+          "via": "procurement_requirement_token"
+        }
+      ],
+      "fields": [
+        {
+          "name": "cost_component_token",
+          "type": "string",
+          "purpose": "Deduplicate components across C02 and C13/Lebanon transition pool.",
+          "required": true
+        },
+        {
+          "name": "asset_or_lot_token",
+          "type": "string",
+          "purpose": "Associate cost with transfer or protected residual need.",
+          "required": true
+        },
+        {
+          "name": "procurement_requirement_token",
+          "type": "string",
+          "purpose": "Associate counterfactual acquisition or remaining demand.",
+          "required": true
+        },
+        {
+          "name": "cost_class",
+          "type": "string",
+          "purpose": "Separate transport, refurbishment, installation, security/medical support, residual guards, storage, operating cost and foregone disposal proceeds.",
+          "required": true
+        },
+        {
+          "name": "external_or_internal",
+          "type": "string",
+          "purpose": "Eliminate internal transfers once while retaining underlying external cost.",
+          "required": true
+        },
+        {
+          "name": "internal_pair_token",
+          "type": "string",
+          "purpose": "Pair internal debit/credit only when applicable, with explicit nonapplicability review.",
+          "required": true
+        },
+        {
+          "name": "amount",
+          "type": "decimal",
+          "purpose": "Record evidenced component amount; no imputed zero for missing cost.",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Preserve monetary unit.",
+          "required": true
+        },
+        {
+          "name": "accrual_or_commitment_period",
+          "type": "string",
+          "purpose": "Keep matched financial periods and distinguish cash, accrual and commitment.",
+          "required": true
+        },
+        {
+          "name": "cost_evidence_receipt",
+          "type": "string",
+          "purpose": "Support actual or counterfactual amount and provenance.",
+          "required": true
+        },
+        {
+          "name": "existing_aggregate_component",
+          "type": "string",
+          "purpose": "Show inclusion in existing E02 transfer_cost/residual_liability_cost; component lines are not additional amounts to add again.",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "join_and_recognition_rules": [
+    "All serial/VIN/lot and person/vendor re-identification maps stay with approved custodians outside Git; stable opaque tokens support restricted joins.",
+    "Asset/lot allocation quantities may not exceed verified available quantity or approved unmet need; do not multiply one benefit through many-to-many joins.",
+    "Specific recipient designation, donor release, physical acceptance and procurement cancellation are distinct receipts; none substitutes for another.",
+    "Cost components reconcile to the existing E02 aggregate fields and C13 shared transition pool; do not add components to their own parent totals.",
+    "Retain noncancelable commitments and residual security/medical/guard costs; incomplete components withhold computation.",
+    "The already proposed 438100 USD is baseline context. No incremental benefit is recognized from its repetition or from asset book values."
+  ],
+  "prospective_threshold_values": null,
+  "handling": "Extend E02 approved-system-only handling, minimum disclosure, pseudonymization, access and retention rules unchanged; no collection authorization is supplied.",
+  "stop_and_review_rule": "Do not dispatch or activate until custodians accept scope, authority, handling, extraction burden, comparable periods and prospective safeguards. A protected-capability hold or uncertain recipient authority blocks operational release.",
+  "dispatch_and_collection": {
+    "requests_sent": 0,
+    "responses_received": 0,
+    "approved_collections": 0,
+    "actual_records_received": 0
+  },
+  "benefits": {
+    "status": "NOT_ESTIMATED",
+    "amount": null
+  },
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE"
+}

@@ -1,0 +1,2016 @@
+{
+  "schema_version": 1,
+  "release_id": "UNPO-PUBLIC-VALIDATION-BASELINE-1",
+  "task_id": "I12",
+  "release_class": "PUBLIC_VALIDATION_BASELINE",
+  "decision_grade_portfolio": "BLOCKED",
+  "institutional_approval": "NOT_OBTAINED",
+  "publication_action": "LOCAL_MANIFEST_ONLY",
+  "source_cutoffs": {
+    "reform_scoped_source_review": "2026-10-23",
+    "financial_retained_baseline": "2026-10-08",
+    "historical_research_and_owner_package": "2026-10-15",
+    "case_evidence_cutoffs": {
+      "C01": "2026-10-08",
+      "C02": "2026-10-08",
+      "C03": "2026-10-08",
+      "C04": "2026-10-08",
+      "C05": "2026-10-08",
+      "C06": "2026-10-08",
+      "C07": "2026-10-08",
+      "C08": "2026-10-08",
+      "C09": "2026-10-15",
+      "C10": "2026-10-08",
+      "C11": "2026-10-15",
+      "C12": "2026-10-15",
+      "C13": "2026-10-08",
+      "C14": "2026-10-08"
+    },
+    "interpretation": "Distinct retained observation/review cutoffs; release assembly does not refresh every source."
+  },
+  "completion_gates": [
+    {
+      "gate": 1,
+      "status": "PARTIAL",
+      "blockers": [
+        "Instrument population and applicability review incomplete.",
+        "Entity lifecycle, mandate links and accepted ownership not fully verified."
+      ]
+    },
+    {
+      "gate": 2,
+      "status": "PARTIAL",
+      "blockers": [
+        "Actual baseline-dependent thresholds remain unset.",
+        "Evidence intake/authority not obtained; synthetic rehearsals are software tests only."
+      ]
+    },
+    {
+      "gate": 3,
+      "status": "BLOCKED",
+      "blockers": [
+        "No substantive operational audits completed.",
+        "No accepted operational/financial adjudications or independent institutional review."
+      ]
+    },
+    {
+      "gate": 4,
+      "status": "BLOCKED",
+      "blockers": [
+        "No intervention has institutional approval or observed realization.",
+        "No accepted substantive no-change adjudication."
+      ]
+    }
+  ],
+  "substantive_operational_adjudications": 0,
+  "verified_benefits": "NOT_ESTIMATED",
+  "scope_prefixes": [
+    "data/reforms/",
+    "data/portfolio/",
+    "data/cases/",
+    "data/evidence_requests/",
+    "data/pilots/",
+    "data/adjudications/",
+    "data/realization/",
+    "docs/",
+    "scripts/",
+    "tests/",
+    ".github/workflows/",
+    "metadata/"
+  ],
+  "population_rule": "All filesystem files under declared prefixes, including ready untracked files; explicit exclusions and transient Python caches omitted. Not derived from git tracking or current HEAD.",
+  "required_core_artifacts": [
+    "data/reforms/obligation_schema.json",
+    "data/reforms/unga80_instruments.json",
+    "data/reforms/unga81_instruments.json",
+    "data/reforms/unga80_actions.json",
+    "data/reforms/unga81_actions.json",
+    "data/reforms/baseline_release.json",
+    "data/portfolio/entities.json",
+    "data/portfolio/dataset_contracts.json",
+    "data/portfolio/coverage_matrix.json",
+    "data/portfolio/financial_baseline.json",
+    "data/portfolio/interventions.json",
+    "data/portfolio/benefit_pools.json",
+    "data/portfolio/public_portfolio.json",
+    "data/portfolio/verified_benefit_ledger.json",
+    "data/adjudications/execution_gates.json",
+    "data/realization/implementation_gates.json",
+    "data/pilots/charters.json",
+    "data/pilots/thresholds.json",
+    "data/pilots/request_status.json",
+    "data/pilots/rehearsal_receipt.json",
+    "docs/leadership_portfolio_report.md",
+    "docs/reform_independent_review.md",
+    "docs/decision_portfolio.md",
+    "docs/secure_evidence_intake.md",
+    "scripts/build_portfolio_release.py",
+    "tests/check_portfolio_release.py",
+    ".github/workflows/reusable_validation.yml",
+    "metadata/validation_groups.json",
+    "data/cases/C01.json",
+    "data/cases/C02.json",
+    "data/cases/C03.json",
+    "data/cases/C04.json",
+    "data/cases/C05.json",
+    "data/cases/C06.json",
+    "data/cases/C07.json",
+    "data/cases/C08.json",
+    "data/cases/C09.json",
+    "data/cases/C10.json",
+    "data/cases/C11.json",
+    "data/cases/C12.json",
+    "data/cases/C13.json",
+    "data/cases/C14.json",
+    "docs/cases/C01.md",
+    "docs/cases/C02.md",
+    "docs/cases/C03.md",
+    "docs/cases/C04.md",
+    "docs/cases/C05.md",
+    "docs/cases/C06.md",
+    "docs/cases/C07.md",
+    "docs/cases/C08.md",
+    "docs/cases/C09.md",
+    "docs/cases/C10.md",
+    "docs/cases/C11.md",
+    "docs/cases/C12.md",
+    "docs/cases/C13.md",
+    "docs/cases/C14.md",
+    "data/evidence_requests/E01_rsce.json",
+    "data/evidence_requests/E02_assets.json",
+    "data/evidence_requests/E03_haiti.json",
+    "data/evidence_requests/E04_ga_directed.json",
+    "data/evidence_requests/E05_training.json",
+    "data/evidence_requests/E06_reporting_owners.json"
+  ],
+  "exclusions": {
+    "data/portfolio/release_manifest.json": "Self hash excluded to avoid a circular manifest; manifest is verified by regeneration.",
+    "docs/portfolio_release.md": "Rendered manifest companion excluded to avoid a circular output dependency.",
+    "README.md": "Generated navigation consumes current status; checked separately by navigation validation.",
+    "metadata/current_status.json": "Generated combined status may consume this manifest; validated separately.",
+    "docs/current_status.md": "Generated combined status may consume this manifest; validated separately.",
+    "metadata/project_health.json": "Generated structural health may consume release controls; validated separately.",
+    "docs/project_health.md": "Generated structural health may consume release controls; validated separately.",
+    "metadata/readme_navigation.json": "Generated navigation receipt may consume combined status; validated separately.",
+    "metadata/workflow_execution.json": "Runtime/orchestration receipt is separate from deterministic artifact identity.",
+    "docs/workflow_execution.md": "Runtime/orchestration receipt is separate from deterministic artifact identity.",
+    "data/portfolio/workflow_execution.json": "Runtime/orchestration receipt is separate from deterministic artifact identity.",
+    "docs/portfolio_agent_review.md": "Separate-agent final review may examine this manifest; excluding avoids review/hash cycle."
+  },
+  "transient_exclusions": [
+    "**/__pycache__/**",
+    "*.pyc",
+    "*.pyo"
+  ],
+  "artifact_count": 369,
+  "artifacts": [
+    {
+      "path": ".github/workflows/additional_mission_training_frame.yml",
+      "sha256": "a7992180ef5c88215ccbdb5470d4d829cd1126fa28f90b8dce40c4979d4da622",
+      "bytes": 1191
+    },
+    {
+      "path": ".github/workflows/census_v5.yml",
+      "sha256": "e6367b4c701da7b8b92e1d406fd82b74f7411d117307133b21f5ae7099ab4edf",
+      "bytes": 1572
+    },
+    {
+      "path": ".github/workflows/census_v5_release.yml",
+      "sha256": "dddb39756e038746d3c167a8a91fc57098d40292dc09aee98124ad23e4e484a7",
+      "bytes": 1712
+    },
+    {
+      "path": ".github/workflows/census_v6.yml",
+      "sha256": "9d2e5abdb74ddf08ebcc9adc9e969caf9ebd7bd56cc402de58559dc30989ca14",
+      "bytes": 1175
+    },
+    {
+      "path": ".github/workflows/census_v6_release.yml",
+      "sha256": "cc8c06e104e1a6061dcab0739e27ed37e117f1b2dc8179b7133b994a65df9fc8",
+      "bytes": 2769
+    },
+    {
+      "path": ".github/workflows/census_v7_recovery.yml",
+      "sha256": "1fadbbf90f47308250cf7807dcab3f84e3a4f691bddad1e87a4ae36783c40a1e",
+      "bytes": 1839
+    },
+    {
+      "path": ".github/workflows/census_v7_release.yml",
+      "sha256": "4012fc215abfc37c26ecce5fead7d4f2bd8803f2194af37747da5d79d26e126d",
+      "bytes": 2355
+    },
+    {
+      "path": ".github/workflows/deeper_official_archives_v4.yml",
+      "sha256": "7e47000c3bb8573cc3f4c90a0ee8ac574072edcdd5a2c154ccbd8ac21a5af370",
+      "bytes": 1162
+    },
+    {
+      "path": ".github/workflows/evidence_validation.yml",
+      "sha256": "a87ad8ed8e082d7f1dc622216934b87f99c5bf94693be3f434068a88185fb5d8",
+      "bytes": 1151
+    },
+    {
+      "path": ".github/workflows/foundation_standards.yml",
+      "sha256": "8fd580e994ffff39fd4441e7a3da2fa810ca13f27d97289bc74e4545c05c1671",
+      "bytes": 228
+    },
+    {
+      "path": ".github/workflows/mission_archive_census.yml",
+      "sha256": "aa0a3bcf02497fa1c671347e7ef825fd30ca4e4b0deedad2941647f1be5fa1bf",
+      "bytes": 1319
+    },
+    {
+      "path": ".github/workflows/owner_review_package.yml",
+      "sha256": "ef2ca16d3e8043d9f2662e27d6af940cbef405b9de1daf21c292daaeb93a2d36",
+      "bytes": 2743
+    },
+    {
+      "path": ".github/workflows/portfolio_release_validation.yml",
+      "sha256": "f983b2d33f947c5fef03fb79db788b97f128b45686af1ba2c3f9d19254771aab",
+      "bytes": 905
+    },
+    {
+      "path": ".github/workflows/portfolio_validation.yml",
+      "sha256": "a6393bbf018162f891fc14c1c1d87c9331b495f04643e773a9c070fbfe04edba",
+      "bytes": 1118
+    },
+    {
+      "path": ".github/workflows/publish_release.yml",
+      "sha256": "0dec0af6fb97bae5cb0f9c2c589a492b38e083a45d6a7e116e6cb286b50467ed",
+      "bytes": 4238
+    },
+    {
+      "path": ".github/workflows/published_census_v2.yml",
+      "sha256": "a8f5613b30ff3bb90d089b93bb7e6c138383df1c3ff85055b39e68ae1980aeb4",
+      "bytes": 1281
+    },
+    {
+      "path": ".github/workflows/recover_legacy_notice_dates.yml",
+      "sha256": "ecb44184b12263775fc5ac145054a770cd72664b56b186a9d696ca47cac7e8ec",
+      "bytes": 1435
+    },
+    {
+      "path": ".github/workflows/reform_validation.yml",
+      "sha256": "88a351d89d8c9e4570b5b0c8275452eee1d18aad56b7cb0e2b379b49d39bd6e5",
+      "bytes": 1082
+    },
+    {
+      "path": ".github/workflows/reusable_validation.yml",
+      "sha256": "3bcf84677028ffe2ae01f75e3f00ddf59041ece8e9b8619da480ca015381f1e9",
+      "bytes": 2556
+    },
+    {
+      "path": ".github/workflows/systematic_census.yml",
+      "sha256": "11dca225a35546331d241dba58ace9c7baa7ff514d98d977b390712184025beb",
+      "bytes": 1151
+    },
+    {
+      "path": ".github/workflows/systematic_evidence_views.yml",
+      "sha256": "95cb3e84da7e03f2dbec7e4f1187f5dc325333e5dccdafc32bb005f196bd2228",
+      "bytes": 980
+    },
+    {
+      "path": ".github/workflows/v10_protocol_ci.yml",
+      "sha256": "99dfea9a6877e2da1d430cab36b444e9d23513b11d9f361637984efb60702c59",
+      "bytes": 253
+    },
+    {
+      "path": ".github/workflows/v10_protocol_release.yml",
+      "sha256": "c50a17aabbd78f7e798bbb76b86a0e23edc173d2a08e8a07722842c422ed3ce8",
+      "bytes": 2613
+    },
+    {
+      "path": ".github/workflows/v11_tabletop.yml",
+      "sha256": "ab0470f098877ff951167d3d96619346deca5622fb285024ad555981e771ec60",
+      "bytes": 2733
+    },
+    {
+      "path": ".github/workflows/v11_validate.yml",
+      "sha256": "8675b53f0f265cd5fa7351b2d03688a4aeac0a3536dda5cea676fc2ff4670184",
+      "bytes": 231
+    },
+    {
+      "path": ".github/workflows/v12_reference_patch.yml",
+      "sha256": "23c3c6667102be6c47d61c044cc4b8b7f1ecf71c92b17c0d95f9d8abb75ac4cc",
+      "bytes": 2913
+    },
+    {
+      "path": ".github/workflows/v13_reference_adoption.yml",
+      "sha256": "ac46ba6a46a2a3404a2f14f8c0e593de21ea696b6d85ca62c7f2d65b86e4243c",
+      "bytes": 2654
+    },
+    {
+      "path": ".github/workflows/v8_release.yml",
+      "sha256": "cf97e375ea59cb0f55662dc2d2bdbe1ef515a9c43f5f1c2d009b80a8a5bb727d",
+      "bytes": 4809
+    },
+    {
+      "path": ".github/workflows/v8_source_capture.yml",
+      "sha256": "e0519e8dc57a5ce1bc910f0fa1fe957107433991a4371b9c375d40cc098e0719",
+      "bytes": 3820
+    },
+    {
+      "path": ".github/workflows/v8_validate.yml",
+      "sha256": "ffb676ba89e409cd5d0a6c0fcf12e83883c124ce8bdd121db80cdb00d0756385",
+      "bytes": 229
+    },
+    {
+      "path": ".github/workflows/v9_checks.yml",
+      "sha256": "39cd2a013975d356f23fd2a305b9b9cf2b4567ba29dd192c3c89d89fde0e38a5",
+      "bytes": 243
+    },
+    {
+      "path": ".github/workflows/v9_release.yml",
+      "sha256": "854f47cee4c383863131e966c1383d6e565821a35ffa4a5c3547644bfc9f4cc2",
+      "bytes": 4693
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "5848a84eb11a37df547967ee5ea33f511c2db21ed67466f055ef4f0e6e216130",
+      "bytes": 466
+    },
+    {
+      "path": ".github/workflows/white_paper_2026.yml",
+      "sha256": "5c964ad475bd5a35372f2a127db8ec9b3513b01b34ad92f8b3e0633566890382",
+      "bytes": 3789
+    },
+    {
+      "path": "data/adjudications/execution_gates.json",
+      "sha256": "7cf33875fa03a13db34d440f2bf1a2c35e4ad5ba352e3f422b5f6b2386cf754d",
+      "bytes": 30608
+    },
+    {
+      "path": "data/cases/C01.json",
+      "sha256": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+      "bytes": 17277
+    },
+    {
+      "path": "data/cases/C02.json",
+      "sha256": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+      "bytes": 12599
+    },
+    {
+      "path": "data/cases/C03.json",
+      "sha256": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+      "bytes": 14034
+    },
+    {
+      "path": "data/cases/C04.json",
+      "sha256": "355d3f85c606bc4d6e7e058b3d44d144a410771e8989592c3eaeb3f1a689a4d9",
+      "bytes": 6317
+    },
+    {
+      "path": "data/cases/C05.json",
+      "sha256": "fbb4ad3b570fbe29fa363ade28d39734cccc6166fd344d72ce523e5b8aea4119",
+      "bytes": 8709
+    },
+    {
+      "path": "data/cases/C06.json",
+      "sha256": "651982b20960c7e2f1bccd0c6275d592ce9fa2cd38a2ac446a38220c0eb49578",
+      "bytes": 7285
+    },
+    {
+      "path": "data/cases/C07.json",
+      "sha256": "0ff275080456d44de6f80969ca4df10e108ec340b5dfb65d491c933878213bc3",
+      "bytes": 8197
+    },
+    {
+      "path": "data/cases/C08.json",
+      "sha256": "6232aaa3a2bff0a3ea9b2ec89c361887e5c9795c58dfc032d71df28beb015ed3",
+      "bytes": 11763
+    },
+    {
+      "path": "data/cases/C09.json",
+      "sha256": "5b01453c53d5992965040c1adf36cf374f6023ec1493770f98a4f3fa4e29ef4b",
+      "bytes": 10033
+    },
+    {
+      "path": "data/cases/C10.json",
+      "sha256": "842a70e1ad709929e3cff0ea43dd942fa0a676cb66be04fafe66c0b8b14ec23d",
+      "bytes": 9683
+    },
+    {
+      "path": "data/cases/C11.json",
+      "sha256": "e0eff9b95f378f8869f8e3eb3a0af60002df3603d5b1039c6951f354e9a6b105",
+      "bytes": 43571
+    },
+    {
+      "path": "data/cases/C12.json",
+      "sha256": "a612a2998a74c7b1b6241c89b1981c6457fc9cedd4605e7c7ecf926481e9e083",
+      "bytes": 53639
+    },
+    {
+      "path": "data/cases/C13.json",
+      "sha256": "8047ebdd444a45597e6e91614b884ffbb19cec66e83f81012bc58fafd8c1a095",
+      "bytes": 11888
+    },
+    {
+      "path": "data/cases/C14.json",
+      "sha256": "1b402619b2b094ea28c3a3f22914cf8d9e07f72eabb93e7e451a536254a3e999",
+      "bytes": 23080
+    },
+    {
+      "path": "data/evidence_requests/E01_rsce.json",
+      "sha256": "ed3a6f7e45eb4ce68d4065ca4171fce131c1170b806fc5e8701ec6c9cee37550",
+      "bytes": 6750
+    },
+    {
+      "path": "data/evidence_requests/E02_assets.json",
+      "sha256": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+      "bytes": 5447
+    },
+    {
+      "path": "data/evidence_requests/E03_haiti.json",
+      "sha256": "7b91fecc699c65d83c1f54097139f4173f32e3deb10a66ed2841931de7aaad14",
+      "bytes": 5175
+    },
+    {
+      "path": "data/evidence_requests/E04_ga_directed.json",
+      "sha256": "31884da2cd8f10911b3c1acae15b84743ce5cad521d29451b265deddd48c05bb",
+      "bytes": 12190
+    },
+    {
+      "path": "data/evidence_requests/E05_training.json",
+      "sha256": "d29f34413050e106a9e6bf5f174bcf87cfc6fb013ef604060c41090c7101ed9d",
+      "bytes": 5095
+    },
+    {
+      "path": "data/evidence_requests/E06_reporting_owners.json",
+      "sha256": "daac4b33a1fad22323c0578ad9809ca9cef9cda32a0a0cc9f92fe10c57de8d88",
+      "bytes": 5388
+    },
+    {
+      "path": "data/pilots/charters.json",
+      "sha256": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+      "bytes": 11899
+    },
+    {
+      "path": "data/pilots/rehearsal_receipt.json",
+      "sha256": "736cffbe5d526b9cff68c5a83107e04e060ca464ad110568674af0e8b5795de8",
+      "bytes": 6992
+    },
+    {
+      "path": "data/pilots/request_status.json",
+      "sha256": "f86a75c98135ff046455096864a87d8a18121a77e32f395448dff8f4f1b3af60",
+      "bytes": 8036
+    },
+    {
+      "path": "data/pilots/synthetic_scenarios.json",
+      "sha256": "699fe62fd5e26d26b2a44480e49563680dc7b2287137dd022c29f104fcd8c3da",
+      "bytes": 120520
+    },
+    {
+      "path": "data/pilots/thresholds.json",
+      "sha256": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+      "bytes": 26174
+    },
+    {
+      "path": "data/portfolio/agent_review.json",
+      "sha256": "461bf8484c91b07a20383efc395d14c0188932e3512cbed72b9187db1b7c1ce7",
+      "bytes": 13261
+    },
+    {
+      "path": "data/portfolio/benefit_pools.json",
+      "sha256": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3",
+      "bytes": 9896
+    },
+    {
+      "path": "data/portfolio/case_dossier_template.json",
+      "sha256": "a31d934eff5a153645ffd89881a2e6e7db24c7f32305fc12ad1c540a98d45014",
+      "bytes": 3210
+    },
+    {
+      "path": "data/portfolio/comparability_rules.json",
+      "sha256": "9d23e5c9e97c780d98a064d36d96c7fc8a2a0140fd32f2f00556c37b4bb21a61",
+      "bytes": 1562
+    },
+    {
+      "path": "data/portfolio/cost_model.json",
+      "sha256": "13f4fffd9007a3cce25b272bb0365567d4a8bb15631dde02bc4038de5eb46f04",
+      "bytes": 2593
+    },
+    {
+      "path": "data/portfolio/counterfactual_ladder.json",
+      "sha256": "e62c5b759e41c07e30a73aaa5af989f5aa2357909ae27d5b4649301561f09211",
+      "bytes": 2000
+    },
+    {
+      "path": "data/portfolio/coverage_matrix.json",
+      "sha256": "0349e5924877d3c1b05df21503d239e0d6bd5d934e6c411ad274f89ba0bfca2a",
+      "bytes": 46088
+    },
+    {
+      "path": "data/portfolio/dataset_contracts.json",
+      "sha256": "42cbd717169b975340d502219e2cab532e9903cf754116b87e4c03acb7c54590",
+      "bytes": 912034
+    },
+    {
+      "path": "data/portfolio/entities.json",
+      "sha256": "478c447f27c9ff08653ca7dfb553de7b0ab2745e8d092c20887b409db82f3a58",
+      "bytes": 155951
+    },
+    {
+      "path": "data/portfolio/financial_baseline.json",
+      "sha256": "a0ba39837df779eb258e760a04fc1aade153b54e8e7469d809ebf7925504e58b",
+      "bytes": 98902
+    },
+    {
+      "path": "data/portfolio/interventions.json",
+      "sha256": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+      "bytes": 80325
+    },
+    {
+      "path": "data/portfolio/operational_metrics.json",
+      "sha256": "9fc4a2f0521fd4402a84aff45757fd1b0f9217c71c05ca504cb01936a4f60bad",
+      "bytes": 4599
+    },
+    {
+      "path": "data/portfolio/overlap_graph.json",
+      "sha256": "6740b2afcc3c9cab4a9e5b587e2420d4eeec5a74005ad881ddbc2efcc8b10ed5",
+      "bytes": 27396
+    },
+    {
+      "path": "data/portfolio/prioritization_model.json",
+      "sha256": "db754e87f06b8943c971db022026aa84fb9fc3a6cbb3fc559db8aa7a615ae0c5",
+      "bytes": 2469
+    },
+    {
+      "path": "data/portfolio/prioritization_sensitivity.json",
+      "sha256": "70d9062c570e7d2cc9e50d023dd10a1a7b9a7e1b574ea6941139e738bd5b418e",
+      "bytes": 1631
+    },
+    {
+      "path": "data/portfolio/public_portfolio.json",
+      "sha256": "2fb11110a6031b8f35a9def4d7ea5cd2c76c7e15e67a9db2e67ca5a23b064adf",
+      "bytes": 11000
+    },
+    {
+      "path": "data/portfolio/restricted_adjudication_status.json",
+      "sha256": "de2e2a623b0f6198dc0d4b740358d77c1271a26a57a5b86f0b9852d2af874f43",
+      "bytes": 2231
+    },
+    {
+      "path": "data/portfolio/validation_plan.json",
+      "sha256": "60b99491e961efbf35653793f60e86cf3b475207ae390d6dd21d7a8da57e9c48",
+      "bytes": 14418
+    },
+    {
+      "path": "data/portfolio/verified_benefit_ledger.json",
+      "sha256": "d41ded977037f6001b220696f8b5afe00714444685dc9343d4f93d3167fb8a6d",
+      "bytes": 2728
+    },
+    {
+      "path": "data/realization/implementation_gates.json",
+      "sha256": "364b300b22d0cd9732d6c4b601ae2e48b73778a321e215f9619528074710bd33",
+      "bytes": 4545
+    },
+    {
+      "path": "data/reforms/acabq_recommendations.json",
+      "sha256": "b7c48ac1086b3404c16c2d4e0faae8a38a3229945b3efcdc7bcd69413cc1ac19",
+      "bytes": 156730
+    },
+    {
+      "path": "data/reforms/baseline_release.json",
+      "sha256": "297780bcd0cf1d8a91f8d2f1d3dfb318075b784ef46d9921008038af113bd3b2",
+      "bytes": 2604
+    },
+    {
+      "path": "data/reforms/compliance_statuses.json",
+      "sha256": "ac38b35fd0ec91c5ccd4b9199f37a3a7b7297d41714e56d0b3ac8e9b0aef2331",
+      "bytes": 2242
+    },
+    {
+      "path": "data/reforms/evidence_requests.json",
+      "sha256": "821771c506a6feeda27e7309b31607b8b70de183c4fbc6d139fb2ee484ff4a57",
+      "bytes": 6574
+    },
+    {
+      "path": "data/reforms/implementation_evidence.json",
+      "sha256": "125d197f26639fbfed15789eb01de51cd20083f6939e33d42f31c661a8d7ba60",
+      "bytes": 46438
+    },
+    {
+      "path": "data/reforms/obligation_crosswalk.json",
+      "sha256": "671c134bc5ae7d62b7a6fa2138ab3a251863c587ecb0a612ee1bd1ad12e25c0d",
+      "bytes": 46611
+    },
+    {
+      "path": "data/reforms/obligation_schema.json",
+      "sha256": "ca80d4bc5df59efc50018109c0cf3a79d3ee274910c053c031c1ff9307774830",
+      "bytes": 1807
+    },
+    {
+      "path": "data/reforms/reform_metrics.json",
+      "sha256": "0e53825f270534f48ae93ebfe19e75258cf625b9bc192149d6089e02ec131a42",
+      "bytes": 5012
+    },
+    {
+      "path": "data/reforms/sg_proposals.json",
+      "sha256": "fd81bbe338a5d46ce42671db2b6179eed513802f1dbfed4fb49e8f3cf6de1daf",
+      "bytes": 19257
+    },
+    {
+      "path": "data/reforms/un80_arrangement_reconciliation.json",
+      "sha256": "923cba2ad61aa64a938bffcc0c0af9588ca1f090d04acc336b16f21a50469e26",
+      "bytes": 28216
+    },
+    {
+      "path": "data/reforms/unga80_actions.json",
+      "sha256": "e5c8e239932fe2ce87018d2a58233514b8f1833f5a9937aa101802b362caaca8",
+      "bytes": 153388
+    },
+    {
+      "path": "data/reforms/unga80_instruments.json",
+      "sha256": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
+      "bytes": 9694
+    },
+    {
+      "path": "data/reforms/unga81_actions.json",
+      "sha256": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
+      "bytes": 1618
+    },
+    {
+      "path": "data/reforms/unga81_instruments.json",
+      "sha256": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",
+      "bytes": 7345
+    },
+    {
+      "path": "docs/acabq_2027_clusterIII_review.md",
+      "sha256": "c84504113d5eabb6ce9ff27f7e4c74e8453afd497817de0093592913b9ec39df",
+      "bytes": 12499
+    },
+    {
+      "path": "docs/acabq_2027_ranked_assessment.md",
+      "sha256": "ba63e43f7eabc651849b0770706ecd0eb0499396369e6a046385c9f13471cb90",
+      "bytes": 9575
+    },
+    {
+      "path": "docs/acabq_2027_reconciliation_status.md",
+      "sha256": "934fb51de6fd4905e5da51453a88ac9b03ff8d1fcac505e01f4febe6ccdce830",
+      "bytes": 13358
+    },
+    {
+      "path": "docs/acabq_recommendation_register.md",
+      "sha256": "bbbc328a721a42d8247171d8db5297f28cb520874cc5383517997284abba07f8",
+      "bytes": 2367
+    },
+    {
+      "path": "docs/appropriation_spm_consolidation_audit.md",
+      "sha256": "10cfe329a11ec19d6516999d04c9697186738632a231d5ae66a54a9ca5f77436",
+      "bytes": 9621
+    },
+    {
+      "path": "docs/artifact_inventory.md",
+      "sha256": "caeb028f606b5c02bd4b967ef780ba08dd497911fd002bca9bab20e13f36edfd",
+      "bytes": 3469
+    },
+    {
+      "path": "docs/candidate_advancement.md",
+      "sha256": "ce0008ab03c506b3d37e2ea7c1082f9ca21b9e82138d1ac1090edb9c0280168a",
+      "bytes": 8058
+    },
+    {
+      "path": "docs/canonical_entities.md",
+      "sha256": "a8bdffa3659eeeb213eaacc18cf7e6597d13c360ddcfdac731d9ac21650ef965",
+      "bytes": 1988
+    },
+    {
+      "path": "docs/canonical_financial_baseline.md",
+      "sha256": "a62202362cfde72fbe14139d1682d962d8012856f44aef0d34aaeb61d1cef944",
+      "bytes": 2808
+    },
+    {
+      "path": "docs/canonical_manifest.md",
+      "sha256": "b644903f32ca00c592e590d8e3eb5c1c6a85035e9dc773545f02235445bd407f",
+      "bytes": 5032
+    },
+    {
+      "path": "docs/cases/C01.md",
+      "sha256": "d2cccacb9945bf93ac515d06ae8582c8abd34e60c43b78dab9fac7bb5031c685",
+      "bytes": 2358
+    },
+    {
+      "path": "docs/cases/C02.md",
+      "sha256": "98cbde789947baf14cb08d756431a3de77b5c3b967bbcb456e9c668ab18603d1",
+      "bytes": 2222
+    },
+    {
+      "path": "docs/cases/C03.md",
+      "sha256": "6d7b78bb49f067197030a055da526cf74fe8aa8ed32216314a7b95dcfc98460e",
+      "bytes": 2302
+    },
+    {
+      "path": "docs/cases/C04.md",
+      "sha256": "52ef3140c3eb2db1377bf89b22f41ba4387b550911d054895e9848ed57f2c6ae",
+      "bytes": 2393
+    },
+    {
+      "path": "docs/cases/C05.md",
+      "sha256": "9e66b821b7a94a2995e7ff48d2e20ce497a500df6763e9231c9047f83e9b7f2c",
+      "bytes": 2433
+    },
+    {
+      "path": "docs/cases/C06.md",
+      "sha256": "1eaa05b3472ddb91fbe2fb813d1cee18f5e8556ab29b68c82ab4d3411de55711",
+      "bytes": 2555
+    },
+    {
+      "path": "docs/cases/C07.md",
+      "sha256": "f8272055607903706206540bcb6f7eb1afcd8f0ce4a5956c37947f56da09abfe",
+      "bytes": 2677
+    },
+    {
+      "path": "docs/cases/C08.md",
+      "sha256": "32d59af31d5b167e85ab28c6318c07f65c02d4c3390c22bcb4cd4c1e1ac5e4b5",
+      "bytes": 2974
+    },
+    {
+      "path": "docs/cases/C09.md",
+      "sha256": "72bf75335a63108ba7a3b56c690336b8340e45ac2ba1231ae9088e94ae3eb23d",
+      "bytes": 2957
+    },
+    {
+      "path": "docs/cases/C10.md",
+      "sha256": "c58e511839304f135103d21572cc7b56a736ffca6e73e5d38c95c700b26226a6",
+      "bytes": 2851
+    },
+    {
+      "path": "docs/cases/C11.md",
+      "sha256": "3a8e07d1b58c153c85e84560ee5419a1a94b2ce25fc7dc7fbc483d025794b608",
+      "bytes": 2896
+    },
+    {
+      "path": "docs/cases/C12.md",
+      "sha256": "27ce600f1c1f5b508351648b987b651549028b86f8d12154c04886336a7e5890",
+      "bytes": 2834
+    },
+    {
+      "path": "docs/cases/C13.md",
+      "sha256": "5e7b6c50943e70e409189c6bb57a830d78a16309b5961340bdb9292549056932",
+      "bytes": 2994
+    },
+    {
+      "path": "docs/cases/C14.md",
+      "sha256": "71908dcb6f287757822cb47cd67566a76390524d44abb87aafda3516deeda40d",
+      "bytes": 2950
+    },
+    {
+      "path": "docs/census_2025_2026_attendance_executive.md",
+      "sha256": "dbe28e9d76264ad18411b1af39ede8de76e24e7ee6ef7d65e63b806c2b8ff3b9",
+      "bytes": 4815
+    },
+    {
+      "path": "docs/census_2025_2026_attendance_v4.md",
+      "sha256": "1a11d68ca338782fcf4333719f0b41d5330044a6d4e8d570dc35df00131241b4",
+      "bytes": 13423
+    },
+    {
+      "path": "docs/census_2025_2026_executive_brief.md",
+      "sha256": "0c8db8e71bc7d3c3f4fdea4db5c128e0638cd8c25d8199b51e75760aa163041f",
+      "bytes": 1940
+    },
+    {
+      "path": "docs/census_2025_2026_extended_executive.md",
+      "sha256": "400ad7305bce76d2a2bf0d6b7e17b8f72343e1426f929a46c55e12c28f07cd7b",
+      "bytes": 5766
+    },
+    {
+      "path": "docs/census_2025_2026_extended_oct13.md",
+      "sha256": "fc0f063e0dcd640892ea4fbe05da4a2e8a65002b3410635edf41f78d6eb59bd9",
+      "bytes": 15741
+    },
+    {
+      "path": "docs/census_2025_2026_oct15_executive.md",
+      "sha256": "50accc8d678e246a5ea8e6446b13f66fc7d5a64869c39d246819832a4b5cc23f",
+      "bytes": 5908
+    },
+    {
+      "path": "docs/census_2025_2026_oct15_v5.md",
+      "sha256": "a4e079437bf9a5575e1c31761878aaed8864850cfccc5b0711b441839d92dbce",
+      "bytes": 11525
+    },
+    {
+      "path": "docs/census_2025_2026_public_evidence.md",
+      "sha256": "c5a00e6d81e79ee2d3742d6b97c1d0fe9d1f6a4cb62e2a716d2624a55a432c44",
+      "bytes": 4808
+    },
+    {
+      "path": "docs/census_2025_2026_v6_audit.md",
+      "sha256": "550a9ba3a0623a23270940c337fc4d1a6c6718f90ff374f33f9350595b3c4185",
+      "bytes": 10487
+    },
+    {
+      "path": "docs/census_2025_2026_v7_recovery.md",
+      "sha256": "d76c3b034aa06e6e72ae6e62fbcc6a1bd79afeb611e51b9cb905d0ead513bdf6",
+      "bytes": 5231
+    },
+    {
+      "path": "docs/ci_consolidation_plan.md",
+      "sha256": "25f5ef7e07ff133cc0cbf2ba4219e55d131bdce55615ff5b028f4aab57f2f630",
+      "bytes": 11047
+    },
+    {
+      "path": "docs/ci_validation.md",
+      "sha256": "1b6861fa20e30175143fec2303bf6f73256153eaa36f803f8f15d106e4b9ae75",
+      "bytes": 7509
+    },
+    {
+      "path": "docs/commander_decision_memo.md",
+      "sha256": "bb7b1a3e697197b7404a1aaaca80b8c4f5f1a0558d6671a85d8dfc86dfbc4058",
+      "bytes": 5423
+    },
+    {
+      "path": "docs/consolidated_owner_review_decision_memo.md",
+      "sha256": "cb99fe58ae9bc5cf12fe1233d29d6c04b826b6a546a500041bb021f234b073be",
+      "bytes": 10916
+    },
+    {
+      "path": "docs/consolidated_owner_review_gaps.md",
+      "sha256": "ee94624eb9df6920f68eca5031df62ef4d1ece52e6db3704180a4a2720488a3a",
+      "bytes": 25989
+    },
+    {
+      "path": "docs/cost_accounting_standard.md",
+      "sha256": "a4cbb419391a643f1dcbaef6f122249916c33cba0dbb8ff6cf81aca9e99b001b",
+      "bytes": 14614
+    },
+    {
+      "path": "docs/data_dictionary.md",
+      "sha256": "9eac3c7d8ced0eff8fabc50aec3a5f70058d8617f236ecc94665fe64c6a8c381",
+      "bytes": 33711
+    },
+    {
+      "path": "docs/dataset_registry.md",
+      "sha256": "3162e4fa059138a0410759125d9ad53ac1fc8754e5f44ebc8f31b08ef366b54d",
+      "bytes": 4625
+    },
+    {
+      "path": "docs/decision_portfolio.md",
+      "sha256": "96ea8a3cdd8b424c5b2b58b8730340877ba6f89488538bd92a9878b716c7987e",
+      "bytes": 3968
+    },
+    {
+      "path": "docs/decision_taxonomy.md",
+      "sha256": "b1cfaa50b1583e4e876b71fdb2785e750ac3f827676e8c48e19342ba9fc6bb7b",
+      "bytes": 16920
+    },
+    {
+      "path": "docs/desired_end_state.md",
+      "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe",
+      "bytes": 13159
+    },
+    {
+      "path": "docs/evidence_reconciliation.md",
+      "sha256": "3215498983e63105752da7d554b9325c18479af6125555c852b9aec5a7568812",
+      "bytes": 6103
+    },
+    {
+      "path": "docs/foundation_standards.md",
+      "sha256": "ecb732db7e76a2cb002d5d3b4c21a20fe28860cbdff0c226fde62107e6a73300",
+      "bytes": 2674
+    },
+    {
+      "path": "docs/guardrail_standard.md",
+      "sha256": "86b95f01f3fbe4bfc41af8b898fb78aff5da2eadb4a33d07ea843649fb69248d",
+      "bytes": 11684
+    },
+    {
+      "path": "docs/initial_findings.md",
+      "sha256": "9c85268083cc977d384db8c2ea041b97e40d5ab8dc74bcd72f16d88e996a5e5a",
+      "bytes": 6957
+    },
+    {
+      "path": "docs/intervention_evaluation.md",
+      "sha256": "0ac263573449a155b27d337976f2816206f7c737b83ba2efba125b3494bcb7d6",
+      "bytes": 6254
+    },
+    {
+      "path": "docs/intervention_register.md",
+      "sha256": "9395aad1f622473c3c28ca6320f8719ff0ca682555a03ce183dfe9dc7b1eac21",
+      "bytes": 3298
+    },
+    {
+      "path": "docs/issue_migration.md",
+      "sha256": "a59e6df2e128fc755fcadeeac41fd7b787b4dc91a967ad9b6f63417565368444",
+      "bytes": 4804
+    },
+    {
+      "path": "docs/leadership_portfolio_report.md",
+      "sha256": "2bfce073f485d25057f3c407a3bdfad3abd717dbbc361346d5ef7efdce8ccd51",
+      "bytes": 9552
+    },
+    {
+      "path": "docs/master_issue_model.md",
+      "sha256": "240bfcfb839e8a0c2af99a8be5e737cb12cdb02e46324b44214f15aa264dc40a",
+      "bytes": 9560
+    },
+    {
+      "path": "docs/methodology.md",
+      "sha256": "28c361fa5546fb92fe4bdb8c909ac6f04d972db87451a50d5971d01c8dc63c4a",
+      "bytes": 6181
+    },
+    {
+      "path": "docs/mission_budget_and_un80_audit.md",
+      "sha256": "17bedb82e5f475e3e0a14848fbf229ff0420d23d881d56b6d111afd938b008ab",
+      "bytes": 13305
+    },
+    {
+      "path": "docs/operational_adjudication_blockers.md",
+      "sha256": "09f3242e8ff3e4c838eefcb9b13f1b4a4b4587ff0bead95c1860788b28896d5f",
+      "bytes": 3701
+    },
+    {
+      "path": "docs/pilot_validation_readiness.md",
+      "sha256": "9f06cf9a4f4e215788c03f7d10c48baf2968f9a3f447ef9e82b9b49a1d6f11ca",
+      "bytes": 3847
+    },
+    {
+      "path": "docs/portfolio_coverage.md",
+      "sha256": "dc33469e906fc0cb47b1496252d809191f6ede91755fa2ff9c9e4bd71b50b6f4",
+      "bytes": 2608
+    },
+    {
+      "path": "docs/portfolio_overlap.md",
+      "sha256": "b7614cf48a71b3d632974c984eea34069bf5e7f9e89b77d85b7e3cdd0a934d0c",
+      "bytes": 1718
+    },
+    {
+      "path": "docs/portfolio_validation.md",
+      "sha256": "92d2a8f7206759cd6400ad2810b64ce4e4c909e38d9e11bae078e651b448f2e1",
+      "bytes": 4021
+    },
+    {
+      "path": "docs/project_consistency.md",
+      "sha256": "b81f3d97d4c28694d76e6e9fd1c88c4e8ccb4ffbfc8ca2f57619def318161933",
+      "bytes": 1679
+    },
+    {
+      "path": "docs/public_deliverable_overlap_2027.md",
+      "sha256": "4d3f9a92f41d7262389995e1f257d4c483551ac89b089ed2b6ff4c5e7ebc3622",
+      "bytes": 11168
+    },
+    {
+      "path": "docs/public_only_decision_framework.md",
+      "sha256": "740b3189ad22fbb3f0d782e6778ee8a6b6ae6d3f49413dc841f9ef911c9aaa02",
+      "bytes": 10189
+    },
+    {
+      "path": "docs/public_only_executive_brief.md",
+      "sha256": "7695093d23dafdfa16cfadbb0e32ffbc8c198deacca200f01957887ed94c4968",
+      "bytes": 6093
+    },
+    {
+      "path": "docs/publication_workflow.md",
+      "sha256": "a43dbbcbccee1d5fd54c5543f597b1c166b1e073a95b684cd754d62f146f9592",
+      "bytes": 8301
+    },
+    {
+      "path": "docs/realization_workflow.md",
+      "sha256": "8cf917c4685f04aea592545a473e72be79da30fd3c1e52876a3ec919d7309796",
+      "bytes": 2181
+    },
+    {
+      "path": "docs/reform_claim_inventory.md",
+      "sha256": "af2e3c0543ffe5f66277ac3789f5701bcb09160e786b133ce45c4be2ae08211d",
+      "bytes": 1642
+    },
+    {
+      "path": "docs/reform_compliance_rules.md",
+      "sha256": "3a9feff39b574e33e2f10453ff2942543102f2bfcded66b4c9645764cc6b487c",
+      "bytes": 3372
+    },
+    {
+      "path": "docs/reform_compliance_view.md",
+      "sha256": "6dc1aacaacb2070f529058ed6c012ddca0015af53b8a614eef5d4554dda80df2",
+      "bytes": 2218
+    },
+    {
+      "path": "docs/reform_independent_review.md",
+      "sha256": "a3f87d35dab5f8e0d21b7d4446adc0bb470b565637b9dfd2d97e324be4003f8d",
+      "bytes": 4314
+    },
+    {
+      "path": "docs/reform_obligation_model.md",
+      "sha256": "8c07d502b80d7780bdcb19c91f743b788cb5bafd56730f61c4a19c2c06730001",
+      "bytes": 3796
+    },
+    {
+      "path": "docs/reform_portfolio_annex.md",
+      "sha256": "fc3bdeea607d0bb0fbebe14c665f3fa445a1338d3a7a3962605ea0bab1a88873",
+      "bytes": 4670
+    },
+    {
+      "path": "docs/release_history.md",
+      "sha256": "ffcad9ad69267941a87cb834a353f9a20f40f0b8117a9c9d4a62ab8d0ef08a60",
+      "bytes": 6542
+    },
+    {
+      "path": "docs/repository_audit.md",
+      "sha256": "70767eff36352ac4d4126531ffa7ead0e784ec89edf26acef1a4e9f3f77c966c",
+      "bytes": 6147
+    },
+    {
+      "path": "docs/repository_lineage.md",
+      "sha256": "f091a4dda77fe35f59d05a26892e7c21864135f1ea90b7212d3f6755c4558036",
+      "bytes": 18212
+    },
+    {
+      "path": "docs/repository_status_model.md",
+      "sha256": "92970a2ca427abdff1f5ee36ea0cee888243c479f47d3d8d0272f3b20b626eea",
+      "bytes": 8617
+    },
+    {
+      "path": "docs/restricted_adjudication_boundary.md",
+      "sha256": "467699120cf0e948e81a26bcb3b3920ae726106e4a1c334edea39cd0c68181af",
+      "bytes": 2171
+    },
+    {
+      "path": "docs/restricted_transaction_data_request.md",
+      "sha256": "5ce6e523811ff514733d3f07a55f6ba442340a7e4df932018526cc59d97f2361",
+      "bytes": 6593
+    },
+    {
+      "path": "docs/retrospective_2025_2026_executive_brief.md",
+      "sha256": "17003925cba4b69aeb0d4b482b15de61a65aa46f6be352e682099a9b39cbe7c7",
+      "bytes": 3287
+    },
+    {
+      "path": "docs/retrospective_2025_2026_overlap_audit.md",
+      "sha256": "73f8a1a5a7efc5ee216088542ba10cf677b030385f2e28c87e46674261811b95",
+      "bytes": 16311
+    },
+    {
+      "path": "docs/secure_evidence_intake.md",
+      "sha256": "9ce77a0770c0aa793973382594f9a1f1c75dca250ae1f5e5a62678d4c881e1cf",
+      "bytes": 3793
+    },
+    {
+      "path": "docs/sg_proposals_and_un80_arrangements.md",
+      "sha256": "6c45277503d4c881ed1e4d337653a148647cf01356dc6350f8f48044a1cebc47",
+      "bytes": 4148
+    },
+    {
+      "path": "docs/source_authority_standard.md",
+      "sha256": "1d7906b11a53e31a596da02d1bd6b0bcab5638012a233783ec3706f4e3d2c299",
+      "bytes": 11816
+    },
+    {
+      "path": "docs/spm_2027_reconciliation.md",
+      "sha256": "ba02d3e4edc398c7bc82bc8d4b774b490008b90b8748af99292e66ece9e76e7a",
+      "bytes": 12312
+    },
+    {
+      "path": "docs/systematic_2025_2026_census.md",
+      "sha256": "6ee9f24e3a4172a3a69b2e692a055e2213d24bb65e759f795bfa3a4c05c7f299",
+      "bytes": 14189
+    },
+    {
+      "path": "docs/systematic_2025_2026_census_oct12.md",
+      "sha256": "e25ed6d4c622a214ccff3cde4a986738c76fd4f1dc6ab1752e5934c1c33de2d2",
+      "bytes": 15398
+    },
+    {
+      "path": "docs/systematic_2025_2026_executive_brief.md",
+      "sha256": "5b9243fb91a9caa6536cb5bf7762dae7289e61d60046b35e4a4fee2d1dd4940c",
+      "bytes": 4238
+    },
+    {
+      "path": "docs/transaction_level_validation.md",
+      "sha256": "e1f1be31bdfd8c91e81a33b401c1cc162ddd906f9842e7c0fe89989122025752",
+      "bytes": 13158
+    },
+    {
+      "path": "docs/unga80_reform_baseline.md",
+      "sha256": "880cc758b88a8676c78fc34d6e77671dfd78b99eb3524e06f9acd7aa81f2b9f5",
+      "bytes": 3754
+    },
+    {
+      "path": "docs/unga81_reform_baseline.md",
+      "sha256": "8ef054e44fad0154797fe4978bdc25b898cbc6555523a08f800939f4f9510e43",
+      "bytes": 2565
+    },
+    {
+      "path": "docs/v10_owner_decision_sheet.md",
+      "sha256": "1130b1a04e453981efe32f143cdac8b5889d85232abde104c752eeecae979475",
+      "bytes": 6318
+    },
+    {
+      "path": "docs/v10_owner_review_shadow_protocol.md",
+      "sha256": "55c24bf19460e82911de1a26e0068275765556ba07231f69e3d7b057bb7a810d",
+      "bytes": 28083
+    },
+    {
+      "path": "docs/v11_public_tabletop.md",
+      "sha256": "cfc156797d1e38315e07a3e61694a8ff8f162c60216b2a86a03c17ba33b5bd84",
+      "bytes": 9732
+    },
+    {
+      "path": "docs/v11_tabletop_support_sheets.md",
+      "sha256": "e8c7a32a5f2857242b2a3071b984b45b6ec8045849fd5e4061e84ea4e1cc6e41",
+      "bytes": 22605
+    },
+    {
+      "path": "docs/v12_affected_support_preview.md",
+      "sha256": "fe4e97a925a89a4351ec1779e5a4241de4933d7844b4e4b33118d3fd6c666274",
+      "bytes": 1939
+    },
+    {
+      "path": "docs/v12_reference_correction_patch.md",
+      "sha256": "324d25931b5a13dce721f5453e8786c4c3e23ee2b853b4d471b5bd087934c750",
+      "bytes": 7550
+    },
+    {
+      "path": "docs/v13_reference_adoption.md",
+      "sha256": "fab4c545f718c49cf6890ad71241b4c7aaa6027733734ee7ab70a4347659d23c",
+      "bytes": 4466
+    },
+    {
+      "path": "docs/v8_consolidation_brief.md",
+      "sha256": "0e164dd9f3f98063bf7721be8315346b9e79d237d5374243af280b92b7da0f7a",
+      "bytes": 7096
+    },
+    {
+      "path": "docs/v8_shared_production_assessment.md",
+      "sha256": "c37ef7cad8a448ad2c831116f3fba27f43fbf1ca27a354fab854f574d1c96be8",
+      "bytes": 17019
+    },
+    {
+      "path": "docs/v8_worked_reporting_cycle.md",
+      "sha256": "11c6b7cb56dde524a0bb403e9fb0332698eff4622db36245a776ddbcb1bd751d",
+      "bytes": 17019
+    },
+    {
+      "path": "docs/v9_consolidation_brief.md",
+      "sha256": "2d35ef4db46e59cea23945dfeefa6042b1d117430a1589533bda1485b9184286",
+      "bytes": 5600
+    },
+    {
+      "path": "docs/v9_cyprus_transfer_assessment.md",
+      "sha256": "44d692b3932e17390041ed4c8b26dbf48d4950e70c13fdac55acd4ae2404c0e7",
+      "bytes": 15659
+    },
+    {
+      "path": "docs/v9_worked_cyprus_cycle.md",
+      "sha256": "5b9ca38baf784f284479ad31e77426ea644ac500585cb0605a8840a3256de2d9",
+      "bytes": 20270
+    },
+    {
+      "path": "metadata/artifact_inventory.csv",
+      "sha256": "fc73764c425713f10c28d55fe7d8c549a8f332552cd31a50d26d6c17a9ec051f",
+      "bytes": 362464
+    },
+    {
+      "path": "metadata/canonical_manifest.json",
+      "sha256": "ec5349a0a84ff0a3d21b5229f318baf83d0ad721b6d7faf55913b0c60fab59a0",
+      "bytes": 372767
+    },
+    {
+      "path": "metadata/ci_parity_matrix.csv",
+      "sha256": "7c0db24f86bf2e3e4bf65c5b77d568ccf79cf6aed2cfce449d8169c96b1bec4c",
+      "bytes": 11745
+    },
+    {
+      "path": "metadata/dataset_registry.csv",
+      "sha256": "d6ebd156870811e53899112f05c07957173c0e623b1b403bef05c1c78a303f84",
+      "bytes": 326623
+    },
+    {
+      "path": "metadata/frozen_input_archive.json",
+      "sha256": "e674f0cc7984a5e0550072e69d61052710ff1167d4a86f43403eb4f8cb4ec712",
+      "bytes": 7797
+    },
+    {
+      "path": "metadata/issue_migration_receipt.json",
+      "sha256": "afd0299200dc585334720f5f7eb8a9829665f7ce511f2fef0370a0a542c5b3ea",
+      "bytes": 219772
+    },
+    {
+      "path": "metadata/issue_register_crosswalk.csv",
+      "sha256": "d00a80acfaf0f9a19a01e63f92da9e1ce1a0e818c6b2e73d96769feb3f3a53c9",
+      "bytes": 56145
+    },
+    {
+      "path": "metadata/lineage_edges.csv",
+      "sha256": "9458e0f59ad0d921c53a8bafb0f79ea999765871e370b7d05650d2ba79be8091",
+      "bytes": 885393
+    },
+    {
+      "path": "metadata/lineage_nodes.csv",
+      "sha256": "e58824190bfa6465fcd3f8bb0a55b843c72f580abd4e69ec64234ccfb28d3c3a",
+      "bytes": 133129
+    },
+    {
+      "path": "metadata/master_issue_schema.json",
+      "sha256": "4ba1e04dbaaf75ca23cc835e37ebbef1e9b701b102408c4c9a6f3c7bb201a9c3",
+      "bytes": 6228
+    },
+    {
+      "path": "metadata/publication_policy.json",
+      "sha256": "94e2cb653f4aec2b59304876f9c5d8e638a779b6fe6e7c3a5033b1f8cfd7d5a8",
+      "bytes": 8658
+    },
+    {
+      "path": "metadata/reform_claim_inventory.json",
+      "sha256": "7614cb1d04acdb2f7772f82e1b8e6d401b606012c94c70b900e5d2ddd9b995bc",
+      "bytes": 2235434
+    },
+    {
+      "path": "metadata/release_index.csv",
+      "sha256": "f36013f7ef6b2c8dfe5ad13efe0e4dca9ffcb5f5d5f03851ad04b81a545933af",
+      "bytes": 3395
+    },
+    {
+      "path": "metadata/repository_audit_scope.json",
+      "sha256": "8be3bfecdd1a5ef56cbcdb6c646850c7cacced80fa750955c53f982d2244b577",
+      "bytes": 113015
+    },
+    {
+      "path": "metadata/repository_audit_validation.json",
+      "sha256": "102a3a7a388de9855373032d62842a32178450fdc90141fc7227178645117fe2",
+      "bytes": 6247
+    },
+    {
+      "path": "metadata/repository_status_schema.json",
+      "sha256": "dd04b8585a5b65c684eb29130267b9336d845748503465ef5502c0dce26dde6e",
+      "bytes": 3397
+    },
+    {
+      "path": "metadata/validation_groups.json",
+      "sha256": "705743fcb1468e50c477e870157d38e745e3d4fba589bdeb7a6fcd228755a54c",
+      "bytes": 21003
+    },
+    {
+      "path": "metadata/workflow_audit.csv",
+      "sha256": "c7787543f87550652503dfb9beac6431a2b85064d885b2b799727870d8527998",
+      "bytes": 53088
+    },
+    {
+      "path": "metadata/workflow_overlap.csv",
+      "sha256": "44335463ff3c9957b3ecb0b49ca451255515958f64c6755a5b0a4733905ca302",
+      "bytes": 15518
+    },
+    {
+      "path": "scripts/adopt_v13_reference.py",
+      "sha256": "0889f3e4d535e6db36726668032d69b0d5881539b5d27b728863a66f988ef91a",
+      "bytes": 19744
+    },
+    {
+      "path": "scripts/analyze_approved_2026_27.R",
+      "sha256": "c79af6ff598e69f121b7dcba0be788881d580d669148a8dd6ffc32691785407b",
+      "bytes": 1747
+    },
+    {
+      "path": "scripts/analyze_mission_budgets.R",
+      "sha256": "32c56166f232f580dae6f870514fc57ce2e50d29f35d08d3a4059b38c970ea47",
+      "bytes": 1584
+    },
+    {
+      "path": "scripts/audit_census_v6.py",
+      "sha256": "470cb4e0e069b3c0f1d935a031d9f6bdf791bcf3307203df67d50a0bcc680cd8",
+      "bytes": 29980
+    },
+    {
+      "path": "scripts/audit_transaction_ledger.R",
+      "sha256": "7df38cd80b23f564e888b54b4a9c468cad8897d69c93188823e0cbdde2109514",
+      "bytes": 6232
+    },
+    {
+      "path": "scripts/audit_workflows.py",
+      "sha256": "c0967f238c7110e362ba3cfa7645444513cc9d9f406e1999dc3f8a5289e80ba7",
+      "bytes": 18797
+    },
+    {
+      "path": "scripts/backfill_census_legacy_dates.py",
+      "sha256": "1a6a7fe59c5874ed9690c2f46498cfd48217aa41e3896515e3546f4086681a0a",
+      "bytes": 7009
+    },
+    {
+      "path": "scripts/build_acabq_register.py",
+      "sha256": "4d70750241228ac7d3dbc0aab56895c55872ec37a933f369bda8a8880dd039ac",
+      "bytes": 6660
+    },
+    {
+      "path": "scripts/build_artifact_inventory.py",
+      "sha256": "d811931eaee5ea31dba95cdc2070560358526f7616ef76c6cc7b3531fee0ab7e",
+      "bytes": 10261
+    },
+    {
+      "path": "scripts/build_canonical_entities.py",
+      "sha256": "cd07cb9876629b9fd63153f58cfba3c607b11c0c26e5e32e7110bf95df7b4d8f",
+      "bytes": 13715
+    },
+    {
+      "path": "scripts/build_canonical_manifest.py",
+      "sha256": "6b5bdba46bc19eb13fa2525104c65220e539d3fb1a29a96095b55163dbffbcb2",
+      "bytes": 14165
+    },
+    {
+      "path": "scripts/build_dataset_registry.py",
+      "sha256": "fa8fc6cd92cec04c198565a7002742216849c4d147f53f0f3c49ea17c4ead808",
+      "bytes": 16234
+    },
+    {
+      "path": "scripts/build_decision_portfolio.py",
+      "sha256": "21c60f826cb4180ee77ca5b72712c4d83d0012cda4cf419ef6cfcfa77304f297",
+      "bytes": 12496
+    },
+    {
+      "path": "scripts/build_financial_baseline.py",
+      "sha256": "ec4b97249fb8e67cfdbac42cb7c1fcf113febe5db1ed565d172c62e30c66b50c",
+      "bytes": 6095
+    },
+    {
+      "path": "scripts/build_intervention_register.py",
+      "sha256": "4647a89da59ddd3dfbcb4299dfd01cdc581ba8e5233dc1e7afcf1c4b59e42369",
+      "bytes": 11494
+    },
+    {
+      "path": "scripts/build_mission_archive_metadata.py",
+      "sha256": "b24e1a125c9aec07fa3db0462d8f1e1e51408329fe7e4c31e443aeae97ed8e5f",
+      "bytes": 6911
+    },
+    {
+      "path": "scripts/build_overlap_graph.py",
+      "sha256": "e209698d05f232f50181c5d38cf50494949a375c44ebec7eb6b310c52c611321",
+      "bytes": 4316
+    },
+    {
+      "path": "scripts/build_portfolio_coverage.py",
+      "sha256": "1070fcd267d82216c0aa204a6a676c4ac2aa0ef84b22e59203689d55f2b22fa4",
+      "bytes": 9540
+    },
+    {
+      "path": "scripts/build_portfolio_release.py",
+      "sha256": "7d486cc467eb8a75a9d78679fa22f4fb3ab9574320db1d82956f2fc8bb460916",
+      "bytes": 14648
+    },
+    {
+      "path": "scripts/build_project_health.py",
+      "sha256": "4f645184b559123d1527269a3e652e7c926e239688b45293ab0e73e199b60f5a",
+      "bytes": 8158
+    },
+    {
+      "path": "scripts/build_readme_navigation.py",
+      "sha256": "65d528ee7d1b63233a8ba21067aa156410cd1253590c39427a7ff706deb2d5ae",
+      "bytes": 12248
+    },
+    {
+      "path": "scripts/build_reform_claim_inventory.py",
+      "sha256": "d1bc2ffa3c99c9a6a27fc7e60ef194b53c86d75ec43dd2b4b603d894307b23ea",
+      "bytes": 7769
+    },
+    {
+      "path": "scripts/build_reform_views.py",
+      "sha256": "26f3bfa038c72d12600817296a22a8a8f5aa1437997246572b2317ba7b9d1306",
+      "bytes": 13939
+    },
+    {
+      "path": "scripts/build_repository_lineage.py",
+      "sha256": "8f10da58278c9b4821cd1dfd08a79301b23e98a3096fa8559f9bcb3c03e6a5e1",
+      "bytes": 17438
+    },
+    {
+      "path": "scripts/build_systematic_census.py",
+      "sha256": "902afc5df2857539a005bb83099b6282777edc3c6536956cd8968e1686c295d9",
+      "bytes": 13962
+    },
+    {
+      "path": "scripts/build_systematic_unified_views.py",
+      "sha256": "4abd3f2f15b16aef951facf9ebd386ae291149fcd5a668ad040e0276f9b0df88",
+      "bytes": 11877
+    },
+    {
+      "path": "scripts/build_v10_protocol.py",
+      "sha256": "01955c2c8df353be88832bee2648fcc8d8115c202c1a39d64c4972ac2dd7b2bf",
+      "bytes": 18417
+    },
+    {
+      "path": "scripts/build_v11_review_notes.py",
+      "sha256": "7493a1dbdec1e6997a3cd09455823933208af8087eb5b1cf76b1174eca9154d4",
+      "bytes": 15575
+    },
+    {
+      "path": "scripts/build_v8_design.py",
+      "sha256": "14c9cdafddd9bee867bfbafe52276ab43c0aca5643f7f15b818fe56e1c1559fb",
+      "bytes": 13883
+    },
+    {
+      "path": "scripts/build_v8_pilot.py",
+      "sha256": "eb147eb00e03d369779c2c97310176382e78b8e11f7bc41b9c159a95a162e542",
+      "bytes": 19545
+    },
+    {
+      "path": "scripts/build_v9_design.py",
+      "sha256": "432c21cbff75093b3ad581b6ae6270de3f2863543a478cc2df09d07d5dc7f27b",
+      "bytes": 19088
+    },
+    {
+      "path": "scripts/build_workflow_execution.py",
+      "sha256": "2f9e8245c7ccc2dec1eaedffe118cdc07050a04d3f47e8ee1b073f817562227a",
+      "bytes": 21798
+    },
+    {
+      "path": "scripts/calculate_net_benefit.py",
+      "sha256": "9515db72591a99afaae35b13e15eb991bfd2e9e89d96a55903bc7777dd2d8f04",
+      "bytes": 1638
+    },
+    {
+      "path": "scripts/classify_mission_archive_metadata.py",
+      "sha256": "2706c9392d723290461c54d6af7809e1739cfa32b38f97889c5364bafaa576f7",
+      "bytes": 4450
+    },
+    {
+      "path": "scripts/collect_census_v5.py",
+      "sha256": "593b862c8ab20a31a535d77392e2a444e35e466a5cdc42d9885054bd205061a0",
+      "bytes": 9507
+    },
+    {
+      "path": "scripts/collect_census_v6_sources.py",
+      "sha256": "fcfb4a3a654aad0cb702e12ebdc254f9e91ef8b6e1d3e0ef4c87b89738068df9",
+      "bytes": 3130
+    },
+    {
+      "path": "scripts/collect_council_index.py",
+      "sha256": "7f675bc25d8dbfc97986aa64cb001e106ee13f94be811b52a8c0089a147d8a45",
+      "bytes": 5358
+    },
+    {
+      "path": "scripts/collect_deeper_archive_frame_v4.py",
+      "sha256": "c4f1a549009818b92645327725b9aba8419231fa649d44daec05622eb643b14b",
+      "bytes": 1397
+    },
+    {
+      "path": "scripts/collect_extended_official_archive.py",
+      "sha256": "7f7ea6521adfad5a8a0e4375f02a80c163b203f853441914d5f7352f91a08e37",
+      "bytes": 7301
+    },
+    {
+      "path": "scripts/evaluate_conditional_options.R",
+      "sha256": "b33c4a7d0341c174f00ccaec00204d3d7fff369249e8f549bd7ef26bc62bed12",
+      "bytes": 3970
+    },
+    {
+      "path": "scripts/evaluate_intervention.py",
+      "sha256": "23050303f0ead3691e944e66711d74158bde6626bb8f7eae62644a2e15fe260a",
+      "bytes": 19226
+    },
+    {
+      "path": "scripts/expand_published_census.py",
+      "sha256": "c392a56aae0cab1da11a6c6929e034cf253274c26f937c91d8c9410570b07c11",
+      "bytes": 15992
+    },
+    {
+      "path": "scripts/finalize_census_v5.py",
+      "sha256": "0e99ad31673321a64064966f5a79fc6bce2d0b97d476264bac0fe9d6191fe5c8",
+      "bytes": 18910
+    },
+    {
+      "path": "scripts/finalize_census_v7.py",
+      "sha256": "863470f1e075da2b780c625101a86a1f7409502f51c0988289d1482114ae7547",
+      "bytes": 15212
+    },
+    {
+      "path": "scripts/frozen_audit_inputs.py",
+      "sha256": "f8d42b0f79fcbb061441a6366443702f354728da8a3f955b9a5c077297deb709",
+      "bytes": 1457
+    },
+    {
+      "path": "scripts/generate_current_status.py",
+      "sha256": "695edd2fb67db71c0dc7186de02573286c8ba9ef6069fa745f4224fbad5ceb5f",
+      "bytes": 27208
+    },
+    {
+      "path": "scripts/migrate_master_issues.py",
+      "sha256": "582620d43633ff9b703c6158af53a41793afe3b1107b827276eeef9a2e58bc98",
+      "bytes": 19342
+    },
+    {
+      "path": "scripts/prepare_v12_patch.py",
+      "sha256": "f0ae7a87b2dfc0f04c6c38f9532fc6a6c6778130738b961c23ec8770e071b1b4",
+      "bytes": 19468
+    },
+    {
+      "path": "scripts/publish_release.py",
+      "sha256": "194cc6debe3341a7dadeded75458b85ea7cd8534b60bf15af0aac08a53c7e121",
+      "bytes": 17254
+    },
+    {
+      "path": "scripts/reconcile_evidence_transactions.py",
+      "sha256": "c3f915c84c90a1e3ed8acc912e74e3b4acd4f67b66843e68389224e74b23995a",
+      "bytes": 5638
+    },
+    {
+      "path": "scripts/recover_census_v6_sources.py",
+      "sha256": "b914e176b723749a717a2ad94fe6780e9d1789230eb641aa2c3070b2a894f821",
+      "bytes": 5340
+    },
+    {
+      "path": "scripts/recover_census_v7_layout.py",
+      "sha256": "c6ecb37b0d875608b690a6fc0dee8d9da7df2d9b55c14e688e0295d3989a0244",
+      "bytes": 2201
+    },
+    {
+      "path": "scripts/recover_census_v7_transcripts.py",
+      "sha256": "a6818e9bb5f78d6617d59785ee1f2c30c7d66b541cb91b5cd148d0d808c389b1",
+      "bytes": 10429
+    },
+    {
+      "path": "scripts/rehearse_portfolio.py",
+      "sha256": "c0a50043af6f17a3d00430296ee101f85fdc52e1cf2a67db475a88ffcc8566c9",
+      "bytes": 10868
+    },
+    {
+      "path": "scripts/rehearse_v11.py",
+      "sha256": "4e8f2b8b740a059519a42b407f5c2822c6c35bb9c65172e13c5a9677c5348043",
+      "bytes": 24678
+    },
+    {
+      "path": "scripts/render_public_decision_board.R",
+      "sha256": "1b018118836325cf03ec8b18c40b0ccd632aeee7a411fc669993ad2ca3b3bb0a",
+      "bytes": 2880
+    },
+    {
+      "path": "scripts/render_retrospective_board.R",
+      "sha256": "9d8cf094398d73b3f00dfd46a96e6ffb03c08165b8d09caea6dbfb74318b30d1",
+      "bytes": 4227
+    },
+    {
+      "path": "scripts/render_systematic_census.R",
+      "sha256": "5ffb95e655379af2c49382d0138af26b23b6b08673a5befe6f6e70ca3d92b8a5",
+      "bytes": 5482
+    },
+    {
+      "path": "scripts/run_portfolio_checks.py",
+      "sha256": "be82821295eaec7acefe49de12de77309da20bfd50510b83c41371eecbc2545b",
+      "bytes": 10774
+    },
+    {
+      "path": "scripts/run_validation_suite.py",
+      "sha256": "1ed251ae34ae0615efe50f972c79feaaec59296a34281f32fdadcc964ec68a5d",
+      "bytes": 9018
+    },
+    {
+      "path": "scripts/summarize_v10_workload.R",
+      "sha256": "451326b6f5890d9f980f2aaae80e84058880060507ff2cef61c491de83788c62",
+      "bytes": 8124
+    },
+    {
+      "path": "scripts/v9_cyprus.py",
+      "sha256": "ce85b3f84c8e65e4997c05d7d8cb4a909c50b594515c5dbcc0382a9a3df4bbd0",
+      "bytes": 17227
+    },
+    {
+      "path": "scripts/validate_acabq_2027.py",
+      "sha256": "6622a3c9757e7822390b1e481530b5667312b478ae3e2986831091ac9b762d42",
+      "bytes": 7772
+    },
+    {
+      "path": "scripts/validate_benefit_ledger.py",
+      "sha256": "46a7b2a838ff5d7880e6b29842fb14a213b4c3c7685f4cd3f7882b61e07d7ae9",
+      "bytes": 10272
+    },
+    {
+      "path": "scripts/validate_candidate_advancement.py",
+      "sha256": "bd7a8ff40eab3eed38d5f7f54bc9b304fe7a4cd6b8b7b1368e4fc3000160446e",
+      "bytes": 9421
+    },
+    {
+      "path": "scripts/validate_case_dossiers.py",
+      "sha256": "65a1498af917383e6c08be2caf2851e80479e41b573db3862a26ff77aadb0c15",
+      "bytes": 5802
+    },
+    {
+      "path": "scripts/validate_census_2025_2026.py",
+      "sha256": "352ac860712fef9c44c54bf6603a8b25c206bda1622c9f98f01546e86f903bae",
+      "bytes": 2252
+    },
+    {
+      "path": "scripts/validate_census_v2_release.py",
+      "sha256": "65f149e0ed85be67ce1b2a03cb6b32cc8215a763a895041911a94fe9fced08b5",
+      "bytes": 10827
+    },
+    {
+      "path": "scripts/validate_census_v3_extension.py",
+      "sha256": "1afac46cb7b0f28ea6823f089b774a964044be8b4d7b3caa8215eb4e7d3331e2",
+      "bytes": 8241
+    },
+    {
+      "path": "scripts/validate_census_v4_attendance.py",
+      "sha256": "addfdde175af225d48a2142da101913e82ad116abcafdbd9f9facf52ba823fb2",
+      "bytes": 4075
+    },
+    {
+      "path": "scripts/validate_census_v5.py",
+      "sha256": "b1214861d2772fdbda86c216fc217120b6fa86003e0ec4a7c971ebd1026a4a1b",
+      "bytes": 20578
+    },
+    {
+      "path": "scripts/validate_crosswalk.R",
+      "sha256": "008d0fce6499d2fe46a6d3b2dadb74867aaa3fcc5b1d03fea13dfc7c7f0e7c4e",
+      "bytes": 3724
+    },
+    {
+      "path": "scripts/validate_crosswalk.py",
+      "sha256": "9ba37d59db1e85fc33764948166ce472ae362208a9f07246fa137b5b3aca736b",
+      "bytes": 8551
+    },
+    {
+      "path": "scripts/validate_financial_nonadditivity.py",
+      "sha256": "8c91f6fcfc05b3933dc20ec7217db23819bf685bbabde304b684c73fed7131bf",
+      "bytes": 3536
+    },
+    {
+      "path": "scripts/validate_master_issues.py",
+      "sha256": "e172ab6b7e83e3ce3b37ab3b8be8bf5629b662a43ff85872e07f5a7dfacca481",
+      "bytes": 10726
+    },
+    {
+      "path": "scripts/validate_mission_archive_candidates.py",
+      "sha256": "a3997d8454db547287d8539995d0924445dd892b113b5c0defd5090d0475903b",
+      "bytes": 1779
+    },
+    {
+      "path": "scripts/validate_mission_archive_metadata.py",
+      "sha256": "4c5a79dbfdec2923b7d58a48f4b0ed75337c85d537f7c2511d9d6c41f979717f",
+      "bytes": 1932
+    },
+    {
+      "path": "scripts/validate_mission_audit.py",
+      "sha256": "7df056312b3da128bf4f63e87faa7709273bd3845527c1653beeac21ea020f2b",
+      "bytes": 3871
+    },
+    {
+      "path": "scripts/validate_operational_evidence.py",
+      "sha256": "821f56277ba60033051e0965a45765b6c643a6e40126d97bdd886a822965b48d",
+      "bytes": 5588
+    },
+    {
+      "path": "scripts/validate_owner_review_package.py",
+      "sha256": "8e61aba6c31eec4a1fc55220b2d56d25c19ee9cba4fe630ea0dc9beaaa4e4560",
+      "bytes": 9676
+    },
+    {
+      "path": "scripts/validate_phase11_systematic.py",
+      "sha256": "fe5d6b282f8ff33c129b54c7863c271de81757eabd822d558e6e34e978aeefff",
+      "bytes": 6066
+    },
+    {
+      "path": "scripts/validate_phase3.py",
+      "sha256": "396fbada66ac9fec2e2c004a55319ead7388872605d7e35852c350fa6147197f",
+      "bytes": 7685
+    },
+    {
+      "path": "scripts/validate_phase7.py",
+      "sha256": "75d8dc6a9598af20108e430d985776102f9e99363d7afa6ddfbf8cf1d22060a5",
+      "bytes": 2283
+    },
+    {
+      "path": "scripts/validate_phase9_clusterIII.py",
+      "sha256": "c927001d3b602f4a959a7e52e055738dddf2fc0ba990f87601158a350d248302",
+      "bytes": 9982
+    },
+    {
+      "path": "scripts/validate_project_consistency.py",
+      "sha256": "90baa6d63f95d4229f1167cd2e4c55c629d42ceb182d67ce6f09c8313b83ebb7",
+      "bytes": 6257
+    },
+    {
+      "path": "scripts/validate_public_evidence_boundary.py",
+      "sha256": "ef26ee3560d0117a0cca6ee71cce08c12b75a07336bcebfe2a7f635ac0f066fc",
+      "bytes": 5533
+    },
+    {
+      "path": "scripts/validate_public_only.py",
+      "sha256": "775cfe9f92d9bd89ea35bae0ddfe92127c8068a4a09a8620fdb9c039545e23eb",
+      "bytes": 5792
+    },
+    {
+      "path": "scripts/validate_reform_baseline.py",
+      "sha256": "20598419881776d2e06aeff8e58a6e2e9214b8e44e214042e7453f74a68c3bef",
+      "bytes": 8256
+    },
+    {
+      "path": "scripts/validate_reform_obligations.py",
+      "sha256": "a7d6f245029de3f7b2a4089191287e973ff1e83328cdfd2b6be198b7f60d7b4a",
+      "bytes": 8328
+    },
+    {
+      "path": "scripts/validate_repository_audit.py",
+      "sha256": "6e99d71cbfbce393237aa2575b525a33fa3e40ac8510fbdbdcc5c84efcf73d1d",
+      "bytes": 3347
+    },
+    {
+      "path": "scripts/validate_repository_status.py",
+      "sha256": "2c117e111a627c3e3d9121a6e3aa68143b83dad46b6dad0edd54c1a47c85986a",
+      "bytes": 6043
+    },
+    {
+      "path": "scripts/validate_retrospective_matches.py",
+      "sha256": "a12da36417395f20b7851486a15af454a0b61cbc8036ca127f7fe144f8091a2f",
+      "bytes": 8696
+    },
+    {
+      "path": "scripts/validate_spm_2027.py",
+      "sha256": "d7fd330f4aec3ecfe254e38721b663f2ca2b8319f1a9c6fa7b72d3c225e4de19",
+      "bytes": 6765
+    },
+    {
+      "path": "scripts/validate_systematic_census.py",
+      "sha256": "9b0fa5455d1aa3b4c4833e3b6cda945c49f7251e04879f83f78451b6a3db1249",
+      "bytes": 8147
+    },
+    {
+      "path": "scripts/validate_transaction_controls.py",
+      "sha256": "20839af23d4bb811c8cf08cd93439b37d694b4a44f1c5932ccff84a182edaae6",
+      "bytes": 2950
+    },
+    {
+      "path": "tests/check_acabq_register.py",
+      "sha256": "23e3c592747e6e6caa257ece533e23604f19c503f53a2b1f32b82052adcd568d",
+      "bytes": 2651
+    },
+    {
+      "path": "tests/check_artifact_inventory.py",
+      "sha256": "b08717f7fa255dbda21b802c953ea1ab5ef27ca4aeef121026174ac49c82a9f6",
+      "bytes": 2179
+    },
+    {
+      "path": "tests/check_benefit_ledger.py",
+      "sha256": "9eb05729f1bc25634ed6de8c73b51daeddfc505311b7d15f012844dff09a5fc7",
+      "bytes": 7282
+    },
+    {
+      "path": "tests/check_candidate_advancement.py",
+      "sha256": "1e55b30d1d76f2e871710ec2413bfd9247d26eda8af031aeef2dff0962e0ad04",
+      "bytes": 7348
+    },
+    {
+      "path": "tests/check_canonical_entities.py",
+      "sha256": "5818f96a83f3ab843a87e40f7f4b44429cc39984824a532995be7b5b2addf166",
+      "bytes": 2685
+    },
+    {
+      "path": "tests/check_canonical_manifest.py",
+      "sha256": "16bd40fef91101bf388aeee32069df804228d228662c964c011c2458500207e5",
+      "bytes": 4369
+    },
+    {
+      "path": "tests/check_case_dossiers.py",
+      "sha256": "98db72ec93b4b5172727b6efb2a060f9b65cd0f455098311ee2a5060cb705ed5",
+      "bytes": 3384
+    },
+    {
+      "path": "tests/check_council_index_parser.py",
+      "sha256": "c0d4f5d52b7e50bd55e88c37ab82afa83a043ea72a1a951f6e0b548137573af2",
+      "bytes": 951
+    },
+    {
+      "path": "tests/check_current_status.py",
+      "sha256": "ade4c26112142ad73c54350656bed85ed3ad38b4bd4db927e10a0a5eb2c2bf1c",
+      "bytes": 7486
+    },
+    {
+      "path": "tests/check_dataset_registry.py",
+      "sha256": "ddd83110e2460649e273d126fea30f0d036e69991094e03442eb975edf5d1ce6",
+      "bytes": 2870
+    },
+    {
+      "path": "tests/check_decision_portfolio.py",
+      "sha256": "b35ccbba4ab6034dca3fae25bddb07f7c41d4b7399ebe65e62c29a4b882fea0c",
+      "bytes": 4873
+    },
+    {
+      "path": "tests/check_evidence_reconciliation.py",
+      "sha256": "c66125343805a29d5b13f62231c18880f496cb7ff6931e1de0de24c8780f9a6f",
+      "bytes": 3284
+    },
+    {
+      "path": "tests/check_extended_archive_frame.py",
+      "sha256": "43fde75994baba84e2516133b1b8941bb8cbb4bc04c06a250def0d38a06ef6c6",
+      "bytes": 1328
+    },
+    {
+      "path": "tests/check_financial_baseline.py",
+      "sha256": "4e4d29d220d23efd343f092757afaabb2d305fe0d537cdc35bf7c80708751da6",
+      "bytes": 2106
+    },
+    {
+      "path": "tests/check_intervention_evaluation.py",
+      "sha256": "51e5cbefecc2ade29e1ad874dc70419864f2e4eb66e65362fd20ebe1cca57d99",
+      "bytes": 12041
+    },
+    {
+      "path": "tests/check_intervention_register.py",
+      "sha256": "7c12a134b0c3d829d7360a283ce5b8cc7a212b693cb15431b45adc7e8df5d702",
+      "bytes": 2742
+    },
+    {
+      "path": "tests/check_issue_migration.py",
+      "sha256": "93bd79ee6167e8cbcf5f2862e5e958acbd23bdeb7240535788957834f00d65bb",
+      "bytes": 5754
+    },
+    {
+      "path": "tests/check_master_issues.py",
+      "sha256": "71ffa0364a50422ca00714739fb41f0d696face9e2ebcb6d92e4523d175fb804",
+      "bytes": 7467
+    },
+    {
+      "path": "tests/check_net_benefit.py",
+      "sha256": "07bc9a3a3180de4c3aeeb002c41199ac71bfb7fd5c6d0784673599c81adf9f34",
+      "bytes": 1704
+    },
+    {
+      "path": "tests/check_operational_evidence.py",
+      "sha256": "7cf209c7c9a69b04c687bf48fd66cf56ae4b2ad91e61fa467e5d75480c4c6f8a",
+      "bytes": 3501
+    },
+    {
+      "path": "tests/check_overlap_graph.py",
+      "sha256": "6b7edc891cce9fd7f6a78145435cd930e4cbc154cc67966bcb72c0974de30ecf",
+      "bytes": 2136
+    },
+    {
+      "path": "tests/check_portfolio_check_runner.py",
+      "sha256": "f4639577b79a53d2ac7ee6e863b3bc2697f23b5aab0c61c8030a818999d22f53",
+      "bytes": 6208
+    },
+    {
+      "path": "tests/check_portfolio_coverage.py",
+      "sha256": "2152cc895b83284109b20d616aaad05a1efcbfb2b3c5ef25db972d3f496d60c2",
+      "bytes": 2109
+    },
+    {
+      "path": "tests/check_portfolio_rehearsal.py",
+      "sha256": "d8762eaf2d19ea61acc94d1a1b0c584ff63af4fe62d2e2326461088984856aa5",
+      "bytes": 6068
+    },
+    {
+      "path": "tests/check_portfolio_release.py",
+      "sha256": "37ad5bcb7c28d8370443ef9ce61401ef956cec89f081ad8452e99db0a7b81f9c",
+      "bytes": 4451
+    },
+    {
+      "path": "tests/check_project_consistency.py",
+      "sha256": "48d34d01d0376ea4818ea67b05539fba9f005c9d9f0b9fc3359330b04b58363f",
+      "bytes": 5708
+    },
+    {
+      "path": "tests/check_project_health.py",
+      "sha256": "9aecada6917e3ec3b381cf048ad108aaf5741f88296ecbed6ef3cf9c39f97c02",
+      "bytes": 2096
+    },
+    {
+      "path": "tests/check_public_board.R",
+      "sha256": "136a7ab70760df06c52be4e9b99edf09321b4cbed01ff33e7eee4b0ee4e6190c",
+      "bytes": 677
+    },
+    {
+      "path": "tests/check_public_evidence_boundary.py",
+      "sha256": "e00221b896e3924c1d81be14c6dd32c856e079a2de90d5186e47ac615a7da751",
+      "bytes": 2274
+    },
+    {
+      "path": "tests/check_public_scenarios.R",
+      "sha256": "05bc76705c93264ed6b1175d9ef9b77d186bc0a6ea8c8edbdb7e65ce9187ea21",
+      "bytes": 699
+    },
+    {
+      "path": "tests/check_publication_workflow.py",
+      "sha256": "340715816fba976a3e2641e0832ec8e57280ebf9ba7549b1e5df68545ef6ace8",
+      "bytes": 11404
+    },
+    {
+      "path": "tests/check_published_census.py",
+      "sha256": "28b5efa4de8e3f1b11964ad740821e30afb84381ab1b2b841527ffc3596ed18f",
+      "bytes": 7343
+    },
+    {
+      "path": "tests/check_readme_navigation.py",
+      "sha256": "984aa6c9298be09d8c64d20cac5d6137812f4a1a2d3f6a70194126a6a7b58f33",
+      "bytes": 3464
+    },
+    {
+      "path": "tests/check_reform_baseline.py",
+      "sha256": "53c9b0f3bbdbb5abe64a302e509e705011cecf09e384c6861c3f9a12be33b006",
+      "bytes": 2582
+    },
+    {
+      "path": "tests/check_reform_claim_inventory.py",
+      "sha256": "8939356b1886fc62b89d35a71d6101ba44c2f135f10ce62b726f9bfeaa9310c7",
+      "bytes": 2344
+    },
+    {
+      "path": "tests/check_reform_obligations.py",
+      "sha256": "5b3cfb8c7abc1848d8d66f40bb9c20b4ebb67d1152550d102f4585e8ba4c1364",
+      "bytes": 5037
+    },
+    {
+      "path": "tests/check_reform_views.py",
+      "sha256": "1e6bc5f2cb9ae6ea6b50e24fa388d6c64d1e4fce47f4e83a34f4ca83ea321461",
+      "bytes": 3160
+    },
+    {
+      "path": "tests/check_repository_audit.py",
+      "sha256": "350dab1b1b246d1381633ea0be4ecc2afd40c64b2035c2bbaa4136a2bb564291",
+      "bytes": 2329
+    },
+    {
+      "path": "tests/check_repository_lineage.py",
+      "sha256": "2578d91a38b115b5f6b87901b4daf5c2583c2051d2c831a59683150c2358d085",
+      "bytes": 3452
+    },
+    {
+      "path": "tests/check_repository_status.py",
+      "sha256": "296e5c92c32359073a3a5bee28904c2019eeeb4cbc72f7d698b7dd651b06fbc0",
+      "bytes": 6084
+    },
+    {
+      "path": "tests/check_retrospective_board.R",
+      "sha256": "d3d16c45eb3c8b8a20922287ec26c94038c30a919b621ce2111898a86e966787",
+      "bytes": 1083
+    },
+    {
+      "path": "tests/check_systematic_census_board.R",
+      "sha256": "9e0c17a06f2ab10b1c665ce9010efa6ae91a955299336434cfbb8e288ce806a9",
+      "bytes": 908
+    },
+    {
+      "path": "tests/check_transaction_engine.R",
+      "sha256": "b1c5643880b17776f555cfc4e9af7461485d5f09a229fefba036d9e299aaa4cf",
+      "bytes": 930
+    },
+    {
+      "path": "tests/check_v10_protocol.py",
+      "sha256": "0b09fb06929b793d373955fd938776d25cf551732a139cb5d937bc53908624ed",
+      "bytes": 4953
+    },
+    {
+      "path": "tests/check_v10_workload.R",
+      "sha256": "26bd02ea24f4edb40d807045053259804261abdf17418166250f8eedc7b2e22a",
+      "bytes": 4296
+    },
+    {
+      "path": "tests/check_v11_tabletop.R",
+      "sha256": "cde3cb8802c2546c6597d21b1d31f20d73961e9708bcc902d63ab03f5759d288",
+      "bytes": 2399
+    },
+    {
+      "path": "tests/check_v11_tabletop.py",
+      "sha256": "7facd700070e508934a689d92398d95f623e405ad6625f36def8a34806a2c597",
+      "bytes": 3516
+    },
+    {
+      "path": "tests/check_v12_patch.py",
+      "sha256": "408e78c6e2e66dc557fde2a5300a25c5adcee81fe6cb3afa792a3c6d71b61c80",
+      "bytes": 5607
+    },
+    {
+      "path": "tests/check_v13_reference.py",
+      "sha256": "e6208811641166696b59b6ce47333c1ddf13584a233aaaf2aa65105de405673d",
+      "bytes": 5674
+    },
+    {
+      "path": "tests/check_v8_pilot.py",
+      "sha256": "cbd04644c36ec0df27620f0076a2fc38358ade68999e0ce085c2a15f499fd89c",
+      "bytes": 7936
+    },
+    {
+      "path": "tests/check_validation_suite.py",
+      "sha256": "3ef74b558e17cd4d6fffb61ec0c774415144a035c27a1f6e0c6bda8073f15d0a",
+      "bytes": 8051
+    },
+    {
+      "path": "tests/check_workflow_audit.py",
+      "sha256": "130d9293764050dfb43cb5abab2b0387a8d9436124b4aabaecabacc90cda8bc1",
+      "bytes": 3530
+    },
+    {
+      "path": "tests/check_workflow_execution.py",
+      "sha256": "52107d8bcf2645fba16e9c958237f44d085a6685e5731d19f745940d93e79ffc",
+      "bytes": 2292
+    },
+    {
+      "path": "tests/fixtures/council_index_SYNTHETIC.html",
+      "sha256": "7aed7abe7158adc81ba2113041776a2bb67c106e20c842f3ee34f6be45d96314",
+      "bytes": 396
+    },
+    {
+      "path": "tests/fixtures/scenarios_INPUT_TEMPLATE.csv",
+      "sha256": "0624522c0a78359aeab7c0f66fd8ab1fb84f27c8b6ac1bff8bd8747f0534f361",
+      "bytes": 347
+    },
+    {
+      "path": "tests/fixtures/scenarios_SYNTHETIC.csv",
+      "sha256": "211042a84ae48e1cfb810a513ffd772f4cdd7ded270f6c63d2e864ecc85c3cbb",
+      "bytes": 549
+    },
+    {
+      "path": "tests/fixtures/transaction_ledger_SYNTHETIC.csv",
+      "sha256": "75065f872e0ffaad14ca2912292fcf049c7896b37010e0db31da48e2b7c3cd95",
+      "bytes": 1232
+    }
+  ],
+  "runtime_validation": "NOT_ATTESTED_BY_THIS_MANIFEST; use exact-commit hosted/local validation receipts separately.",
+  "privacy_limit": "Rejects restricted/secret path patterns and symlinks; not a content-level security certification. Approved public derivatives and separate boundary validation remain required.",
+  "refresh_rule": "Rebuild after all source edits and before final validation. Any eligibility/benefit change requires substantive review and a new release policy, not merely updated hashes."
+}

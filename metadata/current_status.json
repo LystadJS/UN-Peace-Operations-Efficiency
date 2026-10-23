@@ -321,7 +321,7 @@
     "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
     "data/spm_2027_financing_controls.csv": "19d89f32a9543aa5a2725460363cb5a7605dbf0e6bf03a2863862fd0d44357e7",
     "data/spm_2027_mission_budget.csv": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
-    "metadata/canonical_manifest.json": "6e05d5743c4c9d456bf44476a2155d2b09d65c6bd27ce88732ec78a46de2f29c",
+    "metadata/canonical_manifest.json": "f9ec003b1634e416a3d32087909cfe3e1eee029d91f4f54e5dcb522e326c13cd",
     "metadata/issue_migration_receipt.json": "afd0299200dc585334720f5f7eb8a9829665f7ce511f2fef0370a0a542c5b3ea"
   },
   "transcript_recovery": {

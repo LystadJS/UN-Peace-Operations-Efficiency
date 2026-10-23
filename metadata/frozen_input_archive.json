@@ -149,6 +149,11 @@
       "sha256": "d734e69c9da2bb2156c359c3796d68596c3228e6c5831beb7f2230ac3498d4ce"
     },
     {
+      "path": "docs/desired_end_state.md",
+      "archive_path": "history/pre_controls/docs/desired_end_state.md",
+      "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe"
+    },
+    {
       "path": "metadata/master_issue_schema.json",
       "archive_path": "history/pre_controls/metadata/master_issue_schema.json",
       "sha256": "577a3f97de8de40ce9c8f9ec2546eb625e2245955f2f695a4e71d46488503496"

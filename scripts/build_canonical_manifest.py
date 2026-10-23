@@ -189,7 +189,8 @@ def main():
             target.parent.mkdir(parents=True, exist_ok=True); target.write_text(text)
         elif not target.is_file() or target.read_text() != text:
             raise SystemExit('FAIL: canonical output drift: ' + path)
-    print('PASS: canonical manifest and release index; 586 baseline artifacts and 32 archived controls')
+    archived_count = len(json.loads((ROOT / 'metadata/frozen_input_archive.json').read_text())['files'])
+    print(f'PASS: canonical manifest and release index; 586 baseline artifacts and {archived_count} archived controls')
 
 
 if __name__ == '__main__':

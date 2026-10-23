@@ -4932,9 +4932,12 @@
       "currency": "CURRENT",
       "scope": "designated project control role",
       "designation_basis": "F01-A07 project control task designation",
-      "hash_mode": "immutable_sha256",
-      "sha256": "b5c0b138fbe4e6e04f2d79fd8649ff36d085389c606a64b24682ad1e297462a0",
-      "frozen_baseline": null,
+      "hash_mode": "mutable_control_with_archived_baseline",
+      "sha256": null,
+      "frozen_baseline": {
+        "archive_path": "history/pre_controls/docs/desired_end_state.md",
+        "sha256": "7eb5ef14846b79e23ba6d9d2205123720a20b74ccc6a321c4244f81c5f6ddabe"
+      },
       "hash_observation": "A07 working implementation; baseline commit defines population, not all observed bytes"
     },
     {

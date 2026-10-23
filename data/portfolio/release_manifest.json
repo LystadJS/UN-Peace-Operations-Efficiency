@@ -1429,8 +1429,8 @@
     },
     {
       "path": "metadata/canonical_manifest.json",
-      "sha256": "6e05d5743c4c9d456bf44476a2155d2b09d65c6bd27ce88732ec78a46de2f29c",
-      "bytes": 374456
+      "sha256": "f9ec003b1634e416a3d32087909cfe3e1eee029d91f4f54e5dcb522e326c13cd",
+      "bytes": 374580
     },
     {
       "path": "metadata/ci_parity_matrix.csv",
@@ -1444,8 +1444,8 @@
     },
     {
       "path": "metadata/frozen_input_archive.json",
-      "sha256": "e674f0cc7984a5e0550072e69d61052710ff1167d4a86f43403eb4f8cb4ec712",
-      "bytes": 7797
+      "sha256": "85bc603045284c9a54ce4227f83f6babc438c8bc2fe12198c1e4141dbbeb0edd",
+      "bytes": 8008
     },
     {
       "path": "metadata/issue_migration_receipt.json",
@@ -1569,8 +1569,8 @@
     },
     {
       "path": "scripts/build_canonical_manifest.py",
-      "sha256": "f607fc00606a79e96c48826315cce8d3795236a87ba0454b72175dd9937f3db4",
-      "bytes": 14926
+      "sha256": "5b600a1a265d73e7139f2d92c5d8330336fe5ceac2e1e0080335ab3f117b8ac4",
+      "bytes": 15046
     },
     {
       "path": "scripts/build_dataset_registry.py",

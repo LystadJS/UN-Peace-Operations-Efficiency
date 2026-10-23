@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff": "2026-10-23",
+  "source_hashes": {
+    "data/reforms/unga80_actions.json": "5493841ed60ba9ea5cea21bb67169b7d8a53ea2cc7ebd2f3312da9590cee03d5",
+    "data/reforms/unga81_actions.json": "0389167d35466634df3ad0bc00a1afd56b1a630fcadd96269282efd3b512ae5d",
+    "data/reforms/unga80_instruments.json": "3bcd0cfb3155a04640b18136ff34262fa62fcb4520b573b287faaadb5226aa67",
+    "data/reforms/unga81_instruments.json": "d7b90a6bda806b624146a967e5948303609202f75f9fe749de82c405a310cadf",
+    "data/reforms/acabq_recommendations.json": "b7c48ac1086b3404c16c2d4e0faae8a38a3229945b3efcdc7bcd69413cc1ac19",
+    "data/reforms/sg_proposals.json": "fd81bbe338a5d46ce42671db2b6179eed513802f1dbfed4fb49e8f3cf6de1daf",
+    "data/reforms/un80_arrangement_reconciliation.json": "923cba2ad61aa64a938bffcc0c0af9588ca1f090d04acc336b16f21a50469e26",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/reforms/compliance_statuses.json": "ac38b35fd0ec91c5ccd4b9199f37a3a7b7297d41714e56d0b3ac8e9b0aef2331",
+    "data/reforms/obligation_schema.json": "ca80d4bc5df59efc50018109c0cf3a79d3ee274910c053c031c1ff9307774830"
+  },
+  "scope": "Selected extracted provisions and retained proposal/advice records, not exhaustive session or mission compliance coverage.",
+  "limitations": [
+    "Selected provisions are not automatically mandatory requirements applicable to every peace operation.",
+    "Documentary adoption and repository publication do not establish implementation, owner approval or financial benefit."
+  ],
+  "release_id": "R18-PARTIAL-REFORM-BASELINE-1",
+  "release_class": "PARTIAL_PUBLIC_RESEARCH_BASELINE",
+  "extracted_provision_count": 65,
+  "operative_effect_counts": {
+    "DIRECTION": 33,
+    "REQUEST": 32
+  },
+  "compliance_declarations": {
+    "EVIDENCE_MISSING": 62,
+    "NOT_YET_DUE": 3
+  },
+  "verified_compliance_findings": 0,
+  "verified_incremental_savings": null,
+  "ga81_action_extraction": "BLOCKED_PENDING_IN_SCOPE_ADOPTED_TEXT_VERIFICATION",
+  "retained_sg_or_arrangement_records": 11,
+  "retained_acabq_recommendations": 48,
+  "review_receipt": "docs/reform_independent_review.md",
+  "review_scope_rule": "Separate-agent review must state which primary sources were independently inspected; generator does not certify review completion.",
+  "supersession_rule": "Refresh requires new source hashes and explicit changed provision/adoption/applicability dispositions; does not supersede institutional instruments.",
+  "completion_gate": "NOT_A_COMPLETE_COMPLIANCE_OR_OPERATIONAL_ADJUDICATION"
+}

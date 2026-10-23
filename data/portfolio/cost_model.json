@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "design_task": "P11",
+  "status": "DECLARED_COST_SCENARIO_MODEL_NOT_FINDING",
+  "formula": "baseline external UN cost minus intervention external UN cost",
+  "amount_encoding": "Finite decimal strings in currency units; unknown amount null with missing_reason; never binary floats.",
+  "scenario_fields": [
+    "period_start",
+    "period_end",
+    "currency",
+    "unit",
+    "financial_status",
+    "price_basis",
+    "cost_view",
+    "service_definition",
+    "required_output",
+    "entity_scope",
+    "adjustment_receipts",
+    "coverage",
+    "costs"
+  ],
+  "coverage_fields": [
+    "all_affected_entities",
+    "all_cost_components",
+    "receipt",
+    "omitted_components"
+  ],
+  "cost_fields": [
+    "record_id",
+    "cost_object_id",
+    "component_id",
+    "entity_id",
+    "role",
+    "economic_boundary",
+    "amount",
+    "source_receipt",
+    "included_in",
+    "internal_pair_id"
+  ],
+  "cost_roles": [
+    "RETAINED_SOURCE",
+    "RECEIVING_PROVIDER",
+    "TRANSITION_IMPLEMENTATION",
+    "ONGOING_COMPLIANCE",
+    "RESIDUAL_LIABILITY",
+    "OTHER_EXTERNAL"
+  ],
+  "economic_boundaries": [
+    "EXTERNAL_COST",
+    "INTERNAL_CHARGE",
+    "INTERNAL_RECOVERY"
+  ],
+  "sign_convention": "External charges positive and authenticated external credits negative; internal payer charge nonnegative, provider recovery nonpositive.",
+  "internal_elimination": "Every internal_pair_id has exactly one equal-and-opposite charge/recovery, distinct counterpart entities, and a transfer_id; remove both entries once. External provider expenditure remains.",
+  "component_rule": "Unique cost_object_id plus component_id within each scenario; included parent and child cannot both enter totals.",
+  "coverage_rule": "Both scenarios explicitly attest all affected entities and full components with a receipt, no omitted components; zero requires a source receipt.",
+  "counterfactual_required": [
+    "frozen",
+    "baseline_version",
+    "receipt",
+    "feasible",
+    "confounder_review_receipt",
+    "prebooked_included",
+    "prebooked_receipt"
+  ],
+  "benefit_classes_separate": [
+    "CAPACITY_GAIN",
+    "RECOVERY",
+    "COST_AVOIDANCE",
+    "CONTROL_IMPROVEMENT"
+  ],
+  "recognition": "Calculator produces unvalidated scenario differences only. No candidate promotion, cashable classification or realized-savings recognition.",
+  "unimplemented_scope": [
+    "Discounting, multi-period schedules and cash/accrual reconciliation require separate reviewed models.",
+    "Aggregation across cases requires benefit-pool and scenario compatibility receipts."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "design_task": "P14",
+  "status": "ILLUSTRATIVE_WEIGHT_STRESS_DESIGN_NOT_APPROVED_RANKING",
+  "empirical_findings": [],
+  "approved_weight_vector": null,
+  "illustrative_vectors": [
+    {
+      "id": "equal_design",
+      "weights": {
+        "evidence_readiness": "0.2",
+        "operational_importance": "0.2",
+        "reform_relevance": "0.2",
+        "feasibility": "0.2",
+        "measurement_value": "0.2"
+      }
+    },
+    {
+      "id": "operations_design",
+      "weights": {
+        "evidence_readiness": "0.2",
+        "operational_importance": "0.4",
+        "reform_relevance": "0.1",
+        "feasibility": "0.2",
+        "measurement_value": "0.1"
+      }
+    },
+    {
+      "id": "evidence_design",
+      "weights": {
+        "evidence_readiness": "0.4",
+        "operational_importance": "0.2",
+        "reform_relevance": "0.1",
+        "feasibility": "0.1",
+        "measurement_value": "0.2"
+      }
+    }
+  ],
+  "required_outputs": [
+    "Scores and rank interval under every approved vector.",
+    "Pairwise reversals and ties, preserving precision.",
+    "Unscorable cases and failed safeguards.",
+    "One-at-a-time cost sensitivity for demand, utilization, transition duration, unit price and residual liabilities.",
+    "Inputs, missingness and reviewer approval receipts."
+  ],
+  "interpretation": "Rank reversal indicates preference dependence; stability does not establish causal truth, authority or benefit realization.",
+  "missing_input_rule": "Do not impute scores or use budget size as an opportunity proxy. No ranking can be calculated from this design file alone."
+}

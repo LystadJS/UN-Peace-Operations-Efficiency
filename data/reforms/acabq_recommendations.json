@@ -1,0 +1,3355 @@
+{
+  "schema_version": "1.0",
+  "register_id": "R07-RETAINED-ACABQ-2027",
+  "evidence_cutoff": "2026-10-08",
+  "assembly_date": "2026-10-23",
+  "verification_scope": "DETERMINISTIC_REPACKAGING_OF_REPOSITORY_EXTRACTIONS_NOT_FRESH_OFFICIAL_TEXT_REVIEW",
+  "source_receipts": {
+    "data/acabq_2027_financial_actions.csv": {
+      "sha256": "692a58a742cd4a3a3564baa999bb73ec4c9fce6733955b762cb213481cf710c8",
+      "row_count": 12
+    },
+    "data/acabq_2027_qualitative_directives.csv": {
+      "sha256": "2a4164086b3190e6a5da65fb7efb3b66d2d2b5c72f26cce0a4a73b9b9a1f3b18",
+      "row_count": 20
+    },
+    "data/acabq_2027_main_crosscutting_framework.csv": {
+      "sha256": "87953a85e45aff3532214c3ddb1d9b33a5e18e3893bd4896f216e97ccc53d8af",
+      "row_count": 16
+    },
+    "data/acabq_2027_mission_reconciliation.csv": {
+      "sha256": "7c43125678001d2d913d5b0a3f52a85301f04f17d65ac74edc9a529a4b44669e",
+      "row_count": 36
+    },
+    "data/acabq_2027_source_manifest.csv": {
+      "sha256": "06602ec32b75d0ba5cab5fceec5c7231e40e452d9ff46272712bc1accc8829a4",
+      "row_count": 3
+    },
+    "data/acabq_2027_report_status.csv": {
+      "sha256": "7d29f676f0031154f656560eea1b9c9cd6368ea72d55568935c57edf3abb235e",
+      "row_count": 5
+    },
+    "data/acabq_2027_unissued_report_scope.csv": {
+      "sha256": "eee3587829fd686fe712de7147b7a9ed953d2bb9eeba55eb93bb8c9256fae9f0",
+      "row_count": 2
+    }
+  },
+  "coverage": {
+    "mission_population": 36,
+    "numerical_advice_reviewed": 27,
+    "mission_advice_unreviewed": 9,
+    "rsce_spm_advice": "NOT_REVIEWED",
+    "full_spm_advice_adjusted_total": null,
+    "recommendation_records": 48,
+    "record_kinds": {
+      "crosscutting": 16,
+      "financial": 12,
+      "qualitative": 20
+    }
+  },
+  "advisory_adjustment_controls": {
+    "unit": "USD_THOUSANDS",
+    "period": "CALENDAR_2027",
+    "by_disjoint_perimeter": {
+      "SECTION_3_NON_SPM": "-189.3",
+      "SECTION_5_REGULAR": "-26.7",
+      "SPM_CLUSTER_1": "-182.5"
+    },
+    "controls_are_not_additional_records": true,
+    "complete_un_or_peacekeeping_adjustment": false,
+    "savings_finding": false
+  },
+  "recommendations": [
+    {
+      "recommendation_id": "ACABQ-A001",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "30",
+      "scope": "SPM005",
+      "action_paraphrase": "Official travel for suspended Incident Prevention and Response Mechanism; reduction 10% of $47,900",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-4.8",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SPM_CLUSTER_1",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 2,
+        "row_key": {
+          "action_id": "A001"
+        },
+        "source_snapshot": {
+          "action_id": "A001",
+          "financial_perimeter": "SPM_CLUSTER_1",
+          "entity_id": "SPM005",
+          "entity": "Geneva International Discussions",
+          "cost_category": "travel",
+          "acabq_minus_sg_usd_thousands": "-4.8",
+          "source_document": "A/81/7/Add.2",
+          "paragraph": "30",
+          "source_pdf_page": "13_and_16",
+          "recommendation_detail": "Official travel for suspended Incident Prevention and Response Mechanism; reduction 10% of $47,900",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A002",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "21",
+      "scope": "SPM006",
+      "action_paraphrase": "Reject SG proposed D-1 to P-5 Chief of Staff reclassification at present stage",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "34.1",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SPM_CLUSTER_1",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 3,
+        "row_key": {
+          "action_id": "A002"
+        },
+        "source_snapshot": {
+          "action_id": "A002",
+          "financial_perimeter": "SPM_CLUSTER_1",
+          "entity_id": "SPM006",
+          "entity": "Syria Special Envoy",
+          "cost_category": "international_staff",
+          "acabq_minus_sg_usd_thousands": "34.1",
+          "source_document": "A/81/7/Add.2",
+          "paragraph": "21",
+          "source_pdf_page": "9_and_16",
+          "recommendation_detail": "Reject SG proposed D-1 to P-5 Chief of Staff reclassification at present stage",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A003",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "31",
+      "scope": "SPM006",
+      "action_paraphrase": "Reduce nonrecurrent $2,433,700 Syria relocation works by 5%; not confirmed actual relocation savings",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-121.7",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SPM_CLUSTER_1",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 4,
+        "row_key": {
+          "action_id": "A003"
+        },
+        "source_snapshot": {
+          "action_id": "A003",
+          "financial_perimeter": "SPM_CLUSTER_1",
+          "entity_id": "SPM006",
+          "entity": "Syria Special Envoy",
+          "cost_category": "facilities_infrastructure",
+          "acabq_minus_sg_usd_thousands": "-121.7",
+          "source_document": "A/81/7/Add.2",
+          "paragraph": "31",
+          "source_pdf_page": "14_and_16",
+          "recommendation_detail": "Reduce nonrecurrent $2,433,700 Syria relocation works by 5%; not confirmed actual relocation savings",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A004",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "32",
+      "scope": "SPM009",
+      "action_paraphrase": "Reduce flight-hours requirement by 5%; preserve operational readiness and evacuation capacity",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-90.1",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SPM_CLUSTER_1",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 5,
+        "row_key": {
+          "action_id": "A004"
+        },
+        "source_snapshot": {
+          "action_id": "A004",
+          "financial_perimeter": "SPM_CLUSTER_1",
+          "entity_id": "SPM009",
+          "entity": "Yemen Special Envoy",
+          "cost_category": "air_operations",
+          "acabq_minus_sg_usd_thousands": "-90.1",
+          "source_document": "A/81/7/Add.2",
+          "paragraph": "32",
+          "source_pdf_page": "14_and_16",
+          "recommendation_detail": "Reduce flight-hours requirement by 5%; preserve operational readiness and evacuation capacity",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A005",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.18",
+      "scope": "DPPA",
+      "action_paraphrase": "Reduce $119,600 consultant budget by 10%",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-12",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 6,
+        "row_key": {
+          "action_id": "A005"
+        },
+        "source_snapshot": {
+          "action_id": "A005",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "DPPA",
+          "entity": "Political Affairs/DPPA",
+          "cost_category": "consultants",
+          "acabq_minus_sg_usd_thousands": "-12",
+          "source_document": "A/81/7",
+          "paragraph": "II.18",
+          "source_pdf_page": "119",
+          "recommendation_detail": "Reduce $119,600 consultant budget by 10%",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A006",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.29_b",
+      "scope": "UNSCO",
+      "action_paraphrase": "Do not establish proposed P-5 Senior Peacebuilding Officer Jerusalem; separate Gaza P-5 not rejected",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-160.5",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 7,
+        "row_key": {
+          "action_id": "A006"
+        },
+        "source_snapshot": {
+          "action_id": "A006",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "UNSCO",
+          "entity": "UN Special Coordinator for Middle East Peace Process",
+          "cost_category": "P5_post",
+          "acabq_minus_sg_usd_thousands": "-160.5",
+          "source_document": "A/81/7",
+          "paragraph": "II.29_b",
+          "source_pdf_page": "123_to_125_and_136",
+          "recommendation_detail": "Do not establish proposed P-5 Senior Peacebuilding Officer Jerusalem; separate Gaza P-5 not rejected",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A007",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.29_b",
+      "scope": "UNSCO",
+      "action_paraphrase": "Related nonpost cost associated with rejected P-5",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-12",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 8,
+        "row_key": {
+          "action_id": "A007"
+        },
+        "source_snapshot": {
+          "action_id": "A007",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "UNSCO",
+          "entity": "UN Special Coordinator for Middle East Peace Process",
+          "cost_category": "contractual_services",
+          "acabq_minus_sg_usd_thousands": "-12",
+          "source_document": "A/81/7",
+          "paragraph": "II.29_b",
+          "source_pdf_page": "136",
+          "recommendation_detail": "Related nonpost cost associated with rejected P-5",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A008",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.29_b",
+      "scope": "UNSCO",
+      "action_paraphrase": "Related nonpost cost associated with rejected P-5",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-1.6",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 9,
+        "row_key": {
+          "action_id": "A008"
+        },
+        "source_snapshot": {
+          "action_id": "A008",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "UNSCO",
+          "entity": "UN Special Coordinator for Middle East Peace Process",
+          "cost_category": "general_operating_expenses",
+          "acabq_minus_sg_usd_thousands": "-1.6",
+          "source_document": "A/81/7",
+          "paragraph": "II.29_b",
+          "source_pdf_page": "136",
+          "recommendation_detail": "Related nonpost cost associated with rejected P-5",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A009",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.29_b",
+      "scope": "UNSCO",
+      "action_paraphrase": "Related nonpost cost associated with rejected P-5",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-0.1",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 10,
+        "row_key": {
+          "action_id": "A009"
+        },
+        "source_snapshot": {
+          "action_id": "A009",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "UNSCO",
+          "entity": "UN Special Coordinator for Middle East Peace Process",
+          "cost_category": "supplies_materials",
+          "acabq_minus_sg_usd_thousands": "-0.1",
+          "source_document": "A/81/7",
+          "paragraph": "II.29_b",
+          "source_pdf_page": "136",
+          "recommendation_detail": "Related nonpost cost associated with rejected P-5",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A010",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.29_b",
+      "scope": "UNSCO",
+      "action_paraphrase": "Related nonpost cost associated with rejected P-5",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-3.1",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_3_NON_SPM",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 11,
+        "row_key": {
+          "action_id": "A010"
+        },
+        "source_snapshot": {
+          "action_id": "A010",
+          "financial_perimeter": "SECTION_3_NON_SPM",
+          "entity_id": "UNSCO",
+          "entity": "UN Special Coordinator for Middle East Peace Process",
+          "cost_category": "furniture_equipment",
+          "acabq_minus_sg_usd_thousands": "-3.1",
+          "source_document": "A/81/7",
+          "paragraph": "II.29_b",
+          "source_pdf_page": "136",
+          "recommendation_detail": "Related nonpost cost associated with rejected P-5",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A011",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.153",
+      "scope": "UNMOGIP",
+      "action_paraphrase": "Against two Field Service to P-3 reclassifications; not post abolishment",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-18.2",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_5_REGULAR",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 12,
+        "row_key": {
+          "action_id": "A011"
+        },
+        "source_snapshot": {
+          "action_id": "A011",
+          "financial_perimeter": "SECTION_5_REGULAR",
+          "entity_id": "UNMOGIP",
+          "entity": "UN Military Observer Group India and Pakistan",
+          "cost_category": "international_staff",
+          "acabq_minus_sg_usd_thousands": "-18.2",
+          "source_document": "A/81/7",
+          "paragraph": "II.153",
+          "source_pdf_page": "154_and_156",
+          "recommendation_detail": "Against two Field Service to P-3 reclassifications; not post abolishment",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-A012",
+      "record_kind": "financial",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.158",
+      "scope": "UNMOGIP",
+      "action_paraphrase": "Reduce non-operational travel for training and conference use by 10%",
+      "financial_effect": {
+        "classification": "ADVISORY_BUDGET_ADJUSTMENT",
+        "amount": "-8.5",
+        "unit": "USD_THOUSANDS",
+        "period": "CALENDAR_2027",
+        "perimeter": "SECTION_5_REGULAR",
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_financial_actions.csv",
+        "csv_line": 13,
+        "row_key": {
+          "action_id": "A012"
+        },
+        "source_snapshot": {
+          "action_id": "A012",
+          "financial_perimeter": "SECTION_5_REGULAR",
+          "entity_id": "UNMOGIP",
+          "entity": "UN Military Observer Group India and Pakistan",
+          "cost_category": "staff_travel_training",
+          "acabq_minus_sg_usd_thousands": "-8.5",
+          "source_document": "A/81/7",
+          "paragraph": "II.158",
+          "source_pdf_page": "155_and_156",
+          "recommendation_detail": "Reduce non-operational travel for training and conference use by 10%",
+          "approval_stage": "recommendation_not_adopted",
+          "financial_effect_characterization": "advisory_budget_change_not_realized_saving",
+          "not_mission_consolidation_saving": "yes",
+          "fiscal_2027": "calendar_year",
+          "review_date": "2026-10-08"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q001",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "7_9",
+      "scope": "cluster_I",
+      "action_paraphrase": "Review co-located offices and potential envoys consolidation; 2027 SG proposal did not offer mission mergers",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 2,
+        "row_key": {
+          "directive_id": "Q001"
+        },
+        "source_snapshot": {
+          "directive_id": "Q001",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "7_9",
+          "scope_id": "cluster_I",
+          "function": "Regional envoys and their DPPA/RC relationships",
+          "committee_position": "Review co-located offices and potential envoys consolidation; 2027 SG proposal did not offer mission mergers",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C01;C02;C09",
+          "classification": "new_evidence_supports_public_function_assessment",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q002",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "10_11_21",
+      "scope": "SPM006",
+      "action_paraphrase": "Review Damascus versus Geneva localization, structure and staffing after negotiations",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 3,
+        "row_key": {
+          "directive_id": "Q002"
+        },
+        "source_snapshot": {
+          "directive_id": "Q002",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "10_11_21",
+          "scope_id": "SPM006",
+          "function": "Syria mission footprint",
+          "committee_position": "Review Damascus versus Geneva localization, structure and staffing after negotiations",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C07",
+          "classification": "implementation_conditional_on_security_and_host_agreement",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q003",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "12",
+      "scope": "cluster_I",
+      "action_paraphrase": "Seek possible nationalization in 2028 proposals when operationally appropriate",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 4,
+        "row_key": {
+          "directive_id": "Q003"
+        },
+        "source_snapshot": {
+          "directive_id": "Q003",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "12",
+          "scope_id": "cluster_I",
+          "function": "Nationalization of posts",
+          "committee_position": "Seek possible nationalization in 2028 proposals when operationally appropriate",
+          "mandate_or_priority_risk": "medium",
+          "linked_candidates": "C07",
+          "classification": "feasibility_and_mandate_safeguard_required",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q004",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "20",
+      "scope": "SPM005",
+      "action_paraphrase": "Convert new GS administrative post to general temporary assistance in 2027; same estimated cost; assess common administrative platform",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 5,
+        "row_key": {
+          "directive_id": "Q004"
+        },
+        "source_snapshot": {
+          "directive_id": "Q004",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "20",
+          "scope_id": "SPM005",
+          "function": "Geneva dialogue administrative function",
+          "committee_position": "Convert new GS administrative post to general temporary assistance in 2027; same estimated cost; assess common administrative platform",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16",
+          "classification": "cost_neutral_reclassification_not_additional_saving",
+          "estimated_incremental_savings": "0_change",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q005",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "21",
+      "scope": "SPM006",
+      "action_paraphrase": "Against D1-to-P5 at this stage pending wider review",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 6,
+        "row_key": {
+          "directive_id": "Q005"
+        },
+        "source_snapshot": {
+          "directive_id": "Q005",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "21",
+          "scope_id": "SPM006",
+          "function": "Syria leadership grading",
+          "committee_position": "Against D1-to-P5 at this stage pending wider review",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C01",
+          "classification": "higher_budget_recommended_for_2027_not_efficiency",
+          "estimated_incremental_savings": "plus_34.1k",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q006",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "23",
+      "scope": "SPM009",
+      "action_paraphrase": "Review transferred posts and backstopping when liquidation stabilizes",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 7,
+        "row_key": {
+          "directive_id": "Q006"
+        },
+        "source_snapshot": {
+          "directive_id": "Q006",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "23",
+          "scope_id": "SPM009",
+          "function": "Yemen mission/UNMHA residual services",
+          "committee_position": "Review transferred posts and backstopping when liquidation stabilizes",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C07",
+          "classification": "existing_approved_transfer_not_new_mandate_consolidation",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q007",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "24_25",
+      "scope": "cluster_I",
+      "action_paraphrase": "59 abolished under 2026; 39 vacant as of June 2026; monitor for repurpose with mandate protection",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 8,
+        "row_key": {
+          "directive_id": "Q007"
+        },
+        "source_snapshot": {
+          "directive_id": "Q007",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "24_25",
+          "scope_id": "cluster_I",
+          "function": "Long vacant posts and prior abolished posts",
+          "committee_position": "59 abolished under 2026; 39 vacant as of June 2026; monitor for repurpose with mandate protection",
+          "mandate_or_priority_risk": "medium",
+          "linked_candidates": "C01;C07",
+          "classification": "prior_abolishments_and_liquidity_freeze_not_new_cut",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q008",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.2",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "paragraph_locator": "30_31_32",
+      "scope": "cluster_I",
+      "action_paraphrase": "2027 SG proposals adjusted by precise amounts in action ledger",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 9,
+        "row_key": {
+          "directive_id": "Q008"
+        },
+        "source_snapshot": {
+          "directive_id": "Q008",
+          "report_symbol": "A/81/7/Add.2",
+          "paragraphs": "30_31_32",
+          "scope_id": "cluster_I",
+          "function": "Travel premises aviation reductions",
+          "committee_position": "2027 SG proposals adjusted by precise amounts in action ledger",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C07",
+          "classification": "advisory_sums_minus_216.6k_costs_plus_34.1k",
+          "estimated_incremental_savings": "net_minus_182.5k",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q009",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.3",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "paragraph_locator": "4_5",
+      "scope": "cluster_II",
+      "action_paraphrase": "Member States rejected substantive CTED integration; preserve independent analysis separate UNOCT and UNODC assistance",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 10,
+        "row_key": {
+          "directive_id": "Q009"
+        },
+        "source_snapshot": {
+          "directive_id": "Q009",
+          "report_symbol": "A/81/7/Add.3",
+          "paragraphs": "4_5",
+          "scope_id": "cluster_II",
+          "function": "Counterterrorism specialized bodies",
+          "committee_position": "Member States rejected substantive CTED integration; preserve independent analysis separate UNOCT and UNODC assistance",
+          "mandate_or_priority_risk": "critical",
+          "linked_candidates": "C17",
+          "classification": "negative_control_no_legal_merger",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q010",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.3",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "paragraph_locator": "8_9",
+      "scope": "cluster_II",
+      "action_paraphrase": "Four experts reduced in 2026 across panels, home-based support expansion; seek workload analysis",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 11,
+        "row_key": {
+          "directive_id": "Q010"
+        },
+        "source_snapshot": {
+          "directive_id": "Q010",
+          "report_symbol": "A/81/7/Add.3",
+          "paragraphs": "8_9",
+          "scope_id": "cluster_II",
+          "function": "Sanctions panel staffing and bases",
+          "committee_position": "Four experts reduced in 2026 across panels, home-based support expansion; seek workload analysis",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16;C02",
+          "classification": "already_prior_staff_reductions_not_new",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q011",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.3",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "paragraph_locator": "17",
+      "scope": "SPM020",
+      "action_paraphrase": "16 support staff for 8 experts; assess work and vacancy repurpose while retaining obligations",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 12,
+        "row_key": {
+          "directive_id": "Q011"
+        },
+        "source_snapshot": {
+          "directive_id": "Q011",
+          "report_symbol": "A/81/7/Add.3",
+          "paragraphs": "17",
+          "scope_id": "SPM020",
+          "function": "Analytical Sanctions Monitoring Team support",
+          "committee_position": "16 support staff for 8 experts; assess work and vacancy repurpose while retaining obligations",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16",
+          "classification": "supports_shared_admin_review_not_subject_matter_merger",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q012",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.3",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "paragraph_locator": "22",
+      "scope": "cluster_II",
+      "action_paraphrase": "239.1 budgeted expert months unused in 2025; assess forecasting/appointment drivers; cannot treat underuse as savings",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 13,
+        "row_key": {
+          "directive_id": "Q012"
+        },
+        "source_snapshot": {
+          "directive_id": "Q012",
+          "report_symbol": "A/81/7/Add.3",
+          "paragraphs": "22",
+          "scope_id": "cluster_II",
+          "function": "Expert-month delayed deployment",
+          "committee_position": "239.1 budgeted expert months unused in 2025; assess forecasting/appointment drivers; cannot treat underuse as savings",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16",
+          "classification": "liquidity_delays_mandate_damage_not_efficiency",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q013",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7/Add.3",
+      "official_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "paragraph_locator": "25_26",
+      "scope": "SPM025",
+      "action_paraphrase": "Mandate extension and appointments were uncertain when report prepared; actual 2027 duty may vary",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 14,
+        "row_key": {
+          "directive_id": "Q013"
+        },
+        "source_snapshot": {
+          "directive_id": "Q013",
+          "report_symbol": "A/81/7/Add.3",
+          "paragraphs": "25_26",
+          "scope_id": "SPM025",
+          "function": "Iran panel authorization",
+          "committee_position": "Mandate extension and appointments were uncertain when report prepared; actual 2027 duty may vary",
+          "mandate_or_priority_risk": "critical",
+          "linked_candidates": "C17",
+          "classification": "requires_security_council_verification_not_budget_cut",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q014",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.7_I.10",
+      "scope": "crosscutting",
+      "action_paraphrase": "Develop centralized verified effectiveness/savings registry distinguishing liquidity cuts and structural gains",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 15,
+        "row_key": {
+          "directive_id": "Q014"
+        },
+        "source_snapshot": {
+          "directive_id": "Q014",
+          "report_symbol": "A/81/7",
+          "paragraphs": "I.7_I.10",
+          "scope_id": "crosscutting",
+          "function": "UN80 efficiency reporting",
+          "committee_position": "Develop centralized verified effectiveness/savings registry distinguishing liquidity cuts and structural gains",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16;C01",
+          "classification": "source_quality_and_measurement_public_priority",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q015",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.68_I.69",
+      "scope": "crosscutting",
+      "action_paraphrase": "No Secretariat activity-based training cost system; assess centrally and shared provision with outcome measures",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 16,
+        "row_key": {
+          "directive_id": "Q015"
+        },
+        "source_snapshot": {
+          "directive_id": "Q015",
+          "report_symbol": "A/81/7",
+          "paragraphs": "I.68_I.69",
+          "scope_id": "crosscutting",
+          "function": "Training tracking and possible consolidation",
+          "committee_position": "No Secretariat activity-based training cost system; assess centrally and shared provision with outcome measures",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C04",
+          "classification": "reinforces_prioritized_training_comparison",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q016",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.79_I.93",
+      "scope": "crosscutting",
+      "action_paraphrase": "Set mandatory service baselines and common terminology; distinguish delegated strategic decisions from shared transactions",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 17,
+        "row_key": {
+          "directive_id": "Q016"
+        },
+        "source_snapshot": {
+          "directive_id": "Q016",
+          "report_symbol": "A/81/7",
+          "paragraphs": "I.79_I.93",
+          "scope_id": "crosscutting",
+          "function": "CAP shared-service delivery",
+          "committee_position": "Set mandatory service baselines and common terminology; distinguish delegated strategic decisions from shared transactions",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16",
+          "classification": "strong_public_design_guide_no_amount_avoided",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q017",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.81_I.86",
+      "scope": "crosscutting",
+      "action_paraphrase": "18 shared-service projects; location-independent functions and payroll/travel plans need common service-level metrics",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 18,
+        "row_key": {
+          "directive_id": "Q017"
+        },
+        "source_snapshot": {
+          "directive_id": "Q017",
+          "report_symbol": "A/81/7",
+          "paragraphs": "I.81_I.86",
+          "scope_id": "crosscutting",
+          "function": "Unified service roadmap/payroll/travel hubs",
+          "committee_position": "18 shared-service projects; location-independent functions and payroll/travel plans need common service-level metrics",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C16;C05",
+          "classification": "existing_reforms_not_new_merger_benefits",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q018",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.4_II.7",
+      "scope": "DPPA",
+      "action_paraphrase": "Holistic review of regional divisions, liaison, special envoys and existing capacity in field; reported peace-operations comprehensive review not in budget yet",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 19,
+        "row_key": {
+          "directive_id": "Q018"
+        },
+        "source_snapshot": {
+          "directive_id": "Q018",
+          "report_symbol": "A/81/7",
+          "paragraphs": "II.4_II.7",
+          "scope_id": "DPPA",
+          "function": "Regional DPPA/DPO and SPM interfaces",
+          "committee_position": "Holistic review of regional divisions, liaison, special envoys and existing capacity in field; reported peace-operations comprehensive review not in budget yet",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C01;C02;C09",
+          "classification": "supports_functional_crosswalk_next_phase",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q019",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.153_II.158",
+      "scope": "UNMOGIP",
+      "action_paraphrase": "Reject two reclassifications and reduce training/conference travel with operational monitoring travel protected",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 20,
+        "row_key": {
+          "directive_id": "Q019"
+        },
+        "source_snapshot": {
+          "directive_id": "Q019",
+          "report_symbol": "A/81/7",
+          "paragraphs": "II.153_II.158",
+          "scope_id": "UNMOGIP",
+          "function": "UNMOGIP grade and training travel",
+          "committee_position": "Reject two reclassifications and reduce training/conference travel with operational monitoring travel protected",
+          "mandate_or_priority_risk": "medium",
+          "linked_candidates": "C04",
+          "classification": "specific_mission_financial_change_not_all_DPO_training",
+          "estimated_incremental_savings": "minus_26.7k",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-Q020",
+      "record_kind": "qualitative",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.76_I.89",
+      "scope": "crosscutting",
+      "action_paraphrase": "Strengthen holdings and asset lifecycle and common service cost model; avoid duplicative licences",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_qualitative_directives.csv",
+        "csv_line": 21,
+        "row_key": {
+          "directive_id": "Q020"
+        },
+        "source_snapshot": {
+          "directive_id": "Q020",
+          "report_symbol": "A/81/7",
+          "paragraphs": "I.76_I.89",
+          "scope_id": "crosscutting",
+          "function": "Vehicle asset utilization and IT licensing",
+          "committee_position": "Strengthen holdings and asset lifecycle and common service cost model; avoid duplicative licences",
+          "mandate_or_priority_risk": "high",
+          "linked_candidates": "C05;C16;C12",
+          "classification": "cost_pool_unverified_new_optimization",
+          "estimated_incremental_savings": "not_costed",
+          "document_status": "source_read_from_uploaded_ACABQ_pdf",
+          "GA_decision": "not_established_in_supplied_documents"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR01",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.4",
+      "scope": "Secretariat_wide",
+      "action_paraphrase": "Committee trusts future budgets will separate actual UN80 efficiencies and liquidity cuts",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 2,
+        "row_key": {
+          "framework_id": "XR01"
+        },
+        "source_snapshot": {
+          "framework_id": "XR01",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.4",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Distinguish structural efficiency from liquidity-constrained expenditure",
+          "exact_normative_characterization": "Committee trusts future budgets will separate actual UN80 efficiencies and liquidity cuts",
+          "committee_statement_type": "expects_reporting",
+          "scope": "Secretariat_wide",
+          "operational_interpretation": "direct_public_review_basis",
+          "non_additivity_constraint": "Efficiency claims need implementation and actual net impact; unavailable from 2027 proposals alone",
+          "source_pdf_page": "15",
+          "source_url": "https://docs.un.org/en/A/81/7#page=15",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR02",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.6",
+      "scope": "Secretariat_wide",
+      "action_paraphrase": "Committee reiterates support-function consolidation and more thorough library/database reviews",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 3,
+        "row_key": {
+          "framework_id": "XR02"
+        },
+        "source_snapshot": {
+          "framework_id": "XR02",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.6",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Review fragmented human resources ICT training library and knowledge management",
+          "exact_normative_characterization": "Committee reiterates support-function consolidation and more thorough library/database reviews",
+          "committee_statement_type": "reiterates_review",
+          "scope": "Secretariat_wide",
+          "operational_interpretation": "process_comparison",
+          "non_additivity_constraint": "Shared admin/purchasing candidate only; no general mandate merger authorized",
+          "source_pdf_page": "15",
+          "source_url": "https://docs.un.org/en/A/81/7#page=15",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR03",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.7",
+      "scope": "relevant_relocations",
+      "action_paraphrase": "Committee recommends relocation cost/benefit include one-time recurring and realized savings",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 4,
+        "row_key": {
+          "framework_id": "XR03"
+        },
+        "source_snapshot": {
+          "framework_id": "XR03",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.7",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Complete cost benefit and post-implementation evaluation of duty-station relocations",
+          "exact_normative_characterization": "Committee recommends relocation cost/benefit include one-time recurring and realized savings",
+          "committee_statement_type": "formal_recommendation",
+          "scope": "relevant_relocations",
+          "operational_interpretation": "implementation_risk",
+          "non_additivity_constraint": "No positive net impact inferred from new site alone",
+          "source_pdf_page": "15",
+          "source_url": "https://docs.un.org/en/A/81/7#page=15",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR04",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.10",
+      "scope": "Secretariat_wide",
+      "action_paraphrase": "Committee recommends common criteria, status, implementation cost, realized benefit and productivity",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 5,
+        "row_key": {
+          "framework_id": "XR04"
+        },
+        "source_snapshot": {
+          "framework_id": "XR04",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.10",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Create central Secretariat-wide efficiency and delivery registry",
+          "exact_normative_characterization": "Committee recommends common criteria, status, implementation cost, realized benefit and productivity",
+          "committee_statement_type": "formal_recommendation",
+          "scope": "Secretariat_wide",
+          "operational_interpretation": "verification_methodology",
+          "non_additivity_constraint": "No registry or centrally reconciled realized savings existed as reported",
+          "source_pdf_page": "16",
+          "source_url": "https://docs.un.org/en/A/81/7#page=16",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR05",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.13",
+      "scope": "cross_fund_service_clients",
+      "action_paraphrase": "Committee expects ongoing reporting on comparability and staffing/recosting treatment",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 6,
+        "row_key": {
+          "framework_id": "XR05"
+        },
+        "source_snapshot": {
+          "framework_id": "XR05",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.13",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Harmonize funding methodology across regular and peacekeeping accounts",
+          "exact_normative_characterization": "Committee expects ongoing reporting on comparability and staffing/recosting treatment",
+          "committee_statement_type": "expects_reporting",
+          "scope": "cross_fund_service_clients",
+          "operational_interpretation": "accounting_guardrail",
+          "non_additivity_constraint": "Annual SPM and July/June assessed mission shares non-additive",
+          "source_pdf_page": "17",
+          "source_url": "https://docs.un.org/en/A/81/7#page=17",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR06",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.14",
+      "scope": "Secretariat_wide",
+      "action_paraphrase": "Committee reiterates organization chart recommendation",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 7,
+        "row_key": {
+          "framework_id": "XR06"
+        },
+        "source_snapshot": {
+          "framework_id": "XR06",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.14",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Publish comprehensive org charts with heads reporting lines and staffing units",
+          "exact_normative_characterization": "Committee reiterates organization chart recommendation",
+          "committee_statement_type": "reiterates_review",
+          "scope": "Secretariat_wide",
+          "operational_interpretation": "organizational_evidence_gate",
+          "non_additivity_constraint": "No post is redundant from similar office name alone",
+          "source_pdf_page": "18",
+          "source_url": "https://docs.un.org/en/A/81/7#page=18",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR07",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.40",
+      "scope": "mission_leadership_changes",
+      "action_paraphrase": "Committee expects systematic senior management review for 2028 submissions",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 8,
+        "row_key": {
+          "framework_id": "XR07"
+        },
+        "source_snapshot": {
+          "framework_id": "XR07",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.40",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Review senior management span and grading as whole-of-organization design",
+          "exact_normative_characterization": "Committee expects systematic senior management review for 2028 submissions",
+          "committee_statement_type": "expects_review",
+          "scope": "mission_leadership_changes",
+          "operational_interpretation": "workforce_guardrail",
+          "non_additivity_constraint": "One-time grade reductions in 2027 proposal not additional future savings",
+          "source_pdf_page": "47",
+          "source_url": "https://docs.un.org/en/A/81/7#page=47",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR08",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.68-I.69",
+      "scope": "missions_with_workshops",
+      "action_paraphrase": "Committee emphasizes lack of activity-based training costing and potential common provision",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 9,
+        "row_key": {
+          "framework_id": "XR08"
+        },
+        "source_snapshot": {
+          "framework_id": "XR08",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.68-I.69",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Track training cost and performance by activity",
+          "exact_normative_characterization": "Committee emphasizes lack of activity-based training costing and potential common provision",
+          "committee_statement_type": "reiterates_review",
+          "scope": "missions_with_workshops",
+          "operational_interpretation": "procurement_opportunity",
+          "non_additivity_constraint": "Same numbers of workshop days do not establish same curriculum or costs",
+          "source_pdf_page": "62",
+          "source_url": "https://docs.un.org/en/A/81/7#page=62",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR09",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.72-I.76",
+      "scope": "missions_with_assets_or_fleet",
+      "action_paraphrase": "Committee recommends inventories utilization replacement and disposal reporting",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 10,
+        "row_key": {
+          "framework_id": "XR09"
+        },
+        "source_snapshot": {
+          "framework_id": "XR09",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.72-I.76",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Improve ICT licences and vehicle/property lifecycle and redeployment",
+          "exact_normative_characterization": "Committee recommends inventories utilization replacement and disposal reporting",
+          "committee_statement_type": "formal_recommendation",
+          "scope": "missions_with_assets_or_fleet",
+          "operational_interpretation": "asset_control",
+          "non_additivity_constraint": "Existing prebudgeted transfers not countable again as new efficiency",
+          "source_pdf_page": "72",
+          "source_url": "https://docs.un.org/en/A/81/7#page=72",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR10",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.79-I.83",
+      "scope": "missions_using_shared_services",
+      "action_paraphrase": "Committee calls for coherent multi-provider service architecture and comparable cost and workload",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 11,
+        "row_key": {
+          "framework_id": "XR10"
+        },
+        "source_snapshot": {
+          "framework_id": "XR10",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.79-I.83",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Use comparable baseline shared service costs productivity and client service quality",
+          "exact_normative_characterization": "Committee calls for coherent multi-provider service architecture and comparable cost and workload",
+          "committee_statement_type": "reiterates_review",
+          "scope": "missions_using_shared_services",
+          "operational_interpretation": "service_comparability",
+          "non_additivity_constraint": "Require uniquely costed eligible pools before merger recommendation",
+          "source_pdf_page": "75",
+          "source_url": "https://docs.un.org/en/A/81/7#page=75",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR11",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.84-I.86",
+      "scope": "all_potential_shared_service_clients",
+      "action_paraphrase": "Committee describes existing payroll migration and seven-hub travel direction; requests KPI reporting",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 12,
+        "row_key": {
+          "framework_id": "XR11"
+        },
+        "source_snapshot": {
+          "framework_id": "XR11",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.84-I.86",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Monitor existing global payroll and travel service consolidation",
+          "exact_normative_characterization": "Committee describes existing payroll migration and seven-hub travel direction; requests KPI reporting",
+          "committee_statement_type": "reports_existing_initiative",
+          "scope": "all_potential_shared_service_clients",
+          "operational_interpretation": "pre_existing_reform",
+          "non_additivity_constraint": "Do not credit an already launched global payroll consolidation to new proposed changes",
+          "source_pdf_page": "77",
+          "source_url": "https://docs.un.org/en/A/81/7#page=77",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR12",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.87-I.93",
+      "scope": "participating_entities_only",
+      "action_paraphrase": "Committee recommends common core service catalogues and clear retained function rules",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 13,
+        "row_key": {
+          "framework_id": "XR12"
+        },
+        "source_snapshot": {
+          "framework_id": "XR12",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.87-I.93",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Define mandatory CAP services retained delegated decision authority and exceptions",
+          "exact_normative_characterization": "Committee recommends common core service catalogues and clear retained function rules",
+          "committee_statement_type": "formal_recommendation",
+          "scope": "participating_entities_only",
+          "operational_interpretation": "legal_governance_gate",
+          "non_additivity_constraint": "No assertion that each Cluster III mission belongs to specific CAP before verification",
+          "source_pdf_page": "79",
+          "source_url": "https://docs.un.org/en/A/81/7#page=79",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR13",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.7",
+      "scope": "DPPA_regional_and_SPMS",
+      "action_paraphrase": "Committee considers holistic regional division and envoy review and DPO–DPPA cooperation",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 14,
+        "row_key": {
+          "framework_id": "XR13"
+        },
+        "source_snapshot": {
+          "framework_id": "XR13",
+          "source_document": "A/81/7",
+          "reference_paragraph": "II.7",
+          "source_section": "Section 3",
+          "policy_or_review_dimension": "Assess DPPA field capacity regional division envoy resident coordination interfaces",
+          "exact_normative_characterization": "Committee considers holistic regional division and envoy review and DPO–DPPA cooperation",
+          "committee_statement_type": "considers_review",
+          "scope": "DPPA_regional_and_SPMS",
+          "operational_interpretation": "public_deliverable_crosswalk",
+          "non_additivity_constraint": "Co-location and common reporting inputs are not identical mandated products",
+          "source_pdf_page": "118",
+          "source_url": "https://docs.un.org/en/A/81/7#page=118",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR14",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "II.4",
+      "scope": "peace_operations_reform",
+      "action_paraphrase": "Committee states review was being finalized and did not inform 2027 proposal",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 15,
+        "row_key": {
+          "framework_id": "XR14"
+        },
+        "source_snapshot": {
+          "framework_id": "XR14",
+          "source_document": "A/81/7",
+          "reference_paragraph": "II.4",
+          "source_section": "Section 3",
+          "policy_or_review_dimension": "Track forthcoming comprehensive review of all peace operations",
+          "exact_normative_characterization": "Committee states review was being finalized and did not inform 2027 proposal",
+          "committee_statement_type": "expects_reporting",
+          "scope": "peace_operations_reform",
+          "operational_interpretation": "future_reform_watch",
+          "non_additivity_constraint": "No 2027 budget change may be attributed to uncompleted review",
+          "source_pdf_page": "117",
+          "source_url": "https://docs.un.org/en/A/81/7#page=117",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR15",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.77-I.78",
+      "scope": "entities_with_partnership_transfers",
+      "action_paraphrase": "Committee recommends consolidated grant and internal transfer disclosure",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 16,
+        "row_key": {
+          "framework_id": "XR15"
+        },
+        "source_snapshot": {
+          "framework_id": "XR15",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.77-I.78",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Separate grants/interagency transfers from purchased services and actual expenses",
+          "exact_normative_characterization": "Committee recommends consolidated grant and internal transfer disclosure",
+          "committee_statement_type": "formal_recommendation",
+          "scope": "entities_with_partnership_transfers",
+          "operational_interpretation": "fiscal_boundary",
+          "non_additivity_constraint": "A grant or internal transfer is not gross avoided cost",
+          "source_pdf_page": "75",
+          "source_url": "https://docs.un.org/en/A/81/7#page=75",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    },
+    {
+      "recommendation_id": "ACABQ-XR16",
+      "record_kind": "crosscutting",
+      "authority_classification": "ACABQ_ADVICE",
+      "adoption_status": "GA_ACCEPTANCE_NOT_ESTABLISHED_IN_RETAINED_CORPUS",
+      "implementation_status": "NOT_VERIFIED",
+      "evidence_cutoff": "2026-10-08",
+      "source_symbol": "A/81/7",
+      "official_url": "https://docs.un.org/en/A/81/7",
+      "paragraph_locator": "I.50-I.53",
+      "scope": "missions_with_staffing_change",
+      "action_paraphrase": "Committee records prior implementation and requests clearer HR cost reporting",
+      "financial_effect": {
+        "classification": "NOT_QUANTIFIED_BY_THIS_RECORD",
+        "amount": null,
+        "unit": null,
+        "period": "CALENDAR_2027",
+        "perimeter": null,
+        "not_a_savings_finding": true
+      },
+      "provenance": {
+        "path": "data/acabq_2027_main_crosscutting_framework.csv",
+        "csv_line": 17,
+        "row_key": {
+          "framework_id": "XR16"
+        },
+        "source_snapshot": {
+          "framework_id": "XR16",
+          "source_document": "A/81/7",
+          "reference_paragraph": "I.50-I.53",
+          "source_section": "Chapter I",
+          "policy_or_review_dimension": "Separate previous early separations staff reassignments and new staffing actions",
+          "exact_normative_characterization": "Committee records prior implementation and requests clearer HR cost reporting",
+          "committee_statement_type": "expects_reporting",
+          "scope": "missions_with_staffing_change",
+          "operational_interpretation": "no_double_count_guardrail",
+          "non_additivity_constraint": "Prior approved post abolishments not new savings; avoid counting same staff twice",
+          "source_pdf_page": "55",
+          "source_url": "https://docs.un.org/en/A/81/7#page=55",
+          "is_clusterIII_specific_dollar_recommendation": "no",
+          "crosscutting_numeric_adjustment": "not_determined_by_main_report",
+          "approval_stage": "ACABQ_crosscutting_source_no_mission_specific_appropriation"
+        }
+      }
+    }
+  ],
+  "mission_coverage": [
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 2,
+      "source_snapshot": {
+        "spm_id": "SPM001",
+        "mission_name": "Good offices in Cyprus",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "2177",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "2177.0",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1979.6",
+        "SG_2027_minus_2026_budget_usd_thousands": "197.4",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 3,
+      "source_snapshot": {
+        "spm_id": "SPM002",
+        "mission_name": "Special Adviser on Prevention of Genocide",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "3118.4",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "3118.4",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "3263.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "-145",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 4,
+      "source_snapshot": {
+        "spm_id": "SPM003",
+        "mission_name": "Personal Envoy for Western Sahara",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "544.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "544.1",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "529.8",
+        "SG_2027_minus_2026_budget_usd_thousands": "14.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 5,
+      "source_snapshot": {
+        "spm_id": "SPM004",
+        "mission_name": "Implementation of Security Council resolution 1559 (2004)",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "431.3",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "431.3",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "422.2",
+        "SG_2027_minus_2026_budget_usd_thousands": "9.1",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 6,
+      "source_snapshot": {
+        "spm_id": "SPM005",
+        "mission_name": "UN Representative to Geneva International Discussions",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "997.2",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "992.4",
+        "acabq_minus_sg_usd_thousands": "-4.8",
+        "acabq_recommendation_paragraph": "20_30",
+        "post_and_budget_category_recommendations": "2027_Admin_GS_post_to_GTA_0_cost; travel_cut_4.8",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "8_and_13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "952.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "44.8",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 7,
+      "source_snapshot": {
+        "spm_id": "SPM006",
+        "mission_name": "Special Envoy for Syria",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "14392.2",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "14304.6",
+        "acabq_minus_sg_usd_thousands": "-87.6",
+        "acabq_recommendation_paragraph": "21_31",
+        "post_and_budget_category_recommendations": "D1_to_P5_reclassification_rejected_plus_34.1; facilities_cut_121.7; net_minus_87.6",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "9_and_14_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "12477",
+        "SG_2027_minus_2026_budget_usd_thousands": "1915.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 8,
+      "source_snapshot": {
+        "spm_id": "SPM007",
+        "mission_name": "Special Envoy for Horn of Africa",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "2013",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "2013.0",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1918.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "94.6",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 9,
+      "source_snapshot": {
+        "spm_id": "SPM008",
+        "mission_name": "Special Envoy for Great Lakes Region",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "4940.3",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "4940.3",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "4724.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "215.6",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 10,
+      "source_snapshot": {
+        "spm_id": "SPM009",
+        "mission_name": "Special Envoy for Yemen",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "24100",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "24009.9",
+        "acabq_minus_sg_usd_thousands": "-90.1",
+        "acabq_recommendation_paragraph": "32",
+        "post_and_budget_category_recommendations": "Air_operations_recommended_cut_90.1; residual_UNMHA_transition_staffing_review_for_next_budget",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "14_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "21771.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "2328.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 11,
+      "source_snapshot": {
+        "spm_id": "SPM010",
+        "mission_name": "Special Envoy on Myanmar",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "1314.2",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "1314.2",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "957.2",
+        "SG_2027_minus_2026_budget_usd_thousands": "357",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 12,
+      "source_snapshot": {
+        "spm_id": "SPM011",
+        "mission_name": "Personal Envoy for Sudan",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "1702.6",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "1702.6",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1979.8",
+        "SG_2027_minus_2026_budget_usd_thousands": "-277.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 13,
+      "source_snapshot": {
+        "spm_id": "SPM012",
+        "mission_name": "Senior Representative on Security Council resolution 2792 (2025)",
+        "cluster_id": "SPM_CLUSTER_1",
+        "sg_2027_proposal_usd_thousands": "600.9",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.2",
+        "acabq_2027_report_symbol": "A/81/7/Add.2",
+        "acabq_recommended_2027_usd_thousands": "600.9",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "28_and_33",
+        "post_and_budget_category_recommendations": "No_additional_appropriation_change; cluster_I_other_recommendations_contextual",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+        "source_page": "13_to_16",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "391.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "209.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 14,
+      "source_snapshot": {
+        "spm_id": "SPM013",
+        "mission_name": "Group of Experts on DRC",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1418.5",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1418.5",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1313.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "104.8",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 15,
+      "source_snapshot": {
+        "spm_id": "SPM014",
+        "mission_name": "Panel of Experts on Sudan",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1186",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1186.0",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1145.3",
+        "SG_2027_minus_2026_budget_usd_thousands": "40.7",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 16,
+      "source_snapshot": {
+        "spm_id": "SPM015",
+        "mission_name": "Support to Security Council Committee 1718 (2006)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "455.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "455.1",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "445.6",
+        "SG_2027_minus_2026_budget_usd_thousands": "9.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 17,
+      "source_snapshot": {
+        "spm_id": "SPM016",
+        "mission_name": "Panel of Experts on Libya",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1574.4",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1574.4",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1529.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "44.7",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 18,
+      "source_snapshot": {
+        "spm_id": "SPM017",
+        "mission_name": "Panel of Experts on Central African Republic (2745)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1206.4",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1206.4",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1192.9",
+        "SG_2027_minus_2026_budget_usd_thousands": "13.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 19,
+      "source_snapshot": {
+        "spm_id": "SPM018",
+        "mission_name": "Panel of Experts on Yemen",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "2026.2",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "2026.2",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "2084.5",
+        "SG_2027_minus_2026_budget_usd_thousands": "-58.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 20,
+      "source_snapshot": {
+        "spm_id": "SPM019",
+        "mission_name": "Panel of Experts on South Sudan",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1538.3",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1538.3",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1504.1",
+        "SG_2027_minus_2026_budget_usd_thousands": "34.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 21,
+      "source_snapshot": {
+        "spm_id": "SPM020",
+        "mission_name": "Analytical Support and Sanctions Monitoring Team (1526/2253)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "5569",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "5569.0",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "5366.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "202.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 22,
+      "source_snapshot": {
+        "spm_id": "SPM021",
+        "mission_name": "Ombudsperson for sanctions delisting (1904)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "785.5",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "785.5",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "770.3",
+        "SG_2027_minus_2026_budget_usd_thousands": "15.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 23,
+      "source_snapshot": {
+        "spm_id": "SPM022",
+        "mission_name": "Panel of Experts pursuant to 2713 (2023)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1477.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1477.1",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1421.3",
+        "SG_2027_minus_2026_budget_usd_thousands": "55.8",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 24,
+      "source_snapshot": {
+        "spm_id": "SPM023",
+        "mission_name": "Panel of Experts on Haiti",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "1744.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "1744.1",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "1731.8",
+        "SG_2027_minus_2026_budget_usd_thousands": "12.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 25,
+      "source_snapshot": {
+        "spm_id": "SPM024",
+        "mission_name": "Focal Point for Delisting",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "731.2",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "731.2",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "680.7",
+        "SG_2027_minus_2026_budget_usd_thousands": "50.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 26,
+      "source_snapshot": {
+        "spm_id": "SPM025",
+        "mission_name": "Panel of Experts on Iran",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "2511.4",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "2511.4",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "2432.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "79",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 27,
+      "source_snapshot": {
+        "spm_id": "SPM026",
+        "mission_name": "Support to Security Council Committee 1540 (2004)",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "3541.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "3541.1",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "3429.1",
+        "SG_2027_minus_2026_budget_usd_thousands": "112",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 28,
+      "source_snapshot": {
+        "spm_id": "SPM027",
+        "mission_name": "Counter-Terrorism Committee Executive Directorate",
+        "cluster_id": "SPM_CLUSTER_2",
+        "sg_2027_proposal_usd_thousands": "11962.5",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.3",
+        "acabq_2027_report_symbol": "A/81/7/Add.3",
+        "acabq_recommended_2027_usd_thousands": "11962.5",
+        "acabq_minus_sg_usd_thousands": "0.0",
+        "acabq_recommendation_paragraph": "19_24",
+        "post_and_budget_category_recommendations": "Staffing_99_positions_and_operational_proposal_recommended_for_approval",
+        "publication_status": "uploaded_ACABQ_full_report_read_2026_10_08",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "ACABQ_2027_advisory_financial_reconciliation_complete",
+        "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+        "source_page": "11_to_12",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "11383.3",
+        "SG_2027_minus_2026_budget_usd_thousands": "579.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "general_recommendations_in_separate_mapping",
+        "clusterIII_followup_perimeter": "not_applicable",
+        "clusterIII_nine_line_sidecar": "not_applicable"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 29,
+      "source_snapshot": {
+        "spm_id": "SPM028",
+        "mission_name": "UNOWAS",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "14108.5",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "13444",
+        "SG_2027_minus_2026_budget_usd_thousands": "664.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 30,
+      "source_snapshot": {
+        "spm_id": "SPM029",
+        "mission_name": "UN Regional Centre for Preventive Diplomacy in Central Asia",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "2979.9",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "2890",
+        "SG_2027_minus_2026_budget_usd_thousands": "89.9",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 31,
+      "source_snapshot": {
+        "spm_id": "SPM030",
+        "mission_name": "Cameroon-Nigeria Mixed Commission",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "3253.1",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "3159",
+        "SG_2027_minus_2026_budget_usd_thousands": "94.1",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 32,
+      "source_snapshot": {
+        "spm_id": "SPM031",
+        "mission_name": "UN Special Coordinator for Lebanon (UNSCOL)",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "10386.8",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "9709.3",
+        "SG_2027_minus_2026_budget_usd_thousands": "677.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 33,
+      "source_snapshot": {
+        "spm_id": "SPM032",
+        "mission_name": "UNOCA",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "6878.6",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "6750.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "128.2",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 34,
+      "source_snapshot": {
+        "spm_id": "SPM033",
+        "mission_name": "UNSMIL",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "83067.4",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "78738.9",
+        "SG_2027_minus_2026_budget_usd_thousands": "4328.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 35,
+      "source_snapshot": {
+        "spm_id": "SPM034",
+        "mission_name": "UN Verification Mission in Colombia",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "75896.9",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "71752.4",
+        "SG_2027_minus_2026_budget_usd_thousands": "4144.5",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 36,
+      "source_snapshot": {
+        "spm_id": "SPM035",
+        "mission_name": "BINUH",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "31614.9",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "32329.8",
+        "SG_2027_minus_2026_budget_usd_thousands": "-714.9",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    },
+    {
+      "path": "data/acabq_2027_mission_reconciliation.csv",
+      "csv_line": 37,
+      "source_snapshot": {
+        "spm_id": "SPM036",
+        "mission_name": "UNAMA",
+        "cluster_id": "SPM_CLUSTER_3",
+        "sg_2027_proposal_usd_thousands": "97167.8",
+        "sg_budget_symbol": "A/81/6 (Sect. 3)/Add.4",
+        "acabq_2027_report_symbol": "not_verified_as_published",
+        "acabq_recommended_2027_usd_thousands": "not_extracted",
+        "acabq_minus_sg_usd_thousands": "not_calculable",
+        "acabq_recommendation_paragraph": "not_supplied",
+        "post_and_budget_category_recommendations": "not_extracted",
+        "publication_status": "ACABQ_cluster_III_add4_not_available",
+        "approved_by_ga_2027": "not_approved_in_source_corpus",
+        "status": "requires_full_ACABQ_cluster_III_report",
+        "source_pdf_sha256": "not_available",
+        "source_page": "not_available",
+        "savings_classification": "ACABQ_advisory_resource_adjustment_not_new_duplication_saving",
+        "review_asof": "2026-10-08",
+        "SG_2026_GA_approved_usd_thousands": "105776.1",
+        "SG_2027_minus_2026_budget_usd_thousands": "-8608.3",
+        "SG_prior_to_proposal_budget_reconciliation": "verified_mission_source_table_1",
+        "A_81_7_main_crosscutting_reconciled": "crosscutting_mapped_to_mission_with_no_numeric_adjustment",
+        "clusterIII_followup_perimeter": "ACABQ_specific_2027_recommendation_still_not_determined",
+        "clusterIII_nine_line_sidecar": "data/acabq_2027_clusterIII_sg_baseline.csv"
+      }
+    }
+  ],
+  "retained_primary_source_receipts": [
+    {
+      "symbol": "A/81/7",
+      "uploaded_filename": "A_81_7-EN.pdf",
+      "page_count": "563",
+      "file_size_bytes": "8232425",
+      "sha256": "039babf4e6ce92e284a38ad95dea37af3bebf97af938b5c224a317e9d4b1babb",
+      "reviewed_primary_locators": "Sec3_Table_II.12_pdf136;Sec5_Table_II.23_pdf156;ChapterI_10_69_79to93",
+      "source_stage": "uploaded_original_verified_sha256",
+      "official_document_url": "https://docs.un.org/en/A/81/7",
+      "not_republished_to_GitHub": "yes"
+    },
+    {
+      "symbol": "A/81/7/Add.2",
+      "uploaded_filename": "A_81_7_Add.2-EN.pdf",
+      "page_count": "16",
+      "file_size_bytes": "396895",
+      "sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+      "reviewed_primary_locators": "Table5_pdf16;paras20_21_30_31_32",
+      "source_stage": "uploaded_original_verified_sha256",
+      "official_document_url": "https://docs.un.org/en/A/81/7/Add.2",
+      "not_republished_to_GitHub": "yes"
+    },
+    {
+      "symbol": "A/81/7/Add.3",
+      "uploaded_filename": "A_81_7_Add.3-EN.pdf",
+      "page_count": "13",
+      "file_size_bytes": "369435",
+      "sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+      "reviewed_primary_locators": "paras19_24_17_22_5",
+      "source_stage": "uploaded_original_verified_sha256",
+      "official_document_url": "https://docs.un.org/en/A/81/7/Add.3",
+      "not_republished_to_GitHub": "yes"
+    }
+  ],
+  "retained_report_status_observations": [
+    {
+      "symbol": "A/81/7",
+      "date": "2026-10-06",
+      "scope": "general",
+      "missions": "not_applicable",
+      "sg_2027_proposed_usd_thousands": "not_applicable",
+      "availability": "uploaded_full_text_recommendations_extracted",
+      "reviewed_recommendation_usd_thousands": "section3_132421.9_and_section5_56905.1",
+      "variance": "section3_-189.3_section5_-26.7",
+      "source_pdf_sha256": "039babf4e6ce92e284a38ad95dea37af3bebf97af938b5c224a317e9d4b1babb",
+      "source_report_pages": "563",
+      "reconciliation_note": "Recommendations_apply_to_non_SPM_Section3_and_Section5",
+      "reconciliation_scope_note": "General_Chapter_I_and_Section_3_crosscutting_not_ClusterIII_specific",
+      "report_outstanding": "no_or_not_applicable"
+    },
+    {
+      "symbol": "A/81/7/Add.2",
+      "date": "2026-08-25",
+      "scope": "cluster_I",
+      "missions": "12",
+      "sg_2027_proposed_usd_thousands": "56331.2",
+      "availability": "uploaded_full_text_recommendations_extracted",
+      "reviewed_recommendation_usd_thousands": "56148.7",
+      "variance": "-182.5",
+      "source_pdf_sha256": "aed13ab516c787c8b1d21632bce761fe55cd9eea1d834d73138ec5aa3d3e9756",
+      "source_report_pages": "16",
+      "reconciliation_note": "Four_changes_net_182.5_reduction_plus_cost_neutral_GTA",
+      "reconciliation_scope_note": "Four_changes_net_182.5_reduction_plus_cost_neutral_GTA",
+      "report_outstanding": "no_or_not_applicable"
+    },
+    {
+      "symbol": "A/81/7/Add.3",
+      "date": "2026-08-25",
+      "scope": "cluster_II",
+      "missions": "15",
+      "sg_2027_proposed_usd_thousands": "37726.8",
+      "availability": "uploaded_full_text_recommendations_extracted",
+      "reviewed_recommendation_usd_thousands": "37726.8",
+      "variance": "0.0",
+      "source_pdf_sha256": "602a46687b87fbb274bc8d5b81d4da32653227d58d6cc5ea041b806bea473b0b",
+      "source_report_pages": "13",
+      "reconciliation_note": "99_positions_and_operational_costs_as_proposed_approved_in_ACABQ_advice",
+      "reconciliation_scope_note": "99_positions_and_operational_costs_as_proposed_approved_in_ACABQ_advice",
+      "report_outstanding": "no_or_not_applicable"
+    },
+    {
+      "symbol": "A/81/7/Add.4",
+      "date": "not_verified",
+      "scope": "cluster_III",
+      "missions": "9",
+      "sg_2027_proposed_usd_thousands": "325353.9",
+      "availability": "not_yet_issued_as_reported_by_user_2026_10_08",
+      "reviewed_recommendation_usd_thousands": "not_extracted",
+      "variance": "not_calculable",
+      "source_pdf_sha256": "not_available",
+      "source_report_pages": "not_available",
+      "reconciliation_note": "Cluster_III_no_verified_report_body",
+      "reconciliation_scope_note": "SG_nine_missions_reconciled_but_specific_ACABQ_advice_not_yet_issued",
+      "report_outstanding": "yes_per_user_on_2026_10_08"
+    },
+    {
+      "symbol": "SG_Add.1",
+      "date": "2026-05-29",
+      "scope": "chapeau",
+      "missions": "36",
+      "sg_2027_proposed_usd_thousands": "422671",
+      "availability": "uploaded_SG_budget_not_ACABQ",
+      "reviewed_recommendation_usd_thousands": "not_extracted",
+      "variance": "not_calculable",
+      "source_pdf_sha256": "not_available",
+      "source_report_pages": "not_available",
+      "reconciliation_note": "Secretary_General_source_baseline_not_ACABQ",
+      "reconciliation_scope_note": "Secretary_General_source_baseline_not_ACABQ",
+      "report_outstanding": "no_or_not_applicable"
+    }
+  ],
+  "unreviewed_report_observations": [
+    {
+      "report_symbol": "A/81/7/Add.1",
+      "scope": "crosscutting_special_political_missions",
+      "report_status": "not_yet_issued_per_user_2026_10_08",
+      "mission_coverage": "all_36_SPMS_and_RSCE",
+      "known_SG_control_usd_thousands": "422671.0",
+      "relevant_issued_source": "A/81/7_Chapter_I_general_only",
+      "financial_advice": "not_determined",
+      "not_equal_zero": "yes",
+      "source_stage": "user_reported_absence_not_external_publication_determination"
+    },
+    {
+      "report_symbol": "A/81/7/Add.4",
+      "scope": "SPM_Cluster_III",
+      "report_status": "not_yet_issued_per_user_2026_10_08",
+      "mission_coverage": "9_continuing",
+      "known_SG_control_usd_thousands": "325353.9",
+      "relevant_issued_source": "A/81/7_Chapter_I_and_Section_3_general_only",
+      "financial_advice": "not_determined",
+      "not_equal_zero": "yes",
+      "source_stage": "user_reported_absence_not_external_publication_determination"
+    }
+  ],
+  "limitations": [
+    "Primary PDF bytes are not held here; retained checksums are upstream provenance claims, not newly verified bytes.",
+    "The 2026-10-08 report-availability observations are historical and do not establish publication status on 2026-10-23.",
+    "Twenty-seven mission control rows and recommendation records overlap; do not sum controls and components.",
+    "Crosscutting statements include expectations and observations, not only recommended actions; preserve statement type in snapshots.",
+    "General ACABQ discussion is not nine Cluster III mission-specific financial recommendations.",
+    "No subsequent GA adoption or implementation has been established by this register.",
+    "Missing advice is unknown, not zero; an unadjusted proposal does not establish operational efficiency."
+  ]
+}

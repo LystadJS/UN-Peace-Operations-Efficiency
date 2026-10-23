@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E05",
+  "case_ids": [
+    "C09"
+  ],
+  "purpose": "Training administration, procurement and delivered competency outcomes",
+  "proposed_custodian_roles": [
+    "training programme owner",
+    "learning administration and procurement custodians"
+  ],
+  "tables": [
+    {
+      "table_id": "course_events",
+      "grain": "One delivered or cancelled course-event with aggregate attendance and outcomes",
+      "keys": [
+        "course_event_token"
+      ],
+      "fields": [
+        {
+          "name": "course_event_token",
+          "type": "string",
+          "purpose": "Pseudonymous event identity",
+          "required": true
+        },
+        {
+          "name": "provider_entity",
+          "type": "string",
+          "purpose": "Identify delivery cost owner",
+          "required": true
+        },
+        {
+          "name": "course_category",
+          "type": "string",
+          "purpose": "Assess substitutable purpose",
+          "required": true
+        },
+        {
+          "name": "delivery_date",
+          "type": "date",
+          "purpose": "Distinguish delivery from advertisement",
+          "required": true
+        },
+        {
+          "name": "delivery_status",
+          "type": "string",
+          "purpose": "Preserve cancelled and incomplete events",
+          "required": true
+        },
+        {
+          "name": "aggregate_attendance",
+          "type": "integer",
+          "purpose": "Measure actual participants without names",
+          "required": true
+        },
+        {
+          "name": "completion_count",
+          "type": "integer",
+          "purpose": "Measure completed output",
+          "required": true
+        },
+        {
+          "name": "paid_admin_hours",
+          "type": "decimal",
+          "purpose": "Capture organization and enrollment work",
+          "required": true
+        },
+        {
+          "name": "instructor_hours",
+          "type": "decimal",
+          "purpose": "Capture instruction work",
+          "required": true
+        },
+        {
+          "name": "external_cost",
+          "type": "decimal",
+          "purpose": "Include vendor travel platform and procurement cost",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify cost unit",
+          "required": true
+        },
+        {
+          "name": "required_competency",
+          "type": "string",
+          "purpose": "Preserve mandatory and specialized training",
+          "required": true
+        },
+        {
+          "name": "assessment_result",
+          "type": "string",
+          "purpose": "Compare learning or readiness quality",
+          "required": true
+        },
+        {
+          "name": "repeat_need_reason",
+          "type": "string",
+          "purpose": "Distinguish justified recurrence from redundant delivery",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "Preserve mandate, safety, readiness, quality, timeliness and transition controls; no operational intervention authorized."
+  ]
+}

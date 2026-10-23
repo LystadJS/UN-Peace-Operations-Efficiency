@@ -1,0 +1,218 @@
+{
+  "case_id": "C13",
+  "title": "UNIFIL residual transition liabilities and service continuity",
+  "evidence_cutoff": "2026-10-08",
+  "assembled_on": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "decision_reason": "Retained sources support a bounded validation question; complete operational/financial records, accountable owner confirmation and applicable authority are absent.",
+  "current_arrangement": "The retained UNIFIL budget describes six months of operations followed by drawdown. GA directive extracts call for separation-cost information, environmental/site measures and safe orderly withdrawal; residual liabilities are not quantified.",
+  "testable_mechanism": "Trace outstanding commitments, staff liabilities, site remediation, asset handover and intermission services through drawdown to identify controllable late costs or avoidable procurement while preserving successor obligations.",
+  "feasible_alternative_to_test": "Use an approved cancel/retain/transfer review of each commitment and integrated service handover, with liabilities explicitly assigned; retain necessary contracts and capabilities where termination would increase total cost or risk.",
+  "safeguards": [
+    "Protect personnel safety, mandated observation and essential intermission medical/communications services",
+    "Meet environmental, property, separation and contractual obligations",
+    "No cancellation, disposal, mission withdrawal change or asset transfer without competent authorization"
+  ],
+  "cost_perimeter_and_nonadditivity": "Six-month operations cannot be annualized as recurring savings. Include termination, separation, freight, disposal, remediation, residual contracts, stranded assets and receiving-mission costs. Existing withdrawal and C02 transferred-asset benefits belong in the baseline; overlap cannot be added.",
+  "minimum_records": [
+    "Open PO/contract and invoice register with delivery dates, cancellation clauses, reversals and closeout status",
+    "Personnel separation/redeployment liabilities and approved withdrawal milestones",
+    "Asset title/condition/transfer/receipt and receiving-office procurement or service requirements",
+    "Site remediation assessments, environmental and property obligations, service agreements and residual risk register"
+  ],
+  "custodian_roles_to_confirm": [
+    "UNIFIL transition/liquidation and mission support leadership",
+    "UNIFIL finance, HR, procurement, property and environmental custodians",
+    "Receiving-mission service owners and competent mandate/budget authorities"
+  ],
+  "accountable_owner": null,
+  "owner_confirmation_status": "NOT_OBTAINED",
+  "evidence_request_sent": false,
+  "implementation_authority": "NOT_ESTABLISHED_BY_REPOSITORY",
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "cashable_saving": null,
+    "realized_saving": null,
+    "capacity_gain": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "status": "NOT_ESTIMATED"
+  },
+  "operational_baseline": null,
+  "evidence": [
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 6,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D05",
+        "mission_id": "UNIFIL",
+        "ga_resolution": "A/RES/80/282",
+        "operative_paragraph": "12",
+        "pdf_page": "3",
+        "directive_paraphrase": "Provide comprehensive information on separation costs during drawdown and withdrawal",
+        "linked_candidate_id": "C12",
+        "directive_category": "requested_financial_disclosure",
+        "official_url": "https://docs.un.org/en/A/RES/80/282",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 7,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D06",
+        "mission_id": "UNIFIL",
+        "ga_resolution": "A/RES/80/282",
+        "operative_paragraph": "14",
+        "pdf_page": "3",
+        "directive_paraphrase": "Ensure environmental and site-closure measures before property transfer",
+        "linked_candidate_id": "C12",
+        "directive_category": "requested_transition_protection",
+        "official_url": "https://docs.un.org/en/A/RES/80/282",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/ga_adopted_directives.csv",
+      "csv_line": 8,
+      "sha256": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+      "source_snapshot": {
+        "directive_id": "GA_D07",
+        "mission_id": "UNIFIL",
+        "ga_resolution": "A/RES/80/282",
+        "operative_paragraph": "15",
+        "pdf_page": "3",
+        "directive_paraphrase": "Ensure orderly safe accountable withdrawal and personnel safety",
+        "linked_candidate_id": "C12",
+        "directive_category": "mandate_capability_guardrail",
+        "official_url": "https://docs.un.org/en/A/RES/80/282",
+        "financial_exposure_usd_thousands": "not_separately_quantified",
+        "savings_inference": "prohibited_without_cost_evidence"
+      }
+    },
+    {
+      "path": "data/mission_budget_register.csv",
+      "csv_line": 4,
+      "sha256": "2d663b0cccd3a448cb8bd440c9feebec7d521b423d3626507e0b22ecf167d28e",
+      "source_snapshot": {
+        "mission_id": "UNIFIL",
+        "source_id": "XUF",
+        "symbol": "A/80/634",
+        "fiscal_period": "2026-07-01/2027-06-30",
+        "budget_status": "SG_proposal_not_appropriation",
+        "currency_unit": "USD_thousands",
+        "apportioned_2025_26_military_police": "350947.3",
+        "apportioned_2025_26_civilian": "149214.8",
+        "apportioned_2025_26_operational": "52679.7",
+        "apportioned_2025_26_gross": "552841.8",
+        "proposed_2026_27_military_police": "259142.9",
+        "proposed_2026_27_civilian": "114979.8",
+        "proposed_2026_27_operational": "33901",
+        "proposed_2026_27_gross": "408023.7",
+        "proposal_minus_prior_apportionment": "-144818.1",
+        "source_page": "4",
+        "source_anchor": "Summary financial resources / gross requirements table",
+        "official_url": "https://digitallibrary.un.org/record/4107117/files/A_80_634-EN.pdf#page=4",
+        "assessed_appropriation_status": "GA_80_approved_maintenance_reconciled",
+        "interpretation_guardrail": "Budget covers 6 months operations followed by 6 months drawdown; do not annualize as steady-state saving",
+        "net_incremental_savings": "not_estimated"
+      }
+    },
+    {
+      "path": "data/mission_function_crosswalk.csv",
+      "csv_line": 9,
+      "sha256": "92163f6386039f31b401a683c2f88f49ad5bc10380f34060e97de7cc4939e3dd",
+      "source_snapshot": {
+        "mission_crosswalk_id": "MC08",
+        "mission_id": "UNIFIL",
+        "baseline_crosswalk_ids": "CW026;CW027",
+        "function_area": "UNIFIL_UNTSO_drawdown",
+        "classification": "transition_related_existing_sharing",
+        "source_citations": "A/80/634 pp3-4; S05 p45 5.II.20; S05 p46 Table 5.II.4",
+        "screening_finding": "Mission ends operations 31 Dec 2026 and begins drawdown; UNTSO retains separate observer mandate",
+        "operational_validation_required": "UNTSO/UNDOF/UNSCO service agreements and asset plans",
+        "mandate_or_cost_guardrail": "Six-month operational budget cannot be annualized to recurring saving",
+        "implementation_evidence": "not_independently_verified",
+        "net_incremental_savings": "not_estimated"
+      }
+    },
+    {
+      "path": "data/mission_function_crosswalk.csv",
+      "csv_line": 10,
+      "sha256": "92163f6386039f31b401a683c2f88f49ad5bc10380f34060e97de7cc4939e3dd",
+      "source_snapshot": {
+        "mission_crosswalk_id": "MC09",
+        "mission_id": "UNIFIL",
+        "baseline_crosswalk_ids": "CW027",
+        "function_area": "regional_infrastructure_handover",
+        "classification": "candidate_overlap_for_validation",
+        "source_citations": "A/80/634 p3 and p34; S05 p45 5.II.20",
+        "screening_finding": "Potential transition of shared assets and infrastructure requires asset-level proof",
+        "operational_validation_required": "Property registers title logistics and drawdown schedules",
+        "mandate_or_cost_guardrail": "No assumed savings from mandated withdrawal",
+        "implementation_evidence": "not_independently_verified",
+        "net_incremental_savings": "not_estimated"
+      }
+    },
+    {
+      "path": "data/mission_function_crosswalk.csv",
+      "csv_line": 19,
+      "sha256": "92163f6386039f31b401a683c2f88f49ad5bc10380f34060e97de7cc4939e3dd",
+      "source_snapshot": {
+        "mission_crosswalk_id": "MC18",
+        "mission_id": "UNIFIL",
+        "baseline_crosswalk_ids": "CW026",
+        "function_area": "mandate_and_financial_timing",
+        "classification": "distinct_mandates",
+        "source_citations": "A/80/634 p4 financial summary; S05 p45 5.II.20; S03 p62 UNSCO plan",
+        "screening_finding": "UNIFIL cessation does not eliminate UNTSO/UNSCO legally distinct duties",
+        "operational_validation_required": "2027 Security Council changes and successor tasking",
+        "mandate_or_cost_guardrail": "Do not equate shared political geography with same mandate",
+        "implementation_evidence": "not_independently_verified",
+        "net_incremental_savings": "not_estimated"
+      }
+    },
+    {
+      "path": "data/historical_transition_audit_cases.csv",
+      "csv_line": 2,
+      "sha256": "66ae25ea9ced27a80c867e8dc0650b32ab817fe8e2c1b3004695aba10a3decdc",
+      "source_snapshot": {
+        "historical_case_id": "H01",
+        "former_mission": "UNAMI",
+        "date_context": "2024_drawdown",
+        "source_symbol": "A/80/5 (Vol. I)",
+        "source_anchor": "paras. 199-201 pp. 54-55",
+        "value_usd_thousands": "11800",
+        "quantity_type": "purchase_orders_with_post_drawdown_delivery_dates",
+        "interpretation": "Audit identified need to document cancel-or-retain review; not verified loss or savings",
+        "relevance": "C12;C07",
+        "url": "https://digitallibrary.un.org/record/4090309/files/A_80_5_%28Vol._I%29-EN.pdf#page=55"
+      }
+    },
+    {
+      "path": "data/historical_transition_audit_cases.csv",
+      "csv_line": 3,
+      "sha256": "66ae25ea9ced27a80c867e8dc0650b32ab817fe8e2c1b3004695aba10a3decdc",
+      "source_snapshot": {
+        "historical_case_id": "H02",
+        "former_mission": "UNSOM_UNTMIS",
+        "date_context": "2025_transition",
+        "source_symbol": "A/80/5 (Vol. I)",
+        "source_anchor": "paras. 127-134 pp. 43-45",
+        "value_usd_thousands": "8500",
+        "quantity_type": "estimated_office_construction_project_cost",
+        "interpretation": "Project use changed with transition; estimated cost is not an avoidable loss",
+        "relevance": "C12;C07",
+        "url": "https://digitallibrary.un.org/record/4090309/files/A_80_5_%28Vol._I%29-EN.pdf#page=44"
+      }
+    }
+  ],
+  "case_specific_limit": "Historical UNAMI and UNSOM/UNTMIS audit cases demonstrate possible transition-control mechanisms; they are not evidence that UNIFIL incurred those amounts or failures.",
+  "handling": "No identifiable payroll, participant, medical, security, live transaction or restricted clearance records in this public dossier; use authorized restricted intake and approved safe derivatives.",
+  "reopen_condition": "Confirm owner and authority, obtain authenticated complete linked records, define comparator and guardrails, and adjudicate validation-ready evidence. A prepared request or software pass is insufficient."
+}

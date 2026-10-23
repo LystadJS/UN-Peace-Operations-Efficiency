@@ -1,0 +1,1065 @@
+{
+  "schema_version": 1,
+  "task_id": "P05",
+  "basis": "Retained repository sources; no new source authentication or financial aggregation.",
+  "source_hashes": {
+    "metadata/dataset_registry.csv": "d6ebd156870811e53899112f05c07957173c0e623b1b403bef05c1c78a303f84",
+    "data/ga_approved_all_missions.csv": "6f3fe9d9f6d31b0dd0f26586017a5e1dae8379dec864e70d2a848e2423ecaf3c",
+    "data/ga_mission_reconciliation.csv": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+    "data/spm_2027_mission_budget.csv": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
+    "data/mission_function_crosswalk.csv": "92163f6386039f31b401a683c2f88f49ad5bc10380f34060e97de7cc4939e3dd",
+    "data/ga_adopted_directives.csv": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+    "data/portfolio/entities.json": "478c447f27c9ff08653ca7dfb553de7b0ab2745e8d092c20887b409db82f3a58"
+  },
+  "counts": {
+    "eleven_entity_budget_register_records": 11,
+    "ga_maintenance_reconciliation_records": 6,
+    "continuing_spm_proposal_records": 36,
+    "matrix_records": 47
+  },
+  "denominator_rule": "Two distinct source populations, not a deduplicated count of all UN entities or peace operations; do not sum budgets or treat these counts as worldwide coverage.",
+  "dimensions": [
+    "identity_coverage",
+    "financial_coverage",
+    "function_coverage",
+    "reform_coverage",
+    "operational_evidence_coverage"
+  ],
+  "limits": [
+    "No budget percentage is converted to waste assessed.",
+    "P01 exact source aliases establish declared identity links only; they do not certify grain, joins, lifecycle or mandate status.",
+    "Historical/proposed finance and planned functions do not establish actual operations.",
+    "No total-UN denominator, transaction completeness or function-level costing is available from these tables.",
+    "Reform links refer only to the retained selected directive table, not complete UNGA80/81 obligation coverage.",
+    "An unmapped function or missing link is an evidence gap, not absence of activity or noncompliance."
+  ],
+  "entities": [
+    {
+      "source_entity_id": "MINURSO",
+      "entity_label": "MINURSO",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-MINURSO",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_APPROVED_RESOURCE_NOTE_ONLY",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "Only SG approved resource note; no SG proposal reconciliation here",
+      "function_coverage": "NO_LINK_IN_SELECTED_CROSSWALK",
+      "function_record_ids": [],
+      "reform_coverage": "NO_LINK_IN_SELECTED_DIRECTIVE_TABLE",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv"
+      ]
+    },
+    {
+      "source_entity_id": "MINUSCA",
+      "entity_label": "MINUSCA",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-MINUSCA",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D01"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "MONUSCO",
+      "entity_label": "MONUSCO",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-MONUSCO",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC05",
+        "MC06",
+        "MC07",
+        "MC17"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D02",
+        "GA_D03",
+        "GA_D04"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNDOF",
+      "entity_label": "UNDOF",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNDOF",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_APPROVED_RESOURCE_NOTE_ONLY",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "Only SG approved resource note; no SG proposal reconciliation here",
+      "function_coverage": "NO_LINK_IN_SELECTED_CROSSWALK",
+      "function_record_ids": [],
+      "reform_coverage": "NO_LINK_IN_SELECTED_DIRECTIVE_TABLE",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNFICYP",
+      "entity_label": "UNFICYP",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNFICYP",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_APPROVED_RESOURCE_NOTE_ONLY",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "Only SG approved resource note; no SG proposal reconciliation here",
+      "function_coverage": "NO_LINK_IN_SELECTED_CROSSWALK",
+      "function_record_ids": [],
+      "reform_coverage": "NO_LINK_IN_SELECTED_DIRECTIVE_TABLE",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNIFIL",
+      "entity_label": "UNIFIL",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNIFIL",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC08",
+        "MC09",
+        "MC18"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D05",
+        "GA_D06",
+        "GA_D07"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNISFA",
+      "entity_label": "UNISFA",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNISFA",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC10",
+        "MC11"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D08",
+        "GA_D09",
+        "GA_D10",
+        "GA_D11",
+        "GA_D12"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNMIK",
+      "entity_label": "UNMIK",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNMIK",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_APPROVED_RESOURCE_NOTE_ONLY",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "Only SG approved resource note; no SG proposal reconciliation here",
+      "function_coverage": "NO_LINK_IN_SELECTED_CROSSWALK",
+      "function_record_ids": [],
+      "reform_coverage": "NO_LINK_IN_SELECTED_DIRECTIVE_TABLE",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNMISS",
+      "entity_label": "UNMISS",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNMISS",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC12",
+        "MC13"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D13"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNSOH",
+      "entity_label": "UNSOH",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNSOH",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_APPROVED_RESOURCE_NOTE_ONLY",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "Only SG approved resource note; no SG proposal reconciliation here",
+      "function_coverage": "NO_LINK_IN_SELECTED_CROSSWALK",
+      "function_record_ids": [],
+      "reform_coverage": "NO_LINK_IN_SELECTED_DIRECTIVE_TABLE",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv"
+      ]
+    },
+    {
+      "source_entity_id": "UNSOS",
+      "entity_label": "UNSOS",
+      "entity_population": "ELEVEN_ENTITY_MISSION_BUDGET_REGISTER",
+      "canonical_entity_id": "UNPO-UNSOS",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_GA_MAINTENANCE_RECONCILIATION",
+      "financial_period": "2026-07-01/2027-06-30",
+      "financial_authority_note": "GA maintenance confirmed against operative resolution",
+      "function_coverage": "REPOSITORY_SCREENING_LINKS",
+      "function_record_ids": [
+        "MC14",
+        "MC15",
+        "MC16"
+      ],
+      "reform_coverage": "RETAINED_GA_DIRECTIVE_LINKS_REQUIRE_ACTION_SPECIFIC_REVIEW",
+      "reform_record_ids": [
+        "GA_D14",
+        "GA_D15"
+      ],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/ga_approved_all_missions.csv",
+        "data/ga_mission_reconciliation.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM001",
+      "entity_label": "Good offices in Cyprus",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM001",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_good_offices",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM002",
+      "entity_label": "Special Adviser on Prevention of Genocide",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM002",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "atrocity_early_warning",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM003",
+      "entity_label": "Personal Envoy for Western Sahara",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM003",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_good_offices",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM004",
+      "entity_label": "Implementation of Security Council resolution 1559 (2004)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM004",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sc_specific_reporting",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM005",
+      "entity_label": "UN Representative to Geneva International Discussions",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM005",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_good_offices",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM006",
+      "entity_label": "Special Envoy for Syria",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM006",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_transition",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM007",
+      "entity_label": "Special Envoy for Horn of Africa",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM007",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "regional_preventive_diplomacy",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM008",
+      "entity_label": "Special Envoy for Great Lakes Region",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM008",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "regional_mediation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM009",
+      "entity_label": "Special Envoy for Yemen",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM009",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_UNMHA_transition",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM010",
+      "entity_label": "Special Envoy on Myanmar",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM010",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_good_offices",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM011",
+      "entity_label": "Personal Envoy for Sudan",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM011",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "mediation_and_good_offices",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM012",
+      "entity_label": "Senior Representative on Security Council resolution 2792 (2025)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM012",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "kuwait_missing_persons_followup",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM013",
+      "entity_label": "Group of Experts on DRC",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM013",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM014",
+      "entity_label": "Panel of Experts on Sudan",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM014",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM015",
+      "entity_label": "Support to Security Council Committee 1718 (2006)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM015",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_committee_support",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM016",
+      "entity_label": "Panel of Experts on Libya",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM016",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM017",
+      "entity_label": "Panel of Experts on Central African Republic (2745)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM017",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM018",
+      "entity_label": "Panel of Experts on Yemen",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM018",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM019",
+      "entity_label": "Panel of Experts on South Sudan",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM019",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM020",
+      "entity_label": "Analytical Support and Sanctions Monitoring Team (1526/2253)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM020",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM021",
+      "entity_label": "Ombudsperson for sanctions delisting (1904)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM021",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_due_process",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM022",
+      "entity_label": "Panel of Experts pursuant to 2713 (2023)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM022",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM023",
+      "entity_label": "Panel of Experts on Haiti",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM023",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM024",
+      "entity_label": "Focal Point for Delisting",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM024",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_due_process",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM025",
+      "entity_label": "Panel of Experts on Iran",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM025",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_investigation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM026",
+      "entity_label": "Support to Security Council Committee 1540 (2004)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM026",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "sanctions_committee_support",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM027",
+      "entity_label": "Counter-Terrorism Committee Executive Directorate",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM027",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "counterterrorism_committee_support",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM028",
+      "entity_label": "UNOWAS",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM028",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "regional_preventive_diplomacy",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM029",
+      "entity_label": "UN Regional Centre for Preventive Diplomacy in Central Asia",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM029",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "regional_preventive_diplomacy",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM030",
+      "entity_label": "Cameroon-Nigeria Mixed Commission",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM030",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "boundary_demarcation",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM031",
+      "entity_label": "UN Special Coordinator for Lebanon (UNSCOL)",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM031",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "political_coordination",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM032",
+      "entity_label": "UNOCA",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM032",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "regional_preventive_diplomacy",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM033",
+      "entity_label": "UNSMIL",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM033",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "political_transition_and_verification",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM034",
+      "entity_label": "UN Verification Mission in Colombia",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM034",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "peace_agreement_verification",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM035",
+      "entity_label": "BINUH",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM035",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "political_advice_and_UNSOH_support",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    },
+    {
+      "source_entity_id": "SPM036",
+      "entity_label": "UNAMA",
+      "entity_population": "THIRTY_SIX_CONTINUING_SPM_PROPOSALS",
+      "canonical_entity_id": "UNPO-SPM036",
+      "identity_coverage": "P01_EXACT_SOURCE_ALIAS",
+      "financial_coverage": "RETAINED_PROPOSAL_WITH_PRIOR_YEAR_COLUMNS",
+      "financial_period": "calendar_2027",
+      "financial_authority_note": "2027_SG_proposal_not_GA_appropriation",
+      "function_coverage": "PROGRAMMED_CATEGORY_ONLY",
+      "programmed_function": "political_and_humanitarian_coordination",
+      "function_record_ids": [],
+      "reform_coverage": "NOT_MAPPED_BY_THIS_MATRIX",
+      "reform_record_ids": [],
+      "operational_evidence_coverage": "NOT_ASSESSED_BY_THIS_MATRIX",
+      "waste_assessed_fraction": null,
+      "savings_validated": "NOT_ESTABLISHED",
+      "source_paths": [
+        "data/spm_2027_mission_budget.csv"
+      ]
+    }
+  ]
+}

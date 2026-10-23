@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "case_id": "C02",
+  "as_of": "2026-10-23",
+  "scope": "Bounded public assessment of UNIFIL–UNSCOL proposed vehicles, ICT and consumables; vehicle child scope covers all six UF01 proposal positions. Public question dispositions are separate from F03 candidate states.",
+  "assessment_status": "PUBLIC_REVIEW_COMPLETE_WITH_LIMITATIONS",
+  "questions": [
+    {
+      "question_id": "C02-PQ01",
+      "question": "Does the proposed asset reuse present a credible efficiency opportunity?",
+      "disposition": "CONDITIONAL_OPPORTUNITY",
+      "answer": "Yes, as a public proposal to satisfy recipient requirements with existing assets. Lower net cost and feasible safe release remain unproved.",
+      "evidence": [
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+          "locator": "control_id UF01–UF03; implementation_evidence and transaction_verified"
+        },
+        {
+          "path": "data/priority_cases/C02_UF01_research_scope.json",
+          "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+          "locator": "population; counterfactual; amount_classification"
+        }
+      ],
+      "interpretation": "The bounded vehicle review covers all six proposal positions: four light and two armoured vehicles. These are not six authenticated physical assets. UF02 ICT and UF03 consumables are outside that child cohort.",
+      "alternative_explanations": [
+        "New acquisition or retention may be preferable if condition, remaining life, donor demand or transport/support cost makes reuse unsuitable."
+      ],
+      "limits": [
+        "Actual recipient need, available inventory, asset condition, equivalent alternative and canceled commitments are unavailable.",
+        "The retained budget transcription is not freshly authenticated final budget text."
+      ],
+      "next_action": "Retain the public opportunity as conditional; use the existing E02/addendum if evidence becomes available.",
+      "reopen_trigger": "An adopted applicable budget or a complete mapped six-position cohort with documented need, alternatives, protected donor capability and full costs becomes public or is lawfully supplied."
+    },
+    {
+      "question_id": "C02-PQ02",
+      "question": "Does public authority authorize the specific UNIFIL-to-UNSCOL transfer?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "No specific recipient or lot approval is established by the reviewed public evidence. Resolution2790 OP9 supplies general designated-entity transfer language, subject to UN practices and financial rules.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C02_source_review.json",
+          "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+          "locator": "source_checks C02-S01/C02-S03/C02-S04; remaining_material_gaps"
+        }
+      ],
+      "interpretation": "Final Council text and founding letters establish the legal context; UNSCOL political coordination does not confer lot-specific property or procurement approval.",
+      "alternative_explanations": [
+        "Competent designation, delegated approval or transfer documentation may exist outside the reviewed public record."
+      ],
+      "limits": [
+        "No exhaustive later amendment, administrative delegation or recipient-designation review.",
+        "Absence of public approval evidence is not proof that a transfer would be unlawful."
+      ],
+      "next_action": "Record the approval question as unresolved and make no actual-transfer assertion.",
+      "reopen_trigger": "A competent designation, donor release and recipient acceptance covering the actual assets, or a definitive public instrument, is obtained."
+    },
+    {
+      "question_id": "C02-PQ03",
+      "question": "Can the embedded amounts be counted as a new project benefit?",
+      "disposition": "SUPPORTED_CONCERN",
+      "answer": "No. The retained proposal already includes USD394000 for vehicles and USD438100 across vehicles, ICT and consumables. Adding the vehicle amount again to that aggregate would duplicate the same proposal component.",
+      "evidence": [
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+          "locator": "UF01 394000; UF02 36900; UF03 7200; embedded_2027_efficiency"
+        },
+        {
+          "path": "data/spm_2027_embedded_efficiencies.csv",
+          "sha256": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+          "locator": "EFF019/EFF026/EFF029; status and attribution_rule"
+        },
+        {
+          "path": "data/priority_cases/C02_source_review.json",
+          "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+          "locator": "source_checks C02-S07"
+        }
+      ],
+      "interpretation": "This is a supported accounting concern about potential double counting, not evidence that the UN has duplicated spending or that the project has already booked a duplicate benefit.",
+      "alternative_explanations": [
+        "The total and vehicle component may legitimately appear separately as an aggregate and its breakdown if clearly labeled nonadditive."
+      ],
+      "limits": [
+        "Primary Add.4 budget text was not freshly authenticated; no GA adoption or actual expenditure established.",
+        "There is no recognized project benefit and no quantified incremental opportunity."
+      ],
+      "next_action": "Keep the components and aggregate linked, with the aggregate nonadditive to its components.",
+      "reopen_trigger": "Authenticated source corrections or a separately evidenced incremental counterfactual changes the classification; financial recognition requires its own gate."
+    },
+    {
+      "question_id": "C02-PQ04",
+      "question": "Should donor assets be released on the strength of the proposal alone?",
+      "disposition": "RETAIN_CURRENT_PROCESS",
+      "answer": "No. Retain applicable approved custody, procurement and release procedures until competent authorities establish safe availability and recipient suitability; this assessment recommends no transfer execution.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C02_source_review.json",
+          "sha256": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+          "locator": "source_checks C02-S01; recipient_boundary/source_effect_limit"
+        },
+        {
+          "path": "data/priority_cases/C02_UF01_research_scope.json",
+          "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+          "locator": "authority_application OP6/OP7/OP9; prospective_guardrails"
+        }
+      ],
+      "interpretation": "OP6 protects withdrawal functions including security, enabling and medical capability. OP7 liquidation and residual guards and OP9 financial-rule requirements remain material constraints; a calendar-2027 recipient proposal does not accelerate donor release.",
+      "alternative_explanations": [
+        "Some assets may be genuinely surplus before others, and a documented asset-specific release could be appropriate."
+      ],
+      "limits": [
+        "No asset-level donor readiness reservation or approved release timetable is established.",
+        "Retaining current procedures is a public decision disposition, not an F03 terminal state for the parent or child."
+      ],
+      "next_action": "Preserve current controls and all six proposal-position outcomes, including retained, unavailable, rejected or substituted assets.",
+      "reopen_trigger": "Documented current donor need, condition, protected-function clearance, recipient need and competent release/acceptance permit a fresh decision."
+    },
+    {
+      "question_id": "C02-PQ05",
+      "question": "Can public evidence establish waste, completed transfers or net financial results?",
+      "disposition": "UNRESOLVED_QUESTION",
+      "answer": "No. Public sources support a proposal and transition constraints, but do not authenticate completed handovers, canceled procurement, service performance or a net whole-life cost result.",
+      "evidence": [
+        {
+          "path": "data/priority_cases/C02_public_evidence.json",
+          "sha256": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+          "locator": "source_records C02-S01/C02-S06/C02-S07; internal_evidence_still_required"
+        },
+        {
+          "path": "data/transaction_control_baseline.csv",
+          "sha256": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+          "locator": "UF01–UF03 transaction_document_id=not_available; transaction_verified=no"
+        },
+        {
+          "path": "data/priority_cases/C02_UF01_research_scope.json",
+          "sha256": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+          "locator": "counterfactual; period; nonadditivity"
+        }
+      ],
+      "interpretation": "The historical joint vehicle-washing EOI is evidence of a shared procurement intention at its date, not an award, current contract, asset transfer or proof of waste. Unknown results stay unknown.",
+      "alternative_explanations": [
+        "Transfers may be beneficial, neutral, costly or not implemented; necessary donor retention or noncancelable acquisition can explain lack of a benefit."
+      ],
+      "limits": [
+        "No current signed transfers, linked inventories, commitments or matched full costs.",
+        "Book value, proposal reduction and cash effects have different meanings; calendar-2027 SPM and July–June peacekeeping periods are not directly subtractable."
+      ],
+      "next_action": "Close this bounded public review with explicit limitations rather than postpone its conclusion indefinitely for inaccessible records. Preserve the reopen route and no benefit recognition.",
+      "reopen_trigger": "A reliable public audit, transfer/performance report or authorized linked record set establishes implementation, equivalent need, total external costs and service outcomes."
+    }
+  ],
+  "financial_observations": [
+    {
+      "amount": 394000,
+      "currency": "USD",
+      "period": "2027-01-01/2027-12-31 (SG proposal)",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "UF01 / EFF019",
+      "interpretation": "Vehicle component; all six proposal positions. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+    },
+    {
+      "amount": 36900,
+      "currency": "USD",
+      "period": "2027-01-01/2027-12-31 (SG proposal)",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "UF02 / EFF026",
+      "interpretation": "ICT component, outside vehicle child scope. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+    },
+    {
+      "amount": 7200,
+      "currency": "USD",
+      "period": "2027-01-01/2027-12-31 (SG proposal)",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "UF03 / EFF029",
+      "interpretation": "Consumables component, outside vehicle child scope. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+    },
+    {
+      "amount": 438100,
+      "currency": "USD",
+      "period": "2027-01-01/2027-12-31 (SG proposal)",
+      "classification": "PROPOSAL_ESTIMATE",
+      "source_path": "data/transaction_control_baseline.csv",
+      "source_locator": "UF01 + UF02 + UF03",
+      "interpretation": "Arithmetic aggregate of the three components; do not add to them or add394000 again. Already embedded in retained proposal transcription; primary budget not freshly authenticated. Not adopted funding, actual expenditure or a validated benefit."
+    }
+  ],
+  "operational_validation": "NOT_PERFORMED",
+  "recognized_benefit": null,
+  "proposed_responsible_roles": [
+    {
+      "role": "Project research maintainer",
+      "purpose": "Maintain the public assessment, track official source updates and reopen individual questions when documented triggers are met; no institutional approval or operational direction.",
+      "acceptance_status": "NOT_CONFIRMED"
+    },
+    {
+      "role": "UNIFIL donor property/transition and UNSCOL recipient property/procurement/finance custodians",
+      "purpose": "If separately authorized and willing, clarify designation, protected donor need, all-six-position mapping, recipient requirement and full costs through existing E02 channels.",
+      "acceptance_status": "NOT_CONFIRMED"
+    }
+  ],
+  "case_synthesis": {
+    "overall_judgment": "Public evidence supports a conditional reuse opportunity and a specific accounting caution against double counting embedded proposal estimates. It does not establish waste, specific transfer approval, implementation or net financial benefit; donor safeguards justify retaining applicable current release controls.",
+    "mixed_question_dispositions_preserved": true,
+    "recommended_decision": "Complete the bounded public review with limitations; retain the opportunity as conditional and current release controls, recognize no benefit, and reopen only the affected questions when their documented evidence triggers are met. Assign source monitoring to a proposed project research maintainer; do not imply institutional acceptance or dispatch requests.",
+    "not_an_f03_advancement": true
+  }
+}

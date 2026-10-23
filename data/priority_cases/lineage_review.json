@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "review_id": "C01-C03-SELECTED-LINEAGE-2026-10-23",
+  "review_date": "2026-10-23",
+  "scope": "Consequence-specific supplement over six recognized frozen expressions and seven retained priority-case financial claims. No original graph is rewritten.",
+  "frozen_scope_id": "A01-A06-2026-10-22",
+  "original_recognized_gap_count": 196,
+  "selected_expression_count": 6,
+  "selected_status_counts": {
+    "EXTERNAL_SOURCE_DIRECTORY_UNRESOLVED": 2,
+    "PARTIAL_SELECTED_FINANCIAL_CALLS": 1,
+    "RESOLVED_STATIC_CALL_SET": 1,
+    "RESOLVED_STATIC_DICTIONARY_SET": 2
+  },
+  "selected_expressions": [
+    {
+      "source_file": "scripts/validate_transaction_controls.py",
+      "line": 10,
+      "operation": "READS",
+      "original_expression": "with path.open(encoding=\"utf-8\",newline=\"\") as f:",
+      "review_status": "RESOLVED_STATIC_CALL_SET",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [
+        "data/transaction_control_baseline.csv",
+        "data/transaction_evidence_requests.csv",
+        "data/transaction_offset_reconciliation.csv",
+        "data/transaction_sources.csv",
+        "data/transaction_validation_cases.csv"
+      ],
+      "call_sites": [
+        {
+          "line": 18,
+          "argument": "transaction_control_baseline"
+        },
+        {
+          "line": 19,
+          "argument": "transaction_validation_cases"
+        },
+        {
+          "line": 20,
+          "argument": "transaction_evidence_requests"
+        },
+        {
+          "line": 21,
+          "argument": "transaction_sources"
+        },
+        {
+          "line": 22,
+          "argument": "transaction_offset_reconciliation"
+        }
+      ],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "The only five load calls have literal dataset stems; helper joins ROOT/data/(name+.csv)."
+    },
+    {
+      "source_file": "scripts/validate_phase3.py",
+      "line": 26,
+      "operation": "READS",
+      "original_expression": "with (ROOT/\"data\"/(name+\".csv\")).open(encoding=\"utf-8-sig\",newline=\"\") as f:",
+      "review_status": "RESOLVED_STATIC_DICTIONARY_SET",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [
+        "data/approved_document_manifest.csv",
+        "data/candidate_validation.csv",
+        "data/ga_adopted_directives.csv",
+        "data/ga_apportionment_schedule.csv",
+        "data/ga_approved_all_missions.csv",
+        "data/ga_approved_resource_components.csv",
+        "data/ga_mission_reconciliation.csv",
+        "data/ga_unmiss_abolishments.csv",
+        "data/mission_budget_register.csv",
+        "data/quality_issues.csv",
+        "data/ranked_consolidation_validation.csv",
+        "data/spm_2027_addenda.csv",
+        "data/spm_fiscal_boundary.csv"
+      ],
+      "call_sites": [
+        {
+          "line": 36,
+          "expression": "load(n,k)"
+        }
+      ],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "DATA is a literal module dictionary; its keys feed load(name,key) without mutation in the reviewed script."
+    },
+    {
+      "source_file": "scripts/validate_spm_2027.py",
+      "line": 27,
+      "operation": "READS",
+      "original_expression": "with (ROOT/\"data\"/(name+\".csv\")).open(encoding=\"utf-8\",newline=\"\") as file:",
+      "review_status": "RESOLVED_STATIC_DICTIONARY_SET",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [
+        "data/candidate_validation.csv",
+        "data/ga_approved_all_missions.csv",
+        "data/spm_2027_addenda.csv",
+        "data/spm_2027_closure_bridge.csv",
+        "data/spm_2027_cluster_bridge.csv",
+        "data/spm_2027_cross_pillar_links.csv",
+        "data/spm_2027_embedded_efficiencies.csv",
+        "data/spm_2027_extrabudgetary_coverage.csv",
+        "data/spm_2027_extrabudgetary_items.csv",
+        "data/spm_2027_extrabudgetary_reconciliation.csv",
+        "data/spm_2027_financing_controls.csv",
+        "data/spm_2027_mission_budget.csv",
+        "data/spm_2027_source_discrepancies.csv",
+        "data/spm_2027_source_manifest.csv",
+        "data/spm_2027_validation_sequence.csv"
+      ],
+      "call_sites": [
+        {
+          "line": 37,
+          "expression": "load(n,k)"
+        }
+      ],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "FILES is a literal module dictionary; its keys feed load(name,key) without mutation in the reviewed script."
+    },
+    {
+      "source_file": "reports/white_paper_2026-10-15/analyze.py",
+      "line": 11,
+      "operation": "READS",
+      "original_expression": "with (REPO/p).open(encoding='utf-8-sig',newline='') as h:return list(csv.DictReader(h))",
+      "review_status": "PARTIAL_SELECTED_FINANCIAL_CALLS",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [
+        "data/spm_2027_cluster_bridge.csv",
+        "data/spm_2027_embedded_efficiencies.csv",
+        "data/spm_2027_mission_budget.csv"
+      ],
+      "call_sites": [
+        {
+          "line": 17,
+          "argument": "data/spm_2027_cluster_bridge.csv"
+        },
+        {
+          "line": 17,
+          "argument": "data/spm_2027_embedded_efficiencies.csv"
+        },
+        {
+          "line": 17,
+          "argument": "data/spm_2027_mission_budget.csv"
+        }
+      ],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "Only the three directly relevant SPM financial calls are resolved here; other financial/research call families remain outside this selected resolution."
+    },
+    {
+      "source_file": "scripts/validate_phase3.py",
+      "line": 97,
+      "operation": "READS",
+      "original_expression": "assert hashlib.sha256(file.read_bytes()).hexdigest()==x[\"sha256\"],\"SHA mismatch: \"+str(file)",
+      "review_status": "EXTERNAL_SOURCE_DIRECTORY_UNRESOLVED",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [],
+      "call_sites": [],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "Optional --source-dir input is supplied outside the repository. Filename/hash-manifest checks do not establish that PDF bytes were supplied or checked.",
+      "unresolved_requirements": [
+        "Authorized source directory with expected PDF filenames",
+        "Actual supplied-file hashes and successful --source-dir validation receipt"
+      ]
+    },
+    {
+      "source_file": "scripts/validate_spm_2027.py",
+      "line": 88,
+      "operation": "READS",
+      "original_expression": "assert hashlib.sha256(p.read_bytes()).hexdigest()==m[\"sha256\"],str(p)",
+      "review_status": "EXTERNAL_SOURCE_DIRECTORY_UNRESOLVED",
+      "method": "Non-executing AST/literal call and source inspection",
+      "resolved_repository_paths": [],
+      "call_sites": [],
+      "confidence": "STATIC_PATH_ONLY_NOT_RUNTIME_OR_SOURCE_AUTHENTICATION",
+      "resolution_basis": "Optional --source-dir input is supplied outside the repository. Filename/hash-manifest checks do not establish that PDF bytes were supplied or checked.",
+      "unresolved_requirements": [
+        "Authorized source directory with expected PDF filenames",
+        "Actual supplied-file hashes and successful --source-dir validation receipt"
+      ]
+    }
+  ],
+  "claim_chains": [
+    {
+      "case_id": "C01",
+      "claim_id": "RSCE_2027_SPM_share",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "RS01"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          36
+        ],
+        "formula": "published_amount",
+        "amount_usd": "3259100",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C01.json",
+        "evidence_csv_lines": [
+          10
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Proposed internal allocation, calendar 2027; not a transaction or benefit.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C01",
+      "claim_id": "RSCE_corporate_total",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "RS03"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          37
+        ],
+        "formula": "published_amount",
+        "amount_usd": "45911600",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C01.json",
+        "evidence_csv_lines": [
+          12
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Fiscal 2026/27 corporate total; differs from calendar SPM-only share.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C01",
+      "claim_id": "RSCE_mixed_client_share",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "RS04"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          37
+        ],
+        "formula": "published_amount",
+        "amount_usd": "3443200",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C01.json",
+        "evidence_csv_lines": [
+          13
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Fiscal 2026/27 mixed SPM/observer-client share; not comparable directly to RS01.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C01",
+      "claim_id": "RSCE_calendar_share_change",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "RS01",
+          "RS02"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          36
+        ],
+        "formula": "RS01-RS02",
+        "amount_usd": "936100",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C01.json",
+        "evidence_csv_lines": [
+          10,
+          11
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Same calendar-share proposal comparison; not overbilling or savings.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C02",
+      "claim_id": "UNSCOL_embedded_asset_measures",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "UF01",
+          "UF02",
+          "UF03"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          33
+        ],
+        "formula": "UF01+UF02+UF03",
+        "amount_usd": "438100",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C02.json",
+        "evidence_csv_lines": [
+          2,
+          3,
+          4
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Already embedded projected vehicle/ICT/consumable measures; not incremental realized benefit.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C03",
+      "claim_id": "BINUH_aviation_proposal_difference",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "BH03",
+          "BH04",
+          "BH01"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          34
+        ],
+        "formula": "BH03-BH04=BH01",
+        "amount_usd": "1400000",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C03.json",
+        "evidence_csv_lines": [
+          5,
+          7,
+          8
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Published budget comparator, not a settled aviation invoice.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    },
+    {
+      "case_id": "C03",
+      "claim_id": "BINUH_broader_support",
+      "source": {
+        "path": "data/transaction_control_baseline.csv",
+        "control_ids": [
+          "BH02"
+        ],
+        "row_origin": "RETAINED_PUBLIC_TRANSCRIPTION_NO_CAPTURED_EXTRACTION_PRODUCER"
+      },
+      "transformation": {
+        "script": "scripts/validate_transaction_controls.py",
+        "lines": [
+          35
+        ],
+        "formula": "published_amount",
+        "amount_usd": "4000000",
+        "role": "ARITHMETIC_AND_DECLARATION_GUARD_NOT_SOURCE_DATA_PRODUCER"
+      },
+      "consuming_case": {
+        "path": "data/cases/C03.json",
+        "evidence_csv_lines": [
+          6
+        ],
+        "relationship": "EXACT_RETAINED_ROW_SNAPSHOTS"
+      },
+      "downstream_finance": {
+        "script": "scripts/build_financial_baseline.py",
+        "output": "data/portfolio/financial_baseline.json",
+        "relationship": "SEPARATE_AGGREGATE_SOURCE_PERIMETERS_NOT_A_PRODUCER_OF_THE_CASE_CONTROL_ROWS"
+      },
+      "limitation": "Broader support proposal; not additive to a potentially included aviation component.",
+      "operational_input_status": "INTERNAL_LINKED_RECORDS_NOT_OBTAINED"
+    }
+  ],
+  "producer_boundary": "Original transaction-control CSVs are retained transcriptions. Validators consume and guard them; no script/PDF extraction producer is asserted.",
+  "global_gap_disposition": "The frozen 196-expression inventory is preserved. This supplement does not subtract scoped resolutions from that historical denominator or imply globally complete lineage.",
+  "operational_boundary": "Internal chargeback journals, asset transfers/canceled procurement, aviation flight/billing populations and actual costs remain absent; no actual operational lineage or benefits are certified.",
+  "source_sha256": {
+    "data/approved_document_manifest.csv": "71268b3f453bfe667b61ec7ca68cbae70f6edf1f4d28cf09cd51f167ec7c5e29",
+    "data/candidate_validation.csv": "d02dd732eb577123ab5e251d9ba054b4198265419daf3f2250f59d5ccb2efdd3",
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/ga_adopted_directives.csv": "6b107bb1ec4a987fd6e42c600b051aee7c42e9eaaf512b664ba6483f9c4eb597",
+    "data/ga_apportionment_schedule.csv": "9efb13d9b3fcce44b1304f4dc08f9f4c0caa2e374eac1c5201a2b2a826695540",
+    "data/ga_approved_all_missions.csv": "6f3fe9d9f6d31b0dd0f26586017a5e1dae8379dec864e70d2a848e2423ecaf3c",
+    "data/ga_approved_resource_components.csv": "6f741dae8b9804656702ee7eea42d91841314266189b279a55b40df84aaf2ab7",
+    "data/ga_mission_reconciliation.csv": "ab48d921e541fadfaba7089c53dac1cb8ebf17c951d4cedf44427ff6f07284c2",
+    "data/ga_unmiss_abolishments.csv": "9d61004cf983fe0df58fec22a061bf340b592c9d6bafb46b12d6e98701417bd8",
+    "data/mission_budget_register.csv": "2d663b0cccd3a448cb8bd440c9feebec7d521b423d3626507e0b22ecf167d28e",
+    "data/quality_issues.csv": "ad2be6dae2c700942064852e705e9fff19a33806b12ea9dbf30ad320197062bc",
+    "data/ranked_consolidation_validation.csv": "823edbe627018a24690d5b69a0cb946024d5677c7da66013fe633458579411b5",
+    "data/spm_2027_addenda.csv": "e5075739cef1f819b5dc8bcb134e6d02b2b3748f2fec53f629a30d5545ec863c",
+    "data/spm_2027_closure_bridge.csv": "5602645472bf0e915b9017d8ad434572d22036d9e1e99a27d68b401a82258ae8",
+    "data/spm_2027_cluster_bridge.csv": "3c914c5d52fed954f0c2c2be6eb6b1f1f61fe4adf6dc1e30da188739d2db9314",
+    "data/spm_2027_cross_pillar_links.csv": "bc88b274660d6816631e6c2154344c76dc36b3a8f620c6a96f98e6e164344c30",
+    "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
+    "data/spm_2027_extrabudgetary_coverage.csv": "79f851dfa7a3a3195bc9d91ed319d7089a3446e531f429f62071b3e28e47847f",
+    "data/spm_2027_extrabudgetary_items.csv": "afaa78afbeb026886c7aa78628b426e914f70a71c1346f95253b67dcf27f0432",
+    "data/spm_2027_extrabudgetary_reconciliation.csv": "b7198c7aa915ef5eae06fb8a0311f11bd66b90c73c83a6def44dde4b7c2ef72c",
+    "data/spm_2027_financing_controls.csv": "19d89f32a9543aa5a2725460363cb5a7605dbf0e6bf03a2863862fd0d44357e7",
+    "data/spm_2027_mission_budget.csv": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
+    "data/spm_2027_source_discrepancies.csv": "617f9422829d57e1840f4f86b99ccd296bb04e72ba9684e62baa60262838400b",
+    "data/spm_2027_source_manifest.csv": "970c31d779e2b5e213f19420d22488c8b24e0935bfde50bfaeda80ecc8670272",
+    "data/spm_2027_validation_sequence.csv": "ac053cae56e3fe5fc5deb1405d981850dcb70a8b4757ee1d913ac362a507b9de",
+    "data/spm_fiscal_boundary.csv": "3af3b8a82523ffa6212645785643139deabbeff838af440d42b49bc1aca70790",
+    "data/transaction_control_baseline.csv": "63ec141994cbed281251b0c443d1a42eb0f2a9869a410071b7709a3651c3d6b1",
+    "data/transaction_evidence_requests.csv": "3300df477d0db600659524328d77e99b41e10512fa9f78c84868d12950cee038",
+    "data/transaction_offset_reconciliation.csv": "293b65d5b15980ae056c1061ee0abc13c13535b3ab9033d5317bdd7073a4b0ac",
+    "data/transaction_sources.csv": "2038750a740e3cc8bf9a0e652c098af0a060d642ea3d638766292d3bb18d69db",
+    "data/transaction_validation_cases.csv": "d30788f7556ae0982b5f6ffdb04bc506d30059638d3691167ac0496c06725afc",
+    "docs/repository_lineage.md": "f091a4dda77fe35f59d05a26892e7c21864135f1ea90b7212d3f6755c4558036",
+    "metadata/repository_audit_scope.json": "8be3bfecdd1a5ef56cbcdb6c646850c7cacced80fa750955c53f982d2244b577",
+    "metadata/validation_groups.json": "705743fcb1468e50c477e870157d38e745e3d4fba589bdeb7a6fcd228755a54c",
+    "reports/white_paper_2026-10-15/analyze.py": "903ee849c41002e1b3d6a60c9ca2689407d08b024bbd875bc190be34cd701014",
+    "scripts/build_financial_baseline.py": "ec4b97249fb8e67cfdbac42cb7c1fcf113febe5db1ed565d172c62e30c66b50c",
+    "scripts/validate_case_dossiers.py": "65a1498af917383e6c08be2caf2851e80479e41b573db3862a26ff77aadb0c15",
+    "scripts/validate_phase3.py": "396fbada66ac9fec2e2c004a55319ead7388872605d7e35852c350fa6147197f",
+    "scripts/validate_spm_2027.py": "d7fd330f4aec3ecfe254e38721b663f2ca2b8319f1a9c6fa7b72d3c225e4de19",
+    "scripts/validate_transaction_controls.py": "20839af23d4bb811c8cf08cd93439b37d694b4a44f1c5932ccff84a182edaae6"
+  }
+}

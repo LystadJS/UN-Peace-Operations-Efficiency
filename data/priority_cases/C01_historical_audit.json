@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "case_id": "C01",
+  "artifact_id": "C01-OIOS-2024-028-HISTORICAL-LEAD",
+  "reviewed_on": "2026-10-23",
+  "status": "PUBLIC_INDEXED_HISTORICAL_LEAD_DIRECT_ACCESS_BLOCKED",
+  "source_scope": "Official publicly indexed listing and excerpts only; the full report was not retrieved or independently authenticated in this review.",
+  "report": {
+    "number": "2024/028",
+    "title": "Audit of onboarding and separation activities in the Regional Service Centre in Entebbe",
+    "issuer": "Office of Internal Oversight Services, Internal Audit Division",
+    "entity": "DOS / RSCE",
+    "issued_on": "2024-06-28",
+    "public_available_on": "2024-07-29",
+    "reported_audit_period": {
+      "start": "2021-07-01",
+      "end": "2023-06-30"
+    },
+    "service_population": "RSCE onboarding and separation service line; report-index background describes sixteen client missions during the historical context. This is not a 2026 client denominator.",
+    "review_population_counts": null,
+    "full_report_sha256": null,
+    "raw_report_retained": false
+  },
+  "public_release": {
+    "classification_as_indexed": "Non Confidential",
+    "classification_source_id": "OIOS-LISTING",
+    "confidence": "Official listing is indexed as public/non-confidential; direct listing access returned403, so release classification was not independently inspected in a rendered live page.",
+    "access_gate_response": "STOP_DIRECT_REPORT_RETRIEVAL; no alternate confidential-files path fetched or retained",
+    "restricted_material_downloaded": false
+  },
+  "sources": [
+    {
+      "source_id": "OIOS-LISTING",
+      "url": "https://oios.un.org/en/search_page?field_report_entity_value=&field_report_issue_date_value%5Bvalue%5D=&field_report_no_value=&field_report_title_value=&field_report_type_tid=All&order=field_report_avail_date&page=25&sort=asc",
+      "source_class": "OFFICIAL_OIOS_PUBLIC_INDEX",
+      "indexed_locator": "Report2024/028 row: issue28June2024, available29July2024, NonConfidential",
+      "retrieved_on": "2026-10-23",
+      "access_status": "OFFICIAL_INDEXED_TEXT_DIRECT_OPEN_403",
+      "supports": [
+        "Report identity",
+        "Historical issue and public availability dates",
+        "Indexed release classification"
+      ],
+      "does_not_support": [
+        "Live classification reinspection",
+        "Full report authenticity",
+        "Recommendation closure as of2026"
+      ]
+    },
+    {
+      "source_id": "OIOS-PUBLIC-DOWNLOAD",
+      "url": "https://oios.un.org/fr/file/10357/download?token=7HsZglP_",
+      "alternate_public_indexed_url": "https://oios.un.org/file/10357/download?token=7HsZglP_",
+      "source_class": "OFFICIAL_OIOS_INDEXED_AUDIT_EXCERPT",
+      "indexed_locator": "Executive summary; report background paragraphs1–4",
+      "retrieved_on": "2026-10-23",
+      "access_status": "OFFICIAL_INDEXED_EXCERPT_DIRECT_OPEN_403",
+      "supports": [
+        "Historical audit period and service scope",
+        "Five recommendations and management response reported at issue"
+      ],
+      "does_not_support": [
+        "Full report reinspection or complete sample population",
+        "Current implementation or closure",
+        "Current cost, capacity or waste amount"
+      ],
+      "full_text_inspected": false
+    },
+    {
+      "source_id": "RSCE-IMPLEMENTATION-NEWS",
+      "url": "https://rsce.unmissions.org/en/node/77745",
+      "source_class": "OFFICIAL_INDEXED_MANAGEMENT_REPORT",
+      "indexed_locator": "Article titled RSCE Achieves100%ImplementationofOIOSRecommendations",
+      "retrieved_on": "2026-10-23",
+      "publication_date": null,
+      "access_status": "OFFICIAL_INDEXED_EXCERPT_DIRECT_OPEN_403",
+      "supports": [
+        "A later indexed RSCE management account claims100%OIOSrecommendation implementation"
+      ],
+      "does_not_support": [
+        "Exact article date",
+        "Report2024/028-specific OIOS closure",
+        "Independent effectiveness or financial validation"
+      ],
+      "underlying_oios_closure_receipt": null
+    }
+  ],
+  "historical_report_interpretation": {
+    "reported_positive_context": "Indexed excerpts describe adherence to established procedures, alongside weaknesses in workflow information and follow-through.",
+    "recommendation_count": 5,
+    "recommendation_themes": [
+      "Data-capture guidance",
+      "Workflow-tool issues",
+      "Complete timely repository use",
+      "Assigned implementation roadmap",
+      "Subprocess delay visibility"
+    ],
+    "management_response_at_report": "Acceptance and implementation action reported at issue; this is historical management response, not current independent closure.",
+    "current_oios_closure_status": "UNKNOWN_NOT_VERIFIED",
+    "current_recurrence_status": "UNKNOWN_NOT_VERIFIED",
+    "monetary_finding": null,
+    "causal_allocation_of_delay": "NOT_ESTABLISHED_FOR_CURRENT_OPERATIONS"
+  },
+  "design_relevance": {
+    "inference": "A bounded onboarding/separation process trace is a plausible C01 service-line archetype because a historical audit identified information and monitoring questions. This is a research design lead, not proof that the historical conditions persist.",
+    "candidate_subcase": "One prospectively agreed client and onboarding OR separation service category with a complete eligible closed-period cohort, including delayed, corrected, withdrawn and completed cases.",
+    "selection_status": "PROPOSED_ARCHETYPE_NOT_SELECTED_OR_AUTHORIZED",
+    "actual_client": null,
+    "actual_period": null,
+    "actual_population_size": null,
+    "smallest_decision": "Determine whether service case chronology and responsibility-attributed delays can be linked to retained local work, provider processing and outcomes before designing an operational alternative.",
+    "protect_existing_controls": "Confirm current workflow tooling, client responsibilities and completed remediation first; avoid proposing another dashboard or duplicate tracking layer merely because the historical report mentioned weak monitoring.",
+    "scope_limit": "Do not extrapolate the2021–2023 audit or its16-client context to2026 operations, post-handover clients, allRSCE functions or institution-wide waste."
+  },
+  "evidence_path": {
+    "reuse_existing_contract": "data/evidence_requests/E01_rsce.json",
+    "existing_fields_to_link": [
+      "service_case_id",
+      "service_category",
+      "service_date",
+      "posting_date",
+      "entry_type",
+      "linked_line_id",
+      "observation_id",
+      "completed_units",
+      "paid_hours",
+      "external_cost",
+      "service_level_result",
+      "exception_status"
+    ],
+    "minimum_extra_evidence_before_adjudication": [
+      "Current SLA and responsibility matrix, including client versus provider clock-start rules",
+      "Current workflow-tool description and version, relevant recommendation closure/remediation receipts",
+      "Complete eligible case-population receipt, exclusions, counts and missingness",
+      "Stage-level chronology and reason/role attribution sufficient to distinguish provider processing from waiting for client documentation"
+    ],
+    "proposed_contract_extension": {
+      "status": "PROPOSED_ONLY_REQUIRES_VERSIONED_CONTRACT_REVIEW_BEFORE_COLLECTION",
+      "fields": [
+        {
+          "name": "subprocess_code",
+          "purpose": "Identify a defined workflow stage"
+        },
+        {
+          "name": "stage_event_date",
+          "purpose": "Reconstruct permitted chronology without narrative HR contents"
+        },
+        {
+          "name": "responsible_actor_role",
+          "purpose": "Distinguish client/provider/HQ responsibility without personal identity"
+        },
+        {
+          "name": "delay_reason_code",
+          "purpose": "Attribute waiting/rework with an approved taxonomy"
+        },
+        {
+          "name": "input_completeness_status",
+          "purpose": "Distinguish ready-to-process work from incomplete submissions"
+        }
+      ],
+      "boundary": "These extra fields are not falsely presented as already authorized E01 fields. No actual values, staff names, employment files, identifiers or re-identification maps belong in public Git."
+    },
+    "prospective_guardrail_design": "Preserve payroll/appointment and separation-payment continuity, required controls, confidentiality and service obligations. Establish baseline and applicable SLA, then freeze comparison/threshold rules before outcome evaluation; retain no-change outcomes.",
+    "accepted_custodian": null,
+    "collection_authorized": false,
+    "request_sent": false
+  },
+  "f03_boundary": "Historical public excerpts can anchor a specific hypothesis and refine research design. They do not themselves satisfy all seven VALIDATION_READY checks or any OPERATIONALLY_VALIDATED/FINANCIALLY_VALIDATED gate.",
+  "candidate_state_change": null,
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "status": "NOT_ESTIMATED",
+    "cashable_saving": null,
+    "realized_saving": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "capacity_gain": null
+  },
+  "remaining_gaps": [
+    "Rendered official listing and full public report reinspection remain blocked by403.",
+    "Historical audit sample/population details and full recommendation/response wording were not reverified.",
+    "Report-specific closure or current remediation effectiveness is unknown; later general management claims do not settle it.",
+    "No2026 service-case population, workload/cost baseline, accepted owner or operational outcome has been obtained."
+  ]
+}

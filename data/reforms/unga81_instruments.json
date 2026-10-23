@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "register_id": "R04-UNGA81-2026-10-23",
+  "session": 81,
+  "evidence_cutoff": "2026-10-23",
+  "retrieved_on": "2026-10-23",
+  "scope": "Bounded discovery of adopted GA81 instruments potentially relevant to UN80 and peace-operations administrative or budgetary efficiency; not a complete session legal digest.",
+  "coverage_status": "PARTIAL_PRIMARY_INDEX_REVIEW",
+  "sources": [
+    {
+      "source_id": "GA81-LIBRARY",
+      "url": "https://research.un.org/en/docs/ga/quick/regular/81",
+      "source_type": "OFFICIAL_INDEX",
+      "retrieval_status": "PAGE_RETRIEVED",
+      "locator": "Resolutions adopted by the General Assembly at its 81st session; embedded table",
+      "observation": "The compilation A/81/49 (Vol.I) is marked anticipated; the linked table lists five adopted resolutions. This does not authenticate their full operative text."
+    },
+    {
+      "source_id": "GA81-LIBRARY-TABLE",
+      "url": "https://ydsftksff8.execute-api.us-east-1.amazonaws.com/dev/render_meeting_ga/garesolutions_81/EN",
+      "source_type": "OFFICIAL_INDEX_EMBED_LINK",
+      "linked_from": "GA81-LIBRARY",
+      "retrieval_status": "TABLE_RETRIEVED",
+      "locator": "All five resolution rows visible in the embedded table",
+      "observation": "The UN library page directly links this table. The host alone is not used to establish official provenance."
+    },
+    {
+      "source_id": "GA81-FIFTH-INDEX",
+      "url": "https://www.un.org/en/ga/fifth/81/resdec81.shtml",
+      "source_type": "OFFICIAL_INDEX",
+      "retrieval_status": "SEARCH_INDEX_EXCERPT_ONLY_DIRECT_FETCH_403",
+      "locator": "Items 136, 138 and 142",
+      "observation": "Search-rendered index shows A/RES/81/2 under Article 19 and blank outcome rows for administrative efficiency and proposed programme budget for 2027. Blank rows do not establish that no decision exists."
+    },
+    {
+      "source_id": "GA81-PGA-REVITALIZATION",
+      "url": "https://www.un.org/pga/81/documents/speeches/general-assembly-revitalization-joint-debate-8-october-2026/",
+      "source_type": "PGA_STATEMENT",
+      "retrieval_status": "SEARCH_RENDERED_TEXT",
+      "locator": "Statement of 8 October 2026, priorities and co-chair appointments",
+      "observation": "A presidential statement describes continuing revitalization and mandate-review work. It does not establish an adopted GA81 reform obligation or authorization to cut a peace-operation function."
+    }
+  ],
+  "instruments": [
+    {"instrument_id":"GA81-001","symbol":"A/RES/81/1","title":"Participation by the State of Palestine during the 81st session","issuing_organ":"GENERAL_ASSEMBLY","session":81,"adoption_status":"ADOPTION_RECORDED_OFFICIAL_INDEX","adoption_date":"2026-09-17","meeting_record":"A/81/PV.4","official_url":"https://docs.un.org/en/A/RES/81/1","adoption_source_id":"GA81-LIBRARY-TABLE","operative_text_status":"NOT_RETRIEVED","portfolio_relevance":"OUTSIDE_TARGET_SCOPE_BY_INDEX_TITLE","authority_classification":"AUTHORITY_UNRESOLVED","authority_limitation":"Adoption recorded; action-specific authority and operative provisions not assessed."},
+    {"instrument_id":"GA81-002","symbol":"A/RES/81/2","title":"Scale of assessments for the apportionment of the expenses of the United Nations: requests under Article 19 of the Charter","issuing_organ":"GENERAL_ASSEMBLY","session":81,"adoption_status":"ADOPTION_RECORDED_OFFICIAL_INDEX","adoption_date":"2026-10-12","meeting_record":"A/81/PV.18","official_url":"https://docs.un.org/en/A/RES/81/2","adoption_source_id":"GA81-LIBRARY-TABLE","operative_text_status":"DIRECT_RESOLVER_NOT_ACCESSIBLE","portfolio_relevance":"FINANCIAL_GOVERNANCE_CONTEXT_NOT_EFFICIENCY_DIRECTION","authority_classification":"AUTHORITY_UNRESOLVED","authority_limitation":"Adoption recorded; do not infer appropriations, peacekeeping reductions or efficiency requirements from Article 19 title."},
+    {"instrument_id":"GA81-003","symbol":"A/RES/81/3","title":"United Nations Declaration on Sea-level Rise","issuing_organ":"GENERAL_ASSEMBLY","session":81,"adoption_status":"ADOPTION_RECORDED_OFFICIAL_INDEX","adoption_date":"2026-10-12","meeting_record":"A/81/PV.18","official_url":"https://docs.un.org/en/A/RES/81/3","adoption_source_id":"GA81-LIBRARY-TABLE","operative_text_status":"NOT_RETRIEVED","portfolio_relevance":"OUTSIDE_TARGET_SCOPE_BY_INDEX_TITLE","authority_classification":"AUTHORITY_UNRESOLVED","authority_limitation":"Adoption recorded; operative provisions not assessed."},
+    {"instrument_id":"GA81-004","symbol":"A/RES/81/4","title":"Political Declaration of the High-Level Meeting to Mark the 25th Anniversary of the adoption of the Durban Declaration and Programme of Action","issuing_organ":"GENERAL_ASSEMBLY","session":81,"adoption_status":"ADOPTION_RECORDED_OFFICIAL_INDEX","adoption_date":"2026-10-12","meeting_record":"A/81/PV.19","official_url":"https://docs.un.org/en/A/RES/81/4","adoption_source_id":"GA81-LIBRARY-TABLE","operative_text_status":"NOT_RETRIEVED","portfolio_relevance":"OUTSIDE_TARGET_SCOPE_BY_INDEX_TITLE","authority_classification":"AUTHORITY_UNRESOLVED","authority_limitation":"Adoption recorded; operative provisions not assessed."},
+    {"instrument_id":"GA81-005","symbol":"A/RES/81/5","title":"Political Declaration on Pandemic Prevention, Preparedness and Response","issuing_organ":"GENERAL_ASSEMBLY","session":81,"adoption_status":"ADOPTION_RECORDED_OFFICIAL_INDEX","adoption_date":"2026-10-12","meeting_record":"A/81/PV.19","official_url":"https://docs.un.org/en/A/RES/81/5","adoption_source_id":"GA81-LIBRARY-TABLE","operative_text_status":"NOT_RETRIEVED","portfolio_relevance":"OUTSIDE_TARGET_SCOPE_BY_INDEX_TITLE","authority_classification":"AUTHORITY_UNRESOLVED","authority_limitation":"Adoption recorded; operative provisions not assessed."}
+  ],
+  "search_receipt": {
+    "method": "Official-domain web search, direct library retrieval and its linked embedded table; attempted official Fifth Committee, GA81 proposal portal and resolution resolver retrieval.",
+    "query_families": ["site:un.org eighty-first session UN80 resolution 2026", "site:docs.un.org A/RES/81 peacekeeping", "site:docs.un.org/en/A/RES/81 UN80", "site:un.org A/RES/81 budget", "site:un.org eighty-first session mandate implementation review resolution"],
+    "failed_retrievals": ["https://docs.un.org/en/A/RES/81/2", "https://igov.un.org/ga/plenary/81/proposals", "https://www.un.org/en/ga/fifth/81/ppb2027.shtml", "https://static.un.org/en/ga/fifth/81/resdec81.shtml"],
+    "retained_source_bytes": false,
+    "checksum": null,
+    "authentication_limit": "Search service rendering and official index provenance only; no retained final adopted-text bytes, complete voting-record export or complete decisions register."
+  },
+  "interpretation_limits": [
+    "No in-scope GA81 reform obligation is verified by this bounded review. This is not a claim that none exists.",
+    "The five rows are the retrieved table population, not a certification of the full session population or an enumeration of all decisions.",
+    "A/81/6 proposals and A/81/7 ACABQ advice remain distinct from A/RES/81 adopted resolutions.",
+    "Session 81 is ongoing; later instruments and unindexed documents can change the baseline.",
+    "Unknown authority is not evidence of noncompliance, implementation failure or waste."
+  ]
+}

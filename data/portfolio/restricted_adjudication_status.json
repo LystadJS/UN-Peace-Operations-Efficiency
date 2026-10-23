@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task_id": "I02",
+  "receipt_id": "I02-RESTRICTED-ADJUDICATION-BOUNDARY-1",
+  "as_of": "2026-10-23",
+  "status": "BLOCKED_NO_AUTHORIZED_RESTRICTED_EVIDENCE",
+  "artifact_role": "PUBLIC_BLOCKED_DEPENDENCY_RECEIPT_NOT_ADJUDICATION",
+  "restricted_records_received": false,
+  "restricted_records_adjudicated": false,
+  "authorized_access_receipt": null,
+  "accepted_accountable_owner": null,
+  "owner_acceptance_status": "NOT_OBTAINED",
+  "substantive_operational_audits_completed": 0,
+  "financial_adjudications_completed": 0,
+  "public_derivative_adjudications": [],
+  "financial_benefits_status": "NOT_ESTIMATED",
+  "verified_savings": null,
+  "closure_counts_toward_operational_completion": false,
+  "block_reason": "No authorized restricted operational/financial population, accepted owner or substantive review receipt is available in this workflow. Public source research and synthetic rehearsals cannot substitute for them.",
+  "required_dependencies": [
+    "Competent custodian and owner acceptance of a specific bounded purpose and evidence request",
+    "Approved access, handling, retention and minimum-field contract",
+    "Authenticated complete records at the case's operational and financial grain",
+    "Comparable frozen baseline, prospective guardrails, period and materiality",
+    "Reproducible substantive adjudication and separate reviewer receipt",
+    "Custodian disclosure approval for any non-identifying public derivative"
+  ],
+  "next_action": "Prepare competent-owner review using unsent E01–E06 contracts; obtain the appropriate explicit authorization before dispatch, collection or access. Do not publish underlying records.",
+  "source_references": [
+    "data/pilots/request_status.json",
+    "data/portfolio/verified_benefit_ledger.json",
+    "docs/secure_evidence_intake.md",
+    "docs/desired_end_state.md"
+  ],
+  "limitations": [
+    "This receipt describes evidence available to this project workflow, not whether records exist elsewhere in the UN.",
+    "Zero completed adjudications is a workflow count; unknown financial effects are not a measured zero.",
+    "Passing structural checks does not authorize collection or authenticate operational evidence."
+  ]
+}

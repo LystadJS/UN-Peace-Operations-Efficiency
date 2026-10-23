@@ -97,6 +97,11 @@
       "path": "data/portfolio/release_manifest.json",
       "scope": "public validation baseline artifact hashes; not decision-grade certification",
       "designation_basis": "I12 qualified public release"
+    },
+    "priority_progress": {
+      "path": "data/priority_cases/progress.json",
+      "scope": "C01–C03 public evidence and bounded child research readiness, with historical parents preserved",
+      "designation_basis": "Owner-authorized priority follow-up, 23 October 2026"
     }
   },
   "artifacts": [
@@ -7299,6 +7304,18 @@
     {
       "path": "data/portfolio/release_manifest.json",
       "producer": "scripts/build_portfolio_release.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "data/priority_cases/progress.json",
+      "producer": "scripts/build_priority_progress.py",
+      "hash_mode": "producer_checked_no_self_hash",
+      "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
+    },
+    {
+      "path": "docs/priority_case_progress.md",
+      "producer": "scripts/build_priority_progress.py",
       "hash_mode": "producer_checked_no_self_hash",
       "designation_basis": "A08-A14 user task scope; existence does not establish substantive verification"
     }

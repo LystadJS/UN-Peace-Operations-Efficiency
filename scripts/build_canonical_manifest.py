@@ -33,6 +33,7 @@ CURRENT_ROLES = {
     'reform_baseline': ('data/reforms/baseline_release.json', 'selected partial UNGA80/81 public research baseline', 'R18 source-qualified baseline and R17 agent review'),
     'workflow_execution': ('data/portfolio/workflow_execution.json', 'artifact delivery and blocked substantive execution by roadmap task', 'I10 task execution integration'),
     'portfolio_release': ('data/portfolio/release_manifest.json', 'public validation baseline artifact hashes; not decision-grade certification', 'I12 qualified public release'),
+    'priority_progress': ('data/priority_cases/progress.json', 'C01–C03 public evidence and bounded child research readiness, with historical parents preserved', 'Owner-authorized priority follow-up, 23 October 2026'),
 }
 GENERATED = {
     'data/issues/current_issues.json': 'scripts/migrate_master_issues.py',
@@ -47,6 +48,8 @@ GENERATED = {
     'data/reforms/baseline_release.json': 'scripts/build_reform_views.py',
     'data/portfolio/workflow_execution.json': 'scripts/build_workflow_execution.py',
     'data/portfolio/release_manifest.json': 'scripts/build_portfolio_release.py',
+    'data/priority_cases/progress.json': 'scripts/build_priority_progress.py',
+    'docs/priority_case_progress.md': 'scripts/build_priority_progress.py',
 }
 
 

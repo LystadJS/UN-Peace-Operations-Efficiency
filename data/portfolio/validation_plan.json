@@ -36,7 +36,10 @@
     "tests/check_project_consistency.py",
     "tests/check_project_health.py",
     "tests/check_portfolio_check_runner.py",
-    "tests/check_workflow_execution.py"
+    "tests/check_workflow_execution.py",
+    "tests/check_priority_semantics.py",
+    "tests/check_priority_lineage.py",
+    "tests/check_priority_progress.py"
   ],
   "required_step_ids": [
     "reform-claims",
@@ -88,7 +91,14 @@
     "check-portfolio-check-runner",
     "workflow-execution",
     "check-workflow-execution",
-    "reform-vocabulary"
+    "reform-vocabulary",
+    "priority-semantics",
+    "priority-lineage",
+    "priority-research-candidate",
+    "priority-progress",
+    "check-priority-semantics",
+    "check-priority-lineage",
+    "check-priority-progress"
   ],
   "required_paths": [
     "data/portfolio/dataset_contracts.json",
@@ -117,7 +127,10 @@
     "docs/cases/C13.md",
     "docs/cases/C14.md",
     "data/portfolio/workflow_execution.json",
-    "docs/workflow_execution.md"
+    "docs/workflow_execution.md",
+    "data/priority_cases/progress.json",
+    "data/priority_cases/research_candidates.json",
+    "data/priority_cases/research_candidates_initial.json"
   ],
   "steps": [
     {
@@ -708,6 +721,109 @@
       ],
       "tasks": [
         "R01"
+      ]
+    },
+    {
+      "id": "priority-semantics",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_priority_semantics.py",
+        "--check"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "priority-lineage",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_priority_lineage.py",
+        "--check"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "priority-research-candidate",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/validate_candidate_advancement.py",
+        "--records",
+        "data/priority_cases/research_candidates.json"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "priority-progress",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/build_priority_progress.py",
+        "--check"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "check-priority-semantics",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_priority_semantics.py"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "check-priority-lineage",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_priority_lineage.py"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
+      ]
+    },
+    {
+      "id": "check-priority-progress",
+      "argv": [
+        "python",
+        "-B",
+        "tests/check_priority_progress.py"
+      ],
+      "tasks": [
+        "C01",
+        "C02",
+        "C03",
+        "F03"
       ]
     }
   ]

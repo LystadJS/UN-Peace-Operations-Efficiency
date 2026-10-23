@@ -59,6 +59,11 @@
         "scope": "public validation baseline artifact hashes; not decision-grade certification"
       },
       {
+        "path": "data/priority_cases/progress.json",
+        "role": "priority_progress",
+        "scope": "C01–C03 public evidence and bounded child research readiness, with historical parents preserved"
+      },
+      {
         "path": "data/portfolio/public_portfolio.json",
         "role": "public_portfolio",
         "scope": "fourteen screening cases and blocked operational completion gates"
@@ -234,6 +239,21 @@
       "recovery": null
     }
   },
+  "priority_followup": {
+    "access_case_selection": "UNDETERMINED_PENDING_CONFIRMED_ACCESS",
+    "actual_operational_audits_completed": 0,
+    "child_research_units": [
+      {
+        "candidate_id": "C02-UF01-RESEARCH",
+        "claim_class": "NO_FINANCIAL_CLAIM",
+        "current_state": "VALIDATION_READY",
+        "version": "1.0"
+      }
+    ],
+    "selected_lineage_expressions": 6,
+    "selected_semantic_datasets": 11,
+    "source": "data/priority_cases/progress.json"
+  },
   "reform_baseline": {
     "ga81_action_extraction": "BLOCKED_PENDING_IN_SCOPE_ADOPTED_TEXT_VERIFICATION",
     "release_class": "PARTIAL_PUBLIC_RESEARCH_BASELINE",
@@ -273,12 +293,13 @@
     "data/owner_review/evidence_gap_register.csv": "9e8eb42b659ec4c3faa7d9a1d00a2357229b8b50cfcd907f2416909f9fef6702",
     "data/owner_review/package_contract.json": "2f4701b7050a562a0ff53dc340065b4134d1c98b1fd9fd3e57673df1b52ce672",
     "data/portfolio/public_portfolio.json": "2fb11110a6031b8f35a9def4d7ea5cd2c76c7e15e67a9db2e67ca5a23b064adf",
+    "data/priority_cases/progress.json": "9f4f5bd67081e95d6e0ee19339cf7d4cf83e3363ebc381e75a6de716a8774a39",
     "data/reforms/baseline_release.json": "297780bcd0cf1d8a91f8d2f1d3dfb318075b784ef46d9921008038af113bd3b2",
     "data/spm_2027_cluster_bridge.csv": "3c914c5d52fed954f0c2c2be6eb6b1f1f61fe4adf6dc1e30da188739d2db9314",
     "data/spm_2027_embedded_efficiencies.csv": "7a863e3c21ed03e46aaf901c4703a0a5a85151eef690d6020a34cf336e374d3e",
     "data/spm_2027_financing_controls.csv": "19d89f32a9543aa5a2725460363cb5a7605dbf0e6bf03a2863862fd0d44357e7",
     "data/spm_2027_mission_budget.csv": "b9be40a488c17c884ee14b873524d6eee00fc924af840e5189fdb8efb5d3dc43",
-    "metadata/canonical_manifest.json": "ec5349a0a84ff0a3d21b5229f318baf83d0ad721b6d7faf55913b0c60fab59a0",
+    "metadata/canonical_manifest.json": "416451d65555bd02ce813b38c1ff141b9ffff84c3dafff3a7253398e247294c1",
     "metadata/issue_migration_receipt.json": "afd0299200dc585334720f5f7eb8a9829665f7ce511f2fef0370a0a542c5b3ea"
   },
   "transcript_recovery": {

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "update_id": "PRIORITY-C01-C03-2026-10-23",
+  "as_of": "2026-10-23",
+  "scope": "Targeted public evidence, research design and selected data/lineage work; historical portfolio preserved.",
+  "historical_parent_states": {
+    "C01": "SCREENING_CANDIDATE",
+    "C02": "SCREENING_CANDIDATE",
+    "C03": "SCREENING_CANDIDATE"
+  },
+  "historical_parent_sha256": {
+    "C01": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "C02": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "C03": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef"
+  },
+  "child_research_units": [
+    {
+      "candidate_id": "C02-UF01-RESEARCH",
+      "version": "1.0",
+      "current_state": "VALIDATION_READY",
+      "claim_class": "NO_FINANCIAL_CLAIM"
+    }
+  ],
+  "public_source_receipt_counts": {
+    "C01": 10,
+    "C02": 7,
+    "C03": 8
+  },
+  "selected_semantic_datasets": 11,
+  "selected_lineage_expressions": 6,
+  "selected_lineage_dispositions": {
+    "EXTERNAL_SOURCE_DIRECTORY_UNRESOLVED": 2,
+    "PARTIAL_SELECTED_FINANCIAL_CALLS": 1,
+    "RESOLVED_STATIC_CALL_SET": 1,
+    "RESOLVED_STATIC_DICTIONARY_SET": 2
+  },
+  "global_frozen_audit_counts_changed": false,
+  "operational_access_case_selection": "UNDETERMINED_PENDING_CONFIRMED_ACCESS",
+  "actual_operational_audits_completed": 0,
+  "financial_adjudications_completed": 0,
+  "requests_sent": 0,
+  "accepted_accountable_owners": 0,
+  "approved_collections": 0,
+  "benefits": "NOT_ESTIMATED",
+  "institutional_implementation_authorized": false,
+  "source_sha256": {
+    "data/adjudications/execution_gates.json": "7cf33875fa03a13db34d440f2bf1a2c35e4ad5ba352e3f422b5f6b2386cf754d",
+    "data/pilots/request_status.json": "f86a75c98135ff046455096864a87d8a18121a77e32f395448dff8f4f1b3af60",
+    "data/portfolio/verified_benefit_ledger.json": "d41ded977037f6001b220696f8b5afe00714444685dc9343d4f93d3167fb8a6d",
+    "data/priority_cases/C01_historical_audit.json": "95d64072576cdeb6e3b2b9be3f53ec5c7abcee7213f2bc7b1cbf07444752bb52",
+    "data/priority_cases/C01_public_evidence.json": "45929eaa4fa50603813c63282da80faf0a6f04c551ab5f1503c6ed580deb3bc6",
+    "data/priority_cases/C01_request_addendum.json": "fac0778a79878e706291afc7136f772ff3779fc25ce5d753935a24af38c507c5",
+    "data/priority_cases/C01_source_review.json": "166fc9098b37d84bc9cfb4f22efccb758b7aa5debc7bc61ad698b43833466757",
+    "data/priority_cases/C02_UF01_readiness_review.json": "558c35e8871d893d81b3e5c3df3e9dcfd9b19123214f599db2bc7ee61b360e93",
+    "data/priority_cases/C02_UF01_research_scope.json": "73ae009089fc053e398ad756cd7824f587a6a6ad3b7199a130c7e4d9d3048a47",
+    "data/priority_cases/C02_public_evidence.json": "0dd7019cf19432cebc3e93c54eea924b4b91793b2d7dcc63eddc5ee040784934",
+    "data/priority_cases/C02_request_addendum.json": "3cba3eaf53bdebc400bd5e4aceef3f7eb9e994297660349a98198ac163e32ac1",
+    "data/priority_cases/C02_source_review.json": "05dc0a15fb36ebc16a0fdbf2c8d7ce56b17fe3f512fafffdfb71cde79839ac83",
+    "data/priority_cases/C03_public_evidence.json": "3a988c47ca25b8dd8e28553addb4137684bed6e450ddea8fecd81e5c37106978",
+    "data/priority_cases/C03_request_addendum.json": "c352950d9badae19e063a79dd6c0f0615f7202ecd5abdba24d1012447511fbeb",
+    "data/priority_cases/C03_source_review.json": "034517354ff4951c4cbd2fadc23a334bcd72ac2f29dcd49cca6088f3390f7f42",
+    "data/priority_cases/advancement_review.json": "f8c39798e098608c95fc9755e7106a280f251ceef85ad1f5ad54aa507054b84c",
+    "data/priority_cases/dataset_semantic_review.json": "f7e14d450714aa5e26a3b73ac17bd55842ad07fa3fd42a6abefb97bbab84916a",
+    "data/priority_cases/entity_authority_crosswalk.json": "f8ea0d946fcc7236ce60c1b25d6cfb52eefd867e77adb2a7e9f5687871056996",
+    "data/priority_cases/evidence_access_readiness.json": "092f79db6d978484289d0346f6998532e1f8ef73b65ea6af21af9406fce79f50",
+    "data/priority_cases/lineage_review.json": "535cfad6e1f61b29ac84bd9e1963118caf5a4de11955f4a4ef1fbb05fcee2a33",
+    "data/priority_cases/research_candidates.json": "5b4a4fe8103ab65f95e6c1d53b2331a51015c74f9a76f66276f7d3d611ca280d",
+    "data/priority_cases/research_candidates_initial.json": "515b0362f41319406bb36aafb0d471ec7ac0130654fa10a401baf7bc4cfbae08",
+    "data/standards/candidate_states.json": "96a56e92fd4505ed8f36bf52f3b1759ae5b9733937be25d6e7d53c0bb7ecef7f"
+  },
+  "limitations": [
+    "Public reporting and source authentication do not establish actual performance, transfer or net financial effect.",
+    "Selected authority review does not complete the global GA80/GA81 instrument population.",
+    "F03 research readiness is distinct from evidence access, owner acceptance and operational activation.",
+    "Historical OIOS information is not a finding of present waste or proof of recommendation closure.",
+    "Original 324-dataset, 94-identity and 196-expression populations remain frozen; supplements have their own scopes."
+  ]
+}

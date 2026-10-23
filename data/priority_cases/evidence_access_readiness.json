@@ -1,0 +1,530 @@
+{
+  "schema_version": 1,
+  "package_id": "PRIORITY-ACCESS-C01-C03-2026-10-23",
+  "as_of": "2026-10-23",
+  "artifact_type": "DRAFT_ACCESS_AND_CASE_SELECTION_PACKAGE",
+  "purpose": "Resolve whether one bounded real evidence package can be made available under the existing E01–E03 contracts; no new collection or operational intervention is authorized.",
+  "selection": {
+    "status": "UNDETERMINED_NO_ACCEPTED_CUSTODIAN_OR_CONFIRMED_RECORD_ACCESS",
+    "selected_case": null,
+    "rankings": null,
+    "eligible_initial_cases": [
+      "C01",
+      "C02",
+      "C03"
+    ],
+    "rule": "First establish an accepted accountable owner, lawful access and a complete decision-relevant record slice; then choose the case whose usable linked records can resolve a material uncertainty with approved burden and safeguards. Budget size, public-document volume and the existence of this package are not access evidence.",
+    "substitution_rule": "Retain all three F01 initial targets. Any replacement requires prospectively recorded scope rationale; no case is dropped because its result may be adverse or null."
+  },
+  "current_access_facts": {
+    "accepted_owners": 0,
+    "requests_sent": 0,
+    "responses_received": 0,
+    "approved_collections": 0,
+    "restricted_records_received": 0,
+    "live_trials_started": 0,
+    "source": "data/pilots/request_status.json",
+    "interpretation": "Counts reflect the retained request-status register, not claims about records held elsewhere in the UN."
+  },
+  "common_decisions_before_dispatch": [
+    "Confirm a competent accountable owner and records custodian; proposed roles do not establish acceptance.",
+    "Confirm the decision question, institutional purpose, applicable authority, records classification, permitted analyst access and approved restricted storage.",
+    "Agree the smallest complete eligible population, observation dates, extraction definition, exclusions, correction/settlement lag and control totals before inspecting outcomes.",
+    "Confirm field availability and extraction burden; revise scope or leave blocked when burden or completeness is unacceptable.",
+    "Set custodian retention/deletion and re-identification rules; keep raw records, pseudonymous tokens, mapping tables and sensitive operating details outside public Git.",
+    "Separate an observational record-availability/reconciliation review from any later live process intervention. The latter requires its own authority and prospective operational safeguards."
+  ],
+  "sampling_boundary": "The proposed slices are bounded feasibility and mechanism-tracing exercises, not statistically powered portfolio samples. No numerical sample size, period or impact threshold is invented. A complete slice can support only its declared case/entity/service/period decision; expansion requires a new prospective scope.",
+  "cases": [
+    {
+      "case_id": "C01",
+      "request_id": "E01",
+      "pilot_id": "PILOT-RSCE",
+      "contract_path": "data/evidence_requests/E01_rsce.json",
+      "decision_question": "Can one client's charge for one agreed RSCE service line be reconciled to the provider credit and an approved allocation denominator, while showing what decision/control work remains locally?",
+      "proposed_smallest_slice": {
+        "status": "PROPOSED_REQUIRES_CUSTODIAN_AGREEMENT",
+        "client_entity": null,
+        "service_line": null,
+        "baseline_period": null,
+        "selection": "One jointly selected client, one service category and one closed comparable accounting period; obtain the entire eligible slice and its linked corrections/settlements, not only apparently duplicated or successfully matched lines.",
+        "minimum_scope_control": "Retain the approved full allocation denominator/control total needed to test this client's share without collecting unrelated clients' identifiable transactions.",
+        "no_generalization": "A single-client reconciliation cannot establish RSCE-wide staffing efficiency, overbilling or post savings."
+      },
+      "public_inputs": [
+        "Dated service responsibilities and client scope",
+        "Published budget/accounting perimeters and documented organizational proposals",
+        "Public mandate/financial authority anchors, subject to verification"
+      ],
+      "restricted_minimum_fields": {
+        "service_charges": [
+          "line_id",
+          "service_case_id",
+          "payer_cost_object",
+          "provider_cost_object",
+          "service_category",
+          "service_date",
+          "posting_date",
+          "amount",
+          "currency",
+          "entry_type",
+          "linked_line_id",
+          "external_cost_reference"
+        ],
+        "local_retained_work": [
+          "observation_id",
+          "entity_cost_object",
+          "service_category",
+          "period_start",
+          "period_end",
+          "completed_units",
+          "paid_hours",
+          "external_cost",
+          "currency",
+          "service_level_result",
+          "exception_status"
+        ]
+      },
+      "required_evidence_receipts": [
+        "Approved allocation schedule and denominator with entity/service/period scope",
+        "Client and provider extraction definitions, counts and signed control totals; all corrections and unmatched lines",
+        "Custodian explanation of retained delegated decisions, approvals and segregation-of-duties controls",
+        "Dated workload/SLA definition and coverage statement, including unavailable or failed services"
+      ],
+      "proposed_custodian_roles": [
+        "RSCE controller or authorized finance custodian",
+        "Client mission finance and service-line accountable managers"
+      ],
+      "accepted_owner": null,
+      "access_approval": null,
+      "acceptance_questions": [
+        "Which client/service/closed period has both sides of the journal and the approved allocation denominator available?",
+        "Which retained local tasks are required client decisions or controls, and which are actually substitutable processing?",
+        "Can all eligible lines, reversals and late settlements be supplied with independent control totals without excessive burden?"
+      ],
+      "next_decision_if_complete": "Authorize a bounded observational reconciliation and decide whether any unmatched cost/work mechanism merits fuller operational validation; do not call the charge or unmatched amount waste.",
+      "stop_or_defer": "Keep blocked if the counterpart ledger, allocation denominator, required local-control explanation or service-outcome coverage is missing."
+    },
+    {
+      "case_id": "C02",
+      "request_id": "E02",
+      "pilot_id": "PILOT-UNIFIL-ASSETS",
+      "contract_path": "data/evidence_requests/E02_assets.json",
+      "decision_question": "Can a documented UNSCOL requirement be traced through a UNIFIL asset's condition, handover, service acceptance and actual costs, with a genuine otherwise-needed acquisition counterfactual?",
+      "proposed_smallest_slice": {
+        "status": "PROPOSED_REQUIRES_CUSTODIAN_AGREEMENT",
+        "asset_class": null,
+        "recipient_requirement": null,
+        "event_window": null,
+        "selection": "One agreed asset class and one pre-existing recipient requirement or complete small requirement cohort, fixed before outcomes are examined. Include assets proposed but not transferred, rejected or unavailable, as well as completed handovers.",
+        "minimum_scope_control": "Supply the eligible requirement/asset population and exclusions so a successful transfer is not cherry-picked; link each selected asset to its requirement and custody history.",
+        "no_generalization": "One traceable requirement/asset chain cannot establish all transition savings or the performance of every transfer."
+      },
+      "public_inputs": [
+        "Dated UNIFIL/UNSCOL mandate and transition context",
+        "Published proposed asset-reuse and recipient-budget statements",
+        "Published accounting/asset-disposal authority where applicable"
+      ],
+      "restricted_minimum_fields": {
+        "asset_events": [
+          "asset_event_id",
+          "asset_token",
+          "asset_class",
+          "event_type",
+          "event_date",
+          "source_entity",
+          "receiving_entity",
+          "condition_band",
+          "service_acceptance_status",
+          "transfer_cost",
+          "residual_liability_cost",
+          "currency",
+          "procurement_requirement_token",
+          "procurement_commitment_status",
+          "comparable_external_purchase_cost",
+          "availability_result"
+        ]
+      },
+      "required_evidence_receipts": [
+        "Pre-existing need and procurement plan/commitment/cancellation chronology; distinguish a hypothetical purchase from an actual avoidable commitment",
+        "Custody, serviceable-condition and recipient acceptance receipts",
+        "Transport/preparation, retained maintenance/storage, disposal and residual liability costs, with source population completeness",
+        "Readiness and service-continuity definition plus custodian explanation of remaining UNIFIL obligations"
+      ],
+      "proposed_custodian_roles": [
+        "UNIFIL property, finance and transition custodians",
+        "UNSCOL property, procurement, finance and receiving-service custodians"
+      ],
+      "accepted_owner": null,
+      "access_approval": null,
+      "acceptance_questions": [
+        "Is there a complete requirement-to-asset chain for an agreed asset class, including non-transfers and rejections?",
+        "Was the recipient's otherwise-needed purchase feasible and cancellable, and what receipt establishes that counterfactual?",
+        "Which source and recipient transition/residual costs and availability obligations remain after handover?"
+      ],
+      "next_decision_if_complete": "Assess whether one bounded transfer mechanism can be operationally and financially tested after complete net-cost and readiness evidence; keep already embedded measures in the baseline.",
+      "stop_or_defer": "Keep blocked if requirement chronology, signed acceptance, serviceability, feasible procurement alternative or material residual costs are unavailable."
+    },
+    {
+      "case_id": "C03",
+      "request_id": "E03",
+      "pilot_id": "PILOT-HAITI",
+      "contract_path": "data/evidence_requests/E03_haiti.json",
+      "decision_question": "Can one BINUH support service be traced across UNSOH billing, client and provider records, supplier cost and delivered units while preserving support availability and accounting boundaries?",
+      "proposed_smallest_slice": {
+        "status": "PROPOSED_REQUIRES_CUSTODIAN_AGREEMENT",
+        "service_type": null,
+        "closed_billing_period": null,
+        "comparison_period": null,
+        "selection": "One jointly selected service type and one closed billing period, with the complete client/provider/supplier line population and linked reversals/settlements. Select comparable periods prospectively only after the handover/service chronology and accrual/settlement lag are known.",
+        "minimum_scope_control": "Identify whether aviation is contained in a broader support package; keep included components and internal transfers separate, with a complete source cost/control-total receipt.",
+        "no_generalization": "A billing-period trace cannot establish system-wide aviation utilization or recurring savings; precise flight routes, schedules and security details are unnecessary for public derivatives."
+      },
+      "public_inputs": [
+        "Competent mandate and dated support-transition/service responsibility statements",
+        "Published aviation and broader support proposal amounts with nonadditivity boundaries",
+        "Public administrative/financial authority anchors subject to action-specific applicability review"
+      ],
+      "restricted_minimum_fields": {
+        "support_service_lines": [
+          "line_id",
+          "service_case_id",
+          "provider_entity",
+          "client_entity",
+          "service_type",
+          "service_date",
+          "posting_date",
+          "amount",
+          "currency",
+          "entry_type",
+          "linked_line_id",
+          "supplier_cost_reference",
+          "delivery_units",
+          "availability_and_quality_result",
+          "retained_local_cost"
+        ]
+      },
+      "required_evidence_receipts": [
+        "BINUH and UNSOH extraction definitions, counts/control totals, corrections and unmatched items",
+        "Supplier expense/contract scope receipt and distinction between internal reimbursement and external cost",
+        "Delivered-unit/availability completeness receipt without sensitive operating routes or narrative detail",
+        "Scope bridge showing aviation versus broader support inclusions, retained local work and transition costs"
+      ],
+      "proposed_custodian_roles": [
+        "BINUH support and finance accountable custodians",
+        "UNSOH support and finance accountable custodians"
+      ],
+      "accepted_owner": null,
+      "access_approval": null,
+      "acceptance_questions": [
+        "Which service and closed period have both client/provider postings and supplier cost/delivery records available?",
+        "Are aviation amounts a subset of a larger support charge, and can the included population be identified?",
+        "Can availability, quality and retained local cost be assessed without exposing sensitive operating details?"
+      ],
+      "next_decision_if_complete": "Reconcile internal allocations and external costs, then decide whether an operational alternative can be tested with prospective service safeguards.",
+      "stop_or_defer": "Keep blocked if either ledger side, external cost/delivery linkage, support-package scope or security-safe outcome evidence is missing."
+    }
+  ],
+  "delivery_receipt_for_each_authorized_slice": {
+    "location": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "fields": [
+      "opaque_evidence_receipt_id",
+      "accepted_owner_and_custodian_role_receipts",
+      "competent_access_approval_receipt",
+      "contract_and_version",
+      "eligible_population_definition_and_exclusions",
+      "entity_service_period_scope",
+      "source_system_and_extraction_date",
+      "record_counts_and_control_totals_by_table",
+      "correction_and_settlement_lag_coverage",
+      "missing_fields_and_unmatched_population",
+      "hashes_and_restricted_storage_locator",
+      "access_retention_and_disclosure_rules",
+      "burden_estimate_and_accepted_limits"
+    ],
+    "public_derivative": "Only independently disclosure-reviewed aggregates and opaque receipts; no transaction/asset tokens or private storage locations in public Git."
+  },
+  "burden": {
+    "estimate": null,
+    "status": "UNKNOWN_REQUIRES_CUSTODIAN_CONFIRMATION",
+    "rule": "Do not promise a zero-burden export or set a staff-hour estimate without custodian evidence."
+  },
+  "request_status": "DRAFT_NOT_SENT",
+  "institutional_approval": false,
+  "collection_authorized": false,
+  "operational_trial_authorized": false,
+  "external_actions_performed": [],
+  "candidate_advancement_performed": false,
+  "benefits_estimated": false,
+  "source_sha256": {
+    "data/cases/C01.json": "2d0e8dd92b32e7edb7739d87397759398558725859e2a254bef567a1165006f5",
+    "data/cases/C02.json": "bfe813d34528ee716d62603dafe06331187506a314bf4545d535e3ed8785768e",
+    "data/cases/C03.json": "85cc95fd2661f575f843aec266a9a760d4326932925069893197067fe088d6ef",
+    "data/evidence_requests/E01_rsce.json": "ed3a6f7e45eb4ce68d4065ca4171fce131c1170b806fc5e8701ec6c9cee37550",
+    "data/evidence_requests/E02_assets.json": "53b828b60e81873ba3579b3b77540b80a61f83b18e1cb589fb229076056f150d",
+    "data/evidence_requests/E03_haiti.json": "7b91fecc699c65d83c1f54097139f4173f32e3deb10a66ed2841931de7aaad14",
+    "data/pilots/charters.json": "f8a995b868b5132021825dc2459fceb50373547ae586a9bf5c947b69fb5da440",
+    "data/pilots/thresholds.json": "fd3e50bea827342a8ab399f93c7f4dff4f9227b12f7cc84eec06184fd5991478",
+    "data/pilots/request_status.json": "f86a75c98135ff046455096864a87d8a18121a77e32f395448dff8f4f1b3af60",
+    "data/standards/candidate_states.json": "96a56e92fd4505ed8f36bf52f3b1759ae5b9733937be25d6e7d53c0bb7ecef7f",
+    "docs/candidate_advancement.md": "ce0008ab03c506b3d37e2ea7c1082f9ca21b9e82138d1ac1090edb9c0280168a",
+    "data/portfolio/interventions.json": "0b12bf742a709b8bc110cf228ce391580d90e9fc3429f82749124a650ca1a136",
+    "data/portfolio/benefit_pools.json": "2c6cf67634b52a98fc95eb6b3d8debaddd2ebdb2cc997f8fcba96a86fd37dee3"
+  },
+  "limitations": [
+    "This access package narrows existing request contracts; it is not an accepted institutional request or approval.",
+    "No actual evidence package, owner acceptance or record accessibility has been established.",
+    "Public-source refreshes maintained in sibling priority-case files do not prove internal records are accessible.",
+    "Numerical operating thresholds and observation windows remain unset until actual baselines and applicable standards can support prospective owner-approved specifications."
+  ],
+  "maturity_access_distinction": "F03 VALIDATION_READY is research-design maturity and requires proposed owner role and evidence custodian, not accepted institutional ownership. Access/collection authorization is a separate gate; accepted accountable ownership is explicitly required at IMPLEMENTATION_READY. This package does not promote or adjudicate any candidate state.",
+  "f03_validation_ready_review": {
+    "standard": "data/standards/candidate_states.json#states.VALIDATION_READY",
+    "review_kind": "DESIGN_GAP_CHECKLIST_NOT_TRANSITION_APPROVAL",
+    "candidate_states_unchanged": true,
+    "required_check_count": 7,
+    "assessment_rule": "PRESENT_AS_DESIGN means a relevant design artifact exists, not that a substantive reviewer has approved every condition. No mandatory check is set literally true by this package; a transition requires reviewed event checks and receipts under F03.",
+    "cases": [
+      {
+        "case_id": "C01",
+        "current_state": "SCREENING_CANDIDATE",
+        "proposed_state_change": null,
+        "checks": [
+          {
+            "check": "bounded_intervention",
+            "status": "PARTIAL_SCOPE_NOT_FROZEN",
+            "evidence": [
+              "data/cases/C01.json",
+              "data/pilots/charters.json",
+              "data/priority_cases/evidence_access_readiness.json#cases/C01/proposed_smallest_slice"
+            ],
+            "gap": "Define the precise client/service or asset requirement cohort, affected outputs and observation boundary. Proposed minimal slice still has unset identifiers and dates; do not pick after seeing favorable outcomes.",
+            "next_action": "Record a prospectively bounded research slice and exclusions with a feasible comparison design. Acceptance of an operational owner is not itself the F03 design requirement."
+          },
+          {
+            "check": "owner_role_and_custodian",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E01_rsce.json",
+              "data/pilots/charters.json"
+            ],
+            "gap": null,
+            "next_action": "Preserve proposed role/custodian specificity. Confirm actual custodian and access separately before dispatch/collection; do not falsely require accepted institutional ownership to document research readiness."
+          },
+          {
+            "check": "mandate_and_cost_perimeter",
+            "status": "PARTIAL_ACTION_SPECIFIC_APPLICABILITY_REVIEW",
+            "evidence": [
+              "data/cases/C01.json",
+              "data/portfolio/financial_baseline.json"
+            ],
+            "gap": "Cost perimeter and nonadditivity cautions exist. Verified mandate/competence and specific service/asset-change applicability must be attached to the exact bounded research unit; proposed budget or general mission mandate is insufficient by itself.",
+            "next_action": "Attach fresh priority-case public evidence receipts and distinguish mission mandate, budget authority and authority for a particular operational change."
+          },
+          {
+            "check": "evidence_request",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E01_rsce.json",
+              "data/pilots/request_status.json"
+            ],
+            "gap": null,
+            "next_action": "Use the existing purpose-bound contract; dispatch, access and records receipt are separate facts and remain unavailable. Do not make dispatch a prerequisite merely for research-design readiness."
+          },
+          {
+            "check": "counterfactual_design",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/cases/C01.json"
+            ],
+            "gap": "A defined design exists; its exact frame must be frozen with the selected bounded unit. Feasibility and actual comparable observations remain later evidentiary questions.",
+            "next_action": "Specify same-scope comparison and reasons to retain the current process; do not require actual achieved outcomes at VALIDATION_READY."
+          },
+          {
+            "check": "prospective_guardrails",
+            "status": "SUBSTANTIVE_DESIGN_REVIEW_REQUIRED",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/pilots/thresholds.json",
+              "docs/guardrail_standard.md"
+            ],
+            "gap": "Service/safety/readiness dimensions, metrics and stop/fallback principles exist; numerical baselines/thresholds and observation windows remain unset. A reviewer must determine the guardrail design required for this exact research unit; metric labels alone are not an approved check, while absence of an accepted owner or measured outcomes is not automatically a F03 failure.",
+            "next_action": "Document baseline-measurement and threshold-setting sequence before outcome review, applicable standards and non-negotiable stop conditions; obtain operational approvals separately before live change."
+          },
+          {
+            "check": "nonadditivity_group",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/portfolio/interventions.json",
+              "data/portfolio/benefit_pools.json"
+            ],
+            "gap": null,
+            "next_action": "Retain the registered CASE/C namespace mapping and all pool memberships; no benefit allocation or total is recognized."
+          }
+        ],
+        "conclusion": "Design prerequisites are partly present; remaining research-design/applicability judgments require specific receipts. This package neither approves nor rejects a VALIDATION_READY transition, and missing internal evidence or accepted ownership is not used as a substitute for the seven-check review."
+      },
+      {
+        "case_id": "C02",
+        "current_state": "SCREENING_CANDIDATE",
+        "proposed_state_change": null,
+        "checks": [
+          {
+            "check": "bounded_intervention",
+            "status": "PARTIAL_SCOPE_NOT_FROZEN",
+            "evidence": [
+              "data/cases/C02.json",
+              "data/pilots/charters.json",
+              "data/priority_cases/evidence_access_readiness.json#cases/C02/proposed_smallest_slice"
+            ],
+            "gap": "Define the precise client/service or asset requirement cohort, affected outputs and observation boundary. Proposed minimal slice still has unset identifiers and dates; do not pick after seeing favorable outcomes.",
+            "next_action": "Record a prospectively bounded research slice and exclusions with a feasible comparison design. Acceptance of an operational owner is not itself the F03 design requirement."
+          },
+          {
+            "check": "owner_role_and_custodian",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E02_assets.json",
+              "data/pilots/charters.json"
+            ],
+            "gap": null,
+            "next_action": "Preserve proposed role/custodian specificity. Confirm actual custodian and access separately before dispatch/collection; do not falsely require accepted institutional ownership to document research readiness."
+          },
+          {
+            "check": "mandate_and_cost_perimeter",
+            "status": "PARTIAL_ACTION_SPECIFIC_APPLICABILITY_REVIEW",
+            "evidence": [
+              "data/cases/C02.json",
+              "data/portfolio/financial_baseline.json"
+            ],
+            "gap": "Cost perimeter and nonadditivity cautions exist. Verified mandate/competence and specific service/asset-change applicability must be attached to the exact bounded research unit; proposed budget or general mission mandate is insufficient by itself.",
+            "next_action": "Attach fresh priority-case public evidence receipts and distinguish mission mandate, budget authority and authority for a particular operational change."
+          },
+          {
+            "check": "evidence_request",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E02_assets.json",
+              "data/pilots/request_status.json"
+            ],
+            "gap": null,
+            "next_action": "Use the existing purpose-bound contract; dispatch, access and records receipt are separate facts and remain unavailable. Do not make dispatch a prerequisite merely for research-design readiness."
+          },
+          {
+            "check": "counterfactual_design",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/cases/C02.json"
+            ],
+            "gap": "A defined design exists; its exact frame must be frozen with the selected bounded unit. Feasibility and actual comparable observations remain later evidentiary questions.",
+            "next_action": "Specify same-scope comparison and reasons to retain the current process; do not require actual achieved outcomes at VALIDATION_READY."
+          },
+          {
+            "check": "prospective_guardrails",
+            "status": "SUBSTANTIVE_DESIGN_REVIEW_REQUIRED",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/pilots/thresholds.json",
+              "docs/guardrail_standard.md"
+            ],
+            "gap": "Service/safety/readiness dimensions, metrics and stop/fallback principles exist; numerical baselines/thresholds and observation windows remain unset. A reviewer must determine the guardrail design required for this exact research unit; metric labels alone are not an approved check, while absence of an accepted owner or measured outcomes is not automatically a F03 failure.",
+            "next_action": "Document baseline-measurement and threshold-setting sequence before outcome review, applicable standards and non-negotiable stop conditions; obtain operational approvals separately before live change."
+          },
+          {
+            "check": "nonadditivity_group",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/portfolio/interventions.json",
+              "data/portfolio/benefit_pools.json"
+            ],
+            "gap": null,
+            "next_action": "Retain the registered CASE/C namespace mapping and all pool memberships; no benefit allocation or total is recognized."
+          }
+        ],
+        "conclusion": "Design prerequisites are partly present; remaining research-design/applicability judgments require specific receipts. This package neither approves nor rejects a VALIDATION_READY transition, and missing internal evidence or accepted ownership is not used as a substitute for the seven-check review."
+      },
+      {
+        "case_id": "C03",
+        "current_state": "SCREENING_CANDIDATE",
+        "proposed_state_change": null,
+        "checks": [
+          {
+            "check": "bounded_intervention",
+            "status": "PARTIAL_SCOPE_NOT_FROZEN",
+            "evidence": [
+              "data/cases/C03.json",
+              "data/pilots/charters.json",
+              "data/priority_cases/evidence_access_readiness.json#cases/C03/proposed_smallest_slice"
+            ],
+            "gap": "Define the precise client/service or asset requirement cohort, affected outputs and observation boundary. Proposed minimal slice still has unset identifiers and dates; do not pick after seeing favorable outcomes.",
+            "next_action": "Record a prospectively bounded research slice and exclusions with a feasible comparison design. Acceptance of an operational owner is not itself the F03 design requirement."
+          },
+          {
+            "check": "owner_role_and_custodian",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E03_haiti.json",
+              "data/pilots/charters.json"
+            ],
+            "gap": null,
+            "next_action": "Preserve proposed role/custodian specificity. Confirm actual custodian and access separately before dispatch/collection; do not falsely require accepted institutional ownership to document research readiness."
+          },
+          {
+            "check": "mandate_and_cost_perimeter",
+            "status": "PARTIAL_ACTION_SPECIFIC_APPLICABILITY_REVIEW",
+            "evidence": [
+              "data/cases/C03.json",
+              "data/portfolio/financial_baseline.json"
+            ],
+            "gap": "Cost perimeter and nonadditivity cautions exist. Verified mandate/competence and specific service/asset-change applicability must be attached to the exact bounded research unit; proposed budget or general mission mandate is insufficient by itself.",
+            "next_action": "Attach fresh priority-case public evidence receipts and distinguish mission mandate, budget authority and authority for a particular operational change."
+          },
+          {
+            "check": "evidence_request",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/evidence_requests/E03_haiti.json",
+              "data/pilots/request_status.json"
+            ],
+            "gap": null,
+            "next_action": "Use the existing purpose-bound contract; dispatch, access and records receipt are separate facts and remain unavailable. Do not make dispatch a prerequisite merely for research-design readiness."
+          },
+          {
+            "check": "counterfactual_design",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/cases/C03.json"
+            ],
+            "gap": "A defined design exists; its exact frame must be frozen with the selected bounded unit. Feasibility and actual comparable observations remain later evidentiary questions.",
+            "next_action": "Specify same-scope comparison and reasons to retain the current process; do not require actual achieved outcomes at VALIDATION_READY."
+          },
+          {
+            "check": "prospective_guardrails",
+            "status": "SUBSTANTIVE_DESIGN_REVIEW_REQUIRED",
+            "evidence": [
+              "data/pilots/charters.json",
+              "data/pilots/thresholds.json",
+              "docs/guardrail_standard.md"
+            ],
+            "gap": "Service/safety/readiness dimensions, metrics and stop/fallback principles exist; numerical baselines/thresholds and observation windows remain unset. A reviewer must determine the guardrail design required for this exact research unit; metric labels alone are not an approved check, while absence of an accepted owner or measured outcomes is not automatically a F03 failure.",
+            "next_action": "Document baseline-measurement and threshold-setting sequence before outcome review, applicable standards and non-negotiable stop conditions; obtain operational approvals separately before live change."
+          },
+          {
+            "check": "nonadditivity_group",
+            "status": "PRESENT_AS_DESIGN",
+            "evidence": [
+              "data/portfolio/interventions.json",
+              "data/portfolio/benefit_pools.json"
+            ],
+            "gap": null,
+            "next_action": "Retain the registered CASE/C namespace mapping and all pool memberships; no benefit allocation or total is recognized."
+          }
+        ],
+        "conclusion": "Design prerequisites are partly present; remaining research-design/applicability judgments require specific receipts. This package neither approves nor rejects a VALIDATION_READY transition, and missing internal evidence or accepted ownership is not used as a substitute for the seven-check review."
+      }
+    ]
+  }
+}

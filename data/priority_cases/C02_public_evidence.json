@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "case_id": "C02",
+  "scope": "Targeted public-source refresh for UNIFIL–UNSCOL asset-transfer hypothesis; historical case records preserved.",
+  "review_cutoff": "2026-10-23",
+  "candidate_state": "SCREENING_CANDIDATE",
+  "disposition": "BLOCKED_PENDING_EVIDENCE",
+  "operational_baseline": null,
+  "accountable_owner": null,
+  "financial_validation": "NOT_PERFORMED",
+  "benefits": {
+    "status": "NOT_ESTIMATED",
+    "cashable_saving": null,
+    "realized_saving": null,
+    "recovery": null,
+    "cost_avoidance": null,
+    "capacity_gain": null
+  },
+  "source_records": [
+    {
+      "source_id": "C02-S01",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2790(2025)&t=pdf",
+      "document_symbol": "S/RES/2790 (2025)",
+      "document_date": "2025-08-28",
+      "adoption_date": "2025-08-28",
+      "retrieved_on": "2026-10-23",
+      "locator": "Final PDF,4pages; adoption header p1; operative paragraphs1,5–9 pp2–3",
+      "authority_class": "SECURITY_COUNCIL_ADOPTED",
+      "verification_level": "FINAL_OFFICIAL_PDF_RENDERED",
+      "retrieval_status": "SUCCESS_VIA_OFFICIAL_REGISTRY_VIEW_PDF_LINK",
+      "claim_paraphrase": "Final mandate to 31 December 2026; withdrawal then within one year. Protection, enabling and medical functions continue during withdrawal; liquidation follows. OP9 requires safe asset transfer to the designated entity under established UN practices and financial rules.",
+      "verified_fact": "The final adoption header records the 9989th Security Council meeting on 28 August 2025.",
+      "limitations": [
+        "OP9 does not name UNSCOL as recipient or approve the particular sixvehicles, ICT or consumable transfers.",
+        "Mandated phases do not prove actual withdrawal progress, physical delivery, accepted ownership or avoided acquisition.",
+        "Rendered final text inspected; rawPDF not retained and no filehash asserted.",
+        "No exhaustive subsequent amendment/corrigendum review."
+      ]
+    },
+    {
+      "source_id": "C02-S02",
+      "source_url": "https://mandates.un.org/mandate/S/RES/2790(2025)?budget_location=%5B%22entity%22,%22UNIFIL%22%5D&ppb_version=ppb2027",
+      "document_symbol": "S/RES/2790 (2025)",
+      "document_date": "2025-08-28",
+      "retrieved_on": "2026-10-23",
+      "locator": "Official beta Mandate Registry; displayed OP1,5–9 and ViewPDF link",
+      "authority_class": "OFFICIAL_REGISTRY_TRANSCRIPTION",
+      "verification_level": "OFFICIAL_REGISTRY_OPENED_AND_CROSSCHECKED_TO_FINAL_PDF",
+      "retrieval_status": "SUCCESS",
+      "claim_paraphrase": "Registry operative excerpts agree with the inspected final resolution.",
+      "limitations": [
+        "Registry is a transparency/navigation tool, not a separate adoption instrument.",
+        "Displayed aggregate historical expenditure is not this mandate's budget or a benefit amount."
+      ]
+    },
+    {
+      "source_id": "C02-S03",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=S/2007/85&t=pdf",
+      "document_symbol": "S/2007/85",
+      "document_date": "2007-02-13",
+      "letter_date": "2007-02-08",
+      "retrieved_on": "2026-10-23",
+      "locator": "One-page final letter; substantive second paragraph",
+      "authority_class": "SECRETARY_GENERAL_LETTER_TO_SECURITY_COUNCIL",
+      "verification_level": "OFFICIAL_PDF_RENDERED",
+      "retrieval_status": "SUCCESS_VIA_REGISTRY_LINK",
+      "claim_paraphrase": "The Secretary-General describes Special Coordinator political representation and coordination of UN work in Lebanon, including country team alignment with government, donors and financial institutions.",
+      "limitations": [
+        "Read with CouncilPresident reply S/2007/86.",
+        "Founding role description does not authorize assetprocurement or certify the complete current mandate/amendment history.",
+        "RawPDF not retained; no filehash asserted."
+      ]
+    },
+    {
+      "source_id": "C02-S04",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=S/2007/86&t=pdf",
+      "document_symbol": "S/2007/86",
+      "document_date": "2007-02-13",
+      "retrieved_on": "2026-10-23",
+      "locator": "One-page CouncilPresident reply; sole substantive paragraph",
+      "authority_class": "SECURITY_COUNCIL_PRESIDENT_LETTER",
+      "verification_level": "OFFICIAL_PDF_RENDERED",
+      "retrieval_status": "SUCCESS_VIA_REGISTRY_LINK",
+      "claim_paraphrase": "Council members took note of the Secretary-General's proposed Special Coordinator appointment.",
+      "limitations": [
+        "Preserve the letter's takenote effect; do not recast it as an assettransfer approval.",
+        "No operational or financial implementation evidence.",
+        "RawPDF not retained; no filehash asserted."
+      ]
+    },
+    {
+      "source_id": "C02-S05",
+      "source_url": "https://dppa.un.org/en/factsheet/unscol",
+      "document_symbol": null,
+      "document_date": null,
+      "retrieved_on": "2026-10-23",
+      "locator": "Official DPPA factsheet indexed excerpt; directopen returned403",
+      "authority_class": "OFFICIAL_MANAGEMENT_DESCRIPTION",
+      "verification_level": "SEARCH_INDEX_EXCERPT_ONLY",
+      "retrieval_status": "DIRECT_ACCESS_403_INDEX_EXCERPT_AVAILABLE",
+      "claim_paraphrase": "Current official index describes UNSCOL political coordination and support/reporting on resolution 1701.",
+      "limitations": [
+        "Publication date unknown; crawl date is not an observation date.",
+        "Role corroboration only; not a complete mandate review or evidence of approved assetneeds."
+      ]
+    },
+    {
+      "source_id": "C02-S06",
+      "source_url": "https://www.ungm.org/Public/Notice/217790",
+      "document_symbol": "EOIUNIFIL22026",
+      "document_date": "2023-10-24",
+      "retrieved_on": "2026-10-23",
+      "locator": "UNGM title, published/date fields and description paragraphs1–2",
+      "authority_class": "OFFICIAL_PROCUREMENT_EXPRESSION_OF_INTEREST",
+      "verification_level": "OFFICIAL_NOTICE_OPENED",
+      "retrieval_status": "SUCCESS",
+      "claim_paraphrase": "Historical EOI sought vehicle washing for both missions; initial one-year term with two optional extensions.",
+      "limitations": [
+        "EOI is not an award, signedcontract, invoice or payment.",
+        "No evidence of2027 assettransfer or duplicate service."
+      ]
+    },
+    {
+      "source_id": "C02-S07",
+      "source_url": "https://docs.un.org/en/A/81/6%20%28Sect.%203%29/Add.4",
+      "document_symbol": "A/81/6 (Sect.3)/Add.4",
+      "document_date": "2026-05-28",
+      "retrieved_on": "2026-10-23",
+      "locator": "Retained source-manifest date; case sourceanchors pp7–10 Table3",
+      "authority_class": "SECRETARY_GENERAL_BUDGET_PROPOSAL",
+      "verification_level": "RETAINED_REPOSITORY_TRANSCRIPTION_NOT_FRESHLY_AUTHENTICATED",
+      "retrieval_status": "SYMBOL_AND_API_DIRECT_ACCESS_FAILED",
+      "claim_paraphrase": "Retained proposal associates vehicles 394000 USD, ICT 36900 USD and consumables 7200 USD with prospective UNIFIL assets.",
+      "amounts_usd": {
+        "vehicles": "394000",
+        "ICT": "36900",
+        "consumables": "7200",
+        "total": "438100"
+      },
+      "amount_class": "ALREADY_EMBEDDED_PROPOSED_EFFICIENCY_NOT_NEW_OR_REALIZED_BENEFIT",
+      "repository_refs": [
+        "data/cases/C02.json",
+        "data/transaction_control_baseline.csv#UF01-UF03",
+        "data/spm_2027_embedded_efficiencies.csv#EFF019-EFF026-EFF029",
+        "data/spm_2027_source_manifest.csv#SPM_ADD4"
+      ],
+      "limitations": [
+        "DirectbudgetPDF was not freshly retrieved; prior retainedSHA is not a freshauthentication receipt.",
+        "No GA81 appropriation/adoptedapproval inferred from A/81 symbol.",
+        "No signedhandover, pairedinventoryentry or canceledPO verified."
+      ]
+    }
+  ],
+  "access_attempts": [
+    {
+      "url": "https://unifil.unmissions.org/en/news/security-council-extends-unifils-mandate-resolution-2790-2025",
+      "result": "403_DIRECT_OPEN_OFFICIAL_INDEX_EXCERPT_AVAILABLE"
+    },
+    {
+      "url": "https://digitallibrary.un.org/record/4087501/files/S_RES_2790_%282025%29-EN.pdf",
+      "result": "403_DIRECT_OPEN; finalPDF later obtained viaofficialregistrylink"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S/RES/2790(2025)&t=pdf",
+      "result": "DIRECT_OPEN_FAILED_THEN_REGISTRY_CLICK_SUCCEEDED"
+    },
+    {
+      "url": "https://unscol.unmissions.org/en/mandate",
+      "result": "403_DIRECT_OPEN_OFFICIAL_INDEX_EXCERPT_AVAILABLE"
+    },
+    {
+      "url": "https://css-unscol.unmissions.org/mandate",
+      "result": "TIMEOUT"
+    },
+    {
+      "url": "https://www.un.org/en/ga/fifth/81/ppb2027.shtml",
+      "result": "403"
+    },
+    {
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A/81/6%20(Sect.%203)/Add.4&t=pdf",
+      "result": "NOT_ACCESSIBLE"
+    }
+  ],
+  "resolved_public_questions": [
+    "The inspected adopted resolution supplies an explicit safeasset-transfer obligation during withdrawal, with continuing protection and residual-liquidation requirements.",
+    "Freshly inspected foundingletters establish UNSCOL political/coordination role and the Council reply's limited effect.",
+    "The2023 common vehiclewash notice is confirmed as historical EOI evidence."
+  ],
+  "remaining_public_questions": [
+    "Authenticate full2027 budget Add.4 text and relevant advice, incorporation/adoption and subsequent revisions.",
+    "Complete case-specific mandate amendment/corrigendum search through cutoff.",
+    "Find any public authorized disposal/transfer plan naming recipient, scope and conditions; absence from this boundedsearch does not establish none exists."
+  ],
+  "internal_evidence_still_required": [
+    "Authorized donorrelease and recipient acceptance by VIN/serial/lot, quantities, condition and remaining life.",
+    "Recipient approved need and matched procurement requisition/POcancellation, including irreversible commitments.",
+    "Paired asset/GLentries and all transport, refurbishment, installation, security, residual and operatingcosts; foregone disposal proceeds.",
+    "Accepted custodian/owner, permissible observation window and prospective service/security safeguards."
+  ],
+  "decision_implications": [
+    "Maintain C02 at SCREENING_CANDIDATE; public authority clarification does not satisfy operational or financial validation.",
+    "Review the specific UNSCOL proposal against OP9 and the financialrules without assuming that a general transfer clause designates this recipient.",
+    "Treat embedded438100USD as baseline proposal context and prevent repeated recognition.",
+    "Do not infer from elevenUN80 arrangements or the reform label that mandate output, protectedwithdrawal capacity or residualcosts may be eliminated."
+  ],
+  "external_actions": {
+    "requests_sent": 0,
+    "records_collected": 0,
+    "owners_accepted": 0,
+    "operational_trials": 0
+  },
+  "review_limit": "Targeted public-source research only; no institutional/legal assurance, transactionauthentication, complete sourcepopulation or savings finding."
+}

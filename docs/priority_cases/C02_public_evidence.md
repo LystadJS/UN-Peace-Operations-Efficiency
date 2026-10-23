@@ -1,0 +1,13 @@
+# C02 — Public evidence advancement
+
+**Review cutoff: 23 October 2026. Candidate remains `SCREENING_CANDIDATE` / `BLOCKED_PENDING_EVIDENCE`.** The [source record](../../data/priority_cases/C02_public_evidence.json) distinguishes final-text inspection, official website excerpts and retained budget transcriptions. The [original dossier](../../data/cases/C02.json) remains unchanged.
+
+The freshly inspected [final resolution 2790](https://documents.un.org/api/symbol/access?l=en&s=S/RES/2790(2025)&t=pdf), adopted on 28 August 2025, sets a future operational endpoint and withdrawal phases, continuing protective functions and subsequent liquidation. Its OP9 gives a general safe-asset-transfer direction. **It does not identify UNSCOL as the recipient or approve these particular transfers.** Preserve donor readiness, secure custody and residual liabilities when assessing any release.
+
+The [Secretary-General's founding letter](https://documents.un.org/api/symbol/access?l=en&s=S/2007/85&t=pdf) and [Council President's reply](https://documents.un.org/api/symbol/access?l=en&s=S/2007/86&t=pdf) were also inspected. They establish the political/coordination role and the Council members' taking-note response. They supply neither procurement authorization nor evidence of transfer implementation. A complete subsequent mandate review remains open.
+
+The retained 2027 proposal identifies $394,000 for vehicles, $36,900 for ICT and $7,200 for consumables: **$438,100 already embedded in the proposal**. This refresh could not retrieve the full Add.4 budget text. The values remain retained transcription claims, with their original source anchors; they are not freshly authenticated or additional benefits. The [2023 vehicle-washing EOI](https://www.ungm.org/Public/Notice/217790) was freshly opened and confirms historical common-service solicitation only.
+
+The next public tasks are budget/advice authentication and specific transfer-authority review. Actual adjudication still requires signed donor/recipient records by asset or lot, approved recipient need, canceled or avoidable procurement, paired inventory/accounting movements and net transfer/residual costs. Proposed custodians remain unaccepted. No request was sent, no restricted record collected, and no operational or financial validation occurred.
+
+Direct mission and Digital Library opens sometimes failed; clicking the official Mandate Registry's source link successfully rendered the final resolution and letters. Raw PDFs were not retained and no new file hashes are asserted. This bounded review cannot establish that no later instrument or transfer record exists.

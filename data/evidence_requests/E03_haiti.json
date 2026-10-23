@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "artifact_type": "EVIDENCE_REQUEST_CONTRACT",
+  "request_status": "DRAFT_NOT_SENT",
+  "authority_status": "NOT_AUTHORIZED_TO_COLLECT",
+  "owner_acceptance": "NOT_OBTAINED",
+  "burden_estimate": "UNKNOWN",
+  "period_parameters": {
+    "baseline_start": null,
+    "baseline_end": null,
+    "intervention_start": null,
+    "intervention_end": null,
+    "setting_rule": "Competent owner must agree comparable windows, accrual basis, lag and completeness before any collection; no live trial authorized."
+  },
+  "handling": {
+    "classification": "PROPOSED_RESTRICTED_INTAKE_NOT_APPROVED",
+    "storage": "APPROVED_RESTRICTED_SYSTEM_OUTSIDE_THIS_REPOSITORY_ONLY",
+    "pseudonymization": "Custodian assigns stable tokens; re-identification map retained separately under custodian access; pseudonymous records remain restricted.",
+    "access": "Named authorized custodians and approved analysts only; roles proposed here are not accepted assignments.",
+    "retention": "UNSET_REQUIRES_CUSTODIAN_POLICY_AND_AUTHORIZATION; minimize retention and record approved deletion/hold rules.",
+    "public_derivative": "Only disclosure-reviewed non-identifying aggregates and opaque evidence receipts; no raw records, tokens or mapping tables in Git.",
+    "unnecessary_fields": "Do not request personal names, email, bank details, passport identifiers, precise security routes, medical diagnoses or narrative case contents."
+  },
+  "completeness_request": "Custodian supplies extraction definition, exclusions, row counts, correction history, source-system totals and missingness receipt in approved storage.",
+  "approval_gate": "Confirm purpose, lawful/competent authority, handling, fields, comparable periods, extraction burden and guardrail thresholds before request dispatch or collection.",
+  "financial_limit": "Internal transfers, recoveries and pre-budgeted measures are not automatically incremental savings; no savings finding before financial validation.",
+  "request_id": "E03",
+  "case_ids": [
+    "C03"
+  ],
+  "purpose": "BINUH–UNSOH support service cost and continuity reconciliation",
+  "proposed_custodian_roles": [
+    "BINUH support/finance owner",
+    "UNSOH support/finance owner"
+  ],
+  "tables": [
+    {
+      "table_id": "support_service_lines",
+      "grain": "One billing, payable, receivable, settlement or supplier-service line",
+      "keys": [
+        "line_id"
+      ],
+      "fields": [
+        {
+          "name": "line_id",
+          "type": "string",
+          "purpose": "Stable pseudonymous identity",
+          "required": true
+        },
+        {
+          "name": "service_case_id",
+          "type": "string",
+          "purpose": "Link both sides of internal charge",
+          "required": true
+        },
+        {
+          "name": "provider_entity",
+          "type": "string",
+          "purpose": "Identify cost transfer",
+          "required": true
+        },
+        {
+          "name": "client_entity",
+          "type": "string",
+          "purpose": "Identify service recipient",
+          "required": true
+        },
+        {
+          "name": "service_type",
+          "type": "string",
+          "purpose": "Separate aviation from other support",
+          "required": true
+        },
+        {
+          "name": "service_date",
+          "type": "date",
+          "purpose": "Align observation window",
+          "required": true
+        },
+        {
+          "name": "posting_date",
+          "type": "date",
+          "purpose": "Identify timing differences",
+          "required": true
+        },
+        {
+          "name": "amount",
+          "type": "decimal",
+          "purpose": "Reconcile signed charge or expense",
+          "required": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "purpose": "Identify unit",
+          "required": true
+        },
+        {
+          "name": "entry_type",
+          "type": "string",
+          "purpose": "Distinguish internal charge external expense reversal settlement",
+          "required": true
+        },
+        {
+          "name": "linked_line_id",
+          "type": "string",
+          "purpose": "Match corrections and settlement",
+          "required": true
+        },
+        {
+          "name": "supplier_cost_reference",
+          "type": "string",
+          "purpose": "Trace external cost in restricted store",
+          "required": true
+        },
+        {
+          "name": "delivery_units",
+          "type": "decimal",
+          "purpose": "Measure service output",
+          "required": true
+        },
+        {
+          "name": "availability_and_quality_result",
+          "type": "string",
+          "purpose": "Preserve operational coverage without flight-route or security detail",
+          "required": true
+        },
+        {
+          "name": "retained_local_cost",
+          "type": "decimal",
+          "purpose": "Include work continuing at client",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "case_specific_limits": [
+    "Preserve mandate, safety, readiness, quality, timeliness and transition controls; no operational intervention authorized."
+  ]
+}
